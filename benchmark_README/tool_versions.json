@@ -1,0 +1,6 @@
+{
+  "osa": {"version": "0.3.2", "commit": "17c347e8648654aee37b741859cfc871e9b46f30", "source": "https://github.com/aimclub/OSA"},
+  "larch": {"version": "0.0.10", "commit": "832d36512531c4a55bc3395c7a67bc9d2c7ccdf4", "source": "https://github.com/hitachi-nlp/larch"},
+  "readmeready": {"version": "1.1.5", "commit": "6c45438c7bce05351f4e91a06af3ab38e236aa0f", "source": "https://github.com/souradipp76/ReadMeReady", "local_patch": "scripts/patches/readmeready-output-paths.patch"},
+  "opencode_2": {"version": "2.1.2", "package": "@opencode/cli-linux-x64"}
+}

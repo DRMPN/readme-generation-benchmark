@@ -132,6 +132,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.tools/
 env/
 venv/
 ENV/
@@ -179,5 +180,17 @@ cython_debug/
 .pypirc
 .qodo
 
-# Logs
-logs/
+# Publish the compact experiment record while keeping downloaded repositories,
+# temporary tool workspaces, locks, and future run directories local.
+/benchmark_README/results/*
+!/benchmark_README/results/README.md
+!/benchmark_README/results/readme_2026_three_models/
+/benchmark_README/results/readme_2026_three_models/inputs/
+/benchmark_README/results/readme_2026_three_models/repositories/
+/benchmark_README/results/readme_2026_three_models/workspaces/
+/benchmark_README/results/readme_2026_three_models/tools/readmeready/*/_work/
+/benchmark_README/results/readme_2026_three_models/tools/osa/*/osa_config.toml
+/benchmark_README/results/readme_2026_three_models/*.lock
+/benchmark_README/results/readme_2026_three_models/*.pid
+!/benchmark_README/results/readme_2026_three_models/full_run*.log
+!/benchmark_README/results/readme_2026_three_models/logs/**/*.log

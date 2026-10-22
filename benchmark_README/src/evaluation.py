@@ -58,19 +58,18 @@ class CustomLLM(DeepEvalBaseLLM):
     def __init__(
         self,
         api: str = "openrouter",
-        model: str = "gpt-4.1",
+        model: str = "openai/gpt-6-sol",
         url: str = "https://openrouter.ai/api/v1",
         *,
-        max_tokens: int = 16384,
         request_timeout: float = 180.0,
         use_json_object_mode: bool = True,
     ):
         self.api = api
         self.model_name = model
         self.url = url.rstrip("/")
-        self.max_tokens = max_tokens
         self.request_timeout = request_timeout
         self.use_json_object_mode = use_json_object_mode
+        self.usage: list[dict[str, Any]] = []
 
     def load_model(self):
         return self
@@ -120,8 +119,6 @@ class CustomLLM(DeepEvalBaseLLM):
         payload: dict[str, Any] = {
             "model": self.model_name,
             "messages": messages,
-            "max_tokens": self.max_tokens,
-            "temperature": 0.0,
         }
         if response_format and self.use_json_object_mode:
             payload["response_format"] = response_format
@@ -133,7 +130,9 @@ class CustomLLM(DeepEvalBaseLLM):
             timeout=self.request_timeout,
         )
         if response.status_code == 200:
-            return (response.json()["choices"][0]["message"]["content"] or "").strip()
+            data = response.json()
+            self.usage.append(data.get("usage", {}))
+            return (data["choices"][0]["message"]["content"] or "").strip()
 
         if response_format and self.use_json_object_mode:
             payload.pop("response_format", None)
@@ -144,7 +143,9 @@ class CustomLLM(DeepEvalBaseLLM):
                 timeout=self.request_timeout,
             )
             if response.status_code == 200:
-                return (response.json()["choices"][0]["message"]["content"] or "").strip()
+                data = response.json()
+                self.usage.append(data.get("usage", {}))
+                return (data["choices"][0]["message"]["content"] or "").strip()
 
         raise RuntimeError(f"Judge LLM HTTP {response.status_code}: {response.text[:500]}")
 
@@ -182,7 +183,7 @@ class CustomLLM(DeepEvalBaseLLM):
 def build_readme_quality_metric(judge: dict[str, Any]) -> GEval:
     assess_model = CustomLLM(
         api=judge.get("api", "openrouter"),
-        model=judge.get("model", "gpt-4.1"),
+        model=judge.get("model", "openai/gpt-6-sol"),
         url=judge.get("base_url", "https://openrouter.ai/api/v1"),
     )
     return GEval(
@@ -212,12 +213,16 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
     eval_path = paths.evaluation_dir / "eval_rows.csv"
     old = pd.read_csv(eval_path) if eval_path.is_file() and not reset else pd.DataFrame()
     completed = set()
+    judge_model = experiment["judge"]["model"]
     if not old.empty:
-        completed = set(zip(old["tool"], old["model"], old["repo_slug"]))
+        if "judge_model" in old and "score" in old:
+            valid = old["judge_model"].eq(judge_model) & pd.to_numeric(old["score"], errors="coerce").between(0, 1)
+            completed = set(zip(old.loc[valid, "tool"], old.loc[valid, "model"], old.loc[valid, "repo_slug"]))
 
     metric = build_readme_quality_metric(experiment["judge"])
     statuses = pd.read_csv(status_path)
-    rows = []
+    all_rows = old.copy()
+    paths.evaluation_dir.mkdir(parents=True, exist_ok=True)
 
     for row in statuses.itertuples():
         key = (row.tool, row.model, row.repo_slug)
@@ -231,6 +236,7 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
             continue
 
         try:
+            metric.model.usage.clear()
             generated_readme = _read_text(generated_path)
             original_readme = _read_text(original_candidates[0])
             repo_structure = _read_text(structure_path)
@@ -246,13 +252,16 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
                 expected_output=original_readme,
             )
             metric.measure(test_case)
-            rows.append(
+            result = (
                 {
                     "tool": row.tool,
                     "model": row.model,
                     "model_label": model_label(row.model),
                     "repo_slug": row.repo_slug,
+                    "repo_type": row.repo_type,
+                    "judge_model": judge_model,
                     "score": metric.score,
+                    "judge_usage": json.dumps(metric.model.usage),
                     "reason": getattr(metric, "reason", ""),
                     "success": getattr(metric, "success", None),
                     "output_path": row.output_path,
@@ -260,23 +269,25 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
             )
         except Exception as exc:
             logger.exception("GEval failed for %s/%s/%s", row.tool, row.model, row.repo_slug)
-            rows.append(
+            result = (
                 {
                     "tool": row.tool,
                     "model": row.model,
                     "model_label": model_label(row.model),
                     "repo_slug": row.repo_slug,
+                    "repo_type": row.repo_type,
+                    "judge_model": judge_model,
                     "score": None,
+                    "judge_usage": json.dumps(metric.model.usage),
                     "reason": f"GEval failed: {exc}",
                     "success": False,
                     "output_path": row.output_path,
                 }
             )
-
-    new = pd.DataFrame(rows)
-    all_rows = pd.concat([old, new], ignore_index=True) if not old.empty else new
-    paths.evaluation_dir.mkdir(parents=True, exist_ok=True)
-    all_rows.to_csv(eval_path, index=False)
+        all_rows = pd.concat([all_rows, pd.DataFrame([result])], ignore_index=True)
+        all_rows = all_rows.drop_duplicates(["tool", "model", "repo_slug", "judge_model"], keep="last")
+        all_rows.to_csv(eval_path, index=False)
+        print(f"GEval {row.model} {row.tool} {row.repo_slug}: {result['score']}", flush=True)
 
     if not all_rows.empty:
         summary = (

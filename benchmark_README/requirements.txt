@@ -6,3 +6,4 @@ python-dotenv>=1.0
 rich>=13.0
 ipykernel>=6.0
 nbformat>=5.0
+tiktoken>=0.8

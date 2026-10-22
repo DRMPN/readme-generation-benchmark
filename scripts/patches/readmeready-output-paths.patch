@@ -1,0 +1,154 @@
+diff --git a/readme_ready/index/process_repository.py b/readme_ready/index/process_repository.py
+index c10c531..d7a00ac 100644
+--- a/readme_ready/index/process_repository.py
++++ b/readme_ready/index/process_repository.py
+@@ -5,6 +5,7 @@ Utilities to Process Repository and Summarize File Contents
+ import hashlib
+ import json
+ import os
++from concurrent.futures import ThreadPoolExecutor
+ from pathlib import Path
+ 
+ import tiktoken
+@@ -54,8 +55,10 @@ def process_repository(
+     """
+ 
+     def read_file(path):
+-        with open(path, "r", encoding="utf-8") as file:
+-            return file.read()
++        data = Path(path).read_bytes()
++        if data.startswith((b"\xff\xfe", b"\xfe\xff")):
++            return data.decode("utf-16")
++        return data.decode("utf-8-sig", errors="replace")
+ 
+     def write_file(path, content):
+         with open(path, "w", encoding="utf-8") as file:
+@@ -104,15 +107,17 @@ def process_repository(
+ 
+         new_checksum = calculate_checksum([content])
+ 
++        relative_path = Path(file_path).relative_to(config.root)
++        summary_path = Path(config.output) / relative_path.parent / f"{relative_path.name}.json"
+         reindex = should_reindex(
+-            Path(config.root) / Path(file_path).parent,
+-            f"{Path(file_name).stem}.json",
++            summary_path.parent,
++            summary_path.name,
+             new_checksum,
+         )
+         if not reindex:
+             return
+ 
+-        markdown_file_path = Path(config.output) / file_path
++        markdown_file_path = Path(config.output) / relative_path
+         url = github_file_url(
+             config.repository_url, config.root, file_path, config.link_hosted
+         )
+@@ -163,13 +168,8 @@ def process_repository(
+                 checksum=new_checksum,
+             )
+ 
+-            os.makedirs(
+-                markdown_file_path.as_posix().replace(file_name, ""),
+-                exist_ok=True,
+-            )
+-            output_path = get_file_name(
+-                markdown_file_path.as_posix(), ".", ".json"
+-            )
++            summary_path.parent.mkdir(parents=True, exist_ok=True)
++            output_path = summary_path
+             output_content = (
+                 json.dumps(
+                     file_summary, indent=2, default=lambda o: o.__dict__
+@@ -201,7 +201,8 @@ def process_repository(
+ 
+         new_checksum = calculate_checksum(contents)
+ 
+-        reindex = should_reindex(folder_path, "summary.json", new_checksum)
++        summary_dir = Path(config.output) / Path(folder_path).relative_to(config.root)
++        reindex = should_reindex(summary_dir, "summary.json", new_checksum)
+         if not reindex:
+             return
+ 
+@@ -213,19 +214,22 @@ def process_repository(
+         )
+         file_summaries = []
+         for f in contents:
+-            entry_path = Path(folder_path) / f
+-            if entry_path.is_file() and f != "summary.json":
+-                file = read_file(entry_path)
+-                if len(file) > 0:
+-                    file_summaries.append(json.loads(file))
++            entry_path = Path(f)
++            if entry_path.is_file():
++                summary_path = summary_dir / f"{entry_path.name}.json"
++                if summary_path.is_file():
++                    file = read_file(summary_path)
++                    if len(file) > 0:
++                        file_summaries.append(FileSummary(**json.loads(file)))
+         folder_summaries = []
+         for f in contents:
+-            entry_path = Path(folder_path) / f
++            entry_path = Path(f)
+             if entry_path.is_dir():
+-                summary_file_path = Path(entry_path) / "summary.json"
+-                file = read_file(summary_file_path)
+-                if len(file) > 0:
+-                    folder_summaries.append(json.loads(file))
++                summary_file_path = summary_dir / entry_path.name / "summary.json"
++                if summary_file_path.is_file():
++                    file = read_file(summary_file_path)
++                    if len(file) > 0:
++                        folder_summaries.append(FolderSummary(**json.loads(file)))
+         summary_prompt = folder_summary_prompt(
+             folder_path,
+             process_folder_params.project_name,
+@@ -253,7 +257,8 @@ def process_repository(
+             checksum=new_checksum,
+         )
+ 
+-        output_path = Path(folder_path) / "summary.json"
++        summary_dir.mkdir(parents=True, exist_ok=True)
++        output_path = summary_dir / "summary.json"
+         write_file(
+             str(output_path),
+             json.dumps(folder_summary, indent=2, default=lambda o: o.__dict__),
+@@ -264,11 +269,13 @@ def process_repository(
+         f"Processing {files_folders_count['files']} files "
+         + f"and {files_folders_count['folders']} folders..."
+     )
++    file_params = []
++    folder_params = []
+     params = TraverseFileSystemParams(
+         config.root,
+         config.name,
+-        process_file,
+-        process_folder,
++        file_params.append,
++        folder_params.append,
+         config.ignore,
+         config.file_prompt,
+         config.folder_prompt,
+@@ -277,6 +284,14 @@ def process_repository(
+         config.link_hosted,
+     )
+     traverse_file_system(params)
++    folders_by_depth = {}
++    for folder in folder_params:
++        depth = len(Path(folder.folder_path).relative_to(config.root).parts)
++        folders_by_depth.setdefault(depth, []).append(folder)
++    with ThreadPoolExecutor(max_workers=max(1, config.max_concurrent_calls)) as pool:
++        list(pool.map(process_file, file_params))
++        for depth in sorted(folders_by_depth, reverse=True):
++            list(pool.map(process_folder, folders_by_depth[depth]))
+     print("Processing complete.")
+ 
+ 
+@@ -296,7 +311,6 @@ def should_reindex(content_path, name, new_checksum):
+     try:
+         with open(json_path, "r", encoding="utf-8") as file:
+             data = json.load(file)
+-            data = json.loads(data)
+             old_checksum = data["checksum"]
+         return old_checksum != new_checksum
+     except FileNotFoundError:
