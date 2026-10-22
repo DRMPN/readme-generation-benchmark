@@ -1,0 +1,75 @@
+I’ll inspect the repository’s source, configuration, and existing documentation, then write a README grounded only in what the project actually supports.
+The project is a Linux-oriented interactive launcher, not a single standalone scanner: its menu installs and invokes a broad set of third-party tools, many through shell commands and often with `sudo`. I’m documenting the supported launch paths and calling out those operational and authorization risks rather than implying every listed tool works out of the box.
+Created `README.md` with repository-grounded setup instructions, usage notes, tool categories, Docker configuration details, and safety and licensing guidance. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✗ [0mGrep "" failed
+[91m[1mError: [0mInvalid arguments for tool "grep":
+- pattern: Pattern must not be empty
+
+Arguments provided:
+{
+  "pattern": "",
+  "path": ".",
+  "include": "*",
+  "limit": 100
+}
+
+Update the arguments and call the tool again.
+[0m✱ [0mGlob "**/*" [90m43 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead hackingtool.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead core.py 
+[0m→ [0mRead install.sh 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead generate_readme.py 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead update.sh 
+[0m→ [0mRead tools/tool_manager.py 
+[0m→ [0mRead tools/information_gathering_tools.py 
+[0m→ [0mRead tools/other_tools.py 
+[0m→ [0mRead tools/others/mix_tools.py 
+[0m✱ [0mGrep "TITLE\s*=|DESCRIPTION\s*=|PROJECT_URL\s*=|INSTALL_COMMANDS\s*=|RUN_COMMANDS\s*=" [90min tools · 250 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "TITLE\s*=" [90min tools · 157 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tools/anonsurf.py 
+[0m→ [0mRead tools/wireless_attack_tools.py 
+[0m→ [0mRead tools/wordlist_generator.py 
+[0m→ [0mRead tools/sql_tools.py 
+[0m→ [0mRead tools/phising_attack.py 
+[0m→ [0mRead tools/post_exploitation.py 
+[0m→ [0mRead tools/webattack.py 
+[0m→ [0mRead tools/payload_creator.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tools/forensic_tools.py [90m[limit=120][0m
+[0m→ [0mRead tools/reverse_engineering.py 
+[0m→ [0mRead tools/exploit_frameworks.py 
+[0m→ [0mRead tools/ddos.py [90m[limit=155][0m
+[0m→ [0mRead tools/remote_administration.py 
+[0m→ [0mRead tools/steganography.py 
+[0m→ [0mRead tools/others/socialmedia.py 
+[0m→ [0mRead tools/others/android_attack.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tools/others/email_verifier.py [90m[limit=50][0m
+[0m→ [0mRead tools/others/socialmedia_finder.py [90m[limit=110][0m
+[0m→ [0mRead tools/others/hash_crack.py [90m[limit=60][0m
+[0m→ [0mRead tools/xss_attack.py [90m[limit=145][0m
+[0m→ [0mRead tools/others/homograph_attacks.py [90m[limit=40][0m
+[0m→ [0mRead tools/others/payload_injection.py [90m[limit=50][0m
+[0m→ [0mRead tools/others/wifi_jamming.py [90m[limit=50][0m
+[0m→ [0mRead tools/others/web_crawling.py [90m[limit=30][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

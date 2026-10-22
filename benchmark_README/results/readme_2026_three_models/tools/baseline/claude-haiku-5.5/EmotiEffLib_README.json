@@ -1,0 +1,451 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63904,
+    "tree_files": 213,
+    "tracked_files": 213,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2269,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 170,
+        "truncated": false
+      },
+      {
+        "path": "requirements-binder-torch.txt",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "requirements-binder.txt",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "requirements-ci.txt",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "requirements-engagement.txt",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "requirements-torch.txt",
+        "tokens": 12,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 300,
+        "truncated": false
+      },
+      {
+        "path": ".binder/environment.yml",
+        "tokens": 43,
+        "truncated": false
+      },
+      {
+        "path": "tests/requirements.txt",
+        "tokens": 11,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/requirements.txt",
+        "tokens": 196,
+        "truncated": false
+      },
+      {
+        "path": "docs/tutorials/cpp/requirements.txt",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "docs/tutorials/python/requirements.txt",
+        "tokens": 56,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/mobile_apps/demo/build.gradle",
+        "tokens": 139,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/mobile_apps/emotional_dialogue/build.gradle",
+        "tokens": 139,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/mobile_apps/demo/app/build.gradle",
+        "tokens": 453,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/mobile_apps/emotional_dialogue/app/build.gradle",
+        "tokens": 534,
+        "truncated": false
+      },
+      {
+        "path": "docs/README.md",
+        "tokens": 117,
+        "truncated": false
+      },
+      {
+        "path": "emotieffcpplib/README.md",
+        "tokens": 982,
+        "truncated": false
+      },
+      {
+        "path": "emotiefflib/README.md",
+        "tokens": 391,
+        "truncated": false
+      },
+      {
+        "path": "tests/README.md",
+        "tokens": 66,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/README.md",
+        "tokens": 572,
+        "truncated": false
+      },
+      {
+        "path": "docs/tutorials/README.md",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "models/affectnet_emotions/README.md",
+        "tokens": 79,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/emotions_llm/README.md",
+        "tokens": 120,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/personalized_models/README.md",
+        "tokens": 179,
+        "truncated": false
+      },
+      {
+        "path": "docs/tutorials/cpp/README.md",
+        "tokens": 662,
+        "truncated": false
+      },
+      {
+        "path": "docs/tutorials/python/README.md",
+        "tokens": 263,
+        "truncated": false
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "tokens": 253,
+        "truncated": false
+      },
+      {
+        "path": ".binder/apt.txt",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "docs/DoxygenLayout-cpp.xml",
+        "tokens": 2527,
+        "truncated": false
+      },
+      {
+        "path": "docs/DoxygenLayout-python.xml",
+        "tokens": 2526,
+        "truncated": false
+      },
+      {
+        "path": "docs/DoxygenLayout.xml",
+        "tokens": 2517,
+        "truncated": false
+      },
+      {
+        "path": "emotieffcpplib/CMakeLists.txt",
+        "tokens": 735,
+        "truncated": false
+      },
+      {
+        "path": "emotiefflib/__init__.py",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "emotiefflib/engagement_classification_model.py",
+        "tokens": 620,
+        "truncated": false
+      },
+      {
+        "path": "emotiefflib/facial_analysis.py",
+        "tokens": 3704,
+        "truncated": false
+      },
+      {
+        "path": "emotiefflib/utils.py",
+        "tokens": 501,
+        "truncated": false
+      },
+      {
+        "path": "models/prepare_models_for_emotieffcpplib.py",
+        "tokens": 2005,
+        "truncated": false
+      },
+      {
+        "path": "tests/check_installed_libs.sh",
+        "tokens": 1081,
+        "truncated": false
+      },
+      {
+        "path": "tests/download_test_data.sh",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_facial_analysis.py",
+        "tokens": 2972,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_module_loading.py",
+        "tokens": 260,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/AFEW_train.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "training_and_examples/VGAF_train.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "training_and_examples/convert_pt_to_onnx.py",
+        "tokens": 396,
+        "truncated": false
+      },
+      {
+        "path": "training_and_examples/display_emotions.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "training_and_examples/facial_analysis.py",
+        "tokens": 2138,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".editorconfig",
+      ".gitignore",
+      ".gitmodules",
+      ".binder/postBuild",
+      "docs/Doxyfile",
+      "docs/Doxyfile-cpp",
+      "docs/Doxyfile-python",
+      "emotieffcpplib/.clang-format",
+      "emotieffcpplib/.gitignore",
+      "training_and_examples/train_faces_torch.ipynb",
+      "training_and_examples/train_ramas.ipynb",
+      "training_and_examples/video_summarizer.ipynb",
+      ".github/workflows/binder.yml",
+      ".github/workflows/generate_documentation.yml",
+      ".github/workflows/lint.yml",
+      ".github/workflows/tests.yml",
+      "emotieffcpplib/src/facial_analysis.cpp",
+      "emotieffcpplib/tests/CMakeLists.txt",
+      "emotieffcpplib/tests/generate_exp_preproc_results.py",
+      "emotieffcpplib/tests/test_utils.cpp",
+      "emotieffcpplib/tests/tests_facial_analisys.cpp",
+      "emotieffcpplib/tests/tests_internal_methods.cpp",
+      "emotiefflib/backbones/mobilefacenet.py",
+      "models/affectnet_emotions/enet_b0_8_best_afew.pt",
+      "models/affectnet_emotions/enet_b0_8_best_vgaf.pt",
+      "models/affectnet_emotions/enet_b0_8_va_mtl.pt",
+      "models/affectnet_emotions/enet_b2_7.pt",
+      "models/affectnet_emotions/enet_b2_8.pt",
+      "models/affectnet_emotions/mbf_va_mtl.pt",
+      "models/affectnet_emotions/mobilenet_7.h5",
+      "models/affectnet_emotions/mobilevit_va_mtl.pt",
+      "models/engagement_classification/__init__.py",
+      "models/engagement_classification/engagement_single_attention.h5",
+      "models/engagement_classification/engagement_single_attention_converter.py",
+      "models/pretrained_faces/age_gender_tf2_224_deep-03-0.13-0.97.h5",
+      "models/pretrained_faces/mtcnn.pb",
+      "models/pretrained_faces/state_vggface2_enet0_new.pt",
+      "models/pretrained_faces/state_vggface2_enet2.pt",
+      "models/pretrained_faces/state_vggface2_rexnet_150.pt",
+      "tests/test_images/20180720_174416.jpg",
+      "training_and_examples/ABAW/abaw3_train.ipynb",
+      "training_and_examples/ABAW/abaw4_lsd_train.ipynb",
+      "training_and_examples/ABAW/abaw4_mtl_train.ipynb",
+      "training_and_examples/ABAW/abaw5_expr_va_au_train.ipynb",
+      "training_and_examples/affectnet/evaluate_affectnet_march2021_pytorch.ipynb",
+      "training_and_examples/affectnet/robust_optimization.py",
+      "training_and_examples/affectnet/train_affectnet_march2021_pytorch.ipynb",
+      "training_and_examples/affectnet/train_emotions-pytorch-afew-vgaf.ipynb",
+      "training_and_examples/affectnet/train_emotions-pytorch.ipynb",
+      "training_and_examples/affectnet/train_emotions.ipynb",
+      "training_and_examples/emotions_llm/emotions_experiments.ipynb",
+      "training_and_examples/emotions_llm/recognize_emotions_video.py",
+      "training_and_examples/personalized_models/01 - Features-extractor.ipynb",
+      "training_and_examples/personalized_models/02 - Engagement user-independent model training.ipynb",
+      "training_and_examples/personalized_models/03 - Custom dataset features extractor.ipynb",
+      "training_and_examples/personalized_models/04 - Engagement user-adaptation.ipynb",
+      "docs/tutorials/cpp/One image emotion recognition.ipynb",
+      "docs/tutorials/cpp/Predict emotions on video.ipynb",
+      "docs/tutorials/cpp/Predict engagement and emotions on video.ipynb",
+      "docs/tutorials/python/.gitignore",
+      "docs/tutorials/python/One image emotion recognition.ipynb",
+      "docs/tutorials/python/Predict emotions on video.ipynb",
+      "docs/tutorials/python/Predict engagement and emotions on video.ipynb",
+      "emotieffcpplib/include/emotiefflib/facial_analysis.h",
+      "emotieffcpplib/tests/include/test_utils.h",
+      "models/affectnet_emotions/onnx/enet_b0_8_best_afew.onnx",
+      "models/affectnet_emotions/onnx/enet_b0_8_best_vgaf.onnx",
+      "models/affectnet_emotions/onnx/enet_b0_8_va_mtl.onnx",
+      "models/affectnet_emotions/onnx/enet_b2_7.onnx",
+      "models/affectnet_emotions/onnx/enet_b2_8.onnx",
+      "models/affectnet_emotions/onnx/mbf_va_mtl.onnx",
+      "models/affectnet_emotions/onnx/mobilevit_va_mtl.onnx",
+      "training_and_examples/ABAW/ABAW6/abaw6_affwild2.ipynb",
+      "training_and_examples/ABAW/ABAW6/cexpr.ipynb",
+      "training_and_examples/ABAW/ABAW6/eri.ipynb",
+      "training_and_examples/ABAW/ABAW7/cexpr.ipynb",
+      "training_and_examples/ABAW/ABAW7/mtl.ipynb",
+      "training_and_examples/ABAW/ABAW8/abaw8_expr.ipynb",
+      "training_and_examples/ABAW/ABAW8/bah.ipynb",
+      "training_and_examples/ABAW/ABAW8/emi.ipynb",
+      "training_and_examples/mobile_apps/demo/gradle.properties",
+      "training_and_examples/mobile_apps/demo/to_pytorchlite.py",
+      "training_and_examples/mobile_apps/demo/to_tflite.py",
+      "training_and_examples/mobile_apps/emotional_dialogue/gradle.properties",
+      "training_and_examples/mobile_apps/emotional_dialogue/settings.gradle",
+      "emotieffcpplib/src/backends/onnx/facial_analysis.cpp",
+      "emotieffcpplib/src/backends/torch/facial_analysis.cpp",
+      "training_and_examples/mobile_apps/emotional_dialogue/web_server/server.py",
+      "emotieffcpplib/include/emotiefflib/backends/onnx/facial_analysis.h",
+      "emotieffcpplib/include/emotiefflib/backends/torch/facial_analysis.h",
+      "training_and_examples/mobile_apps/demo/gradle/wrapper/gradle-wrapper.properties",
+      "training_and_examples/mobile_apps/emotional_dialogue/gradle/wrapper/gradle-wrapper.properties",
+      "training_and_examples/mobile_apps/demo/app/src/main/AndroidManifest.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/AndroidManifest.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/assets/affectnet_labels.txt",
+      "training_and_examples/mobile_apps/demo/app/src/main/assets/age_gender_ethnicity_224_deep-03-0.13-0.97-0.88.pb",
+      "training_and_examples/mobile_apps/demo/app/src/main/assets/onet.tflite",
+      "training_and_examples/mobile_apps/demo/app/src/main/assets/pnet.tflite",
+      "training_and_examples/mobile_apps/demo/app/src/main/assets/rnet.tflite",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/affectnet_labels.txt",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/enet_b0_8_va_mtl.ptl",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/mtcnn_model.pb",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/onet.tflite",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/pnet.tflite",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/assets/rnet.tflite",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/drawable/ic_launcher_background.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/layout/activity_main.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/layout/fragment_camera2_basic.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/menu/toolbar_menu.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/values/colors.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/values/strings.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/res/values/styles.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/drawable/ic_launcher_background.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/layout/activity_main.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/layout/fragment_camera2_basic.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/menu/toolbar_menu.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/values/colors.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/values/strings.xml",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/res/values/styles.xml",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/AgeGenderEthnicityTfLiteClassifier.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/ClassifierResult.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/EmotionData.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/EmotionPyTorchClassifier.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/EmotionTfLiteClassifier.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/FaceData.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/MainActivity.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/TfLiteClassifier.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/EmotionPyTorchClassifier.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/MainActivity.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/ServerProcessor.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/mtcnn/Align.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/mtcnn/Box.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/mtcnn/MTCNN.java",
+      "training_and_examples/mobile_apps/demo/app/src/main/java/com/asav/facialprocessing/mtcnn/Utils.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/mtcnn/Box.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/mtcnn/MTCNN.java",
+      "training_and_examples/mobile_apps/emotional_dialogue/app/src/main/java/com/asav/facialprocessing/mtcnn/Utils.java"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 100415,
+    "completion_tokens": 6652,
+    "total_tokens": 107067,
+    "cost": 0.0668375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0668375,
+      "upstream_inference_prompt_cost": 0.0502075,
+      "upstream_inference_completions_cost": 0.01663
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1870,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606889-sSSMyvOIpgHQcq9ZlCNC"
+}

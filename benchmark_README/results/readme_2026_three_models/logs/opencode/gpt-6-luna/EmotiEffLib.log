@@ -1,0 +1,40 @@
+Created `README.md` in the repository root with Python and C++ installation guidance, usage examples, model and engagement notes, test instructions, and links to tutorials and documentation. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m199 matches[0m
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "^" [90min . · 27 matches[0m
+[0m✱ [0mGrep "^" [90min . · 38 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead emotiefflib/engagement_classification_model.py 
+[0m→ [0mRead emotiefflib/README.md 
+[0m→ [0mRead emotiefflib/facial_analysis.py 
+[0m→ [0mRead requirements-torch.txt 
+[0m→ [0mRead requirements-engagement.txt 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead emotiefflib/utils.py 
+[0m→ [0mRead emotieffcpplib/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead emotiefflib/__init__.py 
+[0m→ [0mRead docs/tutorials/python/README.md 
+[0m→ [0mRead docs/tutorials/cpp/README.md 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead LICENSE [90m[limit=18][0m
+[0m→ [0mRead tests/test_facial_analysis.py 
+[0m→ [0mRead emotieffcpplib/CMakeLists.txt 
+[0m→ [0mRead emotieffcpplib/include/emotiefflib/facial_analysis.h 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead models/prepare_models_for_emotieffcpplib.py [90m[limit=180][0m
+[0m→ [0mRead tests/README.md 
+[0m→ [0mRead models/affectnet_emotions/README.md 
+[0m→ [0mRead requirements-ci.txt 
+[0m→ [0mRead requirements-binder.txt 
+[0m→ [0mRead requirements-binder-torch.txt 
+[0m→ [0mRead docs/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

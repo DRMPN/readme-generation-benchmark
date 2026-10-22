@@ -1,0 +1,264 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ci.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "demo_gr.py",
+    "type": "file"
+  },
+  {
+    "name": "demo_st.py",
+    "type": "file"
+  },
+  {
+    "name": "demo_st_fill.py",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "fill.md",
+        "type": "file"
+      },
+      {
+        "name": "image-editing.md",
+        "type": "file"
+      },
+      {
+        "name": "image-variation.md",
+        "type": "file"
+      },
+      {
+        "name": "structural-conditioning.md",
+        "type": "file"
+      },
+      {
+        "name": "text-to-image.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "model_cards",
+    "type": "dir",
+    "children": [
+      {
+        "name": "FLUX.1-dev.md",
+        "type": "file"
+      },
+      {
+        "name": "FLUX.1-kontext-dev.md",
+        "type": "file"
+      },
+      {
+        "name": "FLUX.1-schnell.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "model_licenses",
+    "type": "dir",
+    "children": [
+      {
+        "name": "LICENSE-FLUX1-dev",
+        "type": "file"
+      },
+      {
+        "name": "LICENSE-FLUX1-schnell",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "flux",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__main__.py",
+            "type": "file"
+          },
+          {
+            "name": "cli.py",
+            "type": "file"
+          },
+          {
+            "name": "cli_control.py",
+            "type": "file"
+          },
+          {
+            "name": "cli_fill.py",
+            "type": "file"
+          },
+          {
+            "name": "cli_kontext.py",
+            "type": "file"
+          },
+          {
+            "name": "cli_redux.py",
+            "type": "file"
+          },
+          {
+            "name": "content_filters.py",
+            "type": "file"
+          },
+          {
+            "name": "math.py",
+            "type": "file"
+          },
+          {
+            "name": "model.py",
+            "type": "file"
+          },
+          {
+            "name": "modules",
+            "type": "dir",
+            "children": [
+              {
+                "name": "autoencoder.py",
+                "type": "file"
+              },
+              {
+                "name": "conditioner.py",
+                "type": "file"
+              },
+              {
+                "name": "image_embedders.py",
+                "type": "file"
+              },
+              {
+                "name": "layers.py",
+                "type": "file"
+              },
+              {
+                "name": "lora.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sampling.py",
+            "type": "file"
+          },
+          {
+            "name": "trt",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "engine",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "base_engine.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "clip_engine.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "t5_engine.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "transformer_engine.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vae_engine.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "trt_config",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "base_trt_config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "clip_trt_config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "t5_trt_config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "transformer_trt_config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vae_trt_config.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "trt_manager.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "util.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

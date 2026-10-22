@@ -1,0 +1,623 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63872,
+    "tree_files": 305,
+    "tracked_files": 305,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2278,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 1782,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/setup.py",
+        "tokens": 412,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/stats/__main__.py",
+        "tokens": 879,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/stats/cli.py",
+        "tokens": 2192,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 1533,
+        "truncated": false
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "tokens": 117,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 201,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 122,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/config/README.md",
+        "tokens": 77,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/about_us.rst",
+        "tokens": 71,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/community.rst",
+        "tokens": 237,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/development.rst",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/examples.rst",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/get_started.rst",
+        "tokens": 793,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/index.rst",
+        "tokens": 717,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/reference.rst",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/tutorials.rst",
+        "tokens": 278,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides.rst",
+        "tokens": 486,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/utils/docker/README.md",
+        "tokens": 61,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/basic_conceptions.rst",
+        "tokens": 3653,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/context_guide.rst",
+        "tokens": 2068,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/llm_integration.rst",
+        "tokens": 1690,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/optimization_guide.rst",
+        "tokens": 1196,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/pipeline_import.rst",
+        "tokens": 1269,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/slot_extraction.rst",
+        "tokens": 1508,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/user_guides/superset_guide.rst",
+        "tokens": 1949,
+        "truncated": false
+      },
+      {
+        "path": "compose.yml",
+        "tokens": 1270,
+        "truncated": false
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "tokens": 191,
+        "truncated": false
+      },
+      {
+        "path": ".github/process_github_events.py",
+        "tokens": 571,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/__init__.py",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/__rebuild_pydantic_models__.py",
+        "tokens": 174,
+        "truncated": false
+      },
+      {
+        "path": "scripts/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "scripts/clean.py",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": "scripts/codestyle.py",
+        "tokens": 409,
+        "truncated": false
+      },
+      {
+        "path": "scripts/doc.py",
+        "tokens": 699,
+        "truncated": false
+      },
+      {
+        "path": "scripts/misc.py",
+        "tokens": 501,
+        "truncated": false
+      },
+      {
+        "path": "scripts/patch_sphinx.py",
+        "tokens": 363,
+        "truncated": false
+      },
+      {
+        "path": "scripts/switcher_gen.py",
+        "tokens": 923,
+        "truncated": false
+      },
+      {
+        "path": "scripts/test.py",
+        "tokens": 529,
+        "truncated": false
+      },
+      {
+        "path": "scripts/utils.py",
+        "tokens": 171,
+        "truncated": false
+      },
+      {
+        "path": "tests/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "tests/conftest.py",
+        "tokens": 656,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_utils.py",
+        "tokens": 83,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/build_and_publish_docs.yml",
+        "tokens": 463,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/build_and_upload_release.yml",
+        "tokens": 295,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/codestyle.yml",
+        "tokens": 215,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/event_handler.yml",
+        "tokens": 144,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/generate_version_switcher.yml",
+        "tokens": 295,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/test_coverage.yml",
+        "tokens": 264,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/test_full.yml",
+        "tokens": 473,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/update_dashboard.yml",
+        "tokens": 274,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/conditions/__init__.py",
+        "tokens": 74,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/conditions/llm.py",
+        "tokens": 508,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/conditions/service.py",
+        "tokens": 225,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/conditions/slots.py",
+        "tokens": 258,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/conditions/standard.py",
+        "tokens": 1600,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/__init__.py",
+        "tokens": 122,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/database.py",
+        "tokens": 3131,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/file.py",
+        "tokens": 1796,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/memory.py",
+        "tokens": 810,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/mongo.py",
+        "tokens": 1649,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/protocol.py",
+        "tokens": 299,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/protocols.json",
+        "tokens": 486,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/redis.py",
+        "tokens": 1587,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/sql.py",
+        "tokens": 2812,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/context_storages/ydb.py",
+        "tokens": 3435,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/core/__init__.py",
+        "tokens": 215,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/core/context.py",
+        "tokens": 3016,
+        "truncated": false
+      },
+      {
+        "path": "chatsky/core/ctx_dict.py",
+        "tokens": 2994,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".dockerignore",
+      ".env_file",
+      ".gitattributes",
+      ".gitignore",
+      "poetry.lock",
+      "chatsky/core/ctx_utils.py",
+      "chatsky/core/message.py",
+      "chatsky/core/node_label.py",
+      "chatsky/core/pipeline.py",
+      "chatsky/core/script.py",
+      "chatsky/core/script_function.py",
+      "chatsky/core/script_parsing.py",
+      "chatsky/core/transition.py",
+      "chatsky/core/utils.py",
+      "chatsky/destinations/__init__.py",
+      "chatsky/destinations/standard.py",
+      "chatsky/llm/__init__.py",
+      "chatsky/llm/_langchain_imports.py",
+      "chatsky/llm/filters.py",
+      "chatsky/llm/langchain_context.py",
+      "chatsky/llm/llm_api.py",
+      "chatsky/llm/methods.py",
+      "chatsky/llm/prompt.py",
+      "chatsky/messengers/__init__.py",
+      "chatsky/messengers/console.py",
+      "chatsky/processing/__init__.py",
+      "chatsky/processing/slots.py",
+      "chatsky/processing/standard.py",
+      "chatsky/responses/__init__.py",
+      "chatsky/responses/llm.py",
+      "chatsky/responses/slots.py",
+      "chatsky/responses/standard.py",
+      "chatsky/slots/__init__.py",
+      "chatsky/slots/llm.py",
+      "chatsky/slots/slots.py",
+      "chatsky/stats/__init__.py",
+      "chatsky/stats/default_extractors.py",
+      "chatsky/stats/instrumentor.py",
+      "chatsky/stats/utils.py",
+      "chatsky/utils/__init__.py",
+      "chatsky/utils/decorations.py",
+      "chatsky/utils/logging.py",
+      "docs/source/__init__.py",
+      "docs/source/conf.py",
+      "tests/context_storages/__init__.py",
+      "tests/context_storages/test_dbs.py",
+      "tests/core/__init__.py",
+      "tests/core/conftest.py",
+      "tests/core/test_actor.py",
+      "tests/core/test_conditions.py",
+      "tests/core/test_context.py",
+      "tests/core/test_context_dict.py",
+      "tests/core/test_destinations.py",
+      "tests/core/test_message.py",
+      "tests/core/test_node_label.py",
+      "tests/core/test_processing.py",
+      "tests/core/test_responses.py",
+      "tests/core/test_script.py",
+      "tests/core/test_script_function.py",
+      "tests/core/test_transition.py",
+      "tests/llm/__init__.py",
+      "tests/llm/test_llm.py",
+      "tests/messengers/__init__.py",
+      "tests/pipeline/__init__.py",
+      "tests/pipeline/conftest.py",
+      "tests/pipeline/test_messenger_interface.py",
+      "tests/pipeline/test_service.py",
+      "tests/pipeline/test_update_ctx_misc.py",
+      "tests/pipeline/test_validation.py",
+      "tests/slots/__init__.py",
+      "tests/slots/conftest.py",
+      "tests/slots/test_slot_functions.py",
+      "tests/slots/test_slot_manager.py",
+      "tests/slots/test_slot_partial_extraction.py",
+      "tests/slots/test_slot_types.py",
+      "tests/stats/__init__.py",
+      "tests/stats/conftest.py",
+      "tests/stats/test_defaults.py",
+      "tests/stats/test_instrumentation.py",
+      "tests/stats/test_main.py",
+      "tests/stats/test_tutorials.py",
+      "tests/tutorials/__init__.py",
+      "tests/tutorials/test_format.py",
+      "tests/tutorials/test_tutorials.py",
+      "tests/tutorials/test_utils.py",
+      "tests/utils/__init__.py",
+      "tests/utils/test_benchmark.py",
+      "tests/utils/test_serialization.py",
+      "tutorials/context_storages/1_basics.py",
+      "tutorials/context_storages/2_postgresql.py",
+      "tutorials/context_storages/3_mongodb.py",
+      "tutorials/context_storages/4_redis.py",
+      "tutorials/context_storages/5_mysql.py",
+      "tutorials/context_storages/6_sqlite.py",
+      "tutorials/context_storages/7_yandex_database.py",
+      "tutorials/context_storages/8_partial_updates.py",
+      "tutorials/context_storages/9_db_benchmarking.py",
+      "tutorials/llm/1_basics.py",
+      "tutorials/llm/2_prompt_usage.py",
+      "tutorials/llm/3_filtering_history.py",
+      "tutorials/llm/4_structured_output.py",
+      "tutorials/service/1_basics.py",
+      "tutorials/service/2_advanced.py",
+      "tutorials/service/3_groups.py",
+      "tutorials/service/4_conditions_and_paths.py",
+      "tutorials/service/5_extra_handlers.py",
+      "tutorials/slots/1_basic_example.py",
+      "tutorials/slots/2_partial_extraction.py",
+      "tutorials/stats/1_extractor_functions.py",
+      "tutorials/stats/2_pipeline_integration.py",
+      "tutorials/stats/example_config.yaml",
+      "utils/db_benchmark/benchmark_dbs.py",
+      "utils/db_benchmark/benchmark_schema.json",
+      "utils/db_benchmark/benchmark_streamlit.py",
+      "utils/pipeline_yaml_import_example/pipeline.py",
+      "utils/pipeline_yaml_import_example/pipeline.yaml",
+      "utils/stats/sample_data_provider.py",
+      "utils/test_data_generators/__init__.py",
+      "utils/test_data_generators/telegram_tutorial_data.py",
+      "chatsky/config/superset_dashboard/metadata.yaml",
+      "chatsky/core/service/__init__.py",
+      "chatsky/core/service/actor.py",
+      "chatsky/core/service/component.py",
+      "chatsky/core/service/extra.py",
+      "chatsky/core/service/group.py",
+      "chatsky/core/service/service.py",
+      "chatsky/core/service/types.py",
+      "chatsky/messengers/common/__init__.py",
+      "chatsky/messengers/common/interface.py",
+      "chatsky/messengers/common/types.py",
+      "chatsky/messengers/telegram/__init__.py",
+      "chatsky/messengers/telegram/abstract.py",
+      "chatsky/messengers/telegram/interface.py",
+      "chatsky/utils/db_benchmark/__init__.py",
+      "chatsky/utils/db_benchmark/basic_config.py",
+      "chatsky/utils/db_benchmark/benchmark.py",
+      "chatsky/utils/db_benchmark/report.py",
+      "chatsky/utils/devel/__init__.py",
+      "chatsky/utils/devel/async_helpers.py",
+      "chatsky/utils/devel/extra_field_helpers.py",
+      "chatsky/utils/devel/json_serialization.py",
+      "chatsky/utils/docker/dockerfile_stats",
+      "chatsky/utils/docker/entrypoint_stats.sh",
+      "chatsky/utils/docker/superset_config_docker.py",
+      "chatsky/utils/otel/otelcol-config-extras.yml",
+      "chatsky/utils/otel/otelcol-config.yml",
+      "chatsky/utils/testing/__init__.py",
+      "chatsky/utils/testing/cleanup_db.py",
+      "chatsky/utils/testing/common.py",
+      "chatsky/utils/testing/toy_script.py",
+      "docs/source/_templates/example-links.html",
+      "docs/source/_templates/source-links.html",
+      "docs/source/utils/__init__.py",
+      "docs/source/utils/custom_directives.py",
+      "docs/source/utils/generate_tutorials.py",
+      "docs/source/utils/link_misc_files.py",
+      "docs/source/utils/notebook.py",
+      "docs/source/utils/regenerate_apiref.py",
+      "tests/core/script_parsing/__init__.py",
+      "tests/core/script_parsing/pipeline.json",
+      "tests/core/script_parsing/pipeline.yaml",
+      "tests/core/script_parsing/test_script_parsing.py",
+      "tests/core/script_parsing/wrong_type.json",
+      "tests/messengers/telegram/__init__.py",
+      "tests/messengers/telegram/test_happy_paths.json",
+      "tests/messengers/telegram/test_tutorials.py",
+      "tests/messengers/telegram/utils.py",
+      "tutorials/messengers/telegram/1_basic.py",
+      "tutorials/messengers/telegram/2_attachments.py",
+      "tutorials/messengers/telegram/3_advanced.py",
+      "tutorials/messengers/web_api_interface/1_fastapi.py",
+      "tutorials/messengers/web_api_interface/2_websocket_chat.py",
+      "tutorials/messengers/web_api_interface/3_load_testing_with_locust.py",
+      "tutorials/messengers/web_api_interface/4_streamlit_chat.py",
+      "tutorials/script/core/1_basics.py",
+      "tutorials/script/core/2_conditions.py",
+      "tutorials/script/core/3_responses.py",
+      "tutorials/script/core/4_transitions.py",
+      "tutorials/script/core/5_global_local.py",
+      "tutorials/script/core/6_context_serialization.py",
+      "tutorials/script/core/7_pre_response_processing.py",
+      "tutorials/script/core/8_misc.py",
+      "tutorials/script/core/9_pre_transition_processing.py",
+      "tutorials/script/responses/1_media.py",
+      "tutorials/script/responses/2_multi_message.py",
+      "utils/pipeline_yaml_import_example/custom_dir/__init__.py",
+      "utils/pipeline_yaml_import_example/custom_dir/rsp.py",
+      "chatsky/config/superset_dashboard/charts/Current_topic_slot_bar_chart_4.yaml",
+      "chatsky/config/superset_dashboard/charts/Current_topic_time_series_bar_chart_2.yaml",
+      "chatsky/config/superset_dashboard/charts/Flow_visit_ratio_monitor_13.yaml",
+      "chatsky/config/superset_dashboard/charts/Node_Visits_7.yaml",
+      "chatsky/config/superset_dashboard/charts/Node_counts_3.yaml",
+      "chatsky/config/superset_dashboard/charts/Node_visit_ratio_monitor_8.yaml",
+      "chatsky/config/superset_dashboard/charts/Node_visits_ratio_6.yaml",
+      "chatsky/config/superset_dashboard/charts/Node_visits_sunburst_5.yaml",
+      "chatsky/config/superset_dashboard/charts/Rating_slot_line_chart_1.yaml",
+      "chatsky/config/superset_dashboard/charts/Requests_17.yaml",
+      "chatsky/config/superset_dashboard/charts/Responses_16.yaml",
+      "chatsky/config/superset_dashboard/charts/Service_load_users_9.yaml",
+      "chatsky/config/superset_dashboard/charts/Table_14.yaml",
+      "chatsky/config/superset_dashboard/charts/Terminal_labels_15.yaml",
+      "chatsky/config/superset_dashboard/charts/Transition_counts_12.yaml",
+      "chatsky/config/superset_dashboard/charts/Transition_layout_10.yaml",
+      "chatsky/config/superset_dashboard/charts/Transition_ratio_chord_11.yaml",
+      "chatsky/config/superset_dashboard/dashboards/chatsky_statistics_dashboard_1.yaml",
+      "chatsky/config/superset_dashboard/databases/chatsky_database.yaml",
+      "docs/source/_static/css/custom.css",
+      "docs/source/_static/images/Chatsky-full-dark.svg",
+      "docs/source/_static/images/Chatsky-full-light.svg",
+      "docs/source/_static/images/Chatsky-min-dark.svg",
+      "docs/source/_static/images/Chatsky-min-light.svg",
+      "docs/source/_static/images/additional_stats.png",
+      "docs/source/_static/images/annotations.png",
+      "docs/source/_static/images/benchmark_compare.png",
+      "docs/source/_static/images/benchmark_mass_compare.png",
+      "docs/source/_static/images/benchmark_sets.png",
+      "docs/source/_static/images/benchmark_view.png",
+      "docs/source/_static/images/databases.png",
+      "docs/source/_static/images/general_stats.png",
+      "docs/source/_static/images/logo-colab.svg",
+      "docs/source/_static/images/logo-deeppavlov.svg",
+      "docs/source/_static/images/logo-download.svg",
+      "docs/source/_static/images/logo-github.svg",
+      "docs/source/_static/images/overview.png",
+      "docs/source/_static/images/service_stats.png",
+      "docs/source/drawio_src/core/user_actor.drawio",
+      "tests/core/script_parsing/custom/__init__.py",
+      "tests/core/script_parsing/custom_dir/__init__.py",
+      "tests/core/script_parsing/custom_dir/module.py",
+      "chatsky/config/superset_dashboard/datasets/chatsky_database/chatsky_final_nodes.yaml",
+      "chatsky/config/superset_dashboard/datasets/chatsky_database/chatsky_node_stats.yaml",
+      "chatsky/config/superset_dashboard/datasets/chatsky_database/chatsky_stats.yaml",
+      "tests/core/script_parsing/custom/submodule/__init__.py",
+      "tests/core/script_parsing/custom/submodule/submodule/__init__.py",
+      "tests/core/script_parsing/custom/submodule/submodule/file.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64167,
+    "completion_tokens": 2352,
+    "total_tokens": 66519,
+    "cost": 0.0091968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 64164,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0091968,
+      "upstream_inference_prompt_cost": 0.0080208,
+      "upstream_inference_completions_cost": 0.001176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606869-5dV01Kkk4pNdZNkS4L0w"
+}

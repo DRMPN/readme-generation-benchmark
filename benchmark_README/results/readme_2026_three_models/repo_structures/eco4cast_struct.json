@@ -1,0 +1,1718 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "dist",
+    "type": "dir",
+    "children": [
+      {
+        "name": "eco4cast-0.0.8-py3-none-any.whl",
+        "type": "file"
+      },
+      {
+        "name": "eco4cast-0.0.8.tar.gz",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "eco4cast",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "master_machine",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "co2_model.py",
+            "type": "file"
+          },
+          {
+            "name": "compute",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "client_library",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ingredients",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "disks",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "attach_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "autodelete_change.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk_managed_key.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_empty_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_image.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_snapshot.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_kms_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "disk_from_snapshot.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "empty_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "from_image.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "local_ssd.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resize_disk.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "firewall",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "patch.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "windows_kms.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instance-templates",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_instance.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instances",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "bulk_insert.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "change_machine_type.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_instance.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_instance_from_template.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_instance_from_template_with_overrides.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_start_instance",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create_from_custom_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_public_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_snapshot.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_windows_instance.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_additional_disk.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_existing_disks.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_local_ssd.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_snapshotted_data_disk.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "custom_hostname",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "custom_machine_types",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create_extra_mem_no_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_shared_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_without_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "helper_class.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "update_memory.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete_protection",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "set.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get_serial_port.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list_all.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "preemptible",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "preemption_history.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "reset.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resume.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "spot",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "start.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "start_encrypted.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "stop.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "suspend.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "operations",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "handle_extended_operation.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list_zone_operations.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "wait_for_operation.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "routes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "snapshots",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "usage_report",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "disable.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get_bucket.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "set_bucket.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "noxfile_config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "recipes",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "disks",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "attach_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "autodelete_change.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk_managed_key.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_empty_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_image.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_snapshot.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_kms_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resize_disk.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "firewall",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "main.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "patch.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "windows_kms.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instance_templates",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_instance.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instances",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "bulk_insert.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "change_machine_type.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_start_instance",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_custom_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_public_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_snapshot.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_windows_instance.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_additional_disk.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_existing_disks.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_local_ssd.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_snapshotted_data_disk.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "custom_hostname",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "custom_machine_types",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_shared_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_without_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "extra_mem_no_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "helper_class.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "update_memory.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete_protection",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "set.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "from_instance_template",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_template.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_template_with_overrides.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list_all.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "preemptible",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_preemptible.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "is_preemptible.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "preemption_history.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "reset.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resume.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "spot",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "is_spot_vm.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "start.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "start_encrypted.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "stop.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "suspend.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "operations",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "operation_check.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "wait_for_extended_operation.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "routes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_kms_route.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "snapshots",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete_by_filter.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "usage_report",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "usage_reports.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "requirements-test.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "requirements.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "sgs.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "sgs_test_fixtures",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "ingredients",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "ingredient1.pytest",
+                            "type": "file"
+                          },
+                          {
+                            "name": "ingredient2.pytest",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "output",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "experimental_recipe.pytest",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "recipes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "experimental_recipe.pytest",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "snippets",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "README.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "disks",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "attach_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "autodelete_change.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "clone_encrypted_disk_managed_key.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_empty_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_image.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_snapshot.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_kms_encrypted_disk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_create_from_source.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "regional_delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resize_disk.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "firewall",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "main.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "patch.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "windows_kms.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instance_templates",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_from_instance.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "instances",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "bulk_insert.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "change_machine_type.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_start_instance",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_custom_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_public_image.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_snapshot.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_windows_instance.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_additional_disk.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_existing_disks.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_local_ssd.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_snapshotted_data_disk.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "create_with_subnet.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "custom_hostname",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "custom_machine_types",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_shared_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_with_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_without_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "extra_mem_no_helper.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "helper_class.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "update_memory.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete_protection",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "get.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "set.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "from_instance_template",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_template.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_from_template_with_overrides.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list_all.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "preemptible",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create_preemptible.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "is_preemptible.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "preemption_history.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "reset.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resume.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "spot",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "__init__.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "create.py",
+                                "type": "file"
+                              },
+                              {
+                                "name": "is_spot_vm.py",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "start.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "start_encrypted.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "stop.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "suspend.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "operations",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "operation_check.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "wait_for_extended_operation.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "routes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create_kms_route.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "snapshots",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "create.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "delete_by_filter.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "get.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "list.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tests",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_bulk.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_create_vm.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_custom_hostnames.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_custom_types.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_default_values.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_delete_protection.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_disks.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_firewall.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_images.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_instance_from_template.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_instance_start_stop.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_instance_suspend_resume.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_pagination.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_preemptible.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_request_id.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_route.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_snapshots.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_spot_vms.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "test_templates.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "usage_report",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "usage_reports.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "test_sgs.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "data_files",
+            "type": "dir",
+            "children": [
+              {
+                "name": "co2_model.ckpt",
+                "type": "file"
+              },
+              {
+                "name": "country_points.pickle",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "electricitymaps_api.py",
+            "type": "file"
+          },
+          {
+            "name": "google_cloud_vm_moving.py",
+            "type": "file"
+          },
+          {
+            "name": "interval_predictor.py",
+            "type": "file"
+          },
+          {
+            "name": "master_machine_controller.py",
+            "type": "file"
+          },
+          {
+            "name": "tcn_pytorch.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          },
+          {
+            "name": "weather_data_utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "virtual_machine",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "smart_scheduler_concept.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ImageNet_google_cloud",
+        "type": "dir",
+        "children": [
+          {
+            "name": "master_machine_main.py",
+            "type": "file"
+          },
+          {
+            "name": "vm_main.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "MNIST_google_cloud",
+        "type": "dir",
+        "children": [
+          {
+            "name": "master_machine_main.py",
+            "type": "file"
+          },
+          {
+            "name": "vm_main.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "eco4cast_demo",
+        "type": "dir",
+        "children": [
+          {
+            "name": "quick_start_guide.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "vm_main.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "eco4cast_local_demo",
+        "type": "dir",
+        "children": [
+          {
+            "name": "local_quick_start_guide.ipynb",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  }
+]

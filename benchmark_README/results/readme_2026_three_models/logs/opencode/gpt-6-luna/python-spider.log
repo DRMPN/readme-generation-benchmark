@@ -1,0 +1,60 @@
+I found a collection of standalone Python scripts and small subprojects rather than a single packaged application. I’m checking each component’s own code and documentation so the root README can describe what’s actually here without implying a unified install or guaranteed service compatibility.
+Created `README.md` in the repository root. It describes the standalone scripts and subprojects, gives documented run examples, and notes that dependencies and compatibility vary across these historical, website-specific examples. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGrep "README|description|usage|install" [90m5 matches[0m
+[0m✱ [0mGlob "**/*" [90m102 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead 2020/README.md 
+[0m→ [0mRead bilibili/README.md 
+[0m→ [0mRead douyin/README.md 
+[0m→ [0mRead . 
+[0m→ [0mRead zhengfang_system_spider/README.md 
+[0m→ [0mRead dingdong/README.md 
+[0m→ [0mRead bilibili_luckyman/README.md 
+[0m→ [0mRead video_downloader/requirements.txt 
+[0m→ [0mRead zhengfang_system_spider/requirements.txt 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead downloader.py 
+[0m→ [0mRead 12306.py 
+[0m→ [0mRead financical.py 
+[0m→ [0mRead hero.py 
+[0m→ [0mRead daili.py 
+[0m→ [0mRead geetest.py 
+[0m→ [0mRead shuaia.py 
+[0m✱ [0mGrep "^(#|"""|'''|import |from |def main|if __name__|\s*parser.add_argument|\s*argparser.add_argument)" [90m500 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead cartoon/scrapy.cfg 
+[0m→ [0mRead cartoon/cartoon/settings.py 
+[0m→ [0mRead cartoon/cartoon/spiders/comic_spider.py 
+[0m→ [0mRead douyin_pro.py [90m[limit=35][0m
+[0m→ [0mRead baiduwenku.py [90m[limit=50][0m
+[0m→ [0mRead douyin.py [90m[limit=30][0m
+[0m→ [0mRead baiduwenku_pro_1.py 
+[0m→ [0mRead biqukan.py [90m[limit=40][0m
+[0m→ [0mRead video_downloader/video_downloader.py [90m[limit=100][0m
+[0m→ [0mRead 2020/xbqg/xbqg_spider.py 
+[0m→ [0mRead 2020/dmzj/cartoon.py [90m[limit=50][0m
+[0m→ [0mRead 2020/zycjw/video_download.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead Netease/Netease.py [90m[limit=30][0m
+[0m→ [0mRead bilibili_luckyman/bilibili_luckyman.py [90m[limit=100][0m
+[0m→ [0mRead 2020/taobao/taobao_login.py [90m[limit=35][0m
+[0m→ [0mRead one_hour_spider/biqukan.py [90m[limit=110][0m
+[0m→ [0mRead one_hour_spider/biquge20180731.py [90m[limit=50][0m
+[0m→ [0mRead one_hour_spider/unsplash.py 
+[0m→ [0mRead one_hour_spider/vidoe_downloader.py [90m[limit=100][0m
+[0m→ [0mRead baiwan/baiwan.py [90m[limit=40][0m
+[0m→ [0mRead 2020/README.md [90m[offset=23, limit=15][0m
+[0m→ [0mRead 2020/api/api.py [90m[limit=70][0m
+[0m→ [0mRead 2020/bilibili/download.py [90m[limit=155][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead cartoon/cartoon/pipelines.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

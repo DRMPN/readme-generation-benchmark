@@ -1,0 +1,65 @@
+I'll start by looking at what's in the repository.
+This is the MkDocs project. I'll read the key metadata and docs files to ground the README.
+The CLI, metadata, and CI are clear. I'll check the getting-started guide, the config file, and the project scaffolding code before writing.
+I have enough to write an accurate README. Writing it now.
+The README is written. I'll tighten one awkward sentence in the deployment section before finishing.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The project is MkDocs 1.6.1, a static site generator that builds project documentation from Markdown files and a `mkdocs.yml` config. I based the README on the source and docs in the repo: `pyproject.toml`, `mkdocs/__main__.py` (the CLI), `LICENSE`, `CONTRIBUTING.md`, the CI workflow, and the user and getting-started guides.
+
+The README covers:
+- **Overview and links** to the docs, source, issue tracker, and release notes.
+- **Requirements and installation**, including the optional `i18n` extra.
+- **Quick start** with `mkdocs new`, `serve`, and `build`.
+- **Commands table** and the main options for each command.
+- **Configuration**, with a minimal example. It notes that `site_name` is the only required option, as the getting-started guide says.
+- **Themes, plugins, and deployment**, drawn from the docs.
+- **Development**, with the Hatch commands from `CONTRIBUTING.md` and `pyproject.toml`.
+- **Contributing, help, and license.** The license is BSD 2-Clause, per `pyproject.toml` and `LICENSE`.
+
+I left out claims I could not verify from the repo, such as performance benchmarks or specific third-party plugin behavior. I did not run the commands, so the README describes what the source and docs say rather than what I observed at runtime.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"ok\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 279 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead mkdocs/__init__.py 
+[0m→ [0mRead docs/index.md 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead mkdocs/__main__.py 
+[0m→ [0mRead docs/user-guide/installation.md 
+[0m→ [0mRead mkdocs/commands/__init__.py 
+[0m→ [0mRead .github/workflows/ci.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead mkdocs.yml 
+[0m→ [0mRead docs/getting-started.md 
+[0m→ [0mRead mkdocs/commands/new.py 
+[0m✱ [0mGrep "^(Python|Requirements|Install|Build|Deploy|Serve|CLI|Tests?)" [90min docs/user-guide/cli.md · 0 matches[0m
+[0m→ [0mRead docs/user-guide/deploying-your-docs.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -122,9 +122,9 @@
+ - **GitHub Pages**: `mkdocs gh-deploy` builds the site and pushes it to a branch of your repository using [ghp-import](https://github.com/davisp/ghp-import).
+ - **Read the Docs**: supports MkDocs out of the box.
+ - **Other hosts**: upload the contents of the `site/` directory to any web server.
+ 
+-See the [deployment guide](https://www.mkdocs.org/user-guide/deploying-your-docs/) for details, including how to use MkDocs output via the `file://` scheme.
++See the [deployment guide](https://www.mkdocs.org/user-guide/deploying-your-docs/) for details, including notes on viewing the built site directly from the file system (`file://`).
+ 
+ ## Documentation
+ 
+ The full documentation is available at <https://www.mkdocs.org/>. It includes:
+
+> readme-benchmark · anthropic/claude-haiku-5.5

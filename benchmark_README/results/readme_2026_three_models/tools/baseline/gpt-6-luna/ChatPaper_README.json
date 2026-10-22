@@ -1,0 +1,313 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63929,
+    "tree_files": 111,
+    "tracked_files": 111,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 596,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 147,
+        "truncated": false
+      },
+      {
+        "path": "docker/Dockerfile",
+        "tokens": 390,
+        "truncated": false
+      },
+      {
+        "path": "docker/Makefile",
+        "tokens": 212,
+        "truncated": false
+      },
+      {
+        "path": "scipdf_parser-master/requirements.txt",
+        "tokens": 606,
+        "truncated": false
+      },
+      {
+        "path": "scipdf_parser-master/setup.py",
+        "tokens": 268,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/Private/requirements.txt",
+        "tokens": 75,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/Public/requirements.txt",
+        "tokens": 75,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/app.py",
+        "tokens": 1646,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/main.py",
+        "tokens": 2170,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/Private/app.py",
+        "tokens": 7538,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/Public/app.py",
+        "tokens": 8680,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE.md",
+        "tokens": 148,
+        "truncated": false
+      },
+      {
+        "path": "ChatReviewerAndResponse/README.md",
+        "tokens": 65,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/README.md",
+        "tokens": 60,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/README.md",
+        "tokens": 364,
+        "truncated": false
+      },
+      {
+        "path": "docker/README.md",
+        "tokens": 57,
+        "truncated": false
+      },
+      {
+        "path": "others/project_analysis.md",
+        "tokens": 3973,
+        "truncated": false
+      },
+      {
+        "path": "scipdf_parser-master/README.md",
+        "tokens": 578,
+        "truncated": false
+      },
+      {
+        "path": "source/index.rst",
+        "tokens": 666,
+        "truncated": false
+      },
+      {
+        "path": "HuggingFaceDeploy/Private/README.md",
+        "tokens": 218,
+        "truncated": false
+      },
+      {
+        "path": "source/troubleshooting/troubleshooting.md",
+        "tokens": 173,
+        "truncated": false
+      },
+      {
+        "path": "source/troubleshooting/troubleshooting_zh.md",
+        "tokens": 325,
+        "truncated": false
+      },
+      {
+        "path": "source/tutorial/getting_started.md",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "source/tutorial/getting_started_zh.md",
+        "tokens": 229,
+        "truncated": false
+      },
+      {
+        "path": "source/tutorial/reading_papers.md",
+        "tokens": 2827,
+        "truncated": false
+      },
+      {
+        "path": "source/tutorial/reading_papers_zh.md",
+        "tokens": 3500,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/main.tex",
+        "tokens": 247,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/math_commands.tex",
+        "tokens": 5733,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/related works.tex",
+        "tokens": 1051,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/survey.md",
+        "tokens": 2229,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/survey_chinese.md",
+        "tokens": 1592,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/outputs/outputs_20230707_202302/template.tex",
+        "tokens": 241,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/utils/latex_templates/Default/math_commands.tex",
+        "tokens": 5733,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/utils/latex_templates/Default/related works.tex",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/utils/latex_templates/Default/survey.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/utils/latex_templates/Default/survey_chinese.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "auto_survey/utils/latex_templates/Default/template.tex",
+        "tokens": 241,
+        "truncated": false
+      },
+      {
+        "path": ".readthedocs.yaml",
+        "tokens": 181,
+        "truncated": false
+      },
+      {
+        "path": "chat_arxiv.py",
+        "tokens": 8551,
+        "truncated": false
+      },
+      {
+        "path": "chat_paper.py",
+        "tokens": 910,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      "auto_survey/requirements.txt",
+      ".gitignore",
+      ".gitmodules",
+      "chat_translate.py",
+      "demo.pdf",
+      "start.sh",
+      "ChatReviewerAndResponse/ReviewFormat.txt",
+      "ChatReviewerAndResponse/chat_response.py",
+      "ChatReviewerAndResponse/chat_reviewer.py",
+      "ChatReviewerAndResponse/get_paper.py",
+      "ChatReviewerAndResponse/review_comments.txt",
+      "docker/build.sh",
+      "docker/conda_env.yml",
+      "docker/dev.sh",
+      "docker/docker-compose.yaml",
+      "docker/make.bat",
+      "docker/tagpush.sh",
+      "docker/tsinghua.condarc",
+      "images/ChatImprovement.png",
+      "images/Reward QR code.png",
+      "images/chatgentitle.png",
+      "images/chatgpt.png",
+      "images/chatpaper.png",
+      "images/chatpaper_0314.png",
+      "images/chatpaper_0317.png",
+      "images/chatresponse.jpg",
+      "images/chatrevierer.png",
+      "images/docker-compose.png",
+      "images/flask_web_home.png",
+      "images/home.png",
+      "images/homeLogo.jpg",
+      "images/maomao.png",
+      "images/reviews.jpg",
+      "images/weichat.png",
+      "others/ChatPaper.ipynb",
+      "others/chat_arxiv_maomao.py",
+      "others/google_scholar_spider.py",
+      "others/machine_learning.csv",
+      "scipdf_parser-master/LICENSE.txt",
+      "scipdf_parser-master/serve_grobid.sh",
+      "source/conf.py",
+      "HuggingFaceDeploy/Private/image.jpeg",
+      "HuggingFaceDeploy/Private/optimizeOpenAI.py",
+      "HuggingFaceDeploy/Public/optimizeOpenAI.py",
+      "auto_survey/utils/__init__.py",
+      "auto_survey/utils/embeddings.py",
+      "auto_survey/utils/figures.py",
+      "auto_survey/utils/file_operations.py",
+      "auto_survey/utils/gpt_interaction.py",
+      "auto_survey/utils/knowledge.py",
+      "auto_survey/utils/prompts.py",
+      "auto_survey/utils/references.py",
+      "auto_survey/utils/storage.py",
+      "auto_survey/utils/tex_processing.py",
+      "scipdf_parser-master/scipdf/__init__.py",
+      "source/_static/ChatPaper-zh.png",
+      "source/_static/ChatPaper.png",
+      "source/_static/reviews.jpg",
+      "auto_survey/outputs/outputs_20230707_202302/Reinforcement Learning for Robot Control.zip",
+      "auto_survey/outputs/outputs_20230707_202302/generation.log",
+      "auto_survey/outputs/outputs_20230707_202302/ref.bib",
+      "scipdf_parser-master/scipdf/features/__init__.py",
+      "scipdf_parser-master/scipdf/features/text_utils.py",
+      "scipdf_parser-master/scipdf/pdf/__init__.py",
+      "scipdf_parser-master/scipdf/pdf/parse_pdf.py",
+      "auto_survey/utils/knowledge_databases/ml_textbook_test/db_meta.json",
+      "scipdf_parser-master/scipdf/pdf/pdffigures2/pdffigures2-assembly-0.0.12-SNAPSHOT.jar",
+      "auto_survey/utils/knowledge_databases/ml_textbook_test/embeddings/text_embedding_pairs.pickle",
+      "auto_survey/utils/knowledge_databases/ml_textbook_test/faiss_index/index.faiss",
+      "auto_survey/utils/knowledge_databases/ml_textbook_test/faiss_index/index.pkl"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 60425,
+    "completion_tokens": 2286,
+    "total_tokens": 62711,
+    "cost": 0.00869605,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 60422,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00869605,
+      "upstream_inference_prompt_cost": 0.00755305,
+      "upstream_inference_completions_cost": 0.001143
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 407,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606411-UejYE4rRqYygp9iyk5fD"
+}

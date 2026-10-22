@@ -1,0 +1,15 @@
+Based on the inspection of the repository, which contains a Python script (`demo.py`) demonstrating API interaction with an LLM (specifically `gpt-3.5-turbo`) using both non-streaming and streaming methods, and is licensed under MIT, here is the complete `README.md`.
+The `README.md` file has been created in the current directory and accurately reflects the contents and functionality of the repository.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m13 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead demo.py 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

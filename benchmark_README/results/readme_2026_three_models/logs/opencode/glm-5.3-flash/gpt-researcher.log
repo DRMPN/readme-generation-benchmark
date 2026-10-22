@@ -1,0 +1,46 @@
+I have inspected the repository and gathered the necessary information to write an accurate and complete `README.md`. Now I will create it.
+I have inspected the repository and created `README.md` in the project root.
+
+## Summary
+
+The `README.md` covers:
+
+- **Overview** — What the project is (an autonomous online research agent) and what it ships with (core agent library, FastAPI backend, static + NextJS frontends, CLI, multi-agent pipeline, MCP server).
+- **Features** — Report types (`research_report`, `detailed_report`, `deep`, etc.), report sources, 16 supported tones, MCP strategies, and vector-store/LLM/retriever support — all verified against `gpt_researcher/utils/enum.py` and `agent.py`.
+- **Getting Started** — Prerequisites, installation, and required environment variables (`OPENAI_API_KEY`, `TAVILY_API_KEY`, `DOC_PATH`).
+- **Usage** — Examples for all four interfaces:
+  1. `cli.py` CLI with its exact argument list
+  2. Direct `GPTResearcher` Python usage with key constructor parameters
+  3. `python main.py` for the FastAPI backend on port 8000
+  4. Static frontend, NextJS frontend, and `docker-compose up`
+- **Architecture** — Directory layout and a breakdown of core skill components (`ResearchConductor`, `ReportGenerator`, `ContextManager`, etc.).
+- **Configuration, Testing, Contributing, License, Citation** — Linked to the respective existing files (`CONTRIBUTING.md`, `LICENSE`, `citation.cff`).
+
+All claims are drawn directly from repository files — no invented features, versions, or benchmarks were added.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const ls = await tools.glob({ pattern: \"*\" });\nreturn ls;"} 
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead setup.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .env.example 
+[0m→ [0mRead main.py 
+[0m→ [0mRead cli.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead frontend 
+[0m→ [0mRead backend 
+[0m→ [0mRead gpt_researcher 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead frontend/README.md 
+[0m→ [0mRead gpt_researcher/agent.py 
+[0m→ [0mRead gpt_researcher/__init__.py 
+[0m→ [0mRead gpt_researcher/utils/enum.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

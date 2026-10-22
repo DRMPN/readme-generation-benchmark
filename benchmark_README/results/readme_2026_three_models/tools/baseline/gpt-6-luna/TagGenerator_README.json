@@ -1,0 +1,158 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 4217,
+    "tree_files": 28,
+    "tracked_files": 28,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 134,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 223,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 247,
+        "truncated": false
+      },
+      {
+        "path": "manage.py",
+        "tokens": 132,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/admin.py",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/apps.py",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/models.py",
+        "tokens": 42,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/tests.py",
+        "tokens": 318,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/urls.py",
+        "tokens": 61,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/views.py",
+        "tokens": 332,
+        "truncated": false
+      },
+      {
+        "path": "TagGenerator/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "TagGenerator/asgi.py",
+        "tokens": 87,
+        "truncated": false
+      },
+      {
+        "path": "TagGenerator/settings.py",
+        "tokens": 735,
+        "truncated": false
+      },
+      {
+        "path": "TagGenerator/urls.py",
+        "tokens": 210,
+        "truncated": false
+      },
+      {
+        "path": "TagGenerator/wsgi.py",
+        "tokens": 88,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/django.yml",
+        "tokens": 165,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/publish-docker.yml",
+        "tokens": 222,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/python-publish.yml",
+        "tokens": 499,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/migrations/0001_initial.py",
+        "tokens": 115,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/migrations/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "QrCode/templatetags/qrcode_tags.py",
+        "tokens": 114,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      "requirements.txt",
+      ".dockerignore",
+      ".gitignore",
+      "MANIFEST.in",
+      "templates/qr_code_frontend.html"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 4254,
+    "completion_tokens": 1518,
+    "total_tokens": 5772,
+    "cost": 0.001290675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4251,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001290675,
+      "upstream_inference_prompt_cost": 0.000531675,
+      "upstream_inference_completions_cost": 0.000759
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 249,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792604536-VJmRt3oJWSr3xZpzIrnM"
+}

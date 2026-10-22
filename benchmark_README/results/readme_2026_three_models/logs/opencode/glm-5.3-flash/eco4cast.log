@@ -1,0 +1,39 @@
+Let me inspect the core source code and the local demo notebook to understand the API and usage.
+I have a good understanding now. Let me quickly check the core class signatures to be precise about the API.
+Now I have a complete picture. Let me quickly check the LICENSE and confirm the supported zones in the source code to ensure accuracy.
+I've created a complete and accurate `README.md` in the root directory. The content is strictly based on the repository's actual files:
+
+- **Description & purpose** – taken from `pyproject.toml` and the notebooks in `examples/`.
+- **Features** – derived from the source code of `CO2Predictor`, `IntervalGenerator`, `IntervalTrainer`, `Controller`, and the `eco2ai` integration.
+- **Installation** – from `pyproject.toml` dependencies and the installation step in the demo notebooks.
+- **Usage** – code examples for both the local machine (`IntervalTrainer`, callbacks) and Google Cloud (`Controller`, `vm_main.py`), matching the actual class signatures and quick start guides.
+- **Supported zones** – the exact list verified from `eco4cast/master_machine/utils.py` and `examples/README.md`.
+- **Examples & layout** – reflecting the actual file structure in the `examples/` and `eco4cast/` directories.
+- **License** – verified to be Apache 2.0 from the `LICENSE` file.
+- **Authors** – listed from `pyproject.toml`.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead eco4cast/__init__.py 
+[0m→ [0mRead examples/README.md 
+[0m→ [0mRead eco4cast/master_machine/compute/client_library/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead examples/eco4cast_local_demo/local_quick_start_guide.ipynb 
+[0m→ [0mRead eco4cast/master_machine/master_machine_controller.py 
+[0m→ [0mRead examples/eco4cast_demo/quick_start_guide.ipynb 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead eco4cast/master_machine/interval_predictor.py 
+[0m→ [0mRead eco4cast/master_machine/electricitymaps_api.py 
+[0m→ [0mRead eco4cast/virtual_machine/smart_scheduler_concept.py [90m[limit=120][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[limit=10][0m
+[0m✱ [0mGrep "code_names\s*=|codes_with_steps\s*=" [90min eco4cast/master_machine/utils.py · 2 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

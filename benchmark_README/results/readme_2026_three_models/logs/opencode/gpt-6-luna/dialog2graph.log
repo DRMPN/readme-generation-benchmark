@@ -1,0 +1,63 @@
+Created the root `README.md` with installation, Python API and CLI usage, input formats, documentation links, development commands, and license information. It also notes that the current `gen-data` handler raises an argument error because it omits the required `output_path`.
+
+Only `README.md` was created; I did not run tests.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m300 matches[0m
+[0m✱ [0mGrep "." [90min . · 50 matches[0m
+[0m→ [0mRead . 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead dialog2graph/README.md 
+[0m→ [0mRead docs/source/getting_started.rst 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead docs/source/index.rst 
+[0m→ [0mRead docs/source/userguides.rst 
+[0m→ [0mRead docs/source/development.rst 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/source/userguides/cli_usage.rst 
+[0m→ [0mRead docs/source/userguides/generate_graphs.rst 
+[0m→ [0mRead docs/source/userguides/generate_synthetic.rst 
+[0m→ [0mRead dialog2graph/cli/main.py 
+[0m→ [0mRead docs/source/userguides/evaluate_userguide.rst 
+[0m→ [0mRead docs/source/userguides/augment_dialogs.rst 
+[0m→ [0mRead docs/source/userguides/extend_graphs.rst 
+[0m→ [0mRead docs/source/userguides/basic_usage.rst 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dialog2graph/__init__.py 
+[0m→ [0mRead examples/pipeline_usage/models_config.yml 
+[0m→ [0mRead examples/cli_usage/cfg.yml 
+[0m→ [0mRead examples/data_generation/cache_example.ipynb [90m[limit=80][0m
+[0m→ [0mRead dialog2graph/pipelines/model_storage.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_light.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_extender.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_llm.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_data.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dialog2graph/pipelines/helpers/parse_data.py 
+[0m→ [0mRead dialog2graph/pipelines/core/dialog.py [90m[limit=140][0m
+[0m→ [0mRead dialog2graph/pipelines/core/graph.py [90m[limit=170][0m
+[0m→ [0mRead LICENSE [90m[limit=10][0m
+[0m→ [0mRead scripts/test.py 
+[0m→ [0mRead docs/source/research.rst 
+[0m→ [0mRead docs/source/research/data_collections.rst 
+[0m→ [0mRead docs/source/userguides/cli_usage.rst [90m[offset=55, limit=40][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "gen[-_]graph|gen[-_]data" [90min tests/cli · 15 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tests/cli/cfg.yml 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dialog2graph/pipelines/d2g_llm/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dialog2graph/pipelines/core/schemas.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dialog2graph/pipelines/topic_generation/pipeline.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

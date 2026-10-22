@@ -1,0 +1,122 @@
+I'll start by looking at the repository layout and any existing docs.
+This looks like the `face_recognition` library. I'll read the core packaging, API, CLI, and Docker files next.
+The README.rst referenced by `setup.py` is not in the file list. I'll check for hidden files and read the remaining key sources: the license, history, GPU Dockerfile, tests, and some examples.
+I have the core behavior. Last, I'll check the CI workflow and the `facerec_from_webcam` example, since they affect the install and test instructions.
+I've read enough to write an accurate README. Writing it now.
+The README is written. Several example descriptions and test claims came from file names rather than file contents, so I'll verify them before finishing.
+Most claims check out, but a few example descriptions were guesses. I'll correct the examples list to match what the scripts actually do.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+It covers what `face_recognition` is, its requirements, installation, the Python API (every public function), both command-line tools (`face_recognition` and `face_detection`), the example scripts, Docker, testing, project layout, and license. I checked the example and test descriptions against the source files, and I left out features the code does not show.
+
+Things you should know about the repository:
+
+- **`setup.py` and `docs/readme.rst` reference a `README.rst` that does not exist.** That would make `python setup.py` fail or produce an empty long description. This README is `README.md`, so it doesn't fix that. If you want, I can change the references or add a `README.rst`.
+- **Dependency lists disagree.** `setup.py` requires `dlib>=19.7` and does not list scipy. `requirements.txt` requires `dlib>=19.3.0` and includes scipy. The README reports both as they appear rather than picking one.
+- **Python versions differ by source.** The package classifiers list 3.5 through 3.9, and CI tests 3.8 through 3.10. The README gives both.
+- **I did not run anything.** The install commands, tests, and Docker builds are described from the files, not verified on a machine.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 97 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead setup.py 
+[0m→ [0mRead face_recognition/face_recognition_cli.py 
+[0m→ [0mRead face_recognition/api.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead face_recognition/face_detection_cli.py 
+[0m→ [0mRead face_recognition/__init__.py 
+[0m→ [0mRead docs/readme.rst 
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead docs/usage.rst 
+[0m→ [0mRead docker/README.md 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead tox.ini 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob ".*/**/*" [90min . · 2 matches[0m
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead HISTORY.rst [90m[limit=80][0m
+[0m→ [0mRead Dockerfile.gpu 
+[0m→ [0mRead requirements_dev.txt 
+[0m→ [0mRead CONTRIBUTING.rst 
+[0m→ [0mRead tests/test_face_recognition.py [90m[limit=120][0m
+[0m→ [0mRead examples/web_service_example.py 
+[0m→ [0mRead examples/face_recognition_knn.py 
+[0m→ [0mRead examples/facerec_on_raspberry_pi.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead examples/blur_faces_on_webcam.py [90m[limit=15][0m
+[0m→ [0mRead examples/find_faces_in_batches.py [90m[limit=30][0m
+[0m→ [0mRead .github/workflows/main.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "^(def test_|class )|CliRunner\(|invoke\(" [90min tests/test_face_recognition.py · 21 matches[0m
+[0m✱ [0mGrep "^# |^"""|^\s*print\(" [90min examples · 200 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -130,22 +130,25 @@
+ ## Examples
+ 
+ The [`examples/`](examples) directory contains runnable scripts. Run them from inside that directory, because several use relative paths to the sample images. Notable examples include:
+ 
+-- `find_faces_in_picture.py`, `find_faces_in_picture_cnn.py`, `find_facial_features_in_picture.py`: detect faces and landmarks, and draw on images.
+-- `recognize_faces_in_pictures.py`: compare faces in pictures against known people.
++- `find_faces_in_picture.py` and `find_faces_in_picture_cnn.py`: find faces in an image with the HOG and CNN models and print their locations.
++- `find_facial_features_in_picture.py`: find facial landmarks and draw them on the image.
++- `identify_and_draw_boxes_on_faces.py`: recognize known people in a single image and draw boxes around them.
++- `recognize_faces_in_pictures.py`: compare an unknown face against sample Biden and Obama pictures.
++- `face_distance.py`: print the distance between an unknown face and known faces, and show how different tolerances would classify it.
+ - `face_recognition_knn.py`: train and use a k-nearest-neighbors classifier on a folder of labeled faces (requires scikit-learn). Training data is under `examples/knn_examples/train/`.
+-- `face_recognition_svm.py`: an SVM-based classifier example.
++- `face_recognition_svm.py`: train an SVM classifier (scikit-learn) on multiple images per person and recognize faces in a test image.
+ - `find_faces_in_batches.py`: batched CNN detection on video frames (requires OpenCV).
+ - `facerec_from_webcam.py`, `facerec_from_webcam_faster.py`, `facerec_from_webcam_multiprocessing.py`, `blur_faces_on_webcam.py`: webcam demos (require OpenCV).
+-- `facerec_from_video_file.py`, `facerec_ipcamera_knn.py`: video-file and IP-camera demos.
+-- `blink_detection.py`: blink detection using facial landmarks.
+-- `digital_makeup.py`: applies a digital effect to facial features.
++- `facerec_from_video_file.py`: recognize faces in a video file and write the annotated result to a new video file (requires OpenCV).
++- `facerec_ipcamera_knn.py`: KNN-based recognition on IP camera streams.
++- `blink_detection.py`: detects whether the user's eyes are closed using webcam input (requires OpenCV). The script notes that it must be run with sudo for its keyboard handling.
++- `digital_makeup.py`: uses facial landmarks to modify facial features in an image.
+ - `facerec_on_raspberry_pi.py`: runs recognition on a Raspberry Pi camera (requires `picamera`).
+ - `web_service_example.py`: a Flask app that accepts an uploaded image and reports whether it contains a specific person (requires Flask).
+-- `benchmark.py`: timing measurements for the library.
+-- `face_distance.py`: prints distances between face encodings.
+-- `blur_faces_on_webcam.py`, `digital_makeup.py`, and the `*_Simplified_Chinese.py` scripts are additional examples.
++- `benchmark.py`: times face location, landmark, encoding, and end-to-end steps on a single CPU core.
++- `*_Simplified_Chinese.py`: Simplified Chinese versions of the Raspberry Pi and web service examples.
+ - `ipynb_examples/track_faces_on_video_realtime.ipynb`: a Jupyter notebook example.
+ 
+ Example dependencies that are not part of the library, including `cv2`, `flask`, `sklearn`, and `picamera`, must be installed separately to run the corresponding scripts. The `examples/` scripts are not installed with the package.
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -176,9 +176,9 @@
+ ```console
+ $ python3 -m unittest discover
+ ```
+ 
+-The tests live in [`tests/test_face_recognition.py`](tests/test_face_recognition.py) and use the images in `tests/test_images/`. Tests cover image loading, face detection (HOG and CNN), batched detection, landmarks, encodings, and the CLI commands.
++The tests live in [`tests/test_face_recognition.py`](tests/test_face_recognition.py) and use the images in `tests/test_images/`. They cover image loading, face detection (HOG and CNN), batched detection, landmarks, and both command-line tools.
+ 
+ The project's `tox.ini` runs the tests and flake8 across several Python versions. Lint with:
+ 
+ ```console
+
+> readme-benchmark · anthropic/claude-haiku-5.5

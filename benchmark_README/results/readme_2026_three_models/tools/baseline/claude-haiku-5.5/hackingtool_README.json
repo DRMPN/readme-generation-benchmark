@@ -1,0 +1,250 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 28239,
+    "tree_files": 48,
+    "tracked_files": 48,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 124,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 222,
+        "truncated": false
+      },
+      {
+        "path": "docker-compose.yml",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 215,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 118,
+        "truncated": false
+      },
+      {
+        "path": "core.py",
+        "tokens": 1223,
+        "truncated": false
+      },
+      {
+        "path": "generate_readme.py",
+        "tokens": 354,
+        "truncated": false
+      },
+      {
+        "path": "hackingtool.py",
+        "tokens": 1370,
+        "truncated": false
+      },
+      {
+        "path": "install.sh",
+        "tokens": 2062,
+        "truncated": false
+      },
+      {
+        "path": "update.sh",
+        "tokens": 609,
+        "truncated": false
+      },
+      {
+        "path": "tools/anonsurf.py",
+        "tokens": 387,
+        "truncated": false
+      },
+      {
+        "path": "tools/ddos.py",
+        "tokens": 1138,
+        "truncated": false
+      },
+      {
+        "path": "tools/exploit_frameworks.py",
+        "tokens": 494,
+        "truncated": false
+      },
+      {
+        "path": "tools/forensic_tools.py",
+        "tokens": 752,
+        "truncated": false
+      },
+      {
+        "path": "tools/information_gathering_tools.py",
+        "tokens": 1990,
+        "truncated": false
+      },
+      {
+        "path": "tools/other_tools.py",
+        "tokens": 373,
+        "truncated": false
+      },
+      {
+        "path": "tools/payload_creator.py",
+        "tokens": 1304,
+        "truncated": false
+      },
+      {
+        "path": "tools/phising_attack.py",
+        "tokens": 2398,
+        "truncated": false
+      },
+      {
+        "path": "tools/post_exploitation.py",
+        "tokens": 394,
+        "truncated": false
+      },
+      {
+        "path": "tools/remote_administration.py",
+        "tokens": 290,
+        "truncated": false
+      },
+      {
+        "path": "tools/reverse_engineering.py",
+        "tokens": 440,
+        "truncated": false
+      },
+      {
+        "path": "tools/sql_tools.py",
+        "tokens": 1153,
+        "truncated": false
+      },
+      {
+        "path": "tools/steganography.py",
+        "tokens": 666,
+        "truncated": false
+      },
+      {
+        "path": "tools/tool_manager.py",
+        "tokens": 477,
+        "truncated": false
+      },
+      {
+        "path": "tools/webattack.py",
+        "tokens": 1026,
+        "truncated": false
+      },
+      {
+        "path": "tools/wireless_attack_tools.py",
+        "tokens": 1587,
+        "truncated": false
+      },
+      {
+        "path": "tools/wordlist_generator.py",
+        "tokens": 597,
+        "truncated": false
+      },
+      {
+        "path": "tools/xss_attack.py",
+        "tokens": 1280,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/lint_python.yml",
+        "tokens": 346,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/test_install.yml",
+        "tokens": 366,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/android_attack.py",
+        "tokens": 650,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/email_verifier.py",
+        "tokens": 149,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/hash_crack.py",
+        "tokens": 168,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/homograph_attacks.py",
+        "tokens": 143,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/mix_tools.py",
+        "tokens": 291,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/payload_injection.py",
+        "tokens": 314,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/socialmedia.py",
+        "tokens": 698,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/socialmedia_finder.py",
+        "tokens": 795,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/web_crawling.py",
+        "tokens": 137,
+        "truncated": false
+      },
+      {
+        "path": "tools/others/wifi_jamming.py",
+        "tokens": 387,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "images/A0.png",
+      "images/A00.png",
+      "images/A1.png",
+      "images/A2.png",
+      "images/A4.png",
+      "images/demo"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 49045,
+    "completion_tokens": 5465,
+    "total_tokens": 54510,
+    "cost": 0.007637,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007637,
+      "upstream_inference_prompt_cost": 0.0049045,
+      "upstream_inference_completions_cost": 0.0027325
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1710,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606655-lLTkTXLcPpH7yJAL0nAs"
+}

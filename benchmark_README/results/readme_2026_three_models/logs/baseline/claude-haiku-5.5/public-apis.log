@@ -1,0 +1,90 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 11600,
+    "tree_files": 12,
+    "tracked_files": 12,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 220,
+        "truncated": false
+      },
+      {
+        "path": "scripts/requirements.txt",
+        "tokens": 45,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 1471,
+        "truncated": false
+      },
+      {
+        "path": "scripts/github_pull_request.sh",
+        "tokens": 354,
+        "truncated": false
+      },
+      {
+        "path": "scripts/tests/__init__.py",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "scripts/tests/test_validate_format.py",
+        "tokens": 4199,
+        "truncated": false
+      },
+      {
+        "path": "scripts/tests/test_validate_links.py",
+        "tokens": 1185,
+        "truncated": false
+      },
+      {
+        "path": "scripts/validate/__init__.py",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "scripts/validate/format.py",
+        "tokens": 1906,
+        "truncated": false
+      },
+      {
+        "path": "scripts/validate/links.py",
+        "tokens": 1988,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitattributes",
+      ".gitignore"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 19595,
+    "completion_tokens": 5409,
+    "total_tokens": 25004,
+    "cost": 0.004664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004664,
+      "upstream_inference_prompt_cost": 0.0019595,
+      "upstream_inference_completions_cost": 0.0027045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1546,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606631-d3E7AIBklrDnHlcfRhzF"
+}

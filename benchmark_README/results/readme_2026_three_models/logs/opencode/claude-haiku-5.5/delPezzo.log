@@ -1,0 +1,76 @@
+I'll start by looking at the repository layout and existing files.
+The core `Surface` module is clear. Next I'll read the remaining modules, the git metadata, and the test layout.
+I've read the library code. Now I'll check the Lubbes data file, the tests, and the git history for project details.
+The git remote points to a local benchmark path, so I won't mention it in the README. Before writing, I'll check a few details: the test file contents, the Lubbes list size, and whether `tqdm` is actually used.
+I have enough detail to write the README. I'm writing it now.
+The README is written. I'll soften one attribution I can't confirm from the repo: the claim that the Lubbes list comes from Lubbes' classification.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The README covers:
+- what the module does, based on the code and the `pyproject.toml` description
+- the source layout and the public API exported from `__init__.py`
+- requirements: SageMath, pytest, and the dev container setup
+- installation, which the repo does not document, so the README gives a `PYTHONPATH` approach and says that `pip install .` is unverified
+- usage examples taken from the tests and docstrings
+- how to run the tests
+- known limitations, drawn from `TODO` comments, `NotImplementedError` paths, and leftover code
+- the references from `bibliography.rst`
+
+Things you should know:
+- **Python version mismatch:** `pyproject.toml` says `requires-python = ">=3.9"`, but the code uses `match` statements and `X | None` annotations, which need Python 3.10 or newer. The README states this, and you may want to fix the pyproject value.
+- **Docstring example:** the `Surface` docstring calls `S.all_cylinders(...)`, which does not exist on `Surface`. The README flags this and shows the working `CylinderGenerator.all_cylinders(...)` call instead.
+- **No license:** the repo has no license file, so the README says none is stated.
+- **Not verified by running:** I read the code but did not run the tests, since Sage is not available here, so the usage examples are unexecuted.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90m26 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead bibliography.rst 
+[0m→ [0mRead .devcontainer/devcontainer.json 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead src/delPezzo/__init__.py 
+[0m→ [0mRead src/delPezzo/surface.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/delPezzo/cylinder.py 
+[0m→ [0mRead src/delPezzo/cone.py 
+[0m→ [0mRead src/delPezzo/finder.py 
+[0m→ [0mRead src/delPezzo/Lubbes_parse.py 
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([]); return \"skip\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tests/test_finder.py 
+[0m→ [0mRead tests/test_deg5.py 
+[0m→ [0mRead src/delPezzo/Lubbes_list.txt [90m[limit=8][0m
+[0m✱ [0mGrep "^(def test|class Test)|import" [90min tests · 52 matches[0m
+[0m✱ [0mGrep "." [90min .git/config · 11 matches[0m
+[0m→ [0mRead .git/logs/HEAD 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tests/test_Lubbes.py 
+[0m→ [0mRead tests/test_deg2_KimPark.py [90m[limit=30][0m
+[0m✱ [0mGrep "tqdm|tikzplotlib|sage\.|Python|python_requires|requires-python|match " [90min src · 20 matches[0m
+[0m✱ [0mGrep "." [90min src/delPezzo/Lubbes_list.txt · 5 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -14,9 +14,9 @@
+ - **Curves and cones**: computes the (-1)- and (-2)-curves, the cone of curves `NE`, and the ample cone; `NE_SubdivisionCone` subdivides `NE` into cones of named types such as `B(k)`, `C(k)`, and `*-P1xP1` (see `NE_SubdivisionCone.cone_types`).
+ - **Contractions** (`Contraction`): enumerates valid contractions of a surface to `P^2` (`Surface.contractions_P2`), including chains of infinitely near (-2)-curves, and computes the induced conic and line linear systems.
+ - **Cylinders** (`Cylinder`, `CylinderList`, `CylinderGenerator`): builds cylinders of several types, with polarity and completeness checks against a given cone.
+ - **Coverings** (`Finder`, `ConeCovering`): starts from the whole `NE` cone, reduces cylinder collections on each cone, and subdivides cones where generic flexibility is not yet established (`Finder.iterate`).
+-- **Lubbes data** (`generate_surfaces`, `generate_surface`, `Lubbes_lines`): reads the list of weak del Pezzo surfaces of a given degree from `src/delPezzo/Lubbes_list.txt`, which is based on Lubbes' classification in [Lub-min]_ and [Lub-algo]_.
++- **Lubbes data** (`generate_surfaces`, `generate_surface`, `Lubbes_lines`): reads the list of weak del Pezzo surfaces of a given degree from `src/delPezzo/Lubbes_list.txt`, the list is labelled with Lubbes-style type strings (for example `2A1`, `A2+ A1`). The repository's `bibliography.rst` includes [Lub-min]_ and [Lub-algo]_ by Niels Lubbes, but the repository does not state explicitly which paper the data file comes from.
+ 
+ ## Repository layout
+ 
+ ```
+
+> readme-benchmark · anthropic/claude-haiku-5.5

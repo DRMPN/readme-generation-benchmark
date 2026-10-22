@@ -1,0 +1,916 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".env.template",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CODEOWNERS",
+        "type": "file"
+      },
+      {
+        "name": "CODE_OF_CONDUCT.md",
+        "type": "file"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "FUNDING.yml",
+        "type": "file"
+      },
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug-report.md",
+            "type": "file"
+          },
+          {
+            "name": "documentation-clarification.md",
+            "type": "file"
+          },
+          {
+            "name": "feature-request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "PULL_REQUEST_TEMPLATE.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "automation.yml",
+            "type": "file"
+          },
+          {
+            "name": "ci.yaml",
+            "type": "file"
+          },
+          {
+            "name": "pre-commit.yaml",
+            "type": "file"
+          },
+          {
+            "name": "release.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".readthedocs.yaml",
+    "type": "file"
+  },
+  {
+    "name": "Acknowledgements.md",
+    "type": "file"
+  },
+  {
+    "name": "DISCLAIMER.md",
+    "type": "file"
+  },
+  {
+    "name": "GOVERNANCE.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "ROADMAP.md",
+    "type": "file"
+  },
+  {
+    "name": "TERMS_OF_USE.md",
+    "type": "file"
+  },
+  {
+    "name": "WINDOWS_README.md",
+    "type": "file"
+  },
+  {
+    "name": "citation.cff",
+    "type": "file"
+  },
+  {
+    "name": "docker",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Dockerfile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "entrypoint.sh",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "docker-compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "api_reference.rst",
+        "type": "file"
+      },
+      {
+        "name": "code_conduct_link.rst",
+        "type": "file"
+      },
+      {
+        "name": "conf.py",
+        "type": "file"
+      },
+      {
+        "name": "contributing_link.rst",
+        "type": "file"
+      },
+      {
+        "name": "create_api_rst.py",
+        "type": "file"
+      },
+      {
+        "name": "disclaimer_link.rst",
+        "type": "file"
+      },
+      {
+        "name": "docs_building.md",
+        "type": "file"
+      },
+      {
+        "name": "examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "open_llms",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "langchain_interface.py",
+                "type": "file"
+              },
+              {
+                "name": "openai_api_interface.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "index.rst",
+        "type": "file"
+      },
+      {
+        "name": "installation.rst",
+        "type": "file"
+      },
+      {
+        "name": "introduction.md",
+        "type": "file"
+      },
+      {
+        "name": "make.bat",
+        "type": "file"
+      },
+      {
+        "name": "open_models.md",
+        "type": "file"
+      },
+      {
+        "name": "quickstart.rst",
+        "type": "file"
+      },
+      {
+        "name": "roadmap_link.rst",
+        "type": "file"
+      },
+      {
+        "name": "terms_link.rst",
+        "type": "file"
+      },
+      {
+        "name": "tracing_debugging.md",
+        "type": "file"
+      },
+      {
+        "name": "windows_readme_link.rst",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "gpt_engineer",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "applications",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "cli",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "cli_agent.py",
+                "type": "file"
+              },
+              {
+                "name": "collect.py",
+                "type": "file"
+              },
+              {
+                "name": "file_selector.py",
+                "type": "file"
+              },
+              {
+                "name": "learning.py",
+                "type": "file"
+              },
+              {
+                "name": "main.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "benchmark",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__main__.py",
+            "type": "file"
+          },
+          {
+            "name": "bench_config.py",
+            "type": "file"
+          },
+          {
+            "name": "benchmarks",
+            "type": "dir",
+            "children": [
+              {
+                "name": "apps",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "load.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "problem.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "problems.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gptme",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "load.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "load.py",
+                "type": "file"
+              },
+              {
+                "name": "mbpp",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "load.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "problem.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "problems.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "default_bench_config.toml",
+            "type": "file"
+          },
+          {
+            "name": "run.py",
+            "type": "file"
+          },
+          {
+            "name": "types.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "core",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "ai.py",
+            "type": "file"
+          },
+          {
+            "name": "base_agent.py",
+            "type": "file"
+          },
+          {
+            "name": "base_execution_env.py",
+            "type": "file"
+          },
+          {
+            "name": "base_memory.py",
+            "type": "file"
+          },
+          {
+            "name": "chat_to_files.py",
+            "type": "file"
+          },
+          {
+            "name": "default",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "constants.py",
+                "type": "file"
+              },
+              {
+                "name": "disk_execution_env.py",
+                "type": "file"
+              },
+              {
+                "name": "disk_memory.py",
+                "type": "file"
+              },
+              {
+                "name": "file_store.py",
+                "type": "file"
+              },
+              {
+                "name": "paths.py",
+                "type": "file"
+              },
+              {
+                "name": "simple_agent.py",
+                "type": "file"
+              },
+              {
+                "name": "steps.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "diff.py",
+            "type": "file"
+          },
+          {
+            "name": "files_dict.py",
+            "type": "file"
+          },
+          {
+            "name": "git.py",
+            "type": "file"
+          },
+          {
+            "name": "linting.py",
+            "type": "file"
+          },
+          {
+            "name": "preprompts_holder.py",
+            "type": "file"
+          },
+          {
+            "name": "project_config.py",
+            "type": "file"
+          },
+          {
+            "name": "prompt.py",
+            "type": "file"
+          },
+          {
+            "name": "token_usage.py",
+            "type": "file"
+          },
+          {
+            "name": "version_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "preprompts",
+        "type": "dir",
+        "children": [
+          {
+            "name": "clarify",
+            "type": "file"
+          },
+          {
+            "name": "entrypoint",
+            "type": "file"
+          },
+          {
+            "name": "file_format",
+            "type": "file"
+          },
+          {
+            "name": "file_format_diff",
+            "type": "file"
+          },
+          {
+            "name": "file_format_fix",
+            "type": "file"
+          },
+          {
+            "name": "generate",
+            "type": "file"
+          },
+          {
+            "name": "improve",
+            "type": "file"
+          },
+          {
+            "name": "philosophy",
+            "type": "file"
+          },
+          {
+            "name": "roadmap",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tools",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "custom_steps.py",
+            "type": "file"
+          },
+          {
+            "name": "supported_languages.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "projects",
+    "type": "dir",
+    "children": [
+      {
+        "name": "example-improve",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "controller.py",
+            "type": "file"
+          },
+          {
+            "name": "main.py",
+            "type": "file"
+          },
+          {
+            "name": "model.py",
+            "type": "file"
+          },
+          {
+            "name": "prompt",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "run.sh",
+            "type": "file"
+          },
+          {
+            "name": "view.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "example-vision",
+        "type": "dir",
+        "children": [
+          {
+            "name": "navigation.html",
+            "type": "file"
+          },
+          {
+            "name": "prompt",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "clean_benchmarks.py",
+        "type": "file"
+      },
+      {
+        "name": "legacy_benchmark.py",
+        "type": "file"
+      },
+      {
+        "name": "print_chat.py",
+        "type": "file"
+      },
+      {
+        "name": "test_api.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "sweep.yaml",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "ai_cache.json",
+        "type": "file"
+      },
+      {
+        "name": "applications",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "cli",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_cli_agent.py",
+                "type": "file"
+              },
+              {
+                "name": "test_collect.py",
+                "type": "file"
+              },
+              {
+                "name": "test_collection_consent.py",
+                "type": "file"
+              },
+              {
+                "name": "test_learning.py",
+                "type": "file"
+              },
+              {
+                "name": "test_main.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "benchmark",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_BenchConfig.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "core",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "default",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_disk_execution_env.py",
+                "type": "file"
+              },
+              {
+                "name": "test_disk_file_repository.py",
+                "type": "file"
+              },
+              {
+                "name": "test_simple_agent.py",
+                "type": "file"
+              },
+              {
+                "name": "test_steps.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "improve_function_test_cases",
+            "type": "dir",
+            "children": [
+              {
+                "name": "apps_benchmark_6_chat",
+                "type": "file"
+              },
+              {
+                "name": "apps_benchmark_6_code",
+                "type": "file"
+              },
+              {
+                "name": "apps_benchmark_6_v2_chat",
+                "type": "file"
+              },
+              {
+                "name": "apps_benchmark_6_v2_code",
+                "type": "file"
+              },
+              {
+                "name": "controller_chat",
+                "type": "file"
+              },
+              {
+                "name": "controller_code",
+                "type": "file"
+              },
+              {
+                "name": "corrected_diff_from_missing_lines",
+                "type": "file"
+              },
+              {
+                "name": "create_two_new_files_chat",
+                "type": "file"
+              },
+              {
+                "name": "create_two_new_files_code",
+                "type": "file"
+              },
+              {
+                "name": "simple_calculator_chat",
+                "type": "file"
+              },
+              {
+                "name": "simple_calculator_code",
+                "type": "file"
+              },
+              {
+                "name": "task_master_chat",
+                "type": "file"
+              },
+              {
+                "name": "task_master_code",
+                "type": "file"
+              },
+              {
+                "name": "temperature_converter_chat",
+                "type": "file"
+              },
+              {
+                "name": "temperature_converter_code",
+                "type": "file"
+              },
+              {
+                "name": "theo_case_chat",
+                "type": "file"
+              },
+              {
+                "name": "theo_case_code",
+                "type": "file"
+              },
+              {
+                "name": "vgvishesh_example_2_chat",
+                "type": "file"
+              },
+              {
+                "name": "vgvishesh_example_2_code",
+                "type": "file"
+              },
+              {
+                "name": "vgvishesh_example_chat",
+                "type": "file"
+              },
+              {
+                "name": "vgvishesh_example_code",
+                "type": "file"
+              },
+              {
+                "name": "wheaties_example_chat",
+                "type": "file"
+              },
+              {
+                "name": "wheaties_example_code",
+                "type": "file"
+              },
+              {
+                "name": "zbf_yml_missing_chat",
+                "type": "file"
+              },
+              {
+                "name": "zbf_yml_missing_code",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_ai.py",
+            "type": "file"
+          },
+          {
+            "name": "test_chat_to_files.py",
+            "type": "file"
+          },
+          {
+            "name": "test_file_selector_enhancements.py",
+            "type": "file"
+          },
+          {
+            "name": "test_git.py",
+            "type": "file"
+          },
+          {
+            "name": "test_salvage_correct_hunks.py",
+            "type": "file"
+          },
+          {
+            "name": "test_token_usage.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "mock_ai.py",
+        "type": "file"
+      },
+      {
+        "name": "test_data",
+        "type": "dir",
+        "children": [
+          {
+            "name": "mona_lisa.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_install.py",
+        "type": "file"
+      },
+      {
+        "name": "test_project_config.py",
+        "type": "file"
+      },
+      {
+        "name": "tools",
+        "type": "dir",
+        "children": [
+          {
+            "name": "example_snake_files.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tox.ini",
+    "type": "file"
+  }
+]

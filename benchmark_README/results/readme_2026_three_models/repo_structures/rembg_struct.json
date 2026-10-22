@@ -1,0 +1,456 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "FUNDING.yml",
+        "type": "file"
+      },
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "close_inactive_issues.yml",
+            "type": "file"
+          },
+          {
+            "name": "lint_python.yml",
+            "type": "file"
+          },
+          {
+            "name": "publish_docker.yml",
+            "type": "file"
+          },
+          {
+            "name": "publish_pypi.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_install.yml",
+            "type": "file"
+          },
+          {
+            "name": "windows_installer.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".markdownlint.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".python-version",
+    "type": "file"
+  },
+  {
+    "name": "CITATION.cff",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile_nvidia_cuda_cudnn_gpu",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.txt",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "USAGE.md",
+    "type": "file"
+  },
+  {
+    "name": "_build-exe.ps1",
+    "type": "file"
+  },
+  {
+    "name": "_modpath.iss",
+    "type": "file"
+  },
+  {
+    "name": "_setup.iss",
+    "type": "file"
+  },
+  {
+    "name": "docker-compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "animal-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "animal-1.out.png",
+        "type": "file"
+      },
+      {
+        "name": "animal-2.jpg",
+        "type": "file"
+      },
+      {
+        "name": "animal-2.out.png",
+        "type": "file"
+      },
+      {
+        "name": "animal-3.jpg",
+        "type": "file"
+      },
+      {
+        "name": "animal-3.out.png",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-1.out.png",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-2.jpg",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-2.out.png",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-3.jpg",
+        "type": "file"
+      },
+      {
+        "name": "anime-girl-3.out.png",
+        "type": "file"
+      },
+      {
+        "name": "car-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "car-1.out.png",
+        "type": "file"
+      },
+      {
+        "name": "car-2.jpg",
+        "type": "file"
+      },
+      {
+        "name": "car-2.out.png",
+        "type": "file"
+      },
+      {
+        "name": "car-3.jpg",
+        "type": "file"
+      },
+      {
+        "name": "car-3.out.png",
+        "type": "file"
+      },
+      {
+        "name": "food-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "food-1.out.alpha.jpg",
+        "type": "file"
+      },
+      {
+        "name": "food-1.out.jpg",
+        "type": "file"
+      },
+      {
+        "name": "girl-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "girl-1.out.png",
+        "type": "file"
+      },
+      {
+        "name": "girl-2.jpg",
+        "type": "file"
+      },
+      {
+        "name": "girl-2.out.png",
+        "type": "file"
+      },
+      {
+        "name": "girl-3.jpg",
+        "type": "file"
+      },
+      {
+        "name": "girl-3.out.png",
+        "type": "file"
+      },
+      {
+        "name": "plants-1.jpg",
+        "type": "file"
+      },
+      {
+        "name": "plants-1.out.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "onnxruntime-installation-matrix.png",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "pytest.ini",
+    "type": "file"
+  },
+  {
+    "name": "rembg",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "_version.py",
+        "type": "file"
+      },
+      {
+        "name": "bg.py",
+        "type": "file"
+      },
+      {
+        "name": "cli.py",
+        "type": "file"
+      },
+      {
+        "name": "commands",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "b_command.py",
+            "type": "file"
+          },
+          {
+            "name": "d_command.py",
+            "type": "file"
+          },
+          {
+            "name": "i_command.py",
+            "type": "file"
+          },
+          {
+            "name": "p_command.py",
+            "type": "file"
+          },
+          {
+            "name": "s_command.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "session_factory.py",
+        "type": "file"
+      },
+      {
+        "name": "sessions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "ben_custom.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_cod.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_dis.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_general.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_general_lite.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_hrsod.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_massive.py",
+            "type": "file"
+          },
+          {
+            "name": "birefnet_portrait.py",
+            "type": "file"
+          },
+          {
+            "name": "bria_rmbg.py",
+            "type": "file"
+          },
+          {
+            "name": "dis_anime.py",
+            "type": "file"
+          },
+          {
+            "name": "dis_custom.py",
+            "type": "file"
+          },
+          {
+            "name": "dis_general_use.py",
+            "type": "file"
+          },
+          {
+            "name": "sam.py",
+            "type": "file"
+          },
+          {
+            "name": "silueta.py",
+            "type": "file"
+          },
+          {
+            "name": "u2net.py",
+            "type": "file"
+          },
+          {
+            "name": "u2net_cloth_seg.py",
+            "type": "file"
+          },
+          {
+            "name": "u2net_custom.py",
+            "type": "file"
+          },
+          {
+            "name": "u2net_human_seg.py",
+            "type": "file"
+          },
+          {
+            "name": "u2netp.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "rembg.ipynb",
+    "type": "file"
+  },
+  {
+    "name": "rembg.py",
+    "type": "file"
+  },
+  {
+    "name": "rembg.spec",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "fixtures",
+        "type": "dir",
+        "children": [
+          {
+            "name": "anime-girl-1.jpg",
+            "type": "file"
+          },
+          {
+            "name": "car-1.jpg",
+            "type": "file"
+          },
+          {
+            "name": "cloth-1.jpg",
+            "type": "file"
+          },
+          {
+            "name": "plants-1.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_remove.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "versioneer.py",
+    "type": "file"
+  }
+]

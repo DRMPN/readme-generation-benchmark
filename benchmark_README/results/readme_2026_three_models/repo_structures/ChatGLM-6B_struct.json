@@ -1,0 +1,300 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.yaml",
+            "type": "file"
+          },
+          {
+            "name": "config.yml",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "FAQ.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MODEL_LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "PROJECT.md",
+    "type": "file"
+  },
+  {
+    "name": "UPDATE.md",
+    "type": "file"
+  },
+  {
+    "name": "api.py",
+    "type": "file"
+  },
+  {
+    "name": "cli_demo.py",
+    "type": "file"
+  },
+  {
+    "name": "cli_demo_vision.py",
+    "type": "file"
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ad-writing-2.png",
+        "type": "file"
+      },
+      {
+        "name": "blog-outline.png",
+        "type": "file"
+      },
+      {
+        "name": "comments-writing.png",
+        "type": "file"
+      },
+      {
+        "name": "email-writing-1.png",
+        "type": "file"
+      },
+      {
+        "name": "email-writing-2.png",
+        "type": "file"
+      },
+      {
+        "name": "information-extraction.png",
+        "type": "file"
+      },
+      {
+        "name": "role-play.png",
+        "type": "file"
+      },
+      {
+        "name": "self-introduction.png",
+        "type": "file"
+      },
+      {
+        "name": "sport.png",
+        "type": "file"
+      },
+      {
+        "name": "tour-guide.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "improve",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "data_sample.jsonl",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "limitations",
+    "type": "dir",
+    "children": [
+      {
+        "name": "factual_error.png",
+        "type": "file"
+      },
+      {
+        "name": "math_error.png",
+        "type": "file"
+      },
+      {
+        "name": "self-confusion_google.jpg",
+        "type": "file"
+      },
+      {
+        "name": "self-confusion_openai.jpg",
+        "type": "file"
+      },
+      {
+        "name": "self-confusion_tencent.jpg",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "ptuning",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "README_en.md",
+        "type": "file"
+      },
+      {
+        "name": "arguments.py",
+        "type": "file"
+      },
+      {
+        "name": "deepspeed.json",
+        "type": "file"
+      },
+      {
+        "name": "ds_train_finetune.sh",
+        "type": "file"
+      },
+      {
+        "name": "evaluate.sh",
+        "type": "file"
+      },
+      {
+        "name": "evaluate_finetune.sh",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "train.sh",
+        "type": "file"
+      },
+      {
+        "name": "train_chat.sh",
+        "type": "file"
+      },
+      {
+        "name": "trainer.py",
+        "type": "file"
+      },
+      {
+        "name": "trainer_seq2seq.py",
+        "type": "file"
+      },
+      {
+        "name": "web_demo.py",
+        "type": "file"
+      },
+      {
+        "name": "web_demo.sh",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "resources",
+    "type": "dir",
+    "children": [
+      {
+        "name": "WECHAT.md",
+        "type": "file"
+      },
+      {
+        "name": "cli-demo.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q1-new.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q1-old.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q2-new.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q2-old.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q3-new.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q3-old.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q4-new.png",
+        "type": "file"
+      },
+      {
+        "name": "english-q4-old.png",
+        "type": "file"
+      },
+      {
+        "name": "visualglm.png",
+        "type": "file"
+      },
+      {
+        "name": "web-demo.gif",
+        "type": "file"
+      },
+      {
+        "name": "web-demo.png",
+        "type": "file"
+      },
+      {
+        "name": "webglm.jpg",
+        "type": "file"
+      },
+      {
+        "name": "wechat.jpg",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "utils.py",
+    "type": "file"
+  },
+  {
+    "name": "web_demo.py",
+    "type": "file"
+  },
+  {
+    "name": "web_demo2.py",
+    "type": "file"
+  },
+  {
+    "name": "web_demo_old.py",
+    "type": "file"
+  },
+  {
+    "name": "web_demo_vision.py",
+    "type": "file"
+  }
+]

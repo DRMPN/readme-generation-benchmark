@@ -1,0 +1,44 @@
+I’ve confirmed this is Chatsky 0.10.0, a Python dialog-system library with optional extras for storage backends, Telegram, statistics, YAML, and LLM integrations. I’m keeping the README grounded in the checked-in docs and examples, including the actual CLI quick start and documented development commands.
+Created `/tmp/chatsky-dcue6efu/README.md` with installation options, a runnable CLI quick start, an overview of Chatsky’s core concepts, documentation links, development commands, and license information. No other files were created or modified.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGrep "TODO|FIXME|description|scripts" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m250 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/source/index.rst 
+[0m→ [0mRead docs/source/get_started.rst 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead chatsky/__init__.py 
+[0m→ [0mRead docs/source/about_us.rst 
+[0m→ [0mRead chatsky/core/script.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead chatsky/messengers/console.py 
+[0m→ [0mRead tutorials/script/core/1_basics.py 
+[0m→ [0mRead tutorials/messengers/telegram/1_basic.py 
+[0m→ [0mRead docs/source/examples.rst 
+[0m→ [0mRead chatsky/core/pipeline.py 
+[0m→ [0mRead docs/source/community.rst 
+[0m→ [0mRead docs/source/user_guides/context_guide.rst 
+[0m→ [0mRead docs/source/user_guides/llm_integration.rst 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead chatsky/__init__.py [90m[offset=38, limit=80][0m
+[0m→ [0mRead docs/source/user_guides.rst 
+[0m→ [0mRead docs/source/tutorials.rst 
+[0m→ [0mRead LICENSE [90m[limit=10][0m
+[0m→ [0mRead docs/source/development.rst 
+[0m→ [0mRead chatsky/core/transition.py 
+[0m→ [0mRead chatsky/conditions/standard.py 
+[0m✱ [0mGlob "README.md" [90m2 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

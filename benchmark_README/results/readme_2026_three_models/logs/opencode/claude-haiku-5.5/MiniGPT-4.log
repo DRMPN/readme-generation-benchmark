@@ -1,0 +1,100 @@
+I'll start by looking at the repository layout and the existing docs.
+This looks like the MiniGPT-4 codebase, and there is no existing README.md. I'll read the entry points, environment, and training/eval docs next.
+The entry points and training docs are clear. Next I'll read the configs, dataset preparation docs, and model code to confirm the setup steps.
+The repo has no top-level README, and the training docs don't say how to get the LLM weights. I'll check the remaining model, eval, and license files before writing anything.
+Next I'll check the shared eval parser, the benchmark config, and the training configs to confirm the arguments and paths.
+I have enough to write most of the README. Before writing, I'll verify two gaps I noticed: the `prompts/alignment.txt` file that the stage-2 config references, and whether the dataset config paths exist.
+The stage-2 config points to `prompts/alignment.txt`, which isn't in the repo. The code only loads it when the path is set, so I'll note it as a gap. One last check on the exact VQA dataset names the evaluation script accepts:
+The names match the docs. I'll write the README now.
+The README is written. I'll make one precision fix: the Vicuna path lives in the model config, not in the eval YAML itself.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+The repository is the MiniGPT-4 codebase, which also includes MiniGPT-v2. It had no existing README. The new file covers:
+
+- **Overview and layout:** what each top-level file and folder is for.
+- **Model variants:** the three configs (Vicuna-based MiniGPT-4, LLaMA-2-based MiniGPT-4, and MiniGPT-v2), taken from their YAML files.
+- **Installation:** the `environment.yml` setup, with pinned versions. The repo has no `requirements.txt`.
+- **Weights and configuration:** which paths to set (`llama_model`, `ckpt`) and which checkpoint links the repo actually provides.
+- **Demos:** how to run `demo.py` and `demo_v2.py`, and the MiniGPT-v2 task prompts.
+- **Training:** the two MiniGPT-4 stages and the MiniGPT-v2 fine-tune, with the `torchrun` commands.
+- **Evaluation:** the RefCOCO and VQA scripts and their dataset names.
+- **Datasets, license, and known gaps.**
+
+I did not include anything the repo doesn't support. Some things the repo doesn't provide, so the README says so:
+
+- **No base model weights.** Vicuna and LLaMA-2 must be obtained separately.
+- **No final MiniGPT-4 checkpoint link.** Only the stage-1 checkpoints are linked.
+- **Missing `prompts/alignment.txt`.** The stage-2 config references it, but the file isn't in the repo.
+- **A broken link in `MiniGPT4_Train.md`.** Its stage-2 section points to the stage-1 config path.
+
+I also noted that demos launch with `share=True`, and that training configs have `wandb_log: True` by default.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+[0m✱ [0mGlob "**/*.md" [90min . · 11 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead demo.py 
+[0m→ [0mRead demo_v2.py 
+[0m→ [0mRead environment.yml 
+[0m→ [0mRead train.py 
+[0m→ [0mRead MiniGPT4_Train.md 
+[0m→ [0mRead MiniGPTv2_Train.md 
+[0m→ [0mRead eval_scripts/EVAL_README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eval_configs/minigpt4_eval.yaml 
+[0m→ [0mRead eval_configs/minigptv2_eval.yaml 
+[0m→ [0mRead minigpt4/configs/models/minigpt4_llama2.yaml 
+[0m→ [0mRead dataset/README_1_STAGE.md 
+[0m→ [0mRead dataset/README_2_STAGE.md 
+[0m→ [0mRead dataset/README_MINIGPTv2_FINETUNE.md 
+[0m→ [0mRead minigpt4/configs/models/minigpt_v2.yaml 
+[0m→ [0mRead minigpt4/configs/models/minigpt4_vicuna0.yaml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "vicuna|Vicuna|llama2|LLaMA|delta" [90min . · 10 matches[0m
+[0m✱ [0mGlob "minigpt4/**/*.py" [90min . · 62 matches[0m
+[0m✱ [0mGlob "*" [90min eval_configs · 4 matches[0m
+[0m→ [0mRead LICENSE.md [90m[limit=30][0m
+[0m→ [0mRead eval_scripts/eval_vqa.py [90m[limit=80][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eval_configs/minigptv2_benchmark_evaluation.yaml [90m[limit=30][0m
+[0m→ [0mRead train_configs/minigptv2_finetune.yaml 
+[0m✱ [0mGrep "add_argument|def eval_parser|def init_model" [90min minigpt4/common/eval_utils.py · 11 matches[0m
+[0m→ [0mRead train_configs/minigpt4_stage2_finetune.yaml 
+[0m→ [0mRead train_configs/minigpt4_stage1_pretrain.yaml 
+[0m→ [0mRead eval_configs/minigpt4_llama2_eval.yaml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "resample|add_argument" [90min eval_scripts/eval_ref.py · 10 matches[0m
+[0m✱ [0mGrep "low_resource|load_in_8bit|device_8bit|lora" [90min minigpt4/models/minigpt4.py · 8 matches[0m
+[0m→ [0mRead minigpt4/common/eval_utils.py 
+[0m✱ [0mGlob "prompts/**" [90min . · 0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "minigpt4/configs/datasets/**/*.yaml" [90min . · 25 matches[0m
+[0m✱ [0mGrep "prompt_path" [90min minigpt4 · 5 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "in args.dataset" [90min eval_scripts/eval_vqa.py · 6 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -43,9 +43,9 @@
+ The model is selected by the `arch` and `model_type` fields in a config file.
+ 
+ | Config | `arch` | `model_type` | Language model | Notes |
+ | --- | --- | --- | --- | --- |
+-| `eval_configs/minigpt4_eval.yaml` | `minigpt4` | `pretrain_vicuna0` | Vicuna (path set via `llama_model`) | Image size 224; `low_resource: True`. |
++| `eval_configs/minigpt4_eval.yaml` | `minigpt4` | `pretrain_vicuna0` | Vicuna (path set via `llama_model` in `minigpt4/configs/models/minigpt4_vicuna0.yaml`) | Image size 224; `low_resource: True`. |
+ | `eval_configs/minigpt4_llama2_eval.yaml` | `minigpt4` | `pretrain_llama2` | LLaMA-2-chat-7B | Image size 224; `low_resource: True`. |
+ | `eval_configs/minigptv2_eval.yaml` | `minigpt_v2` | `pretrain` | LLaMA-2-chat-7B | Image size 448; LoRA rank 64, alpha 16. Default config for `demo_v2.py`. |
+ 
+ ## Installation
+
+> readme-benchmark · anthropic/claude-haiku-5.5

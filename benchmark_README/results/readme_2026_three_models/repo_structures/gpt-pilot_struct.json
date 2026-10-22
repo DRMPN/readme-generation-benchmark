@@ -1,0 +1,2738 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CODEOWNERS",
+        "type": "file"
+      },
+      {
+        "name": "CODE_OF_CONDUCT.md",
+        "type": "file"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug-report.yml",
+            "type": "file"
+          },
+          {
+            "name": "feature-request.yml",
+            "type": "file"
+          },
+          {
+            "name": "howto.yml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "copyright_template.txt",
+        "type": "file"
+      },
+      {
+        "name": "ip_assignment.yml",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ci.yml",
+            "type": "file"
+          },
+          {
+            "name": "cloud-staging-build.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "cloud",
+    "type": "dir",
+    "children": [
+      {
+        "name": "config-docker.json",
+        "type": "file"
+      },
+      {
+        "name": "entrypoint.sh",
+        "type": "file"
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file"
+      },
+      {
+        "name": "favicon.svg",
+        "type": "file"
+      },
+      {
+        "name": "on-event-extension-install.sh",
+        "type": "file"
+      },
+      {
+        "name": "settings.json",
+        "type": "file"
+      },
+      {
+        "name": "setup-dependencies.sh",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "core",
+    "type": "dir",
+    "children": [
+      {
+        "name": "agents",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "architect.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "bug_hunter.py",
+            "type": "file"
+          },
+          {
+            "name": "code_monkey.py",
+            "type": "file"
+          },
+          {
+            "name": "convo.py",
+            "type": "file"
+          },
+          {
+            "name": "developer.py",
+            "type": "file"
+          },
+          {
+            "name": "error_handler.py",
+            "type": "file"
+          },
+          {
+            "name": "executor.py",
+            "type": "file"
+          },
+          {
+            "name": "external_docs.py",
+            "type": "file"
+          },
+          {
+            "name": "frontend.py",
+            "type": "file"
+          },
+          {
+            "name": "git.py",
+            "type": "file"
+          },
+          {
+            "name": "human_input.py",
+            "type": "file"
+          },
+          {
+            "name": "importer.py",
+            "type": "file"
+          },
+          {
+            "name": "legacy_handler.py",
+            "type": "file"
+          },
+          {
+            "name": "mixins.py",
+            "type": "file"
+          },
+          {
+            "name": "orchestrator.py",
+            "type": "file"
+          },
+          {
+            "name": "problem_solver.py",
+            "type": "file"
+          },
+          {
+            "name": "response.py",
+            "type": "file"
+          },
+          {
+            "name": "spec_writer.py",
+            "type": "file"
+          },
+          {
+            "name": "task_completer.py",
+            "type": "file"
+          },
+          {
+            "name": "tech_lead.py",
+            "type": "file"
+          },
+          {
+            "name": "tech_writer.py",
+            "type": "file"
+          },
+          {
+            "name": "troubleshooter.py",
+            "type": "file"
+          },
+          {
+            "name": "wizard.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cli",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "helpers.py",
+            "type": "file"
+          },
+          {
+            "name": "main.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "actions.py",
+            "type": "file"
+          },
+          {
+            "name": "constants.py",
+            "type": "file"
+          },
+          {
+            "name": "env_importer.py",
+            "type": "file"
+          },
+          {
+            "name": "magic_words.py",
+            "type": "file"
+          },
+          {
+            "name": "user_settings.py",
+            "type": "file"
+          },
+          {
+            "name": "version.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "db",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "alembic.ini",
+            "type": "file"
+          },
+          {
+            "name": "fix_migrations.py",
+            "type": "file"
+          },
+          {
+            "name": "migrations",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README",
+                "type": "file"
+              },
+              {
+                "name": "env.py",
+                "type": "file"
+              },
+              {
+                "name": "script.py.mako",
+                "type": "file"
+              },
+              {
+                "name": "versions",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "0173e14719aa_move_metadata_from_file_to_file_content_.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "0173e14719aa_vacuum_database.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "08d71952ec2f_refactor_specification_template_to_.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "0a1bb637fa26_initial.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "3968d770dced_add_project_type_to_project.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "675268601278_add_chat_messages_and_convos.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "69e50fdaf067_move_knowledge_base_to_separate_table.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "b760f66138c0_add_docs_column_to_project_states.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "c8905d4ce784_add_original_description_and_template_.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "f352dbe45751_make_relevant_files_nullable.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "f708791b9270_adding_knowledge_base_field_to_.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ff891d366761_add_example_project_to_spec.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "models",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "branch.py",
+                "type": "file"
+              },
+              {
+                "name": "chat_convo.py",
+                "type": "file"
+              },
+              {
+                "name": "chat_message.py",
+                "type": "file"
+              },
+              {
+                "name": "exec_log.py",
+                "type": "file"
+              },
+              {
+                "name": "file.py",
+                "type": "file"
+              },
+              {
+                "name": "file_content.py",
+                "type": "file"
+              },
+              {
+                "name": "knowledge_base.py",
+                "type": "file"
+              },
+              {
+                "name": "llm_request.py",
+                "type": "file"
+              },
+              {
+                "name": "project.py",
+                "type": "file"
+              },
+              {
+                "name": "project_state.py",
+                "type": "file"
+              },
+              {
+                "name": "specification.py",
+                "type": "file"
+              },
+              {
+                "name": "user_input.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "session.py",
+            "type": "file"
+          },
+          {
+            "name": "setup.py",
+            "type": "file"
+          },
+          {
+            "name": "v0importer.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "disk",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "ignore.py",
+            "type": "file"
+          },
+          {
+            "name": "vfs.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "anthropic_client.py",
+            "type": "file"
+          },
+          {
+            "name": "azure_client.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "convo.py",
+            "type": "file"
+          },
+          {
+            "name": "groq_client.py",
+            "type": "file"
+          },
+          {
+            "name": "openai_client.py",
+            "type": "file"
+          },
+          {
+            "name": "parser.py",
+            "type": "file"
+          },
+          {
+            "name": "prompt.py",
+            "type": "file"
+          },
+          {
+            "name": "relace_client.py",
+            "type": "file"
+          },
+          {
+            "name": "request_log.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "log",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "proc",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "exec_log.py",
+            "type": "file"
+          },
+          {
+            "name": "process_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "prompts",
+        "type": "dir",
+        "children": [
+          {
+            "name": "architect",
+            "type": "dir",
+            "children": [
+              {
+                "name": "configure_template.prompt",
+                "type": "file"
+              },
+              {
+                "name": "select_templates.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              },
+              {
+                "name": "technologies.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "bug-hunter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ask_a_question.prompt",
+                "type": "file"
+              },
+              {
+                "name": "bug_found_or_add_logs.prompt",
+                "type": "file"
+              },
+              {
+                "name": "data_about_logs.prompt",
+                "type": "file"
+              },
+              {
+                "name": "get_bug_reproduction_instructions.prompt",
+                "type": "file"
+              },
+              {
+                "name": "instructions_from_human_hint.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iteration.prompt",
+                "type": "file"
+              },
+              {
+                "name": "log_data.prompt",
+                "type": "file"
+              },
+              {
+                "name": "problem_explanation.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              },
+              {
+                "name": "tell_me_more.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "chat-agent",
+            "type": "dir",
+            "children": [
+              {
+                "name": "chat.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "code-monkey",
+            "type": "dir",
+            "children": [
+              {
+                "name": "breakdown.prompt",
+                "type": "file"
+              },
+              {
+                "name": "describe_file.prompt",
+                "type": "file"
+              },
+              {
+                "name": "implement_changes.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iteration.prompt",
+                "type": "file"
+              },
+              {
+                "name": "review_changes.prompt",
+                "type": "file"
+              },
+              {
+                "name": "review_feedback.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "developer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "breakdown.prompt",
+                "type": "file"
+              },
+              {
+                "name": "filter_files.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iteration.prompt",
+                "type": "file"
+              },
+              {
+                "name": "parse_task.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "error-handler",
+            "type": "dir",
+            "children": [
+              {
+                "name": "debug.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "executor",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ran_command.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "external-docs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "create_docs_queries.prompt",
+                "type": "file"
+              },
+              {
+                "name": "select_docset.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "frontend",
+            "type": "dir",
+            "children": [
+              {
+                "name": "build_frontend.prompt",
+                "type": "file"
+              },
+              {
+                "name": "create_rag_query.prompt",
+                "type": "file"
+              },
+              {
+                "name": "is_relevant_for_docs_search.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iterate_frontend.prompt",
+                "type": "file"
+              },
+              {
+                "name": "remove_mock.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system_relace.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "importer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "analyze_project.prompt",
+                "type": "file"
+              },
+              {
+                "name": "get_entrypoints.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "partials",
+            "type": "dir",
+            "children": [
+              {
+                "name": "breakdown_code_instructions.prompt",
+                "type": "file"
+              },
+              {
+                "name": "coding_rules.prompt",
+                "type": "file"
+              },
+              {
+                "name": "doc_snippets.prompt",
+                "type": "file"
+              },
+              {
+                "name": "execution_order.prompt",
+                "type": "file"
+              },
+              {
+                "name": "features_list.prompt",
+                "type": "file"
+              },
+              {
+                "name": "file_naming.prompt",
+                "type": "file"
+              },
+              {
+                "name": "file_size_limit.prompt",
+                "type": "file"
+              },
+              {
+                "name": "files_descriptions.prompt",
+                "type": "file"
+              },
+              {
+                "name": "files_list.prompt",
+                "type": "file"
+              },
+              {
+                "name": "files_list_relevant.prompt",
+                "type": "file"
+              },
+              {
+                "name": "human_intervention_explanation.prompt",
+                "type": "file"
+              },
+              {
+                "name": "project_details.prompt",
+                "type": "file"
+              },
+              {
+                "name": "project_tasks.prompt",
+                "type": "file"
+              },
+              {
+                "name": "relative_paths.prompt",
+                "type": "file"
+              },
+              {
+                "name": "user_feedback.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "problem-solver",
+            "type": "dir",
+            "children": [
+              {
+                "name": "get_alternative_solutions.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iteration.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pythagora",
+            "type": "dir",
+            "children": [
+              {
+                "name": "commit.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "spec-writer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "add_new_feature.prompt",
+                "type": "file"
+              },
+              {
+                "name": "add_to_specification.prompt",
+                "type": "file"
+              },
+              {
+                "name": "ask_questions.prompt",
+                "type": "file"
+              },
+              {
+                "name": "build_full_specification.prompt",
+                "type": "file"
+              },
+              {
+                "name": "need_auth.prompt",
+                "type": "file"
+              },
+              {
+                "name": "project_name.prompt",
+                "type": "file"
+              },
+              {
+                "name": "prompt_complexity.prompt",
+                "type": "file"
+              },
+              {
+                "name": "review_spec.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "tech-lead",
+            "type": "dir",
+            "children": [
+              {
+                "name": "epic_breakdown.prompt",
+                "type": "file"
+              },
+              {
+                "name": "filter_files.prompt",
+                "type": "file"
+              },
+              {
+                "name": "plan.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "tech-writer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "create_readme.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "troubleshooter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "breakdown.prompt",
+                "type": "file"
+              },
+              {
+                "name": "bug_report.prompt",
+                "type": "file"
+              },
+              {
+                "name": "define_user_review_goal.prompt",
+                "type": "file"
+              },
+              {
+                "name": "filter_files.prompt",
+                "type": "file"
+              },
+              {
+                "name": "get_route_files.prompt",
+                "type": "file"
+              },
+              {
+                "name": "get_run_command.prompt",
+                "type": "file"
+              },
+              {
+                "name": "iteration.prompt",
+                "type": "file"
+              },
+              {
+                "name": "system.prompt",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "state",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "state_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "telemetry",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "example_project.py",
+            "type": "file"
+          },
+          {
+            "name": "info",
+            "type": "dir",
+            "children": [
+              {
+                "name": "javascript_react",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "summary.tpl",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "node_express_mongoose",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "summary.tpl",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "react_express",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "summary.tpl",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vite_react",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "summary.tpl",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vite_react_swagger",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "summary.tpl",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "javascript_react.py",
+            "type": "file"
+          },
+          {
+            "name": "node_express_mongoose.py",
+            "type": "file"
+          },
+          {
+            "name": "react_express.py",
+            "type": "file"
+          },
+          {
+            "name": "registry.py",
+            "type": "file"
+          },
+          {
+            "name": "render.py",
+            "type": "file"
+          },
+          {
+            "name": "tree",
+            "type": "dir",
+            "children": [
+              {
+                "name": "add_raw_tags.py",
+                "type": "file"
+              },
+              {
+                "name": "javascript_react",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": ".eslintrc.cjs",
+                    "type": "file"
+                  },
+                  {
+                    "name": ".gitignore",
+                    "type": "file"
+                  },
+                  {
+                    "name": "index.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "public",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": ".gitkeep",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "src",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "App.css",
+                        "type": "file"
+                      },
+                      {
+                        "name": "App.jsx",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.css",
+                        "type": "file"
+                      },
+                      {
+                        "name": "main.jsx",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "vite.config.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "node_express_mongoose",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": ".env.example",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "User.js",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "public",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "css",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "style.css",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "js",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "main.js",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "routes",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "authRoutes.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "middleware",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "authMiddleware.js",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "server.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "services",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "llm.js",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "views",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "index.ejs",
+                        "type": "file"
+                      },
+                      {
+                        "name": "login.ejs",
+                        "type": "file"
+                      },
+                      {
+                        "name": "partials",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "_footer.ejs",
+                            "type": "file"
+                          },
+                          {
+                            "name": "_head.ejs",
+                            "type": "file"
+                          },
+                          {
+                            "name": "_header.ejs",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "register.ejs",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "react_express",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": ".babelrc",
+                    "type": "file"
+                  },
+                  {
+                    "name": ".eslintrc.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": ".gitignore",
+                    "type": "file"
+                  },
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "api",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "app.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "middlewares",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "authMiddleware.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "errorMiddleware.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "models",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "init.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "user.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "routes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "authRoutes.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "services",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "userService.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "utils",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "log.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "mail.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "password.js",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "components.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "index.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "jsconfig.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "postcss.config.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "prisma",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "schema.prisma",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "public",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": ".gitkeep",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "server.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tailwind.config.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tsconfig.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ui",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "components",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "ui",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "alert.jsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "button.jsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "card.jsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "input.jsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "label.jsx",
+                                "type": "file"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.css",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lib",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "utils.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "main.jsx",
+                        "type": "file"
+                      },
+                      {
+                        "name": "pages",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "Home.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "Home.jsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "Login.jsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "Register.jsx",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "vite.config.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vite_react",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": ".gitignore",
+                    "type": "file"
+                  },
+                  {
+                    "name": "client",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "components.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "eslint.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "package.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "postcss.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "src",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "App.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "App.tsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "api",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "api.ts",
+                                "type": "file"
+                              },
+                              {
+                                "name": "auth.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "components",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "Footer.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Header.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Layout.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "ProtectedRoute.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "ui",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "accordion.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "alert-dialog.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "alert.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "aspect-ratio.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "avatar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "badge.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "breadcrumb.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "button.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "calendar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "card.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "carousel.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "chart.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "checkbox.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "collapsible.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "command.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "context-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "dialog.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "drawer.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "dropdown-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "form.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "hover-card.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "input-otp.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "input.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "label.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "menubar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "navigation-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "pagination.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "popover.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "progress.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "radio-group.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "resizable.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "scroll-area.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "select.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "separator.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sheet.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sidebar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "skeleton.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "slider.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sonner.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "switch.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "table.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "tabs.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "textarea.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "theme-provider.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "theme-toggle.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toast.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toaster.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toggle-group.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toggle.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "tooltip.tsx",
+                                    "type": "file"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "config",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "constants.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "contexts",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "AuthContext.tsx",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "hooks",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "useMobile.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "useToast.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "lib",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "utils.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "main.tsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "pages",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "BlankPage.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Login.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Register.tsx",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "vite-env.d.ts",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tailwind.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.app.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.node.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "vite.config.ts",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "server",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "config",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "database.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "models",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "User.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "init.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "package.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "routes",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "authRoutes.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "middleware",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "auth.js",
+                                "type": "file"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "server.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "services",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "llmService.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "userService.js",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "utils",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "auth.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "password.js",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "vite_react_swagger",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": ".gitignore",
+                    "type": "file"
+                  },
+                  {
+                    "name": "client",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "components.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "eslint.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "package.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "postcss.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "src",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "App.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "App.tsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "api",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "api.ts",
+                                "type": "file"
+                              },
+                              {
+                                "name": "auth.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "components",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "Footer.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Header.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Layout.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "ProtectedRoute.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "ui",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "accordion.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "alert-dialog.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "alert.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "aspect-ratio.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "avatar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "badge.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "breadcrumb.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "button.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "calendar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "card.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "carousel.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "chart.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "checkbox.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "collapsible.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "command.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "context-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "dialog.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "drawer.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "dropdown-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "form.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "hover-card.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "input-otp.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "input.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "label.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "menubar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "navigation-menu.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "pagination.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "popover.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "progress.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "radio-group.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "resizable.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "scroll-area.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "select.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "separator.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sheet.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sidebar.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "skeleton.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "slider.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "sonner.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "switch.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "table.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "tabs.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "textarea.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "theme-provider.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "theme-toggle.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toast.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toaster.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toggle-group.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "toggle.tsx",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "tooltip.tsx",
+                                    "type": "file"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "config",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "constants.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "contexts",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "AuthContext.tsx",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "hooks",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "useMobile.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "useToast.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "lib",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "utils.ts",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "main.tsx",
+                            "type": "file"
+                          },
+                          {
+                            "name": "pages",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "BlankPage.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Login.tsx",
+                                "type": "file"
+                              },
+                              {
+                                "name": "Register.tsx",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "vite-env.d.ts",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tailwind.config.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.app.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tsconfig.node.json",
+                        "type": "file"
+                      },
+                      {
+                        "name": "vite.config.ts",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "package.json",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "vite_react.py",
+            "type": "file"
+          },
+          {
+            "name": "vite_react_swagger.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ui",
+        "type": "dir",
+        "children": [
+          {
+            "name": "api_server.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "console.py",
+            "type": "file"
+          },
+          {
+            "name": "ipc_client.py",
+            "type": "file"
+          },
+          {
+            "name": "virtual.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "TELEMETRY.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "example-config.json",
+    "type": "file"
+  },
+  {
+    "name": "main.py",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "agents",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_base.py",
+            "type": "file"
+          },
+          {
+            "name": "test_convo.py",
+            "type": "file"
+          },
+          {
+            "name": "test_external_docs.py",
+            "type": "file"
+          },
+          {
+            "name": "test_orchestrator.py",
+            "type": "file"
+          },
+          {
+            "name": "test_tech_lead.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cli",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_cli.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_config.py",
+            "type": "file"
+          },
+          {
+            "name": "test_env_importer.py",
+            "type": "file"
+          },
+          {
+            "name": "test_version.py",
+            "type": "file"
+          },
+          {
+            "name": "testconfig.json",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "conftest.py",
+        "type": "file"
+      },
+      {
+        "name": "db",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "factories.py",
+            "type": "file"
+          },
+          {
+            "name": "test_branch.py",
+            "type": "file"
+          },
+          {
+            "name": "test_db.py",
+            "type": "file"
+          },
+          {
+            "name": "test_project.py",
+            "type": "file"
+          },
+          {
+            "name": "test_project_state.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "disk",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_ignore.py",
+            "type": "file"
+          },
+          {
+            "name": "test_vfs.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "integration",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "llm",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_anthropic.py",
+                "type": "file"
+              },
+              {
+                "name": "test_groq.py",
+                "type": "file"
+              },
+              {
+                "name": "test_openai.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "prompts",
+            "type": "dir",
+            "children": [
+              {
+                "name": "test.txt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_convo.py",
+            "type": "file"
+          },
+          {
+            "name": "test_openai.py",
+            "type": "file"
+          },
+          {
+            "name": "test_parser.py",
+            "type": "file"
+          },
+          {
+            "name": "test_prompt.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "log",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_log.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "proc",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_process_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "state",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_state_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "telemetry",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_telemetry.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_templates.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ui",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_console.py",
+            "type": "file"
+          },
+          {
+            "name": "test_ipc_client.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

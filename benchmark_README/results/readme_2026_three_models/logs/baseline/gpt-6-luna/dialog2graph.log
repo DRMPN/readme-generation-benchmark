@@ -1,0 +1,983 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63841,
+    "tree_files": 581,
+    "tracked_files": 581,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 223,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 668,
+        "truncated": false
+      },
+      {
+        "path": "docs/Makefile",
+        "tokens": 212,
+        "truncated": false
+      },
+      {
+        "path": "prompt_cache/docker-compose.yml",
+        "tokens": 148,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_02_07_example/pyproject.toml",
+        "tokens": 110,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_02_10_fixing_dependencies/pyproject.toml",
+        "tokens": 106,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_04_load_real_datasets/pyproject.toml",
+        "tokens": 99,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_10_push_dataset_to_hub/pyproject.toml",
+        "tokens": 101,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_11_all_uttrs_present/pyproject.toml",
+        "tokens": 100,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_12_rec_models_incrementation/pyproject.toml",
+        "tokens": 114,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_12_topic_generation/pyproject.toml",
+        "tokens": 109,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_17_sample_graph_incrementation/pyproject.toml",
+        "tokens": 113,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_18_embedding_grouper/pyproject.toml",
+        "tokens": 100,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_19_dia2graph_3_ways/pyproject.toml",
+        "tokens": 93,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_19_testing_dia_augmentation/pyproject.toml",
+        "tokens": 114,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_20_d2g_pipeline/pyproject.toml",
+        "tokens": 90,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_26_dia_augmentation/pyproject.toml",
+        "tokens": 113,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_29_dia_augmentation_all_dataset/pyproject.toml",
+        "tokens": 115,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_31_reaugmentation/pyproject.toml",
+        "tokens": 112,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_03_selecting_emb_params/pyproject.toml",
+        "tokens": 138,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_04_pushing_aug_data_to_hub/pyproject.toml",
+        "tokens": 116,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_09_augment_metrics_and_class/pyproject.toml",
+        "tokens": 115,
+        "truncated": false
+      },
+      {
+        "path": "dialog2graph/cli/main.py",
+        "tokens": 948,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 614,
+        "truncated": false
+      },
+      {
+        "path": "dialog2graph/README.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "docs/doc_structure.md",
+        "tokens": 166,
+        "truncated": false
+      },
+      {
+        "path": "docs/how_to_contribute.md",
+        "tokens": 593,
+        "truncated": false
+      },
+      {
+        "path": "experiments/README.md",
+        "tokens": 411,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/about_us.rst",
+        "tokens": 138,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/development.rst",
+        "tokens": 64,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/getting_started.rst",
+        "tokens": 461,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/index.rst",
+        "tokens": 397,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/research.rst",
+        "tokens": 148,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides.rst",
+        "tokens": 353,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_02_07_example/README.md",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_02_10_fixing_dependencies/README.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_04_load_real_datasets/README.md",
+        "tokens": 209,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_10_push_dataset_to_hub/README.md",
+        "tokens": 76,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_11_all_uttrs_present/README.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_12_rec_models_incrementation/README.md",
+        "tokens": 357,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_12_topic_generation/README.md",
+        "tokens": 131,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_17_sample_graph_incrementation/README.md",
+        "tokens": 191,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_18_embedding_grouper/README.md",
+        "tokens": 143,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_19_dia2graph_3_ways/README.md",
+        "tokens": 199,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_19_testing_dia_augmentation/README.md",
+        "tokens": 199,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_20_d2g_pipeline/README.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_26_dia_augmentation/README.md",
+        "tokens": 239,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_29_dia_augmentation_all_dataset/README.md",
+        "tokens": 375,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_03_31_reaugmentation/README.md",
+        "tokens": 202,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_03_selecting_emb_params/README.md",
+        "tokens": 435,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_04_pushing_aug_data_to_hub/README.md",
+        "tokens": 51,
+        "truncated": false
+      },
+      {
+        "path": "experiments/exp2025_04_09_augment_metrics_and_class/README.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/research/data_collections.rst",
+        "tokens": 527,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/augment_dialogs.rst",
+        "tokens": 533,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/basic_usage.rst",
+        "tokens": 677,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/cli_usage.rst",
+        "tokens": 937,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/evaluate_userguide.rst",
+        "tokens": 645,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/extend_graphs.rst",
+        "tokens": 316,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/generate_graphs.rst",
+        "tokens": 1161,
+        "truncated": false
+      },
+      {
+        "path": "docs/source/userguides/generate_synthetic.rst",
+        "tokens": 557,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.09.29_prompting/report.md",
+        "tokens": 103,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.10.01_synthetic_data/report.md",
+        "tokens": 77,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/report.md",
+        "tokens": 318,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.10.20_dialog_graph_synthesis/report.md",
+        "tokens": 681,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.10.20_dialog_graph_synthesis/task.md",
+        "tokens": 935,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.14_dialog2graph/report.md",
+        "tokens": 1227,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.17_concatenating_subchains_prompt/report.md",
+        "tokens": 349,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.22_cycle_dialog_generation_improvement/report.md",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.22_cycle_dialog_generation_improvement/task.md",
+        "tokens": 53,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.27_triplet_check_impovement/report.md",
+        "tokens": 521,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.11.27_triplet_check_impovement/task.md",
+        "tokens": 321,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.12.10_complex_graph_gen/report.md",
+        "tokens": 108,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2024.12.10_complex_graph_gen/task.md",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/report.md",
+        "tokens": 129,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2025.01.22_sampler/report.md",
+        "tokens": 281,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/2025.01.28_find_ends/report.md",
+        "tokens": 298,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/exp20250207_three_stages_plus/report.md",
+        "tokens": 110,
+        "truncated": false
+      },
+      {
+        "path": "experiments/old_experiments/exp20250226_incremental/report.md",
+        "tokens": 611,
+        "truncated": false
+      },
+      {
+        "path": "ruff.toml",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "dialog2graph/__init__.py",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "examples/example_data.json",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "prompt_cache/init.sql",
+        "tokens": 193,
+        "truncated": false
+      },
+      {
+        "path": "scripts/check_metrics.py",
+        "tokens": 1528,
+        "truncated": false
+      },
+      {
+        "path": "scripts/codestyle.py",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "scripts/test.py",
+        "tokens": 224,
+        "truncated": false
+      },
+      {
+        "path": "tests/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_dialog_augmentation.py",
+        "tokens": 1103,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_dialog_augmentation_data.json",
+        "tokens": 5401,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_initialization.py",
+        "tokens": 434,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_metrics_data.json",
+        "tokens": 5573,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_pipelines_data.json",
+        "tokens": 3937,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "poetry.lock",
+      "docs/make.bat",
+      "tests/test_topic_generation_init.py",
+      "tests/test_validators.py",
+      ".github/workflows/build_and_publish_docs.yml",
+      ".github/workflows/build_and_publish_release.yml",
+      ".github/workflows/check_metrics.yml",
+      ".github/workflows/codestyle.yml",
+      ".github/workflows/coverage.yml",
+      ".github/workflows/test_release.yml",
+      ".github/workflows/tests.yml",
+      "dialog2graph/cli/__init__.py",
+      "dialog2graph/datasets/__init__.py",
+      "dialog2graph/metrics/__init__.py",
+      "dialog2graph/metrics/algorithm_registry.py",
+      "dialog2graph/metrics/similarity.py",
+      "dialog2graph/pipelines/__init__.py",
+      "dialog2graph/pipelines/model_storage.py",
+      "dialog2graph/pipelines/report.py",
+      "dialog2graph/utils/__init__.py",
+      "dialog2graph/utils/dg_helper.py",
+      "dialog2graph/utils/logger.py",
+      "dialog2graph/utils/prompt_caching.py",
+      "dialog2graph/utils/vector_stores.py",
+      "docs/source/conf.py",
+      "examples/basics/base_classes_usage.ipynb",
+      "examples/cli_usage/cfg.yml",
+      "examples/cli_usage/main.ipynb",
+      "examples/data_generation/LoopedGraphGenerator_example.ipynb",
+      "examples/data_generation/cache_example.ipynb",
+      "examples/dialog_augmentation/dialogue_augmentation_data_example.json",
+      "examples/dialog_augmentation/dialogue_augmentation_example.ipynb",
+      "examples/dialog_extension/dialog_extender_example.ipynb",
+      "examples/evaluation/example_metrics_data.json",
+      "examples/evaluation/examples_of_metrics_usage.ipynb",
+      "examples/pipeline_usage/models_config.yml",
+      "examples/pipeline_usage/multiple_dialogs.json",
+      "examples/pipeline_usage/pipeline_example.ipynb",
+      "experiments/exp2025_02_10_fixing_dependencies/poetry.lock",
+      "experiments/exp2025_03_04_load_real_datasets/poetry.lock",
+      "experiments/exp2025_03_10_push_dataset_to_hub/poetry.lock",
+      "experiments/exp2025_03_11_all_uttrs_present/poetry.lock",
+      "experiments/exp2025_03_12_rec_models_incrementation/poetry.lock",
+      "experiments/exp2025_03_12_topic_generation/poetry.lock",
+      "experiments/exp2025_03_17_sample_graph_incrementation/poetry.lock",
+      "experiments/exp2025_03_18_embedding_grouper/poetry.lock",
+      "experiments/exp2025_03_19_testing_dia_augmentation/poetry.lock",
+      "experiments/exp2025_03_26_dia_augmentation/poetry.lock",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/poetry.lock",
+      "experiments/exp2025_03_31_reaugmentation/poetry.lock",
+      "experiments/exp2025_04_04_pushing_aug_data_to_hub/poetry.lock",
+      "experiments/exp2025_04_09_augment_metrics_and_class/poetry.lock",
+      "tests/cli/cfg.yml",
+      "tests/cli/test_cli.json",
+      "tests/cli/test_cli_d2g.py",
+      "tests/cli/test_cli_empty_dialogs.json",
+      "tests/cli/test_cli_empty_graph.json",
+      "tests/cli/test_cli_no_dialogs.json",
+      "tests/cli/test_cli_no_graph.json",
+      "tests/cli/wrong_cfg.yml",
+      "tests/metrics/test_automatic_metrics.py",
+      "tests/metrics_results/extender_23.04.2025_1.json",
+      "tests/metrics_results/extender_23.04.2025_2.json",
+      "tests/metrics_results/extender_24.04.2025_1.json",
+      "tests/metrics_results/extender_24.04.2025_2.json",
+      "tests/metrics_results/extender_26.04.2025_1.json",
+      "tests/metrics_results/extender_29.04.2025_1.json",
+      "tests/metrics_results/extender_30.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_23.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_23.04.2025_2.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_2.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_3.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_4.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_5.json",
+      "tests/metrics_results/three_stages_light_24.04.2025_6.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_2.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_3.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_4.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_5.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_6.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_7.json",
+      "tests/metrics_results/three_stages_light_25.04.2025_8.json",
+      "tests/metrics_results/three_stages_light_26.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_26.04.2025_2.json",
+      "tests/metrics_results/three_stages_light_28.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_28.04.2025_2.json",
+      "tests/metrics_results/three_stages_light_28.04.2025_3.json",
+      "tests/metrics_results/three_stages_light_28.04.2025_4.json",
+      "tests/metrics_results/three_stages_light_28.04.2025_5.json",
+      "tests/metrics_results/three_stages_light_29.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_30.04.2025_1.json",
+      "tests/metrics_results/three_stages_light_30.04.2025_2.json",
+      "tests/metrics_results/three_stages_llm_23.04.2025_1.json",
+      "tests/metrics_results/three_stages_llm_23.04.2025_2.json",
+      "tests/metrics_results/three_stages_llm_24.04.2025_1.json",
+      "tests/metrics_results/three_stages_llm_24.04.2025_2.json",
+      "tests/metrics_results/three_stages_llm_26.04.2025_1.json",
+      "tests/metrics_results/three_stages_llm_26.04.2025_2.json",
+      "tests/metrics_results/three_stages_llm_29.04.2025_1.json",
+      "tests/metrics_results/three_stages_llm_30.04.2025_1.json",
+      "tests/pipelines/test_d2g_extender.py",
+      "tests/pipelines/test_d2g_light.py",
+      "tests/pipelines/test_d2g_llm.py",
+      "dialog2graph/cli/commands/generate_data.py",
+      "dialog2graph/cli/commands/generate_graph_extender.py",
+      "dialog2graph/cli/commands/generate_graph_light.py",
+      "dialog2graph/cli/commands/generate_graph_llm.py",
+      "dialog2graph/datasets/augment_dialogs/__init__.py",
+      "dialog2graph/datasets/augment_dialogs/augmentation.py",
+      "dialog2graph/datasets/augment_dialogs/prompts.py",
+      "dialog2graph/datasets/complex_dialogs/__init__.py",
+      "dialog2graph/datasets/complex_dialogs/generation.py",
+      "dialog2graph/datasets/complex_dialogs/prompts.py",
+      "dialog2graph/metrics/llm_metrics/__init__.py",
+      "dialog2graph/metrics/llm_metrics/metrics.py",
+      "dialog2graph/metrics/llm_metrics/prompts.py",
+      "dialog2graph/metrics/llm_validators/__init__.py",
+      "dialog2graph/metrics/llm_validators/validators.py",
+      "dialog2graph/metrics/no_llm_metrics/__init__.py",
+      "dialog2graph/metrics/no_llm_metrics/metrics.py",
+      "dialog2graph/metrics/no_llm_validators/__init__.py",
+      "dialog2graph/metrics/no_llm_validators/validators.py",
+      "dialog2graph/metrics/test_cases/test_chain_with_equal_number_of_nodes.json",
+      "dialog2graph/metrics/test_cases/test_complex_graph.json",
+      "dialog2graph/metrics/test_cases/test_complex_graph_2.json",
+      "dialog2graph/metrics/test_cases/test_cycle_with_missing_edge.json",
+      "dialog2graph/metrics/test_cases/test_single_nodes.json",
+      "dialog2graph/metrics/test_cases/test_split_node.json",
+      "dialog2graph/pipelines/core/__init__.py",
+      "dialog2graph/pipelines/core/algorithms.py",
+      "dialog2graph/pipelines/core/d2g_generator.py",
+      "dialog2graph/pipelines/core/dialog.py",
+      "dialog2graph/pipelines/core/dialog_sampling.py",
+      "dialog2graph/pipelines/core/graph.py",
+      "dialog2graph/pipelines/core/pipeline.py",
+      "dialog2graph/pipelines/core/prompt_loader.py",
+      "dialog2graph/pipelines/core/schemas.py",
+      "dialog2graph/pipelines/d2g_extender/__init__.py",
+      "dialog2graph/pipelines/d2g_extender/pipeline.py",
+      "dialog2graph/pipelines/d2g_extender/prompts.py",
+      "dialog2graph/pipelines/d2g_extender/three_stages_extender.py",
+      "dialog2graph/pipelines/d2g_light/__init__.py",
+      "dialog2graph/pipelines/d2g_light/pipeline.py",
+      "dialog2graph/pipelines/d2g_light/three_stages_light.py",
+      "dialog2graph/pipelines/d2g_llm/__init__.py",
+      "dialog2graph/pipelines/d2g_llm/pipeline.py",
+      "dialog2graph/pipelines/d2g_llm/prompts.py",
+      "dialog2graph/pipelines/d2g_llm/three_stages_llm.py",
+      "dialog2graph/pipelines/helpers/__init__.py",
+      "dialog2graph/pipelines/helpers/find_cycle_ends.py",
+      "dialog2graph/pipelines/helpers/parse_data.py",
+      "dialog2graph/pipelines/topic_generation/__init__.py",
+      "dialog2graph/pipelines/topic_generation/pipeline.py",
+      "docs/source/_templates/example-links.html",
+      "experiments/exp2025_02_07_example/exp2025_02_07_example/__init__.py",
+      "experiments/exp2025_02_07_example/exp2025_02_07_example/your_notebook.ipynb",
+      "experiments/exp2025_02_07_example/tests/__init__.py",
+      "experiments/exp2025_02_10_fixing_dependencies/exp2025_02_10_fixing_dependencies/__init__.py",
+      "experiments/exp2025_02_10_fixing_dependencies/exp2025_02_10_fixing_dependencies/okay.py",
+      "experiments/exp2025_02_10_fixing_dependencies/exp2025_02_10_fixing_dependencies/your_notebook.ipynb",
+      "experiments/exp2025_02_10_fixing_dependencies/tests/__init__.py",
+      "experiments/exp2025_03_04_load_real_datasets/exp2025_03_04_load_real_datasets/__init__.py",
+      "experiments/exp2025_03_04_load_real_datasets/exp2025_03_04_load_real_datasets/env_example",
+      "experiments/exp2025_03_04_load_real_datasets/exp2025_03_04_load_real_datasets/load_datasets.ipynb",
+      "experiments/exp2025_03_04_load_real_datasets/exp2025_03_04_load_real_datasets/load_script.py",
+      "experiments/exp2025_03_04_load_real_datasets/exp2025_03_04_load_real_datasets/settings.py",
+      "experiments/exp2025_03_04_load_real_datasets/tests/__init__.py",
+      "experiments/exp2025_03_10_push_dataset_to_hub/exp2025_03_10_push_dataset_to_hub/__init__.py",
+      "experiments/exp2025_03_10_push_dataset_to_hub/exp2025_03_10_push_dataset_to_hub/push_to_hub.ipynb",
+      "experiments/exp2025_03_10_push_dataset_to_hub/tests/__init__.py",
+      "experiments/exp2025_03_11_all_uttrs_present/exp2025_03_11_all_uttrs_present/__init__.py",
+      "experiments/exp2025_03_11_all_uttrs_present/exp2025_03_11_all_uttrs_present/tests.ipynb",
+      "experiments/exp2025_03_11_all_uttrs_present/tests/__init__.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_chatgpt-4o-latest_AppCh.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_chatgpt-4o-latest_TSG.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_chatgpt-4o-latest_TSG_emb.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_o1-mini_AppCh.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_o1-mini_TSG_emb.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_o3-mini_AppCh.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_o3-mini_TSG.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_incremental_o3-mini_TSG_emb.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/gen24_graphid13_in\u0441remental_o1-mini_TSG.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/data/generated_24_with_ids.json",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/__init__.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/append_chain.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/embedder.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/exp_with_chatgpt-4o-latest.ipynb",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/exp_with_o1-mini.ipynb",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/exp_with_o3-mini.ipynb",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/missing_edges_prompt.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/prompts.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/settings.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/three_stages_0i.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/three_stages_1.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/three_stages_1i.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/utils.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/exp2025_03_12_rec_models_incrementation/vectors.py",
+      "experiments/exp2025_03_12_rec_models_incrementation/tests/__init__.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/__init__.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/book_table.json",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/embedder.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/missing_edges_prompt.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/prompts.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/settings.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/three_stages_algo.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/three_stages_llm.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/topic_generation.ipynb",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/transfer.json",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/utils.py",
+      "experiments/exp2025_03_12_topic_generation/exp2025_03_12_topic_generation/vectors.py",
+      "experiments/exp2025_03_12_topic_generation/tests/__init__.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/gen24_graphid0_incrementation.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/gen24_graphid1_incrementation.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/gen24_graphid2_incrementation.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/gen24_graphid3_incrementation.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/gen24_graphid4_incrementation.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/data/generated_24_with_ids.json",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/__init__.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/embedder.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/graph_incrementation.ipynb",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/missing_edges_prompt.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/prompts.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/settings.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/three_stages_0i.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/three_stages_1.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/utils.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/exp2025_03_17_sample_graph_incrementation/vectors.py",
+      "experiments/exp2025_03_17_sample_graph_incrementation/tests/__init__.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/__init__.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/dialogs.json",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/embedder.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/embedder_algo.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/grouper.ipynb",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/missing_edges_prompt.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/prompts.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/settings.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/three_stages_algo.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/three_stages_embedder.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/three_stages_llm.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/utils.py",
+      "experiments/exp2025_03_18_embedding_grouper/exp2025_03_18_embedding_grouper/vectors.py",
+      "experiments/exp2025_03_18_embedding_grouper/tests/__init__.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/__init__.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/dia2graph_generation.ipynb",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/embedder.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/missing_edges_prompt.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/prompts.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/schemas.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/settings.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/three_stages_algo.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/three_stages_extender.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/three_stages_llm.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/transfer.json",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/utils.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/exp2025_03_19_dia2graph_3_ways/vectors.py",
+      "experiments/exp2025_03_19_dia2graph_3_ways/tests/__init__.py",
+      "experiments/exp2025_03_19_testing_dia_augmentation/data/gen_dataset_augment_naive",
+      "experiments/exp2025_03_19_testing_dia_augmentation/data/gen_dataset_augment_naive_filtered",
+      "experiments/exp2025_03_19_testing_dia_augmentation/data/gen_dataset_augment_one-shot",
+      "experiments/exp2025_03_19_testing_dia_augmentation/data/gen_dataset_augment_one-shot_2",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/__init__.py",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/augmentation_prompts.py",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/augmentation_utils.py",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/dialog_augmentation.ipynb",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/dialog_augmentation_check.ipynb",
+      "experiments/exp2025_03_19_testing_dia_augmentation/exp2025_03_19_testing_dia_augmentation/find_duplicates.ipynb",
+      "experiments/exp2025_03_19_testing_dia_augmentation/tests/__init__.py",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/__init__.py",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/cfg.yml",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/d2g_light_22.04.2025_1.json",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/model_storage.yml",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/result.json",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/test_graph_1.json",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/test_pipeline.ipynb",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/test_pipelines_data.json",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/transfer.json",
+      "experiments/exp2025_03_20_d2g_pipeline/exp2025_03_20_d2g_pipeline/transfer_2.json",
+      "experiments/exp2025_03_20_d2g_pipeline/tests/__init__.py",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_3.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_4.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_5.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_6.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_7.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_8.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_9.json",
+      "experiments/exp2025_03_26_dia_augmentation/data/gen_dataset_augment_uttr-vars_9.pkl",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/__init__.py",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/augmentation_prompts.py",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/augmentation_utils.py",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/dia_augmentation.ipynb",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/dia_augmentation_check.ipynb",
+      "experiments/exp2025_03_26_dia_augmentation/exp2025_03_26_dia_augmentation/dialog_augmentation.py",
+      "experiments/exp2025_03_26_dia_augmentation/tests/__init__.py",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_100-149_part1.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_100-149_part2.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_150-199.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_200-249_part1.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_200-249_part2.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_250-299.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_300-349.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_350-399.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_400-402.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_v1.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augment_uttr-vars_9_v2.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_0-402.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_0-402_cleaned.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_0-402_combined.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_0-402_nodes_edges.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_0-99.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_100-149.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_150-199.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_200-249_v2.pkl",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_250-299.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_300-349.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_350-399.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/data/gen_dataset_augmented_400-402.json",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/__init__.py",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/augmentation_prompts.py",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/augmentation_utils.py",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/dia_augmentation.ipynb",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/dia_augmentation_check.ipynb",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/exp2025_03_29_dia_augmentation_all_dataset/dialog_augmentation.py",
+      "experiments/exp2025_03_29_dia_augmentation_all_dataset/tests/__init__.py",
+      "experiments/exp2025_03_31_reaugmentation/data/d2g_generated_without_hello_in_the_middle.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_cleaned_v4.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_cleaned_v5.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_combined_v4.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_combined_v5.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_nodes_edges_v4.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_nodes_edges_v5.json",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_v4.pkl",
+      "experiments/exp2025_03_31_reaugmentation/data/gen_dataset_augmented_0-402_without_hello_v4.pkl",
+      "experiments/exp2025_03_31_reaugmentation/data/idx_and_damaged_topics.json",
+      "experiments/exp2025_03_31_reaugmentation/data/unstable_augmentation_examples.json",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/__init__.py",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/augmentation_prompts.py",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/augmentation_utils.py",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/dia_augmentation_check.ipynb",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/dia_augmentation_final_check.ipynb",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/dialog_augmentation.py",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/generation_error_analysis.ipynb",
+      "experiments/exp2025_03_31_reaugmentation/exp2025_03_31_reaugmentation/uttr_vars_error_analysis.ipynb",
+      "experiments/exp2025_03_31_reaugmentation/tests/__init__.py",
+      "experiments/exp2025_04_03_selecting_emb_params/tests/__init__.py",
+      "experiments/exp2025_04_04_pushing_aug_data_to_hub/data/gen_dataset_augmented_0-402_combined_v5.json",
+      "experiments/exp2025_04_04_pushing_aug_data_to_hub/exp2025_04_04_pushing_aug_data_to_hub/__init__.py",
+      "experiments/exp2025_04_04_pushing_aug_data_to_hub/exp2025_04_04_pushing_aug_data_to_hub/pushing_data_to_hub.ipynb",
+      "experiments/exp2025_04_04_pushing_aug_data_to_hub/tests/__init__.py",
+      "experiments/exp2025_04_09_augment_metrics_and_class/data/gen_dataset_augmented_0-402_combined_v5.json",
+      "experiments/exp2025_04_09_augment_metrics_and_class/data/gen_dataset_augmented_0-402_nodes_edges_v5.json",
+      "experiments/exp2025_04_09_augment_metrics_and_class/data/gen_dataset_augmented_0-402_v4.pkl",
+      "experiments/exp2025_04_09_augment_metrics_and_class/data/test_augmentation_data.json",
+      "experiments/exp2025_04_09_augment_metrics_and_class/exp2025_04_09_augment_metrics_and_class/__init__.py",
+      "experiments/exp2025_04_09_augment_metrics_and_class/exp2025_04_09_augment_metrics_and_class/testing_class_and_metrics.ipynb",
+      "experiments/exp2025_04_09_augment_metrics_and_class/tests/__init__.py",
+      "experiments/old_experiments/2024.10.01_synthetic_data/evaluate_functions.py",
+      "experiments/old_experiments/2024.10.01_synthetic_data/generate_dialogs.py",
+      "experiments/old_experiments/2024.10.01_synthetic_data/prompt.txt",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/augmented_graphs.json",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/average_graph_vis_test.py",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/dataset_generation.py",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/dialog_graph_pairs.json",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/gen_data.ipynb",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/raw_data.json",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/scores.json",
+      "experiments/old_experiments/2024.10.15_visualisation/graphs_viz.zip",
+      "experiments/old_experiments/2024.10.15_visualisation/visualise_graphs.ipynb",
+      "experiments/old_experiments/2024.10.20_dialog_graph_synthesis/dialog_graph_synthesis.ipynb",
+      "experiments/old_experiments/2024.11.14_dialog2graph/FT_Llama.ipynb",
+      "experiments/old_experiments/2024.11.14_dialog2graph/check_data.ipynb",
+      "experiments/old_experiments/2024.11.14_dialog2graph/comp_mini_results.csv",
+      "experiments/old_experiments/2024.11.14_dialog2graph/comp_results.csv",
+      "experiments/old_experiments/2024.11.14_dialog2graph/dialog_complex_results.csv",
+      "experiments/old_experiments/2024.11.14_dialog2graph/dialog_results.csv",
+      "experiments/old_experiments/2024.11.14_dialog2graph/prompts.py",
+      "experiments/old_experiments/2024.11.14_dialog2graph/prompts_11_19.py",
+      "experiments/old_experiments/2024.11.14_dialog2graph/prompts_11_25.py",
+      "experiments/old_experiments/2024.11.14_dialog2graph/results.csv",
+      "experiments/old_experiments/2024.11.14_dialog2graph/run_autometrics.py",
+      "experiments/old_experiments/2024.11.17_concatenating_subchains_prompt/main.ipynb",
+      "experiments/old_experiments/2024.11.17_concatenating_subchains_prompt/test_data.json",
+      "experiments/old_experiments/2024.11.22_cycle_dialog_generation_improvement/cycle_dialog_generation_improvement.ipynb",
+      "experiments/old_experiments/2024.11.24_creating_a_dataset/dialog_dataset_10_topics_3_dialog.json",
+      "experiments/old_experiments/2024.11.24_creating_a_dataset/main.ipynb",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/triplet_check_impovement.ipynb",
+      "experiments/old_experiments/2024.12.10_complex_graph_gen/complex_graph_gen.ipynb",
+      "experiments/old_experiments/2024.12.11_visualization/complex_graphs.json",
+      "experiments/old_experiments/2024.12.11_visualization/main.ipynb",
+      "experiments/old_experiments/2024.12.11_visualization/valid_dialogs_with_samples.json",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/andrey_data.json",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/check_the_data.ipynb",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/data.json",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/dmitry_data.json",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/fix_sampler.ipynb",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/graphs.json",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/investigate_90_paths_from_one_graph.ipynb",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/results.csv",
+      "experiments/old_experiments/2025.01.13_data_check_and_sampler_debugging/sampler.ipynb",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/dialogs.txt",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/get_some_data.ipynb",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/graph.json",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/graph_gen_autofix.ipynb",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/score.ipynb",
+      "experiments/old_experiments/2025.01.22_sampler/abstract.json",
+      "experiments/old_experiments/2025.01.22_sampler/coffee.json",
+      "experiments/old_experiments/2025.01.22_sampler/complex_graphs.json",
+      "experiments/old_experiments/2025.01.22_sampler/dialog_dataset_10_topics_3_dialog.json",
+      "experiments/old_experiments/2025.01.22_sampler/dialog_sampler.py",
+      "experiments/old_experiments/2025.01.22_sampler/duplex.json",
+      "experiments/old_experiments/2025.01.22_sampler/loan.json",
+      "experiments/old_experiments/2025.01.22_sampler/more_topics.json",
+      "experiments/old_experiments/2025.01.22_sampler/more_topics_2.json",
+      "experiments/old_experiments/2025.01.22_sampler/ready_graphs.json",
+      "experiments/old_experiments/2025.01.22_sampler/resample.py",
+      "experiments/old_experiments/2025.01.22_sampler/sampler.ipynb",
+      "experiments/old_experiments/2025.01.22_sampler/topics.json",
+      "experiments/old_experiments/2025.01.22_sampler/try.json",
+      "experiments/old_experiments/2025.01.28_find_ends/complex_graphs.json",
+      "experiments/old_experiments/2025.01.28_find_ends/dialog_dataset_10_topics_3_dialog.json",
+      "experiments/old_experiments/2025.01.28_find_ends/find_ends.ipynb",
+      "experiments/old_experiments/2025.01.28_find_ends/ready_graphs.json",
+      "experiments/old_experiments/exp20250207_three_stages_plus/embedder.py",
+      "experiments/old_experiments/exp20250207_three_stages_plus/graph_generation.ipynb",
+      "experiments/old_experiments/exp20250207_three_stages_plus/missing_edges_prompt.py",
+      "experiments/old_experiments/exp20250207_three_stages_plus/settings.py",
+      "experiments/old_experiments/exp20250207_three_stages_plus/utils.py",
+      "experiments/old_experiments/exp20250207_three_stages_plus/vectors.py",
+      "experiments/old_experiments/exp20250226_incremental/check_datasets_i.ipynb",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/__init__.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/annotation_pipeline.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/config.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/csv_converter.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/file_handler.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/graph_generation.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/graph_triplet_comparison.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/json_validator.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/metrics.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/metrics_annotation.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/metrics_semantic.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/metrics_semantic_jaccard.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/metrics_semantic_jaccard_backup.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/model_interactions.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/pipeline.py",
+      "dialog2graph/metrics/no_llm_metrics/keys2graph/prompts.py",
+      "dialog2graph/pipelines/d2g_light/group_nodes/__init__.py",
+      "dialog2graph/pipelines/d2g_light/group_nodes/group_nodes.py",
+      "dialog2graph/pipelines/helpers/prompts/missing_edges_prompt.py",
+      "dialog2graph/pipelines/topic_generation/prompts/prompts.py",
+      "docs/source/_static/css/custom.css",
+      "docs/source/_static/images/logo-colab.svg",
+      "docs/source/_static/images/logo-deeppavlov.svg",
+      "docs/source/_static/images/logo-github.svg",
+      "experiments/exp2025_04_03_selecting_emb_params/src/exp2025_04_03_selecting_emb_params/Finding start and end nodes.ipynb",
+      "experiments/exp2025_04_03_selecting_emb_params/src/exp2025_04_03_selecting_emb_params/Selecting base params for start loop finding.ipynb",
+      "experiments/exp2025_04_03_selecting_emb_params/src/exp2025_04_03_selecting_emb_params/__init__.py",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-cycles/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-cycles/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-cycles/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-cycles/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp0.5/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp0.5/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp0/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp0/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp1/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-mini-prompted_temp1/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-prompted_temp0.5/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-prompted_temp0.5/mean_metrics.txt",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-prompted_temp1/all_metrics.json",
+      "experiments/old_experiments/2024.09.29_prompting/gpt-4o-prompted_temp1/mean_metrics.txt",
+      "experiments/old_experiments/2024.10.01_synthetic_data/generated_data/dialog_graph_pairs.json",
+      "experiments/old_experiments/2024.10.01_synthetic_data/results/generation_metrics.json",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/prompts/prompt_augmentation.txt",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/prompts/prompt_v1.txt",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/prompts/prompt_v2.txt",
+      "experiments/old_experiments/2024.10.06_synthetic_data_based_on_existing_graphs/prompts/prompt_v3.txt",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/generated_datasets_one_utter/invalid_dialogs.json",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/generated_datasets_one_utter/valid_dialogs.json",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/generated_datasets_one_utter/valid_dialogs_with_samples.json",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/generated_datasets_two_utter/invalid_dialogs.json",
+      "experiments/old_experiments/2024.11.27_triplet_check_impovement/generated_datasets_two_utter/valid_dialogs.json",
+      "experiments/old_experiments/2024.12.10_complex_graph_gen/graph_gen/graph_gen.json",
+      "experiments/old_experiments/2024.12.10_complex_graph_gen/ready_for_prod_graphs/ready_graphs.json",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/generated_graphs/generated_graphs_20250125_074603.json",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/generated_graphs/generated_graphs_20250125_105537.json",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/generated_graphs/generated_graphs_20250125_113113.json",
+      "experiments/old_experiments/2025.01.20_data_generation_pipeline/generated_graphs/generated_graphs_20250125_121814.json"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64087,
+    "completion_tokens": 2199,
+    "total_tokens": 66286,
+    "cost": 0.0091103,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 64084,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0091103,
+      "upstream_inference_prompt_cost": 0.0080108,
+      "upstream_inference_completions_cost": 0.0010995
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 378,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606900-mQ0YeTaes2DdxrwW36YK"
+}

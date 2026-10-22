@@ -1,0 +1,43 @@
+I’ll inspect the repository’s source, metadata, and existing docs, then create only `README.md` based on what the code supports.
+The code confirms a Python image-background-removal package with a reusable `remove` API, model sessions, and file/folder/stream/server CLI command implementations. I also found a packaging mismatch: the declared console entry point targets `rembg.cli:main`, but this checkout defines `_main` instead; I’ll document that caveat rather than imply the installed command is guaranteed to work.
+Created `README.md` with installation guidance, Python API examples, supported model names, CLI/server details, development instructions, and the MIT license. It also notes the `rembg.cli:main` entry-point mismatch present in the repository. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m145 matches[0m
+[0m✱ [0mGrep "." [90m12 matches[0m
+[0m✱ [0mGrep "." [90m84 matches[0m
+[0m✱ [0mGrep "." [90m14 matches[0m
+[0m✱ [0mGrep "." [90m105 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead rembg/__init__.py 
+[0m→ [0mRead rembg/bg.py [90m[limit=300][0m
+[0m→ [0mRead USAGE.md 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead rembg/cli.py [90m[limit=300][0m
+[0m→ [0mRead rembg/session_factory.py 
+[0m→ [0mRead tests/test_remove.py [90m[limit=200][0m
+[0m→ [0mRead rembg/sessions/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead rembg/commands/p_command.py 
+[0m→ [0mRead rembg/commands/i_command.py 
+[0m→ [0mRead rembg/commands/b_command.py 
+[0m→ [0mRead LICENSE.txt [90m[limit=30][0m
+[0m→ [0mRead CITATION.cff [90m[limit=100][0m
+[0m→ [0mRead rembg/bg.py [90m[offset=270, limit=130][0m
+[0m→ [0mRead rembg/sessions/base.py 
+[0m→ [0mRead rembg/commands/s_command.py 
+[0m→ [0mRead rembg/commands/__init__.py 
+[0m→ [0mRead rembg/commands/d_command.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "def name|return "" [90min rembg/sessions · 39 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead rembg.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

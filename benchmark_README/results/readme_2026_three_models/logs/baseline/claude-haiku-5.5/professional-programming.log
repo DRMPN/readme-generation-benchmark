@@ -1,0 +1,188 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 24131,
+    "tree_files": 50,
+    "tracked_files": 50,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 223,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 113,
+        "truncated": false
+      },
+      {
+        "path": "feature-flags.md",
+        "tokens": 635,
+        "truncated": false
+      },
+      {
+        "path": "glossary.md",
+        "tokens": 515,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/README.md",
+        "tokens": 177,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/code-antipatterns.md",
+        "tokens": 3124,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/database-antipatterns.md",
+        "tokens": 287,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/error-handling-antipatterns.md",
+        "tokens": 2651,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/mvcs-antipatterns.md",
+        "tokens": 1343,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/scalability-antipatterns.md",
+        "tokens": 124,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/sqlalchemy-antipatterns.md",
+        "tokens": 1233,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/tests-antipatterns.md",
+        "tokens": 1416,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/01-modern-javascript.md",
+        "tokens": 5315,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/02-react.md",
+        "tokens": 528,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/03-typescript.md",
+        "tokens": 310,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/04-the-browser.md",
+        "tokens": 132,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/05-css-html-restart.md",
+        "tokens": 137,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/06-front-end-development-practices.md",
+        "tokens": 734,
+        "truncated": false
+      },
+      {
+        "path": "training/front-end/README.md",
+        "tokens": 669,
+        "truncated": false
+      },
+      {
+        "path": "training/learning-python/README.md",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "training/web-dev/README.md",
+        "tokens": 3120,
+        "truncated": false
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "tokens": 145,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/python-examples/reraise_exceptions_bad.py",
+        "tokens": 83,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/python-examples/reraise_exceptions_good.py",
+        "tokens": 86,
+        "truncated": false
+      },
+      {
+        "path": "antipatterns/sqlalchemy-examples/exists.py",
+        "tokens": 202,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      "cheatsheets/Clean-Architecture-V1.0.pdf",
+      "cheatsheets/Clean-Code-V2.4.pdf",
+      "images/amazon_writing_rules.jpeg",
+      "images/clean-architecture-cone.jpg",
+      "images/cost-of-defects.jpg",
+      "images/decomposing problems.jpg",
+      "images/how-not-to-build-mvp.jpg",
+      "images/let-your-bugs-teach-you-julia-evans.jpg",
+      "images/mvp.jpeg",
+      "images/premature automation.png",
+      "images/premature-optimization-flowchart.png",
+      "images/rewrite.gif",
+      "images/software_architecture_pasta.png",
+      "images/syntax-highlighting.jpeg",
+      "images/tech-debt.jpeg",
+      "images/the reality of automation.png",
+      "images/us-vs-them.jpeg",
+      "images/uwe-friedrichsen-resilient-architecture.png",
+      "images/waterfall-UX.jpeg",
+      "images/what to assert.png",
+      "antipatterns/images/test-pyramid.png",
+      "training/front-end/examples/hoisting.html",
+      "training/front-end/img/caniuse.png",
+      "training/front-end/img/js-the-good-parts.jpg",
+      "training/front-end/img/learning-roadmap.png"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 37752,
+    "completion_tokens": 3800,
+    "total_tokens": 41552,
+    "cost": 0.0056752,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0056752,
+      "upstream_inference_prompt_cost": 0.0037752,
+      "upstream_inference_completions_cost": 0.0019
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1028,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606538-V4tL2yZ67kczUIsvMvBf"
+}

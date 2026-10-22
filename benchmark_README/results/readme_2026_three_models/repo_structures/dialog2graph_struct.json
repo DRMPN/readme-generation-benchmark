@@ -1,0 +1,2860 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "build_and_publish_docs.yml",
+            "type": "file"
+          },
+          {
+            "name": "build_and_publish_release.yml",
+            "type": "file"
+          },
+          {
+            "name": "check_metrics.yml",
+            "type": "file"
+          },
+          {
+            "name": "codestyle.yml",
+            "type": "file"
+          },
+          {
+            "name": "coverage.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_release.yml",
+            "type": "file"
+          },
+          {
+            "name": "tests.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "dialog2graph",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "cli",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "commands",
+            "type": "dir",
+            "children": [
+              {
+                "name": "generate_data.py",
+                "type": "file"
+              },
+              {
+                "name": "generate_graph_extender.py",
+                "type": "file"
+              },
+              {
+                "name": "generate_graph_light.py",
+                "type": "file"
+              },
+              {
+                "name": "generate_graph_llm.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "main.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "datasets",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "augment_dialogs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "complex_dialogs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "generation.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "metrics",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "algorithm_registry.py",
+            "type": "file"
+          },
+          {
+            "name": "llm_metrics",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "metrics.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "llm_validators",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "validators.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "no_llm_metrics",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "keys2graph",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "annotation_pipeline.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "csv_converter.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "file_handler.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "graph_generation.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "graph_triplet_comparison.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "json_validator.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "metrics.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "metrics_annotation.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "metrics_semantic.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "metrics_semantic_jaccard.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "metrics_semantic_jaccard_backup.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_interactions.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "pipeline.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "prompts.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "metrics.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "no_llm_validators",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "validators.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "similarity.py",
+            "type": "file"
+          },
+          {
+            "name": "test_cases",
+            "type": "dir",
+            "children": [
+              {
+                "name": "test_chain_with_equal_number_of_nodes.json",
+                "type": "file"
+              },
+              {
+                "name": "test_complex_graph.json",
+                "type": "file"
+              },
+              {
+                "name": "test_complex_graph_2.json",
+                "type": "file"
+              },
+              {
+                "name": "test_cycle_with_missing_edge.json",
+                "type": "file"
+              },
+              {
+                "name": "test_single_nodes.json",
+                "type": "file"
+              },
+              {
+                "name": "test_split_node.json",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pipelines",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "core",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "algorithms.py",
+                "type": "file"
+              },
+              {
+                "name": "d2g_generator.py",
+                "type": "file"
+              },
+              {
+                "name": "dialog.py",
+                "type": "file"
+              },
+              {
+                "name": "dialog_sampling.py",
+                "type": "file"
+              },
+              {
+                "name": "graph.py",
+                "type": "file"
+              },
+              {
+                "name": "pipeline.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt_loader.py",
+                "type": "file"
+              },
+              {
+                "name": "schemas.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "d2g_extender",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pipeline.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_extender.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "d2g_light",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "group_nodes",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "group_nodes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "pipeline.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_light.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "d2g_llm",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pipeline.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_llm.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "helpers",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "find_cycle_ends.py",
+                "type": "file"
+              },
+              {
+                "name": "parse_data.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "missing_edges_prompt.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "model_storage.py",
+            "type": "file"
+          },
+          {
+            "name": "report.py",
+            "type": "file"
+          },
+          {
+            "name": "topic_generation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pipeline.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "prompts.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "dg_helper.py",
+            "type": "file"
+          },
+          {
+            "name": "logger.py",
+            "type": "file"
+          },
+          {
+            "name": "prompt_caching.py",
+            "type": "file"
+          },
+          {
+            "name": "vector_stores.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "doc_structure.md",
+        "type": "file"
+      },
+      {
+        "name": "how_to_contribute.md",
+        "type": "file"
+      },
+      {
+        "name": "make.bat",
+        "type": "file"
+      },
+      {
+        "name": "source",
+        "type": "dir",
+        "children": [
+          {
+            "name": "_static",
+            "type": "dir",
+            "children": [
+              {
+                "name": "css",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "custom.css",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "_templates",
+            "type": "dir",
+            "children": [
+              {
+                "name": "example-links.html",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "about_us.rst",
+            "type": "file"
+          },
+          {
+            "name": "conf.py",
+            "type": "file"
+          },
+          {
+            "name": "development.rst",
+            "type": "file"
+          },
+          {
+            "name": "getting_started.rst",
+            "type": "file"
+          },
+          {
+            "name": "index.rst",
+            "type": "file"
+          },
+          {
+            "name": "research",
+            "type": "dir",
+            "children": [
+              {
+                "name": "data_collections.rst",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "research.rst",
+            "type": "file"
+          },
+          {
+            "name": "userguides",
+            "type": "dir",
+            "children": [
+              {
+                "name": "augment_dialogs.rst",
+                "type": "file"
+              },
+              {
+                "name": "basic_usage.rst",
+                "type": "file"
+              },
+              {
+                "name": "cli_usage.rst",
+                "type": "file"
+              },
+              {
+                "name": "evaluate_userguide.rst",
+                "type": "file"
+              },
+              {
+                "name": "extend_graphs.rst",
+                "type": "file"
+              },
+              {
+                "name": "generate_graphs.rst",
+                "type": "file"
+              },
+              {
+                "name": "generate_synthetic.rst",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "userguides.rst",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "basics",
+        "type": "dir",
+        "children": [
+          {
+            "name": "base_classes_usage.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cli_usage",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cfg.yml",
+            "type": "file"
+          },
+          {
+            "name": "main.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "data_generation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "LoopedGraphGenerator_example.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "cache_example.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dialog_augmentation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dialogue_augmentation_data_example.json",
+            "type": "file"
+          },
+          {
+            "name": "dialogue_augmentation_example.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dialog_extension",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dialog_extender_example.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "evaluation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "example_metrics_data.json",
+            "type": "file"
+          },
+          {
+            "name": "examples_of_metrics_usage.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "example_data.json",
+        "type": "file"
+      },
+      {
+        "name": "pipeline_usage",
+        "type": "dir",
+        "children": [
+          {
+            "name": "models_config.yml",
+            "type": "file"
+          },
+          {
+            "name": "multiple_dialogs.json",
+            "type": "file"
+          },
+          {
+            "name": "pipeline_example.ipynb",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "experiments",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "exp2025_02_07_example",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_02_07_example",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "your_notebook.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_02_10_fixing_dependencies",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_02_10_fixing_dependencies",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "okay.py",
+                "type": "file"
+              },
+              {
+                "name": "your_notebook.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_04_load_real_datasets",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_04_load_real_datasets",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "env_example",
+                "type": "file"
+              },
+              {
+                "name": "load_datasets.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "load_script.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_10_push_dataset_to_hub",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_10_push_dataset_to_hub",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "push_to_hub.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_11_all_uttrs_present",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_11_all_uttrs_present",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "tests.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_12_rec_models_incrementation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_12_rec_models_incrementation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "append_chain.py",
+                "type": "file"
+              },
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "exp_with_chatgpt-4o-latest.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "exp_with_o1-mini.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "exp_with_o3-mini.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_0i.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_1.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_1i.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_12_topic_generation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_12_topic_generation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "book_table.json",
+                "type": "file"
+              },
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_algo.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_llm.py",
+                "type": "file"
+              },
+              {
+                "name": "topic_generation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "transfer.json",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_17_sample_graph_incrementation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_17_sample_graph_incrementation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "graph_incrementation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_0i.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_1.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_18_embedding_grouper",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_18_embedding_grouper",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "dialogs.json",
+                "type": "file"
+              },
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "embedder_algo.py",
+                "type": "file"
+              },
+              {
+                "name": "grouper.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_algo.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_llm.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_19_dia2graph_3_ways",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_19_dia2graph_3_ways",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "dia2graph_generation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "schemas.py",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_algo.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_extender.py",
+                "type": "file"
+              },
+              {
+                "name": "three_stages_llm.py",
+                "type": "file"
+              },
+              {
+                "name": "transfer.json",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_19_testing_dia_augmentation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_19_testing_dia_augmentation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "dialog_augmentation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dialog_augmentation_check.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "find_duplicates.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_20_d2g_pipeline",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_20_d2g_pipeline",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "cfg.yml",
+                "type": "file"
+              },
+              {
+                "name": "d2g_light_22.04.2025_1.json",
+                "type": "file"
+              },
+              {
+                "name": "model_storage.yml",
+                "type": "file"
+              },
+              {
+                "name": "result.json",
+                "type": "file"
+              },
+              {
+                "name": "test_graph_1.json",
+                "type": "file"
+              },
+              {
+                "name": "test_pipeline.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "test_pipelines_data.json",
+                "type": "file"
+              },
+              {
+                "name": "transfer.json",
+                "type": "file"
+              },
+              {
+                "name": "transfer_2.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_26_dia_augmentation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_26_dia_augmentation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation_check.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dialog_augmentation.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_29_dia_augmentation_all_dataset",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_29_dia_augmentation_all_dataset",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation_check.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dialog_augmentation.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_03_31_reaugmentation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_03_31_reaugmentation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "augmentation_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation_check.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dia_augmentation_final_check.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "dialog_augmentation.py",
+                "type": "file"
+              },
+              {
+                "name": "generation_error_analysis.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "uttr_vars_error_analysis.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_04_03_selecting_emb_params",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "src",
+            "type": "dir",
+            "children": [
+              {
+                "name": "exp2025_04_03_selecting_emb_params",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Finding start and end nodes.ipynb",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Selecting base params for start loop finding.ipynb",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_04_04_pushing_aug_data_to_hub",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_04_04_pushing_aug_data_to_hub",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pushing_data_to_hub.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exp2025_04_09_augment_metrics_and_class",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exp2025_04_09_augment_metrics_and_class",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "testing_class_and_metrics.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "poetry.lock",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "old_experiments",
+        "type": "dir",
+        "children": [
+          {
+            "name": "2024.09.29_prompting",
+            "type": "dir",
+            "children": [
+              {
+                "name": "gpt-4o-cycles",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-mini-cycles",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-mini-prompted_temp0",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-mini-prompted_temp0.5",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-mini-prompted_temp1",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-prompted_temp0.5",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gpt-4o-prompted_temp1",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all_metrics.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "mean_metrics.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.10.01_synthetic_data",
+            "type": "dir",
+            "children": [
+              {
+                "name": "evaluate_functions.py",
+                "type": "file"
+              },
+              {
+                "name": "generate_dialogs.py",
+                "type": "file"
+              },
+              {
+                "name": "generated_data",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "dialog_graph_pairs.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "prompt.txt",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.10.06_synthetic_data_based_on_existing_graphs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "augmented_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "average_graph_vis_test.py",
+                "type": "file"
+              },
+              {
+                "name": "dataset_generation.py",
+                "type": "file"
+              },
+              {
+                "name": "dialog_graph_pairs.json",
+                "type": "file"
+              },
+              {
+                "name": "gen_data.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "prompts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "prompt_augmentation.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "prompt_v1.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "prompt_v2.txt",
+                    "type": "file"
+                  },
+                  {
+                    "name": "prompt_v3.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "raw_data.json",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "scores.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.10.15_visualisation",
+            "type": "dir",
+            "children": [
+              {
+                "name": "graphs_viz.zip",
+                "type": "file"
+              },
+              {
+                "name": "visualise_graphs.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.10.20_dialog_graph_synthesis",
+            "type": "dir",
+            "children": [
+              {
+                "name": "dialog_graph_synthesis.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "task.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.11.14_dialog2graph",
+            "type": "dir",
+            "children": [
+              {
+                "name": "FT_Llama.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "check_data.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "comp_mini_results.csv",
+                "type": "file"
+              },
+              {
+                "name": "comp_results.csv",
+                "type": "file"
+              },
+              {
+                "name": "dialog_complex_results.csv",
+                "type": "file"
+              },
+              {
+                "name": "dialog_results.csv",
+                "type": "file"
+              },
+              {
+                "name": "prompts.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts_11_19.py",
+                "type": "file"
+              },
+              {
+                "name": "prompts_11_25.py",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "results.csv",
+                "type": "file"
+              },
+              {
+                "name": "run_autometrics.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.11.17_concatenating_subchains_prompt",
+            "type": "dir",
+            "children": [
+              {
+                "name": "main.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "test_data.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.11.22_cycle_dialog_generation_improvement",
+            "type": "dir",
+            "children": [
+              {
+                "name": "cycle_dialog_generation_improvement.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "task.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.11.24_creating_a_dataset",
+            "type": "dir",
+            "children": [
+              {
+                "name": "dialog_dataset_10_topics_3_dialog.json",
+                "type": "file"
+              },
+              {
+                "name": "main.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.11.27_triplet_check_impovement",
+            "type": "dir",
+            "children": [
+              {
+                "name": "generated_datasets_one_utter",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "invalid_dialogs.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "valid_dialogs.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "valid_dialogs_with_samples.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "generated_datasets_two_utter",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "invalid_dialogs.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "valid_dialogs.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "task.md",
+                "type": "file"
+              },
+              {
+                "name": "triplet_check_impovement.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.12.10_complex_graph_gen",
+            "type": "dir",
+            "children": [
+              {
+                "name": "complex_graph_gen.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "graph_gen",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "graph_gen.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ready_for_prod_graphs",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ready_graphs.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "task.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024.12.11_visualization",
+            "type": "dir",
+            "children": [
+              {
+                "name": "complex_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "main.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "valid_dialogs_with_samples.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025.01.13_data_check_and_sampler_debugging",
+            "type": "dir",
+            "children": [
+              {
+                "name": "andrey_data.json",
+                "type": "file"
+              },
+              {
+                "name": "check_the_data.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "data.json",
+                "type": "file"
+              },
+              {
+                "name": "dmitry_data.json",
+                "type": "file"
+              },
+              {
+                "name": "fix_sampler.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "investigate_90_paths_from_one_graph.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "results.csv",
+                "type": "file"
+              },
+              {
+                "name": "sampler.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025.01.20_data_generation_pipeline",
+            "type": "dir",
+            "children": [
+              {
+                "name": "dialogs.txt",
+                "type": "file"
+              },
+              {
+                "name": "generated_graphs",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "generated_graphs_20250125_074603.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "generated_graphs_20250125_105537.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "generated_graphs_20250125_113113.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "generated_graphs_20250125_121814.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "get_some_data.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "graph.json",
+                "type": "file"
+              },
+              {
+                "name": "graph_gen_autofix.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "score.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025.01.22_sampler",
+            "type": "dir",
+            "children": [
+              {
+                "name": "abstract.json",
+                "type": "file"
+              },
+              {
+                "name": "coffee.json",
+                "type": "file"
+              },
+              {
+                "name": "complex_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "dialog_dataset_10_topics_3_dialog.json",
+                "type": "file"
+              },
+              {
+                "name": "dialog_sampler.py",
+                "type": "file"
+              },
+              {
+                "name": "duplex.json",
+                "type": "file"
+              },
+              {
+                "name": "loan.json",
+                "type": "file"
+              },
+              {
+                "name": "more_topics.json",
+                "type": "file"
+              },
+              {
+                "name": "more_topics_2.json",
+                "type": "file"
+              },
+              {
+                "name": "ready_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "resample.py",
+                "type": "file"
+              },
+              {
+                "name": "sampler.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "topics.json",
+                "type": "file"
+              },
+              {
+                "name": "try.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025.01.28_find_ends",
+            "type": "dir",
+            "children": [
+              {
+                "name": "complex_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "dialog_dataset_10_topics_3_dialog.json",
+                "type": "file"
+              },
+              {
+                "name": "find_ends.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "ready_graphs.json",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "exp20250207_three_stages_plus",
+            "type": "dir",
+            "children": [
+              {
+                "name": "embedder.py",
+                "type": "file"
+              },
+              {
+                "name": "graph_generation.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "missing_edges_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              },
+              {
+                "name": "settings.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "vectors.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "exp20250226_incremental",
+            "type": "dir",
+            "children": [
+              {
+                "name": "check_datasets_i.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "report.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "prompt_cache",
+    "type": "dir",
+    "children": [
+      {
+        "name": "docker-compose.yml",
+        "type": "file"
+      },
+      {
+        "name": "init.sql",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "ruff.toml",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "check_metrics.py",
+        "type": "file"
+      },
+      {
+        "name": "codestyle.py",
+        "type": "file"
+      },
+      {
+        "name": "test.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "cli",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cfg.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_cli.json",
+            "type": "file"
+          },
+          {
+            "name": "test_cli_d2g.py",
+            "type": "file"
+          },
+          {
+            "name": "test_cli_empty_dialogs.json",
+            "type": "file"
+          },
+          {
+            "name": "test_cli_empty_graph.json",
+            "type": "file"
+          },
+          {
+            "name": "test_cli_no_dialogs.json",
+            "type": "file"
+          },
+          {
+            "name": "test_cli_no_graph.json",
+            "type": "file"
+          },
+          {
+            "name": "wrong_cfg.yml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "metrics",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_automatic_metrics.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "metrics_results",
+        "type": "dir",
+        "children": [
+          {
+            "name": "extender_23.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_23.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_24.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_24.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_26.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_29.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "extender_30.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_23.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_23.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_3.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_4.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_5.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_24.04.2025_6.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_3.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_4.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_5.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_6.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_7.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_25.04.2025_8.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_26.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_26.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_28.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_28.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_28.04.2025_3.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_28.04.2025_4.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_28.04.2025_5.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_29.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_30.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_light_30.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_23.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_23.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_24.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_24.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_26.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_26.04.2025_2.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_29.04.2025_1.json",
+            "type": "file"
+          },
+          {
+            "name": "three_stages_llm_30.04.2025_1.json",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pipelines",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_d2g_extender.py",
+            "type": "file"
+          },
+          {
+            "name": "test_d2g_light.py",
+            "type": "file"
+          },
+          {
+            "name": "test_d2g_llm.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_dialog_augmentation.py",
+        "type": "file"
+      },
+      {
+        "name": "test_dialog_augmentation_data.json",
+        "type": "file"
+      },
+      {
+        "name": "test_initialization.py",
+        "type": "file"
+      },
+      {
+        "name": "test_metrics_data.json",
+        "type": "file"
+      },
+      {
+        "name": "test_pipelines_data.json",
+        "type": "file"
+      },
+      {
+        "name": "test_topic_generation_init.py",
+        "type": "file"
+      },
+      {
+        "name": "test_validators.py",
+        "type": "file"
+      }
+    ]
+  }
+]

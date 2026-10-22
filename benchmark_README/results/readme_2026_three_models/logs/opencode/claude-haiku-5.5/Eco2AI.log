@@ -1,0 +1,68 @@
+I'll start by looking at the repository's files.
+No README.md exists yet, although `pyproject.toml` and `setup.py` both reference one. Next I'll check the license, the example notebooks, and the data files.
+I have enough to write an accurate README. Key findings: no `README.md` exists yet, though `pyproject.toml` and `setup.py` both reference one. Writing it now.
+The README is written. One sentence overstates the `emission_level` behavior: the country lookup still runs when `alpha_2_code` is unset, so I'll correct that.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The repository had no README, even though `pyproject.toml` and `setup.py` both point to one. I based the content on the source code, the two example notebooks, the LICENSE, and the package metadata.
+
+The README covers:
+- **Overview and installation:** the package name, version, Apache 2.0 license, and dependencies.
+- **Usage:** the three tracking styles (`start()`/`stop()`, per-epoch training, and the `@track` decorator).
+- **Reference:** the `Tracker` parameters and methods, the output CSV columns, electricity pricing rules, and the `summary()` and device helpers.
+- **Method:** how CPU, GPU, RAM, PUE, and CO2 figures are calculated.
+- **Limitations:** the points where the code falls short of what its docstrings suggest.
+
+Three things in the code differ from what its docstrings say, so the README describes the actual behavior:
+- A custom `encode_file` name is ignored. The encoded file is always `encoded_<file_name>`.
+- Training-mode results are written only when `new_epoch()` is called, not when `stop_training()` is called.
+- The CPU TDP fallback is 100.1 W, while the docstring says 100.
+
+I did not run the code, so the README is based on reading it rather than on observed output.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources({}).catch(e => ({error: String(e)}));\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m25 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eco2ai/utils.py 
+[0m→ [0mRead eco2ai/emission_track.py 
+[0m→ [0mRead eco2ai/MLTracker.py 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead _config.yml 
+[0m→ [0mRead eco2ai/__init__.py 
+[0m→ [0mRead eco2ai/data/config.txt 
+[0m→ [0mRead eco2ai/tools/tools_gpu.py 
+[0m→ [0mRead eco2ai/tools/tools_ram.py 
+[0m→ [0mRead eco2ai/tools/tools_cpu.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const fs = require('fs');\nconst base = '/tmp/Eco2AI-t8zubb6w/';\nconst out = {};\nout.license = fs.readFileSync(base + 'LICENSE', 'utf8').slice(0, 400);\nfor (const nb of ['examples/Eco2AI tutorial torch.ipynb', 'examples/Eco2AI tutorial tensorflow.ipynb']) {\n  const j = JSON.parse(fs.readFileSync(base + nb, 'utf8'));\n  out[nb] = j.cells.filter(c => c.cell_type === 'code' || c.cell_type === 'markdown').map(c => ({t: c.cell_type, s: c.source.join('').slice(0, 700)}));\n}\nout.cpu_head = fs.readFileSync(base + 'eco2ai/data/cpu_names.csv', 'utf8').split('\\n').slice(0,3);\nout.carbon_head = fs.readFileSync(base + 'eco2ai/data/carbon_index.csv', 'utf8').split('\\n').slice(0,3);\nout.carbon_lines = fs.readFileSync(base + 'eco2ai/data/carbon_index.csv', 'utf8').split('\\n').length;\nout.cpu_lines = fs.readFileSync(base + 'eco2ai/data/cpu_names.csv', 'utf8').split('\\n').length;\nout.gitignore = fs.readFileSync(base + '.gitignore', 'utf8').split('\\n').slice(0,10);\nreturn out;"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead examples/Eco2AI tutorial tensorflow.ipynb 
+[0m→ [0mRead examples/Eco2AI tutorial torch.ipynb 
+[0m→ [0mRead eco2ai/data/carbon_index.csv [90m[limit=5][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -118,9 +118,9 @@
+ | `project_name` | `None` (stored default) | Project name written to the results file. |
+ | `experiment_description` | `None` (stored default) | Free-text description, such as model type. |
+ | `file_name` | `None` (stored default, `"emission.csv"`) | Output CSV file name. Must end with `.csv`. |
+ | `measure_period` | `10` | Measurement interval in seconds. Must be positive. |
+-| `emission_level` | `None` | CO2 mass in kg produced per MWh of energy. If set, this overrides the country lookup. |
++| `emission_level` | `None` | CO2 mass in kg produced per MWh of energy. If set, it is used instead of the value from the carbon index table. |
+ | `alpha_2_code` | `None` | ISO 3166-1 alpha-2 country code, such as `"US"` or `"DE"`. See [iban.com country codes](https://www.iban.com/country-codes). |
+ | `region` | `None` | Region, state, or district within the country. Requires `alpha_2_code`. |
+ | `cpu_processes` | `"current"` | `"current"` measures only the current Python process's CPU use. `"all"` measures total CPU use across all processes. |
+ | `pue` | `1` | Power usage effectiveness multiplier applied to total consumption. Useful for data-center calculations. |
+
+> readme-benchmark · anthropic/claude-haiku-5.5

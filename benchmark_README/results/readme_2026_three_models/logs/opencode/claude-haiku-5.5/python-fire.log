@@ -1,0 +1,48 @@
+I'll start by looking at the repository layout and existing docs.
+This is the Python Fire project. Next I'll read the packaging files, the main docs, and the core API.
+The docs cover the public API. I'll check the source for the `Fire()` signature, the flags, and the example programs so the README matches the code.
+I have enough to write it. The repo has no existing README, so I'll create one at the root.
+I wrote `README.md` at the repository root. It's the only file I created.
+
+The README describes Python Fire, a library that turns Python functions, classes, modules, and objects into command line interfaces. I checked it against `setup.py`, `fire/core.py`, the `docs/` pages, `CONTRIBUTING.md`, the CI scripts, and the example programs. It covers:
+
+- **Installation:** pip, conda, and from source. It notes Python 3.7+ and the `termcolor` dependency.
+- **Quick start:** examples for functions, classes, and bare `fire.Fire()` calls.
+- **Usage:** the `Fire()` arguments, `python -m fire`, how commands map to objects, chaining, separators, booleans, and quoting.
+- **Flags:** `--help`, `--interactive`, `--separator`, `--completion`, `--trace`, and `--verbose`.
+- **Development:** how to run `pytest` and `pylint fire`, plus a pointer to `CONTRIBUTING.md`.
+- **License:** Apache 2.0.
+
+I did not run the tests or the examples, so the commands and outputs come from the docs and source rather than from a fresh run.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m77 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead setup.py 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead docs/index.md 
+[0m→ [0mRead docs/api.md 
+[0m→ [0mRead docs/installation.md 
+[0m→ [0mRead docs/guide.md 
+[0m→ [0mRead docs/using-cli.md 
+[0m→ [0mRead fire/__init__.py 
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/troubleshooting.md 
+[0m→ [0mRead examples/widget/widget.py 
+[0m✱ [0mGrep "^def Fire|^def |completion|interactive|separator|trace|verbose|sys.argv|serialize|name=None|command=None" [90min fire/core.py · 100 matches[0m
+[0m→ [0mRead mkdocs.yml 
+[0m✱ [0mGrep "python|pytest|pylint" [90min .github · 16 matches[0m
+[0m→ [0mRead examples/cipher/cipher.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

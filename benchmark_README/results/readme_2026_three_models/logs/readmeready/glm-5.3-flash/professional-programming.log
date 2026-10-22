@@ -1,0 +1,37 @@
+Processing repository...
+Processing 5 files and 12 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/cheatsheets/Clean-Code-V2.4.pdf: 'utf-8' codec can't decode byte 0xb5 in position 11: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/cheatsheets/Clean-Architecture-V1.0.pdf: 'utf-8' codec can't decode byte 0xb5 in position 11: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/training/front-end/img/caniuse.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/training/front-end/img/js-the-good-parts.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/training/front-end/img/learning-roadmap.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/software_architecture_pasta.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/clean-architecture-cone.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/syntax-highlighting.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/the reality of automation.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/rewrite.gif: 'utf-8' codec can't decode byte 0x84 in position 6: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/premature-optimization-flowchart.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/amazon_writing_rules.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/decomposing problems.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/tech-debt.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/us-vs-them.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/waterfall-UX.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/uwe-friedrichsen-resilient-architecture.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/let-your-bugs-teach-you-julia-evans.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/premature automation.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/cost-of-defects.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/what to assert.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/professional-programming-7nbxxzow/images/mvp.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Splitting text into chunks for 5 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/glm-5.3-flash/_work/professional-programming/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/glm-5.3-flash/_work/professional-programming/docs/data/README_GPT4.md
+
+--- stderr ---

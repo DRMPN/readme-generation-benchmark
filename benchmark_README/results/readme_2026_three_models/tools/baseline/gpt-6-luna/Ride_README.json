@@ -1,0 +1,191 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 45706,
+    "tree_files": 49,
+    "tracked_files": 49,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2269,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 231,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": ".readthedocs.yml",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "examples/benchmark_examples.ipynb",
+        "tokens": 2635,
+        "truncated": false
+      },
+      {
+        "path": "examples/examples.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "examples/heuristic_example.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "ride_pfa/__init__.py",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/benchmark.py",
+        "tokens": 854,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/exceptions.py",
+        "tokens": 66,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/graph_osm_loader.py",
+        "tokens": 461,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/heuristics.py",
+        "tokens": 1406,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/utils.py",
+        "tokens": 509,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/centroid_graph/__init__.py",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/centroid_graph/centroids_graph_builder.py",
+        "tokens": 1126,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/clustering/__init__.py",
+        "tokens": 10,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/clustering/clustering.py",
+        "tokens": 1015,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/drawer/__init__.py",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/drawer/folium_drawer.py",
+        "tokens": 538,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/drawer/matplotlib_drawer.py",
+        "tokens": 746,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/__init__.py",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/advenced_pfa.py",
+        "tokens": 269,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/dijkstra_pfa.py",
+        "tokens": 1533,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/excraction_pfa.py",
+        "tokens": 207,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/heuristic_pfa.py",
+        "tokens": 763,
+        "truncated": false
+      },
+      {
+        "path": "ride_pfa/path_finding/pfa.py",
+        "tokens": 223,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "poetry.lock",
+      "data/random_points.csv",
+      "images/ITMO.png",
+      "images/Prague.png",
+      "images/Ride_Logo-05.png",
+      "images/Telegram_logo.svg.png",
+      "images/a_star density.png",
+      "images/a_star nodes.png",
+      "images/all_a.png",
+      "images/all_y.png",
+      "images/all_y_max.png",
+      "images/clustering.png",
+      "images/logo2.png",
+      "images/max acceleration density.png",
+      "images/max_acceleration.png",
+      "images/metrics.png",
+      "images/milan.png",
+      "images/osm.png",
+      "images/speed.png",
+      "images/subgraph_path.png",
+      "data/results/R41485.pkl",
+      "data/results/R62145.pkl"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 44831,
+    "completion_tokens": 2334,
+    "total_tokens": 47165,
+    "cost": 0.0067708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 44828,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0067708,
+      "upstream_inference_prompt_cost": 0.0056038,
+      "upstream_inference_completions_cost": 0.001167
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 669,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606823-bVtlOoDKhMjWnSarPl5N"
+}

@@ -1,0 +1,82 @@
+I'll look through the repository first so the README only describes what's actually there.
+The repo looks like gpt-engineer. I'll read the core project files next.
+No root README exists yet. I'll read the supporting docs, Docker setup, and the core AI and config code.
+Next I'll read the agent steps, custom modes, telemetry, benchmark, and path handling.
+Next I'll check the consent logic, the Docker and tox setup, the example projects, and the improve-mode file selection.
+I have most of what I need. Last, I'll confirm the consent prompt wording, the roadmap, and how the entrypoint is executed.
+I have enough to write an accurate README. I'll write it to `README.md` in the repository root.
+The README is written. One description is inaccurate: `--diff_timeout` is a regex timeout, not a general diff timeout. I'll fix that line.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+The README covers what the tool does, installation (PyPI and from source), a quick start, the CLI options, output locations, Docker, configuration and model selection, the consent and data-collection prompt, the `bench` command, development commands, the project layout, and the legal files.
+
+Everything in it comes from the code, `pyproject.toml`, and the docs. I left out claims I could not verify, such as benchmark scores and performance numbers.
+
+A few things in the existing repo don't match each other, and I wrote the README to follow the code instead:
+
+- The `main()` docstring says the default project path is `projects/example`. The code's default is `.`.
+- The `--model` default is `gpt-4o`, but `AI` itself defaults to `gpt-4-turbo`.
+- `docs/quickstart.rst` and `docs/open_models.md` link to pages that don't exist, such as `examples/test_open_llm/README.md`.
+- `docker-compose.yml` mounts `./projects/example`, which is not in the repo; only `example-improve` and `example-vision` are present.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.list_mcp_resources({}),\n]);\nreturn r.map(x=>x.status);"} 
+[0m✱ [0mGlob "**/*" [90m163 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead gpt_engineer/applications/cli/main.py 
+[0m✱ [0mGlob "README*" [90m3 matches[0m
+[0m→ [0mRead docs/quickstart.rst 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/open_models.md 
+[0m→ [0mRead docs/introduction.md 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead .env.template 
+[0m→ [0mRead docker/README.md 
+[0m→ [0mRead gpt_engineer/core/ai.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead gpt_engineer/tools/custom_steps.py 
+[0m→ [0mRead gpt_engineer/core/default/paths.py 
+[0m→ [0mRead gpt_engineer/benchmark/__main__.py 
+[0m→ [0mRead gpt_engineer/applications/cli/collect.py 
+[0m→ [0mRead gpt_engineer/core/default/steps.py [90m[limit=140][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead docker/Dockerfile 
+[0m✱ [0mGrep "consent|input\(|def |collect|telemetry|opt" [90min gpt_engineer/applications/cli/learning.py · 38 matches[0m
+[0m→ [0mRead tox.ini 
+[0m→ [0mRead projects/example-improve/README.md 
+[0m→ [0mRead gpt_engineer/applications/cli/file_selector.py [90m[limit=80][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ROADMAP.md 
+[0m✱ [0mGrep "def execute_entrypoint|def handle_improve_mode|def improve_fn|def gen_entrypoint" [90min gpt_engineer/core/default/steps.py · 4 matches[0m
+[0m→ [0mRead gpt_engineer/applications/cli/learning.py [90m[offset=200, limit=40][0m
+[0m→ [0mRead gpt_engineer/core/token_usage.py [90m[limit=60][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead gpt_engineer/core/default/steps.py [90m[offset=153, limit=80][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -101,9 +101,9 @@
+ | `--image_directory` | Folder of images to include with the prompt. |
+ | `--use_cache` | Cache LLM responses in `.langchain.db`. |
+ | `-s, --skip-file-selection` | In improve mode, skip the interactive file selection and use the saved selection. |
+ | `--no_execution` | Run setup without calling the LLM or writing code. For testing. |
+-| `--diff_timeout` | Timeout in seconds for diff matching in improve mode. Default: `3`. |
++| `--diff_timeout` | Timeout for the regular-expression search used when applying diffs in improve mode. Default: `3`. Increase it if the search times out. |
+ | `--sysinfo` | Print system information for debugging. |
+ | `-v, --verbose` | Enable verbose logging. |
+ | `-d, --debug` | Open the Python debugger on an unhandled exception. |
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5

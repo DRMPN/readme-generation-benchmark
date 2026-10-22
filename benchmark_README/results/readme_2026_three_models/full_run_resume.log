@@ -1,0 +1,1972 @@
+Resuming 48 repositories, 15 cells each
+Generation z-ai/glm-5.3-flash baseline gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-engineer: done
+Generation openai/gpt-6-luna baseline gpt-engineer: done
+Generation z-ai/glm-5.3-flash baseline ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 baseline ChatGLM-6B: done
+Generation openai/gpt-6-luna baseline ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash baseline SMSBoom: done
+Generation anthropic/claude-haiku-5.5 baseline SMSBoom: done
+Generation openai/gpt-6-luna baseline SMSBoom: done
+Generation z-ai/glm-5.3-flash baseline mackup: done
+Generation anthropic/claude-haiku-5.5 baseline mackup: done
+Generation openai/gpt-6-luna baseline mackup: done
+Generation z-ai/glm-5.3-flash baseline TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 baseline TaskMatrix: done
+Generation openai/gpt-6-luna baseline TaskMatrix: done
+Generation z-ai/glm-5.3-flash baseline Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 baseline Deep-Live-Cam: done
+Generation openai/gpt-6-luna baseline Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash baseline python-fire: done
+Generation anthropic/claude-haiku-5.5 baseline python-fire: done
+Generation openai/gpt-6-luna baseline python-fire: done
+Generation z-ai/glm-5.3-flash baseline devika: done
+Generation anthropic/claude-haiku-5.5 baseline devika: done
+Generation openai/gpt-6-luna baseline devika: done
+Generation z-ai/glm-5.3-flash baseline gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-pilot: done
+Generation openai/gpt-6-luna baseline gpt-pilot: done
+Generation z-ai/glm-5.3-flash baseline Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 baseline Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna baseline Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash baseline httpx: done
+Generation anthropic/claude-haiku-5.5 baseline httpx: done
+Generation openai/gpt-6-luna baseline httpx: done
+Generation z-ai/glm-5.3-flash baseline kirara-ai: done
+Generation anthropic/claude-haiku-5.5 baseline kirara-ai: done
+Generation openai/gpt-6-luna baseline kirara-ai: done
+Generation z-ai/glm-5.3-flash baseline gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-researcher: done
+Generation openai/gpt-6-luna baseline gpt-researcher: done
+Generation z-ai/glm-5.3-flash baseline mkdocs: done
+Generation anthropic/claude-haiku-5.5 baseline mkdocs: done
+Generation openai/gpt-6-luna baseline mkdocs: done
+Generation z-ai/glm-5.3-flash baseline face_recognition: done
+Generation anthropic/claude-haiku-5.5 baseline face_recognition: done
+Generation openai/gpt-6-luna baseline face_recognition: done
+Generation z-ai/glm-5.3-flash baseline system-design-primer: done
+Generation anthropic/claude-haiku-5.5 baseline system-design-primer: done
+Generation openai/gpt-6-luna baseline system-design-primer: done
+Generation z-ai/glm-5.3-flash baseline GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 baseline GPT_API_free: done
+Generation openai/gpt-6-luna baseline GPT_API_free: done
+Generation z-ai/glm-5.3-flash baseline 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 baseline 30-Days-Of-Python: done
+Generation openai/gpt-6-luna baseline 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash baseline ChatPaper: done
+Generation anthropic/claude-haiku-5.5 baseline ChatPaper: done
+Generation openai/gpt-6-luna baseline ChatPaper: done
+Generation z-ai/glm-5.3-flash baseline twint: done
+Generation anthropic/claude-haiku-5.5 baseline twint: done
+Generation openai/gpt-6-luna baseline twint: done
+Generation z-ai/glm-5.3-flash baseline flask: done
+Generation anthropic/claude-haiku-5.5 baseline flask: done
+Generation openai/gpt-6-luna baseline flask: done
+Generation z-ai/glm-5.3-flash baseline professional-programming: done
+Generation anthropic/claude-haiku-5.5 baseline professional-programming: done
+Generation openai/gpt-6-luna baseline professional-programming: done
+Generation z-ai/glm-5.3-flash baseline EIPs: done
+Generation anthropic/claude-haiku-5.5 baseline EIPs: done
+Generation openai/gpt-6-luna baseline EIPs: done
+Generation z-ai/glm-5.3-flash baseline grok-1: done
+Generation anthropic/claude-haiku-5.5 baseline grok-1: done
+Generation openai/gpt-6-luna baseline grok-1: done
+Generation z-ai/glm-5.3-flash baseline PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 baseline PyTorch-GAN: done
+Generation openai/gpt-6-luna baseline PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash baseline public-apis: done
+Generation anthropic/claude-haiku-5.5 baseline public-apis: done
+Generation openai/gpt-6-luna baseline public-apis: done
+Generation z-ai/glm-5.3-flash baseline hackingtool: done
+Generation anthropic/claude-haiku-5.5 baseline hackingtool: done
+Generation openai/gpt-6-luna baseline hackingtool: done
+Generation z-ai/glm-5.3-flash baseline python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 baseline python-cheatsheet: done
+Generation openai/gpt-6-luna baseline python-cheatsheet: done
+Generation z-ai/glm-5.3-flash baseline rembg: done
+Generation anthropic/claude-haiku-5.5 baseline rembg: done
+Generation openai/gpt-6-luna baseline rembg: done
+Generation z-ai/glm-5.3-flash baseline devops-exercises: done
+Generation anthropic/claude-haiku-5.5 baseline devops-exercises: done
+Generation openai/gpt-6-luna baseline devops-exercises: done
+Generation z-ai/glm-5.3-flash baseline MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 baseline MiniGPT-4: done
+Generation openai/gpt-6-luna baseline MiniGPT-4: done
+Generation z-ai/glm-5.3-flash baseline python-spider: done
+Generation anthropic/claude-haiku-5.5 baseline python-spider: done
+Generation openai/gpt-6-luna baseline python-spider: done
+Generation z-ai/glm-5.3-flash baseline chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 baseline chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna baseline chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash baseline flux: done
+Generation anthropic/claude-haiku-5.5 baseline flux: done
+Generation openai/gpt-6-luna baseline flux: done
+Generation z-ai/glm-5.3-flash baseline EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 baseline EmotiEffLib: done
+Generation openai/gpt-6-luna baseline EmotiEffLib: done
+Generation z-ai/glm-5.3-flash baseline Ride: done
+Generation anthropic/claude-haiku-5.5 baseline Ride: done
+Generation openai/gpt-6-luna baseline Ride: done
+Generation z-ai/glm-5.3-flash baseline delPezzo: done
+Generation anthropic/claude-haiku-5.5 baseline delPezzo: done
+Generation openai/gpt-6-luna baseline delPezzo: done
+Generation z-ai/glm-5.3-flash baseline chatsky: done
+Generation anthropic/claude-haiku-5.5 baseline chatsky: done
+Generation openai/gpt-6-luna baseline chatsky: done
+Generation z-ai/glm-5.3-flash baseline dialog2graph: done
+Generation anthropic/claude-haiku-5.5 baseline dialog2graph: done
+Generation openai/gpt-6-luna baseline dialog2graph: done
+Generation z-ai/glm-5.3-flash baseline verl-loras: done
+Generation anthropic/claude-haiku-5.5 baseline verl-loras: done
+Generation openai/gpt-6-luna baseline verl-loras: done
+Generation z-ai/glm-5.3-flash baseline Eco2AI: done
+Generation anthropic/claude-haiku-5.5 baseline Eco2AI: done
+Generation openai/gpt-6-luna baseline Eco2AI: done
+Generation z-ai/glm-5.3-flash baseline GENA_LM: done
+Generation anthropic/claude-haiku-5.5 baseline GENA_LM: done
+Generation openai/gpt-6-luna baseline GENA_LM: done
+Generation z-ai/glm-5.3-flash baseline eco4cast: done
+Generation anthropic/claude-haiku-5.5 baseline eco4cast: done
+Generation openai/gpt-6-luna baseline eco4cast: done
+Generation z-ai/glm-5.3-flash baseline Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 baseline Camouflage-AI: done
+Generation openai/gpt-6-luna baseline Camouflage-AI: done
+Generation z-ai/glm-5.3-flash baseline Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 baseline Python-Weather-Info-App: done
+Generation openai/gpt-6-luna baseline Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash baseline rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 baseline rt-repo-assessment: done
+Generation openai/gpt-6-luna baseline rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash baseline TagGenerator: done
+Generation anthropic/claude-haiku-5.5 baseline TagGenerator: done
+Generation openai/gpt-6-luna baseline TagGenerator: done
+Generation z-ai/glm-5.3-flash baseline Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 baseline Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna baseline Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash osa gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 osa gpt-engineer: done
+Generation openai/gpt-6-luna osa gpt-engineer: done
+Generation z-ai/glm-5.3-flash osa ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 osa ChatGLM-6B: done
+Generation openai/gpt-6-luna osa ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash osa SMSBoom: done
+Generation anthropic/claude-haiku-5.5 osa SMSBoom: done
+Generation openai/gpt-6-luna osa SMSBoom: done
+Generation z-ai/glm-5.3-flash osa mackup: done
+Generation anthropic/claude-haiku-5.5 osa mackup: done
+Generation openai/gpt-6-luna osa mackup: done
+Generation z-ai/glm-5.3-flash osa TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 osa TaskMatrix: done
+Generation openai/gpt-6-luna osa TaskMatrix: done
+Generation z-ai/glm-5.3-flash osa Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 osa Deep-Live-Cam: done
+Generation openai/gpt-6-luna osa Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash osa python-fire: done
+Generation anthropic/claude-haiku-5.5 osa python-fire: done
+Generation openai/gpt-6-luna osa python-fire: done
+Generation z-ai/glm-5.3-flash osa devika: done
+Generation anthropic/claude-haiku-5.5 osa devika: done
+Generation openai/gpt-6-luna osa devika: done
+Generation z-ai/glm-5.3-flash osa gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 osa gpt-pilot: done
+Generation openai/gpt-6-luna osa gpt-pilot: done
+Generation z-ai/glm-5.3-flash osa Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 osa Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna osa Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash osa httpx: done
+Generation anthropic/claude-haiku-5.5 osa httpx: done
+Generation openai/gpt-6-luna osa httpx: done
+Generation z-ai/glm-5.3-flash osa kirara-ai: done
+Generation anthropic/claude-haiku-5.5 osa kirara-ai: done
+Generation openai/gpt-6-luna osa kirara-ai: done
+Generation z-ai/glm-5.3-flash osa gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 osa gpt-researcher: done
+Generation openai/gpt-6-luna osa gpt-researcher: done
+Generation z-ai/glm-5.3-flash osa mkdocs: done
+Generation anthropic/claude-haiku-5.5 osa mkdocs: done
+Generation openai/gpt-6-luna osa mkdocs: done
+Generation z-ai/glm-5.3-flash osa face_recognition: done
+Generation anthropic/claude-haiku-5.5 osa face_recognition: done
+Generation openai/gpt-6-luna osa face_recognition: done
+Generation z-ai/glm-5.3-flash osa system-design-primer: done
+Generation anthropic/claude-haiku-5.5 osa system-design-primer: done
+Generation openai/gpt-6-luna osa system-design-primer: done
+Generation z-ai/glm-5.3-flash osa GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 osa GPT_API_free: done
+Generation openai/gpt-6-luna osa GPT_API_free: done
+Generation z-ai/glm-5.3-flash osa 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 osa 30-Days-Of-Python: done
+Generation openai/gpt-6-luna osa 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash osa ChatPaper: done
+Generation anthropic/claude-haiku-5.5 osa ChatPaper: done
+Generation openai/gpt-6-luna osa ChatPaper: done
+Generation z-ai/glm-5.3-flash osa twint: done
+Generation anthropic/claude-haiku-5.5 osa twint: done
+Generation openai/gpt-6-luna osa twint: done
+Generation z-ai/glm-5.3-flash osa flask: done
+Generation anthropic/claude-haiku-5.5 osa flask: done
+Generation openai/gpt-6-luna osa flask: done
+Generation z-ai/glm-5.3-flash osa professional-programming: done
+Generation anthropic/claude-haiku-5.5 osa professional-programming: done
+Generation openai/gpt-6-luna osa professional-programming: done
+Generation z-ai/glm-5.3-flash osa EIPs: done
+Generation anthropic/claude-haiku-5.5 osa EIPs: done
+Generation openai/gpt-6-luna osa EIPs: done
+Generation z-ai/glm-5.3-flash osa grok-1: done
+Generation anthropic/claude-haiku-5.5 osa grok-1: done
+Generation openai/gpt-6-luna osa grok-1: done
+Generation z-ai/glm-5.3-flash osa PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 osa PyTorch-GAN: done
+Generation openai/gpt-6-luna osa PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash osa public-apis: done
+Generation anthropic/claude-haiku-5.5 osa public-apis: done
+Generation openai/gpt-6-luna osa public-apis: done
+Generation z-ai/glm-5.3-flash osa hackingtool: done
+Generation anthropic/claude-haiku-5.5 osa hackingtool: done
+Generation openai/gpt-6-luna osa hackingtool: done
+Generation z-ai/glm-5.3-flash osa python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 osa python-cheatsheet: done
+Generation openai/gpt-6-luna osa python-cheatsheet: done
+Generation z-ai/glm-5.3-flash osa rembg: done
+Generation anthropic/claude-haiku-5.5 osa rembg: done
+Generation openai/gpt-6-luna osa rembg: done
+Generation z-ai/glm-5.3-flash osa devops-exercises: done
+Generation anthropic/claude-haiku-5.5 osa devops-exercises: done
+Generation openai/gpt-6-luna osa devops-exercises: done
+Generation z-ai/glm-5.3-flash osa MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 osa MiniGPT-4: done
+Generation openai/gpt-6-luna osa MiniGPT-4: done
+Generation z-ai/glm-5.3-flash osa python-spider: done
+Generation anthropic/claude-haiku-5.5 osa python-spider: done
+Generation openai/gpt-6-luna osa python-spider: done
+Generation z-ai/glm-5.3-flash osa chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 osa chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna osa chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash osa flux: done
+Generation anthropic/claude-haiku-5.5 osa flux: done
+Generation openai/gpt-6-luna osa flux: done
+Generation z-ai/glm-5.3-flash osa EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 osa EmotiEffLib: done
+Generation openai/gpt-6-luna osa EmotiEffLib: done
+Generation z-ai/glm-5.3-flash osa Ride: done
+Generation anthropic/claude-haiku-5.5 osa Ride: done
+Generation openai/gpt-6-luna osa Ride: done
+Generation z-ai/glm-5.3-flash osa delPezzo: done
+Generation anthropic/claude-haiku-5.5 osa delPezzo: done
+Generation openai/gpt-6-luna osa delPezzo: done
+Generation z-ai/glm-5.3-flash osa chatsky: done
+Generation anthropic/claude-haiku-5.5 osa chatsky: done
+Generation openai/gpt-6-luna osa chatsky: done
+Generation z-ai/glm-5.3-flash osa dialog2graph: done
+Generation anthropic/claude-haiku-5.5 osa dialog2graph: done
+Generation openai/gpt-6-luna osa dialog2graph: done
+Generation z-ai/glm-5.3-flash osa verl-loras: done
+Generation anthropic/claude-haiku-5.5 osa verl-loras: done
+Generation openai/gpt-6-luna osa verl-loras: done
+Generation z-ai/glm-5.3-flash osa Eco2AI: done
+Generation anthropic/claude-haiku-5.5 osa Eco2AI: done
+Generation openai/gpt-6-luna osa Eco2AI: done
+Generation z-ai/glm-5.3-flash osa GENA_LM: done
+Generation anthropic/claude-haiku-5.5 osa GENA_LM: done
+Generation openai/gpt-6-luna osa GENA_LM: done
+Generation z-ai/glm-5.3-flash osa eco4cast: done
+Generation anthropic/claude-haiku-5.5 osa eco4cast: done
+Generation openai/gpt-6-luna osa eco4cast: done
+Generation z-ai/glm-5.3-flash osa Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 osa Camouflage-AI: done
+Generation openai/gpt-6-luna osa Camouflage-AI: done
+Generation z-ai/glm-5.3-flash osa Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 osa Python-Weather-Info-App: done
+Generation openai/gpt-6-luna osa Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash osa rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 osa rt-repo-assessment: done
+Generation openai/gpt-6-luna osa rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash osa TagGenerator: done
+Generation anthropic/claude-haiku-5.5 osa TagGenerator: done
+Generation openai/gpt-6-luna osa TagGenerator: done
+Generation z-ai/glm-5.3-flash osa Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 osa Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna osa Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash readmeready gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 readmeready gpt-engineer: done
+Generation openai/gpt-6-luna readmeready gpt-engineer: done
+Generation z-ai/glm-5.3-flash readmeready ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 readmeready ChatGLM-6B: done
+Generation openai/gpt-6-luna readmeready ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash readmeready SMSBoom: done
+Generation anthropic/claude-haiku-5.5 readmeready SMSBoom: done
+Generation openai/gpt-6-luna readmeready SMSBoom: done
+Generation z-ai/glm-5.3-flash readmeready mackup: done
+Generation anthropic/claude-haiku-5.5 readmeready mackup: done
+Generation openai/gpt-6-luna readmeready mackup: done
+Generation z-ai/glm-5.3-flash readmeready TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 readmeready TaskMatrix: done
+Generation openai/gpt-6-luna readmeready TaskMatrix: done
+Generation z-ai/glm-5.3-flash readmeready Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 readmeready Deep-Live-Cam: done
+Generation openai/gpt-6-luna readmeready Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash readmeready python-fire: done
+Generation anthropic/claude-haiku-5.5 readmeready python-fire: done
+Generation openai/gpt-6-luna readmeready python-fire: done
+Generation z-ai/glm-5.3-flash readmeready devika: done
+Generation anthropic/claude-haiku-5.5 readmeready devika: done
+Generation openai/gpt-6-luna readmeready devika: done
+Generation z-ai/glm-5.3-flash readmeready gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 readmeready gpt-pilot: done
+Generation openai/gpt-6-luna readmeready gpt-pilot: done
+Generation z-ai/glm-5.3-flash readmeready Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 readmeready Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna readmeready Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash readmeready httpx: done
+Generation anthropic/claude-haiku-5.5 readmeready httpx: done
+Generation openai/gpt-6-luna readmeready httpx: done
+Generation z-ai/glm-5.3-flash readmeready kirara-ai: done
+Generation anthropic/claude-haiku-5.5 readmeready kirara-ai: done
+Generation openai/gpt-6-luna readmeready kirara-ai: done
+
+GEval openai/gpt-6-luna opencode chatsky: 0.9
+
+GEval openai/gpt-6-luna opencode dialog2graph: 0.8
+
+GEval z-ai/glm-5.3-flash readmeready python-fire: 0.4
+
+GEval openai/gpt-6-luna opencode verl-loras: 0.8
+
+GEval openai/gpt-6-luna opencode Eco2AI: 0.7
+
+GEval openai/gpt-6-luna opencode GENA_LM: 0.7
+
+GEval openai/gpt-6-luna opencode eco4cast: 0.8
+Generation openai/gpt-6-luna readmeready gpt-researcher: failed
+Generation openai/gpt-6-luna readmeready mkdocs: done
+Generation openai/gpt-6-luna readmeready face_recognition: done
+Generation openai/gpt-6-luna readmeready system-design-primer: done
+Generation openai/gpt-6-luna readmeready GPT_API_free: done
+
+GEval openai/gpt-6-luna opencode Camouflage-AI: 0.9
+
+GEval openai/gpt-6-luna opencode Python-Weather-Info-App: 0.8
+Resuming 48 repositories, 15 cells each
+Generation openai/gpt-6-luna baseline gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-engineer: done
+Generation z-ai/glm-5.3-flash baseline gpt-engineer: done
+Generation openai/gpt-6-luna baseline ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 baseline ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash baseline ChatGLM-6B: done
+Generation openai/gpt-6-luna baseline SMSBoom: done
+Generation anthropic/claude-haiku-5.5 baseline SMSBoom: done
+Generation z-ai/glm-5.3-flash baseline SMSBoom: done
+Generation openai/gpt-6-luna baseline mackup: done
+Generation anthropic/claude-haiku-5.5 baseline mackup: done
+Generation z-ai/glm-5.3-flash baseline mackup: done
+Generation openai/gpt-6-luna baseline TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 baseline TaskMatrix: done
+Generation z-ai/glm-5.3-flash baseline TaskMatrix: done
+Generation openai/gpt-6-luna baseline Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 baseline Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash baseline Deep-Live-Cam: done
+Generation openai/gpt-6-luna baseline python-fire: done
+Generation anthropic/claude-haiku-5.5 baseline python-fire: done
+Generation z-ai/glm-5.3-flash baseline python-fire: done
+Generation openai/gpt-6-luna baseline devika: done
+Generation anthropic/claude-haiku-5.5 baseline devika: done
+Generation z-ai/glm-5.3-flash baseline devika: done
+Generation openai/gpt-6-luna baseline gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-pilot: done
+Generation z-ai/glm-5.3-flash baseline gpt-pilot: done
+Generation openai/gpt-6-luna baseline Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 baseline Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash baseline Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna baseline httpx: done
+Generation anthropic/claude-haiku-5.5 baseline httpx: done
+Generation z-ai/glm-5.3-flash baseline httpx: done
+Generation openai/gpt-6-luna baseline kirara-ai: done
+Generation anthropic/claude-haiku-5.5 baseline kirara-ai: done
+Generation z-ai/glm-5.3-flash baseline kirara-ai: done
+Generation openai/gpt-6-luna baseline gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-researcher: done
+Generation z-ai/glm-5.3-flash baseline gpt-researcher: done
+Generation openai/gpt-6-luna baseline mkdocs: done
+Generation anthropic/claude-haiku-5.5 baseline mkdocs: done
+Generation z-ai/glm-5.3-flash baseline mkdocs: done
+Generation openai/gpt-6-luna baseline face_recognition: done
+Generation anthropic/claude-haiku-5.5 baseline face_recognition: done
+Generation z-ai/glm-5.3-flash baseline face_recognition: done
+Generation openai/gpt-6-luna baseline system-design-primer: done
+Generation anthropic/claude-haiku-5.5 baseline system-design-primer: done
+Generation z-ai/glm-5.3-flash baseline system-design-primer: done
+Generation openai/gpt-6-luna baseline GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 baseline GPT_API_free: done
+Generation z-ai/glm-5.3-flash baseline GPT_API_free: done
+Generation openai/gpt-6-luna baseline 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 baseline 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash baseline 30-Days-Of-Python: done
+Generation openai/gpt-6-luna baseline ChatPaper: done
+Generation anthropic/claude-haiku-5.5 baseline ChatPaper: done
+Generation z-ai/glm-5.3-flash baseline ChatPaper: done
+Generation openai/gpt-6-luna baseline twint: done
+Generation anthropic/claude-haiku-5.5 baseline twint: done
+Generation z-ai/glm-5.3-flash baseline twint: done
+Generation openai/gpt-6-luna baseline flask: done
+Generation anthropic/claude-haiku-5.5 baseline flask: done
+Generation z-ai/glm-5.3-flash baseline flask: done
+Generation openai/gpt-6-luna baseline professional-programming: done
+Generation anthropic/claude-haiku-5.5 baseline professional-programming: done
+Generation z-ai/glm-5.3-flash baseline professional-programming: done
+Generation openai/gpt-6-luna baseline EIPs: done
+Generation anthropic/claude-haiku-5.5 baseline EIPs: done
+Generation z-ai/glm-5.3-flash baseline EIPs: done
+Generation openai/gpt-6-luna baseline grok-1: done
+Generation anthropic/claude-haiku-5.5 baseline grok-1: done
+Generation z-ai/glm-5.3-flash baseline grok-1: done
+Generation openai/gpt-6-luna baseline PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 baseline PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash baseline PyTorch-GAN: done
+Generation openai/gpt-6-luna baseline public-apis: done
+Generation anthropic/claude-haiku-5.5 baseline public-apis: done
+Generation z-ai/glm-5.3-flash baseline public-apis: done
+Generation openai/gpt-6-luna baseline hackingtool: done
+Generation anthropic/claude-haiku-5.5 baseline hackingtool: done
+Generation z-ai/glm-5.3-flash baseline hackingtool: done
+Generation openai/gpt-6-luna baseline python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 baseline python-cheatsheet: done
+Generation z-ai/glm-5.3-flash baseline python-cheatsheet: done
+Generation openai/gpt-6-luna baseline rembg: done
+Generation anthropic/claude-haiku-5.5 baseline rembg: done
+Generation z-ai/glm-5.3-flash baseline rembg: done
+Generation openai/gpt-6-luna baseline devops-exercises: done
+Generation anthropic/claude-haiku-5.5 baseline devops-exercises: done
+Generation z-ai/glm-5.3-flash baseline devops-exercises: done
+Generation openai/gpt-6-luna baseline MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 baseline MiniGPT-4: done
+Generation z-ai/glm-5.3-flash baseline MiniGPT-4: done
+Generation openai/gpt-6-luna baseline python-spider: done
+Generation anthropic/claude-haiku-5.5 baseline python-spider: done
+Generation z-ai/glm-5.3-flash baseline python-spider: done
+Generation openai/gpt-6-luna baseline chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 baseline chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash baseline chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna baseline flux: done
+Generation anthropic/claude-haiku-5.5 baseline flux: done
+Generation z-ai/glm-5.3-flash baseline flux: done
+Generation openai/gpt-6-luna baseline EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 baseline EmotiEffLib: done
+Generation z-ai/glm-5.3-flash baseline EmotiEffLib: done
+Generation openai/gpt-6-luna baseline Ride: done
+Generation anthropic/claude-haiku-5.5 baseline Ride: done
+Generation z-ai/glm-5.3-flash baseline Ride: done
+Generation openai/gpt-6-luna baseline delPezzo: done
+Generation anthropic/claude-haiku-5.5 baseline delPezzo: done
+Generation z-ai/glm-5.3-flash baseline delPezzo: done
+Generation openai/gpt-6-luna baseline chatsky: done
+Generation anthropic/claude-haiku-5.5 baseline chatsky: done
+Generation z-ai/glm-5.3-flash baseline chatsky: done
+Generation openai/gpt-6-luna baseline dialog2graph: done
+Generation anthropic/claude-haiku-5.5 baseline dialog2graph: done
+Generation z-ai/glm-5.3-flash baseline dialog2graph: done
+Generation openai/gpt-6-luna baseline verl-loras: done
+Generation anthropic/claude-haiku-5.5 baseline verl-loras: done
+Generation z-ai/glm-5.3-flash baseline verl-loras: done
+Generation openai/gpt-6-luna baseline Eco2AI: done
+Generation anthropic/claude-haiku-5.5 baseline Eco2AI: done
+Generation z-ai/glm-5.3-flash baseline Eco2AI: done
+Generation openai/gpt-6-luna baseline GENA_LM: done
+Generation anthropic/claude-haiku-5.5 baseline GENA_LM: done
+Generation z-ai/glm-5.3-flash baseline GENA_LM: done
+Generation openai/gpt-6-luna baseline eco4cast: done
+Generation anthropic/claude-haiku-5.5 baseline eco4cast: done
+Generation z-ai/glm-5.3-flash baseline eco4cast: done
+Generation openai/gpt-6-luna baseline Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 baseline Camouflage-AI: done
+Generation z-ai/glm-5.3-flash baseline Camouflage-AI: done
+Generation openai/gpt-6-luna baseline Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 baseline Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash baseline Python-Weather-Info-App: done
+Generation openai/gpt-6-luna baseline rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 baseline rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash baseline rt-repo-assessment: done
+Generation openai/gpt-6-luna baseline TagGenerator: done
+Generation anthropic/claude-haiku-5.5 baseline TagGenerator: done
+Generation z-ai/glm-5.3-flash baseline TagGenerator: done
+Generation openai/gpt-6-luna baseline Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 baseline Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash baseline Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna osa gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 osa gpt-engineer: done
+Generation z-ai/glm-5.3-flash osa gpt-engineer: done
+Generation openai/gpt-6-luna osa ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 osa ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash osa ChatGLM-6B: done
+Generation openai/gpt-6-luna osa SMSBoom: done
+Generation anthropic/claude-haiku-5.5 osa SMSBoom: done
+Generation z-ai/glm-5.3-flash osa SMSBoom: done
+Generation openai/gpt-6-luna osa mackup: done
+Generation anthropic/claude-haiku-5.5 osa mackup: done
+Generation z-ai/glm-5.3-flash osa mackup: done
+Generation openai/gpt-6-luna osa TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 osa TaskMatrix: done
+Generation z-ai/glm-5.3-flash osa TaskMatrix: done
+Generation openai/gpt-6-luna osa Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 osa Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash osa Deep-Live-Cam: done
+Generation openai/gpt-6-luna osa python-fire: done
+Generation anthropic/claude-haiku-5.5 osa python-fire: done
+Generation z-ai/glm-5.3-flash osa python-fire: done
+Generation openai/gpt-6-luna osa devika: done
+Generation anthropic/claude-haiku-5.5 osa devika: done
+Generation z-ai/glm-5.3-flash osa devika: done
+Generation openai/gpt-6-luna osa gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 osa gpt-pilot: done
+Generation z-ai/glm-5.3-flash osa gpt-pilot: done
+Generation openai/gpt-6-luna osa Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 osa Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash osa Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna osa httpx: done
+Generation anthropic/claude-haiku-5.5 osa httpx: done
+Generation z-ai/glm-5.3-flash osa httpx: done
+Generation openai/gpt-6-luna osa kirara-ai: done
+Generation anthropic/claude-haiku-5.5 osa kirara-ai: done
+Generation z-ai/glm-5.3-flash osa kirara-ai: done
+Generation openai/gpt-6-luna osa gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 osa gpt-researcher: done
+Generation z-ai/glm-5.3-flash osa gpt-researcher: done
+Generation openai/gpt-6-luna osa mkdocs: done
+Generation anthropic/claude-haiku-5.5 osa mkdocs: done
+Generation z-ai/glm-5.3-flash osa mkdocs: done
+Generation openai/gpt-6-luna osa face_recognition: done
+Generation anthropic/claude-haiku-5.5 osa face_recognition: done
+Generation z-ai/glm-5.3-flash osa face_recognition: done
+Generation openai/gpt-6-luna osa system-design-primer: done
+Generation anthropic/claude-haiku-5.5 osa system-design-primer: done
+Generation z-ai/glm-5.3-flash osa system-design-primer: done
+Generation openai/gpt-6-luna osa GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 osa GPT_API_free: done
+Generation z-ai/glm-5.3-flash osa GPT_API_free: done
+Generation openai/gpt-6-luna osa 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 osa 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash osa 30-Days-Of-Python: done
+Generation openai/gpt-6-luna osa ChatPaper: done
+Generation anthropic/claude-haiku-5.5 osa ChatPaper: done
+Generation z-ai/glm-5.3-flash osa ChatPaper: done
+Generation openai/gpt-6-luna osa twint: done
+Generation anthropic/claude-haiku-5.5 osa twint: done
+Generation z-ai/glm-5.3-flash osa twint: done
+Generation openai/gpt-6-luna osa flask: done
+Generation anthropic/claude-haiku-5.5 osa flask: done
+Generation z-ai/glm-5.3-flash osa flask: done
+Generation openai/gpt-6-luna osa professional-programming: done
+Generation anthropic/claude-haiku-5.5 osa professional-programming: done
+Generation z-ai/glm-5.3-flash osa professional-programming: done
+Generation openai/gpt-6-luna osa EIPs: done
+Generation anthropic/claude-haiku-5.5 osa EIPs: done
+Generation z-ai/glm-5.3-flash osa EIPs: done
+Generation openai/gpt-6-luna osa grok-1: done
+Generation anthropic/claude-haiku-5.5 osa grok-1: done
+Generation z-ai/glm-5.3-flash osa grok-1: done
+Generation openai/gpt-6-luna osa PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 osa PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash osa PyTorch-GAN: done
+Generation openai/gpt-6-luna osa public-apis: done
+Generation anthropic/claude-haiku-5.5 osa public-apis: done
+Generation z-ai/glm-5.3-flash osa public-apis: done
+Generation openai/gpt-6-luna osa hackingtool: done
+Generation anthropic/claude-haiku-5.5 osa hackingtool: done
+Generation z-ai/glm-5.3-flash osa hackingtool: done
+Generation openai/gpt-6-luna osa python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 osa python-cheatsheet: done
+Generation z-ai/glm-5.3-flash osa python-cheatsheet: done
+Generation openai/gpt-6-luna osa rembg: done
+Generation anthropic/claude-haiku-5.5 osa rembg: done
+Generation z-ai/glm-5.3-flash osa rembg: done
+Generation openai/gpt-6-luna osa devops-exercises: done
+Generation anthropic/claude-haiku-5.5 osa devops-exercises: done
+Generation z-ai/glm-5.3-flash osa devops-exercises: done
+Generation openai/gpt-6-luna osa MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 osa MiniGPT-4: done
+Generation z-ai/glm-5.3-flash osa MiniGPT-4: done
+Generation openai/gpt-6-luna osa python-spider: done
+Generation anthropic/claude-haiku-5.5 osa python-spider: done
+Generation z-ai/glm-5.3-flash osa python-spider: done
+Generation openai/gpt-6-luna osa chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 osa chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash osa chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna osa flux: done
+Generation anthropic/claude-haiku-5.5 osa flux: done
+Generation z-ai/glm-5.3-flash osa flux: done
+Generation openai/gpt-6-luna osa EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 osa EmotiEffLib: done
+Generation z-ai/glm-5.3-flash osa EmotiEffLib: done
+Generation openai/gpt-6-luna osa Ride: done
+Generation anthropic/claude-haiku-5.5 osa Ride: done
+Generation z-ai/glm-5.3-flash osa Ride: done
+Generation openai/gpt-6-luna osa delPezzo: done
+Generation anthropic/claude-haiku-5.5 osa delPezzo: done
+Generation z-ai/glm-5.3-flash osa delPezzo: done
+Generation openai/gpt-6-luna osa chatsky: done
+Generation anthropic/claude-haiku-5.5 osa chatsky: done
+Generation z-ai/glm-5.3-flash osa chatsky: done
+Generation openai/gpt-6-luna osa dialog2graph: done
+Generation anthropic/claude-haiku-5.5 osa dialog2graph: done
+Generation z-ai/glm-5.3-flash osa dialog2graph: done
+Generation openai/gpt-6-luna osa verl-loras: done
+Generation anthropic/claude-haiku-5.5 osa verl-loras: done
+Generation z-ai/glm-5.3-flash osa verl-loras: done
+Generation openai/gpt-6-luna osa Eco2AI: done
+Generation anthropic/claude-haiku-5.5 osa Eco2AI: done
+Generation z-ai/glm-5.3-flash osa Eco2AI: done
+Generation openai/gpt-6-luna osa GENA_LM: done
+Generation anthropic/claude-haiku-5.5 osa GENA_LM: done
+Generation z-ai/glm-5.3-flash osa GENA_LM: done
+Generation openai/gpt-6-luna osa eco4cast: done
+Generation anthropic/claude-haiku-5.5 osa eco4cast: done
+Generation z-ai/glm-5.3-flash osa eco4cast: done
+Generation openai/gpt-6-luna osa Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 osa Camouflage-AI: done
+Generation z-ai/glm-5.3-flash osa Camouflage-AI: done
+Generation openai/gpt-6-luna osa Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 osa Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash osa Python-Weather-Info-App: done
+Generation openai/gpt-6-luna osa rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 osa rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash osa rt-repo-assessment: done
+Generation openai/gpt-6-luna osa TagGenerator: done
+Generation anthropic/claude-haiku-5.5 osa TagGenerator: done
+Generation z-ai/glm-5.3-flash osa TagGenerator: done
+Generation openai/gpt-6-luna osa Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 osa Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash osa Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna readmeready gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 readmeready gpt-engineer: done
+Generation z-ai/glm-5.3-flash readmeready gpt-engineer: done
+Generation openai/gpt-6-luna readmeready ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 readmeready ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash readmeready ChatGLM-6B: done
+Generation openai/gpt-6-luna readmeready SMSBoom: done
+Generation anthropic/claude-haiku-5.5 readmeready SMSBoom: done
+Generation z-ai/glm-5.3-flash readmeready SMSBoom: done
+Generation openai/gpt-6-luna readmeready mackup: done
+Generation anthropic/claude-haiku-5.5 readmeready mackup: done
+Generation z-ai/glm-5.3-flash readmeready mackup: done
+Generation openai/gpt-6-luna readmeready TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 readmeready TaskMatrix: done
+Generation z-ai/glm-5.3-flash readmeready TaskMatrix: done
+Generation openai/gpt-6-luna readmeready Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 readmeready Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash readmeready Deep-Live-Cam: done
+Generation openai/gpt-6-luna readmeready python-fire: done
+Generation anthropic/claude-haiku-5.5 readmeready python-fire: done
+Generation z-ai/glm-5.3-flash readmeready python-fire: done
+Generation openai/gpt-6-luna readmeready devika: done
+Generation anthropic/claude-haiku-5.5 readmeready devika: done
+Generation z-ai/glm-5.3-flash readmeready devika: done
+Generation openai/gpt-6-luna readmeready gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 readmeready gpt-pilot: done
+Generation z-ai/glm-5.3-flash readmeready gpt-pilot: done
+Generation openai/gpt-6-luna readmeready Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 readmeready Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash readmeready Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna readmeready httpx: done
+Generation anthropic/claude-haiku-5.5 readmeready httpx: done
+Generation z-ai/glm-5.3-flash readmeready httpx: done
+Generation openai/gpt-6-luna readmeready kirara-ai: done
+Generation anthropic/claude-haiku-5.5 readmeready kirara-ai: done
+Generation z-ai/glm-5.3-flash readmeready kirara-ai: done
+
+GEval openai/gpt-6-luna opencode rt-repo-assessment: 0.9
+
+GEval openai/gpt-6-luna opencode rt-repo-assessment: 0.9
+
+GEval openai/gpt-6-luna opencode Code-Contribution-Analyzer: 0.8
+
+GEval openai/gpt-6-luna opencode Code-Contribution-Analyzer: 0.8
+
+GEval z-ai/glm-5.3-flash readmeready devika: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready mkdocs: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready gpt-pilot: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready face_recognition: 0.3
+Generation anthropic/claude-haiku-5.5 readmeready gpt-researcher: failed
+Generation anthropic/claude-haiku-5.5 readmeready mkdocs: done
+Generation anthropic/claude-haiku-5.5 readmeready face_recognition: done
+Generation anthropic/claude-haiku-5.5 readmeready system-design-primer: done
+Generation anthropic/claude-haiku-5.5 readmeready GPT_API_free: done
+
+GEval z-ai/glm-5.3-flash readmeready Real-Time-Voice-Cloning: 0.6
+Generation openai/gpt-6-luna readmeready 30-Days-Of-Python: failed
+Generation openai/gpt-6-luna readmeready ChatPaper: done
+Generation openai/gpt-6-luna readmeready twint: done
+Generation openai/gpt-6-luna readmeready flask: done
+Generation openai/gpt-6-luna readmeready professional-programming: done
+Generation openai/gpt-6-luna readmeready EIPs: done
+Generation openai/gpt-6-luna readmeready grok-1: done
+Generation openai/gpt-6-luna readmeready PyTorch-GAN: done
+Generation openai/gpt-6-luna readmeready public-apis: done
+Generation openai/gpt-6-luna readmeready hackingtool: done
+
+GEval z-ai/glm-5.3-flash readmeready system-design-primer: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready httpx: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready GPT_API_free: 0.5
+Generation openai/gpt-6-luna readmeready gpt-researcher: failed
+Generation openai/gpt-6-luna readmeready mkdocs: done
+Generation openai/gpt-6-luna readmeready face_recognition: done
+Generation openai/gpt-6-luna readmeready system-design-primer: done
+Generation openai/gpt-6-luna readmeready GPT_API_free: done
+
+GEval z-ai/glm-5.3-flash readmeready kirara-ai: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready devika: 0.5
+Generation anthropic/claude-haiku-5.5 readmeready gpt-researcher: failed
+Generation anthropic/claude-haiku-5.5 readmeready mkdocs: done
+Generation anthropic/claude-haiku-5.5 readmeready face_recognition: done
+Generation anthropic/claude-haiku-5.5 readmeready system-design-primer: done
+Generation anthropic/claude-haiku-5.5 readmeready GPT_API_free: done
+
+GEval z-ai/glm-5.3-flash readmeready mkdocs: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready gpt-pilot: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready face_recognition: 0.3
+Generation anthropic/claude-haiku-5.5 readmeready 30-Days-Of-Python: failed
+Generation anthropic/claude-haiku-5.5 readmeready ChatPaper: done
+Generation anthropic/claude-haiku-5.5 readmeready twint: done
+Generation anthropic/claude-haiku-5.5 readmeready flask: done
+Generation anthropic/claude-haiku-5.5 readmeready professional-programming: done
+Generation anthropic/claude-haiku-5.5 readmeready EIPs: done
+Generation anthropic/claude-haiku-5.5 readmeready grok-1: done
+Generation anthropic/claude-haiku-5.5 readmeready PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 readmeready public-apis: done
+Generation anthropic/claude-haiku-5.5 readmeready hackingtool: done
+
+GEval z-ai/glm-5.3-flash readmeready Real-Time-Voice-Cloning: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready system-design-primer: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready httpx: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready GPT_API_free: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready kirara-ai: 0.3
+Generation anthropic/claude-haiku-5.5 readmeready 30-Days-Of-Python: failed
+Generation anthropic/claude-haiku-5.5 readmeready ChatPaper: done
+Generation anthropic/claude-haiku-5.5 readmeready twint: done
+Generation anthropic/claude-haiku-5.5 readmeready flask: done
+Generation anthropic/claude-haiku-5.5 readmeready professional-programming: done
+Generation anthropic/claude-haiku-5.5 readmeready EIPs: done
+Generation anthropic/claude-haiku-5.5 readmeready grok-1: done
+Generation anthropic/claude-haiku-5.5 readmeready PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 readmeready public-apis: done
+Generation anthropic/claude-haiku-5.5 readmeready hackingtool: done
+Generation openai/gpt-6-luna readmeready 30-Days-Of-Python: failed
+Generation openai/gpt-6-luna readmeready ChatPaper: done
+Generation openai/gpt-6-luna readmeready twint: done
+Generation openai/gpt-6-luna readmeready flask: done
+Generation openai/gpt-6-luna readmeready professional-programming: done
+Generation openai/gpt-6-luna readmeready EIPs: done
+Generation openai/gpt-6-luna readmeready grok-1: done
+Generation openai/gpt-6-luna readmeready PyTorch-GAN: done
+Generation openai/gpt-6-luna readmeready public-apis: done
+Generation openai/gpt-6-luna readmeready hackingtool: done
+Generation z-ai/glm-5.3-flash readmeready gpt-researcher: failed
+Generation z-ai/glm-5.3-flash readmeready mkdocs: done
+Generation z-ai/glm-5.3-flash readmeready face_recognition: done
+Generation z-ai/glm-5.3-flash readmeready system-design-primer: done
+Generation z-ai/glm-5.3-flash readmeready GPT_API_free: done
+Generation z-ai/glm-5.3-flash readmeready gpt-researcher: failed
+Generation z-ai/glm-5.3-flash readmeready mkdocs: done
+Generation z-ai/glm-5.3-flash readmeready face_recognition: done
+Generation z-ai/glm-5.3-flash readmeready system-design-primer: done
+Generation z-ai/glm-5.3-flash readmeready GPT_API_free: done
+Generation z-ai/glm-5.3-flash readmeready 30-Days-Of-Python: failed
+Generation z-ai/glm-5.3-flash readmeready 30-Days-Of-Python: failed
+Generation z-ai/glm-5.3-flash readmeready ChatPaper: done
+
+GEval z-ai/glm-5.3-flash readmeready ChatPaper: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready ChatPaper: 0.5
+Generation z-ai/glm-5.3-flash readmeready ChatPaper: done
+Generation openai/gpt-6-luna readmeready python-cheatsheet: failed
+Generation openai/gpt-6-luna readmeready rembg: done
+Generation openai/gpt-6-luna readmeready devops-exercises: done
+Generation openai/gpt-6-luna readmeready MiniGPT-4: done
+Generation openai/gpt-6-luna readmeready python-spider: done
+Generation openai/gpt-6-luna readmeready chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna readmeready flux: done
+Generation anthropic/claude-haiku-5.5 readmeready python-cheatsheet: failed
+Generation anthropic/claude-haiku-5.5 readmeready rembg: done
+Generation anthropic/claude-haiku-5.5 readmeready devops-exercises: done
+Generation anthropic/claude-haiku-5.5 readmeready MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 readmeready python-spider: done
+Generation anthropic/claude-haiku-5.5 readmeready chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 readmeready flux: done
+Generation anthropic/claude-haiku-5.5 readmeready python-cheatsheet: failed
+Generation anthropic/claude-haiku-5.5 readmeready rembg: done
+Generation anthropic/claude-haiku-5.5 readmeready devops-exercises: done
+Generation anthropic/claude-haiku-5.5 readmeready MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 readmeready python-spider: done
+Generation anthropic/claude-haiku-5.5 readmeready chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 readmeready flux: done
+Generation openai/gpt-6-luna readmeready python-cheatsheet: failed
+Generation openai/gpt-6-luna readmeready rembg: done
+Generation openai/gpt-6-luna readmeready devops-exercises: done
+Generation openai/gpt-6-luna readmeready MiniGPT-4: done
+Generation openai/gpt-6-luna readmeready python-spider: done
+Generation openai/gpt-6-luna readmeready chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna readmeready flux: done
+Generation anthropic/claude-haiku-5.5 readmeready EmotiEffLib: failed
+Generation anthropic/claude-haiku-5.5 readmeready EmotiEffLib: failed
+Generation anthropic/claude-haiku-5.5 readmeready Ride: failed
+Generation anthropic/claude-haiku-5.5 readmeready delPezzo: done
+Generation anthropic/claude-haiku-5.5 readmeready chatsky: done
+Generation anthropic/claude-haiku-5.5 readmeready Ride: failed
+Generation anthropic/claude-haiku-5.5 readmeready delPezzo: done
+Generation anthropic/claude-haiku-5.5 readmeready chatsky: done
+Generation z-ai/glm-5.3-flash readmeready twint: done
+
+GEval z-ai/glm-5.3-flash readmeready twint: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready twint: 0.6
+Generation z-ai/glm-5.3-flash readmeready twint: done
+Generation openai/gpt-6-luna readmeready EmotiEffLib: failed
+Generation openai/gpt-6-luna readmeready EmotiEffLib: failed
+Generation openai/gpt-6-luna readmeready Ride: failed
+Generation openai/gpt-6-luna readmeready delPezzo: done
+Generation openai/gpt-6-luna readmeready chatsky: done
+Generation openai/gpt-6-luna readmeready Ride: failed
+Generation openai/gpt-6-luna readmeready delPezzo: done
+Generation openai/gpt-6-luna readmeready chatsky: done
+Generation anthropic/claude-haiku-5.5 readmeready dialog2graph: failed
+Generation anthropic/claude-haiku-5.5 readmeready dialog2graph: failed
+Generation z-ai/glm-5.3-flash readmeready flask: failed
+Generation z-ai/glm-5.3-flash readmeready professional-programming: done
+
+GEval z-ai/glm-5.3-flash readmeready professional-programming: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready professional-programming: 0.2
+Generation z-ai/glm-5.3-flash readmeready flask: failed
+Generation z-ai/glm-5.3-flash readmeready professional-programming: done
+Generation openai/gpt-6-luna readmeready dialog2graph: failed
+Generation openai/gpt-6-luna readmeready dialog2graph: failed
+Generation anthropic/claude-haiku-5.5 readmeready verl-loras: failed
+Generation anthropic/claude-haiku-5.5 readmeready Eco2AI: done
+Generation anthropic/claude-haiku-5.5 readmeready verl-loras: failed
+Generation anthropic/claude-haiku-5.5 readmeready Eco2AI: done
+Generation anthropic/claude-haiku-5.5 readmeready GENA_LM: failed
+Generation anthropic/claude-haiku-5.5 readmeready eco4cast: done
+Generation anthropic/claude-haiku-5.5 readmeready Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 readmeready Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 readmeready rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 readmeready TagGenerator: done
+Generation anthropic/claude-haiku-5.5 readmeready Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 larch gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 larch ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 larch SMSBoom: done
+Generation anthropic/claude-haiku-5.5 larch mackup: done
+Generation anthropic/claude-haiku-5.5 larch TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 larch Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 larch python-fire: done
+Generation anthropic/claude-haiku-5.5 larch devika: done
+Generation anthropic/claude-haiku-5.5 larch gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 larch Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 larch httpx: done
+Generation anthropic/claude-haiku-5.5 larch kirara-ai: done
+Generation anthropic/claude-haiku-5.5 larch gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 larch mkdocs: done
+Generation anthropic/claude-haiku-5.5 larch face_recognition: done
+Generation anthropic/claude-haiku-5.5 larch system-design-primer: done
+Generation anthropic/claude-haiku-5.5 larch GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 larch 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 larch ChatPaper: done
+Generation anthropic/claude-haiku-5.5 larch twint: done
+Generation anthropic/claude-haiku-5.5 larch flask: done
+Generation anthropic/claude-haiku-5.5 larch professional-programming: done
+Generation anthropic/claude-haiku-5.5 larch EIPs: done
+Generation anthropic/claude-haiku-5.5 larch grok-1: done
+Generation anthropic/claude-haiku-5.5 larch PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 larch public-apis: done
+Generation anthropic/claude-haiku-5.5 larch hackingtool: done
+Generation anthropic/claude-haiku-5.5 larch python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 larch rembg: done
+Generation anthropic/claude-haiku-5.5 larch devops-exercises: done
+Generation anthropic/claude-haiku-5.5 larch MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 larch python-spider: done
+Generation anthropic/claude-haiku-5.5 larch chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 larch flux: done
+Generation anthropic/claude-haiku-5.5 larch EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 larch Ride: done
+Generation anthropic/claude-haiku-5.5 larch delPezzo: done
+Generation anthropic/claude-haiku-5.5 larch chatsky: done
+Generation anthropic/claude-haiku-5.5 larch dialog2graph: done
+Generation anthropic/claude-haiku-5.5 larch verl-loras: done
+Generation anthropic/claude-haiku-5.5 larch Eco2AI: done
+Generation anthropic/claude-haiku-5.5 larch GENA_LM: done
+Generation anthropic/claude-haiku-5.5 larch eco4cast: done
+Generation anthropic/claude-haiku-5.5 larch Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 larch Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 larch rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 larch TagGenerator: done
+Generation anthropic/claude-haiku-5.5 larch Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 opencode ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 readmeready GENA_LM: failed
+Generation anthropic/claude-haiku-5.5 readmeready eco4cast: done
+Generation anthropic/claude-haiku-5.5 readmeready Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 readmeready Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 readmeready rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 readmeready TagGenerator: done
+Generation anthropic/claude-haiku-5.5 readmeready Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 larch gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 larch ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 larch SMSBoom: done
+Generation anthropic/claude-haiku-5.5 larch mackup: done
+Generation anthropic/claude-haiku-5.5 larch TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 larch Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 larch python-fire: done
+Generation anthropic/claude-haiku-5.5 larch devika: done
+Generation anthropic/claude-haiku-5.5 larch gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 larch Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 larch httpx: done
+Generation anthropic/claude-haiku-5.5 larch kirara-ai: done
+Generation anthropic/claude-haiku-5.5 larch gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 larch mkdocs: done
+Generation anthropic/claude-haiku-5.5 larch face_recognition: done
+Generation anthropic/claude-haiku-5.5 larch system-design-primer: done
+Generation anthropic/claude-haiku-5.5 larch GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 larch 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 larch ChatPaper: done
+Generation anthropic/claude-haiku-5.5 larch twint: done
+Generation anthropic/claude-haiku-5.5 larch flask: done
+Generation anthropic/claude-haiku-5.5 larch professional-programming: done
+Generation anthropic/claude-haiku-5.5 larch EIPs: done
+Generation anthropic/claude-haiku-5.5 larch grok-1: done
+Generation anthropic/claude-haiku-5.5 larch PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 larch public-apis: done
+Generation anthropic/claude-haiku-5.5 larch hackingtool: done
+Generation anthropic/claude-haiku-5.5 larch python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 larch rembg: done
+Generation anthropic/claude-haiku-5.5 larch devops-exercises: done
+Generation anthropic/claude-haiku-5.5 larch MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 larch python-spider: done
+Generation anthropic/claude-haiku-5.5 larch chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 larch flux: done
+Generation anthropic/claude-haiku-5.5 larch EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 larch Ride: done
+Generation anthropic/claude-haiku-5.5 larch delPezzo: done
+Generation anthropic/claude-haiku-5.5 larch chatsky: done
+Generation anthropic/claude-haiku-5.5 larch dialog2graph: done
+Generation anthropic/claude-haiku-5.5 larch verl-loras: done
+Generation anthropic/claude-haiku-5.5 larch Eco2AI: done
+Generation anthropic/claude-haiku-5.5 larch GENA_LM: done
+Generation anthropic/claude-haiku-5.5 larch eco4cast: done
+Generation anthropic/claude-haiku-5.5 larch Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 larch Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 larch rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 larch TagGenerator: done
+Generation anthropic/claude-haiku-5.5 larch Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 opencode ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 opencode SMSBoom: failed
+Generation anthropic/claude-haiku-5.5 opencode mackup: done
+Generation anthropic/claude-haiku-5.5 opencode TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 opencode Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 opencode python-fire: done
+Generation anthropic/claude-haiku-5.5 opencode devika: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 opencode Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 opencode httpx: done
+Generation anthropic/claude-haiku-5.5 opencode kirara-ai: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 opencode mkdocs: done
+Generation anthropic/claude-haiku-5.5 opencode face_recognition: done
+Generation anthropic/claude-haiku-5.5 opencode system-design-primer: done
+Generation anthropic/claude-haiku-5.5 opencode GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 opencode 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 opencode ChatPaper: done
+Generation anthropic/claude-haiku-5.5 opencode twint: done
+Generation anthropic/claude-haiku-5.5 opencode flask: done
+Generation anthropic/claude-haiku-5.5 opencode professional-programming: done
+Generation anthropic/claude-haiku-5.5 opencode EIPs: done
+Generation anthropic/claude-haiku-5.5 opencode grok-1: done
+Generation anthropic/claude-haiku-5.5 opencode PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 opencode public-apis: done
+Generation anthropic/claude-haiku-5.5 opencode hackingtool: done
+Generation anthropic/claude-haiku-5.5 opencode python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 opencode rembg: done
+Generation anthropic/claude-haiku-5.5 opencode devops-exercises: done
+Generation anthropic/claude-haiku-5.5 opencode MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 opencode python-spider: done
+Generation anthropic/claude-haiku-5.5 opencode chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 opencode flux: done
+Generation anthropic/claude-haiku-5.5 opencode EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 opencode Ride: done
+Generation anthropic/claude-haiku-5.5 opencode delPezzo: done
+Generation anthropic/claude-haiku-5.5 opencode chatsky: done
+Generation anthropic/claude-haiku-5.5 opencode dialog2graph: done
+Generation anthropic/claude-haiku-5.5 opencode verl-loras: done
+Generation anthropic/claude-haiku-5.5 opencode Eco2AI: done
+Generation anthropic/claude-haiku-5.5 opencode GENA_LM: done
+Generation anthropic/claude-haiku-5.5 opencode eco4cast: done
+Generation anthropic/claude-haiku-5.5 opencode Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 opencode Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 opencode rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 opencode TagGenerator: done
+Generation anthropic/claude-haiku-5.5 opencode Code-Contribution-Analyzer: done
+Generation anthropic/claude-haiku-5.5 opencode SMSBoom: done
+Generation anthropic/claude-haiku-5.5 opencode mackup: done
+Generation anthropic/claude-haiku-5.5 opencode TaskMatrix: done
+Generation anthropic/claude-haiku-5.5 opencode Deep-Live-Cam: done
+Generation anthropic/claude-haiku-5.5 opencode python-fire: done
+Generation anthropic/claude-haiku-5.5 opencode devika: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-pilot: done
+Generation anthropic/claude-haiku-5.5 opencode Real-Time-Voice-Cloning: done
+Generation anthropic/claude-haiku-5.5 opencode httpx: done
+Generation anthropic/claude-haiku-5.5 opencode kirara-ai: done
+Generation anthropic/claude-haiku-5.5 opencode gpt-researcher: done
+Generation anthropic/claude-haiku-5.5 opencode mkdocs: done
+Generation anthropic/claude-haiku-5.5 opencode face_recognition: done
+Generation anthropic/claude-haiku-5.5 opencode system-design-primer: done
+Generation anthropic/claude-haiku-5.5 opencode GPT_API_free: done
+Generation anthropic/claude-haiku-5.5 opencode 30-Days-Of-Python: done
+Generation anthropic/claude-haiku-5.5 opencode ChatPaper: done
+Generation anthropic/claude-haiku-5.5 opencode twint: done
+Generation anthropic/claude-haiku-5.5 opencode flask: done
+Generation anthropic/claude-haiku-5.5 opencode professional-programming: done
+Generation anthropic/claude-haiku-5.5 opencode EIPs: done
+Generation anthropic/claude-haiku-5.5 opencode grok-1: done
+Generation anthropic/claude-haiku-5.5 opencode PyTorch-GAN: done
+Generation anthropic/claude-haiku-5.5 opencode public-apis: done
+Generation anthropic/claude-haiku-5.5 opencode hackingtool: done
+Generation anthropic/claude-haiku-5.5 opencode python-cheatsheet: done
+Generation anthropic/claude-haiku-5.5 opencode rembg: done
+Generation anthropic/claude-haiku-5.5 opencode devops-exercises: done
+Generation anthropic/claude-haiku-5.5 opencode MiniGPT-4: done
+Generation anthropic/claude-haiku-5.5 opencode python-spider: done
+Generation anthropic/claude-haiku-5.5 opencode chatgpt-retrieval-plugin: done
+Generation anthropic/claude-haiku-5.5 opencode flux: done
+Generation anthropic/claude-haiku-5.5 opencode EmotiEffLib: done
+Generation anthropic/claude-haiku-5.5 opencode Ride: done
+Generation anthropic/claude-haiku-5.5 opencode delPezzo: done
+Generation anthropic/claude-haiku-5.5 opencode chatsky: done
+Generation anthropic/claude-haiku-5.5 opencode dialog2graph: done
+Generation anthropic/claude-haiku-5.5 opencode verl-loras: done
+Generation anthropic/claude-haiku-5.5 opencode Eco2AI: done
+Generation anthropic/claude-haiku-5.5 opencode GENA_LM: done
+Generation anthropic/claude-haiku-5.5 opencode eco4cast: done
+Generation anthropic/claude-haiku-5.5 opencode Camouflage-AI: done
+Generation anthropic/claude-haiku-5.5 opencode Python-Weather-Info-App: done
+Generation anthropic/claude-haiku-5.5 opencode rt-repo-assessment: done
+Generation anthropic/claude-haiku-5.5 opencode TagGenerator: done
+Generation anthropic/claude-haiku-5.5 opencode Code-Contribution-Analyzer: done
+
+GEval anthropic/claude-haiku-5.5 opencode SMSBoom: 0.6
+
+GEval anthropic/claude-haiku-5.5 opencode SMSBoom: 0.4
+Generation z-ai/glm-5.3-flash readmeready EIPs: failed
+Generation z-ai/glm-5.3-flash readmeready EIPs: failed
+Generation z-ai/glm-5.3-flash readmeready grok-1: done
+
+GEval z-ai/glm-5.3-flash readmeready grok-1: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready grok-1: 0.4
+Generation z-ai/glm-5.3-flash readmeready grok-1: done
+Generation z-ai/glm-5.3-flash readmeready PyTorch-GAN: done
+
+GEval z-ai/glm-5.3-flash readmeready PyTorch-GAN: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready PyTorch-GAN: 0.5
+Generation openai/gpt-6-luna readmeready verl-loras: failed
+Generation openai/gpt-6-luna readmeready Eco2AI: done
+Generation openai/gpt-6-luna readmeready verl-loras: failed
+Generation openai/gpt-6-luna readmeready Eco2AI: done
+Generation openai/gpt-6-luna readmeready GENA_LM: failed
+Generation openai/gpt-6-luna readmeready eco4cast: done
+Generation openai/gpt-6-luna readmeready Camouflage-AI: done
+Generation openai/gpt-6-luna readmeready Python-Weather-Info-App: done
+Generation openai/gpt-6-luna readmeready rt-repo-assessment: done
+Generation openai/gpt-6-luna readmeready TagGenerator: done
+Generation openai/gpt-6-luna readmeready Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna larch gpt-engineer: done
+Generation openai/gpt-6-luna larch ChatGLM-6B: done
+Generation openai/gpt-6-luna larch SMSBoom: done
+Generation openai/gpt-6-luna larch mackup: done
+Generation openai/gpt-6-luna larch TaskMatrix: done
+Generation openai/gpt-6-luna larch Deep-Live-Cam: done
+Generation openai/gpt-6-luna larch python-fire: done
+Generation openai/gpt-6-luna larch devika: done
+Generation openai/gpt-6-luna larch gpt-pilot: done
+Generation openai/gpt-6-luna larch Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna larch httpx: done
+Generation openai/gpt-6-luna larch kirara-ai: done
+Generation openai/gpt-6-luna larch gpt-researcher: done
+Generation openai/gpt-6-luna larch mkdocs: done
+Generation openai/gpt-6-luna larch face_recognition: done
+Generation openai/gpt-6-luna larch system-design-primer: done
+Generation openai/gpt-6-luna larch GPT_API_free: done
+Generation openai/gpt-6-luna larch 30-Days-Of-Python: done
+Generation openai/gpt-6-luna larch ChatPaper: done
+Generation openai/gpt-6-luna larch twint: done
+Generation openai/gpt-6-luna larch flask: done
+Generation openai/gpt-6-luna larch professional-programming: done
+Generation openai/gpt-6-luna larch EIPs: done
+Generation openai/gpt-6-luna larch grok-1: done
+Generation openai/gpt-6-luna larch PyTorch-GAN: done
+Generation openai/gpt-6-luna larch public-apis: done
+Generation openai/gpt-6-luna larch hackingtool: done
+Generation openai/gpt-6-luna larch python-cheatsheet: done
+Generation openai/gpt-6-luna larch rembg: done
+Generation openai/gpt-6-luna larch devops-exercises: done
+Generation openai/gpt-6-luna larch MiniGPT-4: done
+Generation openai/gpt-6-luna larch python-spider: done
+Generation openai/gpt-6-luna larch chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna larch flux: done
+Generation openai/gpt-6-luna larch EmotiEffLib: done
+Generation openai/gpt-6-luna larch Ride: done
+Generation openai/gpt-6-luna larch delPezzo: done
+Generation openai/gpt-6-luna larch chatsky: done
+Generation openai/gpt-6-luna larch dialog2graph: done
+Generation openai/gpt-6-luna larch verl-loras: done
+Generation openai/gpt-6-luna larch Eco2AI: done
+Generation openai/gpt-6-luna larch GENA_LM: done
+Generation openai/gpt-6-luna larch eco4cast: done
+Generation openai/gpt-6-luna larch Camouflage-AI: done
+Generation openai/gpt-6-luna larch Python-Weather-Info-App: done
+Generation openai/gpt-6-luna larch rt-repo-assessment: done
+Generation openai/gpt-6-luna larch TagGenerator: done
+Generation openai/gpt-6-luna larch Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna opencode gpt-engineer: done
+Generation openai/gpt-6-luna opencode ChatGLM-6B: done
+Generation openai/gpt-6-luna opencode SMSBoom: done
+Generation openai/gpt-6-luna opencode mackup: done
+Generation openai/gpt-6-luna opencode TaskMatrix: done
+Generation openai/gpt-6-luna opencode Deep-Live-Cam: done
+Generation openai/gpt-6-luna opencode python-fire: done
+Generation openai/gpt-6-luna opencode devika: done
+Generation openai/gpt-6-luna opencode gpt-pilot: done
+Generation openai/gpt-6-luna opencode Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna opencode httpx: done
+Generation openai/gpt-6-luna opencode kirara-ai: done
+Generation openai/gpt-6-luna opencode gpt-researcher: done
+Generation openai/gpt-6-luna opencode mkdocs: done
+Generation openai/gpt-6-luna opencode face_recognition: done
+Generation openai/gpt-6-luna opencode system-design-primer: done
+Generation openai/gpt-6-luna opencode GPT_API_free: done
+Generation openai/gpt-6-luna opencode 30-Days-Of-Python: done
+Generation openai/gpt-6-luna opencode ChatPaper: done
+Generation openai/gpt-6-luna opencode twint: done
+Generation openai/gpt-6-luna opencode flask: done
+Generation openai/gpt-6-luna opencode professional-programming: done
+Generation openai/gpt-6-luna opencode EIPs: done
+Generation openai/gpt-6-luna opencode grok-1: done
+Generation openai/gpt-6-luna opencode PyTorch-GAN: done
+Generation openai/gpt-6-luna opencode public-apis: done
+Generation openai/gpt-6-luna opencode hackingtool: done
+Generation openai/gpt-6-luna opencode python-cheatsheet: done
+Generation openai/gpt-6-luna opencode rembg: done
+Generation openai/gpt-6-luna opencode devops-exercises: done
+Generation openai/gpt-6-luna opencode MiniGPT-4: done
+Generation openai/gpt-6-luna opencode python-spider: done
+Generation openai/gpt-6-luna opencode chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna opencode flux: done
+Generation openai/gpt-6-luna opencode EmotiEffLib: done
+Generation openai/gpt-6-luna opencode Ride: done
+Generation openai/gpt-6-luna opencode delPezzo: done
+Generation openai/gpt-6-luna opencode chatsky: done
+Generation openai/gpt-6-luna opencode dialog2graph: done
+Generation openai/gpt-6-luna opencode verl-loras: done
+Generation openai/gpt-6-luna opencode Eco2AI: done
+Generation openai/gpt-6-luna opencode GENA_LM: done
+Generation openai/gpt-6-luna opencode eco4cast: done
+Generation openai/gpt-6-luna opencode Camouflage-AI: done
+Generation openai/gpt-6-luna opencode Python-Weather-Info-App: done
+Generation openai/gpt-6-luna opencode rt-repo-assessment: done
+Generation openai/gpt-6-luna opencode TagGenerator: done
+Generation openai/gpt-6-luna opencode Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna readmeready GENA_LM: failed
+Generation openai/gpt-6-luna readmeready eco4cast: done
+Generation openai/gpt-6-luna readmeready Camouflage-AI: done
+Generation openai/gpt-6-luna readmeready Python-Weather-Info-App: done
+Generation openai/gpt-6-luna readmeready rt-repo-assessment: done
+Generation openai/gpt-6-luna readmeready TagGenerator: done
+Generation openai/gpt-6-luna readmeready Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna larch gpt-engineer: done
+Generation openai/gpt-6-luna larch ChatGLM-6B: done
+Generation openai/gpt-6-luna larch SMSBoom: done
+Generation openai/gpt-6-luna larch mackup: done
+Generation openai/gpt-6-luna larch TaskMatrix: done
+Generation openai/gpt-6-luna larch Deep-Live-Cam: done
+Generation openai/gpt-6-luna larch python-fire: done
+Generation openai/gpt-6-luna larch devika: done
+Generation openai/gpt-6-luna larch gpt-pilot: done
+Generation openai/gpt-6-luna larch Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna larch httpx: done
+Generation openai/gpt-6-luna larch kirara-ai: done
+Generation openai/gpt-6-luna larch gpt-researcher: done
+Generation openai/gpt-6-luna larch mkdocs: done
+Generation openai/gpt-6-luna larch face_recognition: done
+Generation openai/gpt-6-luna larch system-design-primer: done
+Generation openai/gpt-6-luna larch GPT_API_free: done
+Generation openai/gpt-6-luna larch 30-Days-Of-Python: done
+Generation openai/gpt-6-luna larch ChatPaper: done
+Generation openai/gpt-6-luna larch twint: done
+Generation openai/gpt-6-luna larch flask: done
+Generation openai/gpt-6-luna larch professional-programming: done
+Generation openai/gpt-6-luna larch EIPs: done
+Generation openai/gpt-6-luna larch grok-1: done
+Generation openai/gpt-6-luna larch PyTorch-GAN: done
+Generation openai/gpt-6-luna larch public-apis: done
+Generation openai/gpt-6-luna larch hackingtool: done
+Generation openai/gpt-6-luna larch python-cheatsheet: done
+Generation openai/gpt-6-luna larch rembg: done
+Generation openai/gpt-6-luna larch devops-exercises: done
+Generation openai/gpt-6-luna larch MiniGPT-4: done
+Generation openai/gpt-6-luna larch python-spider: done
+Generation openai/gpt-6-luna larch chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna larch flux: done
+Generation openai/gpt-6-luna larch EmotiEffLib: done
+Generation openai/gpt-6-luna larch Ride: done
+Generation openai/gpt-6-luna larch delPezzo: done
+Generation openai/gpt-6-luna larch chatsky: done
+Generation openai/gpt-6-luna larch dialog2graph: done
+Generation openai/gpt-6-luna larch verl-loras: done
+Generation openai/gpt-6-luna larch Eco2AI: done
+Generation openai/gpt-6-luna larch GENA_LM: done
+Generation openai/gpt-6-luna larch eco4cast: done
+Generation openai/gpt-6-luna larch Camouflage-AI: done
+Generation openai/gpt-6-luna larch Python-Weather-Info-App: done
+Generation openai/gpt-6-luna larch rt-repo-assessment: done
+Generation openai/gpt-6-luna larch TagGenerator: done
+Generation openai/gpt-6-luna larch Code-Contribution-Analyzer: done
+Generation openai/gpt-6-luna opencode gpt-engineer: done
+Generation openai/gpt-6-luna opencode ChatGLM-6B: done
+Generation openai/gpt-6-luna opencode SMSBoom: done
+Generation openai/gpt-6-luna opencode mackup: done
+Generation openai/gpt-6-luna opencode TaskMatrix: done
+Generation openai/gpt-6-luna opencode Deep-Live-Cam: done
+Generation openai/gpt-6-luna opencode python-fire: done
+Generation openai/gpt-6-luna opencode devika: done
+Generation openai/gpt-6-luna opencode gpt-pilot: done
+Generation openai/gpt-6-luna opencode Real-Time-Voice-Cloning: done
+Generation openai/gpt-6-luna opencode httpx: done
+Generation openai/gpt-6-luna opencode kirara-ai: done
+Generation openai/gpt-6-luna opencode gpt-researcher: done
+Generation openai/gpt-6-luna opencode mkdocs: done
+Generation openai/gpt-6-luna opencode face_recognition: done
+Generation openai/gpt-6-luna opencode system-design-primer: done
+Generation openai/gpt-6-luna opencode GPT_API_free: done
+Generation openai/gpt-6-luna opencode 30-Days-Of-Python: done
+Generation openai/gpt-6-luna opencode ChatPaper: done
+Generation openai/gpt-6-luna opencode twint: done
+Generation openai/gpt-6-luna opencode flask: done
+Generation openai/gpt-6-luna opencode professional-programming: done
+Generation openai/gpt-6-luna opencode EIPs: done
+Generation openai/gpt-6-luna opencode grok-1: done
+Generation openai/gpt-6-luna opencode PyTorch-GAN: done
+Generation openai/gpt-6-luna opencode public-apis: done
+Generation openai/gpt-6-luna opencode hackingtool: done
+Generation openai/gpt-6-luna opencode python-cheatsheet: done
+Generation openai/gpt-6-luna opencode rembg: done
+Generation openai/gpt-6-luna opencode devops-exercises: done
+Generation openai/gpt-6-luna opencode MiniGPT-4: done
+Generation openai/gpt-6-luna opencode python-spider: done
+Generation openai/gpt-6-luna opencode chatgpt-retrieval-plugin: done
+Generation openai/gpt-6-luna opencode flux: done
+Generation openai/gpt-6-luna opencode EmotiEffLib: done
+Generation openai/gpt-6-luna opencode Ride: done
+Generation openai/gpt-6-luna opencode delPezzo: done
+Generation openai/gpt-6-luna opencode chatsky: done
+Generation openai/gpt-6-luna opencode dialog2graph: done
+Generation openai/gpt-6-luna opencode verl-loras: done
+Generation openai/gpt-6-luna opencode Eco2AI: done
+Generation openai/gpt-6-luna opencode GENA_LM: done
+Generation openai/gpt-6-luna opencode eco4cast: done
+Generation openai/gpt-6-luna opencode Camouflage-AI: done
+Generation openai/gpt-6-luna opencode Python-Weather-Info-App: done
+Generation openai/gpt-6-luna opencode rt-repo-assessment: done
+Generation openai/gpt-6-luna opencode TagGenerator: done
+Generation openai/gpt-6-luna opencode Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash readmeready PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash readmeready public-apis: failed
+Generation z-ai/glm-5.3-flash readmeready public-apis: done
+
+GEval z-ai/glm-5.3-flash readmeready public-apis: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready public-apis: 0.3
+Generation z-ai/glm-5.3-flash readmeready hackingtool: done
+
+GEval z-ai/glm-5.3-flash readmeready hackingtool: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready hackingtool: 0.6
+Generation z-ai/glm-5.3-flash readmeready hackingtool: done
+Generation z-ai/glm-5.3-flash readmeready python-cheatsheet: failed
+Generation z-ai/glm-5.3-flash readmeready python-cheatsheet: failed
+Generation z-ai/glm-5.3-flash readmeready rembg: done
+Generation z-ai/glm-5.3-flash readmeready rembg: done
+
+GEval z-ai/glm-5.3-flash readmeready rembg: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready rembg: 0.6
+Generation z-ai/glm-5.3-flash readmeready devops-exercises: done
+
+GEval z-ai/glm-5.3-flash readmeready devops-exercises: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready devops-exercises: 0.3
+Generation z-ai/glm-5.3-flash readmeready devops-exercises: done
+Generation z-ai/glm-5.3-flash readmeready MiniGPT-4: done
+
+GEval z-ai/glm-5.3-flash readmeready MiniGPT-4: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready MiniGPT-4: 0.5
+Generation z-ai/glm-5.3-flash readmeready MiniGPT-4: done
+Generation z-ai/glm-5.3-flash readmeready python-spider: done
+
+GEval z-ai/glm-5.3-flash readmeready python-spider: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready python-spider: 0.3
+Generation z-ai/glm-5.3-flash readmeready python-spider: done
+Generation z-ai/glm-5.3-flash readmeready chatgpt-retrieval-plugin: done
+
+GEval z-ai/glm-5.3-flash readmeready chatgpt-retrieval-plugin: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready chatgpt-retrieval-plugin: 0.4
+Generation z-ai/glm-5.3-flash readmeready chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash readmeready flux: done
+
+GEval z-ai/glm-5.3-flash readmeready flux: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready flux: 0.3
+Generation z-ai/glm-5.3-flash readmeready flux: done
+Generation z-ai/glm-5.3-flash readmeready EmotiEffLib: failed
+Generation z-ai/glm-5.3-flash readmeready Ride: failed
+Generation z-ai/glm-5.3-flash readmeready EmotiEffLib: failed
+Generation z-ai/glm-5.3-flash readmeready Ride: failed
+Generation z-ai/glm-5.3-flash readmeready delPezzo: failed
+Generation z-ai/glm-5.3-flash readmeready delPezzo: done
+
+GEval z-ai/glm-5.3-flash readmeready delPezzo: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready delPezzo: 0.6
+Generation z-ai/glm-5.3-flash readmeready chatsky: done
+
+GEval z-ai/glm-5.3-flash readmeready chatsky: 0.5
+Generation z-ai/glm-5.3-flash readmeready chatsky: done
+Generation z-ai/glm-5.3-flash readmeready dialog2graph: failed
+Generation z-ai/glm-5.3-flash readmeready dialog2graph: failed
+Generation z-ai/glm-5.3-flash readmeready verl-loras: failed
+Generation z-ai/glm-5.3-flash readmeready verl-loras: failed
+Generation z-ai/glm-5.3-flash readmeready Eco2AI: done
+
+GEval z-ai/glm-5.3-flash readmeready Eco2AI: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready Eco2AI: 0.4
+Generation z-ai/glm-5.3-flash readmeready Eco2AI: done
+Generation z-ai/glm-5.3-flash readmeready GENA_LM: failed
+Generation z-ai/glm-5.3-flash readmeready GENA_LM: failed
+Generation z-ai/glm-5.3-flash readmeready eco4cast: failed
+Generation z-ai/glm-5.3-flash readmeready eco4cast: done
+
+GEval z-ai/glm-5.3-flash readmeready eco4cast: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready eco4cast: 0.3
+Generation z-ai/glm-5.3-flash readmeready Camouflage-AI: done
+
+GEval z-ai/glm-5.3-flash readmeready Camouflage-AI: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready Camouflage-AI: 0.6
+Generation z-ai/glm-5.3-flash readmeready Camouflage-AI: done
+Generation z-ai/glm-5.3-flash readmeready Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash readmeready Python-Weather-Info-App: done
+
+GEval z-ai/glm-5.3-flash readmeready Python-Weather-Info-App: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready Python-Weather-Info-App: 0.4
+Generation z-ai/glm-5.3-flash readmeready rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash readmeready TagGenerator: done
+
+GEval z-ai/glm-5.3-flash readmeready rt-repo-assessment: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready rt-repo-assessment: 0.4
+Generation z-ai/glm-5.3-flash readmeready Code-Contribution-Analyzer: done
+
+GEval z-ai/glm-5.3-flash readmeready Code-Contribution-Analyzer: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready Code-Contribution-Analyzer: 0.3
+Generation z-ai/glm-5.3-flash readmeready rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash readmeready TagGenerator: done
+Generation z-ai/glm-5.3-flash readmeready Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash larch gpt-engineer: done
+
+GEval z-ai/glm-5.3-flash larch gpt-engineer: 0.7
+
+GEval z-ai/glm-5.3-flash larch gpt-engineer: 0.6
+Generation z-ai/glm-5.3-flash larch ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash larch SMSBoom: done
+
+GEval z-ai/glm-5.3-flash larch ChatGLM-6B: 0.6
+
+GEval z-ai/glm-5.3-flash larch ChatGLM-6B: 0.6
+
+GEval z-ai/glm-5.3-flash larch SMSBoom: 0.2
+
+GEval z-ai/glm-5.3-flash larch SMSBoom: 0.2
+Generation z-ai/glm-5.3-flash larch mackup: done
+
+GEval z-ai/glm-5.3-flash larch mackup: 0.5
+
+GEval z-ai/glm-5.3-flash larch mackup: 0.5
+Generation z-ai/glm-5.3-flash larch TaskMatrix: done
+
+GEval z-ai/glm-5.3-flash larch TaskMatrix: 0.3
+
+GEval z-ai/glm-5.3-flash larch TaskMatrix: 0.3
+Generation z-ai/glm-5.3-flash larch gpt-engineer: done
+Generation z-ai/glm-5.3-flash larch ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash larch SMSBoom: done
+Generation z-ai/glm-5.3-flash larch mackup: done
+Generation z-ai/glm-5.3-flash larch TaskMatrix: done
+Generation z-ai/glm-5.3-flash larch Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash larch python-fire: done
+
+GEval z-ai/glm-5.3-flash larch Deep-Live-Cam: 0.6
+
+GEval z-ai/glm-5.3-flash larch Deep-Live-Cam: 0.6
+
+GEval z-ai/glm-5.3-flash larch python-fire: 0.6
+Generation z-ai/glm-5.3-flash larch devika: done
+
+GEval z-ai/glm-5.3-flash larch devika: 0.4
+Generation z-ai/glm-5.3-flash larch Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash larch python-fire: done
+Generation z-ai/glm-5.3-flash larch devika: done
+Generation z-ai/glm-5.3-flash larch gpt-pilot: done
+Generation z-ai/glm-5.3-flash larch gpt-pilot: done
+
+GEval z-ai/glm-5.3-flash larch gpt-pilot: 0.6
+Generation z-ai/glm-5.3-flash larch Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash larch Real-Time-Voice-Cloning: done
+
+GEval z-ai/glm-5.3-flash larch Real-Time-Voice-Cloning: 0.7
+Generation z-ai/glm-5.3-flash larch httpx: done
+
+GEval z-ai/glm-5.3-flash larch httpx: 0.6
+Generation z-ai/glm-5.3-flash larch httpx: done
+Generation z-ai/glm-5.3-flash larch kirara-ai: done
+
+GEval z-ai/glm-5.3-flash larch kirara-ai: 0.5
+
+GEval z-ai/glm-5.3-flash larch kirara-ai: 0.5
+Generation z-ai/glm-5.3-flash larch kirara-ai: done
+Generation z-ai/glm-5.3-flash larch gpt-researcher: done
+
+GEval z-ai/glm-5.3-flash larch gpt-researcher: 0.6
+
+GEval z-ai/glm-5.3-flash larch gpt-researcher: 0.6
+Generation z-ai/glm-5.3-flash larch mkdocs: done
+Generation z-ai/glm-5.3-flash larch gpt-researcher: done
+Generation z-ai/glm-5.3-flash larch mkdocs: done
+
+GEval z-ai/glm-5.3-flash larch mkdocs: 0.7
+
+GEval z-ai/glm-5.3-flash larch mkdocs: 0.7
+Generation z-ai/glm-5.3-flash larch face_recognition: done
+
+GEval z-ai/glm-5.3-flash larch face_recognition: 0.8
+Generation z-ai/glm-5.3-flash larch face_recognition: done
+
+GEval z-ai/glm-5.3-flash larch face_recognition: 0.8
+Generation z-ai/glm-5.3-flash larch system-design-primer: done
+
+GEval z-ai/glm-5.3-flash larch system-design-primer: 0.5
+
+GEval z-ai/glm-5.3-flash larch system-design-primer: 0.5
+Generation z-ai/glm-5.3-flash larch system-design-primer: done
+Generation z-ai/glm-5.3-flash larch GPT_API_free: done
+
+GEval z-ai/glm-5.3-flash larch GPT_API_free: 0.4
+
+GEval z-ai/glm-5.3-flash larch GPT_API_free: 0.4
+Generation z-ai/glm-5.3-flash larch 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash larch ChatPaper: done
+
+GEval z-ai/glm-5.3-flash larch 30-Days-Of-Python: 0.4
+
+GEval z-ai/glm-5.3-flash larch 30-Days-Of-Python: 0.4
+
+GEval z-ai/glm-5.3-flash larch ChatPaper: 0.5
+Generation z-ai/glm-5.3-flash larch GPT_API_free: done
+Generation z-ai/glm-5.3-flash larch 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash larch ChatPaper: done
+Generation z-ai/glm-5.3-flash larch twint: done
+
+GEval z-ai/glm-5.3-flash larch twint: 0.7
+Generation z-ai/glm-5.3-flash larch twint: done
+Generation z-ai/glm-5.3-flash larch flask: done
+Generation z-ai/glm-5.3-flash larch flask: done
+
+GEval z-ai/glm-5.3-flash larch flask: 0.7
+
+GEval z-ai/glm-5.3-flash larch flask: 0.7
+Generation z-ai/glm-5.3-flash larch professional-programming: done
+Generation z-ai/glm-5.3-flash larch professional-programming: done
+
+GEval z-ai/glm-5.3-flash larch professional-programming: 0.4
+Generation z-ai/glm-5.3-flash larch EIPs: done
+
+GEval z-ai/glm-5.3-flash larch EIPs: 0.4
+
+GEval z-ai/glm-5.3-flash larch EIPs: 0.3
+Generation z-ai/glm-5.3-flash larch EIPs: done
+Generation z-ai/glm-5.3-flash larch grok-1: done
+
+GEval z-ai/glm-5.3-flash larch grok-1: 0.4
+
+GEval z-ai/glm-5.3-flash larch grok-1: 0.4
+Generation z-ai/glm-5.3-flash larch grok-1: done
+Generation z-ai/glm-5.3-flash larch PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash larch public-apis: done
+
+GEval z-ai/glm-5.3-flash larch PyTorch-GAN: 0.4
+
+GEval z-ai/glm-5.3-flash larch PyTorch-GAN: 0.4
+
+GEval z-ai/glm-5.3-flash larch public-apis: 0.4
+
+GEval z-ai/glm-5.3-flash larch public-apis: 0.3
+Generation z-ai/glm-5.3-flash larch hackingtool: done
+
+GEval z-ai/glm-5.3-flash larch hackingtool: 0.7
+
+GEval z-ai/glm-5.3-flash larch hackingtool: 0.7
+Generation z-ai/glm-5.3-flash larch python-cheatsheet: done
+
+GEval z-ai/glm-5.3-flash larch python-cheatsheet: 0.3
+
+GEval z-ai/glm-5.3-flash larch python-cheatsheet: 0.3
+Generation z-ai/glm-5.3-flash larch rembg: done
+Generation z-ai/glm-5.3-flash larch devops-exercises: done
+
+GEval z-ai/glm-5.3-flash larch rembg: 0.5
+
+GEval z-ai/glm-5.3-flash larch rembg: 0.5
+
+GEval z-ai/glm-5.3-flash larch devops-exercises: 0.5
+
+GEval z-ai/glm-5.3-flash larch devops-exercises: 0.5
+Generation z-ai/glm-5.3-flash larch MiniGPT-4: done
+
+GEval z-ai/glm-5.3-flash larch MiniGPT-4: 0.7
+
+GEval z-ai/glm-5.3-flash larch MiniGPT-4: 0.7
+Generation z-ai/glm-5.3-flash larch python-spider: done
+
+GEval z-ai/glm-5.3-flash larch python-spider: 0.5
+
+GEval z-ai/glm-5.3-flash larch python-spider: 0.6
+Generation z-ai/glm-5.3-flash larch chatgpt-retrieval-plugin: done
+
+GEval z-ai/glm-5.3-flash larch chatgpt-retrieval-plugin: 0.5
+
+GEval z-ai/glm-5.3-flash larch chatgpt-retrieval-plugin: 0.5
+Generation z-ai/glm-5.3-flash larch flux: done
+
+GEval z-ai/glm-5.3-flash larch flux: 0.6
+
+GEval z-ai/glm-5.3-flash larch flux: 0.5
+Generation z-ai/glm-5.3-flash larch PyTorch-GAN: done
+Generation z-ai/glm-5.3-flash larch public-apis: done
+Generation z-ai/glm-5.3-flash larch hackingtool: done
+Generation z-ai/glm-5.3-flash larch python-cheatsheet: done
+Generation z-ai/glm-5.3-flash larch rembg: done
+Generation z-ai/glm-5.3-flash larch devops-exercises: done
+Generation z-ai/glm-5.3-flash larch MiniGPT-4: done
+Generation z-ai/glm-5.3-flash larch python-spider: done
+Generation z-ai/glm-5.3-flash larch chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash larch flux: done
+Generation z-ai/glm-5.3-flash larch EmotiEffLib: done
+
+GEval z-ai/glm-5.3-flash larch EmotiEffLib: 0.5
+
+GEval z-ai/glm-5.3-flash larch EmotiEffLib: 0.5
+Generation z-ai/glm-5.3-flash larch Ride: done
+
+GEval z-ai/glm-5.3-flash larch Ride: 0.4
+
+GEval z-ai/glm-5.3-flash larch Ride: 0.5
+Generation z-ai/glm-5.3-flash larch delPezzo: done
+
+GEval z-ai/glm-5.3-flash larch delPezzo: 0.3
+Generation z-ai/glm-5.3-flash larch EmotiEffLib: done
+Generation z-ai/glm-5.3-flash larch Ride: done
+Generation z-ai/glm-5.3-flash larch delPezzo: done
+Generation z-ai/glm-5.3-flash larch chatsky: done
+
+GEval z-ai/glm-5.3-flash larch chatsky: 0.5
+Generation z-ai/glm-5.3-flash larch chatsky: done
+Generation z-ai/glm-5.3-flash larch dialog2graph: done
+Generation z-ai/glm-5.3-flash larch dialog2graph: done
+
+GEval z-ai/glm-5.3-flash larch dialog2graph: 0.5
+
+GEval z-ai/glm-5.3-flash larch dialog2graph: 0.4
+Generation z-ai/glm-5.3-flash larch verl-loras: done
+Generation z-ai/glm-5.3-flash larch Eco2AI: done
+
+GEval z-ai/glm-5.3-flash larch verl-loras: 0.7
+
+GEval z-ai/glm-5.3-flash larch verl-loras: 0.6
+
+GEval z-ai/glm-5.3-flash larch Eco2AI: 0.5
+
+GEval z-ai/glm-5.3-flash larch Eco2AI: 0.5
+Generation z-ai/glm-5.3-flash larch GENA_LM: done
+
+GEval z-ai/glm-5.3-flash larch GENA_LM: 0.4
+
+GEval z-ai/glm-5.3-flash larch GENA_LM: 0.4
+Generation z-ai/glm-5.3-flash larch verl-loras: done
+Generation z-ai/glm-5.3-flash larch Eco2AI: done
+Generation z-ai/glm-5.3-flash larch GENA_LM: done
+Generation z-ai/glm-5.3-flash larch eco4cast: done
+
+GEval z-ai/glm-5.3-flash larch eco4cast: 0.4
+
+GEval z-ai/glm-5.3-flash larch eco4cast: 0.4
+Generation z-ai/glm-5.3-flash larch Camouflage-AI: done
+Generation z-ai/glm-5.3-flash larch Python-Weather-Info-App: done
+
+GEval z-ai/glm-5.3-flash larch Camouflage-AI: 0.5
+
+GEval z-ai/glm-5.3-flash larch Camouflage-AI: 0.5
+
+GEval z-ai/glm-5.3-flash larch Python-Weather-Info-App: 0.6
+
+GEval z-ai/glm-5.3-flash larch Python-Weather-Info-App: 0.7
+Generation z-ai/glm-5.3-flash larch eco4cast: done
+Generation z-ai/glm-5.3-flash larch Camouflage-AI: done
+Generation z-ai/glm-5.3-flash larch Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash larch rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash larch TagGenerator: done
+Generation z-ai/glm-5.3-flash larch rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash larch TagGenerator: done
+
+GEval z-ai/glm-5.3-flash larch rt-repo-assessment: 0.4
+
+GEval z-ai/glm-5.3-flash larch rt-repo-assessment: 0.5
+Generation z-ai/glm-5.3-flash larch Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash larch Code-Contribution-Analyzer: done
+
+GEval z-ai/glm-5.3-flash larch Code-Contribution-Analyzer: 0.5
+
+GEval z-ai/glm-5.3-flash larch Code-Contribution-Analyzer: 0.4
+Generation z-ai/glm-5.3-flash opencode gpt-engineer: done
+Generation z-ai/glm-5.3-flash opencode gpt-engineer: done
+
+GEval z-ai/glm-5.3-flash opencode gpt-engineer: 0.9
+
+GEval z-ai/glm-5.3-flash opencode gpt-engineer: 0.9
+Generation z-ai/glm-5.3-flash opencode ChatGLM-6B: done
+
+GEval z-ai/glm-5.3-flash opencode ChatGLM-6B: 0.8
+
+GEval z-ai/glm-5.3-flash opencode ChatGLM-6B: 0.8
+Generation z-ai/glm-5.3-flash opencode ChatGLM-6B: done
+Generation z-ai/glm-5.3-flash opencode SMSBoom: done
+
+GEval z-ai/glm-5.3-flash opencode SMSBoom: 0.4
+
+GEval z-ai/glm-5.3-flash opencode SMSBoom: 0.3
+Generation z-ai/glm-5.3-flash opencode SMSBoom: done
+Generation z-ai/glm-5.3-flash opencode mackup: done
+Generation z-ai/glm-5.3-flash opencode mackup: done
+
+GEval z-ai/glm-5.3-flash opencode mackup: 0.6
+
+GEval z-ai/glm-5.3-flash opencode mackup: 0.6
+Generation z-ai/glm-5.3-flash opencode TaskMatrix: done
+
+GEval z-ai/glm-5.3-flash opencode TaskMatrix: 0.7
+
+GEval z-ai/glm-5.3-flash opencode TaskMatrix: 0.7
+Generation z-ai/glm-5.3-flash opencode TaskMatrix: done
+Generation z-ai/glm-5.3-flash opencode Deep-Live-Cam: done
+
+GEval z-ai/glm-5.3-flash opencode Deep-Live-Cam: 0.8
+
+GEval z-ai/glm-5.3-flash opencode Deep-Live-Cam: 0.8
+Generation z-ai/glm-5.3-flash opencode python-fire: done
+
+GEval z-ai/glm-5.3-flash opencode python-fire: 0.9
+
+GEval z-ai/glm-5.3-flash opencode python-fire: 0.9
+Generation z-ai/glm-5.3-flash opencode Deep-Live-Cam: done
+Generation z-ai/glm-5.3-flash opencode python-fire: done
+Generation z-ai/glm-5.3-flash opencode devika: done
+Generation z-ai/glm-5.3-flash opencode devika: done
+
+GEval z-ai/glm-5.3-flash opencode devika: 0.7
+
+GEval z-ai/glm-5.3-flash opencode devika: 0.7
+Generation z-ai/glm-5.3-flash opencode gpt-pilot: done
+Generation z-ai/glm-5.3-flash opencode gpt-pilot: done
+
+GEval z-ai/glm-5.3-flash opencode gpt-pilot: 0.6
+
+GEval z-ai/glm-5.3-flash opencode gpt-pilot: 0.5
+Generation z-ai/glm-5.3-flash opencode Real-Time-Voice-Cloning: done
+
+GEval z-ai/glm-5.3-flash opencode Real-Time-Voice-Cloning: 0.8
+
+GEval z-ai/glm-5.3-flash opencode Real-Time-Voice-Cloning: 0.8
+Generation z-ai/glm-5.3-flash opencode httpx: done
+
+GEval z-ai/glm-5.3-flash opencode httpx: 0.8
+
+GEval z-ai/glm-5.3-flash opencode httpx: 0.8
+Generation z-ai/glm-5.3-flash opencode Real-Time-Voice-Cloning: done
+Generation z-ai/glm-5.3-flash opencode httpx: done
+Generation z-ai/glm-5.3-flash opencode kirara-ai: done
+
+GEval z-ai/glm-5.3-flash opencode kirara-ai: 0.8
+
+GEval z-ai/glm-5.3-flash opencode kirara-ai: 0.7
+Generation z-ai/glm-5.3-flash opencode gpt-researcher: done
+
+GEval z-ai/glm-5.3-flash opencode gpt-researcher: 0.8
+
+GEval z-ai/glm-5.3-flash opencode gpt-researcher: 0.8
+Generation z-ai/glm-5.3-flash opencode kirara-ai: done
+Generation z-ai/glm-5.3-flash opencode gpt-researcher: done
+Generation z-ai/glm-5.3-flash opencode mkdocs: done
+
+GEval z-ai/glm-5.3-flash opencode mkdocs: 0.9
+
+GEval z-ai/glm-5.3-flash opencode mkdocs: 0.9
+Generation z-ai/glm-5.3-flash opencode mkdocs: done
+Generation z-ai/glm-5.3-flash opencode face_recognition: done
+
+GEval z-ai/glm-5.3-flash opencode face_recognition: 0.8
+Generation z-ai/glm-5.3-flash opencode face_recognition: done
+Generation z-ai/glm-5.3-flash opencode system-design-primer: done
+
+GEval z-ai/glm-5.3-flash opencode system-design-primer: 0.7
+
+GEval z-ai/glm-5.3-flash opencode system-design-primer: 0.7
+Generation z-ai/glm-5.3-flash opencode GPT_API_free: done
+
+GEval z-ai/glm-5.3-flash opencode GPT_API_free: 0.4
+
+GEval z-ai/glm-5.3-flash opencode GPT_API_free: 0.5
+Generation z-ai/glm-5.3-flash opencode system-design-primer: done
+Generation z-ai/glm-5.3-flash opencode GPT_API_free: done
+Generation z-ai/glm-5.3-flash opencode 30-Days-Of-Python: done
+
+GEval z-ai/glm-5.3-flash opencode 30-Days-Of-Python: 0.7
+Generation z-ai/glm-5.3-flash opencode ChatPaper: done
+
+GEval z-ai/glm-5.3-flash opencode ChatPaper: 0.8
+
+GEval z-ai/glm-5.3-flash opencode ChatPaper: 0.8
+Generation z-ai/glm-5.3-flash opencode 30-Days-Of-Python: done
+Generation z-ai/glm-5.3-flash opencode ChatPaper: done
+Generation z-ai/glm-5.3-flash opencode twint: done
+
+GEval z-ai/glm-5.3-flash opencode twint: 0.8
+
+GEval z-ai/glm-5.3-flash opencode twint: 0.8
+Generation z-ai/glm-5.3-flash opencode twint: done
+Generation z-ai/glm-5.3-flash opencode flask: done
+
+
+GEval z-ai/glm-5.3-flash opencode flask: 0.9
+GEval z-ai/glm-5.3-flash opencode flask: 0.9
+Generation z-ai/glm-5.3-flash opencode flask: done
+Generation z-ai/glm-5.3-flash opencode professional-programming: done
+Generation z-ai/glm-5.3-flash opencode professional-programming: done
+
+GEval z-ai/glm-5.3-flash opencode professional-programming: 0.5
+
+GEval z-ai/glm-5.3-flash opencode professional-programming: 0.4
+Generation z-ai/glm-5.3-flash opencode EIPs: done
+
+GEval z-ai/glm-5.3-flash opencode EIPs: 0.8
+Generation z-ai/glm-5.3-flash opencode EIPs: done
+Generation z-ai/glm-5.3-flash opencode grok-1: failed
+Generation z-ai/glm-5.3-flash opencode grok-1: done
+
+GEval z-ai/glm-5.3-flash opencode grok-1: 0.7
+Generation z-ai/glm-5.3-flash opencode PyTorch-GAN: done
+
+GEval z-ai/glm-5.3-flash opencode PyTorch-GAN: 0.8
+Generation z-ai/glm-5.3-flash opencode public-apis: done
+
+GEval z-ai/glm-5.3-flash opencode public-apis: 0.5
+Generation z-ai/glm-5.3-flash opencode PyTorch-GAN: failed
+Generation z-ai/glm-5.3-flash opencode public-apis: done
+Generation z-ai/glm-5.3-flash opencode hackingtool: done
+
+GEval z-ai/glm-5.3-flash opencode hackingtool: 0.8
+
+GEval z-ai/glm-5.3-flash opencode hackingtool: 0.8
+Generation z-ai/glm-5.3-flash opencode hackingtool: done
+Generation z-ai/glm-5.3-flash opencode python-cheatsheet: done
+
+GEval z-ai/glm-5.3-flash opencode python-cheatsheet: 0.5
+Generation z-ai/glm-5.3-flash opencode python-cheatsheet: done
+Generation z-ai/glm-5.3-flash opencode rembg: done
+
+GEval z-ai/glm-5.3-flash opencode rembg: 0.7
+Generation z-ai/glm-5.3-flash opencode rembg: done
+Generation z-ai/glm-5.3-flash opencode devops-exercises: done
+
+GEval z-ai/glm-5.3-flash opencode devops-exercises: 0.6
+
+GEval z-ai/glm-5.3-flash opencode devops-exercises: 0.6
+Generation z-ai/glm-5.3-flash opencode MiniGPT-4: done
+
+GEval z-ai/glm-5.3-flash opencode MiniGPT-4: 0.9
+
+GEval z-ai/glm-5.3-flash opencode MiniGPT-4: 0.8
+Generation z-ai/glm-5.3-flash opencode python-spider: done
+Generation z-ai/glm-5.3-flash opencode devops-exercises: done
+Generation z-ai/glm-5.3-flash opencode MiniGPT-4: done
+Generation z-ai/glm-5.3-flash opencode python-spider: done
+
+GEval z-ai/glm-5.3-flash opencode python-spider: 0.8
+
+GEval z-ai/glm-5.3-flash opencode python-spider: 0.8
+Generation z-ai/glm-5.3-flash opencode chatgpt-retrieval-plugin: done
+Generation z-ai/glm-5.3-flash opencode chatgpt-retrieval-plugin: done
+
+GEval z-ai/glm-5.3-flash opencode chatgpt-retrieval-plugin: 0.8
+Generation z-ai/glm-5.3-flash opencode flux: done
+
+GEval z-ai/glm-5.3-flash opencode flux: 0.8
+
+GEval z-ai/glm-5.3-flash opencode flux: 0.8
+Generation z-ai/glm-5.3-flash opencode flux: done
+Generation z-ai/glm-5.3-flash opencode EmotiEffLib: done
+
+GEval z-ai/glm-5.3-flash opencode EmotiEffLib: 0.8
+
+GEval z-ai/glm-5.3-flash opencode EmotiEffLib: 0.8
+Generation z-ai/glm-5.3-flash opencode EmotiEffLib: done
+Generation z-ai/glm-5.3-flash opencode Ride: done
+
+GEval z-ai/glm-5.3-flash opencode Ride: 0.5
+
+GEval z-ai/glm-5.3-flash opencode Ride: 0.6
+Generation z-ai/glm-5.3-flash opencode Ride: done
+Generation z-ai/glm-5.3-flash opencode delPezzo: done
+Generation z-ai/glm-5.3-flash opencode delPezzo: done
+
+GEval z-ai/glm-5.3-flash opencode delPezzo: 0.9
+
+GEval z-ai/glm-5.3-flash opencode delPezzo: 0.9
+Generation z-ai/glm-5.3-flash opencode chatsky: done
+
+GEval z-ai/glm-5.3-flash opencode chatsky: 0.8
+
+GEval z-ai/glm-5.3-flash opencode chatsky: 0.9
+Generation z-ai/glm-5.3-flash opencode chatsky: done
+Generation z-ai/glm-5.3-flash opencode dialog2graph: done
+
+GEval z-ai/glm-5.3-flash opencode dialog2graph: 0.8
+
+GEval z-ai/glm-5.3-flash opencode dialog2graph: 0.9
+Generation z-ai/glm-5.3-flash opencode dialog2graph: done
+Generation z-ai/glm-5.3-flash opencode verl-loras: done
+
+GEval z-ai/glm-5.3-flash opencode verl-loras: 0.9
+
+GEval z-ai/glm-5.3-flash opencode verl-loras: 0.8
+Generation z-ai/glm-5.3-flash opencode verl-loras: done
+Generation z-ai/glm-5.3-flash opencode Eco2AI: done
+
+GEval z-ai/glm-5.3-flash opencode Eco2AI: 0.8
+
+GEval z-ai/glm-5.3-flash opencode Eco2AI: 0.8
+Generation z-ai/glm-5.3-flash opencode Eco2AI: failed
+Generation z-ai/glm-5.3-flash opencode GENA_LM: done
+
+GEval z-ai/glm-5.3-flash opencode GENA_LM: 0.6
+
+GEval z-ai/glm-5.3-flash opencode GENA_LM: 0.5
+Generation z-ai/glm-5.3-flash opencode eco4cast: done
+
+GEval z-ai/glm-5.3-flash opencode eco4cast: 0.8
+
+GEval z-ai/glm-5.3-flash opencode eco4cast: 0.8
+Generation z-ai/glm-5.3-flash opencode Camouflage-AI: done
+
+GEval z-ai/glm-5.3-flash opencode Camouflage-AI: 0.7
+
+GEval z-ai/glm-5.3-flash opencode Camouflage-AI: 0.7
+Generation z-ai/glm-5.3-flash opencode GENA_LM: failed
+Generation z-ai/glm-5.3-flash opencode eco4cast: done
+Generation z-ai/glm-5.3-flash opencode Camouflage-AI: done
+Generation z-ai/glm-5.3-flash opencode Python-Weather-Info-App: done
+
+GEval z-ai/glm-5.3-flash opencode Python-Weather-Info-App: 0.8
+Generation z-ai/glm-5.3-flash opencode Python-Weather-Info-App: done
+Generation z-ai/glm-5.3-flash opencode rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash opencode TagGenerator: done
+
+GEval z-ai/glm-5.3-flash opencode rt-repo-assessment: 0.8
+Generation z-ai/glm-5.3-flash opencode Code-Contribution-Analyzer: done
+Generation z-ai/glm-5.3-flash opencode rt-repo-assessment: done
+Generation z-ai/glm-5.3-flash opencode TagGenerator: done
+Generation z-ai/glm-5.3-flash opencode Code-Contribution-Analyzer: done
+
+GEval z-ai/glm-5.3-flash opencode Code-Contribution-Analyzer: 0.8
+| Repo type | gpt-6-luna Base | gpt-6-luna RR | gpt-6-luna LArch | gpt-6-luna OSA | gpt-6-luna OC | claude-haiku-5.5 Base | claude-haiku-5.5 RR | claude-haiku-5.5 LArch | claude-haiku-5.5 OSA | claude-haiku-5.5 OC | glm-5.3-flash Base | glm-5.3-flash RR | glm-5.3-flash LArch | glm-5.3-flash OSA | glm-5.3-flash OC |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Common | 0.71 | 0.39 | 0.60 | 0.45 | **0.74** | 0.71 | 0.28 | 0.56 | 0.56 | **0.76** | 0.70 | 0.46 | 0.52 | 0.59 | **0.70** |
+| Scientific | **0.85** | 0.33 | 0.54 | 0.47 | 0.82 | 0.83 | 0.27 | 0.53 | 0.57 | **0.84** | 0.79 | 0.40 | 0.52 | 0.72 | **0.82** |
+| All | 0.76 | 0.37 | 0.58 | 0.46 | **0.77** | 0.75 | 0.27 | 0.55 | 0.56 | **0.78** | 0.73 | 0.44 | 0.52 | 0.63 | **0.74** |
+
+GEval judge: `openai/gpt-6-sol`. Means use the same complete repositories across all 15 cells.
+
+| Repo type | Complete / total |
+| --- | --- |
+| Common | 25 / 30 |
+| Scientific | 13 / 18 |
+| All | 38 / 48 |
+
+Per-cell valid-score coverage is saved in `cell_coverage.csv`.
+
+| Cost source | Priced calls / recorded calls | Recorded USD |
+| --- | --- | ---: |
+| Baseline generation | 144 / 144 | $1.9406 |
+| GEval judge | 694 / 694 | $24.4379 |
+
+Other tools do not yet expose per-call costs in their output; no cost is inferred from token counts.
+
+Complete repositories: 38 / 48
+
+GEval z-ai/glm-5.3-flash opencode Code-Contribution-Analyzer: 0.8
+| Repo type | gpt-6-luna Base | gpt-6-luna RR | gpt-6-luna LArch | gpt-6-luna OSA | gpt-6-luna OC | claude-haiku-5.5 Base | claude-haiku-5.5 RR | claude-haiku-5.5 LArch | claude-haiku-5.5 OSA | claude-haiku-5.5 OC | glm-5.3-flash Base | glm-5.3-flash RR | glm-5.3-flash LArch | glm-5.3-flash OSA | glm-5.3-flash OC |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Common | 0.71 | 0.39 | 0.60 | 0.45 | **0.74** | 0.71 | 0.28 | 0.56 | 0.56 | **0.76** | 0.70 | 0.46 | 0.52 | 0.59 | **0.70** |
+| Scientific | **0.85** | 0.33 | 0.54 | 0.47 | 0.82 | 0.83 | 0.27 | 0.53 | 0.57 | **0.84** | 0.79 | 0.40 | 0.52 | 0.72 | **0.82** |
+| All | 0.76 | 0.37 | 0.58 | 0.46 | **0.77** | 0.75 | 0.27 | 0.55 | 0.56 | **0.78** | 0.73 | 0.44 | 0.52 | 0.63 | **0.74** |
+
+GEval judge: `openai/gpt-6-sol`. Means use the same complete repositories across all 15 cells.
+
+| Repo type | Complete / total |
+| --- | --- |
+| Common | 25 / 30 |
+| Scientific | 13 / 18 |
+| All | 38 / 48 |
+
+Per-cell valid-score coverage is saved in `cell_coverage.csv`.
+
+| Cost source | Priced calls / recorded calls | Recorded USD |
+| --- | --- | ---: |
+| Baseline generation | 144 / 144 | $1.9406 |
+| GEval judge | 694 / 694 | $24.4295 |
+
+Other tools do not yet expose per-call costs in their output; no cost is inferred from token counts.
+
+Complete repositories: 38 / 48

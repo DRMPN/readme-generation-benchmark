@@ -1,0 +1,308 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63921,
+    "tree_files": 102,
+    "tracked_files": 102,
+    "selected": [
+      {
+        "path": "video_downloader/requirements.txt",
+        "tokens": 12,
+        "truncated": false
+      },
+      {
+        "path": "zhengfang_system_spider/requirements.txt",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "2020/README.md",
+        "tokens": 1721,
+        "truncated": false
+      },
+      {
+        "path": "bilibili/README.md",
+        "tokens": 195,
+        "truncated": false
+      },
+      {
+        "path": "bilibili_luckyman/README.md",
+        "tokens": 57,
+        "truncated": false
+      },
+      {
+        "path": "dingdong/README.md",
+        "tokens": 161,
+        "truncated": false
+      },
+      {
+        "path": "douyin/README.md",
+        "tokens": 170,
+        "truncated": false
+      },
+      {
+        "path": "zhengfang_system_spider/README.md",
+        "tokens": 299,
+        "truncated": false
+      },
+      {
+        "path": "12306.py",
+        "tokens": 1026,
+        "truncated": false
+      },
+      {
+        "path": "baiduwenku.py",
+        "tokens": 508,
+        "truncated": false
+      },
+      {
+        "path": "baiduwenku_pro_1.py",
+        "tokens": 915,
+        "truncated": false
+      },
+      {
+        "path": "biqukan.py",
+        "tokens": 1168,
+        "truncated": false
+      },
+      {
+        "path": "daili.py",
+        "tokens": 1381,
+        "truncated": false
+      },
+      {
+        "path": "douyin.py",
+        "tokens": 1250,
+        "truncated": false
+      },
+      {
+        "path": "douyin_pro.py",
+        "tokens": 1632,
+        "truncated": false
+      },
+      {
+        "path": "downloader.py",
+        "tokens": 595,
+        "truncated": false
+      },
+      {
+        "path": "financical.py",
+        "tokens": 2514,
+        "truncated": false
+      },
+      {
+        "path": "geetest.py",
+        "tokens": 2853,
+        "truncated": false
+      },
+      {
+        "path": "hero.py",
+        "tokens": 2407,
+        "truncated": false
+      },
+      {
+        "path": "shuaia.py",
+        "tokens": 497,
+        "truncated": false
+      },
+      {
+        "path": "Netease/Netease.py",
+        "tokens": 2387,
+        "truncated": false
+      },
+      {
+        "path": "Netease/music_list.txt",
+        "tokens": 84,
+        "truncated": false
+      },
+      {
+        "path": "baiwan/app.js",
+        "tokens": 347,
+        "truncated": false
+      },
+      {
+        "path": "baiwan/baiwan.py",
+        "tokens": 1554,
+        "truncated": false
+      },
+      {
+        "path": "bilibili/bilibili.py",
+        "tokens": 2113,
+        "truncated": false
+      },
+      {
+        "path": "bilibili/xml2ass.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "bilibili_luckyman/bilibili_luckyman.py",
+        "tokens": 757,
+        "truncated": false
+      },
+      {
+        "path": "cartoon/scrapy.cfg",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "dingdong/jd.py",
+        "tokens": 2161,
+        "truncated": false
+      },
+      {
+        "path": "douyin/douyin.py",
+        "tokens": 2153,
+        "truncated": false
+      },
+      {
+        "path": "douyin/fuck-byted-acrawler.js",
+        "tokens": 2155,
+        "truncated": false
+      },
+      {
+        "path": "one_hour_spider/biquge20180731.py",
+        "tokens": 613,
+        "truncated": false
+      },
+      {
+        "path": "one_hour_spider/biqukan.py",
+        "tokens": 671,
+        "truncated": false
+      },
+      {
+        "path": "one_hour_spider/unsplash.py",
+        "tokens": 533,
+        "truncated": false
+      },
+      {
+        "path": "one_hour_spider/unsplash20180731.py",
+        "tokens": 339,
+        "truncated": false
+      },
+      {
+        "path": "one_hour_spider/vidoe_downloader.py",
+        "tokens": 767,
+        "truncated": false
+      },
+      {
+        "path": "video_downloader/video_downloader.py",
+        "tokens": 3416,
+        "truncated": false
+      },
+      {
+        "path": "zhengfang_system_spider/spider.py",
+        "tokens": 2169,
+        "truncated": false
+      },
+      {
+        "path": "zhengfang_system_spider/zhengfang.txt",
+        "tokens": 2988,
+        "truncated": false
+      },
+      {
+        "path": "2020/api/api.py",
+        "tokens": 551,
+        "truncated": false
+      },
+      {
+        "path": "2020/bilibili/download.py",
+        "tokens": 1284,
+        "truncated": false
+      },
+      {
+        "path": "2020/bilibili/xml2ass.py",
+        "tokens": 5801,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      "baiwan/file.txt",
+      "baiwan/index.html",
+      "baiwan/question.txt",
+      "zhengfang_system_spider/code.jpg",
+      "2020/api/test_1.png",
+      "2020/dmzj/cartoon.py",
+      "2020/images/gzh-1.jpg",
+      "2020/taobao/1.png",
+      "2020/taobao/taobao_login.py",
+      "2020/xbqg/xbqg_spider.py",
+      "2020/zycjw/video_download.py",
+      "cartoon/cartoon/__init__.py",
+      "cartoon/cartoon/items.py",
+      "cartoon/cartoon/middlewares.py",
+      "cartoon/cartoon/pipelines.py",
+      "cartoon/cartoon/settings.py",
+      "video_downloader/Images/bg.png",
+      "video_downloader/Images/qrcode.png",
+      "video_downloader/MyQR/__init__.py",
+      "video_downloader/MyQR/myqr.py",
+      "video_downloader/MyQR/terminal.py",
+      "zhengfang_system_spider/screenshot/spider.png",
+      "zhengfang_system_spider/screenshot/zf.png",
+      "cartoon/cartoon/__pycache__/__init__.cpython-34.pyc",
+      "cartoon/cartoon/__pycache__/items.cpython-34.pyc",
+      "cartoon/cartoon/__pycache__/pipelines.cpython-34.pyc",
+      "cartoon/cartoon/__pycache__/settings.cpython-34.pyc",
+      "cartoon/cartoon/spiders/__init__.py",
+      "cartoon/cartoon/spiders/comic_spider.py",
+      "video_downloader/MyQR/__pycache__/__init__.cpython-34.pyc",
+      "video_downloader/MyQR/__pycache__/__init__.cpython-35.pyc",
+      "video_downloader/MyQR/__pycache__/myqr.cpython-34.pyc",
+      "video_downloader/MyQR/__pycache__/myqr.cpython-35.pyc",
+      "video_downloader/MyQR/__pycache__/terminal.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/ECC.py",
+      "video_downloader/MyQR/mylibs/__init__.py",
+      "video_downloader/MyQR/mylibs/constant.py",
+      "video_downloader/MyQR/mylibs/data.py",
+      "video_downloader/MyQR/mylibs/draw.py",
+      "video_downloader/MyQR/mylibs/matrix.py",
+      "video_downloader/MyQR/mylibs/structure.py",
+      "video_downloader/MyQR/mylibs/theqrmodule.py",
+      "cartoon/cartoon/spiders/__pycache__/__init__.cpython-34.pyc",
+      "cartoon/cartoon/spiders/__pycache__/comic_spider.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/ECC.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/ECC.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/__init__.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/__init__.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/constant.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/constant.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/data.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/data.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/draw.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/draw.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/matrix.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/matrix.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/structure.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/structure.cpython-35.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/theqrmodule.cpython-34.pyc",
+      "video_downloader/MyQR/mylibs/__pycache__/theqrmodule.cpython-35.pyc"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 62176,
+    "completion_tokens": 2102,
+    "total_tokens": 64278,
+    "cost": 0.008822925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 62173,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008822925,
+      "upstream_inference_prompt_cost": 0.007771925,
+      "upstream_inference_completions_cost": 0.001051
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 287,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606710-9tiSZJlFQZ4H4RdOcsHh"
+}

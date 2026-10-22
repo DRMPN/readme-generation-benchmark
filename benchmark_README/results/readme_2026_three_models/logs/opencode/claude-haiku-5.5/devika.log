@@ -1,0 +1,76 @@
+I'll start by looking at what's in the repository.
+The repo has no existing README. Next I'll read the entry points, setup files, and config.
+Several things to verify: the Dockerfile entrypoint `python3 -m devika`, the `config.toml` COPY, and the Makefile `build` target. Now the docs, LLM layer, and init code.
+The agent flow is clear. Next I'll check the search, sandbox, and LLM client details, plus the benchmark docs, so I don't claim anything unsupported.
+Key findings so far: `src/sandbox/` files are empty, and `BENCHMARKS.md` is empty. Next I'll check whether the UI's API calls match the backend routes, and confirm the PDF and experts pieces.
+The UI's `api.js` calls `/api/execute-agent`, which doesn't exist in the backend. Chat appears to go over the `user-message` socket instead. I'll confirm that path and the payload.
+I have enough to write an accurate README. Writing it now, documenting only what the code and config support, and listing the gaps I found as known issues.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+I did not run the application, so the README describes what the code and config files say, not behavior I observed. Every claim traces back to a file I read. Where the README could have sounded more polished than the code, I wrote the limitation down instead.
+
+The README covers the project overview, features, architecture, requirements, local and Docker installation, running and configuring it, a config reference table, REST endpoints, security notes, and known limitations. It also links to the existing `CONTRIBUTING.md`, `ROADMAP.md`, `LICENSE`, and the install guides.
+
+Problems I found in the repo, which the README mentions or which you may want to fix:
+
+- **No sandbox.** The Runner executes LLM-proposed shell commands directly with `subprocess.run`. `src/sandbox/` is empty.
+- **Dockerfiles need `config.toml`.** Both `COPY config.toml`, but only `sample.config.toml` is in the repo. The build fails until you copy it.
+- **Docker database volume mismatch.** The volume mounts at `/home/nonroot/devika/db`, but the default SQLite path is `data/db/devika.db`, so data may not persist.
+- **Docker Ollama URL.** The compose file sets `OLLAMA_HOST`, but the app reads its URL from `config.toml`, which defaults to `127.0.0.1`. Inside Docker, that points at the backend container.
+- **Stale UI calls.** `ui/src/lib/api.js` calls `/api/execute-agent` and `POST /api/browser-snapshot`, and neither exists in the backend. Chat uses the `user-message` Socket.IO event instead.
+- **Broken Makefile target.** `make setup` runs `sh +x build`, and there is no `build` file.
+- **Empty benchmark docs.** `benchmarks/BENCHMARKS.md` and `benchmarks/SWE-bench.md` contain no content, so the README makes no performance claims.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  fetch(\"file:///tmp/devika-c04kbnc_\").catch(e=>e.message)\n]);\n\"placeholder\""} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 158 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead devika.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.sh 
+[0m→ [0mRead docker-compose.yaml 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead app.dockerfile 
+[0m→ [0mRead devika.dockerfile 
+[0m→ [0mRead sample.config.toml 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead src/config.py 
+[0m→ [0mRead ui/package.json 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ui/vite.config.js 
+[0m→ [0mRead src/llm/llm.py 
+[0m→ [0mRead src/init.py 
+[0m→ [0mRead ROADMAP.md 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead ARCHITECTURE.md 
+[0m→ [0mRead docs/Installation/ollama.md 
+[0m→ [0mRead docs/Installation/search_engine.md 
+[0m→ [0mRead src/agents/agent.py 
+[0m→ [0mRead ui/src/lib/api.js 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/browser/search.py 
+[0m→ [0mRead src/sandbox/firejail.py 
+[0m→ [0mRead src/sandbox/code_runner.py 
+[0m→ [0mRead benchmarks/BENCHMARKS.md 
+[0m→ [0mRead src/llm/ollama_client.py 
+[0m→ [0mRead docs/architecture/README.md 
+[0m→ [0mRead src/apis/project.py 
+[0m→ [0mRead src/agents/runner/runner.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mGrep "user-message|socket_connect|emit_agent\(" failed
+[91m[1mError: [0mSearch path does not exist: /tmp/devika-c04kbnc_/src /tmp/devika-c04kbnc_/ui/src
+[0m→ [0mRead src/documenter/pdf.py 
+[0m→ [0mRead src/socket_instance.py 
+[0m✱ [0mGrep "execute-agent|user-message|browser-snapshot|get-project-files|download-project|emit\(|socket\.emit|io\(" [90min ui/src · 8 matches[0m
+[0m→ [0mRead src/experts/__UNIMPLEMENTED__ 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "Settings|settings|api/settings|ui/static|search_engine|selectedSearch" [90min ui/src/routes/settings/+page.svelte · 15 matches[0m
+[0m→ [0mRead ui/src/lib/sockets.js 
+[0m→ [0mRead ui/src/lib/components/MessageInput.svelte [90m[offset=40, limit=30][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

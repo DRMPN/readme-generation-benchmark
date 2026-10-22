@@ -1,0 +1,40 @@
+I'll start by exploring the repository structure to understand its content.
+This appears to be the Grok-1 repository. Let me read the key files to understand the project.
+Now I have the core files. Let me examine the remaining Python modules and the Code of Conduct for details on dependencies, hardware requirements, and usage.
+I have all the information needed to create an accurate and complete `README.md`. I will now write the file, detailing the project structure, features, installation, and usage based strictly on the code and configuration found in the repository.
+I have successfully created the `README.md` for this repository. 
+
+### Summary of Actions:
+1. **Inspected the repository**: Examined `run.py`, `model.py`, `runners.py`, `checkpoint.py`, `requirements.txt`, `LICENSE.txt`, `CODE_OF_CONDUCT.md`, and `checkpoints/README.md` to understand the project structure, architecture, dependencies, and code behavior.
+2. **Wrote `README.md`**: Generated a comprehensive documentation file that is factually accurate based strictly on the codebase.
+
+### Key Sections Included:
+- **Overview**: Identifies this as a JAX/Haiku-based implementation for Grok-1 inference.
+- **Requirements & Installation**: Lists exact dependencies (JAX 0.4.25, Haiku 0.0.12, NumPy 1.26.4, SentencePiece 0.2.0) and installation instructions.
+- **Usage & Configuration**: Documents how to run `python run.py`, details the exact model configuration (131k vocab, 64 layers, 48 query heads, 8 experts, etc.), and outlines the device mesh setup (`local_mesh_config=(1, 8)`).
+- **Checkpoints**: Explains where to place checkpoints (`./checkpoints/ckpt-0`) and how the pickle-based parallel loading works.
+- **Implementation Details**: Explains the `InferenceRunner` lifecycle, continuous batching, sampling logic (temperature, top-p, top-k), and parameter sharding.
+- **Project Information**: Includes the repository structure, the "Be excellent to each other" Code of Conduct, and the Apache 2.0 License reference.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const ls = await tools.gro[pattern=\"*\", ]"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "*" [90m10 matches[0m
+[0m✱ [0mGlob "**/*" [90m10 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead checkpoints/README.md 
+[0m→ [0mRead LICENSE.txt [90m[limit=30][0m
+[0m→ [0mRead run.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CODE_OF_CONDUCT.md [90m[limit=30][0m
+[0m→ [0mRead checkpoint.py 
+[0m→ [0mRead runners.py 
+[0m→ [0mRead model.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

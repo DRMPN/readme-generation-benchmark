@@ -1,0 +1,186 @@
+[
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "antipatterns",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "code-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "database-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "error-handling-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "mvcs-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "python-examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "reraise_exceptions_bad.py",
+            "type": "file"
+          },
+          {
+            "name": "reraise_exceptions_good.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "scalability-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "sqlalchemy-antipatterns.md",
+        "type": "file"
+      },
+      {
+        "name": "sqlalchemy-examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "exists.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tests-antipatterns.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "cheatsheets",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Clean-Architecture-V1.0.pdf",
+        "type": "file"
+      },
+      {
+        "name": "Clean-Code-V2.4.pdf",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "feature-flags.md",
+    "type": "file"
+  },
+  {
+    "name": "glossary.md",
+    "type": "file"
+  },
+  {
+    "name": "training",
+    "type": "dir",
+    "children": [
+      {
+        "name": "front-end",
+        "type": "dir",
+        "children": [
+          {
+            "name": "01-modern-javascript.md",
+            "type": "file"
+          },
+          {
+            "name": "02-react.md",
+            "type": "file"
+          },
+          {
+            "name": "03-typescript.md",
+            "type": "file"
+          },
+          {
+            "name": "04-the-browser.md",
+            "type": "file"
+          },
+          {
+            "name": "05-css-html-restart.md",
+            "type": "file"
+          },
+          {
+            "name": "06-front-end-development-practices.md",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "examples",
+            "type": "dir",
+            "children": [
+              {
+                "name": "hoisting.html",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "img",
+            "type": "dir",
+            "children": [
+              {
+                "name": "caniuse.png",
+                "type": "file"
+              },
+              {
+                "name": "js-the-good-parts.jpg",
+                "type": "file"
+              },
+              {
+                "name": "learning-roadmap.png",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "learning-python",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "web-dev",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

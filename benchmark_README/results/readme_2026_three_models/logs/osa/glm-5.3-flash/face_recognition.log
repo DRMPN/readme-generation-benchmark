@@ -1,0 +1,380 @@
+[23:26:09] INFO     [23:26:09] - Logging initialized. Log file:     logger.py:49
+                    /home/ilya/README_benchmark/.tools/src/OSA/logs             
+                    /face_recognition-n6l7o2gv_2026-10-21_23-26-09.             
+                    log                                                         
+           INFO     [23:26:09] - Repository already exists at   git_agent.py:370
+                    /home/ilya/README_benchmark/benchmark_READM                 
+                    E/results/readme_2026_three_models/workspac                 
+                    es/face_recognition-n6l7o2gv.                               
+                    Initializing...                                             
+           INFO     [23:26:09] - Repository initialized from    git_agent.py:372
+                    existing directory                                          
+[23:26:10] INFO     [23:26:10] - Advanced mode selected for task scheduler.py:71
+                    scheduler.                                                  
+           INFO     [23:26:10] - Web mode enabled, returning     scheduler.py:92
+                    plan for web interface.                                     
+
+────────────────────────────── README generation ───────────────────────────────
+           INFO     [23:26:10] - ========== README GENERATION readme_agent.py:37
+                    START ==========                                            
+           INFO     [23:26:10] - Processing repository:       readme_agent.py:38
+                    /home/ilya/README_benchmark/benchmark_REA                   
+                    DME/results/readme_2026_three_models/work                   
+                    spaces/face_recognition-n6l7o2gv                            
+           INFO     [23:26:10] - [ContextCollector]     context_collector.py:291
+                    Gathering repository context...                             
+           INFO     [23:26:10] - [ContextCollector]     context_collector.py:296
+                    Token budgets: {'tree': 3626,                               
+                    'existing_readme': 3022,                                    
+                    'key_files': 4835, 'examples':                              
+                    1208, 'pdf': 2417}                                          
+[23:26:11] INFO     [23:26:11] - [ContextCollector]     context_collector.py:197
+                    Tree: 585 tokens (raw 585 tokens)                           
+[23:26:13] INFO     [23:26:13] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:13] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:13] - [ContextCollector] LLM context_collector.py:218
+                    selected 8 key files                                        
+           INFO     [23:26:13] - [ContextCollector]     context_collector.py:224
+                    Read 7/8 key files (4928 tokens)                            
+[23:26:22] INFO     [23:26:22] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:22] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+[23:26:33] INFO     [23:26:33] - Asynchronous LLM request completed   llm.py:517
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:33] - Async send and parse request success llm.py:566
+                    on attempt 1/3.                                             
+           INFO     [23:26:33] - [ContextCollector]     context_collector.py:314
+                    Context collected:                                          
+                    key_files=['face_recognition/api.py                         
+                    ',                                                          
+                    'face_recognition/face_recognition_                         
+                    cli.py',                                                    
+                    'face_recognition/face_detection_cl                         
+                    i.py',                                                      
+                    'face_recognition/__init__.py',                             
+                    'setup.py', 'pyproject.toml',                               
+                    'examples/face_recognition_knn.py']                         
+                    , has_tests=True, pdf=False                                 
+           INFO     [23:26:33] - [IntentAnalyzer]          intent_analyzer.py:27
+                    Analyzing user intent...                                    
+           INFO     [23:26:33] - [IntentAnalyzer]          intent_analyzer.py:41
+                    Fast-path: generate/full                                    
+           INFO     [23:26:33] - [SectionPlanner]         section_planner.py:116
+                    Planning README sections...                                 
+[23:26:40] INFO     [23:26:40] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:40] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:40] - [SectionPlanner] Planned section_planner.py:134
+                    13 sections: [('header',                                    
+                    'deterministic'),                                           
+                    ('table_of_contents',                                       
+                    'keep_existing'), ('overview',                              
+                    'llm'), ('core_features', 'llm'),                           
+                    ('installation', 'deterministic'),                          
+                    ('getting_started', 'llm'),                                 
+                    ('architecture', 'llm'),                                    
+                    ('api_reference', 'llm'),                                   
+                    ('examples', 'deterministic'),                              
+                    ('documentation', 'deterministic'),                         
+                    ('contributing', 'deterministic'),                          
+                    ('license', 'deterministic'),                               
+                    ('citation', 'deterministic')]                              
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'header'                                 
+                    (Header)...                                                 
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'overview'                               
+                    (Overview)...                                               
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'core_features'                          
+                    (Core Features)...                                          
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'installation'                           
+                    (Installation)...                                           
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'getting_started'                        
+                    (Getting Started)...                                        
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'architecture'                           
+                    (Architecture)...                                           
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'api_reference'                          
+                    (API Reference)...                                          
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'examples'                               
+                    (Examples)...                                               
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'documentation'                          
+                    (Documentation)...                                          
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'contributing'                           
+                    (Contributing)...                                           
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'license'                                
+                    (License)...                                                
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'citation'                               
+                    (Citation)...                                               
+           INFO     [23:26:40] -                     deterministic_builder.py:93
+                    [DeterministicBuilder] Building                             
+                    section: installation                                       
+           INFO     [23:26:40] -                     deterministic_builder.py:87
+                    [DeterministicBuilder] Building                             
+                    section: header                                             
+           INFO     [23:26:40] -                    deterministic_builder.py:184
+                    [DeterministicBuilder] Building                             
+                    section: citation                                           
+           INFO     [23:26:40] -                    deterministic_builder.py:223
+                    [DeterministicBuilder] Checking                             
+                    existing README for citation                                
+                    block                                                       
+           INFO     [23:26:40] -                     deterministic_builder.py:99
+                    [DeterministicBuilder] Building                             
+                    section: examples                                           
+           INFO     [23:26:40] -                    deterministic_builder.py:106
+                    [DeterministicBuilder] Section                              
+                    'examples' built from                                       
+                    path=./examples                                             
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:86
+                    Section 'examples' done                                     
+                    (deterministic, 111 chars).                                 
+           INFO     [23:26:40] -                    deterministic_builder.py:125
+                    [DeterministicBuilder] Building                             
+                    section: contributing                                       
+           INFO     [23:26:40] -                    deterministic_builder.py:149
+                    [DeterministicBuilder] Section                              
+                    'contributing' built                                        
+                    (discussions=False,                                         
+                    contributing_file=True)                                     
+           INFO     [23:26:40] -                    deterministic_builder.py:157
+                    [DeterministicBuilder] Building                             
+                    section: license                                            
+           INFO     [23:26:40] -                    deterministic_builder.py:110
+                    [DeterministicBuilder] Building                             
+                    section: documentation                                      
+           INFO     [23:26:40] -                    deterministic_builder.py:227
+                    [DeterministicBuilder]                                      
+                    Detecting citations in README                               
+                    via LLM...                                                  
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:86
+                    Section 'contributing' done                                 
+                    (deterministic, 147 chars).                                 
+           INFO     [23:26:40] -                    deterministic_builder.py:165
+                    [DeterministicBuilder] Section                              
+                    'license' built from local                                  
+                    file=LICENSE (license_name=MIT)                             
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:86
+                    Section 'license' done                                      
+                    (deterministic, 116 chars).                                 
+           INFO     [23:26:40] -                    deterministic_builder.py:121
+                    [DeterministicBuilder] Section                              
+                    'documentation' built with                                  
+                    path=./docs                                                 
+           INFO     [23:26:40] - [SectionGenerator]      section_generator.py:86
+                    Section 'documentation' done                                
+                    (deterministic, 101 chars).                                 
+           INFO     [23:26:40] - [PyPiInspector]       pypi_status_checker.py:30
+                    Resolving PyPI package info                                 
+           INFO     [23:26:40] - [PyPiInspector]       pypi_status_checker.py:30
+                    Resolving PyPI package info                                 
+[23:26:41] INFO     [23:26:41] - [PyPiInspector] Found pypi_status_checker.py:70
+                    published package:                                          
+                    face_recognition                                            
+           INFO     [23:26:41] - [PyPiInspector] Found pypi_status_checker.py:70
+                    published package:                                          
+                    face_recognition                                            
+           INFO     [23:26:41] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:41] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:41] -                    deterministic_builder.py:234
+                    [DeterministicBuilder] Citation                             
+                    detection complete                                          
+                    (found=False)                                               
+           INFO     [23:26:41] -                    deterministic_builder.py:209
+                    [DeterministicBuilder] Section                              
+                    'citation' built from local                                 
+                    fallback template                                           
+           INFO     [23:26:41] - [SectionGenerator]      section_generator.py:86
+                    Section 'citation' done                                     
+                    (deterministic, 610 chars).                                 
+[23:26:42] ERROR    [23:26:42] - [PyPiInspector] Pepy pypi_status_checker.py:133
+                    request failed for                                          
+                    face_recognition (status 401)                               
+           ERROR    [23:26:42] - [PyPiInspector] Pepy pypi_status_checker.py:133
+                    request failed for                                          
+                    face_recognition (status 401)                               
+           INFO     [23:26:42] - [PyPiInspector]       pypi_status_checker.py:39
+                    Resolved package info:                                      
+                    name=face_recognition,                                      
+                    version=1.3.0, downloads=None                               
+           INFO     [23:26:42] - [PyPiInspector]       pypi_status_checker.py:39
+                    Resolved package info:                                      
+                    name=face_recognition,                                      
+                    version=1.3.0, downloads=None                               
+           INFO     [23:26:42] - [InstallationBuilder]        installation.py:41
+                    Building installation section                               
+           INFO     [23:26:42] - [InstallationBuilder] Using  installation.py:63
+                    PyPI installation path for                                  
+                    package=face_recognition                                    
+           INFO     [23:26:42] - [HeaderBuilder] Building README    header.py:58
+                    header                                                      
+           INFO     [23:26:42] - [InstallationBuilder]        installation.py:47
+                    Installation section built (150 chars)                      
+           INFO     [23:26:42] -                     deterministic_builder.py:95
+                    [DeterministicBuilder] Section                              
+                    'installation' built (150 chars)                            
+           INFO     [23:26:42] - [SectionGenerator]      section_generator.py:86
+                    Section 'installation' done                                 
+                    (deterministic, 150 chars).                                 
+           INFO     [23:26:42] - [HeaderBuilder] Header built (534  header.py:64
+                    chars)                                                      
+           INFO     [23:26:42] -                     deterministic_builder.py:89
+                    [DeterministicBuilder] Section                              
+                    'header' built (534 chars)                                  
+           INFO     [23:26:42] - [SectionGenerator]      section_generator.py:86
+                    Section 'header' done                                       
+                    (deterministic, 534 chars).                                 
+[23:26:44] INFO     [23:26:44] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:44] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:44] - [SectionGenerator]     section_generator.py:135
+                    Section 'core_features' done (llm,                          
+                    857 chars).                                                 
+[23:26:45] INFO     [23:26:45] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:45] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:45] - [SectionGenerator]     section_generator.py:135
+                    Section 'overview' done (llm, 624                           
+                    chars).                                                     
+[23:26:48] INFO     [23:26:48] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:26:48] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:26:48] - [SectionGenerator]     section_generator.py:135
+                    Section 'architecture' done (llm,                           
+                    1059 chars).                                                
+[23:27:32] INFO     [23:27:32] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:27:32] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:27:32] - [SectionGenerator]     section_generator.py:135
+                    Section 'getting_started' done                              
+                    (llm, 1544 chars).                                          
+[23:27:58] INFO     [23:27:58] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:27:58] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:27:58] - [SectionGenerator]     section_generator.py:135
+                    Section 'api_reference' done (llm,                          
+                    3288 chars).                                                
+           INFO     [23:27:58] - [Assembler] Assembling README  assembler.py:127
+                    draft...                                                    
+           INFO     [23:27:58] - [Assembler] Draft assembled    assembler.py:134
+                    (9621 chars).                                               
+           INFO     [23:27:58] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    1...                                                        
+[23:30:12] INFO     [23:30:12] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:30:12] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           WARNING  [23:30:12] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): header                                            
+           WARNING  [23:30:12] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): examples                                          
+           INFO     [23:30:12] - [SelfEval] Cycle 1:            self_eval.py:129
+                    derived_score=3.5, issues=13,                               
+                    effective_finish=False, should_stop=False,                  
+                    rerun=['api_reference', 'getting_started']                  
+           INFO     [23:30:12] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'api_reference'                          
+                    (API Reference)...                                          
+           INFO     [23:30:12] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'getting_started'                        
+                    (Getting Started)...                                        
+[23:31:00] INFO     [23:31:00] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:31:00] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:31:00] - [SectionGenerator]     section_generator.py:135
+                    Section 'getting_started' done                              
+                    (llm, 1512 chars).                                          
+[23:31:05] INFO     [23:31:05] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:31:05] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:31:05] - [SectionGenerator]     section_generator.py:135
+                    Section 'api_reference' done (llm,                          
+                    2944 chars).                                                
+           INFO     [23:31:05] - [Assembler] Assembling README  assembler.py:127
+                    draft...                                                    
+           INFO     [23:31:05] - [Assembler] Draft assembled    assembler.py:134
+                    (9245 chars).                                               
+           INFO     [23:31:05] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    2...                                                        
+[23:34:12] INFO     [23:34:12] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:34:12] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:34:12] - [SelfEval] Cycle 2:            self_eval.py:129
+                    derived_score=1.5, issues=11,                               
+                    effective_finish=False, should_stop=False,                  
+                    rerun=[]                                                    
+           INFO     [23:34:12] - [ReadmePatch] Patching       readme_patch.py:13
+                    README from 11 issues...                                    
+[23:34:21] INFO     [23:34:21] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:34:21] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [23:34:21] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    3...                                                        
+[23:35:46] INFO     [23:35:46] - Synchronous LLM request completed    llm.py:327
+                    with model z-ai/glm-5.3-flash                               
+           INFO     [23:35:46] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           WARNING  [23:35:46] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): examples                                          
+           WARNING  [23:35:46] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): documentation                                     
+           WARNING  [23:35:46] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): contributing                                      
+           WARNING  [23:35:46] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): license                                           
+           WARNING  [23:35:46] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): citation                                          
+           INFO     [23:35:46] - [SelfEval] Cycle 3:            self_eval.py:129
+                    derived_score=7.0, issues=3,                                
+                    effective_finish=False, should_stop=False,                  
+                    rerun=[]                                                    
+           INFO     [23:35:46] - [Writer] Writing README.md to      writer.py:16
+                    disk...                                                     
+           INFO     [23:35:46] - [Writer] README.md written to      writer.py:32
+                    /home/ilya/README_benchmark/benchmark_README/re             
+                    sults/readme_2026_three_models/workspaces/face_             
+                    recognition-n6l7o2gv/README.md                              
+           INFO     [23:35:46] - README.md generated in       readme_agent.py:53
+                    /home/ilya/README_benchmark/benchmark_REA                   
+                    DME/results/readme_2026_three_models/work                   
+                    spaces/face_recognition-n6l7o2gv                            
+           INFO     [23:35:46] - =========== README           readme_agent.py:54
+                    GENERATION END ===========                                  
+
+──────── All operations completed successfully in total time: 00:09:36 ─────────
+
+--- stderr ---
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+/home/ilya/README_benchmark/.tools/venvs/osa/lib/python3.12/site-packages/langgraph/cache/base/__init__.py:8: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.
+  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer

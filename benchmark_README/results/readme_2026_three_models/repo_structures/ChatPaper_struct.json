@@ -1,0 +1,532 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".gitmodules",
+    "type": "file"
+  },
+  {
+    "name": ".readthedocs.yaml",
+    "type": "file"
+  },
+  {
+    "name": "ChatReviewerAndResponse",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "ReviewFormat.txt",
+        "type": "file"
+      },
+      {
+        "name": "chat_response.py",
+        "type": "file"
+      },
+      {
+        "name": "chat_reviewer.py",
+        "type": "file"
+      },
+      {
+        "name": "get_paper.py",
+        "type": "file"
+      },
+      {
+        "name": "review_comments.txt",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "HuggingFaceDeploy",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Private",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "image.jpeg",
+            "type": "file"
+          },
+          {
+            "name": "optimizeOpenAI.py",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "dir",
+        "children": [
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "optimizeOpenAI.py",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "app.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "LICENSE.md",
+    "type": "file"
+  },
+  {
+    "name": "auto_survey",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "outputs",
+        "type": "dir",
+        "children": [
+          {
+            "name": "outputs_20230707_202302",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Reinforcement Learning for Robot Control.zip",
+                "type": "file"
+              },
+              {
+                "name": "generation.log",
+                "type": "file"
+              },
+              {
+                "name": "main.tex",
+                "type": "file"
+              },
+              {
+                "name": "math_commands.tex",
+                "type": "file"
+              },
+              {
+                "name": "ref.bib",
+                "type": "file"
+              },
+              {
+                "name": "related works.tex",
+                "type": "file"
+              },
+              {
+                "name": "survey.md",
+                "type": "file"
+              },
+              {
+                "name": "survey_chinese.md",
+                "type": "file"
+              },
+              {
+                "name": "template.tex",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "embeddings.py",
+            "type": "file"
+          },
+          {
+            "name": "figures.py",
+            "type": "file"
+          },
+          {
+            "name": "file_operations.py",
+            "type": "file"
+          },
+          {
+            "name": "gpt_interaction.py",
+            "type": "file"
+          },
+          {
+            "name": "knowledge.py",
+            "type": "file"
+          },
+          {
+            "name": "knowledge_databases",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ml_textbook_test",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "db_meta.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "embeddings",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "text_embedding_pairs.pickle",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "faiss_index",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "index.faiss",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.pkl",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "latex_templates",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Default",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "math_commands.tex",
+                    "type": "file"
+                  },
+                  {
+                    "name": "related works.tex",
+                    "type": "file"
+                  },
+                  {
+                    "name": "survey.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "survey_chinese.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "template.tex",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "prompts.py",
+            "type": "file"
+          },
+          {
+            "name": "references.py",
+            "type": "file"
+          },
+          {
+            "name": "storage.py",
+            "type": "file"
+          },
+          {
+            "name": "tex_processing.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "chat_arxiv.py",
+    "type": "file"
+  },
+  {
+    "name": "chat_paper.py",
+    "type": "file"
+  },
+  {
+    "name": "chat_translate.py",
+    "type": "file"
+  },
+  {
+    "name": "demo.pdf",
+    "type": "file"
+  },
+  {
+    "name": "docker",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Dockerfile",
+        "type": "file"
+      },
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "build.sh",
+        "type": "file"
+      },
+      {
+        "name": "conda_env.yml",
+        "type": "file"
+      },
+      {
+        "name": "dev.sh",
+        "type": "file"
+      },
+      {
+        "name": "docker-compose.yaml",
+        "type": "file"
+      },
+      {
+        "name": "make.bat",
+        "type": "file"
+      },
+      {
+        "name": "tagpush.sh",
+        "type": "file"
+      },
+      {
+        "name": "tsinghua.condarc",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "others",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ChatPaper.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "chat_arxiv_maomao.py",
+        "type": "file"
+      },
+      {
+        "name": "google_scholar_spider.py",
+        "type": "file"
+      },
+      {
+        "name": "machine_learning.csv",
+        "type": "file"
+      },
+      {
+        "name": "project_analysis.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "scipdf_parser-master",
+    "type": "dir",
+    "children": [
+      {
+        "name": "LICENSE.txt",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "scipdf",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "features",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "text_utils.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pdf",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "parse_pdf.py",
+                "type": "file"
+              },
+              {
+                "name": "pdffigures2",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "pdffigures2-assembly-0.0.12-SNAPSHOT.jar",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serve_grobid.sh",
+        "type": "file"
+      },
+      {
+        "name": "setup.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "source",
+    "type": "dir",
+    "children": [
+      {
+        "name": "_static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ChatPaper-zh.png",
+            "type": "file"
+          },
+          {
+            "name": "ChatPaper.png",
+            "type": "file"
+          },
+          {
+            "name": "reviews.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "conf.py",
+        "type": "file"
+      },
+      {
+        "name": "index.rst",
+        "type": "file"
+      },
+      {
+        "name": "troubleshooting",
+        "type": "dir",
+        "children": [
+          {
+            "name": "troubleshooting.md",
+            "type": "file"
+          },
+          {
+            "name": "troubleshooting_zh.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tutorial",
+        "type": "dir",
+        "children": [
+          {
+            "name": "getting_started.md",
+            "type": "file"
+          },
+          {
+            "name": "getting_started_zh.md",
+            "type": "file"
+          },
+          {
+            "name": "reading_papers.md",
+            "type": "file"
+          },
+          {
+            "name": "reading_papers_zh.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "start.sh",
+    "type": "file"
+  }
+]

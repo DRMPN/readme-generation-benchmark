@@ -1,0 +1,626 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63948,
+    "tree_files": 360,
+    "tracked_files": 360,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2292,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 298,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/requirements-test.txt",
+        "tokens": 56,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/requirements.txt",
+        "tokens": 53,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/recipes/firewall/main.py",
+        "tokens": 453,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/snippets/firewall/main.py",
+        "tokens": 1487,
+        "truncated": false
+      },
+      {
+        "path": "examples/README.md",
+        "tokens": 787,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/README.md",
+        "tokens": 247,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/README.md",
+        "tokens": 662,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/snippets/README.md",
+        "tokens": 225,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/co2_model.py",
+        "tokens": 647,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/electricitymaps_api.py",
+        "tokens": 196,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/google_cloud_vm_moving.py",
+        "tokens": 921,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/interval_predictor.py",
+        "tokens": 2489,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/master_machine_controller.py",
+        "tokens": 1918,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/tcn_pytorch.py",
+        "tokens": 652,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/utils.py",
+        "tokens": 369,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/weather_data_utils.py",
+        "tokens": 374,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/virtual_machine/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/virtual_machine/smart_scheduler_concept.py",
+        "tokens": 3355,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/virtual_machine/utils.py",
+        "tokens": 545,
+        "truncated": false
+      },
+      {
+        "path": "examples/ImageNet_google_cloud/master_machine_main.py",
+        "tokens": 250,
+        "truncated": false
+      },
+      {
+        "path": "examples/ImageNet_google_cloud/vm_main.py",
+        "tokens": 927,
+        "truncated": false
+      },
+      {
+        "path": "examples/MNIST_google_cloud/master_machine_main.py",
+        "tokens": 247,
+        "truncated": false
+      },
+      {
+        "path": "examples/MNIST_google_cloud/vm_main.py",
+        "tokens": 1079,
+        "truncated": false
+      },
+      {
+        "path": "examples/eco4cast_demo/quick_start_guide.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "examples/eco4cast_demo/vm_main.py",
+        "tokens": 1072,
+        "truncated": false
+      },
+      {
+        "path": "examples/eco4cast_local_demo/local_quick_start_guide.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/__init__.py",
+        "tokens": 137,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/noxfile_config.py",
+        "tokens": 191,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/sgs.py",
+        "tokens": 2534,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/test_sgs.py",
+        "tokens": 525,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/__init__.py",
+        "tokens": 201,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/recipes/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/snippets/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/attach_disk.py",
+        "tokens": 607,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/autodelete_change.py",
+        "tokens": 481,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/clone_encrypted_disk.py",
+        "tokens": 682,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/clone_encrypted_disk_managed_key.py",
+        "tokens": 875,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/create_empty_disk.py",
+        "tokens": 517,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/create_from_image.py",
+        "tokens": 599,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/create_from_snapshot.py",
+        "tokens": 572,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/create_from_source.py",
+        "tokens": 574,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/create_kms_encrypted_disk.py",
+        "tokens": 946,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/delete.py",
+        "tokens": 346,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/disk_from_snapshot.py",
+        "tokens": 584,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/empty_disk.py",
+        "tokens": 526,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/from_image.py",
+        "tokens": 606,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/get.py",
+        "tokens": 333,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/list.py",
+        "tokens": 401,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/local_ssd.py",
+        "tokens": 385,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/regional_create_from_source.py",
+        "tokens": 731,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/regional_delete.py",
+        "tokens": 349,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/disks/resize_disk.py",
+        "tokens": 643,
+        "truncated": false
+      },
+      {
+        "path": "eco4cast/master_machine/compute/client_library/ingredients/firewall/create.py",
+        "tokens": 664,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "dist/eco4cast-0.0.8-py3-none-any.whl",
+      "dist/eco4cast-0.0.8.tar.gz",
+      "images/eco4cast_color.jpg",
+      "eco4cast/master_machine/data_files/co2_model.ckpt",
+      "eco4cast/master_machine/data_files/country_points.pickle",
+      "eco4cast/master_machine/compute/client_library/ingredients/firewall/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/firewall/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/firewall/list.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/firewall/patch.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/firewall/windows_kms.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/create_from_image.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/get_image.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/get_image_from_family.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/list_images.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/images/set_depracation_status.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/create_from_instance.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instance-templates/list.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/__init__.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/bulk_insert.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/change_machine_type.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_instance.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_instance_from_template.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_instance_from_template_with_overrides.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/get_serial_port.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/list.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/list_all.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/reset.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/resume.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/start.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/start_encrypted.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/stop.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/suspend.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/operations/__init__.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/operations/handle_extended_operation.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/operations/list_zone_operations.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/operations/wait_for_operation.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/routes/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/routes/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/routes/list.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/snapshots/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/snapshots/delete.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/snapshots/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/snapshots/list.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/usage_report/disable.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/usage_report/get_bucket.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/usage_report/set_bucket.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/attach_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/autodelete_change.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/clone_encrypted_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/clone_encrypted_disk_managed_key.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/create_empty_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/create_from_image.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/create_from_source.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/create_kms_encrypted_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/regional_create_from_source.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/regional_delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/disks/resize_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/patch.py",
+      "eco4cast/master_machine/compute/client_library/recipes/firewall/windows_kms.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/create_from_image.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/pagination.py",
+      "eco4cast/master_machine/compute/client_library/recipes/images/set_deprecation_status.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/create_from_instance.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instance_templates/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/bulk_insert.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/change_machine_type.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/list_all.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/reset.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/resume.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/start.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/start_encrypted.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/stop.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/suspend.py",
+      "eco4cast/master_machine/compute/client_library/recipes/operations/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/operations/operation_check.py",
+      "eco4cast/master_machine/compute/client_library/recipes/operations/wait_for_extended_operation.py",
+      "eco4cast/master_machine/compute/client_library/recipes/routes/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/routes/create_kms_route.py",
+      "eco4cast/master_machine/compute/client_library/recipes/routes/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/routes/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/delete.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/delete_by_filter.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/snapshots/list.py",
+      "eco4cast/master_machine/compute/client_library/recipes/usage_report/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/usage_report/usage_reports.py",
+      "eco4cast/master_machine/compute/client_library/sgs_test_fixtures/ingredients/ingredient1.pytest",
+      "eco4cast/master_machine/compute/client_library/sgs_test_fixtures/ingredients/ingredient2.pytest",
+      "eco4cast/master_machine/compute/client_library/sgs_test_fixtures/output/experimental_recipe.pytest",
+      "eco4cast/master_machine/compute/client_library/sgs_test_fixtures/recipes/experimental_recipe.pytest",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/attach_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/autodelete_change.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/clone_encrypted_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/clone_encrypted_disk_managed_key.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/create_empty_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/create_from_image.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/create_from_source.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/create_kms_encrypted_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/regional_create_from_source.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/regional_delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/disks/resize_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/patch.py",
+      "eco4cast/master_machine/compute/client_library/snippets/firewall/windows_kms.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/create_from_image.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/pagination.py",
+      "eco4cast/master_machine/compute/client_library/snippets/images/set_deprecation_status.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/create_from_instance.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instance_templates/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/bulk_insert.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/change_machine_type.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_with_subnet.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/list_all.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/reset.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/resume.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/start.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/start_encrypted.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/stop.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/suspend.py",
+      "eco4cast/master_machine/compute/client_library/snippets/operations/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/operations/operation_check.py",
+      "eco4cast/master_machine/compute/client_library/snippets/operations/wait_for_extended_operation.py",
+      "eco4cast/master_machine/compute/client_library/snippets/routes/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/routes/create_kms_route.py",
+      "eco4cast/master_machine/compute/client_library/snippets/routes/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/routes/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/delete.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/delete_by_filter.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/snapshots/list.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_bulk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_create_vm.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_custom_hostnames.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_custom_types.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_default_values.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_delete_protection.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_disks.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_firewall.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_images.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_instance_from_template.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_instance_start_stop.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_instance_suspend_resume.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_pagination.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_preemptible.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_request_id.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_route.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_snapshots.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_spot_vms.py",
+      "eco4cast/master_machine/compute/client_library/snippets/tests/test_templates.py",
+      "eco4cast/master_machine/compute/client_library/snippets/usage_report/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/usage_report/usage_reports.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_from_custom_image.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_from_public_image.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_windows_instance.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_with_additional_disk.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_with_existing_disks.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_with_local_ssd.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/create_start_instance/create_with_snapshotted_data_disk.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_hostname/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_hostname/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/create_extra_mem_no_helper.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/create_shared_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/create_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/create_without_helper.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/helper_class.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/custom_machine_types/update_memory.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/delete_protection/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/delete_protection/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/delete_protection/set.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/preemptible/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/preemptible/get.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/preemptible/preemption_history.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/spot/create.py",
+      "eco4cast/master_machine/compute/client_library/ingredients/instances/spot/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_from_custom_image.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_from_public_image.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_windows_instance.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_with_additional_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_with_existing_disks.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_with_local_ssd.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/create_start_instance/create_with_snapshotted_data_disk.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_hostname/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_hostname/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/create_shared_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/create_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/create_without_helper.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/extra_mem_no_helper.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/helper_class.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/custom_machine_types/update_memory.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/delete_protection/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/delete_protection/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/delete_protection/get.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/delete_protection/set.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/from_instance_template/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/from_instance_template/create_from_template.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/from_instance_template/create_from_template_with_overrides.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/preemptible/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/preemptible/create_preemptible.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/preemptible/is_preemptible.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/preemptible/preemption_history.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/spot/__init__.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/spot/create.py",
+      "eco4cast/master_machine/compute/client_library/recipes/instances/spot/is_spot_vm.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_from_custom_image.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_from_public_image.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_from_snapshot.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_windows_instance.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_with_additional_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_with_existing_disks.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_with_local_ssd.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/create_with_snapshotted_data_disk.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_hostname/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_hostname/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/create_shared_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/create_with_helper.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/create_without_helper.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/extra_mem_no_helper.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/helper_class.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/custom_machine_types/update_memory.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/delete_protection/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/delete_protection/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/delete_protection/get.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/delete_protection/set.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/from_instance_template/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/from_instance_template/create_from_template.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/from_instance_template/create_from_template_with_overrides.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/preemptible/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/preemptible/create_preemptible.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/preemptible/is_preemptible.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/preemptible/preemption_history.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/spot/__init__.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/spot/create.py",
+      "eco4cast/master_machine/compute/client_library/snippets/instances/spot/is_spot_vm.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64025,
+    "completion_tokens": 2322,
+    "total_tokens": 66347,
+    "cost": 0.00520225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00520225,
+      "upstream_inference_prompt_cost": 0.00473785,
+      "upstream_inference_completions_cost": 0.0004644
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792609047-4pmYXqF8GVWL726cHScI"
+}

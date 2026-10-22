@@ -1,0 +1,237 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63972,
+    "tree_files": 135,
+    "tracked_files": 135,
+    "selected": [
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 1169,
+        "truncated": false
+      },
+      {
+        "path": "TRANSLATIONS.md",
+        "tokens": 1821,
+        "truncated": false
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "tokens": 131,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/mint/README-zh-Hans.md",
+        "tokens": 6297,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/mint/README.md",
+        "tokens": 4765,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/pastebin/README-zh-Hans.md",
+        "tokens": 5333,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/pastebin/README.md",
+        "tokens": 3824,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/query_cache/README-zh-Hans.md",
+        "tokens": 4789,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/query_cache/README.md",
+        "tokens": 3227,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/sales_rank/README-zh-Hans.md",
+        "tokens": 5119,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/sales_rank/README.md",
+        "tokens": 3651,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/scaling_aws/README-zh-Hans.md",
+        "tokens": 6217,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/scaling_aws/README.md",
+        "tokens": 4596,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/social_graph/README-zh-Hans.md",
+        "tokens": 4258,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/social_graph/README.md",
+        "tokens": 3628,
+        "truncated": false
+      },
+      {
+        "path": "solutions/system_design/twitter/README-zh-Hans.md",
+        "tokens": 3384,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      "solutions/system_design/twitter/README.md",
+      "solutions/system_design/web_crawler/README-zh-Hans.md",
+      "solutions/system_design/web_crawler/README.md",
+      ".gitattributes",
+      ".gitignore",
+      "LICENSE.txt",
+      "epub-metadata.yaml",
+      "generate-epub.sh",
+      "images/0vBc0hN.png",
+      "images/4edXG0T.png",
+      "images/4j99mhe.png",
+      "images/54GYsSx.png",
+      "images/5KeocQs.jpg",
+      "images/C9ioGtn.png",
+      "images/IOyLj4i.jpg",
+      "images/JdAsdvG.jpg",
+      "images/MzExP06.png",
+      "images/ONjORqk.png",
+      "images/OfVllex.png",
+      "images/Q6z24La.png",
+      "images/TcUo2fw.png",
+      "images/U3qV33e.png",
+      "images/V5q57vU.png",
+      "images/Xkm5CXz.png",
+      "images/b4YtAEN.png",
+      "images/bWxPtQA.png",
+      "images/bgLMI2u.png",
+      "images/cdCv5g7.png",
+      "images/fNcl65g.png",
+      "images/h81n9iK.png",
+      "images/h9TAuGI.jpg",
+      "images/iF4Mkb5.png",
+      "images/jj3A5N8.png",
+      "images/jrUBAF7.png",
+      "images/krAHLGg.png",
+      "images/kxtjqgE.png",
+      "images/n16iOGk.png",
+      "images/n41Azff.png",
+      "images/rgSrvjG.png",
+      "images/wU8x5Id.png",
+      "images/wXGqG5f.png",
+      "images/yB5SYwm.png",
+      "images/yzDrJtA.jpg",
+      "images/zdCAkB3.png",
+      "resources/study_guide.graffle",
+      "resources/study_guide.png",
+      "resources/flash_cards/OO Design.apkg",
+      "resources/flash_cards/System Design Exercises.apkg",
+      "resources/flash_cards/System Design.apkg",
+      "solutions/object_oriented_design/call_center/__init__.py",
+      "solutions/object_oriented_design/call_center/call_center.ipynb",
+      "solutions/object_oriented_design/call_center/call_center.py",
+      "solutions/object_oriented_design/deck_of_cards/__init__.py",
+      "solutions/object_oriented_design/deck_of_cards/deck_of_cards.ipynb",
+      "solutions/object_oriented_design/deck_of_cards/deck_of_cards.py",
+      "solutions/object_oriented_design/hash_table/__init__.py",
+      "solutions/object_oriented_design/hash_table/hash_map.ipynb",
+      "solutions/object_oriented_design/hash_table/hash_map.py",
+      "solutions/object_oriented_design/lru_cache/__init__.py",
+      "solutions/object_oriented_design/lru_cache/lru_cache.ipynb",
+      "solutions/object_oriented_design/lru_cache/lru_cache.py",
+      "solutions/object_oriented_design/online_chat/__init__.py",
+      "solutions/object_oriented_design/online_chat/online_chat.ipynb",
+      "solutions/object_oriented_design/online_chat/online_chat.py",
+      "solutions/object_oriented_design/parking_lot/__init__.py",
+      "solutions/object_oriented_design/parking_lot/parking_lot.ipynb",
+      "solutions/object_oriented_design/parking_lot/parking_lot.py",
+      "solutions/system_design/mint/__init__.py",
+      "solutions/system_design/mint/mint.graffle",
+      "solutions/system_design/mint/mint.png",
+      "solutions/system_design/mint/mint_basic.graffle",
+      "solutions/system_design/mint/mint_basic.png",
+      "solutions/system_design/mint/mint_mapreduce.py",
+      "solutions/system_design/mint/mint_snippets.py",
+      "solutions/system_design/pastebin/__init__.py",
+      "solutions/system_design/pastebin/pastebin.graffle",
+      "solutions/system_design/pastebin/pastebin.png",
+      "solutions/system_design/pastebin/pastebin.py",
+      "solutions/system_design/pastebin/pastebin_basic.graffle",
+      "solutions/system_design/pastebin/pastebin_basic.png",
+      "solutions/system_design/query_cache/__init__.py",
+      "solutions/system_design/query_cache/query_cache.graffle",
+      "solutions/system_design/query_cache/query_cache.png",
+      "solutions/system_design/query_cache/query_cache_basic.graffle",
+      "solutions/system_design/query_cache/query_cache_basic.png",
+      "solutions/system_design/query_cache/query_cache_snippets.py",
+      "solutions/system_design/sales_rank/__init__.py",
+      "solutions/system_design/sales_rank/sales_rank.graffle",
+      "solutions/system_design/sales_rank/sales_rank.png",
+      "solutions/system_design/sales_rank/sales_rank_basic.graffle",
+      "solutions/system_design/sales_rank/sales_rank_basic.png",
+      "solutions/system_design/sales_rank/sales_rank_mapreduce.py",
+      "solutions/system_design/scaling_aws/scaling_aws.graffle",
+      "solutions/system_design/scaling_aws/scaling_aws.png",
+      "solutions/system_design/scaling_aws/scaling_aws_1.png",
+      "solutions/system_design/scaling_aws/scaling_aws_2.png",
+      "solutions/system_design/scaling_aws/scaling_aws_3.png",
+      "solutions/system_design/scaling_aws/scaling_aws_4.png",
+      "solutions/system_design/scaling_aws/scaling_aws_5.png",
+      "solutions/system_design/scaling_aws/scaling_aws_6.png",
+      "solutions/system_design/scaling_aws/scaling_aws_7.png",
+      "solutions/system_design/social_graph/__init__.py",
+      "solutions/system_design/social_graph/social_graph.graffle",
+      "solutions/system_design/social_graph/social_graph.png",
+      "solutions/system_design/social_graph/social_graph_basic.graffle",
+      "solutions/system_design/social_graph/social_graph_basic.png",
+      "solutions/system_design/social_graph/social_graph_snippets.py",
+      "solutions/system_design/template/template.graffle",
+      "solutions/system_design/twitter/twitter.graffle",
+      "solutions/system_design/twitter/twitter.png",
+      "solutions/system_design/twitter/twitter_basic.graffle",
+      "solutions/system_design/twitter/twitter_basic.png",
+      "solutions/system_design/web_crawler/__init__.py",
+      "solutions/system_design/web_crawler/web_crawler.graffle",
+      "solutions/system_design/web_crawler/web_crawler.png",
+      "solutions/system_design/web_crawler/web_crawler_basic.graffle",
+      "solutions/system_design/web_crawler/web_crawler_basic.png",
+      "solutions/system_design/web_crawler/web_crawler_mapreduce.py",
+      "solutions/system_design/web_crawler/web_crawler_snippets.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 56511,
+    "completion_tokens": 4605,
+    "total_tokens": 61116,
+    "cost": 0.001904121761,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 32740,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001904121761,
+      "upstream_inference_prompt_cost": 0.001351521761,
+      "upstream_inference_completions_cost": 0.0005526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2478,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606755-dczvpEWc0nstNYA48waw"
+}

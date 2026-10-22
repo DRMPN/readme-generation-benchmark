@@ -1,0 +1,143 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 50375,
+    "tree_files": 29,
+    "tracked_files": 29,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 52,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 2266,
+        "truncated": false
+      },
+      {
+        "path": "GETAPI.json",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "api.json",
+        "tokens": 7416,
+        "truncated": false
+      },
+      {
+        "path": "smsboom.py",
+        "tokens": 1865,
+        "truncated": false
+      },
+      {
+        "path": "smsboom_GUI.py",
+        "tokens": 411,
+        "truncated": false
+      },
+      {
+        "path": "debug/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "debug/api.js",
+        "tokens": 6069,
+        "truncated": false
+      },
+      {
+        "path": "debug/api_tou.json",
+        "tokens": 3563,
+        "truncated": false
+      },
+      {
+        "path": "debug/hz-web.json",
+        "tokens": 548,
+        "truncated": false
+      },
+      {
+        "path": "debug/spider-api.py",
+        "tokens": 1664,
+        "truncated": false
+      },
+      {
+        "path": "debug/tou_api.py",
+        "tokens": 264,
+        "truncated": false
+      },
+      {
+        "path": "debug/touapi.json",
+        "tokens": 3549,
+        "truncated": false
+      },
+      {
+        "path": "utils/__init__.py",
+        "tokens": 9804,
+        "truncated": false
+      },
+      {
+        "path": "utils/log.py",
+        "tokens": 440,
+        "truncated": false
+      },
+      {
+        "path": "utils/models.py",
+        "tokens": 417,
+        "truncated": false
+      },
+      {
+        "path": "utils/req.py",
+        "tokens": 1070,
+        "truncated": false
+      },
+      {
+        "path": "utils/sql.py",
+        "tokens": 403,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/run.yaml",
+        "tokens": 256,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      "requirements-dev.txt",
+      "requirements.txt",
+      ".gitignore",
+      "logo.ico",
+      "debug/api.db",
+      "img/GIF111.gif",
+      "img/cmd1.png",
+      "img/cmd2.png",
+      "img/e.g.1.png",
+      "img/test2.gif"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 49952,
+    "completion_tokens": 2175,
+    "total_tokens": 52127,
+    "cost": 0.003432568,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 49920,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003432568,
+      "upstream_inference_prompt_cost": 0.002997568,
+      "upstream_inference_completions_cost": 0.000435
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606098-1dI9A0WYoyDJp0Ki1oW9"
+}

@@ -1,0 +1,195 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 31047,
+    "tree_files": 33,
+    "tracked_files": 33,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 71,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 220,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 486,
+        "truncated": false
+      },
+      {
+        "path": "twint/cli.py",
+        "tokens": 3427,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE.md",
+        "tokens": 224,
+        "truncated": false
+      },
+      {
+        "path": "elasticsearch/README.md",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/ISSUE_TEMPLATE.md",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": ".travis.yml",
+        "tokens": 602,
+        "truncated": false
+      },
+      {
+        "path": "automate.py",
+        "tokens": 580,
+        "truncated": false
+      },
+      {
+        "path": "test.py",
+        "tokens": 540,
+        "truncated": false
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "twint/__init__.py",
+        "tokens": 200,
+        "truncated": false
+      },
+      {
+        "path": "twint/__version__.py",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "twint/config.py",
+        "tokens": 718,
+        "truncated": false
+      },
+      {
+        "path": "twint/datelock.py",
+        "tokens": 293,
+        "truncated": false
+      },
+      {
+        "path": "twint/feed.py",
+        "tokens": 1078,
+        "truncated": false
+      },
+      {
+        "path": "twint/format.py",
+        "tokens": 1042,
+        "truncated": false
+      },
+      {
+        "path": "twint/get.py",
+        "tokens": 3130,
+        "truncated": false
+      },
+      {
+        "path": "twint/output.py",
+        "tokens": 1908,
+        "truncated": false
+      },
+      {
+        "path": "twint/run.py",
+        "tokens": 3853,
+        "truncated": false
+      },
+      {
+        "path": "twint/token.py",
+        "tokens": 568,
+        "truncated": false
+      },
+      {
+        "path": "twint/tweet.py",
+        "tokens": 1348,
+        "truncated": false
+      },
+      {
+        "path": "twint/url.py",
+        "tokens": 1628,
+        "truncated": false
+      },
+      {
+        "path": "twint/user.py",
+        "tokens": 522,
+        "truncated": false
+      },
+      {
+        "path": "twint/verbose.py",
+        "tokens": 145,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/db.py",
+        "tokens": 1863,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/elasticsearch.py",
+        "tokens": 2913,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/panda.py",
+        "tokens": 1498,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/write.py",
+        "tokens": 570,
+        "truncated": false
+      },
+      {
+        "path": "twint/storage/write_meta.py",
+        "tokens": 866,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "MANIFEST.in"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 31095,
+    "completion_tokens": 8852,
+    "total_tokens": 39947,
+    "cost": 0.007165976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007165976,
+      "upstream_inference_prompt_cost": 0.0037314,
+      "upstream_inference_completions_cost": 0.003434576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6113,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792607063-pWoyusT9I3y9ydkPM9db"
+}

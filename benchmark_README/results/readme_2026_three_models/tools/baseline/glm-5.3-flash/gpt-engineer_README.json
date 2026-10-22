@@ -1,0 +1,598 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63829,
+    "tree_files": 180,
+    "tracked_files": 180,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 220,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 521,
+        "truncated": false
+      },
+      {
+        "path": "docker-compose.yml",
+        "tokens": 101,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 1018,
+        "truncated": false
+      },
+      {
+        "path": "docker/Dockerfile",
+        "tokens": 179,
+        "truncated": false
+      },
+      {
+        "path": "docs/Makefile",
+        "tokens": 212,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/requirements.txt",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/__main__.py",
+        "tokens": 1077,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/main.py",
+        "tokens": 67,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/applications/cli/main.py",
+        "tokens": 4027,
+        "truncated": false
+      },
+      {
+        "path": "Acknowledgements.md",
+        "tokens": 87,
+        "truncated": false
+      },
+      {
+        "path": "DISCLAIMER.md",
+        "tokens": 333,
+        "truncated": false
+      },
+      {
+        "path": "GOVERNANCE.md",
+        "tokens": 992,
+        "truncated": false
+      },
+      {
+        "path": "ROADMAP.md",
+        "tokens": 333,
+        "truncated": false
+      },
+      {
+        "path": "TERMS_OF_USE.md",
+        "tokens": 376,
+        "truncated": false
+      },
+      {
+        "path": "WINDOWS_README.md",
+        "tokens": 890,
+        "truncated": false
+      },
+      {
+        "path": ".github/CODE_OF_CONDUCT.md",
+        "tokens": 1066,
+        "truncated": false
+      },
+      {
+        "path": ".github/CONTRIBUTING.md",
+        "tokens": 1509,
+        "truncated": false
+      },
+      {
+        "path": "docker/README.md",
+        "tokens": 587,
+        "truncated": false
+      },
+      {
+        "path": "docs/api_reference.rst",
+        "tokens": 888,
+        "truncated": false
+      },
+      {
+        "path": "docs/code_conduct_link.rst",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "docs/contributing_link.rst",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "docs/disclaimer_link.rst",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "docs/docs_building.md",
+        "tokens": 581,
+        "truncated": false
+      },
+      {
+        "path": "docs/index.rst",
+        "tokens": 180,
+        "truncated": false
+      },
+      {
+        "path": "docs/installation.rst",
+        "tokens": 382,
+        "truncated": false
+      },
+      {
+        "path": "docs/introduction.md",
+        "tokens": 225,
+        "truncated": false
+      },
+      {
+        "path": "docs/open_models.md",
+        "tokens": 1525,
+        "truncated": false
+      },
+      {
+        "path": "docs/quickstart.rst",
+        "tokens": 500,
+        "truncated": false
+      },
+      {
+        "path": "docs/roadmap_link.rst",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "docs/terms_link.rst",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "docs/tracing_debugging.md",
+        "tokens": 262,
+        "truncated": false
+      },
+      {
+        "path": "docs/windows_readme_link.rst",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+        "tokens": 239,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/documentation-clarification.md",
+        "tokens": 142,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+        "tokens": 139,
+        "truncated": false
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/README.md",
+        "tokens": 244,
+        "truncated": false
+      },
+      {
+        "path": "docs/examples/open_llms/README.md",
+        "tokens": 433,
+        "truncated": false
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "tokens": 210,
+        "truncated": false
+      },
+      {
+        "path": ".readthedocs.yaml",
+        "tokens": 275,
+        "truncated": false
+      },
+      {
+        "path": "sweep.yaml",
+        "tokens": 207,
+        "truncated": false
+      },
+      {
+        "path": "tox.ini",
+        "tokens": 85,
+        "truncated": false
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "docker/entrypoint.sh",
+        "tokens": 99,
+        "truncated": false
+      },
+      {
+        "path": "docs/conf.py",
+        "tokens": 1446,
+        "truncated": false
+      },
+      {
+        "path": "docs/create_api_rst.py",
+        "tokens": 623,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/__init__.py",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "scripts/clean_benchmarks.py",
+        "tokens": 211,
+        "truncated": false
+      },
+      {
+        "path": "scripts/legacy_benchmark.py",
+        "tokens": 1280,
+        "truncated": false
+      },
+      {
+        "path": "scripts/print_chat.py",
+        "tokens": 409,
+        "truncated": false
+      },
+      {
+        "path": "scripts/test_api.py",
+        "tokens": 271,
+        "truncated": false
+      },
+      {
+        "path": "tests/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "tests/ai_cache.json",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "tests/mock_ai.py",
+        "tokens": 100,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_install.py",
+        "tokens": 754,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_project_config.py",
+        "tokens": 1157,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/automation.yml",
+        "tokens": 195,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/ci.yaml",
+        "tokens": 351,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/pre-commit.yaml",
+        "tokens": 93,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/release.yaml",
+        "tokens": 447,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/applications/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/bench_config.py",
+        "tokens": 484,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/default_bench_config.toml",
+        "tokens": 96,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/run.py",
+        "tokens": 971,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/benchmark/types.py",
+        "tokens": 566,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/ai.py",
+        "tokens": 2841,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/base_agent.py",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/base_execution_env.py",
+        "tokens": 229,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/base_memory.py",
+        "tokens": 100,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/chat_to_files.py",
+        "tokens": 2051,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/diff.py",
+        "tokens": 4010,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/files_dict.py",
+        "tokens": 794,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/git.py",
+        "tokens": 526,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/linting.py",
+        "tokens": 496,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/preprompts_holder.py",
+        "tokens": 195,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/project_config.py",
+        "tokens": 1208,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/prompt.py",
+        "tokens": 248,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/token_usage.py",
+        "tokens": 2014,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/core/version_manager.py",
+        "tokens": 189,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/tools/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/tools/custom_steps.py",
+        "tokens": 1739,
+        "truncated": false
+      },
+      {
+        "path": "gpt_engineer/tools/supported_languages.py",
+        "tokens": 579,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/controller.py",
+        "tokens": 147,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/model.py",
+        "tokens": 182,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/run.sh",
+        "tokens": 45,
+        "truncated": false
+      },
+      {
+        "path": "projects/example-improve/view.py",
+        "tokens": 104,
+        "truncated": false
+      },
+      {
+        "path": "tests/applications/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "tests/benchmark/test_BenchConfig.py",
+        "tokens": 781,
+        "truncated": false
+      },
+      {
+        "path": "tests/core/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "tests/core/test_ai.py",
+        "tokens": 380,
+        "truncated": false
+      },
+      {
+        "path": "tests/core/test_chat_to_files.py",
+        "tokens": 2234,
+        "truncated": false
+      },
+      {
+        "path": "tests/core/test_file_selector_enhancements.py",
+        "tokens": 156,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".dockerignore",
+      ".env.template",
+      ".gitignore",
+      "MANIFEST.in",
+      "citation.cff",
+      "poetry.lock",
+      ".github/CODEOWNERS",
+      "docs/make.bat",
+      "gpt_engineer/preprompts/clarify",
+      "gpt_engineer/preprompts/entrypoint",
+      "gpt_engineer/preprompts/file_format",
+      "gpt_engineer/preprompts/file_format_diff",
+      "gpt_engineer/preprompts/file_format_fix",
+      "gpt_engineer/preprompts/generate",
+      "gpt_engineer/preprompts/improve",
+      "gpt_engineer/preprompts/philosophy",
+      "gpt_engineer/preprompts/roadmap",
+      "projects/example-improve/prompt",
+      "projects/example-vision/navigation.html",
+      "projects/example-vision/prompt",
+      "tests/core/test_git.py",
+      "tests/core/test_salvage_correct_hunks.py",
+      "tests/core/test_token_usage.py",
+      "tests/test_data/mona_lisa.jpg",
+      "tests/tools/example_snake_files.py",
+      "docs/examples/open_llms/langchain_interface.py",
+      "docs/examples/open_llms/openai_api_interface.py",
+      "gpt_engineer/applications/cli/__init__.py",
+      "gpt_engineer/applications/cli/cli_agent.py",
+      "gpt_engineer/applications/cli/collect.py",
+      "gpt_engineer/applications/cli/file_selector.py",
+      "gpt_engineer/applications/cli/learning.py",
+      "gpt_engineer/benchmark/benchmarks/load.py",
+      "gpt_engineer/core/default/__init__.py",
+      "gpt_engineer/core/default/constants.py",
+      "gpt_engineer/core/default/disk_execution_env.py",
+      "gpt_engineer/core/default/disk_memory.py",
+      "gpt_engineer/core/default/file_store.py",
+      "gpt_engineer/core/default/paths.py",
+      "gpt_engineer/core/default/simple_agent.py",
+      "gpt_engineer/core/default/steps.py",
+      "projects/example-vision/images/ux_diagram.png",
+      "tests/applications/cli/__init__.py",
+      "tests/applications/cli/test_cli_agent.py",
+      "tests/applications/cli/test_collect.py",
+      "tests/applications/cli/test_collection_consent.py",
+      "tests/applications/cli/test_learning.py",
+      "tests/applications/cli/test_main.py",
+      "tests/core/default/__init__.py",
+      "tests/core/default/test_disk_execution_env.py",
+      "tests/core/default/test_disk_file_repository.py",
+      "tests/core/default/test_simple_agent.py",
+      "tests/core/default/test_steps.py",
+      "tests/core/improve_function_test_cases/apps_benchmark_6_chat",
+      "tests/core/improve_function_test_cases/apps_benchmark_6_code",
+      "tests/core/improve_function_test_cases/apps_benchmark_6_v2_chat",
+      "tests/core/improve_function_test_cases/apps_benchmark_6_v2_code",
+      "tests/core/improve_function_test_cases/controller_chat",
+      "tests/core/improve_function_test_cases/controller_code",
+      "tests/core/improve_function_test_cases/corrected_diff_from_missing_lines",
+      "tests/core/improve_function_test_cases/create_two_new_files_chat",
+      "tests/core/improve_function_test_cases/create_two_new_files_code",
+      "tests/core/improve_function_test_cases/simple_calculator_chat",
+      "tests/core/improve_function_test_cases/simple_calculator_code",
+      "tests/core/improve_function_test_cases/task_master_chat",
+      "tests/core/improve_function_test_cases/task_master_code",
+      "tests/core/improve_function_test_cases/temperature_converter_chat",
+      "tests/core/improve_function_test_cases/temperature_converter_code",
+      "tests/core/improve_function_test_cases/theo_case_chat",
+      "tests/core/improve_function_test_cases/theo_case_code",
+      "tests/core/improve_function_test_cases/vgvishesh_example_2_chat",
+      "tests/core/improve_function_test_cases/vgvishesh_example_2_code",
+      "tests/core/improve_function_test_cases/vgvishesh_example_chat",
+      "tests/core/improve_function_test_cases/vgvishesh_example_code",
+      "tests/core/improve_function_test_cases/wheaties_example_chat",
+      "tests/core/improve_function_test_cases/wheaties_example_code",
+      "tests/core/improve_function_test_cases/zbf_yml_missing_chat",
+      "tests/core/improve_function_test_cases/zbf_yml_missing_code",
+      "gpt_engineer/benchmark/benchmarks/apps/load.py",
+      "gpt_engineer/benchmark/benchmarks/apps/problem.py",
+      "gpt_engineer/benchmark/benchmarks/apps/problems.py",
+      "gpt_engineer/benchmark/benchmarks/gptme/load.py",
+      "gpt_engineer/benchmark/benchmarks/mbpp/load.py",
+      "gpt_engineer/benchmark/benchmarks/mbpp/problem.py",
+      "gpt_engineer/benchmark/benchmarks/mbpp/problems.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 63874,
+    "completion_tokens": 3495,
+    "total_tokens": 67369,
+    "cost": 0.005425676,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005425676,
+      "upstream_inference_prompt_cost": 0.004726676,
+      "upstream_inference_completions_cost": 0.000699
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 35,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792605953-LCH7PLeduPtELFb7RT9R"
+}

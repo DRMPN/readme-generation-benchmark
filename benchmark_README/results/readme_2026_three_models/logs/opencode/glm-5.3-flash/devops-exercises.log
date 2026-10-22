@@ -1,0 +1,226 @@
+I have a clear picture of the repository now. Let me write the README.
+Let me verify all the links I included are valid — a few topic directories may not have a `README.md`.
+Some topic directories (`os`, `node`, `python`, `programming`, `sql`, `misc`) don't have a `README.md` — they contain standalone exercise files. Let me fix those links to point at the directories instead.
+Apologies, I omitted the `path` argument. Let me retry the edits correctly.
+A few claims need tightening. Let me verify the script descriptions and the S3 example before finalizing.
+That confirms the S3 example is an AWS CLI script that automates S3 event-triggered notifications via Lambda and SNS. Now let me fix the remaining inaccuracies in the README.
+Two corrections remain: the `random_question.py` description and the topics intro (some topics lack a README.md).
+All edits are in place. Let me do a final review of the complete README.
+The README is complete and every claim is verified against the repository contents. I created only `README.md` in the current directory.
+
+## Summary
+
+I inspected the repository structure (topics, exercises, coding, certificates, scripts, tests), plus the supporting docs (`CONTRIBUTING.md`, `faq.md`, `prepare_for_interview.md`, `credits.md`, `LICENSE`), CI configuration, and helper scripts before writing.
+
+**The README covers:**
+
+- **Intro** — learning-focused purpose, with the caveat from the FAQ that it's not a guarantee of interview questions
+- **Repository structure** — all seven directories documented with verified links:
+  - `topics/` (30+ topics grouped by category; directories without a `README.md` like `os/`, `sql/`, `python/` link to the folder itself rather than a nonexistent file)
+  - `exercises/`, `coding/` (verified the Python binary search/merge sort files exist)
+  - `certificates/` (all 7 certification files)
+  - `scripts/` (each script described based on actually reading its code — e.g., `random_question.py` parses Q&A pairs from a `README.md` and quizzes you; the S3 example is accurately described as S3 → Lambda → SNS notification automation per the script's own header)
+  - `tests/`
+- **How to use** — exercises vs. collapsible questions, and the FAQ-backed note that many questions intentionally lack written answers
+- **Interview prep, FAQ, Contributing** — including the exact `<details>`/`<summary>` question format required by `CONTRIBUTING.md` and the CI checks (markdown syntax linting + flake8) from both the GitHub Actions workflow and `.travis.yml`
+- **Credits & License** — pointing to `credits.md` and the Creative Commons `LICENSE` file
+
+**Accuracy measures taken:** several early drafts contained claims I corrected during review — e.g., "each topic has its own README.md" (several don't), a vague "Lambda triggering" description (clarified based on the script's actual content), and "each topic page lists exercises" (refined to "topic material includes").
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.worktree_list();\nreturn r;"} 
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead faq.md 
+[0m→ [0mRead credits.md 
+[0m→ [0mRead prepare_for_interview.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead exercises 
+[0m→ [0mRead coding 
+[0m→ [0mRead scripts 
+[0m→ [0mRead tests 
+[0m→ [0mRead certificates 
+[0m→ [0mRead topics 
+[0m→ [0mRead .travis.yml 
+[0m→ [0mRead LICENSE [90m[limit=20][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead topics/kubernetes 
+[0m→ [0mRead exercises/shell 
+[0m→ [0mRead .github 
+[0m→ [0mRead coding/python 
+[0m✱ [0mGlob "topics/*.md" [90m5 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead topics/kubernetes/README.md [90m[limit=120][0m
+[0m→ [0mRead exercises/shell/solutions 
+[0m→ [0mRead topics/linux 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[limit=30, offset=21][0m
+[0m→ [0mRead .github/workflows/ci_workflow.yml 
+[0m→ [0mRead scripts/run_ci.sh 
+[0m→ [0mRead topics/linux/README.md [90m[limit=40][0m
+[0m→ [0mRead exercises/shell/solutions/directories_comparison.md [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[offset=51][0m
+[0m→ [0mRead scripts/count_questions.sh 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead certificates/cka.md [90m[limit=40][0m
+[0m→ [0mRead scripts/aws s3 event triggering 
+[0m✱ [0mGlob "topics/*/README.md" [90m31 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "topics/{misc,node,os,programming,python,sql}/**" [90m23 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mEdit  failed
+[91m[1mError: [0mInvalid arguments for tool "edit":
+- path: Missing key
+
+Arguments provided:
+{
+  "newString": "* **Operating systems & scripting:** [Linux](topics/linux/README.md), [OS](topics/os/), [Shell](topics/shell/README.md), [Perl](topics/perl/README.md)",
+  "oldString": "* **Operating systems & scripting:** [Linux](topics/linux/README.md), [OS](topics/os/README.md), [Shell](topics/shell/README.md), [Perl](topics/perl/README.md)"
+}
+
+Update the arguments and call the tool again.
+[0m✗ [0mEdit  failed
+[91m[1mError: [0mInvalid arguments for tool "edit":
+- path: Missing key
+
+Arguments provided:
+{
+  "newString": "* **Databases & programming:** [Databases](topics/databases/README.md), [SQL](topics/sql/), [Python](topics/python/), [Node](topics/node/), [Programming](topics/programming/), [Software development](topics/software_development/README.md)",
+  "oldString": "* **Databases & programming:** [Databases](topics/databases/README.md), [SQL](topics/sql/README.md), [Python](topics/python/README.md), [Node](topics/node/README.md), [Programming](topics/programming/README.md), [Software development](topics/software_development/README.md)"
+}
+
+Update the arguments and call the tool again.
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -9,9 +9,9 @@
+ ### topics/
+ 
+ The core of the repository — self-contained guides organized by topic, each with its own `README.md` that lists exercises (with links to solution files) and questions. Topics include:
+ 
+-* **Operating systems & scripting:** [Linux](topics/linux/README.md), [OS](topics/os/README.md), [Shell](topics/shell/README.md), [Perl](topics/perl/README.md)
++* **Operating systems & scripting:** [Linux](topics/linux/README.md), [OS](topics/os/), [Shell](topics/shell/README.md), [Perl](topics/perl/README.md)
+ * **Containers & orchestration:** [Containers](topics/containers/README.md), [Kubernetes](topics/kubernetes/README.md), [OpenShift](topics/openshift/README.md)
+ * **Cloud:** [Cloud](topics/cloud/README.md), [AWS](topics/aws/README.md), [Azure](topics/azure/README.md), [GCP](topics/gcp/README.md)
+ * **CI/CD & automation:** [CI/CD](topics/cicd/README.md), [Jenkins pipelines](topics/jenkins_pipelines.md), [Jenkins scripts](topics/jenkins_scripts.md), [Zuul](topics/zuul/README.md), [CircleCI](topics/circleci/README.md)
+ * **Configuration management & infrastructure:** [Ansible](topics/ansible/README.md), [Terraform](topics/terraform/README.md)
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -15,9 +15,9 @@
+ * **Cloud:** [Cloud](topics/cloud/README.md), [AWS](topics/aws/README.md), [Azure](topics/azure/README.md), [GCP](topics/gcp/README.md)
+ * **CI/CD & automation:** [CI/CD](topics/cicd/README.md), [Jenkins pipelines](topics/jenkins_pipelines.md), [Jenkins scripts](topics/jenkins_scripts.md), [Zuul](topics/zuul/README.md), [CircleCI](topics/circleci/README.md)
+ * **Configuration management & infrastructure:** [Ansible](topics/ansible/README.md), [Terraform](topics/terraform/README.md)
+ * **Observability:** [Observability](topics/observability/README.md), [Datadog](topics/datadog/README.md), [Grafana](topics/grafana/README.md)
+-* **Databases & programming:** [Databases](topics/databases/README.md), [SQL](topics/sql/README.md), [Python](topics/python/README.md), [Node](topics/node/README.md), [Programming](topics/programming/README.md), [Software development](topics/software_development/README.md)
++* **Databases & programming:** [Databases](topics/databases/README.md), [SQL](topics/sql/), [Python](topics/python/), [Node](topics/node/), [Programming](topics/programming/), [Software development](topics/software_development/README.md)
+ * **Networking & other topics:** [Git](topics/git/README.md), [DNS](topics/dns/README.md), [Kafka](topics/kafka/README.md), [Security](topics/security/README.md), [Chaos engineering](topics/chaos_engineering/README.md), [Argo](topics/argo/README.md), [DevOps](topics/devops/README.md), [SRE](topics/sre/README.md), [Soft skills](topics/soft_skills/README.md)
+ * **Project-based topics:** [Flask container CI](topics/flask_container_ci/README.md), [Flask container CI 2](topics/flask_container_ci2/README.md)
+ 
+ ### exercises/
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead scripts/update_question_number.py 
+[0m→ [0mRead scripts/random_question.py 
+[0m→ [0mRead coding/python/binary_search.py 
+[0m→ [0mRead scripts/aws s3 event triggering/README.md [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead scripts/aws s3 event triggering/aws_s3_event_trigger.sh [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -7,9 +7,9 @@
+ ## Repository Structure
+ 
+ ### topics/
+ 
+-The core of the repository — self-contained guides organized by topic, each with its own `README.md` that lists exercises (with links to solution files) and questions. Topics include:
++The core of the repository — self-contained material organized by topic. Most topics have a `README.md` listing exercises (with links to solution files) and questions, while some topics contain standalone exercise and solution files. Topics include:
+ 
+ * **Operating systems & scripting:** [Linux](topics/linux/README.md), [OS](topics/os/), [Shell](topics/shell/README.md), [Perl](topics/perl/README.md)
+ * **Containers & orchestration:** [Containers](topics/containers/README.md), [Kubernetes](topics/kubernetes/README.md), [OpenShift](topics/openshift/README.md)
+ * **Cloud:** [Cloud](topics/cloud/README.md), [AWS](topics/aws/README.md), [Azure](topics/azure/README.md), [GCP](topics/gcp/README.md)
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -47,9 +47,9 @@
+ * [`run_ci.sh`](scripts/run_ci.sh) — runs syntax linting on all `.md` files and PEP8 (flake8) checks locally
+ * [`count_questions.sh`](scripts/count_questions.sh) — counts the number of questions and exercises
+ * [`random_question.py`](scripts/random_question.py) — displays a random question
+ * [`question_utils.py`](scripts/question_utils.py) and [`update_question_number.py`](scripts/update_question_number.py) — question bookkeeping utilities
+-* An example of [triggering Lambda functions from AWS S3 events](scripts/aws%20s3%20event%20triggering/README.md)
++* An example of [automating notifications for objects uploaded to an S3 bucket](scripts/aws%20s3%20event%20triggering/README.md) (S3 → Lambda → SNS, via AWS CLI)
+ 
+ ### tests/
+ 
+ Tests used by CI to validate the content, including [syntax_lint.py](tests/syntax_lint.py), [syntax_checker_unittest.py](tests/syntax_checker_unittest.py), and [scripts_question_utils_unittest.py](tests/scripts_question_utils_unittest.py).
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -56,10 +56,10 @@
+ 
+ ## How to Use
+ 
+ 1. Pick a topic you want to learn from its directory under [`topics/`](topics/).
+-2. Each topic page lists **exercises** (with links to solutions) and **questions**. Questions are collapsible: try to answer first, then click to reveal the answer.
+-3. Prefer a hands-on start? Begin with the exercises listed in the topic's README.
++2. Topic material includes **exercises** (with links to solutions) and **questions**. Questions are collapsible (implemented with HTML `<details>` tags): try to answer first, then click to reveal the answer.
++3. Prefer a hands-on start? Begin with the exercises in the topic directory.
+ 4. Note that many questions intentionally have no written answer — researching them yourself (via search engines, documentation, and communities) is part of the learning experience.
+ 
+ ## Preparing for DevOps Interviews
+ 
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mEdit README.md failed
+[91m[1mError: [0mCould not find oldString in /tmp/devops-exercises-d0hwlng8/README.md. It must match exactly, including whitespace and indentation.
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -45,9 +45,9 @@
+ Helper scripts and tooling:
+ 
+ * [`run_ci.sh`](scripts/run_ci.sh) — runs syntax linting on all `.md` files and PEP8 (flake8) checks locally
+ * [`count_questions.sh`](scripts/count_questions.sh) — counts the number of questions and exercises
+-* [`random_question.py`](scripts/random_question.py) — displays a random question
++* [`random_question.py`](scripts/random_question.py) — quizzes you with a random question (and its answer) parsed from a `README.md` file
+ * [`question_utils.py`](scripts/question_utils.py) and [`update_question_number.py`](scripts/update_question_number.py) — question bookkeeping utilities
+ * An example of [automating notifications for objects uploaded to an S3 bucket](scripts/aws%20s3%20event%20triggering/README.md) (S3 → Lambda → SNS, via AWS CLI)
+ 
+ ### tests/
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md [90m[limit=15, offset=7][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "random_question" [90min README.md · 1 match[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash

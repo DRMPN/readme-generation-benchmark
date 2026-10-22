@@ -1,0 +1,42 @@
+No README exists yet. Let me look deeper at the repo contents.
+This appears to be a variant of the public-apis repo without the main README. Let me inspect the scripts and git history to understand the project fully.
+Let me quickly check the test files to describe the test suite accurately.
+I now have a complete picture of the repository. Writing the README.
+I've created `README.md` in the repository root. Before writing it, I inspected everything present:
+
+- **`CONTRIBUTING.md`** — describes the catalog's purpose (free public APIs, no marketing), the table format, accepted `Auth`/`CORS` values, and pull request rules.
+- **`scripts/validate/format.py`** — enforces alphabetical order, table syntax, description rules (≤100 chars, capitalized, no trailing punctuation), valid `Auth`/`HTTPS`/`CORS` values, column padding, minimum entries per category, and index coverage.
+- **`scripts/validate/links.py`** — duplicate-link checking and link liveness checks with Cloudflare-protection detection; supports the `-odlc`/`--only_duplicate_links_checker` flag.
+- **`scripts/tests/`** — `unittest` suites for both validators.
+- **`scripts/github_pull_request.sh`** — fetches a PR diff and validates links on the added lines.
+- **`scripts/requirements.txt`** — pinned `requests` and dependencies.
+- **`LICENSE`** — MIT, copyright 2022 public-apis.
+
+Notes on accuracy:
+- The README describes the catalog format and tooling exactly as the code implements it (e.g., the validator's five-column minimum, accepted values, and error rules match `format.py`).
+- I deliberately avoided unsupported claims: no badge counts (the main API list file isn't present in this checkout), no version-specific Python claims, and no mention of CI configs like `.travis.yml`, which is referenced only in `.gitattributes` but doesn't exist in the repo.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90m10 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.md 
+[0m✱ [0mGlob "**/*" [90m12 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"import subprocess\nprint(subprocess.run(['git','log','--oneline','-15'], capture_output=True, text=True, cwd='/tmp/public-apis-6gcfaeja').stdout)\nprint(subprocess.run(['git','remote','-v'], capture_output=True, text=True, cwd='/tmp/public-apis-6gcfaeja').stdout)\n"} 
+[0m→ [0mRead scripts/validate/format.py 
+[0m→ [0mRead scripts/validate/links.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead scripts/requirements.txt 
+[0m→ [0mRead .gitattributes 
+[0m→ [0mRead scripts/github_pull_request.sh 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead scripts/tests/test_validate_format.py [90m[limit=40][0m
+[0m→ [0mRead scripts/tests/test_validate_links.py [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

@@ -1,0 +1,52 @@
+I found this is the source repository for the EIP catalog and its Jekyll-published site. I’m grounding the README in the repository’s own EIP-1 guidance, templates, and CI workflows, and will add only the root `README.md`.
+Created the root `README.md` with an overview of the repository, proposal types and statuses, contribution guidance, local Jekyll commands, CI checks, and licensing. No other files were created or modified. I did not run the build or CI checks.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+[0m✱ [0mGlob "**/*" [90min . · 300 matches[0m
+[0m✱ [0mGrep "README" [90min . · 22 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . [90m[limit=200][0m
+[0m→ [0mRead _config.yml 
+[0m→ [0mRead Gemfile 
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead eip-template.md 
+[0m✱ [0mGlob ".github/**/*" [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob ".github/**/*" [90min . · 0 matches[0m
+[0m✱ [0mGlob "*TEMPLATE*" [90min . · 0 matches[0m
+[0m→ [0mRead index.html 
+[0m→ [0mRead Gemfile.lock [90m[limit=100][0m
+[0m→ [0mRead all.html 
+[0m→ [0mRead _data/statuses.yaml 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .github 
+[0m→ [0mRead config/eipw.toml 
+[0m→ [0mRead config/eip-editors.yml 
+[0m✱ [0mGrep "eip_validator|html-proofer|eipw|jekyll build|bundle exec|validate" [90min .github · 11 matches[0m
+[0m✱ [0mGrep "^## (Submission|EIP|Pull|Copyright|Process)|^#" [90min EIPS/eip-1.md · 44 matches[0m
+[0m→ [0mRead config/mlc_config.json 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .github/CONTRIBUTING.md 
+[0m→ [0mRead .github/ISSUE_TEMPLATE.md 
+[0m→ [0mRead .github/PULL_REQUEST_TEMPLATE.md 
+[0m→ [0mRead EIPS/eip-1.md [90m[offset=10, limit=200][0m
+[0m→ [0mRead .github/workflows/ci.yml [90m[limit=180][0m
+[0m→ [0mRead .github/workflows/jekyll.yml [90m[limit=140][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead .github/workflows/ci.yml [90m[offset=146, limit=120][0m
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead .github/CODEOWNERS 
+[0m→ [0mRead EIPS/eip-1.md [90m[offset=510, limit=100][0m
+[0m→ [0mRead .github/renovate.json 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+[0m→ [0mRead . [90m[limit=50][0m
+> readme-benchmark · openai/gpt-6-luna

@@ -1,0 +1,24 @@
+I’ll inspect the repository’s source, configuration, and existing docs, then write a README grounded only in what’s present. I’ll create or update only `README.md`.
+The app is a CustomTkinter desktop GUI backed by OpenCV and Ultralytics YOLO segmentation. One setup detail matters: the checked-in `requirements.txt` lists packages as `pip install ...` commands, and the code imports `torch` and `ultralytics` even though neither is listed there. I’ll document the direct install command without changing project files.
+Created `README.md` with setup and run instructions, app usage, output details, and processing limitations based on the repository. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m7 matches[0m
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead process_video.py 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead Camouflage AI.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead LICENSE 
+[0m✱ [0mGlob "**/.*" [90m0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+[0m✱ [0mGlob "README.md" [90m1 match[0m
+> readme-benchmark · openai/gpt-6-luna

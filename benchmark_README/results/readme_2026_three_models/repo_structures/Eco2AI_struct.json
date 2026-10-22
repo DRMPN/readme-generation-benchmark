@@ -1,0 +1,104 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "_config.yml",
+    "type": "file"
+  },
+  {
+    "name": "eco2ai",
+    "type": "dir",
+    "children": [
+      {
+        "name": "MLTracker.py",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "emission_track.py",
+        "type": "file"
+      },
+      {
+        "name": "tools",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "tools_cpu.py",
+            "type": "file"
+          },
+          {
+            "name": "tools_gpu.py",
+            "type": "file"
+          },
+          {
+            "name": "tools_ram.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Eco2AI tutorial tensorflow.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "Eco2AI tutorial torch.ipynb",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  }
+]

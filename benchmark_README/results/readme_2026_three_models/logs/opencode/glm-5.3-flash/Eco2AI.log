@@ -1,0 +1,53 @@
+I see this is the `Eco2AI` library. Let me inspect the source code, examples, and images to understand how it works.
+Now let me look at the remaining modules and utilities to understand the full feature set.
+I have a good picture of the library now. Let me quickly check the LICENSE and confirm the package's public status so the README is accurate.
+The web search is unavailable, so I'll stick strictly to what's in the repository. Let me check the `summary` utility function to document it accurately.
+I now have everything I need. Writing the README:
+I've written a complete `README.md` for the repository. Everything in it is derived directly from the codebase — no invented claims. Here's a summary of what it covers and where each claim comes from:
+
+**Sourced from the repository itself:**
+
+- **Overview** — Eco2AI as a CO2 emission tracking library, based on `pyproject.toml` (description: "emission tracking library", version 0.3.12, Alpha status) and the `Tracker` docstring in `eco2ai/emission_track.py`.
+- **How it works** — from `emission_track.py`: measures CPU/GPU/RAM consumption every `measure_period` seconds via APScheduler, multiplies by PUE, and the carbon-index logic (IP-based detection, worldwide/country fallbacks) from `define_carbon_index()` in `eco2ai/utils.py`.
+- **Output table columns** — exactly matches `Tracker._construct_attributes_dict()`.
+- **Installation** — `pip install eco2ai` (package name defined in `setup.py`/`pyproject.toml`), plus install from source; the dependency list comes from `pyproject.toml`.
+- **Quick Start** — three usage patterns taken directly from the code: `start()`/`stop()`, the `@track` decorator, and the training interface (`start_training()` / `new_epoch()` / `stop_training()`).
+- **Parameters table** — every row matches the actual `Tracker.__init__` docstring, including validation details (e.g., `region` requires `alpha_2_code`, the 24-hour consistency rule for `electricity_pricing`, and `encode_file` naming behavior).
+- **Utilities** — `available_devices()`, `summary()`, `set_params()`/`get_params()`, all verified in `eco2ai/utils.py`.
+- **Tutorials** — the two notebooks in `examples/`.
+- **Authors & License** — from `pyproject.toml` and the Apache 2.0 `LICENSE` file.
+- **VPN note** — the warning emitted by `Tracker` initialization.
+- **Logo** — referenced from the existing `images/eco2ai_logo.jpg`.
+
+One note: the web search tool was unavailable, so I could not independently verify PyPI hosting — the `pip install eco2ai` instruction is based on the package metadata in the repo, and installing from source is offered as an alternative.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead eco2ai 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead examples 
+[0m→ [0mRead eco2ai/__init__.py 
+[0m→ [0mRead images 
+[0m→ [0mRead eco2ai/emission_track.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead eco2ai/MLTracker.py [90m[limit=120][0m
+[0m→ [0mRead _config.yml 
+[0m→ [0mRead eco2ai/utils.py [90m[limit=120][0m
+[0m→ [0mRead eco2ai/tools 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mWeb Search "Eco2AI python library CO2 emission tracking sb-ai-lab PyPI" failed
+[91m[1mError: [0mWeb search cancelled
+[0m→ [0mRead LICENSE [90m[limit=15][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def summary|def set_params|def get_params|def calculate_price" [90min eco2ai/utils.py · 4 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead eco2ai/utils.py [90m[limit=80, offset=467][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

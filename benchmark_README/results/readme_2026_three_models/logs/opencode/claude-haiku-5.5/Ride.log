@@ -1,0 +1,89 @@
+I'll start by looking at the repository's structure and existing files.
+The package layout is clear. Next I'll read the main modules to see what they actually do.
+I have the core modules. Now I'll check the license, docs config, git history, and the example notebooks.
+The notebooks are JSON, so I'll read the main example to see the intended usage.
+The main example covers the intended workflow. Last, I'll check the git remote, the sample data, and the heuristic example notebook.
+I'll check how the benchmark notebook calls `PfaComparator`, so the README describes it correctly.
+I've read enough to write an accurate README. Writing it now.
+I'm removing one limitation bullet about the `Path` type aliases. It isn't a real usability issue, so it doesn't belong in the README.
+I wrote `README.md` in the repository root and did not create or change any other file.
+
+It covers what the code actually does:
+- **Purpose:** shortest-path search on OpenStreetMap road networks, including a cluster-based two-level search.
+- **Components:** Dijkstra, bidirectional Dijkstra, A*, `ExtractionPfa`, `MinClusterDistanceBuilder`, Louvain-based community resolvers, the centroid graph builder, clustering heuristics, the OSM loader, utilities, drawers, and the benchmark tools.
+- **Installation:** Python 3.10+, `poetry install` or `pip install -r requirements.txt`, and the network access that `get_graph` needs.
+- **Quick start, benchmarking, and visualization:** examples adapted from the notebooks in `examples/`.
+- **Repository layout:** a file tree with a one-line description of each module.
+- **Known limitations** and **license** (Apache 2.0).
+
+Things to know:
+- **Code bug noted:** `draw_graph_matplotlib` and `draw_graph_folium` iterate over `cms` with `for i, c in cms:`, which will likely fail for a list of clusters. I documented this rather than hiding it. I didn't run the code to confirm it.
+- **Not included:** the README doesn't cite the benchmark numbers beyond the saved notebook output, which it labels as one run. It also doesn't describe the images in `images/` beyond the logo, because I didn't inspect them.
+- **Missing docs:** `.readthedocs.yml` refers to `docs/source/conf.py`, which doesn't exist. The README says so.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.list_mcp_resources({}),\n]);\nreturn \"skip\";"} 
+[0m✱ [0mGlob "*" [90m49 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead ride_pfa/__init__.py 
+[0m→ [0mRead ride_pfa/path_finding/__init__.py 
+[0m→ [0mRead ride_pfa/clustering/__init__.py 
+[0m→ [0mRead ride_pfa/centroid_graph/__init__.py 
+[0m→ [0mRead ride_pfa/drawer/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ride_pfa/path_finding/pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/dijkstra_pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/heuristic_pfa.py 
+[0m→ [0mRead ride_pfa/exceptions.py 
+[0m→ [0mRead ride_pfa/heuristics.py 
+[0m→ [0mRead ride_pfa/path_finding/advenced_pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/excraction_pfa.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ride_pfa/graph_osm_loader.py 
+[0m→ [0mRead ride_pfa/clustering/clustering.py 
+[0m→ [0mRead ride_pfa/centroid_graph/centroids_graph_builder.py 
+[0m→ [0mRead ride_pfa/benchmark.py 
+[0m→ [0mRead ride_pfa/utils.py 
+[0m→ [0mRead ride_pfa/drawer/matplotlib_drawer.py 
+[0m→ [0mRead ride_pfa/drawer/folium_drawer.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"ignore\";"} 
+[0m→ [0mRead LICENSE [90m[limit=6][0m
+[0m→ [0mRead .readthedocs.yml 
+[0m→ [0mRead .gitignore [90m[limit=30][0m
+[0m✱ [0mGrep "^\s*(from|import|def |class )|^\s*ride_pfa|\.find_path|Builder\(|Resolver\(" [90min examples · 9 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead examples/examples.ipynb [90m[limit=300][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .git/config 
+[0m→ [0mRead data/random_points.csv [90m[limit=5][0m
+[0m✱ [0mGrep ""source": \[|^\s+"[^"]*(Ride|ride|pfa|Benchmark|benchmark|Pfa|cities|city|test|random)[^"]*\\n"|Comparator|Statistics|generate_points|get_graph\(|Builder\(|Resolver\(" [90min examples/benchmark_examples.ipynb · 30 matches[0m
+[0m✱ [0mGrep "Comparator|Statistics|generate_points|get_graph\(|pickle|data/" [90min examples/heuristic_example.ipynb · 0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead examples/benchmark_examples.ipynb [90m[offset=270, limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -188,9 +188,8 @@
+ ## Known limitations
+ 
+ - The `ride_pfa/drawer` functions `draw_graph_matplotlib` and `draw_graph_folium` iterate over the `cms` argument with `for i, c in cms:`. This does not unpack a list of clusters correctly, so passing a community list to these functions will likely fail. Calling them without `cms` works as intended.
+ - `get_graph` requires network access to OpenStreetMap and can take a long time on large cities. Use `cache_path` to store the downloaded graph locally. The cache directory must already exist.
+-- The `Path` and `PathMatrix` type aliases in `ride_pfa/path_finding/pfa.py` are defined with `NewType` and are used only as type hints.
+ - The repository does not include a test suite or a `docs/` directory, although `.readthedocs.yml` refers to `docs/source/conf.py`.
+ 
+ ## License
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5

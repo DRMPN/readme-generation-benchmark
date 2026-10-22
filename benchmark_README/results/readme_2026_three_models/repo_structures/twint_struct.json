@@ -1,0 +1,164 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "FUNDING.yml",
+        "type": "file"
+      },
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ISSUE_TEMPLATE.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ISSUE_TEMPLATE.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".travis.yml",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "automate.py",
+    "type": "file"
+  },
+  {
+    "name": "elasticsearch",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "test.py",
+    "type": "file"
+  },
+  {
+    "name": "twint",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__version__.py",
+        "type": "file"
+      },
+      {
+        "name": "cli.py",
+        "type": "file"
+      },
+      {
+        "name": "config.py",
+        "type": "file"
+      },
+      {
+        "name": "datelock.py",
+        "type": "file"
+      },
+      {
+        "name": "feed.py",
+        "type": "file"
+      },
+      {
+        "name": "format.py",
+        "type": "file"
+      },
+      {
+        "name": "get.py",
+        "type": "file"
+      },
+      {
+        "name": "output.py",
+        "type": "file"
+      },
+      {
+        "name": "run.py",
+        "type": "file"
+      },
+      {
+        "name": "storage",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "db.py",
+            "type": "file"
+          },
+          {
+            "name": "elasticsearch.py",
+            "type": "file"
+          },
+          {
+            "name": "panda.py",
+            "type": "file"
+          },
+          {
+            "name": "write.py",
+            "type": "file"
+          },
+          {
+            "name": "write_meta.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "token.py",
+        "type": "file"
+      },
+      {
+        "name": "tweet.py",
+        "type": "file"
+      },
+      {
+        "name": "url.py",
+        "type": "file"
+      },
+      {
+        "name": "user.py",
+        "type": "file"
+      },
+      {
+        "name": "verbose.py",
+        "type": "file"
+      }
+    ]
+  }
+]

@@ -1,0 +1,191 @@
+I'll start by looking at what's in the repository.
+The package has a controller, a VM-side trainer, and examples. Next I'll read the remaining core modules and the example scripts.
+Next, the Google Cloud example's master script, the local-demo notebook, and the MNIST example's trainer setup.
+The example files contain hardcoded API keys, which I won't copy into the README. Now I'll verify that the import paths the code relies on actually exist in the tree.
+I have enough of the core code. Before writing, I want the exact local-mode example from the notebook so the README's snippet matches it.
+I have what I need. Writing the README now, limited to behavior I verified in the source.
+The README is written. On a review pass I found a few sentences that overstate what the code does or contain filler, so I'm correcting those.
+One sentence about when local mode regenerates its schedule is still imprecise. The code doesn't reset its start time after each forecast, so I'll describe the condition plainly.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+It covers what the package does, its two modes (local and Google Cloud), installation, usage examples taken from the notebooks and scripts, the configuration parameters and their defaults, the 13 supported zones with their Google Cloud zone mappings, the repository layout, limitations, license (Apache 2.0), and authors.
+
+I read the source and examples but did not run the code or the notebooks, so the README describes the behavior as written in the code, not as observed. It makes no accuracy or savings claims beyond the one example output the notebook shows.
+
+Things you should know:
+
+- **Hardcoded API keys in the repo.** `examples/MNIST_google_cloud/master_machine_main.py` and `examples/ImageNet_google_cloud/master_machine_main.py` contain Electricity Maps API keys, along with project IDs and VM IPs. I left them out of the README. You should remove them from the examples and rotate those keys if they are live.
+- **Dependencies missing from `pyproject.toml`.** The code imports `requests` and `tqdm`, but they aren't declared. The README notes this.
+- **No tests for the package itself.** The only test files are in the vendored Google Compute Engine sample code. The README says so.
+- **Possible bug in `train_using_predictor`.** `last_prediction_time` is set once and never reset, so after the first `minimum_prediction_period` the schedule regenerates on every pass. I described the condition as written and did not mark it as a bug in the README.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.worktree_list(); return r;"} 
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"ok\";"} 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead examples/README.md 
+[0m→ [0mRead eco4cast/__init__.py 
+[0m→ [0mRead eco4cast/virtual_machine/__init__.py 
+[0m→ [0mRead eco4cast/master_machine/master_machine_controller.py 
+[0m→ [0mRead eco4cast/master_machine/compute/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eco4cast/master_machine/interval_predictor.py 
+[0m→ [0mRead eco4cast/master_machine/co2_model.py 
+[0m→ [0mRead eco4cast/master_machine/electricitymaps_api.py 
+[0m→ [0mRead eco4cast/master_machine/google_cloud_vm_moving.py 
+[0m→ [0mRead eco4cast/virtual_machine/utils.py 
+[0m→ [0mRead eco4cast/master_machine/utils.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eco4cast/master_machine/weather_data_utils.py 
+[0m→ [0mRead examples/eco4cast_demo/vm_main.py 
+[0m→ [0mRead eco4cast/virtual_machine/smart_scheduler_concept.py 
+[0m✗ [0mRead examples/eco4cast_demo/master_machine_main.py failed
+[91m[1mError: [0mFile not found: /tmp/eco4cast-j2sg62zg/examples/eco4cast_demo/master_machine_main.py
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "pip install|git clone|import eco4cast|from eco4cast|CO2Predictor|IntervalGenerator|Controller\(|train_using_predictor|electricitymaps|api_key|zone" [90min examples/eco4cast_local_demo/local_quick_start_guide.ipynb · 14 matches[0m
+[0m→ [0mRead examples/MNIST_google_cloud/master_machine_main.py 
+[0m✱ [0mGrep "pip install|git clone|from eco4cast|CO2Predictor\(|IntervalGenerator\(|Controller\(|Controller\b|credentials|ssh" [90min examples/eco4cast_demo/quick_start_guide.ipynb · 27 matches[0m
+[0m→ [0mRead examples/ImageNet_google_cloud/master_machine_main.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const out = await Promise.allSettled([\n tools.opencode.worktree_list(),\n]);\nreturn out.length;"} 
+[0m✱ [0mGrep "snippets" [90min eco4cast · 5 matches[0m
+[0m✱ [0mGlob "**/{test_*,*_test.py,*.yml,*.yaml,setup.*,requirements*.txt,tcn_pytorch.py,Dockerfile}" [90min . · 23 matches[0m
+[0m→ [0mRead eco4cast/master_machine/compute/client_library/README.md [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead eco4cast/master_machine/tcn_pytorch.py [90m[limit=15][0m
+[0m✱ [0mGlob "eco4cast/master_machine/compute/client_library/snippets/instances/{stop,delete,get}.py" [90min . · 3 matches[0m
+[0m✱ [0mGlob "eco4cast/master_machine/compute/client_library/snippets/instances/create_start_instance/*.py" [90min . · 9 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead examples/eco4cast_local_demo/local_quick_start_guide.ipynb [90m[offset=215, limit=180][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -30,9 +30,9 @@
+    The model outputs a 24-hour carbon-intensity forecast for each zone.
+ 
+ 2. **Interval selection.** `IntervalGenerator` uses the forecast to find hours in which a zone's moving-average intensity is below `max_emission_value`. It assigns each hour to a zone, preferring to stay in the current zone unless another zone is at least `co2_delta_to_move` lower. The output is a list of `(zone, [(start, end, mean_intensity), ...])` entries in UTC.
+ 
+-3. **Training.** `IntervalTrainer` (in `eco4cast/virtual_machine/smart_scheduler_concept.py`) is built on [Lightning Fabric](https://lightning.ai/docs/fabric/stable/). It schedules each training interval with APScheduler, stops training when the interval ends, and saves its state to `fabric_checkpoint.ckpt`. The next interval resumes from that state, including the sampler position and the current epoch and batch. It tracks emissions with [eco2ai](https://github.com/gkuprashvili/eco2ai) and writes them to `emission.csv`.
++3. **Training.** `IntervalTrainer` (in `eco4cast/virtual_machine/smart_scheduler_concept.py`) is built on [Lightning Fabric](https://lightning.ai/docs/fabric/stable/). It schedules each training interval with APScheduler, stops training when the interval ends, and saves its state to `fabric_checkpoint.ckpt`. The next interval resumes from that state, including the sampler position and the current epoch and batch. It tracks emissions with `eco2ai` and writes them to `emission.csv`.
+ 
+ 4. **Reporting.** When training finishes, eco4cast prints the total CO2 emissions in grams and compares them with the average forecast intensity across the zones.
+ 
+ ### Google Cloud mode
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -40,9 +40,9 @@
+ `Controller` (in `eco4cast/master_machine/master_machine_controller.py`) runs on a "master machine" and coordinates a training VM:
+ 
+ - It connects to the training VM over SSH with `paramiko` and starts `vm_main.py` with the interval times and CO2 values as arguments. Training resumes from saved state after each interval.
+ - When the next interval's zone differs from the VM's current zone, it calls `google_cloud_move_vm`. That function snapshots the boot disk, deletes the instance and disk, creates a new disk from the snapshot in the target zone, and creates a new instance with the same machine type. The controller then uses the new instance's external IP.
+-- It re-runs the forecast at `intervals_prediction_period` intervals (default-free; you pass it in seconds).
++- After an interval, if more than `intervals_prediction_period` seconds have passed since the last forecast, it re-runs the forecast and regenerates the schedule. The examples use 3600.
+ - At the end, it copies `emission.csv` from the VM over SFTP and prints the emissions summary. `stop_training()` stops the instance.
+ 
+ ### Local mode
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -45,9 +45,9 @@
+ - At the end, it copies `emission.csv` from the VM over SFTP and prints the emissions summary. `stop_training()` stops the instance.
+ 
+ ### Local mode
+ 
+-`IntervalTrainer.train_using_predictor(co2_predictor, interval_generator)` runs the same forecast and scheduling loop on your own machine. The training process runs in the local machine's process, and the trainer pauses during intervals outside the selected windows.
++`IntervalTrainer.train_using_predictor(co2_predictor, interval_generator)` forecasts, generates intervals, and trains during those intervals on your own machine. It re-generates intervals after the trainer has moved through the current list or once `minimum_prediction_period` seconds (default 3600) have passed. When the schedule is exhausted or empty, it stops and prints the emissions summary.
+ 
+ ## Requirements
+ 
+ From `pyproject.toml`:
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -129,9 +129,9 @@
+ The notebook's full example trains a small CNN on MNIST and uses `BestModelSavingCallback`, which saves `best_model.pth` when the validation metric improves, and `EarlyStoppingCallback`.
+ 
+ ### Google Cloud
+ 
+-The Google Cloud walkthrough is in `examples/eco4cast_demo/quick_start_guide.ipynb`. It covers creating a VM, creating a Google Cloud service account and credentials file, generating an SSH key, and getting an Electricity Maps key.
++The Google Cloud walkthrough is in `examples/eco4cast_demo/quick_start_guide.ipynb`. It covers creating a VM, downloading `application_default_credentials.json`, generating an SSH key, and getting an Electricity Maps key.
+ 
+ The master machine runs a script like this (based on `examples/MNIST_google_cloud/master_machine_main.py`):
+ 
+ ```python
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -270,9 +270,9 @@
+ 
+ ## Limitations
+ 
+ - **The forecast is a model prediction.** The repository does not include accuracy or savings benchmarks. The local notebook's output shows that the example run saved about 0 g of CO2 against the average. Results depend on the zone and the forecast.
+-- **Google Cloud moves are destructive to the instance.** A zone move deletes the instance and its boot disk, then recreates them from a snapshot in the target zone. The VM's external IP changes, and the controller uses the new IP. The disk is created as `pd-standard`.
++- **Google Cloud moves are destructive to the instance.** A zone move deletes the instance and its boot disk, then recreates them from a snapshot in the target zone. The controller then uses the new instance's external IP for SSH. The new disk is created as `pd-standard`.
+ - **The repository has no automated tests for the `eco4cast` package.** The only test files are in the vendored Compute Engine sample code under `eco4cast/master_machine/compute/client_library/snippets/tests/`.
+ - **The example scripts contain hardcoded Electricity Maps API keys and project and IP values** (`examples/*_google_cloud/*.py`). Replace them with your own values, keep them out of version control, and rotate any key that has been published.
+ - **The `IntervalTrainer` stops training between intervals by design.** The trainer checks the interval end time during batches and validation, so long batches can overrun by the length of one batch.
+ - **`pyproject.toml` does not declare `requests` or `tqdm`,** which the code imports.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -273,9 +273,9 @@
+ - **The forecast is a model prediction.** The repository does not include accuracy or savings benchmarks. The local notebook's output shows that the example run saved about 0 g of CO2 against the average. Results depend on the zone and the forecast.
+ - **Google Cloud moves are destructive to the instance.** A zone move deletes the instance and its boot disk, then recreates them from a snapshot in the target zone. The controller then uses the new instance's external IP for SSH. The new disk is created as `pd-standard`.
+ - **The repository has no automated tests for the `eco4cast` package.** The only test files are in the vendored Compute Engine sample code under `eco4cast/master_machine/compute/client_library/snippets/tests/`.
+ - **The example scripts contain hardcoded Electricity Maps API keys and project and IP values** (`examples/*_google_cloud/*.py`). Replace them with your own values, keep them out of version control, and rotate any key that has been published.
+-- **The `IntervalTrainer` stops training between intervals by design.** The trainer checks the interval end time during batches and validation, so long batches can overrun by the length of one batch.
++- **Training can run past an interval's end.** The trainer checks the end time between batches, so a batch that started before the end finishes before training stops.
+ - **`pyproject.toml` does not declare `requests` or `tqdm`,** which the code imports.
+ 
+ ## License
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -45,9 +45,9 @@
+ - At the end, it copies `emission.csv` from the VM over SFTP and prints the emissions summary. `stop_training()` stops the instance.
+ 
+ ### Local mode
+ 
+-`IntervalTrainer.train_using_predictor(co2_predictor, interval_generator)` forecasts, generates intervals, and trains during those intervals on your own machine. It re-generates intervals after the trainer has moved through the current list or once `minimum_prediction_period` seconds (default 3600) have passed. When the schedule is exhausted or empty, it stops and prints the emissions summary.
++`IntervalTrainer.train_using_predictor(co2_predictor, interval_generator)` forecasts, generates intervals, and trains during those intervals on your own machine. It regenerates the schedule when the current interval list is used up, or when `minimum_prediction_period` seconds (default 3600) have passed since the first forecast. If no intervals are found, it stops. Otherwise it prints the emissions summary when training ends.
+ 
+ ## Requirements
+ 
+ From `pyproject.toml`:
+
+[0m→ [0mRead README.md [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5

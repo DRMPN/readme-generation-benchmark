@@ -1,0 +1,32 @@
+Created `README.md` with setup and usage instructions for `demo.py`, notes about API-key handling, links to the repository’s screenshots, and the license. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m13 matches[0m
+[0m✱ [0mGrep "README|name|description|scripts|dependencies" [90m0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead demo.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead images [90m[limit=200][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m16 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .gitattributes 
+[0m→ [0mRead .github/ISSUE_TEMPLATE/feature_request.md 
+[0m→ [0mRead .github/ISSUE_TEMPLATE/bug_report.md 
+[0m→ [0mRead images/zotero7-gpt1.png 
+[0m→ [0mRead images/chatbox.png 
+[0m→ [0mRead images/zotero-gpt.png 
+[0m→ [0mRead images/sidebar.png 
+[0m→ [0mRead images/zotero-pdf-translate.png 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead images/gomoon.png 
+[0m→ [0mRead images/jet1.png 
+[0m→ [0mRead images/botgem.png 
+[0m→ [0mRead images/zotero7-gpt2.png 
+[0m→ [0mRead images/logo.png 
+[0m→ [0mRead images/jet2.png 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

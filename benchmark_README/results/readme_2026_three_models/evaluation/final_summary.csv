@@ -1,0 +1,17 @@
+tool,model_label,mean_score,evaluated,rows
+.3-flash/flask_README.md,,,0,0
+baseline,claude-haiku-5.5,0.7416666666666667,48,48
+baseline,glm-5.3-flash,0.7270833333333333,48,48
+baseline,gpt-6-luna,0.7583333333333333,48,48
+larch,claude-haiku-5.5,0.5458333333333333,48,48
+larch,glm-5.3-flash,0.5083333333333333,48,48
+larch,gpt-6-luna,0.5812499999999999,48,48
+opencode,claude-haiku-5.5,0.78125,48,48
+opencode,glm-5.3-flash,0.7374999999999999,48,48
+opencode,gpt-6-luna,0.7666666666666667,48,48
+osa,claude-haiku-5.5,0.5583333333333333,48,48
+osa,glm-5.3-flash,0.63125,48,48
+osa,gpt-6-luna,0.45416666666666666,48,48
+readmeready,claude-haiku-5.5,0.275,40,40
+readmeready,glm-5.3-flash,0.4421052631578948,38,38
+readmeready,gpt-6-luna,0.3725,40,40

@@ -1,0 +1,85 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 19569,
+    "tree_files": 11,
+    "tracked_files": 11,
+    "selected": [
+      {
+        "path": "pyproject.toml",
+        "tokens": 64,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "checkpoints/README.md",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE.txt",
+        "tokens": 2270,
+        "truncated": false
+      },
+      {
+        "path": "checkpoint.py",
+        "tokens": 1734,
+        "truncated": false
+      },
+      {
+        "path": "model.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "run.py",
+        "tokens": 528,
+        "truncated": false
+      },
+      {
+        "path": "runners.py",
+        "tokens": 4732,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "tokenizer.model"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 19786,
+    "completion_tokens": 1555,
+    "total_tokens": 21341,
+    "cost": 0.003250675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 19783,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003250675,
+      "upstream_inference_prompt_cost": 0.002473175,
+      "upstream_inference_completions_cost": 0.0007775
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 413,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606528-9AzwTdYkXpmqeJeFgh08"
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "implementations",
+    "type": "dir",
+    "children": [
+      {
+        "name": "aae",
+        "type": "dir",
+        "children": [
+          {
+            "name": "aae.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "acgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "acgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "began",
+        "type": "dir",
+        "children": [
+          {
+            "name": "began.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "bgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "bicyclegan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bicyclegan.py",
+            "type": "file"
+          },
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ccgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ccgan.py",
+            "type": "file"
+          },
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cluster_gan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "clustergan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cogan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cogan.py",
+            "type": "file"
+          },
+          {
+            "name": "mnistm.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "context_encoder",
+        "type": "dir",
+        "children": [
+          {
+            "name": "context_encoder.py",
+            "type": "file"
+          },
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cyclegan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cyclegan.py",
+            "type": "file"
+          },
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dcgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dcgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "discogan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "discogan.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dragan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dragan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dualgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "dualgan.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ebgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ebgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "esrgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "esrgan.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "test_on_image.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "gan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "gan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "infogan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "infogan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "lsgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "lsgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "munit",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "munit.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pix2pix",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "pix2pix.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pixelda",
+        "type": "dir",
+        "children": [
+          {
+            "name": "mnistm.py",
+            "type": "file"
+          },
+          {
+            "name": "pixelda.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "relativistic_gan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "relativistic_gan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "sgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "sgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "softmax_gan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "softmax_gan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "srgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "srgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "stargan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "stargan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "unit",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "unit.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "wgan",
+        "type": "dir",
+        "children": [
+          {
+            "name": "wgan.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "wgan_div",
+        "type": "dir",
+        "children": [
+          {
+            "name": "wgan_div.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "wgan_gp",
+        "type": "dir",
+        "children": [
+          {
+            "name": "wgan_gp.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  }
+]

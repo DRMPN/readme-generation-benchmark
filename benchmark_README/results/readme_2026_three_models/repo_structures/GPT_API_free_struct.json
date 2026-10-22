@@ -1,0 +1,34 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "demo.py",
+    "type": "file"
+  }
+]

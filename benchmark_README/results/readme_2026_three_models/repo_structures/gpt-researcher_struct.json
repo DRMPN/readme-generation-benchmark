@@ -1,0 +1,2532 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".env.example",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "docker-build.yml",
+            "type": "file"
+          },
+          {
+            "name": "docker-push.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".python-version",
+    "type": "file"
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile.fullstack",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Procfile",
+    "type": "file"
+  },
+  {
+    "name": "backend",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "chat",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "chat.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "draft.py",
+            "type": "file"
+          },
+          {
+            "name": "research.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "report_type",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "basic_report",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "basic_report.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "deep_research",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "example.py",
+                "type": "file"
+              },
+              {
+                "name": "main.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "detailed_report",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "detailed_report.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "server",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "logging_config.py",
+            "type": "file"
+          },
+          {
+            "name": "server.py",
+            "type": "file"
+          },
+          {
+            "name": "server_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "websocket_manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "citation.cff",
+    "type": "file"
+  },
+  {
+    "name": "cli.py",
+    "type": "file"
+  },
+  {
+    "name": "docker-compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CNAME",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "babel.config.js",
+        "type": "file"
+      },
+      {
+        "name": "blog",
+        "type": "dir",
+        "children": [
+          {
+            "name": "2023-09-22-gpt-researcher",
+            "type": "dir",
+            "children": [
+              {
+                "name": "architecture.png",
+                "type": "file"
+              },
+              {
+                "name": "index.md",
+                "type": "file"
+              },
+              {
+                "name": "planner.jpeg",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2023-11-12-openai-assistant",
+            "type": "dir",
+            "children": [
+              {
+                "name": "diagram-1.png",
+                "type": "file"
+              },
+              {
+                "name": "diagram-assistant.jpeg",
+                "type": "file"
+              },
+              {
+                "name": "index.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024-05-19-gptr-langgraph",
+            "type": "dir",
+            "children": [
+              {
+                "name": "architecture.jpeg",
+                "type": "file"
+              },
+              {
+                "name": "blog-langgraph.jpeg",
+                "type": "file"
+              },
+              {
+                "name": "index.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2024-09-7-hybrid-research",
+            "type": "dir",
+            "children": [
+              {
+                "name": "gptr-hybrid.png",
+                "type": "file"
+              },
+              {
+                "name": "index.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025-02-26-deep-research",
+            "type": "dir",
+            "children": [
+              {
+                "name": "index.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "2025-03-10-stepping-into-the-story",
+            "type": "dir",
+            "children": [
+              {
+                "name": "index.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "authors.yml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "discord-bot",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          },
+          {
+            "name": "Dockerfile.dev",
+            "type": "file"
+          },
+          {
+            "name": "commands",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ask.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "deploy-commands.js",
+            "type": "file"
+          },
+          {
+            "name": "gptr-webhook.js",
+            "type": "file"
+          },
+          {
+            "name": "index.js",
+            "type": "file"
+          },
+          {
+            "name": "package.json",
+            "type": "file"
+          },
+          {
+            "name": "server.js",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "children": [
+          {
+            "name": "contribute.md",
+            "type": "file"
+          },
+          {
+            "name": "examples",
+            "type": "dir",
+            "children": [
+              {
+                "name": "custom_prompt.py",
+                "type": "file"
+              },
+              {
+                "name": "detailed_report.md",
+                "type": "file"
+              },
+              {
+                "name": "examples.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "examples.md",
+                "type": "file"
+              },
+              {
+                "name": "hybrid_research.md",
+                "type": "file"
+              },
+              {
+                "name": "pip-run.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "sample_report.py",
+                "type": "file"
+              },
+              {
+                "name": "sample_sources_only.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "faq.md",
+            "type": "file"
+          },
+          {
+            "name": "gpt-researcher",
+            "type": "dir",
+            "children": [
+              {
+                "name": "context",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "azure-storage.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "data-ingestion.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "filtering-by-domain.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "img",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "gptr-hybrid.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "nextjs-filter-by-domain.JPG",
+                        "type": "file"
+                      },
+                      {
+                        "name": "vanilla-filter-by-domains.png",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "local-docs.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tailored-research.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vector-stores.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "frontend",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "discord-bot.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "embed-script.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "img",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "bot-permissions.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "oath2-url-generator.png",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "introduction.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "nextjs-frontend.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "react-package.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vanilla-js-frontend.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "visualizing-websockets.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "getting-started",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "cli.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "getting-started-with-docker.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "getting-started.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "how-to-choose.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "introduction.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "linux-deployment.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gptr",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "automated-tests.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "deep_research.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "example.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "npm-package.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "pip-package.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "querying-the-backend.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "scraping.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "troubleshooting.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "handling-logs",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "all-about-logs.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "langsmith-logs.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "langsmith.png",
+                    "type": "file"
+                  },
+                  {
+                    "name": "simple-logs-example.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "llms",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "llms.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "running-with-azure.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "running-with-ollama.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "supported-llms.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "testing-your-llm.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "mcp-server",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "advanced-usage.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "claude-integration.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "getting-started.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "multi_agents",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "langgraph.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "retrievers",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "mcp-configs.mdx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "search-engines",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "search-engines.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test-your-retriever.md",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "reference",
+            "type": "dir",
+            "children": [
+              {
+                "name": "config",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "config.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "singleton.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "processing",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "html.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "text.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "sidebar.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "roadmap.md",
+            "type": "file"
+          },
+          {
+            "name": "welcome.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "docusaurus.config.js",
+        "type": "file"
+      },
+      {
+        "name": "npm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Readme.md",
+            "type": "file"
+          },
+          {
+            "name": "index.js",
+            "type": "file"
+          },
+          {
+            "name": "package.json",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "package.json",
+        "type": "file"
+      },
+      {
+        "name": "pydoc-markdown.yml",
+        "type": "file"
+      },
+      {
+        "name": "sidebars.js",
+        "type": "file"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "children": [
+          {
+            "name": "components",
+            "type": "dir",
+            "children": [
+              {
+                "name": "HomepageFeatures.js",
+                "type": "file"
+              },
+              {
+                "name": "HomepageFeatures.module.css",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "css",
+            "type": "dir",
+            "children": [
+              {
+                "name": "custom.css",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pages",
+            "type": "dir",
+            "children": [
+              {
+                "name": "index.js",
+                "type": "file"
+              },
+              {
+                "name": "index.module.css",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".nojekyll",
+            "type": "file"
+          },
+          {
+            "name": "CNAME",
+            "type": "file"
+          },
+          {
+            "name": "img",
+            "type": "dir",
+            "children": [
+              {
+                "name": "architecture.png",
+                "type": "file"
+              },
+              {
+                "name": "banner1.jpg",
+                "type": "file"
+              },
+              {
+                "name": "examples.png",
+                "type": "file"
+              },
+              {
+                "name": "gptr-logo.png",
+                "type": "file"
+              },
+              {
+                "name": "leaderboard.png",
+                "type": "file"
+              },
+              {
+                "name": "multi-agent.png",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "evals",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "simple_evals",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".gitignore",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "logs",
+            "type": "dir",
+            "children": [
+              {
+                "name": ".gitkeep",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "SimpleQA Eval 100 Problems 2-22-25.txt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "problems",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Simple QA Test Set.csv",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "run_eval.py",
+            "type": "file"
+          },
+          {
+            "name": "simpleqa_eval.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "frontend",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "index.html",
+        "type": "file"
+      },
+      {
+        "name": "nextjs",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".babelrc.build.json",
+            "type": "file"
+          },
+          {
+            "name": ".dockerignore",
+            "type": "file"
+          },
+          {
+            "name": ".eslintrc.json",
+            "type": "file"
+          },
+          {
+            "name": ".example.env",
+            "type": "file"
+          },
+          {
+            "name": ".gitignore",
+            "type": "file"
+          },
+          {
+            "name": ".prettierrc",
+            "type": "file"
+          },
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          },
+          {
+            "name": "Dockerfile.dev",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "actions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "apiActions.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "app",
+            "type": "dir",
+            "children": [
+              {
+                "name": "globals.css",
+                "type": "file"
+              },
+              {
+                "name": "layout.tsx",
+                "type": "file"
+              },
+              {
+                "name": "page.tsx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "components",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Footer.tsx",
+                "type": "file"
+              },
+              {
+                "name": "Header.tsx",
+                "type": "file"
+              },
+              {
+                "name": "Hero.tsx",
+                "type": "file"
+              },
+              {
+                "name": "HumanFeedback.tsx",
+                "type": "file"
+              },
+              {
+                "name": "Images",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ImageModal.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ImagesAlbum.tsx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "Langgraph",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Langgraph.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "LoadingDots.tsx",
+                "type": "file"
+              },
+              {
+                "name": "ResearchBlocks",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "AccessReport.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Answer.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ImageSection.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "LogsSection.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Question.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Sources.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "elements",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "InputArea.tsx",
+                        "type": "file"
+                      },
+                      {
+                        "name": "LogMessage.tsx",
+                        "type": "file"
+                      },
+                      {
+                        "name": "SourceCard.tsx",
+                        "type": "file"
+                      },
+                      {
+                        "name": "SubQuestions.tsx",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "ResearchResults.tsx",
+                "type": "file"
+              },
+              {
+                "name": "ResearchSidebar.tsx",
+                "type": "file"
+              },
+              {
+                "name": "Settings",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ChatBox.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "FileUpload.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "MCPSelector.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Modal.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Settings.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ToneSelector.tsx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "SimilarTopics.tsx",
+                "type": "file"
+              },
+              {
+                "name": "Task",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Accordion.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "AgentLogs.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Report.tsx",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ResearchForm.tsx",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "TypeAnimation.tsx",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "task.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "helpers",
+            "type": "dir",
+            "children": [
+              {
+                "name": "findDifferences.ts",
+                "type": "file"
+              },
+              {
+                "name": "getHost.ts",
+                "type": "file"
+              },
+              {
+                "name": "markdownHelper.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "hooks",
+            "type": "dir",
+            "children": [
+              {
+                "name": "useAnalytics.ts",
+                "type": "file"
+              },
+              {
+                "name": "useResearchHistory.ts",
+                "type": "file"
+              },
+              {
+                "name": "useWebSocket.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "next.config.mjs",
+            "type": "file"
+          },
+          {
+            "name": "nginx",
+            "type": "dir",
+            "children": [
+              {
+                "name": "default.conf",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "package.json",
+            "type": "file"
+          },
+          {
+            "name": "package.lib.json",
+            "type": "file"
+          },
+          {
+            "name": "postcss.config.mjs",
+            "type": "file"
+          },
+          {
+            "name": "public",
+            "type": "dir",
+            "children": [
+              {
+                "name": "embed.js",
+                "type": "file"
+              },
+              {
+                "name": "favicon.ico",
+                "type": "file"
+              },
+              {
+                "name": "img",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "F.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Info.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "W.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "agents",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "academicResearchAgentAvatar.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "businessAnalystAgentAvatar.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "computerSecurityanalystAvatar.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "defaultAgentAvatar.JPG",
+                        "type": "file"
+                      },
+                      {
+                        "name": "financeAgentAvatar.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "mathAgentAvatar.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "travelAgentAvatar.png",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "arrow-circle-up-right.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "arrow-narrow-right.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "browser.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "chat-check.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "chat.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "copy-white.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "copy.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dinosaur.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "discord.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "docker-blue.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "docker.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dunk.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "github-blue.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "github-footer.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "github.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "globe.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "gptr-logo.png",
+                    "type": "file"
+                  },
+                  {
+                    "name": "hiker.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "icon _atom_.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "icon _dumbell_.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "icon _leaf_.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "image.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "indeed.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "link.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "message-question-circle.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "news.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "search.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "share.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "similarTopics.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "sources.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "stock.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "stock2.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "thinking.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "white-books.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "x.svg",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "next.svg",
+                "type": "file"
+              },
+              {
+                "name": "vercel.svg",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "rollup.config.js",
+            "type": "file"
+          },
+          {
+            "name": "src",
+            "type": "dir",
+            "children": [
+              {
+                "name": "GPTResearcher.tsx",
+                "type": "file"
+              },
+              {
+                "name": "index.css",
+                "type": "file"
+              },
+              {
+                "name": "index.d.ts",
+                "type": "file"
+              },
+              {
+                "name": "index.ts",
+                "type": "file"
+              },
+              {
+                "name": "utils",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "imageTransformPlugin.js",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "styles",
+            "type": "dir",
+            "children": [
+              {
+                "name": "markdown.css",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "tailwind.config.ts",
+            "type": "file"
+          },
+          {
+            "name": "tsconfig.json",
+            "type": "file"
+          },
+          {
+            "name": "tsconfig.lib.json",
+            "type": "file"
+          },
+          {
+            "name": "types",
+            "type": "dir",
+            "children": [
+              {
+                "name": "data.ts",
+                "type": "file"
+              },
+              {
+                "name": "react-ga4.d.ts",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "consolidateBlocks.ts",
+                "type": "file"
+              },
+              {
+                "name": "dataProcessing.ts",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pdf_styles.css",
+        "type": "file"
+      },
+      {
+        "name": "scripts.js",
+        "type": "file"
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "academicResearchAgentAvatar.png",
+            "type": "file"
+          },
+          {
+            "name": "businessAnalystAgentAvatar.png",
+            "type": "file"
+          },
+          {
+            "name": "computerSecurityanalystAvatar.png",
+            "type": "file"
+          },
+          {
+            "name": "defaultAgentAvatar.JPG",
+            "type": "file"
+          },
+          {
+            "name": "favicon.ico",
+            "type": "file"
+          },
+          {
+            "name": "financeAgentAvatar.png",
+            "type": "file"
+          },
+          {
+            "name": "gptr-logo.png",
+            "type": "file"
+          },
+          {
+            "name": "mathAgentAvatar.png",
+            "type": "file"
+          },
+          {
+            "name": "travelAgentAvatar.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "styles.css",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "gpt_researcher",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "actions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "agent_creator.py",
+            "type": "file"
+          },
+          {
+            "name": "markdown_processing.py",
+            "type": "file"
+          },
+          {
+            "name": "query_processing.py",
+            "type": "file"
+          },
+          {
+            "name": "report_generation.py",
+            "type": "file"
+          },
+          {
+            "name": "retriever.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          },
+          {
+            "name": "web_scraping.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "agent.py",
+        "type": "file"
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config.py",
+            "type": "file"
+          },
+          {
+            "name": "variables",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "default.py",
+                "type": "file"
+              },
+              {
+                "name": "test_local.json",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "context",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "compression.py",
+            "type": "file"
+          },
+          {
+            "name": "retriever.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "document",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "azure_document_loader.py",
+            "type": "file"
+          },
+          {
+            "name": "document.py",
+            "type": "file"
+          },
+          {
+            "name": "langchain_document.py",
+            "type": "file"
+          },
+          {
+            "name": "online_document.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm_provider",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "generic",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "mcp",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "client.py",
+            "type": "file"
+          },
+          {
+            "name": "research.py",
+            "type": "file"
+          },
+          {
+            "name": "streaming.py",
+            "type": "file"
+          },
+          {
+            "name": "tool_selector.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "embeddings.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "prompts.py",
+        "type": "file"
+      },
+      {
+        "name": "retrievers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "arxiv",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "arxiv.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "bing",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "bing.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "custom",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "custom.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "duckduckgo",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "duckduckgo.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "exa",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "exa.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "google",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "google.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "mcp",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "retriever.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pubmed_central",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pubmed_central.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "searchapi",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "searchapi.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "searx",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "searx.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "semantic_scholar",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "semantic_scholar.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "serpapi",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "serpapi.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "serper",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "serper.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "tavily",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "tavily_search.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "scraper",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "arxiv",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "arxiv.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "beautiful_soup",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "beautiful_soup.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "browser",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "browser.py",
+                "type": "file"
+              },
+              {
+                "name": "js",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "overlay.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "nodriver_scraper.py",
+                "type": "file"
+              },
+              {
+                "name": "processing",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "html.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "scrape_skills.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "firecrawl",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "firecrawl.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pymupdf",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pymupdf.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "scraper.py",
+            "type": "file"
+          },
+          {
+            "name": "tavily_extract",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "tavily_extract.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          },
+          {
+            "name": "web_base_loader",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "web_base_loader.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "skills",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "browser.py",
+            "type": "file"
+          },
+          {
+            "name": "context_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "curator.py",
+            "type": "file"
+          },
+          {
+            "name": "deep_research.py",
+            "type": "file"
+          },
+          {
+            "name": "researcher.py",
+            "type": "file"
+          },
+          {
+            "name": "writer.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "costs.py",
+            "type": "file"
+          },
+          {
+            "name": "enum.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "logger.py",
+            "type": "file"
+          },
+          {
+            "name": "logging_config.py",
+            "type": "file"
+          },
+          {
+            "name": "validators.py",
+            "type": "file"
+          },
+          {
+            "name": "workers.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "vector_store",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "vector_store.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "json_schema_generator.py",
+    "type": "file"
+  },
+  {
+    "name": "langgraph.json",
+    "type": "file"
+  },
+  {
+    "name": "main.py",
+    "type": "file"
+  },
+  {
+    "name": "mcp-server",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "multi_agents",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "agent.py",
+        "type": "file"
+      },
+      {
+        "name": "agents",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "editor.py",
+            "type": "file"
+          },
+          {
+            "name": "human.py",
+            "type": "file"
+          },
+          {
+            "name": "orchestrator.py",
+            "type": "file"
+          },
+          {
+            "name": "publisher.py",
+            "type": "file"
+          },
+          {
+            "name": "researcher.py",
+            "type": "file"
+          },
+          {
+            "name": "reviewer.py",
+            "type": "file"
+          },
+          {
+            "name": "reviser.py",
+            "type": "file"
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "file_formats.py",
+                "type": "file"
+              },
+              {
+                "name": "llms.py",
+                "type": "file"
+              },
+              {
+                "name": "pdf_styles.css",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "views.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "writer.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "langgraph.json",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "draft.py",
+            "type": "file"
+          },
+          {
+            "name": "research.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "package.json",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "task.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "poetry.toml",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements_minimal.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "children": [
+          {
+            "name": "doc.pdf",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "documents-report-source.py",
+        "type": "file"
+      },
+      {
+        "name": "gptr-logs-handler.py",
+        "type": "file"
+      },
+      {
+        "name": "report-types.py",
+        "type": "file"
+      },
+      {
+        "name": "research_test.py",
+        "type": "file"
+      },
+      {
+        "name": "test-loaders.py",
+        "type": "file"
+      },
+      {
+        "name": "test-openai-llm.py",
+        "type": "file"
+      },
+      {
+        "name": "test-your-embeddings.py",
+        "type": "file"
+      },
+      {
+        "name": "test-your-llm.py",
+        "type": "file"
+      },
+      {
+        "name": "test-your-retriever.py",
+        "type": "file"
+      },
+      {
+        "name": "test_logging.py",
+        "type": "file"
+      },
+      {
+        "name": "test_logging_output.py",
+        "type": "file"
+      },
+      {
+        "name": "test_logs.py",
+        "type": "file"
+      },
+      {
+        "name": "test_mcp.py",
+        "type": "file"
+      },
+      {
+        "name": "test_researcher_logging.py",
+        "type": "file"
+      },
+      {
+        "name": "vector-store.py",
+        "type": "file"
+      }
+    ]
+  }
+]

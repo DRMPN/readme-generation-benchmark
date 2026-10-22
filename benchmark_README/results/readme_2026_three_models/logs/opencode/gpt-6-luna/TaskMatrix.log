@@ -1,0 +1,43 @@
+I found two separate runnable components in the repository: the Visual ChatGPT Gradio app at the root and a Docker-based Low-code LLM demo under `LowCodeLLM/`. The visual app also imports GroundingDINO and Segment Anything modules that aren’t included in this checkout, so I’ll document that setup limitation rather than imply the listed requirements alone provide a turnkey install.
+Created `README.md` in the repository root. It documents the two demos, their setup and launch instructions, Visual ChatGPT’s external module limitation, related papers, and licensing notes. No tests were run; only documentation was added.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m33 matches[0m
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead TaskMatrix.AI/README.md 
+[0m→ [0mRead LowCodeLLM/README.md 
+[0m→ [0mRead visual_chatgpt.py 
+[0m→ [0mRead LICENSE.txt 
+[0m→ [0mRead LowCodeLLM/Dockerfile 
+[0m→ [0mRead LowCodeLLM/config.template 
+[0m→ [0mRead LowCodeLLM/src/requirements.txt 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "if __name__|ArgumentParser|add_argument|gr\.Blocks|launch\(" [90min visual_chatgpt.py · 5 matches[0m
+[0m✱ [0mGrep "GroundingDINO|checkpoint|tools =|Tool\(|device =|def main" [90min visual_chatgpt.py · 24 matches[0m
+[0m→ [0mRead LowCodeLLM/src/app.py 
+[0m→ [0mRead LowCodeLLM/src/lowCodeLLM.py 
+[0m→ [0mRead LowCodeLLM/src/openAIWrapper.py 
+[0m→ [0mRead LowCodeLLM/src/planningLLM.py 
+[0m→ [0mRead LowCodeLLM/src/executingLLM.py 
+[0m✱ [0mGlob ".*" [90m2 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead visual_chatgpt.py [90m[offset=1000, limit=180][0m
+[0m→ [0mRead visual_chatgpt.py [90m[offset=1140, limit=450][0m
+[0m→ [0mRead SECURITY.md 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead CODE_OF_CONDUCT.md 
+[0m→ [0mRead LowCodeLLM/src/index.html [90m[offset=1, limit=100][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead LowCodeLLM/src/test/test_get_workflow.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

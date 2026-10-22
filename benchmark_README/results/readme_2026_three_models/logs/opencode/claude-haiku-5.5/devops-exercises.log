@@ -1,0 +1,139 @@
+I'll start by looking at what's in the repository.
+This is a large exercise collection with no root README yet. I'll read the key top-level files and scripts.
+The scripts reference a root `README.md` that doesn't exist yet. Next I'll check hidden files (CI config), the unit tests, and a sample of the topic content.
+The CI workflow, FAQ, credits, and git remote will show the project's name and how it's tested.
+Next I'll confirm the license version, the git remote, and the question/exercise counts so the README's numbers are accurate.
+Now I'll get the question count, the exercise count, and the list of topic directories.
+I have enough of the structure now. Next I'll check the hands-on projects (the Flask CI apps, the Python utilities, and the Pulumi/Terraform examples) and the topic index headers so the README describes them accurately.
+The repo has a few more self-contained projects. I'll read the AWS S3 event-trigger sample and the Azure/SRE index headers before writing.
+I have enough of the structure. Before writing, I'll confirm the exact Creative Commons license name so the README states it correctly.
+I have what I need. Writing the README now, limited to what the files show.
+The README is written. Before finishing, I'll correct a few statements I wrote from memory rather than from the files: the Terraform subnet contents, the script invocation details, and the Jenkins exercise description.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+It starts with `# DevOps Exercises` and covers:
+
+- **Purpose and layout:** the learning focus from `faq.md`, and a tree of the main directories.
+- **Topics:** a table linking each subject area to its README or file.
+- **Exercises and hands-on projects:** the exercise groups, the two Flask CI apps, the Kubernetes deploy example, and the subnet and S3 event-trigger code.
+- **Certification guides, scripts, tests and CI, contributing, and license.** Each section is based on the files I read.
+
+Things to know:
+
+- **`random_question.py` won't work as-is.** It reads question blocks from the root `README.md`, and the new README has none (I didn't add questions). Questions live in the `topics/*/README.md` files.
+- **`update_question_number.py` needs a `:bar_chart:` line** in `README.md`, which the new file doesn't contain. It also has to be run as a module (`python -m scripts.update_question_number`) to import correctly.
+- **I didn't run the tests or `run_ci.sh`.** The README describes them from the code. One unit test file (`syntax_checker_unittest.py`) is marked work-in-progress, and `syntax_lint.py` reads its file argument at import time, so that test may not run cleanly under `unittest`.
+- **No project URL is given.** The git remote points to a local path, so I left out a repository link. The linter's docstring names `bregman-arie/devops-interview-questions` on GitHub; I didn't use that because the repo doesn't confirm it.
+- **The license is described without a version.** `LICENSE` is a Creative Commons text with noncommercial terms, but it doesn't name the version, so the README points readers to the file.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.worktree_list().catch(e => String(e));\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m415 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead scripts/run_ci.sh 
+[0m→ [0mRead scripts/count_questions.sh 
+[0m→ [0mRead scripts/random_question.py 
+[0m→ [0mRead tests/syntax_lint.py 
+[0m→ [0mRead scripts/update_question_number.py 
+[0m→ [0mRead scripts/question_utils.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tests/syntax_checker_unittest.py 
+[0m→ [0mRead tests/scripts_question_utils_unittest.py 
+[0m✱ [0mGlob ".*/**" [90m1 match[0m
+[0m→ [0mRead faq.md [90m[limit=40][0m
+[0m→ [0mRead topics/flask_container_ci/README.md 
+[0m→ [0mRead topics/aws/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead credits.md 
+[0m→ [0mRead faq.md [90m[offset=40][0m
+[0m→ [0mRead .github/workflows/ci_workflow.yml 
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n fetch(\"https://example.invalid\").catch(()=>null)\n]);\nreturn \"skip\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const cp = await import(\"node:child_process\").catch(()=>null);\nreturn cp ? \"has\" : \"none\";"} 
+[0m✱ [0mGrep "Attribution-|Creative Commons Attribution|Version 4|4\.0" [90min LICENSE · 0 matches[0m
+[0m→ [0mRead prepare_for_interview.md [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .git/config 
+[0m✱ [0mGlob "topics/*/" [90m0 matches[0m
+[0m✱ [0mGrep "<summary>|\[Exercise\]" [90min topics · 2000 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead topics/flask_container_ci2/README.md 
+[0m→ [0mRead topics/flask_container_ci/requirements.txt 
+[0m→ [0mRead topics/kubernetes/README.md [90m[limit=80][0m
+[0m→ [0mRead coding/python/binary_search.py 
+[0m→ [0mRead topics/cicd/solutions/deploy_to_kubernetes/README.md 
+[0m→ [0mRead topics/aws/exercises/subnets/pulumi/__main__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead topics/python/README.md failed
+[91m[1mError: [0mFile not found: /tmp/devops-exercises-6ghspzth/topics/python/README.md
+[0m→ [0mRead scripts/aws s3 event triggering/README.md 
+[0m→ [0mRead topics/azure/README.md [90m[limit=15][0m
+[0m→ [0mRead topics/sre/README.md [90m[limit=15][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "Attribution|NonCommercial|ShareAlike|Noncommercial" [90min LICENSE · 3 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -105,9 +105,9 @@
+ 
+ - **Flask container CI** ([topics/flask_container_ci](topics/flask_container_ci/README.md)): a Flask app with `tests.py` that you are asked to fix, containerize, and add CI for. The app exposes `/users` and `/users/<username>` endpoints. The README describes the expected behavior.
+ - **Flask container CI, matrix app** ([topics/flask_container_ci2](topics/flask_container_ci2/README.md)): a second Flask app that serves matrix data from a string such as `123n456n789` through row and column endpoints. It has the same containerize-and-CI brief.
+ - **Deploy to Kubernetes** ([topics/cicd/solutions/deploy_to_kubernetes](topics/cicd/solutions/deploy_to_kubernetes/README.md)): a worked example that installs Jenkins, deploys a Kubernetes cluster, and uses an Ansible playbook and Jenkinsfile to deploy a sample web page.
+-- **Subnets with Pulumi and Terraform** ([topics/aws/exercises/subnets](topics/aws/exercises/subnets/)): infrastructure code that creates three subnets in a VPC.
++- **Subnets** ([topics/aws/exercises/subnets](topics/aws/exercises/subnets/)): infrastructure-as-code for the subnets exercise. The Pulumi program creates three subnets (`10.0.0.0/24`, `10.0.1.0/24`, `10.0.2.0/24`) in a VPC; a Terraform version is also included.
+ - **AWS S3 event triggering** ([scripts/aws s3 event triggering](scripts/aws%20s3%20event%20triggering/)): a Lambda function (`s3-lambda/s3-lambda.py`) and a shell script (`aws_s3_event_trigger.sh`) for an S3 event trigger.
+ - **Coding examples** ([coding/python](coding/python/)): `binary_search.py` and `merge_sort.py`.
+ 
+ ## Certification guides
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -123,13 +123,13 @@
+ - Certified Kubernetes Application Developer (CKAD)
+ 
+ ## Scripts
+ 
+-All scripts are in [scripts/](scripts/). Run them from the repository root, because they read `README.md` and other files by relative path.
++All scripts are in [scripts/](scripts/). `count_questions.sh` and `random_question.py` read files by relative path, so run them from the repository root.
+ 
+-- `count_questions.sh` counts `<summary>` entries and exercise links in the root `README.md` and `topics/*/README.md`, then prints the total.
++- `count_questions.sh` counts question and exercise entries in the root `README.md` and `topics/*/README.md`, prints the total, and updates the `currently **N**` text in the root `README.md`.
+ - `random_question.py` quizzes you on random question and answer pairs read from `README.md`. Pass `-s` to skip questions that have no answer. It requires a `README.md` that contains question blocks.
+-- `update_question_number.py` writes the total question and exercise count into a line in `README.md` marked with `:bar_chart:`.
++- `update_question_number.py` replaces the line containing `:bar_chart:` in `README.md` with the total question count. It imports `scripts.question_utils`, so run it as a module from the root (`python -m scripts.update_question_number`).
+ - `question_utils.py` contains the parsing helpers used by the scripts above.
+ - `run_ci.sh` is the local CI entry point (see below).
+ 
+ ## Tests and CI
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -94,9 +94,9 @@
+ - **Linux** (`topics/linux/exercises/`): navigation, creating and removing files, copying, and counting unique values.
+ - **Shell** (`topics/shell/`): hello world, variables, arguments, loops, functions, and file checks.
+ - **Git** (`topics/git/`): commits, branches, and squashing commits.
+ - **Ansible** (`topics/ansible/`): tasks and playbooks.
+-- **CI/CD** (`topics/cicd/`): setting up a CI pipeline, deploying to Kubernetes, and Jenkins job cleanup scripts.
++- **CI/CD** (`topics/cicd/`): setting up a CI pipeline, deploying to Kubernetes, and Jenkins Groovy scripts that remove jobs and builds.
+ - **Databases** (`topics/databases/`): designing tables for a message board system.
+ - **Other**: OpenShift projects and applications (`topics/openshift/`), Python exercises (`topics/python/`), Node.js questions (`topics/node/`), and an improve-query SQL exercise (`topics/sql/`).
+ 
+ ## Hands-on projects
+
+> readme-benchmark · anthropic/claude-haiku-5.5

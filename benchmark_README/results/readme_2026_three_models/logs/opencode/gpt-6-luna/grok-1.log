@@ -1,0 +1,23 @@
+Created `README.md` in the repository root. It documents the codebase, pinned dependencies, checkpoint setup, eight-device example configuration, and how to run inference. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m10 matches[0m
+[0m✱ [0mGrep "README" [90min . · 1 match[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead run.py 
+[0m→ [0mRead model.py 
+[0m→ [0mRead checkpoint.py 
+[0m→ [0mRead runners.py 
+[0m→ [0mRead LICENSE.txt [90m[limit=60][0m
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead checkpoints/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

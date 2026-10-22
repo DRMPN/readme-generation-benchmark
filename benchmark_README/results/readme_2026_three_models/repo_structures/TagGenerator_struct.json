@@ -1,0 +1,156 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "django.yml",
+            "type": "file"
+          },
+          {
+            "name": "publish-docker.yml",
+            "type": "file"
+          },
+          {
+            "name": "python-publish.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "QrCode",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "admin.py",
+        "type": "file"
+      },
+      {
+        "name": "apps.py",
+        "type": "file"
+      },
+      {
+        "name": "migrations",
+        "type": "dir",
+        "children": [
+          {
+            "name": "0001_initial.py",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "models.py",
+        "type": "file"
+      },
+      {
+        "name": "templatetags",
+        "type": "dir",
+        "children": [
+          {
+            "name": "qrcode_tags.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tests.py",
+        "type": "file"
+      },
+      {
+        "name": "urls.py",
+        "type": "file"
+      },
+      {
+        "name": "views.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "TagGenerator",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "asgi.py",
+        "type": "file"
+      },
+      {
+        "name": "settings.py",
+        "type": "file"
+      },
+      {
+        "name": "urls.py",
+        "type": "file"
+      },
+      {
+        "name": "wsgi.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "manage.py",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "templates",
+    "type": "dir",
+    "children": [
+      {
+        "name": "qr_code_frontend.html",
+        "type": "file"
+      }
+    ]
+  }
+]

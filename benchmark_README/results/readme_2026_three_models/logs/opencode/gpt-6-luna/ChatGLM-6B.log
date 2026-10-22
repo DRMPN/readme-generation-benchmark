@@ -1,0 +1,33 @@
+Created `README.md` in the repository root. It documents the demos, installation, model loading, API, quantization and multi-GPU helpers, fine-tuning, VisualGLM, and licensing. No other files were created or edited.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m60 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead PROJECT.md 
+[0m→ [0mRead UPDATE.md 
+[0m→ [0mRead FAQ.md 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead web_demo.py 
+[0m→ [0mRead api.py 
+[0m→ [0mRead cli_demo.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead MODEL_LICENSE 
+[0m→ [0mRead ptuning/README.md 
+[0m→ [0mRead improve/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead web_demo2.py 
+[0m→ [0mRead web_demo_vision.py 
+[0m→ [0mRead cli_demo_vision.py 
+[0m→ [0mRead utils.py 
+[0m→ [0mRead ptuning/train.sh 
+[0m→ [0mRead ptuning/README_en.md 
+[0m→ [0mRead ptuning/evaluate.sh 
+[0m✱ [0mGrep "from_pretrained|quantize|load_in|device_map|FastAPI|uvicorn|launch\(" [90min . · 46 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

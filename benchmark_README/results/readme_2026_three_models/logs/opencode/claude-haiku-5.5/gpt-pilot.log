@@ -1,0 +1,147 @@
+I'll start by looking at the repository layout and existing files.
+This is a large Python project with no root README. I'll read the key entry points, config, and packaging files.
+The changelog is essentially empty. Next I'll read the CLI, config, LLM provider code, and the cloud/CI files.
+The config and LLM layers are clear now. Next I'll check CI, telemetry, the Docker/cloud setup, and the provider clients.
+Relace calls a Pythagora-hosted endpoint, which matters for the README. Next I'll check the remaining providers, CI, and contributor docs.
+Next I'll confirm the template registry, telemetry settings, logging, and database setup, which the README needs to describe accurately.
+The core flow is clear. Last, I'll check the user settings file, the enabled template, and how the console UI handles input.
+I have enough for an accurate picture. Two last checks: the license text and the cloud build workflow, so I don't misstate either.
+I have what I need. I'll write the README now, sticking to behavior I confirmed in the code and config files.
+The README is written. Before finishing, I'll verify three claims I'm less sure of: the integration-test API key note, the virtual UI description, and the early-exit sentence I need to fix.
+Two corrections are needed: the integration tests are gated by `INTEGRATION_TESTS` plus a per-provider key, and the virtual UI description overstated its purpose. I also wrote one incorrect sentence about which options exit early. Fixing all three now.
+One of the three edits didn't match. I'll check the exact text in the file.
+I wrote `README.md` in the repository root, and it's the only file I created. It starts with `# Pythagora Core`.
+
+I built it from the source, config files, Dockerfile, CI workflows, and telemetry docs. I did not install dependencies, run the app, or run the test suite, so the README describes what the code does, not what I observed at runtime.
+
+It covers:
+- **Overview and features**, based on the package description and the agent and provider code.
+- **Requirements and installation**, from `pyproject.toml`, `requirements.txt`, and `main.py`.
+- **Configuration**, including the provider table, agent overrides, database, and workspace settings.
+- **Usage and a full CLI option table**, taken from `parse_arguments()`.
+- **Docker**, including the missing `pythagora-vs-code.vsix` that the build needs.
+- **Architecture**, a directory map and the agent names found in the source.
+- **Telemetry and error reporting**, with the opt-out location.
+- **Development**, using the CI checks and the test layout.
+
+Things you may want to review:
+- **Telemetry is on by default**, and the README says so.
+- **Fatal errors go to Sentry** when `sentry-sdk` is installed, even without `--email`. I confirmed this from the `send_error` → `capture_exception` path in `core/cli/main.py`.
+- **The `relace` provider sends code to a Pythagora-hosted endpoint**, and the built-in defaults use it for one agent. The README states this.
+- **Two inconsistencies in the source:** the default log path (`data/pythagora.log`) differs from the example config (`pythagora.log`), and `lm-studio` is in the provider enum with no client. The README documents the behavior, and I noted the LM Studio gap.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const [ls, git, readme] = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90min . · 300 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead main.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead example-config.json 
+[0m→ [0mRead CHANGELOG.md [90m[limit=80][0m
+[0m→ [0mRead Dockerfile 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead core/cli/main.py 
+[0m→ [0mRead core/config/__init__.py 
+[0m→ [0mRead core/cli/helpers.py 
+[0m→ [0mRead core/config/env_importer.py 
+[0m→ [0mRead core/llm/__init__.py 
+[0m→ [0mRead core/llm/base.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/TELEMETRY.md 
+[0m→ [0mRead cloud/config-docker.json 
+[0m✱ [0mGlob ".github/**/*" [90m10 matches[0m
+[0m→ [0mRead cloud/entrypoint.sh 
+[0m→ [0mRead core/llm/openai_client.py 
+[0m→ [0mRead core/llm/relace_client.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/CONTRIBUTING.md 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead .github/workflows/ci.yml 
+[0m→ [0mRead core/llm/azure_client.py 
+[0m→ [0mRead core/llm/groq_client.py 
+[0m→ [0mRead core/llm/anthropic_client.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead core/templates/registry.py 
+[0m→ [0mRead core/telemetry/__init__.py [90m[limit=140][0m
+[0m→ [0mRead core/db/setup.py 
+[0m→ [0mRead core/agents/orchestrator.py [90m[limit=120][0m
+[0m→ [0mRead core/ui/api_server.py [90m[limit=80][0m
+[0m→ [0mRead core/config/version.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead core/config/user_settings.py 
+[0m→ [0mRead core/ui/console.py [90m[limit=60][0m
+[0m→ [0mRead core/templates/vite_react.py 
+[0m→ [0mRead core/ui/ipc_client.py [90m[limit=60][0m
+[0m→ [0mRead core/config/constants.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=25][0m
+[0m→ [0mRead .github/workflows/cloud-staging-build.yaml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "VirtualUI\(|VIRTUAL" [90min . · 6 matches[0m
+[0m✱ [0mGrep "api_key|API_KEY|getenv|environ|skip" [90min tests/integration/llm · 21 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -267,9 +267,9 @@
+ poetry run ruff format --check
+ poetry run pytest
+ ```
+ 
+-The pytest configuration in `pyproject.toml` runs with coverage for `core/` and a 10-second timeout per test. The `tests/` directory mirrors the layout of `core/` (for example `tests/llm/`, `tests/agents/`, `tests/db/`, and `tests/ui/`). Integration tests that call real LLM providers are in `tests/integration/llm/` and need the corresponding API keys.
++The pytest configuration in `pyproject.toml` runs with coverage for `core/` and a 10-second timeout per test. The `tests/` directory mirrors the layout of `core/` (for example `tests/llm/`, `tests/agents/`, `tests/db/`, and `tests/ui/`). Integration tests that call real LLM providers are in `tests/integration/llm/`. They run only when `INTEGRATION_TESTS` is set and the matching key (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or `GROQ_API_KEY`) is present; otherwise they are skipped.
+ 
+ Ruff is configured with a line length of 120 and the `I` (isort) rules. Pre-commit is configured in `.pre-commit-config.yaml`.
+ 
+ ## Contributing
+
+[0m✗ [0mEdit README.md failed
+[91m[1mError: [0mCould not find oldString in /tmp/gpt-pilot-hruqggi5/README.md. It must match exactly, including whitespace and indentation.
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -188,9 +188,9 @@
+ | `--email ADDRESS` | Your email address, recorded with telemetry and error reports. |
+ | `--access-token TOKEN` | Access token passed to LLM requests. |
+ | `--extension-version VERSION` | Version of the VS Code extension, if one is used. |
+ 
+-Options such as `--project` and `--list` run a single action and then exit. The `--list`, `--list-json`, `--show-config`, `--import-v0`, and `--delete` options return before a session starts.
++`--list`, `--list-json`, `--show-config`, `--import-v0`, and `--delete` each perform their action and exit without starting an agent session. `--project`, `--branch`, `--step`, and `--project-state-id` load an existing project and continue it.
+ 
+ ### Running in Docker
+ 
+ The repository includes a `Dockerfile` that builds an Ubuntu 22.04 image with the dependencies, the application, and a `cloud/config-docker.json` configuration. The image's entrypoint installs the VS Code extension and then keeps the container running. It does not start `main.py` directly.
+
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "virtual" [90min README.md · 5 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -231,9 +231,9 @@
+ | `tests/` | Unit and integration tests. |
+ 
+ Agents named in the source include `SpecWriter`, `Architect`, `TechLead`, `Developer`, `CodeMonkey`, `Frontend`, `Executor`, `BugHunter`, `Troubleshooter`, `ProblemSolver`, `ExternalDocumentation`, and `TechnicalWriter`.
+ 
+-The UI adapter is chosen by the `ui.type` setting. `plain` prints to the console and reads your input from it. `ipc-client` connects to a UI at the host and port given by `--local-ipc-host` and `--local-ipc-port`. `virtual` takes its inputs from the configuration file, which is intended for tests.
++The UI adapter is chosen by the `ui.type` setting. `plain` prints to the console and reads your input from it. `ipc-client` connects to a UI at the host and port given by `--local-ipc-host` and `--local-ipc-port`. `virtual` takes its scripted answers from the `inputs` list in the configuration.
+ 
+ ## Relace
+ 
+ The `relace` provider sends code-merge requests to `https://api.pythagora.io/v1/relace/merge`, which is a Pythagora-hosted endpoint. The request contains the initial code and the edit snippet, along with the model name. If the request fails, the client logs the error and returns empty content with zero token counts. It does not retry with another provider.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

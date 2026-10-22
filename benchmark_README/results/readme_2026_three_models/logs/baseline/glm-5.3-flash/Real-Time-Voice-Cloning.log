@@ -1,0 +1,367 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63880,
+    "tree_files": 73,
+    "tracked_files": 73,
+    "selected": [
+      {
+        "path": "LICENSE.md",
+        "tokens": 303,
+        "truncated": false
+      },
+      {
+        "path": "samples/README.md",
+        "tokens": 254,
+        "truncated": false
+      },
+      {
+        "path": "demo_cli.py",
+        "tokens": 2072,
+        "truncated": false
+      },
+      {
+        "path": "demo_toolbox.py",
+        "tokens": 285,
+        "truncated": false
+      },
+      {
+        "path": "encoder_preprocess.py",
+        "tokens": 768,
+        "truncated": false
+      },
+      {
+        "path": "encoder_train.py",
+        "tokens": 549,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer_preprocess_audio.py",
+        "tokens": 528,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer_preprocess_embeds.py",
+        "tokens": 261,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer_train.py",
+        "tokens": 400,
+        "truncated": false
+      },
+      {
+        "path": "vocoder_preprocess.py",
+        "tokens": 519,
+        "truncated": false
+      },
+      {
+        "path": "vocoder_train.py",
+        "tokens": 673,
+        "truncated": false
+      },
+      {
+        "path": "encoder/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "encoder/audio.py",
+        "tokens": 1137,
+        "truncated": false
+      },
+      {
+        "path": "encoder/config.py",
+        "tokens": 361,
+        "truncated": false
+      },
+      {
+        "path": "encoder/inference.py",
+        "tokens": 1860,
+        "truncated": false
+      },
+      {
+        "path": "encoder/model.py",
+        "tokens": 1463,
+        "truncated": false
+      },
+      {
+        "path": "encoder/params_data.py",
+        "tokens": 231,
+        "truncated": false
+      },
+      {
+        "path": "encoder/params_model.py",
+        "tokens": 57,
+        "truncated": false
+      },
+      {
+        "path": "encoder/preprocess.py",
+        "tokens": 1786,
+        "truncated": false
+      },
+      {
+        "path": "encoder/train.py",
+        "tokens": 1077,
+        "truncated": false
+      },
+      {
+        "path": "encoder/visualizations.py",
+        "tokens": 1512,
+        "truncated": false
+      },
+      {
+        "path": "samples/VCTK.txt",
+        "tokens": 1223,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/LICENSE.txt",
+        "tokens": 302,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/__init__.py",
+        "tokens": 1,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/audio.py",
+        "tokens": 2179,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/hparams.py",
+        "tokens": 1108,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/inference.py",
+        "tokens": 1421,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/preprocess.py",
+        "tokens": 2970,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/synthesize.py",
+        "tokens": 906,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/synthesizer_dataset.py",
+        "tokens": 884,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/train.py",
+        "tokens": 2429,
+        "truncated": false
+      },
+      {
+        "path": "toolbox/__init__.py",
+        "tokens": 3077,
+        "truncated": false
+      },
+      {
+        "path": "toolbox/ui.py",
+        "tokens": 5451,
+        "truncated": false
+      },
+      {
+        "path": "toolbox/utterance.py",
+        "tokens": 59,
+        "truncated": false
+      },
+      {
+        "path": "utils/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "utils/argutils.py",
+        "tokens": 302,
+        "truncated": false
+      },
+      {
+        "path": "utils/default_models.py",
+        "tokens": 569,
+        "truncated": false
+      },
+      {
+        "path": "utils/logmmse.py",
+        "tokens": 2578,
+        "truncated": false
+      },
+      {
+        "path": "utils/profiler.py",
+        "tokens": 349,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/LICENSE.txt",
+        "tokens": 255,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/audio.py",
+        "tokens": 743,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/display.py",
+        "tokens": 785,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/distribution.py",
+        "tokens": 1432,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/gen_wavernn.py",
+        "tokens": 290,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/hparams.py",
+        "tokens": 445,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/inference.py",
+        "tokens": 458,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/train.py",
+        "tokens": 1025,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/vocoder_dataset.py",
+        "tokens": 879,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/__init__.py",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/random_cycler.py",
+        "tokens": 309,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/speaker.py",
+        "tokens": 422,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/speaker_batch.py",
+        "tokens": 163,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/speaker_verification_dataset.py",
+        "tokens": 460,
+        "truncated": false
+      },
+      {
+        "path": "encoder/data_objects/utterance.py",
+        "tokens": 198,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/models/tacotron.py",
+        "tokens": 4781,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/__init__.py",
+        "tokens": 294,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/_cmudict.py",
+        "tokens": 709,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/cleaners.py",
+        "tokens": 614,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/numbers.py",
+        "tokens": 683,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/plot.py",
+        "tokens": 605,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/symbols.py",
+        "tokens": 155,
+        "truncated": false
+      },
+      {
+        "path": "synthesizer/utils/text.py",
+        "tokens": 560,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/models/deepmind_version.py",
+        "tokens": 1732,
+        "truncated": false
+      },
+      {
+        "path": "vocoder/models/fatchord_version.py",
+        "tokens": 2938,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      "requirements.txt",
+      ".gitattributes",
+      ".gitignore",
+      "samples/1320_00000.mp3",
+      "samples/3575_00000.mp3",
+      "samples/6829_00000.mp3",
+      "samples/8230_00000.mp3",
+      "samples/p240_00000.mp3",
+      "samples/p260_00000.mp3"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 63900,
+    "completion_tokens": 2721,
+    "total_tokens": 66621,
+    "cost": 0.0052728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0052728,
+      "upstream_inference_prompt_cost": 0.0047286,
+      "upstream_inference_completions_cost": 0.0005442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 46,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606561-KZvB4vgfHxevfjquVigZ"
+}

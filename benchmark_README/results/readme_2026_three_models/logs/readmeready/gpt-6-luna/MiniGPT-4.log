@@ -1,0 +1,75 @@
+Processing repository...
+Processing 103 files and 41 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/MiniGPTv2.pdf: 'utf-8' codec can't decode byte 0xbf in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/float.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/sofa.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/KFC-20-for-20-Nuggets.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/office.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/2000x1372_wmkn_0012149409555.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/cockdial.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples_v2/thief.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/demo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/online_demo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/minigpt2_demo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/overview.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fun_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fact_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/rhyme_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/cook_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/ad_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/op_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/web_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/story_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/rhyme_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/story_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/people_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/describe_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/describe_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fix_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/wop_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fun_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/op_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fact_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/fix_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/ad_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/wop_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/people_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/logo_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/figs/examples/cook_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fun_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fact_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/rhyme_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/cook_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/ad_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/op_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/web_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/story_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/rhyme_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/story_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/people_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/describe_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/describe_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fix_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/wop_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fun_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/op_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fact_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/fix_2.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/ad_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/wop_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/people_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/logo_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/MiniGPT-4-m4t6uxp9/examples/cook_1.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Splitting text into chunks for 107 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/gpt-6-luna/_work/MiniGPT-4/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/gpt-6-luna/_work/MiniGPT-4/docs/data/README_GPT4.md
+
+--- stderr ---

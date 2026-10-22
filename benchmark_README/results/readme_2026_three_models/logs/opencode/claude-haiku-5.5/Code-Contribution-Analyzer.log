@@ -1,0 +1,41 @@
+I'll start by looking at the repository layout and existing files.
+The source is limited to `src/`. I'll read the Python, HTML, and JS files along with the existing docs.
+I have enough to write an accurate README. Before writing, I noted several gaps between the repo's claims and its code, which I'll document honestly rather than repeat:
+
+- `index.html` claims "generate reports" and "interactive visualization," but no such code exists.
+- `app.py` and `models.py` each create a separate `SQLAlchemy()` instance, so the app's `db` is not the one the models are bound to. The app may not run as written.
+- `CONTRIBUTING.md` references `requirements.txt`, `tests/`, and a `README`, none of which exist.
+I created `README.md` in the repository root. It starts with a level-one heading and covers the layout, components, setup, configuration, API endpoints, API clients, data model, and contributing and license information. It describes only what the code supports.
+
+The repository is early-stage and has some problems that the README calls out in a "Known Limitations" section:
+
+- **The web app may not run.** `app.py` and `models.py` each create their own `SQLAlchemy()` instance, so the models aren't bound to the Flask app's database object. I haven't run the app to confirm the failure.
+- **The API clients aren't connected to anything.** Nothing in the web app calls them, and no code turns their output into stored records or computes lines of code per language.
+- **The landing page overstates the features.** `index.html` lists report generation and interactive visualization, and no code for either exists.
+- **Some referenced files are missing.** `CONTRIBUTING.md` mentions `requirements.txt`, a `tests/` directory, and `pytest`, but none of these exist. The install commands list the imported packages instead.
+
+I didn't change any other files.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? Promise.resolve(null) : Promise.resolve(null),\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m12 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/web/app.py 
+[0m→ [0mRead src/api_clients/base_client.py 
+[0m→ [0mRead src/web/models.py 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead src/api_clients/github_client.py 
+[0m→ [0mRead src/api_clients/gitlab_client.py 
+[0m→ [0mRead src/api_clients/bitbucket_client.py 
+[0m→ [0mRead src/web/static/index.js 
+[0m→ [0mRead src/web/templates/index.html 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

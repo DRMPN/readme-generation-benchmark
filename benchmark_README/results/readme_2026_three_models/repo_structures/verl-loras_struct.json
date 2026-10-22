@@ -1,0 +1,2532 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "dataset.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_ascend.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_dapo.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_eval_aime24.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_ppo_trainer.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_ppo_trainer_megatron.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_prime.yml",
+            "type": "file"
+          },
+          {
+            "name": "e2e_sft.yml",
+            "type": "file"
+          },
+          {
+            "name": "model.yml",
+            "type": "file"
+          },
+          {
+            "name": "pylint.yml",
+            "type": "file"
+          },
+          {
+            "name": "ray_test.yml",
+            "type": "file"
+          },
+          {
+            "name": "sandbox.yml",
+            "type": "file"
+          },
+          {
+            "name": "sanity.yml",
+            "type": "file"
+          },
+          {
+            "name": "scorecard.yml",
+            "type": "file"
+          },
+          {
+            "name": "secrets_scan.yml",
+            "type": "file"
+          },
+          {
+            "name": "vllm.yml",
+            "type": "file"
+          },
+          {
+            "name": "yapf_format.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".ml-job-preset.yml",
+    "type": "file"
+  },
+  {
+    "name": ".readthedocs.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".style.yapf",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Notice.txt",
+    "type": "file"
+  },
+  {
+    "name": "docker",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Dockerfile.megatron",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.ngc.vllm",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.ngc.vllm0.8",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.ngc.vllm0.8.sagemaker",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.rocm",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.sglang",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile.vemlp.vllm.te",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "README_vllm0.7.md",
+        "type": "file"
+      },
+      {
+        "name": "README_vllm0.8.md",
+        "type": "file"
+      },
+      {
+        "name": "_static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "logo.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "advance",
+        "type": "dir",
+        "children": [
+          {
+            "name": "checkpoint.rst",
+            "type": "file"
+          },
+          {
+            "name": "dpo_extension.rst",
+            "type": "file"
+          },
+          {
+            "name": "fsdp_extension.rst",
+            "type": "file"
+          },
+          {
+            "name": "megatron_extension.rst",
+            "type": "file"
+          },
+          {
+            "name": "placement.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "amd_tutorial",
+        "type": "dir",
+        "children": [
+          {
+            "name": "amd_build_dockerfile_page.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "conf.py",
+        "type": "file"
+      },
+      {
+        "name": "data.rst",
+        "type": "file"
+      },
+      {
+        "name": "examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "config.rst",
+            "type": "file"
+          },
+          {
+            "name": "gsm8k_example.rst",
+            "type": "file"
+          },
+          {
+            "name": "ppo_code_architecture.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "experiment",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ppo.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "faq",
+        "type": "dir",
+        "children": [
+          {
+            "name": "faq.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "hybrid_flow.rst",
+        "type": "file"
+      },
+      {
+        "name": "index.rst",
+        "type": "file"
+      },
+      {
+        "name": "perf",
+        "type": "dir",
+        "children": [
+          {
+            "name": "device_tuning.rst",
+            "type": "file"
+          },
+          {
+            "name": "perf_tuning.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "preparation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "prepare_data.rst",
+            "type": "file"
+          },
+          {
+            "name": "reward_function.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "requirements-docs.txt",
+        "type": "file"
+      },
+      {
+        "name": "start",
+        "type": "dir",
+        "children": [
+          {
+            "name": "install.rst",
+            "type": "file"
+          },
+          {
+            "name": "multinode.rst",
+            "type": "file"
+          },
+          {
+            "name": "quickstart.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "fsdp_workers.rst",
+            "type": "file"
+          },
+          {
+            "name": "megatron_workers.rst",
+            "type": "file"
+          },
+          {
+            "name": "ray_trainer.rst",
+            "type": "file"
+          },
+          {
+            "name": "sglang_worker.rst",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "checkpoint",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_deepseek_megatron_ckpt.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen_megatron_ckpt.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "data_preprocess",
+        "type": "dir",
+        "children": [
+          {
+            "name": "full_hh_rlhf.py",
+            "type": "file"
+          },
+          {
+            "name": "geo3k.py",
+            "type": "file"
+          },
+          {
+            "name": "gsm8k.py",
+            "type": "file"
+          },
+          {
+            "name": "hellaswag.py",
+            "type": "file"
+          },
+          {
+            "name": "math_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "multiturn.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "generation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_deepseek7b_mutli_node.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek_v2_lite_math.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "grpo_trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_deepseek7b_llm.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_math.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_math_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_math.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_math_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2_5_vl-7b.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ppo_trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_deepseek7b_llm.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_modelscope.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm_sp2.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek_full_hh_rlhf.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek_math_gsm8k_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_gemma.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_math_gsm8k_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_rm.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_rm_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_sglang_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2.5-32b.sh",
+            "type": "file"
+          },
+          {
+            "name": "verl_getting_started.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ray",
+        "type": "dir",
+        "children": [
+          {
+            "name": "tutorial.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "reinforce_plus_plus_trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_qwen2-7b_math_rf.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2-7b_math_rf_baseline.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "remax_trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_qwen2.5-3b_seq_balance.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_qwen2.5-7b_seq_balance.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "rloo_trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_qwen2-7b.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "sft",
+        "type": "dir",
+        "children": [
+          {
+            "name": "gsm8k",
+            "type": "dir",
+            "children": [
+              {
+                "name": "run_deepseek_6b7.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_gemma_2b.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_gemma_7b.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_qwen_05_peft.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_qwen_05_sp2.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_qwen_05_sp2_liger.sh",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "multiturn",
+            "type": "dir",
+            "children": [
+              {
+                "name": "run_qwen_05_sp2.sh",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "slurm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ray_on_slurm.slurm",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "split_placement",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ppo_trainer_split.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "main_ppo_split.py",
+            "type": "file"
+          },
+          {
+            "name": "run_deepseek7b_llm.sh",
+            "type": "file"
+          },
+          {
+            "name": "split_monkey_patch.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tuning",
+        "type": "dir",
+        "children": [
+          {
+            "name": "14b",
+            "type": "dir",
+            "children": [
+              {
+                "name": "qwen2_14b_grpo_4_h800_fsdp_vllm.sh",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "70b",
+            "type": "dir",
+            "children": [
+              {
+                "name": "qwen2-70b_grpo_32_h20_fsdp_vllm.sh",
+                "type": "file"
+              },
+              {
+                "name": "qwen2-70b_grpo_32_h800_fsdp_vllm.sh",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "7b",
+            "type": "dir",
+            "children": [
+              {
+                "name": "qwen2-7b_grpo_2_h800_fsdp_vllm.sh",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "patches",
+    "type": "dir",
+    "children": [
+      {
+        "name": "megatron_v4.patch",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "recipe",
+    "type": "dir",
+    "children": [
+      {
+        "name": "dapo",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "prepare_dapo_data.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_dapo_early_qwen2.5_32b.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_dapo_qwen2.5_32b.sh",
+            "type": "file"
+          },
+          {
+            "name": "src",
+            "type": "dir",
+            "children": [
+              {
+                "name": "config",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "dapo_trainer.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "dapo_ray_trainer.py",
+                "type": "file"
+              },
+              {
+                "name": "main_dapo.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_dapo_7b.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "prime",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "prime_trainer.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "main_prime.py",
+            "type": "file"
+          },
+          {
+            "name": "prime_core_algos.py",
+            "type": "file"
+          },
+          {
+            "name": "prime_dp_rm.py",
+            "type": "file"
+          },
+          {
+            "name": "prime_fsdp_workers.py",
+            "type": "file"
+          },
+          {
+            "name": "prime_ray_trainer.py",
+            "type": "file"
+          },
+          {
+            "name": "run_prime_qwen.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "r1",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "evaluation.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "data_process.py",
+            "type": "file"
+          },
+          {
+            "name": "main_eval.py",
+            "type": "file"
+          },
+          {
+            "name": "reward_score.py",
+            "type": "file"
+          },
+          {
+            "name": "run_r1_distill_qwen.sh",
+            "type": "file"
+          },
+          {
+            "name": "tasks",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "gpqa.py",
+                "type": "file"
+              },
+              {
+                "name": "livecodebench.py",
+                "type": "file"
+              },
+              {
+                "name": "math.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements_sglang.txt",
+    "type": "file"
+  },
+  {
+    "name": "run_master.sh",
+    "type": "file"
+  },
+  {
+    "name": "run_worker.sh",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "converter_hf_to_mcore.py",
+        "type": "file"
+      },
+      {
+        "name": "diagnose.py",
+        "type": "file"
+      },
+      {
+        "name": "format.sh",
+        "type": "file"
+      },
+      {
+        "name": "model_merger.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "checkpoint",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_fsdp_ckpt.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "distributed",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_all.sh",
+            "type": "file"
+          },
+          {
+            "name": "test_tensor_dict.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "e2e",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "arithmetic_sequence",
+            "type": "dir",
+            "children": [
+              {
+                "name": "model",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "config.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "create_model_tokenizer.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "generation_config.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model.safetensors",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer_config.json",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "rl",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main_trainer.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "check_custom_rwd_fn.py",
+            "type": "file"
+          },
+          {
+            "name": "check_results.py",
+            "type": "file"
+          },
+          {
+            "name": "envs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "digit_completion",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "task.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ppo_trainer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "run_function_reward.sh",
+                "type": "file"
+              },
+              {
+                "name": "run_model_reward.sh",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "run_dapo.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_ppo_trainer_megatron.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_prime.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_r1_distill_qwen_aime24_eval.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_ray_trainer.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_ray_trainer_fire_sampling.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_ray_trainer_rmpad.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_test.sh",
+            "type": "file"
+          },
+          {
+            "name": "sft",
+            "type": "dir",
+            "children": [
+              {
+                "name": "run_sft.sh",
+                "type": "file"
+              },
+              {
+                "name": "test_sp_loss_match.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "generation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_gen_qwen05.sh",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "gpu_utility",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_memory_buffers.py",
+            "type": "file"
+          },
+          {
+            "name": "test_ops.py",
+            "type": "file"
+          },
+          {
+            "name": "test_torch_functional.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "kill_github_tests.sh",
+        "type": "file"
+      },
+      {
+        "name": "model",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_transformer.py",
+            "type": "file"
+          },
+          {
+            "name": "test_transformers_ulysses.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "ray",
+        "type": "dir",
+        "children": [
+          {
+            "name": "check_worker_alive",
+            "type": "dir",
+            "children": [
+              {
+                "name": "main.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "detached_worker",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "client.py",
+                "type": "file"
+              },
+              {
+                "name": "run.sh",
+                "type": "file"
+              },
+              {
+                "name": "server.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_check_worker_alive.py",
+            "type": "file"
+          },
+          {
+            "name": "test_colocated_workers.py",
+            "type": "file"
+          },
+          {
+            "name": "test_data_transfer.py",
+            "type": "file"
+          },
+          {
+            "name": "test_driverfunc_to_worker.py",
+            "type": "file"
+          },
+          {
+            "name": "test_high_level_scheduling_api.py",
+            "type": "file"
+          },
+          {
+            "name": "test_ray_local_envs.py",
+            "type": "file"
+          },
+          {
+            "name": "test_rvdz.py",
+            "type": "file"
+          },
+          {
+            "name": "test_worker_group_basics.py",
+            "type": "file"
+          },
+          {
+            "name": "test_worker_group_torch.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "rollout",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run_fsdp_vllm.py",
+            "type": "file"
+          },
+          {
+            "name": "test_sglang_spmd.py",
+            "type": "file"
+          },
+          {
+            "name": "test_vllm_hf_loader.py",
+            "type": "file"
+          },
+          {
+            "name": "test_vllm_spmd.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "sandbox",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_sandbox.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "sanity",
+        "type": "dir",
+        "children": [
+          {
+            "name": "check_license.py",
+            "type": "file"
+          },
+          {
+            "name": "test_import.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utility",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_tensor_dict_utilities.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "verl",
+        "type": "dir",
+        "children": [
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "dataset",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_multiturn_sft_dataset.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test_rl_dataset.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test_rm_dataset.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test_sft_dataset.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "test_import_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "test_module.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "verl",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "llama",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "checkpoint_utils",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "llama_loader.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "llama_loader_depracated.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "llama_saver.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "layers",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_attention.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_decoder.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_linear.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_mlp.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_rmsnorm.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "modeling_llama_megatron.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mcore",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "config_converter.py",
+                "type": "file"
+              },
+              {
+                "name": "loader.py",
+                "type": "file"
+              },
+              {
+                "name": "model_forward.py",
+                "type": "file"
+              },
+              {
+                "name": "model_initializer.py",
+                "type": "file"
+              },
+              {
+                "name": "readme.md",
+                "type": "file"
+              },
+              {
+                "name": "registry.py",
+                "type": "file"
+              },
+              {
+                "name": "saver.py",
+                "type": "file"
+              },
+              {
+                "name": "util.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "qwen2",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "checkpoint_utils",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "qwen2_loader.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "qwen2_loader_depracated.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "qwen2_saver.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "layers",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_attention.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_decoder.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_linear.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_mlp.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "parallel_rmsnorm.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "modeling_qwen2_megatron.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "registry.py",
+            "type": "file"
+          },
+          {
+            "name": "transformers",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "llama.py",
+                "type": "file"
+              },
+              {
+                "name": "monkey_patch.py",
+                "type": "file"
+              },
+              {
+                "name": "qwen2.py",
+                "type": "file"
+              },
+              {
+                "name": "qwen2_vl.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "weight_loader_registry.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "protocol.py",
+        "type": "file"
+      },
+      {
+        "name": "single_controller",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "decorator.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker_group.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "register_center",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ray.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "worker.py",
+                "type": "file"
+              },
+              {
+                "name": "worker_group.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "ray",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "third_party",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "sglang",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "parallel_state.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "vllm",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "vllm_v_0_3_1",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "arg_utils.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm_engine_sp.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_runner.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "parallel_state.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vllm_v_0_4_2",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "arg_utils.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dtensor_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "hf_weight_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm_engine_sp.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "megatron_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_runner.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "parallel_state.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "spmd_gpu_executor.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vllm_v_0_5_4",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "arg_utils.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dtensor_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "hf_weight_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm_engine_sp.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "megatron_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_runner.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "parallel_state.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "spmd_gpu_executor.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vllm_v_0_6_3",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "arg_utils.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "config.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dtensor_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "hf_weight_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "llm_engine_sp.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "megatron_weight_loaders.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_loader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "model_runner.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "parallel_state.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "spmd_gpu_executor.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tokenizer.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "worker.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "trainer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "evaluation.yaml",
+                "type": "file"
+              },
+              {
+                "name": "generation.yaml",
+                "type": "file"
+              },
+              {
+                "name": "ppo_megatron_trainer.yaml",
+                "type": "file"
+              },
+              {
+                "name": "ppo_trainer.yaml",
+                "type": "file"
+              },
+              {
+                "name": "sft_trainer.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "fsdp_sft_trainer.py",
+            "type": "file"
+          },
+          {
+            "name": "main_eval.py",
+            "type": "file"
+          },
+          {
+            "name": "main_generation.py",
+            "type": "file"
+          },
+          {
+            "name": "main_ppo.py",
+            "type": "file"
+          },
+          {
+            "name": "ppo",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "core_algos.py",
+                "type": "file"
+              },
+              {
+                "name": "metric_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "ray_trainer.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "runtime_env.yaml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "checkpoint",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "checkpoint_manager.py",
+                "type": "file"
+              },
+              {
+                "name": "fsdp_checkpoint_manager.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron_checkpoint_manager.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "config.py",
+            "type": "file"
+          },
+          {
+            "name": "dataset",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "multiturn_sft_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "rl_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "rm_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "sft_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "vision_utils.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "debug",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "performance.py",
+                "type": "file"
+              },
+              {
+                "name": "trajectory_tracker.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "distributed.py",
+            "type": "file"
+          },
+          {
+            "name": "flops_counter.py",
+            "type": "file"
+          },
+          {
+            "name": "fs.py",
+            "type": "file"
+          },
+          {
+            "name": "fsdp_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "hdfs_io.py",
+            "type": "file"
+          },
+          {
+            "name": "import_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "logger",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "aggregate_logger.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "logging_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "megatron",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "memory.py",
+                "type": "file"
+              },
+              {
+                "name": "optimizer.py",
+                "type": "file"
+              },
+              {
+                "name": "pipeline_parallel.py",
+                "type": "file"
+              },
+              {
+                "name": "sequence_parallel.py",
+                "type": "file"
+              },
+              {
+                "name": "tensor_parallel.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "megatron_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "memory_buffer.py",
+            "type": "file"
+          },
+          {
+            "name": "model.py",
+            "type": "file"
+          },
+          {
+            "name": "py_functional.py",
+            "type": "file"
+          },
+          {
+            "name": "ray_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "rendezvous",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "ray_backend.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "reward_score",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "geo3k.py",
+                "type": "file"
+              },
+              {
+                "name": "gsm8k.py",
+                "type": "file"
+              },
+              {
+                "name": "math.py",
+                "type": "file"
+              },
+              {
+                "name": "math_batch.py",
+                "type": "file"
+              },
+              {
+                "name": "math_dapo.py",
+                "type": "file"
+              },
+              {
+                "name": "math_verify.py",
+                "type": "file"
+              },
+              {
+                "name": "prime_code",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "testing_util.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "utils.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "prime_math",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "grader.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "math_normalize.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "seqlen_balancing.py",
+            "type": "file"
+          },
+          {
+            "name": "tokenizer.py",
+            "type": "file"
+          },
+          {
+            "name": "torch_dtypes.py",
+            "type": "file"
+          },
+          {
+            "name": "torch_functional.py",
+            "type": "file"
+          },
+          {
+            "name": "tracking.py",
+            "type": "file"
+          },
+          {
+            "name": "ulysses.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "version",
+        "type": "dir",
+        "children": [
+          {
+            "name": "version",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "actor",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "dp_actor.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron_actor.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "critic",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "dp_critic.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron_critic.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "fsdp_workers.py",
+            "type": "file"
+          },
+          {
+            "name": "megatron_workers.py",
+            "type": "file"
+          },
+          {
+            "name": "reward_manager",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "batch.py",
+                "type": "file"
+              },
+              {
+                "name": "dapo.py",
+                "type": "file"
+              },
+              {
+                "name": "naive.py",
+                "type": "file"
+              },
+              {
+                "name": "prime.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "reward_model",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "reward_model.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "rollout",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "hf_rollout.py",
+                "type": "file"
+              },
+              {
+                "name": "naive",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "naive_rollout.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "sglang_rollout",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "sglang_rollout.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "tokenizer.py",
+                "type": "file"
+              },
+              {
+                "name": "vllm_rollout",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fire_vllm_rollout.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vllm_rollout.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vllm_rollout_spmd.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "sharding_manager",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "fsdp_sglang.py",
+                "type": "file"
+              },
+              {
+                "name": "fsdp_ulysses.py",
+                "type": "file"
+              },
+              {
+                "name": "fsdp_vllm.py",
+                "type": "file"
+              },
+              {
+                "name": "megatron_vllm.py",
+                "type": "file"
+              },
+              {
+                "name": "patch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fsdp_vllm_patch.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

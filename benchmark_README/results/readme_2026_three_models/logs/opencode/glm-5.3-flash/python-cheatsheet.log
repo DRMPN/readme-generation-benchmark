@@ -1,0 +1,37 @@
+I found the repository structure. Now let me inspect the key files to understand the project.
+This is the well-known "Comprehensive Python Cheatsheet" project. Let me examine the build scripts and supporting files to document it accurately.
+Let me check the build pipeline in `parse.js` and the template to fully understand how the site is generated.
+I have all the information needed. Now I'll write the root `README.md` for the repository.
+I have inspected the repository and created a complete and accurate `README.md` in the project root.
+
+### Key details about the project:
+*   **Project Name:** Comprehensive Python Cheatsheet (maintained by Jure Šorn / `gto76`).
+*   **Core Mechanism:** A single-page static website (`index.html`) compiled from a large `README.md` file using a custom Node.js build script (`parse.js`).
+*   **Web Tooling:** Uses `showdown` for Markdown conversion, `highlight.js` for code highlighting, and custom scripts (`web/update_plots.py`) to fetch external data (such as COVID-19 statistics) to update Plotly charts.
+*   **PDF Tooling:** Contains a robust workflow to convert the web page into a print-optimized PDF (using `pdf/remove_links.py` to convert hyperlinks to page numbers, and detailed manual layout instructions in `pdf/README.md`).
+
+The new `README.md` covers the project's purpose, full directory structure, Node.js dependencies, build steps, and links directly to the PDF generation instructions without inventing any unsupported claims.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources();\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m89 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead parse.js [90m[limit=80][0m
+[0m→ [0mRead index.html [90m[limit=120][0m
+[0m→ [0mRead pdf/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pdf/create_index.py [90m[limit=40][0m
+[0m→ [0mRead pdf/remove_links.py [90m[limit=40][0m
+[0m✱ [0mGrep "Usage|usage|process\.|readFile|writeFile|template\.html|README\.md" [90min parse.js · 10 matches[0m
+[0m→ [0mRead web/convert_table.py [90m[limit=40][0m
+[0m→ [0mRead web/update_plots.py [90m[limit=40][0m
+[0m✱ [0mGlob "LICENSE*" [90m0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead parse.js [90m[limit=120, offset=780][0m
+[0m→ [0mRead web/template.html [90m[limit=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

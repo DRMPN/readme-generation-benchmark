@@ -1,0 +1,127 @@
+I'll start by looking at the repository layout and any existing docs.
+The `requirements*.txt` files are reported as binary, so I'll check them another way. I also need the `utils` modules and the API definitions.
+Next I'll check the API definition files, the `.gitignore`, and the `debug/` scripts so the README describes them accurately.
+I have the main picture. Last, I'll count the API entries and check the CLI's Python version requirements.
+I have enough to write an accurate README. Two things I found while reading the code matter for the docs:
+
+- `reqFunc` and `reqFuncByProxy` `return` inside the phone-number loop, so only the first number is processed per request even though multiple numbers are accepted.
+- The Dockerfile calls `pipenv install --deploy --ignore-pipfile`, but this repo has no `Pipfile` or `Pipfile.lock`.
+
+I'll document both as limitations rather than claim multi-number support works.
+The README is written. Before finishing, I re-checked its claims against the code and found three inaccuracies I need to fix:
+
+- Without `-e`, the proxy files are still loaded, so each proxy entry triggers another full wave of direct requests.
+- The `Referer` header is always set when missing, not only when a phone number is given.
+- The last limitation bullet describes an old code comment that no longer matches the behavior.
+I wrote `README.md` in the repository root, and it is the only file I created. It starts with a level-one heading and is based on the code, config files, and data, not on guesses.
+
+It covers:
+
+- **What the tool does:** a Click CLI with four commands (`run`, `asyncRun`, `oneRun`, `update`), endpoint lists (`api.json` with 87 entries, `GETAPI.json` with several hundred URLs), optional HTTP/SOCKS proxies, and the endpoint updater.
+- **Setup and usage:** install from `requirements.txt`, the options table with defaults, and examples.
+- **Repository layout, endpoint format, proxy file format, logging, and license** (Apache 2.0).
+- **A disclaimer** that sending SMS or verification requests to a number without its owner's consent can be harassment and may be illegal, and that the tool should only be used with numbers and systems you're authorized to test.
+
+Problems I found in the code, which the README documents as limitations rather than hiding:
+
+- **Multiple phone numbers don't work as intended.** The request functions `return` inside the phone loop, so only the first number is used.
+- **The GUI is a skeleton.** Its button has no action attached.
+- **The Dockerfile likely won't build.** It runs `pipenv install --deploy --ignore-pipfile`, but the repo has no `Pipfile` or `Pipfile.lock`. I did not build the image to confirm.
+- **`-e` isn't optional for proxy files.** Proxy files are read even without `-e`, so each entry repeats the direct run.
+- **`debug/` scripts are broken or undocumented.** `debug/spider-api.py` imports a `Sql` class that `utils` doesn't export.
+
+One claim is unverified: the README notes that SOCKS proxies probably need `httpx[socks]`, which isn't in `requirements.txt`. I did not install or test that.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90m27 matches[0m
+[0m✱ [0mGlob "README*" [90m0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m✗ [0mRead requirements-dev.txt failed
+[91m[1mError: [0mCannot read binary file: requirements-dev.txt
+[0m→ [0mRead smsboom.py 
+[0m→ [0mRead smsboom_GUI.py 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "." [90min requirements.txt · 46 matches[0m
+[0m✱ [0mGrep "." [90min requirements-dev.txt · 84 matches[0m
+[0m→ [0mRead utils/req.py 
+[0m→ [0mRead utils/sql.py 
+[0m→ [0mRead utils/__init__.py 
+[0m→ [0mRead utils/log.py 
+[0m→ [0mRead utils/models.py 
+[0m✱ [0mGlob ".*" [90m1 match[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep ""(desc|url|method)"" [90min api.json · 12 matches[0m
+[0m✱ [0mGrep ""method"" [90min api.json · 87 matches[0m
+[0m✱ [0mGrep "\[phone\]" [90min GETAPI.json · 5 matches[0m
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead debug/spider-api.py [90m[limit=60][0m
+[0m→ [0mRead debug/tou_api.py [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep ""desc"" [90min api.json · 87 matches[0m
+[0m✱ [0mGrep "python_requires|Pipfile|python_version" [90min . · 10 matches[0m
+[0m✱ [0mGrep "\[phone\]" [90min GETAPI.json · 500 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -172,10 +172,12 @@
+ | `http_proxy.txt` | One `host:port` per line, used as `http://host:port`. |
+ | `socks5_proxy.txt` | One `host:port` per line, used as `socks5://host:port`. |
+ | `socks4_proxy.txt` | One `host:port` per line, used as `socks4://host:port`. |
+ 
+-If a file does not exist, the program creates an empty one. If `-e` is used and no proxies are loaded, the program exits with an error. Without `-e`, requests are sent directly.
++If a file does not exist, the program creates an empty one. If `-e` is used and no proxies are loaded, the program exits with an error.
+ 
++Without `-e`, requests are sent directly, but the program still reads any proxy files that exist. Each proxy entry then triggers one more full wave of direct requests, so a proxy file with several lines repeats the run that many times.
++
+ ## Docker
+ 
+ The `Dockerfile` builds an image based on `python:3.9-alpine` and sets `smsboom.py` as the entry point:
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -155,9 +155,9 @@
+ 
+ - `desc`: a label used in log output. Default `"Default"`.
+ - `url`: required. `[phone]` and `[timestamp]` placeholders are replaced.
+ - `method`: HTTP method. Default `"GET"`.
+-- `header`: optional dictionary or string. If it is missing or empty, a random browser-style `User-Agent` is used. A `Referer` header is added automatically when a phone number is provided.
++- `header`: optional dictionary or string. Defaults to a randomly chosen browser-style `User-Agent`. If no `Referer` header is set, the endpoint's `url` is used as the `Referer`.
+ - `data`: optional. If it is a dictionary, it is sent as JSON. Otherwise it is sent as form data.
+ 
+ ### `GETAPI.json`
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -210,9 +210,9 @@
+ - **`asyncRun` and `oneRun` ignore `--enable_proxy`.**
+ - **TLS verification is disabled** in most request paths (`verify=False`), and the `update` command also disables it.
+ - **Endpoint lists can go stale.** Many endpoints are old, and some entries have notes in their descriptions, such as "only once per day" or "may only work once." The program does not check whether an endpoint still works.
+ - **The repository includes no automated tests.**
+-- The `run` loop has a code comment in the source (`此處代碼邏輯有問題`) that notes a logic issue: if the proxy list is empty, requests are not sent.
++- **Proxy files are read even without `-e`**, which repeats the direct run once per proxy entry (see [Proxies](#proxies)).
+ 
+ ## License
+ 
+ This project is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
+
+> readme-benchmark · anthropic/claude-haiku-5.5

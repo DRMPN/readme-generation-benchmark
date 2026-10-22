@@ -1,0 +1,31 @@
+The repository is the `eco2ai` Python package (version 0.3.12), with manual and decorator-based tracking examples plus PyTorch and TensorFlow notebooks. I’m documenting the behavior visible in the implementation, including its CPU/GPU/RAM estimation approach, CSV output, and location-dependent emissions lookup.
+Created `README.md` in the repository root. It documents installation, usage, tracker options, CSV output, emissions lookup, epoch tracking, helpers, examples, and the license. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "*" [90min . · 22 matches[0m
+[0m✱ [0mGlob "**/*" [90min . · 22 matches[0m
+[0m✱ [0mGrep "^" [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead eco2ai/__init__.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead _config.yml 
+[0m→ [0mRead eco2ai/emission_track.py 
+[0m→ [0mRead eco2ai/MLTracker.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead eco2ai/utils.py 
+[0m→ [0mRead eco2ai/tools/tools_cpu.py 
+[0m→ [0mRead eco2ai/tools/tools_gpu.py 
+[0m→ [0mRead examples/Eco2AI tutorial tensorflow.ipynb 
+[0m→ [0mRead examples/Eco2AI tutorial torch.ipynb 
+[0m→ [0mRead eco2ai/tools/tools_ram.py 
+[0m→ [0mRead eco2ai/data/config.txt 
+[0m→ [0mRead eco2ai/data/carbon_index.csv [90m[limit=10][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

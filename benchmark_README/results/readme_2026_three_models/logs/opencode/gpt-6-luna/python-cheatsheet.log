@@ -1,0 +1,30 @@
+The repository contains the rendered cheatsheet in `index.html`, its web assets and scripts, and PDF preparation files. I’m documenting those and calling out an important build detail: `parse.js` reads the root `README.md`, so this overview is not a replacement for the original cheatsheet Markdown source.
+Created `README.md` with an overview of the cheatsheet, its topics, repository contents, and helper scripts.
+
+It also documents that `parse.js` reads `README.md` and overwrites `index.html`; running it with this project overview would replace the rendered cheatsheet. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m89 matches[0m
+[0m✱ [0mGrep "README" [90min . · 8 matches[0m
+[0m✱ [0mGrep "." [90min . · 200 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead index.html [90m[limit=150][0m
+[0m→ [0mRead pdf/README.md 
+[0m✱ [0mGlob "*" [90m89 matches[0m
+[0m→ [0mRead parse.js [90m[limit=180][0m
+[0m→ [0mRead web/faq.html [90m[limit=200][0m
+[0m✱ [0mGrep "<h[1-3][^>]*>" [90min index.html · 150 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead parse.js [90m[offset=700, limit=150][0m
+[0m→ [0mRead web/template.html [90m[limit=160][0m
+[0m→ [0mRead web/update_plots.py 
+[0m→ [0mRead web/convert_table.py 
+[0m→ [0mRead pdf/index_for_pdf.html [90m[limit=100][0m
+[0m✱ [0mGrep "https?://|pip3 install|^\s*<h[12]" [90min index.html · 49 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

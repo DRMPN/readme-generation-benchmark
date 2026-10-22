@@ -1,0 +1,65 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 4970,
+    "tree_files": 7,
+    "tracked_files": 7,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 219,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 267,
+        "truncated": false
+      },
+      {
+        "path": "Camouflage AI.py",
+        "tokens": 3088,
+        "truncated": false
+      },
+      {
+        "path": "process_video.py",
+        "tokens": 1220,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      "Input video/sample video.mp4",
+      "Output video/sample video_color_bg.mp4"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 5025,
+    "completion_tokens": 1846,
+    "total_tokens": 6871,
+    "cost": 0.00155105,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 5022,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00155105,
+      "upstream_inference_prompt_cost": 0.00062805,
+      "upstream_inference_completions_cost": 0.000923
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 516,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792607017-GOHeVHGPNARc9Zy8QqbQ"
+}

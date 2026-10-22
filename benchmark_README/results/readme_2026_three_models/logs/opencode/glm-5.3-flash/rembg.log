@@ -1,0 +1,231 @@
+Let me look at the key project files to understand what this repository is.
+I've created the README. Let me verify the Docker commands and CLI usage against the actual repository files to ensure total accuracy.
+I have gathered all the information I need. Let me update the README to accurately document all CLI commands and options found in the source code.
+Let me refine a few details to ensure maximum accuracy, including fixing the `"unet"` typo in the USAGE.md snippet and detailing the CLI commands.
+I have created the `README.md` file in the current directory. It contains a complete and accurate description of the repository based on the actual source files (`setup.py`, `USAGE.md`, `rembg/cli.py`, `rembg/sessions/`, `rembg/commands/`, `Dockerfile`, and `LICENSE.txt`). 
+
+The README includes:
+- **Overview and Features**: Describes the project's purpose and capabilities.
+- **Supported Models**: An accurate list of the 19 models available in `rembg/sessions/`.
+- **Installation**: Instructions for CPU, GPU, and CLI extras.
+- **Library Usage**: Detailed usage examples from the official `USAGE.md` (corrected `"unet"` to `u2net`).
+- **CLI Usage**: Documented all 5 subcommands (`b`, `d`, `i`, `p`, `s`) and their specific options.
+- **Docker & License**: Containerization instructions and MIT License reference.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead USAGE.md 
+[0m→ [0mRead rembg 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.py 
+[0m→ [0mRead rembg/cli.py 
+[0m→ [0mRead rembg/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead examples 
+[0m→ [0mRead rembg/commands 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead rembg/commands/i_command.py 
+[0m→ [0mRead rembg/commands/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "name="" [90min rembg/commands · 5 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead rembg/commands/d_command.py 
+[0m→ [0mRead rembg/commands/b_command.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead rembg/commands/p_command.py 
+[0m→ [0mRead rembg/commands/s_command.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -139,16 +139,39 @@
+ ```
+ 
+ ### As a CLI
+ 
+-The CLI is available via the `rembg` command:
++The CLI is available via the `rembg` command. It provides the following subcommands:
+ 
++| Command | Description |
++| --- | --- |
++| `b` | for a byte stream as input |
++| `d` | download models |
++| `i` | for a file as input |
++| `p` | for a folder as input |
++| `s` | for a http server |
++
++For example, to remove the background from a file:
++
+ ```bash
+-rembg i
++rembg i input.png output.png
+ ```
+ 
+-You can use the `-m` option to specify the model and `-bgc` to specify the background color (R G B A) to replace the removed background with.
++Common options include:
+ 
++* `-m`, `--model`: the model name (defaults to `u2net`).
++* `-a`, `--alpha-matting`: use alpha matting.
++* `-om`, `--only-mask`: output only the mask.
++* `-ppm`, `--post-process-mask`: post process the mask.
++* `-bgc`, `--bgcolor`: background color (R G B A) to replace the removed background with.
++* `-x`, `--extras`: additional options in JSON format.
++
++To run the HTTP server (which also serves a web UI and API documentation at `/api`):
++
++```bash
++rembg s
++```
++
+ ## Docker
+ 
+ A `Dockerfile` is provided to build an image.
+ 
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead rembg/session_factory.py 
+[0m→ [0mRead rembg/sessions 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead rembg/sessions/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def name\(" [90min rembg/sessions · 20 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const files = [\n  \"rembg/sessions/birefnet_general.py\", \"rembg/sessions/birefnet_dis.py\", \"rembg/sessions/birefnet_hrsod.py\",\n  \"rembg/sessions/birefnet_cod.py\", \"rembg/sessions/bria_rmbg.py\", \"rembg/sessions/silueta.py\",\n  \"rembg/sessions/dis_anime.py\", \"rembg/sessions/u2net_human_seg.py\", \"rembg/sessions/birefnet_massive.py\",\n  \"rembg/sessions/ben_custom.py\", \"rembg/sessions/dis_custom.py\", \"rembg/sessions/u2net.py\",\n  \"rembg/sessions/dis_general_use.py\", \"rembg/sessions/u2net_custom.py\", \"rembg/sessions/u2netp.py\",\n  \"rembg/sessions/birefnet_general_lite.py\", \"rembg/sessions/birefnet_portrait.py\", \"rembg/sessions/u2net_cloth_seg.py\",\n  \"rembg/sessions/sam.py\"\n];\nconst results = await Promise.allSettled(files.map(f => tools.read({ path: f })));\nconst names = {};\nfor (const res of results) {\n  if (res.status === 'fulfilled') {\n    const lines = res.value.split('\\n');\n    for (let i = 0; i < lines.length; i++) {\n      if (lines[i].includes('def name(')) {\n        // Look ahead up to 3 lines for return statement\n        let content = lines.slice(i, i + 5).join('\\n');\n        // Try to find return \"...\"\n        const match = content.match(/return [\"']([^\"']+)[\"']/);\n        if (match) {\n           // We need the filename to associate\n           names[match[1]] = true; // we lost the file mapping, let's do it again carefully or just list the names\n        }\n      }\n    }\n  }\n}\nreturn names;\n"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "return "" [90min rembg/sessions · 19 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead rembg/sessions/dis_custom.py [90m[offset=85, limit=10][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -4,12 +4,36 @@
+ 
+ ## Features
+ 
+ * High-quality background removal.
+-* Supports multiple models, including `u2net`, `isnet-general-use`, and `sam`.
++* Supports multiple models, including `u2net`, `isnet-general-use`, `sam`, `birefnet-general`, and more.
+ * Supports alpha matting.
+ * Provides a simple API and CLI.
+ 
++## Supported Models
++
++| Model name | Description |
++| --- | --- |
++| `u2net` | U^2-Net (default) |
++| `u2netp` | Lightweight U^2-Net |
++| `u2net_human_seg` | Human segmentation |
++| `u2net_cloth_seg` | Clothes segmentation |
++| `u2net_custom` | Custom U^2-Net |
++| `silueta` | Silueta |
++| `isnet-general-use` | IS-Net general use |
++| `isnet-anime` | IS-Net anime |
++| `dis_custom` | Custom DIS |
++| `sam` | Segment Anything Model |
++| `birefnet-general` | BiRefNet general |
++| `birefnet-general-lite` | BiRefNet general lite |
++| `birefnet-portrait` | BiRefNet portrait |
++| `birefnet-dis` | BiRefNet DIS |
++| `birefnet-hrsod` | BiRefNet HRSOD |
++| `birefnet-cod` | BiRefNet COD |
++| `birefnet-massive` | BiRefNet massive |
++| `bria-rmbg` | BriaRmBg |
++| `ben_custom` | Ben custom |
++
+ ## Installation
+ 
+ ### Prerequisites
+ 
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE.txt [90m[limit=10][0m
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -188,21 +188,47 @@
+ * `-ppm`, `--post-process-mask`: post process the mask.
+ * `-bgc`, `--bgcolor`: background color (R G B A) to replace the removed background with.
+ * `-x`, `--extras`: additional options in JSON format.
+ 
++To download the models:
++
++```bash
++rembg d u2net
++```
++
++To process a folder:
++
++```bash
++rembg p input_dir output_dir
++```
++
++The `p` command also supports the following options:
++
++* `-w`, `--watch`: watches a folder for changes.
++* `-d`, `--delete_input`: delete input file after processing.
++
+ To run the HTTP server (which also serves a web UI and API documentation at `/api`):
+ 
+ ```bash
+ rembg s
+ ```
+ 
++The `s` command also supports the following options:
++
++* `-p`, `--port`: port (defaults to `7000`).
++* `-h`, `--host`: host (defaults to `0.0.0.0`).
++* `-l`, `--log_level`: log level (defaults to `info`).
++* `-t`, `--threads`: number of worker threads.
++
+ ## Docker
+ 
+ A `Dockerfile` is provided to build an image.
+ 
+ ```bash
+ docker build -t rembg .
+ ```
+ 
++A `docker-compose.yml` file is also provided.
++
+ ## License
+ 
+ This project is licensed under the [MIT license](LICENSE.txt).
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -103,9 +103,9 @@
+ 
+ By default, `remove` initialises a new session every call. This can be a large bottleneck if you're having to process multiple images. Initialise a session and pass it in to the `remove` function for fast multi-image support
+ 
+ ```python
+-model_name = "unet"
++model_name = "u2net"
+ rembg_session = new_session(model_name)
+ for img in images:
+     output = remove(img, session=rembg_session)
+ ```
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash

@@ -1,0 +1,318 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63929,
+    "tree_files": 124,
+    "tracked_files": 124,
+    "selected": [
+      {
+        "path": "pyproject.toml",
+        "tokens": 1028,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 260,
+        "truncated": false
+      },
+      {
+        "path": "CHANGELOG.md",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "LICENSE.md",
+        "tokens": 274,
+        "truncated": false
+      },
+      {
+        "path": ".github/CONTRIBUTING.md",
+        "tokens": 2024,
+        "truncated": false
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "tokens": 121,
+        "truncated": false
+      },
+      {
+        "path": "docs/api.md",
+        "tokens": 1279,
+        "truncated": false
+      },
+      {
+        "path": "docs/async.md",
+        "tokens": 1461,
+        "truncated": false
+      },
+      {
+        "path": "docs/code_of_conduct.md",
+        "tokens": 887,
+        "truncated": false
+      },
+      {
+        "path": "docs/compatibility.md",
+        "tokens": 2163,
+        "truncated": false
+      },
+      {
+        "path": "docs/contributing.md",
+        "tokens": 2021,
+        "truncated": false
+      },
+      {
+        "path": "docs/environment_variables.md",
+        "tokens": 499,
+        "truncated": false
+      },
+      {
+        "path": "docs/exceptions.md",
+        "tokens": 543,
+        "truncated": false
+      },
+      {
+        "path": "docs/http2.md",
+        "tokens": 606,
+        "truncated": false
+      },
+      {
+        "path": "docs/index.md",
+        "tokens": 1119,
+        "truncated": false
+      },
+      {
+        "path": "docs/logging.md",
+        "tokens": 1244,
+        "truncated": false
+      },
+      {
+        "path": "docs/quickstart.md",
+        "tokens": 3753,
+        "truncated": false
+      },
+      {
+        "path": "docs/third_party_packages.md",
+        "tokens": 843,
+        "truncated": false
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "tokens": 534,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/1-issue.md",
+        "tokens": 128,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/authentication.md",
+        "tokens": 1880,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/clients.md",
+        "tokens": 2674,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/event-hooks.md",
+        "tokens": 554,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/extensions.md",
+        "tokens": 2279,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/proxies.md",
+        "tokens": 836,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/resource-limits.md",
+        "tokens": 146,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/ssl.md",
+        "tokens": 924,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/text-encodings.md",
+        "tokens": 767,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/timeouts.md",
+        "tokens": 632,
+        "truncated": false
+      },
+      {
+        "path": "docs/advanced/transports.md",
+        "tokens": 3357,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs.yml",
+        "tokens": 453,
+        "truncated": false
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "tokens": 4,
+        "truncated": false
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "httpx/__init__.py",
+        "tokens": 553,
+        "truncated": false
+      },
+      {
+        "path": "httpx/__version__.py",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "httpx/_api.py",
+        "tokens": 2831,
+        "truncated": false
+      },
+      {
+        "path": "httpx/_auth.py",
+        "tokens": 2665,
+        "truncated": false
+      },
+      {
+        "path": "httpx/_client.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "httpx/_config.py",
+        "tokens": 1360,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "docs/CNAME",
+      "httpx/_content.py",
+      "httpx/_decoders.py",
+      "httpx/_exceptions.py",
+      "httpx/_main.py",
+      "httpx/_models.py",
+      "httpx/_multipart.py",
+      "httpx/_status_codes.py",
+      "httpx/_types.py",
+      "httpx/_urlparse.py",
+      "httpx/_urls.py",
+      "httpx/_utils.py",
+      "httpx/py.typed",
+      "scripts/build",
+      "scripts/check",
+      "scripts/clean",
+      "scripts/coverage",
+      "scripts/docs",
+      "scripts/install",
+      "scripts/lint",
+      "scripts/publish",
+      "scripts/sync-version",
+      "tests/__init__.py",
+      "tests/common.py",
+      "tests/concurrency.py",
+      "tests/conftest.py",
+      "tests/test_api.py",
+      "tests/test_asgi.py",
+      "tests/test_auth.py",
+      "tests/test_config.py",
+      "tests/test_content.py",
+      "tests/test_decoders.py",
+      "tests/test_exceptions.py",
+      "tests/test_exported_members.py",
+      "tests/test_main.py",
+      "tests/test_multipart.py",
+      "tests/test_status_codes.py",
+      "tests/test_timeouts.py",
+      "tests/test_utils.py",
+      "tests/test_wsgi.py",
+      ".github/ISSUE_TEMPLATE/config.yml",
+      ".github/workflows/publish.yml",
+      ".github/workflows/test-suite.yml",
+      "docs/css/custom.css",
+      "docs/img/butterfly.png",
+      "docs/img/gh-actions-fail-check.png",
+      "docs/img/gh-actions-fail-test.png",
+      "docs/img/gh-actions-fail.png",
+      "docs/img/httpx-help.png",
+      "docs/img/httpx-request.png",
+      "docs/img/logo.jpg",
+      "docs/img/rich-progress.gif",
+      "docs/img/speakeasy.png",
+      "docs/img/tqdm-progress.gif",
+      "httpx/_transports/__init__.py",
+      "httpx/_transports/asgi.py",
+      "httpx/_transports/base.py",
+      "httpx/_transports/default.py",
+      "httpx/_transports/mock.py",
+      "httpx/_transports/wsgi.py",
+      "tests/client/__init__.py",
+      "tests/client/test_async_client.py",
+      "tests/client/test_auth.py",
+      "tests/client/test_client.py",
+      "tests/client/test_cookies.py",
+      "tests/client/test_event_hooks.py",
+      "tests/client/test_headers.py",
+      "tests/client/test_properties.py",
+      "tests/client/test_proxies.py",
+      "tests/client/test_queryparams.py",
+      "tests/client/test_redirects.py",
+      "tests/fixtures/.netrc",
+      "tests/fixtures/.netrc-nopassword",
+      "tests/models/__init__.py",
+      "tests/models/test_cookies.py",
+      "tests/models/test_headers.py",
+      "tests/models/test_queryparams.py",
+      "tests/models/test_requests.py",
+      "tests/models/test_responses.py",
+      "tests/models/test_url.py",
+      "tests/models/test_whatwg.py",
+      "tests/models/whatwg.json",
+      "docs/overrides/partials/nav.html",
+      "scripts/test"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 101818,
+    "completion_tokens": 6091,
+    "total_tokens": 107909,
+    "cost": 0.0661365,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0661365,
+      "upstream_inference_prompt_cost": 0.050909,
+      "upstream_inference_completions_cost": 0.0152275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1615,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606258-FN2XYgFeX1wdA3eb7R7g"
+}

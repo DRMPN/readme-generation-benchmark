@@ -1,0 +1,43 @@
+I’ll inspect the repository’s files and project metadata, then write a README grounded only in what the code supports. I’ll limit changes to `README.md`.
+The repository is a collection of standalone PyTorch training scripts rather than one unified package. I’m checking their dataset conventions and outputs so the README can explain how to launch examples without implying all models share identical setup.
+Created `README.md` with a repository overview, all 32 implementations, setup and run examples, dataset notes, output locations, and license information. Changes are limited to `README.md`; no tests were run.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m88 matches[0m
+[0m✱ [0mGrep "^#|torch|tensorflow|keras|Requirements|Installation|Usage" [90m300 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead implementations/dcgan/dcgan.py [90m[limit=115][0m
+[0m→ [0mRead data/download_pix2pix_dataset.sh 
+[0m→ [0mRead data/download_cyclegan_dataset.sh 
+[0m→ [0mRead implementations/pix2pix/pix2pix.py [90m[limit=120][0m
+[0m→ [0mRead implementations/cyclegan/cyclegan.py [90m[limit=140][0m
+[0m→ [0mRead implementations/stargan/stargan.py [90m[limit=120][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead implementations/gan/gan.py [90m[offset=19, limit=95][0m
+[0m→ [0mRead implementations/infogan/infogan.py [90m[limit=110][0m
+[0m→ [0mRead implementations/srgan/srgan.py [90m[limit=100][0m
+[0m→ [0mRead implementations/esrgan/test_on_image.py [90m[limit=100][0m
+[0m✱ [0mGlob "implementations/*/*.py" [90m60 matches[0m
+[0m✱ [0mGrep "^#|"""|Implementation of|based on|dataset" [90min implementations · 400 matches[0m
+[0m✱ [0mGrep "parser.add_argument|datasets\.MNIST|datasets\.CIFAR10|ImageFolder|ImageDataset|CelebADataset|os.makedirs" [90min implementations · 400 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead implementations/ccgan/ccgan.py [90m[limit=80][0m
+[0m→ [0mRead implementations/esrgan/esrgan.py [90m[limit=80][0m
+[0m→ [0mRead implementations/cluster_gan/clustergan.py [90m[limit=80][0m
+[0m→ [0mRead implementations/sgan/sgan.py [90m[limit=80][0m
+[0m→ [0mRead implementations/began/began.py [90m[limit=65][0m
+[0m→ [0mRead implementations/cogan/cogan.py [90m[limit=65][0m
+[0m→ [0mRead implementations/cyclegan/datasets.py [90m[limit=150][0m
+[0m→ [0mRead implementations/pix2pix/datasets.py [90m[limit=150][0m
+[0m→ [0mRead implementations/stargan/datasets.py [90m[limit=150][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

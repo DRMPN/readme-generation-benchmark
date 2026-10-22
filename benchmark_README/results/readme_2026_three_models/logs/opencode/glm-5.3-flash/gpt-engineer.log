@@ -1,0 +1,110 @@
+I've now inspected the repository thoroughly. It's **gpt-engineer** (v0.3.1) — an AI code generation CLI. Writing the README now with everything grounded in the actual repo contents:
+Let me verify the final file:
+The `README.md` is complete. Here's a summary of what I did:
+
+## Inspection
+I examined the repository's structure and key files to ground every claim:
+- **`pyproject.toml`** — project name (`gpt-engineer` v0.3.1), description, MIT license, Python requirement (`>=3.10,<3.13`), CLI entry points (`gpt-engineer`/`ge`/`gpte`, `bench`)
+- **`gpt_engineer/applications/cli/main.py`** and **`cli_agent.py`** — all CLI flags, the generation flow (`gen_code` → `gen_entrypoint` → `execute_entrypoint`), and mode compatibility rules
+- **`gpt_engineer/core/`** and **`tools/custom_steps.py`** — mode behavior (clarify, lite, improve, self-heal with 10 attempts), memory paths (`.gpteng/`)
+- **`docs/`** — quickstart, installation (incl. the `tkinter` troubleshooting), open/local models, W&B tracing
+- **Supporting files** — `.env.template`, `docker-compose.yml`/`Dockerfile`, `Makefile`, `tox.ini`, CI workflow, `projects/example-*`, benchmark config, telemetry code (`collect.py`), `TERMS_OF_USE.md`, `DISCLAIMER.md`, `Acknowledgements.md`, `citation.cff`
+
+## The README covers
+1. **Overview** — the tool's three capabilities (from its own CLI help text), with a caution note and links to terms/disclaimer
+2. **Requirements & Installation** — pip and Poetry-from-source instructions
+3. **API key setup** — env var or `.env` (OpenAI + Anthropic), pointer to the Windows guide
+4. **Quickstart** — creating new code and improving existing code, plus the bundled example projects
+5. **CLI reference** — a table of every option, verified against the Typer definitions
+6. **Modes** — default, clarify, lite, improve, self-heal
+7. **Other models** — Azure, Anthropic, open/local LLMs, OpenRouter
+8. **Vision, custom preprompts, logs, Docker**
+9. **Benchmarks** — `bench` with apps/mbpp/gptme
+10. **Development** — poetry, pre-commit, tox, Makefile, docs, contributing/governance
+11. **Telemetry disclosure** — consent-based feedback via RudderStack
+12. **Documentation, license, acknowledgements, citation**
+
+Only `README.md` was created, it starts with a level-one heading, and I deliberately avoided unsupported claims (no invented badges, star counts, version claims beyond what's in the repo, or features that don't exist in the code).
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead gpt_engineer 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .env.template 
+[0m→ [0mRead gpt_engineer/applications 
+[0m→ [0mRead gpt_engineer/applications/cli 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead gpt_engineer/applications/cli/main.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead Makefile 
+[0m→ [0mRead projects 
+[0m→ [0mRead docs 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/quickstart.rst 
+[0m→ [0mRead docs/index.rst 
+[0m→ [0mRead docs/installation.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead gpt_engineer/preprompts 
+[0m→ [0mRead gpt_engineer/core 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/introduction.md 
+[0m→ [0mRead docker/Dockerfile 
+[0m→ [0mRead docs/open_models.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead projects/example-vision 
+[0m→ [0mRead gpt_engineer/benchmark 
+[0m→ [0mRead gpt_engineer/tools/custom_steps.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead projects/example-vision/prompt 
+[0m→ [0mRead projects/example-improve 
+[0m→ [0mRead docs/examples 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github 
+[0m→ [0mRead WINDOWS_README.md [90m[limit=60][0m
+[0m→ [0mRead tests 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead gpt_engineer/benchmark/__main__.py [90m[limit=60][0m
+[0m→ [0mRead gpt_engineer/core/default/steps.py [90m[limit=120][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/workflows/ci.yaml 
+[0m→ [0mRead gpt_engineer/applications/cli/collect.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/tracing_debugging.md [90m[limit=60][0m
+[0m→ [0mRead gpt_engineer/core/ai.py [90m[limit=100][0m
+[0m→ [0mRead gpt_engineer/applications/cli/learning.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead citation.cff 
+[0m→ [0mRead DISCLAIMER.md 
+[0m→ [0mRead scripts 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mRead CONTRIBUTING.md failed
+[91m[1mError: [0mFile not found: /tmp/gpt-engineer-n02qm3zu/CONTRIBUTING.md
+[0m→ [0mRead gpt_engineer/core/default/paths.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tox.ini [90m[limit=40][0m
+[0m→ [0mRead .github/CONTRIBUTING.md [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead Acknowledgements.md [90m[limit=30][0m
+[0m→ [0mRead gpt_engineer/benchmark/benchmarks 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def execute_entrypoint|def gen_entrypoint|def gen_code|def handle_improve_mode|def improve_fn" [90min gpt_engineer/core/default/steps.py · 5 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead gpt_engineer/core/default/steps.py [90m[offset=121, limit=190][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead gpt_engineer/applications/cli/cli_agent.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead gpt_engineer/benchmark/default_bench_config.toml 
+[0m→ [0mRead gpt_engineer/benchmark/__main__.py [90m[offset=61][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md [90m[limit=40][0m
+[0m✱ [0mGrep "^#" [90min README.md · 22 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash

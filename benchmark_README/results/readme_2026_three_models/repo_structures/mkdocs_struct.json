@@ -1,0 +1,1838 @@
+[
+  {
+    "name": "\"mkdocs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "tests",
+        "type": "dir",
+        "children": [
+          {
+            "name": "integration",
+            "type": "dir",
+            "children": [
+              {
+                "name": "unicode",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "docs",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "\\303\\234bersicht.md\"",
+                        "type": "file"
+                      },
+                      {
+                        "name": "\\342\\231\\252.md\"",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".codecov.yml",
+    "type": "file"
+  },
+  {
+    "name": ".coveragerc",
+    "type": "file"
+  },
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "autofix.yml",
+            "type": "file"
+          },
+          {
+            "name": "ci.yml",
+            "type": "file"
+          },
+          {
+            "name": "deploy-release.yml",
+            "type": "file"
+          },
+          {
+            "name": "docs.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".jshintignore",
+    "type": "file"
+  },
+  {
+    "name": ".markdownlint.yaml",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "FUNDING.yml",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CNAME",
+        "type": "file"
+      },
+      {
+        "name": "about",
+        "type": "dir",
+        "children": [
+          {
+            "name": "contributing.md",
+            "type": "file"
+          },
+          {
+            "name": "license.md",
+            "type": "file"
+          },
+          {
+            "name": "release-notes.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "css",
+        "type": "dir",
+        "children": [
+          {
+            "name": "extra.css",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dev-guide",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "api.md",
+            "type": "file"
+          },
+          {
+            "name": "plugins.md",
+            "type": "file"
+          },
+          {
+            "name": "themes.md",
+            "type": "file"
+          },
+          {
+            "name": "translations.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "getting-started.md",
+        "type": "file"
+      },
+      {
+        "name": "hooks.py",
+        "type": "file"
+      },
+      {
+        "name": "img",
+        "type": "dir",
+        "children": [
+          {
+            "name": "color_mode_toggle_menu.png",
+            "type": "file"
+          },
+          {
+            "name": "initial-layout.png",
+            "type": "file"
+          },
+          {
+            "name": "mkdocs_theme_dark_mode.png",
+            "type": "file"
+          },
+          {
+            "name": "mkdocs_theme_light_mode.png",
+            "type": "file"
+          },
+          {
+            "name": "multipage.png",
+            "type": "file"
+          },
+          {
+            "name": "plugin-events.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin-events.svg",
+            "type": "file"
+          },
+          {
+            "name": "readthedocs.png",
+            "type": "file"
+          },
+          {
+            "name": "screenshot.png",
+            "type": "file"
+          },
+          {
+            "name": "search.png",
+            "type": "file"
+          },
+          {
+            "name": "site-name.png",
+            "type": "file"
+          },
+          {
+            "name": "win-py-install.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "index.md",
+        "type": "file"
+      },
+      {
+        "name": "user-guide",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "choosing-your-theme.md",
+            "type": "file"
+          },
+          {
+            "name": "cli.md",
+            "type": "file"
+          },
+          {
+            "name": "configuration.md",
+            "type": "file"
+          },
+          {
+            "name": "customizing-your-theme.md",
+            "type": "file"
+          },
+          {
+            "name": "deploying-your-docs.md",
+            "type": "file"
+          },
+          {
+            "name": "installation.md",
+            "type": "file"
+          },
+          {
+            "name": "localizing-your-theme.md",
+            "type": "file"
+          },
+          {
+            "name": "writing-your-docs.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hatch_build.py",
+    "type": "file"
+  },
+  {
+    "name": "mkdocs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__main__.py",
+        "type": "file"
+      },
+      {
+        "name": "commands",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "build.py",
+            "type": "file"
+          },
+          {
+            "name": "gh_deploy.py",
+            "type": "file"
+          },
+          {
+            "name": "new.py",
+            "type": "file"
+          },
+          {
+            "name": "serve.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "config_options.py",
+            "type": "file"
+          },
+          {
+            "name": "defaults.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "contrib",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "search",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "lunr-language",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "lunr.ar.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.da.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.de.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.du.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.es.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.fi.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.fr.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.hi.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.hu.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.hy.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.it.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.ja.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.jp.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.kn.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.ko.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.multi.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.nl.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.no.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.pt.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.ro.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.ru.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.sa.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.stemmer.support.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.sv.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.ta.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.te.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.th.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.tr.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.vi.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "lunr.zh.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tinyseg.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "prebuild-index.js",
+                "type": "file"
+              },
+              {
+                "name": "search_index.py",
+                "type": "file"
+              },
+              {
+                "name": "templates",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "search",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "lunr.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "main.js",
+                        "type": "file"
+                      },
+                      {
+                        "name": "worker.js",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "exceptions.py",
+        "type": "file"
+      },
+      {
+        "name": "livereload",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "localization.py",
+        "type": "file"
+      },
+      {
+        "name": "plugins.py",
+        "type": "file"
+      },
+      {
+        "name": "py.typed",
+        "type": "file"
+      },
+      {
+        "name": "structure",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "files.py",
+            "type": "file"
+          },
+          {
+            "name": "nav.py",
+            "type": "file"
+          },
+          {
+            "name": "pages.py",
+            "type": "file"
+          },
+          {
+            "name": "toc.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "children": [
+          {
+            "name": "sitemap.xml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "build_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "cli_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "config",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "config_options_legacy_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "config_options_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "config_tests.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "gh_deploy_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "integration",
+            "type": "dir",
+            "children": [
+              {
+                "name": "complicated_config",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "documentation",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "custom.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tweak.css",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tweak.js",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mkdocs.yml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theme_tweaks",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "404.html",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "minimal",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "docs",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "testing.md",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mkdocs.yml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "projects.yaml",
+                "type": "file"
+              },
+              {
+                "name": "subpages",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "docs",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "image.png",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "metadata.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "non-index.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "page-title.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "pageTitle.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "sub1",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "image.png",
+                            "type": "file"
+                          },
+                          {
+                            "name": "index.md",
+                            "type": "file"
+                          },
+                          {
+                            "name": "non-index.md",
+                            "type": "file"
+                          },
+                          {
+                            "name": "sub1a",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "index.md",
+                                "type": "file"
+                              },
+                              {
+                                "name": "non-index.md",
+                                "type": "file"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "sub2",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "index.md",
+                            "type": "file"
+                          },
+                          {
+                            "name": "non-index.md",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mkdocs.yml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "unicode",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "docs",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "index.md",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mkdocs.yml",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "integration.py",
+            "type": "file"
+          },
+          {
+            "name": "livereload_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "localization_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "new_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "search_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "structure",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "file_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "nav_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "page_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "toc_tests.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "theme_tests.py",
+            "type": "file"
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "babel_stub_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "templates_tests.py",
+                "type": "file"
+              },
+              {
+                "name": "utils_tests.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "theme.py",
+        "type": "file"
+      },
+      {
+        "name": "themes",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "babel.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mkdocs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "404.html",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.html",
+                "type": "file"
+              },
+              {
+                "name": "content.html",
+                "type": "file"
+              },
+              {
+                "name": "css",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "base.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "bootstrap.min.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "bootstrap.min.css.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "brands.min.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fontawesome.min.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solid.min.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "v4-font-face.min.css",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "img",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "favicon.ico",
+                    "type": "file"
+                  },
+                  {
+                    "name": "grid.png",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "js",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "base.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "bootstrap.bundle.min.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "bootstrap.bundle.min.js.map",
+                    "type": "file"
+                  },
+                  {
+                    "name": "darkmode.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "keyboard-modal.html",
+                "type": "file"
+              },
+              {
+                "name": "locales",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "de",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "es",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "fa",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "fr",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "id",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "it",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ja",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "nb",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "nl",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "nn",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pl",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pt_BR",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ru",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tr",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "uk",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "zh_CN",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "zh_TW",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "main.html",
+                "type": "file"
+              },
+              {
+                "name": "messages.pot",
+                "type": "file"
+              },
+              {
+                "name": "mkdocs_theme.yml",
+                "type": "file"
+              },
+              {
+                "name": "nav-sub.html",
+                "type": "file"
+              },
+              {
+                "name": "search-modal.html",
+                "type": "file"
+              },
+              {
+                "name": "toc.html",
+                "type": "file"
+              },
+              {
+                "name": "webfonts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "fa-brands-400.ttf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-brands-400.woff2",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-regular-400.ttf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-regular-400.woff2",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-solid-900.ttf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-solid-900.woff2",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-v4compatibility.ttf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fa-v4compatibility.woff2",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "readthedocs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "404.html",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.html",
+                "type": "file"
+              },
+              {
+                "name": "breadcrumbs.html",
+                "type": "file"
+              },
+              {
+                "name": "css",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "fonts",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "Roboto-Slab-Bold.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "Roboto-Slab-Bold.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "Roboto-Slab-Regular.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "Roboto-Slab-Regular.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "fontawesome-webfont.eot",
+                        "type": "file"
+                      },
+                      {
+                        "name": "fontawesome-webfont.svg",
+                        "type": "file"
+                      },
+                      {
+                        "name": "fontawesome-webfont.ttf",
+                        "type": "file"
+                      },
+                      {
+                        "name": "fontawesome-webfont.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "fontawesome-webfont.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-bold-italic.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-bold-italic.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-bold.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-bold.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-normal-italic.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-normal-italic.woff2",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-normal.woff",
+                        "type": "file"
+                      },
+                      {
+                        "name": "lato-normal.woff2",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "theme.css",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theme_extra.css",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "footer.html",
+                "type": "file"
+              },
+              {
+                "name": "img",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "favicon.ico",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "js",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "html5shiv.min.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "jquery-3.6.0.min.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theme.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theme_extra.js",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "locales",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "de",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "es",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "fa",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "fr",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "id",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "it",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ja",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "nl",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pl",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "pt_BR",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ru",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "tr",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "uk",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "zh_CN",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "zh_TW",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "LC_MESSAGES",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "messages.po",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "main.html",
+                "type": "file"
+              },
+              {
+                "name": "messages.pot",
+                "type": "file"
+              },
+              {
+                "name": "mkdocs_theme.yml",
+                "type": "file"
+              },
+              {
+                "name": "nav.html",
+                "type": "file"
+              },
+              {
+                "name": "search.html",
+                "type": "file"
+              },
+              {
+                "name": "searchbox.html",
+                "type": "file"
+              },
+              {
+                "name": "toc.html",
+                "type": "file"
+              },
+              {
+                "name": "versions.html",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "babel_stub.py",
+            "type": "file"
+          },
+          {
+            "name": "cache.py",
+            "type": "file"
+          },
+          {
+            "name": "filters.py",
+            "type": "file"
+          },
+          {
+            "name": "meta.py",
+            "type": "file"
+          },
+          {
+            "name": "rendering.py",
+            "type": "file"
+          },
+          {
+            "name": "templates.py",
+            "type": "file"
+          },
+          {
+            "name": "yaml.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mkdocs.yml",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements",
+    "type": "dir",
+    "children": [
+      {
+        "name": "requirements-docs.txt",
+        "type": "file"
+      },
+      {
+        "name": "requirements-style.txt",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  }
+]

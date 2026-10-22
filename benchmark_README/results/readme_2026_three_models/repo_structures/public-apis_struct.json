@@ -1,0 +1,68 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "github_pull_request.sh",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_validate_format.py",
+            "type": "file"
+          },
+          {
+            "name": "test_validate_links.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "validate",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "format.py",
+            "type": "file"
+          },
+          {
+            "name": "links.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

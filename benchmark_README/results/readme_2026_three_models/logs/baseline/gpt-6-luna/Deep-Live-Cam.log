@@ -1,0 +1,225 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 41941,
+    "tree_files": 47,
+    "tracked_files": 47,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 7285,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 235,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 359,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "mypi.ini",
+        "tokens": 46,
+        "truncated": false
+      },
+      {
+        "path": "run.py",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "locales/de.json",
+        "tokens": 670,
+        "truncated": false
+      },
+      {
+        "path": "locales/es.json",
+        "tokens": 643,
+        "truncated": false
+      },
+      {
+        "path": "locales/fi.json",
+        "tokens": 733,
+        "truncated": false
+      },
+      {
+        "path": "locales/km.json",
+        "tokens": 1599,
+        "truncated": false
+      },
+      {
+        "path": "locales/ko.json",
+        "tokens": 710,
+        "truncated": false
+      },
+      {
+        "path": "locales/pt-br.json",
+        "tokens": 646,
+        "truncated": false
+      },
+      {
+        "path": "locales/ru.json",
+        "tokens": 774,
+        "truncated": false
+      },
+      {
+        "path": "locales/th.json",
+        "tokens": 1027,
+        "truncated": false
+      },
+      {
+        "path": "locales/zh.json",
+        "tokens": 646,
+        "truncated": false
+      },
+      {
+        "path": "models/instructions.txt",
+        "tokens": 68,
+        "truncated": false
+      },
+      {
+        "path": "modules/__init__.py",
+        "tokens": 158,
+        "truncated": false
+      },
+      {
+        "path": "modules/capturer.py",
+        "tokens": 268,
+        "truncated": false
+      },
+      {
+        "path": "modules/cluster_analysis.py",
+        "tokens": 263,
+        "truncated": false
+      },
+      {
+        "path": "modules/core.py",
+        "tokens": 2847,
+        "truncated": false
+      },
+      {
+        "path": "modules/face_analyser.py",
+        "tokens": 1471,
+        "truncated": false
+      },
+      {
+        "path": "modules/gettext.py",
+        "tokens": 191,
+        "truncated": false
+      },
+      {
+        "path": "modules/globals.py",
+        "tokens": 275,
+        "truncated": false
+      },
+      {
+        "path": "modules/metadata.py",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "modules/predicter.py",
+        "tokens": 285,
+        "truncated": false
+      },
+      {
+        "path": "modules/typing.py",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "modules/ui.json",
+        "tokens": 1602,
+        "truncated": false
+      },
+      {
+        "path": "modules/ui.py",
+        "tokens": 9560,
+        "truncated": false
+      },
+      {
+        "path": "modules/utilities.py",
+        "tokens": 1377,
+        "truncated": false
+      },
+      {
+        "path": "modules/video_capture.py",
+        "tokens": 684,
+        "truncated": false
+      },
+      {
+        "path": "modules/processors/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "modules/processors/frame/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "modules/processors/frame/core.py",
+        "tokens": 787,
+        "truncated": false
+      },
+      {
+        "path": "modules/processors/frame/face_enhancer.py",
+        "tokens": 880,
+        "truncated": false
+      },
+      {
+        "path": "modules/processors/frame/face_swapper.py",
+        "tokens": 5056,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitattributes",
+      ".gitignore",
+      "run-cuda.bat",
+      "run-directml.bat",
+      "media/avgpcperformancedemo.gif",
+      "media/deepwarebench.gif",
+      "media/demo.gif",
+      "media/live_show.gif",
+      "media/ludwig.gif",
+      "media/meme.gif",
+      "media/movie.gif",
+      "media/streamers.gif"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 40564,
+    "completion_tokens": 2145,
+    "total_tokens": 42709,
+    "cost": 0.006142925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 40561,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006142925,
+      "upstream_inference_prompt_cost": 0.005070425,
+      "upstream_inference_completions_cost": 0.0010725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 397,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606139-9NgPCDroDMsjhMkC5QEk"
+}

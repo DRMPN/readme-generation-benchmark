@@ -1,0 +1,92 @@
+I'll start by looking at what's in the repository.
+The core model and CLI are clear. Next I'll read the other entry points, the docs, and the licenses.
+Next I'll read the docs, model cards, and the core sampling module, and check for hidden files like CI config.
+The docs reference `../README.md` for TensorRT setup, so the README should cover that. Next I'll check the .gitignore, the model cards, and any install instructions elsewhere in the repo.
+There's a CI workflow I haven't read yet. I'll check it, along with the schnell model card and the remaining TRT config.
+I have enough to write an accurate README. One thing to verify first: `pyproject.toml` maps the `flux` console script to `flux.cli:app`, but `cli.py` appeared to define only `main`. I'll confirm that before documenting the command.
+The `flux` console script is broken: `pyproject.toml` points to `flux.cli:app`, which doesn't exist. Documenting `python -m flux` as the working entry point is the accurate choice. I have enough material now, so I'll write the README.
+The README is written. I'll correct one detail I abbreviated: the licensing dashboard URL should match the code exactly.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The README covers the supported models and their licenses, installation extras, environment variables, the five `python -m flux` subcommands with their defaults, the Gradio and Streamlit demos, output details (watermark, EXIF, NSFW filter), usage tracking, TensorRT setup, the project layout, development checks, and licensing. I took the details from the source code, the `docs/` folder, and the model cards. I did not install or run anything, so the install commands and the generation examples are unverified.
+
+Some things the code gets wrong, which the README lists under "Known issues" rather than papering over:
+
+- **The `flux` console script is broken.** `pyproject.toml` points to `flux.cli:app`, which does not exist. The README tells users to use `python -m flux`.
+- **Redux ignores text prompts.** Its CLI has no prompt option, and its `--loop` mode discards typed prompts.
+- **Both LoRA control models share one env var.** `FLUX_LORA` is used for both the Canny and Depth LoRAs, so one path can't serve both.
+- **License file mismatch.** `pyproject.toml` names `LICENSE.md`, but the file is `LICENSE`.
+- **Doc typos.** `docs/structural-conditioning.md` has `python flux control` (missing `-m`). `docs/image-editing.md` has `fp4_sdvd32`, while the code accepts `fp4_svd32`. The README uses the correct forms.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"ok\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 59 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead demo_gr.py 
+[0m→ [0mRead src/flux/cli.py 
+[0m→ [0mRead src/flux/util.py 
+[0m→ [0mRead src/flux/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/flux/cli_fill.py 
+[0m→ [0mRead src/flux/cli_kontext.py 
+[0m→ [0mRead src/flux/cli_control.py 
+[0m→ [0mRead src/flux/content_filters.py 
+[0m→ [0mRead src/flux/cli_redux.py 
+[0m→ [0mRead src/flux/__main__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead demo_st.py 
+[0m→ [0mRead demo_st_fill.py 
+[0m→ [0mRead src/flux/trt/trt_manager.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead model_licenses/LICENSE-FLUX1-dev 
+[0m→ [0mRead model_licenses/LICENSE-FLUX1-schnell 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/fill.md 
+[0m→ [0mRead docs/image-editing.md 
+[0m→ [0mRead docs/text-to-image.md 
+[0m→ [0mRead docs/structural-conditioning.md 
+[0m→ [0mRead docs/image-variation.md 
+[0m✱ [0mGlob "**/.*" [90min . · 1 match[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead model_cards/FLUX.1-dev.md 
+[0m✱ [0mGrep "pip install|uv pip|python -m pip|conda|pip3|git clone|BFL_API_KEY|FLUX_REDUX|FLUX_LORA|FLUX_MODEL|FLUX_AE|TRT_|CUSTOM_ONNX" [90min . · 44 matches[0m
+[0m→ [0mRead model_cards/FLUX.1-kontext-dev.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead model_cards/FLUX.1-schnell.md 
+[0m→ [0mRead src/flux/trt/trt_config/__init__.py 
+[0m✱ [0mGlob ".github/**/*" [90min . · 1 match[0m
+[0m→ [0mRead src/flux/trt/trt_config/base_trt_config.py [90m[limit=120][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/workflows/ci.yaml 
+[0m✱ [0mGrep "def (get_noise|prepare|prepare_fill|prepare_redux|prepare_control|prepare_kontext|get_schedule|denoise|unpack)\b" [90min src/flux/sampling.py · 9 matches[0m
+[0m✱ [0mGrep "fp4|fp8|svd" [90min src/flux/trt/trt_config/transformer_trt_config.py · 4 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "\bapp\b" [90min src/flux · 0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -258,9 +258,9 @@
+ Images are checked with the `Falconsai/nsfw_image_detection` classifier. If the NSFW score is 0.85 or higher, the image is not saved and a message is printed.
+ 
+ ## Usage tracking
+ 
+-With `--track_usage` (CLI or demos), each successful generation is reported to the Black Forest Labs licensing API. This requires `BFL_API_KEY` to be set. The code reports usage for `flux-dev`, `flux-dev-kontext`, `flux-dev-fill`, the Canny and Depth models and LoRAs, and `flux-dev-redux`. Other models, including `flux-schnell`, are not tracked. The code's docstring links to the licensing dashboard at `https://dashboard.bfl.ai/licensing/subscriptions`.
++With `--track_usage` (CLI or demos), each successful generation is reported to the Black Forest Labs licensing API. This requires `BFL_API_KEY` to be set. The code reports usage for `flux-dev`, `flux-dev-kontext`, `flux-dev-fill`, the Canny and Depth models and LoRAs, and `flux-dev-redux`. Other models, including `flux-schnell`, are not tracked. The code's docstring links to the licensing dashboard at `https://dashboard.bfl.ai/licensing/subscriptions?showInstructions=true`.
+ 
+ ## TensorRT inference
+ 
+ TensorRT support is optional and requires:
+
+> readme-benchmark · anthropic/claude-haiku-5.5

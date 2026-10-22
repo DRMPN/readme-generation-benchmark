@@ -1,0 +1,396 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "children": [
+          {
+            "name": "build.sh",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "build.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "api.md",
+        "type": "file"
+      },
+      {
+        "name": "benefits.md",
+        "type": "file"
+      },
+      {
+        "name": "guide.md",
+        "type": "file"
+      },
+      {
+        "name": "index.md",
+        "type": "file"
+      },
+      {
+        "name": "installation.md",
+        "type": "file"
+      },
+      {
+        "name": "troubleshooting.md",
+        "type": "file"
+      },
+      {
+        "name": "using-cli.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "cipher",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "cipher.py",
+            "type": "file"
+          },
+          {
+            "name": "cipher_test.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "diff",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "diff.py",
+            "type": "file"
+          },
+          {
+            "name": "diff_test.py",
+            "type": "file"
+          },
+          {
+            "name": "difffull.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "identity",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "identity.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "widget",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "collector.py",
+            "type": "file"
+          },
+          {
+            "name": "collector_test.py",
+            "type": "file"
+          },
+          {
+            "name": "widget.py",
+            "type": "file"
+          },
+          {
+            "name": "widget_test.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "fire",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__main__.py",
+        "type": "file"
+      },
+      {
+        "name": "completion.py",
+        "type": "file"
+      },
+      {
+        "name": "completion_test.py",
+        "type": "file"
+      },
+      {
+        "name": "console",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "console_attr.py",
+            "type": "file"
+          },
+          {
+            "name": "console_attr_os.py",
+            "type": "file"
+          },
+          {
+            "name": "console_io.py",
+            "type": "file"
+          },
+          {
+            "name": "console_pager.py",
+            "type": "file"
+          },
+          {
+            "name": "encoding.py",
+            "type": "file"
+          },
+          {
+            "name": "files.py",
+            "type": "file"
+          },
+          {
+            "name": "platforms.py",
+            "type": "file"
+          },
+          {
+            "name": "text.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "core.py",
+        "type": "file"
+      },
+      {
+        "name": "core_test.py",
+        "type": "file"
+      },
+      {
+        "name": "custom_descriptions.py",
+        "type": "file"
+      },
+      {
+        "name": "custom_descriptions_test.py",
+        "type": "file"
+      },
+      {
+        "name": "decorators.py",
+        "type": "file"
+      },
+      {
+        "name": "decorators_test.py",
+        "type": "file"
+      },
+      {
+        "name": "docstrings.py",
+        "type": "file"
+      },
+      {
+        "name": "docstrings_fuzz_test.py",
+        "type": "file"
+      },
+      {
+        "name": "docstrings_test.py",
+        "type": "file"
+      },
+      {
+        "name": "fire_import_test.py",
+        "type": "file"
+      },
+      {
+        "name": "fire_test.py",
+        "type": "file"
+      },
+      {
+        "name": "formatting.py",
+        "type": "file"
+      },
+      {
+        "name": "formatting_test.py",
+        "type": "file"
+      },
+      {
+        "name": "formatting_windows.py",
+        "type": "file"
+      },
+      {
+        "name": "helptext.py",
+        "type": "file"
+      },
+      {
+        "name": "helptext_test.py",
+        "type": "file"
+      },
+      {
+        "name": "inspectutils.py",
+        "type": "file"
+      },
+      {
+        "name": "inspectutils_test.py",
+        "type": "file"
+      },
+      {
+        "name": "interact.py",
+        "type": "file"
+      },
+      {
+        "name": "interact_test.py",
+        "type": "file"
+      },
+      {
+        "name": "main_test.py",
+        "type": "file"
+      },
+      {
+        "name": "parser.py",
+        "type": "file"
+      },
+      {
+        "name": "parser_fuzz_test.py",
+        "type": "file"
+      },
+      {
+        "name": "parser_test.py",
+        "type": "file"
+      },
+      {
+        "name": "test_components.py",
+        "type": "file"
+      },
+      {
+        "name": "test_components_bin.py",
+        "type": "file"
+      },
+      {
+        "name": "test_components_py3.py",
+        "type": "file"
+      },
+      {
+        "name": "test_components_test.py",
+        "type": "file"
+      },
+      {
+        "name": "testutils.py",
+        "type": "file"
+      },
+      {
+        "name": "testutils_test.py",
+        "type": "file"
+      },
+      {
+        "name": "trace.py",
+        "type": "file"
+      },
+      {
+        "name": "trace_test.py",
+        "type": "file"
+      },
+      {
+        "name": "value_types.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "mkdocs.yml",
+    "type": "file"
+  },
+  {
+    "name": "pylintrc",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  }
+]

@@ -1,0 +1,104 @@
+I'll start by looking at the repository layout and existing docs.
+This is Mackup. I'll read the core project files and existing docs to ground the README.
+The Makefile has no `develop` target even though the docs mention `make develop`, so I'll verify that. Reading the remaining code and docs next.
+I have the core picture. Next I'll check the CI workflows, sample config, test docs, the `develop` target question, and the supported-app count.
+I have enough to write an accurate README. One last check: the repo's markdown lint config, so the new README passes the project's own linter.
+I have what I need. Writing the README now, with every claim tied to a file I read.
+The draft is written. Checking it against the code, I found two statements that are too broad, so I'm correcting them.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The repo is Mackup 0.8.43, a GPL-3.0-or-later tool that syncs application settings on macOS and Linux. The README covers:
+
+- how backup, restore, and uninstall work
+- requirements and installation (pip, Homebrew)
+- commands and options, taken from the `docopt` usage in `mackup/main.py`
+- storage engines and their paths, from `mackup/config.py` and `mackup/utils.py`
+- `~/.mackup.cfg` sections, custom application definitions, and XDG handling
+- development, testing, and contribution steps
+
+Every claim is traceable to the code, `INSTALL.md`, `doc/`, or `.github/`. I corrected two statements that were too broad: `backup` does not restore Mackup's config first, and the Linux `~/Library` skip applies only to `restore`.
+
+Some things I noticed but did not document:
+
+- **Missing `make develop` target.** `doc/README.md` tells contributors to run `make develop` and `make undevelop`, but the `Makefile` has neither. I left them out of the README.
+- **Application count.** The README says 579 application definitions. I got that from a grep for `^name = ` in `mackup/applications`, not from running `mackup list`.
+- **Outdated docs.** `doc/README.md` says there are four storage options, while the sample `doc/.mackup.cfg` says three. The README follows the code, which supports four.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m300 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead INSTALL.md 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead doc/README.md 
+[0m→ [0mRead mackup/mackup.py 
+[0m→ [0mRead mackup/config.py 
+[0m→ [0mRead mackup/constants.py 
+[0m→ [0mRead .github 
+[0m→ [0mRead mackup/main.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead mackup/application.py 
+[0m→ [0mRead mackup/appsdb.py 
+[0m→ [0mRead mackup/utils.py 
+[0m→ [0mRead doc/develop.md 
+[0m→ [0mRead doc/release.md 
+[0m→ [0mRead doc/configuration_merge_guide.md 
+[0m→ [0mRead snap/snapcraft.yaml 
+[0m→ [0mRead .github/CONTRIBUTING.md 
+[0m✱ [0mGlob "{.github/workflows/*,doc/.mackup.cfg,.mackup*,mackup/applications/.*}" [90m6 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead doc/.mackup.cfg 
+[0m→ [0mRead .github/workflows/test.yaml 
+[0m→ [0mRead .github/workflows/install.yaml 
+[0m✱ [0mGrep "develop|undevelop" [90min . · 6 matches[0m
+[0m→ [0mRead tests/README.md 
+[0m✱ [0mGrep "^name = " [90min mackup/applications · 579 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .markdownlint.yaml 
+[0m→ [0mRead .gitignore 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -84,10 +84,10 @@
+ | `restore` | Link the configuration files in the storage folder into your home folder. Use this on any other computer. |
+ | `show <application>` | Show the display name and configuration files Mackup manages for one application. |
+ | `uninstall` | Replace every managed link with a real copy of the file, returning your home folder to its pre-Mackup state. Asks for confirmation unless `--force` or `--dry-run` is used. |
+ 
+-`restore` and `backup` restore or back up the Mackup configuration itself first,
+-so that any custom settings are applied before the other applications.
++`restore` restores the Mackup configuration first, so that any custom settings
++are applied before the other applications are restored.
+ 
+ ### Options
+ 
+ | Option | Description |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -239,9 +239,9 @@
+ [mackup/applications](mackup/applications). Run `mackup list` to see the names
+ for your installed version, and `mackup show <application>` to see which files
+ an application includes.
+ 
+-On Linux, Mackup does not sync files under `~/Library`.
++On Linux, `mackup restore` skips files under `~/Library`.
+ 
+ ## Development
+ 
+ Set up a development environment with Poetry, as described in
+
+> readme-benchmark · anthropic/claude-haiku-5.5

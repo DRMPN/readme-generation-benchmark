@@ -1,0 +1,37 @@
+The repository is a 30-day Python learning collection: most days have a Markdown lesson with exercises, while Day 1 has a runnable example rather than a lesson file. I’ll document the actual lesson paths and note the available language and data resources without implying the translations are complete.
+Created `README.md` in the repository root. It starts with a level-one heading and documents the course outline, lesson links, getting started, and supporting resources. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+[0m✱ [0mGlob ".*" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min . · 250 matches[0m
+[0m✱ [0mGrep "." [90min . · 200 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "[0-9][0-9]_Day_*/*" [90m40 matches[0m
+[0m→ [0mRead old_files/readme.md 
+[0m→ [0mRead old_files/readme4-6.md 
+[0m→ [0mRead old_files/readme7-9.md 
+[0m✱ [0mGlob "*.md" [90m81 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead 20_Day_Python_package_manager/20_python_package_manager.md [90m[limit=120][0m
+[0m→ [0mRead 28_Day_API/28_API.md [90m[limit=100][0m
+[0m→ [0mRead 25_Day_Pandas/25_pandas.md [90m[limit=100][0m
+[0m→ [0mRead 29_Day_Building_API/29_building_API.md [90m[limit=100][0m
+[0m✱ [0mGrep "^#{1,3} " [90min . · 350 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead 11_Day_Functions/11_functions.md [90m[limit=50][0m
+[0m→ [0mRead 18_Day_Regular_expressions/18_regular_expressions.md [90m[limit=45][0m
+[0m→ [0mRead 12_Day_Modules/12_modules.md [90m[limit=45][0m
+[0m→ [0mRead 21_Day_Classes_and_objects/21_classes_and_objects.md [90m[limit=45][0m
+[0m→ [0mRead 24_Day_Statistics/24_statistics.md [90m[limit=45][0m
+[0m→ [0mRead 27_Day_Python_with_mongodb/27_python_with_mongodb.md [90m[limit=45][0m
+[0m→ [0mRead 01_Day_Introduction/helloworld.py [90m[limit=40][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

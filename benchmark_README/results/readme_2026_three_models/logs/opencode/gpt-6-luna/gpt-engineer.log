@@ -1,0 +1,49 @@
+I’ll inspect the project files and existing documentation/configuration, then write a README grounded only in what the repository supports. I’ll limit changes to `README.md`.
+The repository is the Python `gpt-engineer` CLI: it turns a project prompt into files, and can also propose edits to existing files. I’ve confirmed the current CLI defaults and the local execution/review behavior, so the README will document those without relying on outdated snippets elsewhere in the repo.
+Created `README.md` with installation, setup, generation and improvement workflows, common CLI options, development instructions, and project links. The README starts with a level-one heading and documents behavior supported by the repository. No tests were run; only `README.md` was changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "." [90min . · 10 matches[0m
+[0m✱ [0mGlob "**/*" [90m163 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/quickstart.rst 
+[0m→ [0mRead docs/introduction.md 
+[0m→ [0mRead WINDOWS_README.md 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead docs/index.rst 
+[0m→ [0mRead gpt_engineer/applications/cli/main.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead TERMS_OF_USE.md 
+[0m→ [0mRead DISCLAIMER.md 
+[0m→ [0mRead docs/open_models.md 
+[0m→ [0mRead LICENSE [90m[limit=8][0m
+[0m→ [0mRead citation.cff 
+[0m→ [0mRead gpt_engineer/benchmark/__main__.py 
+[0m→ [0mRead gpt_engineer/core/default/steps.py 
+[0m→ [0mRead gpt_engineer/core/default/paths.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_engineer/core/ai.py [90m[limit=140][0m
+[0m→ [0mRead gpt_engineer/core/default/file_store.py 
+[0m→ [0mRead gpt_engineer/core/default/disk_execution_env.py 
+[0m→ [0mRead ROADMAP.md [90m[limit=80][0m
+[0m→ [0mRead GOVERNANCE.md [90m[limit=80][0m
+[0m→ [0mRead gpt_engineer/benchmark/default_bench_config.toml 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_engineer/core/ai.py [90m[offset=170, limit=100][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_engineer/core/ai.py [90m[offset=280, limit=60][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_engineer/core/ai.py [90m[offset=330, limit=70][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tox.ini 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

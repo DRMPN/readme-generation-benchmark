@@ -1,0 +1,2650 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "install.yaml",
+            "type": "file"
+          },
+          {
+            "name": "linelint.yaml",
+            "type": "file"
+          },
+          {
+            "name": "markdown.yaml",
+            "type": "file"
+          },
+          {
+            "name": "ruff.yaml",
+            "type": "file"
+          },
+          {
+            "name": "test.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".linelint.yml",
+    "type": "file"
+  },
+  {
+    "name": ".markdownlint.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".markdownlintignore",
+    "type": "file"
+  },
+  {
+    "name": "INSTALL.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "doc",
+    "type": "dir",
+    "children": [
+      {
+        "name": ".mackup",
+        "type": "dir",
+        "children": [
+          {
+            "name": "gnupg.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup.cfg",
+            "type": "file"
+          },
+          {
+            "name": "my-own-files.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ssh.cfg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": ".mackup.cfg",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "configuration_merge_guide.md",
+        "type": "file"
+      },
+      {
+        "name": "develop.md",
+        "type": "file"
+      },
+      {
+        "name": "release.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "mackup",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "application.py",
+        "type": "file"
+      },
+      {
+        "name": "applications",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1password-4.cfg",
+            "type": "file"
+          },
+          {
+            "name": "2do.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ack.cfg",
+            "type": "file"
+          },
+          {
+            "name": "act.cfg",
+            "type": "file"
+          },
+          {
+            "name": "activitywatch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "adium.cfg",
+            "type": "file"
+          },
+          {
+            "name": "adobe-camera-raw.cfg",
+            "type": "file"
+          },
+          {
+            "name": "aerc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "aerospace.cfg",
+            "type": "file"
+          },
+          {
+            "name": "affinity-designer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "affinity-photo.cfg",
+            "type": "file"
+          },
+          {
+            "name": "affinity-publisher.cfg",
+            "type": "file"
+          },
+          {
+            "name": "airflow.cfg",
+            "type": "file"
+          },
+          {
+            "name": "airmail.cfg",
+            "type": "file"
+          },
+          {
+            "name": "akamai-cli.cfg",
+            "type": "file"
+          },
+          {
+            "name": "alacritty.cfg",
+            "type": "file"
+          },
+          {
+            "name": "alt-tab.cfg",
+            "type": "file"
+          },
+          {
+            "name": "amethyst.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ancient-domains-of-mystery.cfg",
+            "type": "file"
+          },
+          {
+            "name": "androidstudio-13.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ansible.cfg",
+            "type": "file"
+          },
+          {
+            "name": "appcleaner.cfg",
+            "type": "file"
+          },
+          {
+            "name": "appcode-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "appcode-3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "appcode-31.cfg",
+            "type": "file"
+          },
+          {
+            "name": "appcode-32.cfg",
+            "type": "file"
+          },
+          {
+            "name": "apple-music.cfg",
+            "type": "file"
+          },
+          {
+            "name": "apptivate.cfg",
+            "type": "file"
+          },
+          {
+            "name": "arara.cfg",
+            "type": "file"
+          },
+          {
+            "name": "aria2c.cfg",
+            "type": "file"
+          },
+          {
+            "name": "arm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "asciinema.cfg",
+            "type": "file"
+          },
+          {
+            "name": "asdf.cfg",
+            "type": "file"
+          },
+          {
+            "name": "aspell.cfg",
+            "type": "file"
+          },
+          {
+            "name": "astyle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "atlantis.cfg",
+            "type": "file"
+          },
+          {
+            "name": "atom.cfg",
+            "type": "file"
+          },
+          {
+            "name": "audacious.cfg",
+            "type": "file"
+          },
+          {
+            "name": "auskey.cfg",
+            "type": "file"
+          },
+          {
+            "name": "autokey.cfg",
+            "type": "file"
+          },
+          {
+            "name": "awareness.cfg",
+            "type": "file"
+          },
+          {
+            "name": "aws.cfg",
+            "type": "file"
+          },
+          {
+            "name": "azure.cfg",
+            "type": "file"
+          },
+          {
+            "name": "b-ryan_powerline-shell.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bartender.cfg",
+            "type": "file"
+          },
+          {
+            "name": "base.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bash-it.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bash.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "beatport-pro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "beets.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bettersnaptool.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bettertouchtool.cfg",
+            "type": "file"
+          },
+          {
+            "name": "beyond-compare.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bibdesk.cfg",
+            "type": "file"
+          },
+          {
+            "name": "billings-pro-server-admin.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bitbar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bitchx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "blackfire.cfg",
+            "type": "file"
+          },
+          {
+            "name": "blender.cfg",
+            "type": "file"
+          },
+          {
+            "name": "blesh.cfg",
+            "type": "file"
+          },
+          {
+            "name": "boto.cfg",
+            "type": "file"
+          },
+          {
+            "name": "boxer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "brackets.cfg",
+            "type": "file"
+          },
+          {
+            "name": "brave.cfg",
+            "type": "file"
+          },
+          {
+            "name": "btop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bump.cfg",
+            "type": "file"
+          },
+          {
+            "name": "bundler.cfg",
+            "type": "file"
+          },
+          {
+            "name": "byobu.cfg",
+            "type": "file"
+          },
+          {
+            "name": "caffeine.cfg",
+            "type": "file"
+          },
+          {
+            "name": "calibre.cfg",
+            "type": "file"
+          },
+          {
+            "name": "capture-one.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cartographica.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cerebro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "charles.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cheat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "chef.cfg",
+            "type": "file"
+          },
+          {
+            "name": "chicken.cfg",
+            "type": "file"
+          },
+          {
+            "name": "choosy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "chunkwm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cider.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clashx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clasp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cleanshot.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clementine.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clion.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clipmenu.cfg",
+            "type": "file"
+          },
+          {
+            "name": "clipy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cloudapp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "coda-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "colloquy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "colorschemer-studio-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "colorslurp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "colorsync.cfg",
+            "type": "file"
+          },
+          {
+            "name": "composer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "concentrate.cfg",
+            "type": "file"
+          },
+          {
+            "name": "conky.cfg",
+            "type": "file"
+          },
+          {
+            "name": "consular.cfg",
+            "type": "file"
+          },
+          {
+            "name": "contexts.cfg",
+            "type": "file"
+          },
+          {
+            "name": "controlplane.cfg",
+            "type": "file"
+          },
+          {
+            "name": "copyq.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cord.cfg",
+            "type": "file"
+          },
+          {
+            "name": "coteditor.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ctags.cfg",
+            "type": "file"
+          },
+          {
+            "name": "curl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cursor.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cvim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "cyberduck.cfg",
+            "type": "file"
+          },
+          {
+            "name": "daisydisk.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dash.cfg",
+            "type": "file"
+          },
+          {
+            "name": "datagrip.cfg",
+            "type": "file"
+          },
+          {
+            "name": "day-o.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dbeaver.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dbvisualizer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "deal-alert.cfg",
+            "type": "file"
+          },
+          {
+            "name": "deepin-dde-dock.cfg",
+            "type": "file"
+          },
+          {
+            "name": "deepin-dde-file-manager.cfg",
+            "type": "file"
+          },
+          {
+            "name": "deepin-terminal.cfg",
+            "type": "file"
+          },
+          {
+            "name": "default-folder-x.cfg",
+            "type": "file"
+          },
+          {
+            "name": "defaultkeybinding.cfg",
+            "type": "file"
+          },
+          {
+            "name": "devilspie.cfg",
+            "type": "file"
+          },
+          {
+            "name": "devilspie2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dig.cfg",
+            "type": "file"
+          },
+          {
+            "name": "divvy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "docker.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dolphin.cfg",
+            "type": "file"
+          },
+          {
+            "name": "doom-emacs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "doublecmd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "doxie.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dozer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "draft.cfg",
+            "type": "file"
+          },
+          {
+            "name": "droplr.cfg",
+            "type": "file"
+          },
+          {
+            "name": "dropzone.cfg",
+            "type": "file"
+          },
+          {
+            "name": "drush.cfg",
+            "type": "file"
+          },
+          {
+            "name": "editorconfig.cfg",
+            "type": "file"
+          },
+          {
+            "name": "electrum.cfg",
+            "type": "file"
+          },
+          {
+            "name": "emacs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "enjoyable.cfg",
+            "type": "file"
+          },
+          {
+            "name": "environmental-station-alpha.cfg",
+            "type": "file"
+          },
+          {
+            "name": "eqmac-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "eslint.cfg",
+            "type": "file"
+          },
+          {
+            "name": "espanso.cfg",
+            "type": "file"
+          },
+          {
+            "name": "exercism.cfg",
+            "type": "file"
+          },
+          {
+            "name": "expandrive.cfg",
+            "type": "file"
+          },
+          {
+            "name": "factorio.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fantastical.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fasd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fastlane.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fastscripts.cfg",
+            "type": "file"
+          },
+          {
+            "name": "feeds.cfg",
+            "type": "file"
+          },
+          {
+            "name": "filezilla.cfg",
+            "type": "file"
+          },
+          {
+            "name": "finicky.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fish.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fisher.cfg",
+            "type": "file"
+          },
+          {
+            "name": "flake8.cfg",
+            "type": "file"
+          },
+          {
+            "name": "flameshot.cfg",
+            "type": "file"
+          },
+          {
+            "name": "flexget.cfg",
+            "type": "file"
+          },
+          {
+            "name": "flux.cfg",
+            "type": "file"
+          },
+          {
+            "name": "focus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fontconfig.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fontexplorer-x.cfg",
+            "type": "file"
+          },
+          {
+            "name": "forge.cfg",
+            "type": "file"
+          },
+          {
+            "name": "fork.cfg",
+            "type": "file"
+          },
+          {
+            "name": "forklift.cfg",
+            "type": "file"
+          },
+          {
+            "name": "franz.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gasmask.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gdb.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gearplayer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "geektool.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ghci.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ghidra.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ghostty.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ghostwriter.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gimp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "git-hooks.cfg",
+            "type": "file"
+          },
+          {
+            "name": "git.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gitbox.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gitfox.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gitkraken.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gitup.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gmail-notifr.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gmailctl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gmvault.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gnupg.cfg",
+            "type": "file"
+          },
+          {
+            "name": "go2shell.cfg",
+            "type": "file"
+          },
+          {
+            "name": "goku.cfg",
+            "type": "file"
+          },
+          {
+            "name": "goland.cfg",
+            "type": "file"
+          },
+          {
+            "name": "goldendict.cfg",
+            "type": "file"
+          },
+          {
+            "name": "goodsync.cfg",
+            "type": "file"
+          },
+          {
+            "name": "goshare.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gradle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "grandtotal-3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "grsync.cfg",
+            "type": "file"
+          },
+          {
+            "name": "gstm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hammerspoon.cfg",
+            "type": "file"
+          },
+          {
+            "name": "handbrake.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hands-off.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hazel.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hero-lab.cfg",
+            "type": "file"
+          },
+          {
+            "name": "heroku.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hexchat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hexels.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hocus-focus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "homebrew.cfg",
+            "type": "file"
+          },
+          {
+            "name": "homebridge.cfg",
+            "type": "file"
+          },
+          {
+            "name": "houdini.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hstr.cfg",
+            "type": "file"
+          },
+          {
+            "name": "htop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "httpie.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hub.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hyper.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hyperdock.cfg",
+            "type": "file"
+          },
+          {
+            "name": "hyperswitch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "i2cssh.cfg",
+            "type": "file"
+          },
+          {
+            "name": "i3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "idapro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ideavim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "iina.cfg",
+            "type": "file"
+          },
+          {
+            "name": "illustrator.cfg",
+            "type": "file"
+          },
+          {
+            "name": "inkscape.cfg",
+            "type": "file"
+          },
+          {
+            "name": "insomnia.cfg",
+            "type": "file"
+          },
+          {
+            "name": "intellijidea.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ipython.cfg",
+            "type": "file"
+          },
+          {
+            "name": "irssi.cfg",
+            "type": "file"
+          },
+          {
+            "name": "istat-menus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "iterm2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "itermocil.cfg",
+            "type": "file"
+          },
+          {
+            "name": "itsycal.cfg",
+            "type": "file"
+          },
+          {
+            "name": "itunes-scripts.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jankyborders.cfg",
+            "type": "file"
+          },
+          {
+            "name": "janus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jitouch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "joplin.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jrnl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jsbeautifier.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jshint.cfg",
+            "type": "file"
+          },
+          {
+            "name": "julia.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jumpcut.cfg",
+            "type": "file"
+          },
+          {
+            "name": "jupyter.cfg",
+            "type": "file"
+          },
+          {
+            "name": "k9s.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kaggle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kaleidoscope.cfg",
+            "type": "file"
+          },
+          {
+            "name": "karabiner-elements.cfg",
+            "type": "file"
+          },
+          {
+            "name": "karabiner.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kdenlive.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keepassx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keepassxc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keepingyouawake.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keka.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keybase.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keyboard-maestro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keymo.cfg",
+            "type": "file"
+          },
+          {
+            "name": "keyremap4macbook.cfg",
+            "type": "file"
+          },
+          {
+            "name": "khd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kitty.cfg",
+            "type": "file"
+          },
+          {
+            "name": "krew.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kubectl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "kwm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "latexit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "launchbar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lazygit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ledger.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lf.cfg",
+            "type": "file"
+          },
+          {
+            "name": "libreoffice.cfg",
+            "type": "file"
+          },
+          {
+            "name": "liftoff.cfg",
+            "type": "file"
+          },
+          {
+            "name": "light-table.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lightroom-classic.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lightroom.cfg",
+            "type": "file"
+          },
+          {
+            "name": "limechat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "liquidprompt.cfg",
+            "type": "file"
+          },
+          {
+            "name": "littlesnitch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "livestreamer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "logitech-options.cfg",
+            "type": "file"
+          },
+          {
+            "name": "logseq.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lollypop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "loopback.cfg",
+            "type": "file"
+          },
+          {
+            "name": "luftrausers.cfg",
+            "type": "file"
+          },
+          {
+            "name": "lunarvim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "macdive2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "macdown.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup.cfg",
+            "type": "file"
+          },
+          {
+            "name": "macosx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "macvim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "magic-launch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "magicprefs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "magnet.cfg",
+            "type": "file"
+          },
+          {
+            "name": "maid.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mail.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mailmate.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mailplane.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mako.cfg",
+            "type": "file"
+          },
+          {
+            "name": "marked2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "marta.cfg",
+            "type": "file"
+          },
+          {
+            "name": "matlab.cfg",
+            "type": "file"
+          },
+          {
+            "name": "maven.cfg",
+            "type": "file"
+          },
+          {
+            "name": "max.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mendeley.cfg",
+            "type": "file"
+          },
+          {
+            "name": "menumeters.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mercurial.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mercurymover.cfg",
+            "type": "file"
+          },
+          {
+            "name": "messages.cfg",
+            "type": "file"
+          },
+          {
+            "name": "micro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "microsoft-remote-desktop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mitmproxy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mkcert.cfg",
+            "type": "file"
+          },
+          {
+            "name": "monodevelop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "moom.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mosaic.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mou.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mpd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mplayerx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mps-youtube.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mpv.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mtmr.cfg",
+            "type": "file"
+          },
+          {
+            "name": "multitouch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mumu.cfg",
+            "type": "file"
+          },
+          {
+            "name": "musicbrainz-picard.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mutespotifyads.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mycli.cfg",
+            "type": "file"
+          },
+          {
+            "name": "myrepos.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mysql.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mysqlworkbench.cfg",
+            "type": "file"
+          },
+          {
+            "name": "name-mangler.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nano.cfg",
+            "type": "file"
+          },
+          {
+            "name": "navicat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ncmpcpp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "neofetch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "neovim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nethack.cfg",
+            "type": "file"
+          },
+          {
+            "name": "netlify.cfg",
+            "type": "file"
+          },
+          {
+            "name": "newsbeuter.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ngrok.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ni.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nomacs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nosqlbooster-for-mongodb.cfg",
+            "type": "file"
+          },
+          {
+            "name": "notion-enhancer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nova.cfg",
+            "type": "file"
+          },
+          {
+            "name": "npm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "npmrc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nslogger.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nuget.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nushell.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nvalt.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nvm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "nvpy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "obs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "oci.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ogdesign-eagle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "oh-my-fish.cfg",
+            "type": "file"
+          },
+          {
+            "name": "oh-my-tmux.cfg",
+            "type": "file"
+          },
+          {
+            "name": "omnifocus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "omnigraffle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "openbox.cfg",
+            "type": "file"
+          },
+          {
+            "name": "openemu.cfg",
+            "type": "file"
+          },
+          {
+            "name": "p10k.cfg",
+            "type": "file"
+          },
+          {
+            "name": "paintbrush.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pandoc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pass.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pastebot.cfg",
+            "type": "file"
+          },
+          {
+            "name": "path-finder.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pdfjam.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pear.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pentadactyl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "perl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pgsql.cfg",
+            "type": "file"
+          },
+          {
+            "name": "phoenix.cfg",
+            "type": "file"
+          },
+          {
+            "name": "phoneview.cfg",
+            "type": "file"
+          },
+          {
+            "name": "photoshop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "phpstorm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "picgo.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pidgin.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pip.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pixelsnap.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pixelsnap2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "planner.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pnpm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pock.cfg",
+            "type": "file"
+          },
+          {
+            "name": "poedit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "poetry.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pokerstars.cfg",
+            "type": "file"
+          },
+          {
+            "name": "polybar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "popclip.cfg",
+            "type": "file"
+          },
+          {
+            "name": "popcorn-time.cfg",
+            "type": "file"
+          },
+          {
+            "name": "postico.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pow.cfg",
+            "type": "file"
+          },
+          {
+            "name": "powerline.cfg",
+            "type": "file"
+          },
+          {
+            "name": "prezto.cfg",
+            "type": "file"
+          },
+          {
+            "name": "processing.cfg",
+            "type": "file"
+          },
+          {
+            "name": "proselint.cfg",
+            "type": "file"
+          },
+          {
+            "name": "proxychains.cfg",
+            "type": "file"
+          },
+          {
+            "name": "proxyman.cfg",
+            "type": "file"
+          },
+          {
+            "name": "prusa-slicer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "psysh.cfg",
+            "type": "file"
+          },
+          {
+            "name": "punto-switcher.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pycharm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pypi.cfg",
+            "type": "file"
+          },
+          {
+            "name": "pyradio.cfg",
+            "type": "file"
+          },
+          {
+            "name": "querious.cfg",
+            "type": "file"
+          },
+          {
+            "name": "quicklook.cfg",
+            "type": "file"
+          },
+          {
+            "name": "quicksilver.cfg",
+            "type": "file"
+          },
+          {
+            "name": "quitter.cfg",
+            "type": "file"
+          },
+          {
+            "name": "qutebrowser.cfg",
+            "type": "file"
+          },
+          {
+            "name": "qv2ray.cfg",
+            "type": "file"
+          },
+          {
+            "name": "r.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rails.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ranger.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rbenv.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rclone.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rectangle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "redshift-scheduler.cfg",
+            "type": "file"
+          },
+          {
+            "name": "redshift.cfg",
+            "type": "file"
+          },
+          {
+            "name": "remote-desktop-manager.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rhythmbox.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rime.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ripgrep.cfg",
+            "type": "file"
+          },
+          {
+            "name": "robo3t.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rocket.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rofi.cfg",
+            "type": "file"
+          },
+          {
+            "name": "royaltsx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rstudio.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rtorrent.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rtx.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rubitrack5.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rubocop.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ruby-version.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ruby.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rubymine.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rust.cfg",
+            "type": "file"
+          },
+          {
+            "name": "rvm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "s3cmd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sabnzbd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sbcl.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sbt.cfg",
+            "type": "file"
+          },
+          {
+            "name": "scenario.cfg",
+            "type": "file"
+          },
+          {
+            "name": "screen.cfg",
+            "type": "file"
+          },
+          {
+            "name": "screenhero.cfg",
+            "type": "file"
+          },
+          {
+            "name": "scrivener.cfg",
+            "type": "file"
+          },
+          {
+            "name": "scroll-reverser.cfg",
+            "type": "file"
+          },
+          {
+            "name": "secure-pipes.cfg",
+            "type": "file"
+          },
+          {
+            "name": "securecrt.cfg",
+            "type": "file"
+          },
+          {
+            "name": "seil.cfg",
+            "type": "file"
+          },
+          {
+            "name": "selfcontrol.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sequel-pro.cfg",
+            "type": "file"
+          },
+          {
+            "name": "shiftit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "shifty.cfg",
+            "type": "file"
+          },
+          {
+            "name": "shimo.cfg",
+            "type": "file"
+          },
+          {
+            "name": "showyedge.cfg",
+            "type": "file"
+          },
+          {
+            "name": "shsh-blobs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "shuttle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sizeup.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sizzy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sketchybar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "skhd.cfg",
+            "type": "file"
+          },
+          {
+            "name": "skim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "skitch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "slate.cfg",
+            "type": "file"
+          },
+          {
+            "name": "slic3r.cfg",
+            "type": "file"
+          },
+          {
+            "name": "slogger.cfg",
+            "type": "file"
+          },
+          {
+            "name": "smartgit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "smooth-mouse.cfg",
+            "type": "file"
+          },
+          {
+            "name": "soulver.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sourcetree.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spacelauncher.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spacemacs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spacevim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spamsieve.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spark.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spectacle.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spectrwm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "splice.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spotify-notifications.cfg",
+            "type": "file"
+          },
+          {
+            "name": "spotify.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sqitch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ssh.cfg",
+            "type": "file"
+          },
+          {
+            "name": "starship.cfg",
+            "type": "file"
+          },
+          {
+            "name": "startupizer2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "stata.cfg",
+            "type": "file"
+          },
+          {
+            "name": "stats.cfg",
+            "type": "file"
+          },
+          {
+            "name": "stay.cfg",
+            "type": "file"
+          },
+          {
+            "name": "storyist-3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "streamdeck.cfg",
+            "type": "file"
+          },
+          {
+            "name": "subler.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sublime-merge.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sublime-text-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sublime-text-3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "sublime-text.cfg",
+            "type": "file"
+          },
+          {
+            "name": "subversion.cfg",
+            "type": "file"
+          },
+          {
+            "name": "superduper.cfg",
+            "type": "file"
+          },
+          {
+            "name": "surge.cfg",
+            "type": "file"
+          },
+          {
+            "name": "swaywm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "swinsian.cfg",
+            "type": "file"
+          },
+          {
+            "name": "swish.cfg",
+            "type": "file"
+          },
+          {
+            "name": "switchhosts.cfg",
+            "type": "file"
+          },
+          {
+            "name": "t.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tableplus.cfg",
+            "type": "file"
+          },
+          {
+            "name": "taskpaper.cfg",
+            "type": "file"
+          },
+          {
+            "name": "taskwarrior.cfg",
+            "type": "file"
+          },
+          {
+            "name": "teamocil.cfg",
+            "type": "file"
+          },
+          {
+            "name": "telegram_macos.cfg",
+            "type": "file"
+          },
+          {
+            "name": "terminal.cfg",
+            "type": "file"
+          },
+          {
+            "name": "terminator.cfg",
+            "type": "file"
+          },
+          {
+            "name": "termite.cfg",
+            "type": "file"
+          },
+          {
+            "name": "termux.cfg",
+            "type": "file"
+          },
+          {
+            "name": "textexpander.cfg",
+            "type": "file"
+          },
+          {
+            "name": "textmate.cfg",
+            "type": "file"
+          },
+          {
+            "name": "textual.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tig.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tiles.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tilix.cfg",
+            "type": "file"
+          },
+          {
+            "name": "timeout.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tint2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tinyfugue.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tmux.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tmuxinator.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tmuxp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "todotxt-cli.cfg",
+            "type": "file"
+          },
+          {
+            "name": "toothfairy.cfg",
+            "type": "file"
+          },
+          {
+            "name": "totalspaces2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tower-2.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tower-3.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tower.cfg",
+            "type": "file"
+          },
+          {
+            "name": "transmission.cfg",
+            "type": "file"
+          },
+          {
+            "name": "transmit.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tripmode.cfg",
+            "type": "file"
+          },
+          {
+            "name": "trizen.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tunnelblick.cfg",
+            "type": "file"
+          },
+          {
+            "name": "tvnamer.cfg",
+            "type": "file"
+          },
+          {
+            "name": "twitterrific.cfg",
+            "type": "file"
+          },
+          {
+            "name": "typinator.cfg",
+            "type": "file"
+          },
+          {
+            "name": "typora.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ubersicht.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ulauncher.cfg",
+            "type": "file"
+          },
+          {
+            "name": "ventrilo.cfg",
+            "type": "file"
+          },
+          {
+            "name": "verdaccio.cfg",
+            "type": "file"
+          },
+          {
+            "name": "versions.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vim.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vimperator.cfg",
+            "type": "file"
+          },
+          {
+            "name": "viscosity.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vlc.cfg",
+            "type": "file"
+          },
+          {
+            "name": "volt.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vs4mac.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vscode-insiders.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vscode-oss.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vscode.cfg",
+            "type": "file"
+          },
+          {
+            "name": "vscodium.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wakatime.cfg",
+            "type": "file"
+          },
+          {
+            "name": "warp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "waybar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "webstorm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wezterm.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wget.cfg",
+            "type": "file"
+          },
+          {
+            "name": "whatsapp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "windsurf.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wireshark.cfg",
+            "type": "file"
+          },
+          {
+            "name": "witch.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wordgrinder.cfg",
+            "type": "file"
+          },
+          {
+            "name": "workrave.cfg",
+            "type": "file"
+          },
+          {
+            "name": "wp-cli.cfg",
+            "type": "file"
+          },
+          {
+            "name": "x11.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xamarinstudio-5.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xbar.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xbindkeys.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xchat.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xcode.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xee.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xemacs.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xld.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xonsh.cfg",
+            "type": "file"
+          },
+          {
+            "name": "xtrafinder.cfg",
+            "type": "file"
+          },
+          {
+            "name": "yabai.cfg",
+            "type": "file"
+          },
+          {
+            "name": "yarn.cfg",
+            "type": "file"
+          },
+          {
+            "name": "yazi.cfg",
+            "type": "file"
+          },
+          {
+            "name": "yummyftp.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zabbix-cli.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zathura.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zed.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zoom.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zoxide.cfg",
+            "type": "file"
+          },
+          {
+            "name": "zsh.cfg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "appsdb.py",
+        "type": "file"
+      },
+      {
+        "name": "config.py",
+        "type": "file"
+      },
+      {
+        "name": "constants.py",
+        "type": "file"
+      },
+      {
+        "name": "mackup.py",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "snap",
+    "type": "dir",
+    "children": [
+      {
+        "name": "snapcraft.yaml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "fixtures",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".dropbox",
+            "type": "dir",
+            "children": [
+              {
+                "name": "host.db",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "Library",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Application Support",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Box",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "Box Sync",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "sync_root_folder.txt",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Google",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "Drive",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "sync_config.db",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Mobile Documents",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "com~apple~CloudDocs",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "_blank_.md",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "mackup-apps_to_ignore.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-apps_to_ignore_and_sync.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-apps_to_sync.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-empty.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-dropbox.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-file_system-absolute.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-file_system-no_path.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-file_system.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-google_drive.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-icloud.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-engine-unknown.cfg",
+            "type": "file"
+          },
+          {
+            "name": "mackup-old-config.cfg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_config.py",
+        "type": "file"
+      },
+      {
+        "name": "test_main.py",
+        "type": "file"
+      },
+      {
+        "name": "test_utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "uv.lock",
+    "type": "file"
+  }
+]

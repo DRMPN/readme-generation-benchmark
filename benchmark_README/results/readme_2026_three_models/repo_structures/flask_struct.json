@@ -1,0 +1,1240 @@
+[
+  {
+    "name": ".devcontainer",
+    "type": "dir",
+    "children": [
+      {
+        "name": "devcontainer.json",
+        "type": "file"
+      },
+      {
+        "name": "on-create-command.sh",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug-report.md",
+            "type": "file"
+          },
+          {
+            "name": "config.yml",
+            "type": "file"
+          },
+          {
+            "name": "feature-request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pull_request_template.md",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "lock.yaml",
+            "type": "file"
+          },
+          {
+            "name": "pre-commit.yaml",
+            "type": "file"
+          },
+          {
+            "name": "publish.yaml",
+            "type": "file"
+          },
+          {
+            "name": "tests.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".readthedocs.yaml",
+    "type": "file"
+  },
+  {
+    "name": "CHANGES.rst",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.txt",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "_static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "debugger.png",
+            "type": "file"
+          },
+          {
+            "name": "flask-icon.svg",
+            "type": "file"
+          },
+          {
+            "name": "flask-logo.svg",
+            "type": "file"
+          },
+          {
+            "name": "flask-name.svg",
+            "type": "file"
+          },
+          {
+            "name": "pycharm-run-config.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "api.rst",
+        "type": "file"
+      },
+      {
+        "name": "appcontext.rst",
+        "type": "file"
+      },
+      {
+        "name": "async-await.rst",
+        "type": "file"
+      },
+      {
+        "name": "blueprints.rst",
+        "type": "file"
+      },
+      {
+        "name": "changes.rst",
+        "type": "file"
+      },
+      {
+        "name": "cli.rst",
+        "type": "file"
+      },
+      {
+        "name": "conf.py",
+        "type": "file"
+      },
+      {
+        "name": "config.rst",
+        "type": "file"
+      },
+      {
+        "name": "contributing.rst",
+        "type": "file"
+      },
+      {
+        "name": "debugging.rst",
+        "type": "file"
+      },
+      {
+        "name": "deploying",
+        "type": "dir",
+        "children": [
+          {
+            "name": "apache-httpd.rst",
+            "type": "file"
+          },
+          {
+            "name": "asgi.rst",
+            "type": "file"
+          },
+          {
+            "name": "eventlet.rst",
+            "type": "file"
+          },
+          {
+            "name": "gevent.rst",
+            "type": "file"
+          },
+          {
+            "name": "gunicorn.rst",
+            "type": "file"
+          },
+          {
+            "name": "index.rst",
+            "type": "file"
+          },
+          {
+            "name": "mod_wsgi.rst",
+            "type": "file"
+          },
+          {
+            "name": "nginx.rst",
+            "type": "file"
+          },
+          {
+            "name": "proxy_fix.rst",
+            "type": "file"
+          },
+          {
+            "name": "uwsgi.rst",
+            "type": "file"
+          },
+          {
+            "name": "waitress.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "design.rst",
+        "type": "file"
+      },
+      {
+        "name": "errorhandling.rst",
+        "type": "file"
+      },
+      {
+        "name": "extensiondev.rst",
+        "type": "file"
+      },
+      {
+        "name": "extensions.rst",
+        "type": "file"
+      },
+      {
+        "name": "index.rst",
+        "type": "file"
+      },
+      {
+        "name": "installation.rst",
+        "type": "file"
+      },
+      {
+        "name": "license.rst",
+        "type": "file"
+      },
+      {
+        "name": "lifecycle.rst",
+        "type": "file"
+      },
+      {
+        "name": "logging.rst",
+        "type": "file"
+      },
+      {
+        "name": "make.bat",
+        "type": "file"
+      },
+      {
+        "name": "patterns",
+        "type": "dir",
+        "children": [
+          {
+            "name": "appdispatch.rst",
+            "type": "file"
+          },
+          {
+            "name": "appfactories.rst",
+            "type": "file"
+          },
+          {
+            "name": "caching.rst",
+            "type": "file"
+          },
+          {
+            "name": "celery.rst",
+            "type": "file"
+          },
+          {
+            "name": "deferredcallbacks.rst",
+            "type": "file"
+          },
+          {
+            "name": "favicon.rst",
+            "type": "file"
+          },
+          {
+            "name": "fileuploads.rst",
+            "type": "file"
+          },
+          {
+            "name": "flashing.rst",
+            "type": "file"
+          },
+          {
+            "name": "index.rst",
+            "type": "file"
+          },
+          {
+            "name": "javascript.rst",
+            "type": "file"
+          },
+          {
+            "name": "jquery.rst",
+            "type": "file"
+          },
+          {
+            "name": "lazyloading.rst",
+            "type": "file"
+          },
+          {
+            "name": "methodoverrides.rst",
+            "type": "file"
+          },
+          {
+            "name": "mongoengine.rst",
+            "type": "file"
+          },
+          {
+            "name": "packages.rst",
+            "type": "file"
+          },
+          {
+            "name": "requestchecksum.rst",
+            "type": "file"
+          },
+          {
+            "name": "singlepageapplications.rst",
+            "type": "file"
+          },
+          {
+            "name": "sqlalchemy.rst",
+            "type": "file"
+          },
+          {
+            "name": "sqlite3.rst",
+            "type": "file"
+          },
+          {
+            "name": "streaming.rst",
+            "type": "file"
+          },
+          {
+            "name": "subclassing.rst",
+            "type": "file"
+          },
+          {
+            "name": "templateinheritance.rst",
+            "type": "file"
+          },
+          {
+            "name": "urlprocessors.rst",
+            "type": "file"
+          },
+          {
+            "name": "viewdecorators.rst",
+            "type": "file"
+          },
+          {
+            "name": "wtforms.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "quickstart.rst",
+        "type": "file"
+      },
+      {
+        "name": "reqcontext.rst",
+        "type": "file"
+      },
+      {
+        "name": "server.rst",
+        "type": "file"
+      },
+      {
+        "name": "shell.rst",
+        "type": "file"
+      },
+      {
+        "name": "signals.rst",
+        "type": "file"
+      },
+      {
+        "name": "templating.rst",
+        "type": "file"
+      },
+      {
+        "name": "testing.rst",
+        "type": "file"
+      },
+      {
+        "name": "tutorial",
+        "type": "dir",
+        "children": [
+          {
+            "name": "blog.rst",
+            "type": "file"
+          },
+          {
+            "name": "database.rst",
+            "type": "file"
+          },
+          {
+            "name": "deploy.rst",
+            "type": "file"
+          },
+          {
+            "name": "factory.rst",
+            "type": "file"
+          },
+          {
+            "name": "flaskr_edit.png",
+            "type": "file"
+          },
+          {
+            "name": "flaskr_index.png",
+            "type": "file"
+          },
+          {
+            "name": "flaskr_login.png",
+            "type": "file"
+          },
+          {
+            "name": "index.rst",
+            "type": "file"
+          },
+          {
+            "name": "install.rst",
+            "type": "file"
+          },
+          {
+            "name": "layout.rst",
+            "type": "file"
+          },
+          {
+            "name": "next.rst",
+            "type": "file"
+          },
+          {
+            "name": "static.rst",
+            "type": "file"
+          },
+          {
+            "name": "templates.rst",
+            "type": "file"
+          },
+          {
+            "name": "tests.rst",
+            "type": "file"
+          },
+          {
+            "name": "views.rst",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "views.rst",
+        "type": "file"
+      },
+      {
+        "name": "web-security.rst",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "celery",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "make_celery.py",
+            "type": "file"
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "src",
+            "type": "dir",
+            "children": [
+              {
+                "name": "task_app",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "tasks.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "templates",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "index.html",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "views.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "javascript",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".gitignore",
+            "type": "file"
+          },
+          {
+            "name": "LICENSE.txt",
+            "type": "file"
+          },
+          {
+            "name": "README.rst",
+            "type": "file"
+          },
+          {
+            "name": "js_example",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "templates",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "base.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "fetch.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "jquery.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "xhr.html",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "views.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "conftest.py",
+                "type": "file"
+              },
+              {
+                "name": "test_js_example.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tutorial",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".gitignore",
+            "type": "file"
+          },
+          {
+            "name": "LICENSE.txt",
+            "type": "file"
+          },
+          {
+            "name": "README.rst",
+            "type": "file"
+          },
+          {
+            "name": "flaskr",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "auth.py",
+                "type": "file"
+              },
+              {
+                "name": "blog.py",
+                "type": "file"
+              },
+              {
+                "name": "db.py",
+                "type": "file"
+              },
+              {
+                "name": "schema.sql",
+                "type": "file"
+              },
+              {
+                "name": "static",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "style.css",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "templates",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "auth",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "login.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "register.html",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "base.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "blog",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "create.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "index.html",
+                        "type": "file"
+                      },
+                      {
+                        "name": "update.html",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "pyproject.toml",
+            "type": "file"
+          },
+          {
+            "name": "tests",
+            "type": "dir",
+            "children": [
+              {
+                "name": "conftest.py",
+                "type": "file"
+              },
+              {
+                "name": "data.sql",
+                "type": "file"
+              },
+              {
+                "name": "test_auth.py",
+                "type": "file"
+              },
+              {
+                "name": "test_blog.py",
+                "type": "file"
+              },
+              {
+                "name": "test_db.py",
+                "type": "file"
+              },
+              {
+                "name": "test_factory.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "flask",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__main__.py",
+            "type": "file"
+          },
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "blueprints.py",
+            "type": "file"
+          },
+          {
+            "name": "cli.py",
+            "type": "file"
+          },
+          {
+            "name": "config.py",
+            "type": "file"
+          },
+          {
+            "name": "ctx.py",
+            "type": "file"
+          },
+          {
+            "name": "debughelpers.py",
+            "type": "file"
+          },
+          {
+            "name": "globals.py",
+            "type": "file"
+          },
+          {
+            "name": "helpers.py",
+            "type": "file"
+          },
+          {
+            "name": "json",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "provider.py",
+                "type": "file"
+              },
+              {
+                "name": "tag.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "logging.py",
+            "type": "file"
+          },
+          {
+            "name": "py.typed",
+            "type": "file"
+          },
+          {
+            "name": "sansio",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "app.py",
+                "type": "file"
+              },
+              {
+                "name": "blueprints.py",
+                "type": "file"
+              },
+              {
+                "name": "scaffold.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sessions.py",
+            "type": "file"
+          },
+          {
+            "name": "signals.py",
+            "type": "file"
+          },
+          {
+            "name": "templating.py",
+            "type": "file"
+          },
+          {
+            "name": "testing.py",
+            "type": "file"
+          },
+          {
+            "name": "typing.py",
+            "type": "file"
+          },
+          {
+            "name": "views.py",
+            "type": "file"
+          },
+          {
+            "name": "wrappers.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "conftest.py",
+        "type": "file"
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "config.json",
+            "type": "file"
+          },
+          {
+            "name": "config.toml",
+            "type": "file"
+          },
+          {
+            "name": "index.html",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "children": [
+          {
+            "name": "_macro.html",
+            "type": "file"
+          },
+          {
+            "name": "context_template.html",
+            "type": "file"
+          },
+          {
+            "name": "escaping_template.html",
+            "type": "file"
+          },
+          {
+            "name": "mail.txt",
+            "type": "file"
+          },
+          {
+            "name": "nested",
+            "type": "dir",
+            "children": [
+              {
+                "name": "nested.txt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "non_escaping_template.txt",
+            "type": "file"
+          },
+          {
+            "name": "simple_template.html",
+            "type": "file"
+          },
+          {
+            "name": "template_filter.html",
+            "type": "file"
+          },
+          {
+            "name": "template_test.html",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_appctx.py",
+        "type": "file"
+      },
+      {
+        "name": "test_apps",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".env",
+            "type": "file"
+          },
+          {
+            "name": ".flaskenv",
+            "type": "file"
+          },
+          {
+            "name": "blueprintapp",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "apps",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "admin",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "static",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "css",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "test.css",
+                                "type": "file"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "test.txt",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "templates",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "admin",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "index.html",
+                                "type": "file"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "frontend",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "templates",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "frontend",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "index.html",
+                                "type": "file"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cliapp",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "app.py",
+                "type": "file"
+              },
+              {
+                "name": "factory.py",
+                "type": "file"
+              },
+              {
+                "name": "importerrorapp.py",
+                "type": "file"
+              },
+              {
+                "name": "inner1",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "inner2",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "flask.py",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "message.txt",
+                "type": "file"
+              },
+              {
+                "name": "multiapp.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "helloworld",
+            "type": "dir",
+            "children": [
+              {
+                "name": "hello.py",
+                "type": "file"
+              },
+              {
+                "name": "wsgi.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "subdomaintestmodule",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "static",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "hello.txt",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "test_async.py",
+        "type": "file"
+      },
+      {
+        "name": "test_basic.py",
+        "type": "file"
+      },
+      {
+        "name": "test_blueprints.py",
+        "type": "file"
+      },
+      {
+        "name": "test_cli.py",
+        "type": "file"
+      },
+      {
+        "name": "test_config.py",
+        "type": "file"
+      },
+      {
+        "name": "test_converters.py",
+        "type": "file"
+      },
+      {
+        "name": "test_helpers.py",
+        "type": "file"
+      },
+      {
+        "name": "test_instance_config.py",
+        "type": "file"
+      },
+      {
+        "name": "test_json.py",
+        "type": "file"
+      },
+      {
+        "name": "test_json_tag.py",
+        "type": "file"
+      },
+      {
+        "name": "test_logging.py",
+        "type": "file"
+      },
+      {
+        "name": "test_regression.py",
+        "type": "file"
+      },
+      {
+        "name": "test_reqctx.py",
+        "type": "file"
+      },
+      {
+        "name": "test_request.py",
+        "type": "file"
+      },
+      {
+        "name": "test_session_interface.py",
+        "type": "file"
+      },
+      {
+        "name": "test_signals.py",
+        "type": "file"
+      },
+      {
+        "name": "test_subclassing.py",
+        "type": "file"
+      },
+      {
+        "name": "test_templating.py",
+        "type": "file"
+      },
+      {
+        "name": "test_testing.py",
+        "type": "file"
+      },
+      {
+        "name": "test_user_error_handler.py",
+        "type": "file"
+      },
+      {
+        "name": "test_views.py",
+        "type": "file"
+      },
+      {
+        "name": "type_check",
+        "type": "dir",
+        "children": [
+          {
+            "name": "typing_app_decorators.py",
+            "type": "file"
+          },
+          {
+            "name": "typing_error_handler.py",
+            "type": "file"
+          },
+          {
+            "name": "typing_route.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "uv.lock",
+    "type": "file"
+  }
+]

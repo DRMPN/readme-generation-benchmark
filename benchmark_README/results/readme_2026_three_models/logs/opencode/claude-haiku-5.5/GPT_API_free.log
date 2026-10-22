@@ -1,0 +1,31 @@
+I'll start by looking through the repository.
+I created `README.md` in the repository root. It starts with a level-one heading and covers the following:
+
+- **What it is:** a small demo that calls an OpenAI-compatible endpoint at `https://api.chatanywhere.tech/v1`, plus screenshots of third-party clients configured with it.
+- **Setup:** install the `openai` package, replace the placeholder key in `demo.py` (or set `OPENAI_API_KEY`), and run the script.
+- **`demo.py` behavior:** a table of the two functions. Both hard-code `gpt-3.5-turbo`. The script runs the streaming example by default, and the non-streaming one is commented out.
+- **Screenshots:** Chatbox and Zotero plugin settings, described only as far as the images show.
+- **Limitations:** the relay is third-party, not OpenAI's API. The repo doesn't verify its availability, pricing, or terms. The key and message contents go to that host. The script has no error handling.
+- **License:** MIT, with the copyright holder from `LICENSE`.
+
+I did not verify the relay service or the third-party clients, since neither is in the repository. The README says so. The only source code here is `demo.py`. I also did not describe the other images (`sidebar.png`, `botgem.png`, `gomoon.png`, `jet1.png`, `jet2.png`), because I haven't checked what they show.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources({}); return r;"} 
+[0m✱ [0mGlob "**/*" [90m13 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const out = {}; for (const f of [\"LICENSE\"]) {} return \"skip\";"} 
+[0m⚙ [0mexecute {"code":"return \"\";"} 
+[0m→ [0mRead demo.py 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return { remote: await tools.opencode.list_mcp_resources({}) };"} 
+[0m→ [0mRead images/zotero-gpt.png 
+[0m→ [0mRead images/logo.png 
+[0m→ [0mRead images/chatbox.png 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

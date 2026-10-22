@@ -1,0 +1,39 @@
+Processing repository...
+Processing 63 files and 35 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/wgan_div.gif: 'utf-8' codec can't decode byte 0x98 in position 6: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/superresgan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/pixelda.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/pix2pix.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/cogan.gif: 'utf-8' codec can't decode byte 0xf7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/esrgan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/acgan.gif: 'utf-8' codec can't decode byte 0xf7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/cyclegan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/discogan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/enhanced_superresgan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/cluster_gan.gif: 'utf-8' codec can't decode byte 0xf7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/dcgan.gif: 'utf-8' codec can't decode byte 0xac in position 6: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/bicyclegan_architecture.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/cgan.gif: 'utf-8' codec can't decode byte 0xf7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/bicyclegan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/context_encoder.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/wgan_div.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/infogan.gif: 'utf-8' codec can't decode byte 0xf7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/logo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/infogan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/wgan_gp.gif: 'utf-8' codec can't decode byte 0x98 in position 6: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/munit.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/stargan.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/PyTorch-GAN-75hy7h2n/assets/gan.gif: 'utf-8' codec can't decode byte 0x98 in position 6: invalid start byte
+Splitting text into chunks for 63 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/claude-haiku-5.5/_work/PyTorch-GAN/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/claude-haiku-5.5/_work/PyTorch-GAN/docs/data/README_GPT4.md
+
+--- stderr ---

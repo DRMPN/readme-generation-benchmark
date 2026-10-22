@@ -1,0 +1,52 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.txt",
+    "type": "file"
+  },
+  {
+    "name": "checkpoint.py",
+    "type": "file"
+  },
+  {
+    "name": "checkpoints",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "model.py",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "run.py",
+    "type": "file"
+  },
+  {
+    "name": "runners.py",
+    "type": "file"
+  },
+  {
+    "name": "tokenizer.model",
+    "type": "file"
+  }
+]

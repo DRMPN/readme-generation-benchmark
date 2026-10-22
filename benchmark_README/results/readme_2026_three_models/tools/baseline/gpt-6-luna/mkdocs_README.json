@@ -1,0 +1,493 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63912,
+    "tree_files": 279,
+    "tracked_files": 279,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 263,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 2195,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "requirements/requirements-docs.txt",
+        "tokens": 1040,
+        "truncated": false
+      },
+      {
+        "path": "requirements/requirements-style.txt",
+        "tokens": 154,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/__main__.py",
+        "tokens": 2782,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 1829,
+        "truncated": false
+      },
+      {
+        "path": "docs/getting-started.md",
+        "tokens": 1568,
+        "truncated": false
+      },
+      {
+        "path": "docs/index.md",
+        "tokens": 843,
+        "truncated": false
+      },
+      {
+        "path": "docs/about/contributing.md",
+        "tokens": 11,
+        "truncated": false
+      },
+      {
+        "path": "docs/about/license.md",
+        "tokens": 317,
+        "truncated": false
+      },
+      {
+        "path": "docs/about/release-notes.md",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "docs/dev-guide/README.md",
+        "tokens": 127,
+        "truncated": false
+      },
+      {
+        "path": "docs/dev-guide/api.md",
+        "tokens": 142,
+        "truncated": false
+      },
+      {
+        "path": "docs/dev-guide/plugins.md",
+        "tokens": 4200,
+        "truncated": false
+      },
+      {
+        "path": "docs/dev-guide/themes.md",
+        "tokens": 8895,
+        "truncated": false
+      },
+      {
+        "path": "docs/dev-guide/translations.md",
+        "tokens": 2182,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/README.md",
+        "tokens": 173,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/choosing-your-theme.md",
+        "tokens": 2169,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/cli.md",
+        "tokens": 48,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/configuration.md",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "docs/user-guide/customizing-your-theme.md",
+        "tokens": 1939,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/deploying-your-docs.md",
+        "tokens": 2156,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/installation.md",
+        "tokens": 823,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/localizing-your-theme.md",
+        "tokens": 469,
+        "truncated": false
+      },
+      {
+        "path": "docs/user-guide/writing-your-docs.md",
+        "tokens": 4346,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/complicated_config/documentation/index.md",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/minimal/docs/testing.md",
+        "tokens": 119,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/index.md",
+        "tokens": 72,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/metadata.md",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/non-index.md",
+        "tokens": 72,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/page-title.md",
+        "tokens": 3,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/pageTitle.md",
+        "tokens": 3,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/unicode/docs/index.md",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/unicode/docs/\u00dcbersicht.md",
+        "tokens": 119,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/unicode/docs/\u266a.md",
+        "tokens": 118,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub1/index.md",
+        "tokens": 124,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub1/non-index.md",
+        "tokens": 124,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub2/index.md",
+        "tokens": 109,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub2/non-index.md",
+        "tokens": 109,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub1/sub1a/index.md",
+        "tokens": 105,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs/tests/integration/subpages/docs/sub1/sub1a/non-index.md",
+        "tokens": 105,
+        "truncated": false
+      },
+      {
+        "path": ".codecov.yml",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": ".markdownlint.yaml",
+        "tokens": 361,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".coveragerc",
+      ".editorconfig",
+      ".gitattributes",
+      ".gitignore",
+      ".jshintignore",
+      "FUNDING.yml",
+      "hatch_build.py",
+      "mkdocs.yml",
+      "docs/CNAME",
+      "docs/hooks.py",
+      "mkdocs/__init__.py",
+      "mkdocs/exceptions.py",
+      "mkdocs/localization.py",
+      "mkdocs/plugins.py",
+      "mkdocs/py.typed",
+      "mkdocs/theme.py",
+      ".github/workflows/autofix.yml",
+      ".github/workflows/ci.yml",
+      ".github/workflows/deploy-release.yml",
+      ".github/workflows/docs.yml",
+      "docs/css/extra.css",
+      "docs/img/color_mode_toggle_menu.png",
+      "docs/img/initial-layout.png",
+      "docs/img/mkdocs_theme_dark_mode.png",
+      "docs/img/mkdocs_theme_light_mode.png",
+      "docs/img/multipage.png",
+      "docs/img/plugin-events.py",
+      "docs/img/plugin-events.svg",
+      "docs/img/readthedocs.png",
+      "docs/img/screenshot.png",
+      "docs/img/search.png",
+      "docs/img/site-name.png",
+      "docs/img/win-py-install.png",
+      "mkdocs/commands/__init__.py",
+      "mkdocs/commands/build.py",
+      "mkdocs/commands/gh_deploy.py",
+      "mkdocs/commands/new.py",
+      "mkdocs/commands/serve.py",
+      "mkdocs/config/__init__.py",
+      "mkdocs/config/base.py",
+      "mkdocs/config/config_options.py",
+      "mkdocs/config/defaults.py",
+      "mkdocs/contrib/__init__.py",
+      "mkdocs/livereload/__init__.py",
+      "mkdocs/structure/__init__.py",
+      "mkdocs/structure/files.py",
+      "mkdocs/structure/nav.py",
+      "mkdocs/structure/pages.py",
+      "mkdocs/structure/toc.py",
+      "mkdocs/templates/sitemap.xml",
+      "mkdocs/tests/__init__.py",
+      "mkdocs/tests/base.py",
+      "mkdocs/tests/build_tests.py",
+      "mkdocs/tests/cli_tests.py",
+      "mkdocs/tests/gh_deploy_tests.py",
+      "mkdocs/tests/integration.py",
+      "mkdocs/tests/livereload_tests.py",
+      "mkdocs/tests/localization_tests.py",
+      "mkdocs/tests/new_tests.py",
+      "mkdocs/tests/plugin_tests.py",
+      "mkdocs/tests/search_tests.py",
+      "mkdocs/tests/theme_tests.py",
+      "mkdocs/themes/__init__.py",
+      "mkdocs/themes/babel.cfg",
+      "mkdocs/utils/__init__.py",
+      "mkdocs/utils/babel_stub.py",
+      "mkdocs/utils/cache.py",
+      "mkdocs/utils/filters.py",
+      "mkdocs/utils/meta.py",
+      "mkdocs/utils/rendering.py",
+      "mkdocs/utils/templates.py",
+      "mkdocs/utils/yaml.py",
+      "mkdocs/contrib/search/__init__.py",
+      "mkdocs/contrib/search/prebuild-index.js",
+      "mkdocs/contrib/search/search_index.py",
+      "mkdocs/tests/config/__init__.py",
+      "mkdocs/tests/config/base_tests.py",
+      "mkdocs/tests/config/config_options_legacy_tests.py",
+      "mkdocs/tests/config/config_options_tests.py",
+      "mkdocs/tests/config/config_tests.py",
+      "mkdocs/tests/integration/projects.yaml",
+      "mkdocs/tests/structure/__init__.py",
+      "mkdocs/tests/structure/file_tests.py",
+      "mkdocs/tests/structure/nav_tests.py",
+      "mkdocs/tests/structure/page_tests.py",
+      "mkdocs/tests/structure/toc_tests.py",
+      "mkdocs/tests/utils/__init__.py",
+      "mkdocs/tests/utils/babel_stub_tests.py",
+      "mkdocs/tests/utils/templates_tests.py",
+      "mkdocs/tests/utils/utils_tests.py",
+      "mkdocs/themes/mkdocs/404.html",
+      "mkdocs/themes/mkdocs/__init__.py",
+      "mkdocs/themes/mkdocs/base.html",
+      "mkdocs/themes/mkdocs/content.html",
+      "mkdocs/themes/mkdocs/keyboard-modal.html",
+      "mkdocs/themes/mkdocs/main.html",
+      "mkdocs/themes/mkdocs/messages.pot",
+      "mkdocs/themes/mkdocs/mkdocs_theme.yml",
+      "mkdocs/themes/mkdocs/nav-sub.html",
+      "mkdocs/themes/mkdocs/search-modal.html",
+      "mkdocs/themes/mkdocs/toc.html",
+      "mkdocs/themes/readthedocs/404.html",
+      "mkdocs/themes/readthedocs/__init__.py",
+      "mkdocs/themes/readthedocs/base.html",
+      "mkdocs/themes/readthedocs/breadcrumbs.html",
+      "mkdocs/themes/readthedocs/footer.html",
+      "mkdocs/themes/readthedocs/main.html",
+      "mkdocs/themes/readthedocs/messages.pot",
+      "mkdocs/themes/readthedocs/mkdocs_theme.yml",
+      "mkdocs/themes/readthedocs/nav.html",
+      "mkdocs/themes/readthedocs/search.html",
+      "mkdocs/themes/readthedocs/searchbox.html",
+      "mkdocs/themes/readthedocs/toc.html",
+      "mkdocs/themes/readthedocs/versions.html",
+      "mkdocs/contrib/search/lunr-language/lunr.ar.js",
+      "mkdocs/contrib/search/lunr-language/lunr.da.js",
+      "mkdocs/contrib/search/lunr-language/lunr.de.js",
+      "mkdocs/contrib/search/lunr-language/lunr.du.js",
+      "mkdocs/contrib/search/lunr-language/lunr.es.js",
+      "mkdocs/contrib/search/lunr-language/lunr.fi.js",
+      "mkdocs/contrib/search/lunr-language/lunr.fr.js",
+      "mkdocs/contrib/search/lunr-language/lunr.hi.js",
+      "mkdocs/contrib/search/lunr-language/lunr.hu.js",
+      "mkdocs/contrib/search/lunr-language/lunr.hy.js",
+      "mkdocs/contrib/search/lunr-language/lunr.it.js",
+      "mkdocs/contrib/search/lunr-language/lunr.ja.js",
+      "mkdocs/contrib/search/lunr-language/lunr.jp.js",
+      "mkdocs/contrib/search/lunr-language/lunr.kn.js",
+      "mkdocs/contrib/search/lunr-language/lunr.ko.js",
+      "mkdocs/contrib/search/lunr-language/lunr.multi.js",
+      "mkdocs/contrib/search/lunr-language/lunr.nl.js",
+      "mkdocs/contrib/search/lunr-language/lunr.no.js",
+      "mkdocs/contrib/search/lunr-language/lunr.pt.js",
+      "mkdocs/contrib/search/lunr-language/lunr.ro.js",
+      "mkdocs/contrib/search/lunr-language/lunr.ru.js",
+      "mkdocs/contrib/search/lunr-language/lunr.sa.js",
+      "mkdocs/contrib/search/lunr-language/lunr.stemmer.support.js",
+      "mkdocs/contrib/search/lunr-language/lunr.sv.js",
+      "mkdocs/contrib/search/lunr-language/lunr.ta.js",
+      "mkdocs/contrib/search/lunr-language/lunr.te.js",
+      "mkdocs/contrib/search/lunr-language/lunr.th.js",
+      "mkdocs/contrib/search/lunr-language/lunr.tr.js",
+      "mkdocs/contrib/search/lunr-language/lunr.vi.js",
+      "mkdocs/contrib/search/lunr-language/lunr.zh.js",
+      "mkdocs/contrib/search/lunr-language/tinyseg.js",
+      "mkdocs/tests/integration/complicated_config/mkdocs.yml",
+      "mkdocs/tests/integration/minimal/mkdocs.yml",
+      "mkdocs/tests/integration/subpages/mkdocs.yml",
+      "mkdocs/tests/integration/unicode/mkdocs.yml",
+      "mkdocs/themes/mkdocs/css/base.css",
+      "mkdocs/themes/mkdocs/css/bootstrap.min.css",
+      "mkdocs/themes/mkdocs/css/bootstrap.min.css.map",
+      "mkdocs/themes/mkdocs/css/brands.min.css",
+      "mkdocs/themes/mkdocs/css/fontawesome.min.css",
+      "mkdocs/themes/mkdocs/css/solid.min.css",
+      "mkdocs/themes/mkdocs/css/v4-font-face.min.css",
+      "mkdocs/themes/mkdocs/img/favicon.ico",
+      "mkdocs/themes/mkdocs/img/grid.png",
+      "mkdocs/themes/mkdocs/js/base.js",
+      "mkdocs/themes/mkdocs/js/bootstrap.bundle.min.js",
+      "mkdocs/themes/mkdocs/js/bootstrap.bundle.min.js.map",
+      "mkdocs/themes/mkdocs/js/darkmode.js",
+      "mkdocs/themes/mkdocs/webfonts/fa-brands-400.ttf",
+      "mkdocs/themes/mkdocs/webfonts/fa-brands-400.woff2",
+      "mkdocs/themes/mkdocs/webfonts/fa-regular-400.ttf",
+      "mkdocs/themes/mkdocs/webfonts/fa-regular-400.woff2",
+      "mkdocs/themes/mkdocs/webfonts/fa-solid-900.ttf",
+      "mkdocs/themes/mkdocs/webfonts/fa-solid-900.woff2",
+      "mkdocs/themes/mkdocs/webfonts/fa-v4compatibility.ttf",
+      "mkdocs/themes/mkdocs/webfonts/fa-v4compatibility.woff2",
+      "mkdocs/themes/readthedocs/css/theme.css",
+      "mkdocs/themes/readthedocs/css/theme_extra.css",
+      "mkdocs/themes/readthedocs/img/favicon.ico",
+      "mkdocs/themes/readthedocs/js/html5shiv.min.js",
+      "mkdocs/themes/readthedocs/js/jquery-3.6.0.min.js",
+      "mkdocs/themes/readthedocs/js/theme.js",
+      "mkdocs/themes/readthedocs/js/theme_extra.js",
+      "mkdocs/contrib/search/templates/search/lunr.js",
+      "mkdocs/contrib/search/templates/search/main.js",
+      "mkdocs/contrib/search/templates/search/worker.js",
+      "mkdocs/tests/integration/complicated_config/documentation/custom.html",
+      "mkdocs/tests/integration/complicated_config/documentation/tweak.css",
+      "mkdocs/tests/integration/complicated_config/documentation/tweak.js",
+      "mkdocs/tests/integration/complicated_config/theme_tweaks/404.html",
+      "mkdocs/tests/integration/subpages/docs/image.png",
+      "mkdocs/themes/readthedocs/css/fonts/Roboto-Slab-Bold.woff",
+      "mkdocs/themes/readthedocs/css/fonts/Roboto-Slab-Bold.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/Roboto-Slab-Regular.woff",
+      "mkdocs/themes/readthedocs/css/fonts/Roboto-Slab-Regular.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.eot",
+      "mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.svg",
+      "mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.ttf",
+      "mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.woff",
+      "mkdocs/themes/readthedocs/css/fonts/fontawesome-webfont.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/lato-bold-italic.woff",
+      "mkdocs/themes/readthedocs/css/fonts/lato-bold-italic.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/lato-bold.woff",
+      "mkdocs/themes/readthedocs/css/fonts/lato-bold.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/lato-normal-italic.woff",
+      "mkdocs/themes/readthedocs/css/fonts/lato-normal-italic.woff2",
+      "mkdocs/themes/readthedocs/css/fonts/lato-normal.woff",
+      "mkdocs/themes/readthedocs/css/fonts/lato-normal.woff2",
+      "mkdocs/tests/integration/subpages/docs/sub1/image.png",
+      "mkdocs/themes/mkdocs/locales/de/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/es/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/fa/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/fr/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/id/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/it/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/ja/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/nb/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/nl/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/nn/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/pl/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/pt_BR/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/ru/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/tr/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/uk/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/zh_CN/LC_MESSAGES/messages.po",
+      "mkdocs/themes/mkdocs/locales/zh_TW/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/de/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/es/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/fa/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/fr/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/id/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/it/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/ja/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/nl/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/pl/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/pt_BR/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/ru/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/tr/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/uk/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/zh_CN/LC_MESSAGES/messages.po",
+      "mkdocs/themes/readthedocs/locales/zh_TW/LC_MESSAGES/messages.po"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64173,
+    "completion_tokens": 1775,
+    "total_tokens": 65948,
+    "cost": 0.00890905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 64170,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00890905,
+      "upstream_inference_prompt_cost": 0.00802155,
+      "upstream_inference_completions_cost": 0.0008875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 283,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606317-UyJvHHGf5iCROukOjqd5"
+}

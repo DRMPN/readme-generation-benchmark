@@ -1,0 +1,84 @@
+I'll start by looking at the repository's files and structure.
+The repo is GENA-LM. There's no root README yet. I'll read the packaging files, core library, and the existing sub-READMEs.
+Next I'll read the model code, the tokenizer script, and the downstream task READMEs.
+The first grep failed because I passed several paths in one string. I'll rerun it correctly and read the LICENSE, the corpus tool, and the model code.
+I have the core picture. Next I'll check for pretrained-model hub references, citation info, and the RMT and finetuning entry points so the README doesn't overstate anything.
+The notebook references the Hugging Face model `AIRI-Institute/gena-lm-bert-base-t2t`. I'll check whether the repo has a pretraining script and confirm the tokenizer and config files.
+I have enough to write an accurate README. I'll create it at the repository root.
+The README is written. I'll verify two claims I haven't checked yet: the sparse-attention support in `modeling_bert.py`, and the ClinVar file types, since one listed item is a text file, not a notebook.
+Sparse attention and rotary embeddings are both implemented. The ClinVar line needs a correction, because one of its items is a text file rather than a notebook.
+I wrote `README.md` at the repository root. It is the only file I created. It starts with a level-one heading and covers the layout, installation, the core library, data building, pre-trained models, and downstream tasks.
+
+I based every claim on files I read. Where the repo is incomplete or the docs are unclear, the README says so instead of filling the gap:
+
+- **Pre-trained models:** no checkpoints are included. The only model named in the code is the Hugging Face ID `AIRI-Institute/gena-lm-bert-base-t2t`, which comes from the notebooks. The model table the notebooks link to is not in the repo, so I did not list other models.
+- **Dependencies:** `requirements.txt` pins old versions (`torch<=1.9.1`, `transformers==4.17.0`). The scripts also need Horovod (`horovodrun`), which is not in `requirements.txt`. The README states both.
+- **Paths:** the fine-tuning scripts use placeholder paths such as `${HOME_PATH}/t5-experiments/runs`, and the README tells the reader to change them.
+- **Missing pieces:** there is no pre-training script. Four task directories (APARENT, ClinVar analysis, splicing, and the Enformer evaluation scripts) have no README of their own, and the README says so where that applies.
+
+I did not run any of the code, so the installation and usage instructions come from reading the scripts and have not been tested.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const [ls, git] = await Promise.all([\n  tools.opencode ? null : null,\n  null\n]);\nreturn \"ok\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90m145 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead data/download_data.sh 
+[0m→ [0mRead data/download_human.sh 
+[0m→ [0mRead src/gena_lm/__init__.py 
+[0m→ [0mRead src/gena_lm/utils.py 
+[0m→ [0mRead src/gena_lm/genome_tools/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mGrep "(from_pretrained|AutoModel|AutoTokenizer|huggingface|AIRI-Institute|class [A-Za-z]+\(|^def |argparse|add_argument\()" failed
+[91m[1mError: [0mSearch path does not exist: /tmp/GENA_LM-xui_4eb5/src /tmp/GENA_LM-xui_4eb5/downstream_tasks/promoter_prediction/run_promoter_finetuning.py /tmp/GENA_LM-xui_4eb5/downstream_tasks/promoter_prediction/run_promoter_finetuning_rmt.py
+[0m→ [0mRead downstream_tasks/promoter_prediction/README.md 
+[0m→ [0mRead src/gena_lm/tokenizers/tokenize_genomes.py 
+[0m→ [0mRead downstream_tasks/DeepSea/README.md 
+[0m→ [0mRead downstream_tasks/SpliceAI/README.md 
+[0m→ [0mRead downstream_tasks/DeepSTARR/README.md 
+[0m→ [0mRead downstream_tasks/enformer/README.md 
+[0m→ [0mRead data/fly/ReadMe.md 
+[0m→ [0mRead data/athaliana/ReadMe.md 
+[0m→ [0mRead data/yeasts/ReadMe.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead src/gena_lm/genome_tools/create_corpus.py 
+[0m→ [0mRead downstream_tasks/promoter_prediction/finetune_promoter_2000_large.sh 
+[0m→ [0mRead data/configs/L12-H768-A12-V32k-preln.json 
+[0m✱ [0mGrep "(from_pretrained|AutoModel|AutoTokenizer|huggingface|AIRI|^class |^def |add_argument\(|click\.option)" [90min src · 76 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "add_argument\(|argparse|add_argument_group" [90min downstream_tasks/promoter_prediction/run_promoter_finetuning.py · 19 matches[0m
+[0m→ [0mRead src/gena_lm/modeling_rmt.py [90m[limit=150][0m
+[0m✱ [0mGrep "(GENA-LM|AIRI-Institute|huggingface\.co|arxiv|doi\.org|@article|pip install|python -m|from src|from gena_lm|import gena_lm)" [90min . · 80 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead data/download_data.sh [90m[limit=1][0m
+[0m✱ [0mGrep "pretrain|run_mlm|masked|MLM" [90min . · 30 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "sparse|rotary|use_rope|pre_layer_norm" [90min src/gena_lm/modeling_bert.py · 15 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -119,9 +119,9 @@
+ | DeepSEA (chromatin profiles) | `DeepSea/` | Multi-label prediction of 919 chromatin profiles, following the BigBird setup. Includes conversion from `.mat` to `.csv.gz` and optional context extension with `extend_dataset.py`, which requires [bwa](https://github.com/lh3/bwa). |
+ | DeepSTARR (enhancer activity) | `DeepSTARR/` | Predicts *Drosophila* enhancer activity. Uses the Stark lab train/validation/test splits without further preprocessing. |
+ | SpliceAI (splice sites) | `SpliceAI/` | Predicts splice donor and acceptor sites. Includes a 10% train/validation split (`split_train_valid.py`, seed 42). The source data requires authorized access to BaseSpace project 66029966. |
+ | APARENT | `APARENT/` | Fine-tuning script and dataset class for APARENT (alternative polyadenylation). This directory has no README. |
+-| ClinVar analysis | `clinvar_analysis/` | Jupyter notebooks for ClinVar variant analysis (attribution, promoter prediction, and significance mapping). This directory has no README. |
++| ClinVar analysis | `clinvar_analysis/` | Jupyter notebooks for ClinVar variant analysis (attribution prediction, promoter prediction, and exon BED generation), plus a significance-mapping file (`clinvar_significance_mapping.txt`). This directory has no README. |
+ | Splicing (one-mutation) | `splicing_onemut/` | A notebook and gene and dataset lists for splicing analysis. This directory has no README. |
+ 
+ Two examples of how these scripts run:
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5

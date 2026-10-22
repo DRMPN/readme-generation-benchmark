@@ -1,0 +1,79 @@
+I'll start by looking at the repository layout and existing docs.
+The menu structure is clear. Next I need the full tool list, so I'll pull every title and project URL from the tool modules.
+I have the tool catalog. Before writing, I'll check the remaining collection file, the `images/demo` entry, and whether a README template exists.
+I have what I need. The repo has no existing README, and the only README generator (`generate_readme.py`) expects a `README_template.md` that isn't in the repo. I'll write the README from the code and note those gaps where they matter.
+The README is written. Re-checking it against the code, I found three statements I can't support, so I'm correcting them now.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+It covers what the project is, the requirements, installation through `install.sh`, the menu and first-run behavior, Docker, updating and uninstalling, the tool categories, the repository layout, known limitations, and the MIT license. Every claim comes from the code, and I added a notice about responsible use because many of the bundled tools are offensive.
+
+Some things you may want to look at:
+
+- **Uninstall and update paths don't match the installer.** The in-app "Update Hackingtool" and "Uninstall" actions use `/etc/hackingtool` and `/usr/share/doc/hackingtool`. The installer puts the tool in `/usr/share/hackingtool` with a launcher at `/usr/bin/hackingtool`. The in-app uninstall therefore leaves that install behind. I documented this in Known Limitations rather than fixing it.
+- **The Docker compose file uses a prebuilt image.** `docker-compose.yml` pulls `vgpastor/hackingtool` and has no `build:` section, so it doesn't run the local `Dockerfile`. The README says so.
+- **`generate_readme.py` can't run.** It reads `README_template.md`, which isn't in the repository.
+- **The tool category list is a sample, not the full catalog.** The category table names a few representative tools per category, taken from each module. The menu is the complete list. I didn't open every nested `TOOLS` list to confirm exact membership.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+[0m✱ [0mGlob "**/*" [90m43 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead hackingtool.py 
+[0m→ [0mRead install.sh 
+[0m→ [0mRead core.py 
+[0m→ [0mRead update.sh 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead generate_readme.py 
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead tools/tool_manager.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "(TITLE|DESCRIPTION|PROJECT_URL)\s*[=:]" [90min tools · 400 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return await tools.opencode.worktree_list();"} 
+[0m→ [0mRead tools/other_tools.py 
+[0m✱ [0mGrep "\b(README|images/|hackingtool\.sh|\.md)\b" [90min . · 8 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -108,9 +108,9 @@
+ ## Running with Docker
+ 
+ The repository includes a `Dockerfile` and a `docker-compose.yml`.
+ 
+-**`Dockerfile`** builds on `kalilinux/kali-rolling:latest`, installs the system packages and Python requirements, copies the repository to `/root/hackingtool`, writes `/root/hackingtool/` to `/home/hackingtoolpath.txt` (which skips the first-run path prompt), and runs `hackingtool.py` as the entrypoint.
++**`Dockerfile`** builds on `kalilinux/kali-rolling:latest`, installs the system packages and Python requirements, copies the repository to `/root/hackingtool`, writes `/root/hackingtool/` to `/home/hackingtoolpath.txt`, and runs `hackingtool.py` as the entrypoint. The menu reads `~/hackingtoolpath.txt`, which for root is `/root/hackingtoolpath.txt`, so the first-run path prompt may still appear inside the container.
+ 
+ ```bash
+ docker build -t hackingtool .
+ docker run -it hackingtool
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -213,11 +213,9 @@
+ - **Tool status unknown.** Several tools are old, and the code does not record whether each one still works with current systems.
+ 
+ ## Contributing
+ 
+-Issues and pull requests are accepted at [https://github.com/Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool). To add a tool, create a `HackingTool` subclass in the appropriate `tools/` module, define its `TITLE`, `DESCRIPTION`, and `PROJECT_URL`, add install and run commands, and register it in the category's `TOOLS` list.
++The upstream project is hosted at [https://github.com/Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool). To add a tool, create a `HackingTool` subclass in the appropriate `tools/` module, define its `TITLE`, `DESCRIPTION`, and `PROJECT_URL`, add its install and run commands, and register it in that category's `TOOLS` list, following the patterns in `core.py` and `tools/`.
+ 
+-Please do not submit tools whose primary purpose is to harm systems without authorization, and keep changes consistent with the existing patterns in `core.py` and `tools/`.
+-
+ ## License
+ 
+ This project is licensed under the MIT License. Copyright (c) 2020 Mr.Z4nzu. See [LICENSE](LICENSE) for the full text.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

@@ -1,0 +1,130 @@
+[
+  {
+    "name": ".devcontainer",
+    "type": "dir",
+    "children": [
+      {
+        "name": "devcontainer.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "bibliography.rst",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "delPezzo",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Lubbes_list.txt",
+            "type": "file"
+          },
+          {
+            "name": "Lubbes_parse.py",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "cone.py",
+            "type": "file"
+          },
+          {
+            "name": "cylinder.py",
+            "type": "file"
+          },
+          {
+            "name": "finder.py",
+            "type": "file"
+          },
+          {
+            "name": "surface.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "test_Lubbes.py",
+        "type": "file"
+      },
+      {
+        "name": "test_blowups.py",
+        "type": "file"
+      },
+      {
+        "name": "test_contraction.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg1.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg2.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg2_B2.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg2_KimPark.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg3.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg4.py",
+        "type": "file"
+      },
+      {
+        "name": "test_deg5.py",
+        "type": "file"
+      },
+      {
+        "name": "test_finder.py",
+        "type": "file"
+      },
+      {
+        "name": "test_surface.py",
+        "type": "file"
+      },
+      {
+        "name": "test_various.py",
+        "type": "file"
+      },
+      {
+        "name": "test_weak_deg6.py",
+        "type": "file"
+      },
+      {
+        "name": "tests.ipynb",
+        "type": "file"
+      }
+    ]
+  }
+]

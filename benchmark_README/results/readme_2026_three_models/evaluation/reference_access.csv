@@ -1,0 +1,4 @@
+repo_slug,model,tool,evidence_log,observation,exclude_from_paired_table
+ChatGLM-6B,z-ai/glm-5.3-flash,opencode,logs/opencode/glm-5.3-flash/ChatGLM-6B.log,Executed fetch of upstream root README and README_en via code-mode network access,1
+PyTorch-GAN,z-ai/glm-5.3-flash,opencode,logs/opencode/glm-5.3-flash/PyTorch-GAN.log,Executed fetch of upstream root README via code-mode network access; repository already lacked a retained complete set,1
+system-design-primer,z-ai/glm-5.3-flash,opencode,logs/opencode/glm-5.3-flash/system-design-primer.log,Executed fetch of upstream root README and reconstructed the output from its text,1

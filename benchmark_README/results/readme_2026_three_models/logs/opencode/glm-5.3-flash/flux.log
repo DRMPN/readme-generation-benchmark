@@ -1,0 +1,106 @@
+This is the FLUX inference codebase from Black Forest Labs. Let me explore the docs, source, and demos in detail.
+I now have a complete picture of the repository. Writing the README:
+Let me verify the NSFW saving claim in `save_image`:
+The README is complete and verified against the codebase. Here's a summary of what I did:
+
+## Repository inspection
+
+This is **Black Forest Labs' FLUX.1 inference codebase** (the `flux` Python package). I examined:
+
+- **`pyproject.toml`** — package metadata, Python `>=3.10`, extras (`torch`, `streamlit`, `gradio`, `tensorrt`, `all`)
+- **`src/flux/`** — CLI entry points (`__main__.py` exposes `t2i`, `control`, `fill`, `kontext`, `redux`), model configs in `util.py` (9 model variants), TensorRT manager (valid precisions `bf16`/`fp8`/`fp4`/`fp4_svd32`), and `save_image` (NSFW filtering, watermarking, EXIF metadata)
+- **`docs/`** — five per-task guides with the canonical commands
+- **Demos** — `demo_gr.py`, `demo_st.py`, `demo_st_fill.py` and their options
+- **`model_cards/`, `model_licenses/`, `LICENSE`, `.github/workflows/ci.yaml`**
+
+## README structure
+
+The new `README.md` covers:
+
+1. **Overview** — what the codebase does and its task areas
+2. **Models** — table of all 9 open-weight models with Hugging Face repos, licenses, and the internal names the CLI uses
+3. **Installation** — `pip install -e .` with the extras from `pyproject.toml`
+4. **Model weights** — auto-download to `checkpoints/`, the `FLUX_MODEL`/`FLUX_AE`/`FLUX_REDUX`/`FLUX_LORA` env vars, and HF authentication for gated repos
+5. **Usage** — documented commands for each task, interactive-mode commands (`/w`, `/h`, `/s`, `/g`, `/n`, `/q`), defaults verified in code (4/50 steps, dimensions rounded to multiples of 16, output to `output/img_<idx>.jpg`)
+6. **TensorRT** — precisions and the ONNX 768–1344 constraint, straight from the docs and `trt_manager.py`
+7. **Demos** — all three, with their actual flags
+8. **Diffusers** — the integration example from `docs/text-to-image.md`
+9. **Safety/metadata** — NSFW filtering (images above threshold are *not* saved), invisible watermark, EXIF prompts, usage tracking
+10. **Repository structure** and **License** (code: Apache-2.0; schnell: Apache-2.0; all others: FLUX.1-dev Non-Commercial)
+
+One note: `pyproject.toml` declares a `flux` console script pointing to `flux.cli:app`, but no `app` symbol exists in `cli.py` — so the README documents only the `python -m flux` entry point, which is what all the repo docs use and what actually works.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const out = await tools.execute({ code: \"\" });\nreturn out;"} 
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead src 
+[0m→ [0mRead docs 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/text-to-image.md 
+[0m→ [0mRead docs/image-variation.md 
+[0m→ [0mRead docs/fill.md 
+[0m→ [0mRead docs/image-editing.md 
+[0m→ [0mRead docs/structural-conditioning.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead model_cards 
+[0m→ [0mRead .github 
+[0m→ [0mRead src/flux 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/flux/cli.py 
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead src/flux/__main__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/workflows/ci.yaml 
+[0m→ [0mRead src/flux/util.py [90m[limit=150][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "^configs|def configs|Config\(" [90min src/flux/util.py · 1 match[0m
+[0m✱ [0mGrep "name="[a-z0-9-]+"" [90min src/flux/util.py · 0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/flux/util.py [90m[limit=200, offset=290][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/flux/util.py [90m[offset=490, limit=130][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead demo_gr.py [90m[limit=80][0m
+[0m→ [0mRead demo_st.py [90m[limit=60][0m
+[0m→ [0mRead demo_st_fill.py [90m[limit=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead src/flux/modules 
+[0m→ [0mRead src/flux/trt 
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources();\nreturn r;"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def main\(|^    [a-z_]+:.*=.*,$" [90min src/flux/cli_control.py · 17 matches[0m
+[0m✱ [0mGrep "def main\(" [90min src/flux/cli_fill.py · 1 match[0m
+[0m✱ [0mGrep "def main\(" [90min src/flux/cli_redux.py · 1 match[0m
+[0m→ [0mRead model_cards/FLUX.1-dev.md [90m[limit=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "app" [90min src/flux/cli.py · 0 matches[0m
+[0m✱ [0mGrep "def main\(|aspect_ratio|num_steps|guidance|img_cond_path" [90min src/flux/cli_kontext.py · 43 matches[0m
+[0m→ [0mRead src/flux/trt/trt_config 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "url = " [90min .git · 1 match[0m
+[0m✱ [0mGlob "assets/**" [90m12 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/flux/cli_fill.py [90m[offset=175, limit=60][0m
+[0m→ [0mRead src/flux/cli_redux.py [90m[limit=40, offset=139][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead model_licenses 
+[0m→ [0mRead src/flux/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead demo_st.py [90m[offset=57, limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "fp4|precision" [90min src/flux/trt · 30 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def save_image|nsfw|threshold|track_usage" [90min src/flux/util.py · 11 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/flux/util.py [90m[offset=242, limit=45][0m
+> readme-benchmark · z-ai/glm-5.3-flash

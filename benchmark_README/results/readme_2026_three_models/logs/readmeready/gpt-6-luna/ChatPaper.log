@@ -1,0 +1,39 @@
+Processing repository...
+Processing 59 files and 23 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/scipdf_parser-master/scipdf/pdf/pdffigures2/pdffigures2-assembly-0.0.12-SNAPSHOT.jar: 'utf-8' codec can't decode byte 0xa7 in position 10: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/demo.pdf: 'utf-8' codec can't decode byte 0xa1 in position 11: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/auto_survey/outputs/outputs_20230707_202302/Reinforcement Learning for Robot Control.zip: 'utf-8' codec can't decode bytes in position 10-11: invalid continuation byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/auto_survey/requirements.txt: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/source/_static/reviews.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/source/_static/ChatPaper-zh.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/source/_static/ChatPaper.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/HuggingFaceDeploy/Private/image.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/ChatImprovement.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatpaper.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatgpt.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/Reward QR code.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatgentitle.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatrevierer.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/weichat.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatresponse.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/flask_web_home.png: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/reviews.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/docker-compose.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/homeLogo.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/home.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/maomao.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatpaper_0314.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/ChatPaper-2c93qpwo/images/chatpaper_0317.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Splitting text into chunks for 61 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/gpt-6-luna/_work/ChatPaper/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/gpt-6-luna/_work/ChatPaper/docs/data/README_GPT4.md
+
+--- stderr ---

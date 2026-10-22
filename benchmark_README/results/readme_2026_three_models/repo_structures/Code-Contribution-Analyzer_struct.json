@@ -1,0 +1,84 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "api_clients",
+        "type": "dir",
+        "children": [
+          {
+            "name": "base_client.py",
+            "type": "file"
+          },
+          {
+            "name": "bitbucket_client.py",
+            "type": "file"
+          },
+          {
+            "name": "github_client.py",
+            "type": "file"
+          },
+          {
+            "name": "gitlab_client.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "web",
+        "type": "dir",
+        "children": [
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "static",
+            "type": "dir",
+            "children": [
+              {
+                "name": "index.js",
+                "type": "file"
+              },
+              {
+                "name": "styles.css",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "templates",
+            "type": "dir",
+            "children": [
+              {
+                "name": "index.html",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

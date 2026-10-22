@@ -1,0 +1,106 @@
+Resuming 48 repositories, 15 cells each
+Generation z-ai/glm-5.3-flash baseline gpt-engineer: done
+Generation openai/gpt-6-luna baseline gpt-engineer: done
+Generation anthropic/claude-haiku-5.5 baseline gpt-engineer: done
+Generation z-ai/glm-5.3-flash baseline ChatGLM-6B: done
+
+GEval z-ai/glm-5.3-flash baseline gpt-engineer: 0.8
+Generation z-ai/glm-5.3-flash baseline SMSBoom: failed
+
+GEval openai/gpt-6-luna baseline gpt-engineer: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline gpt-engineer: 0.8
+Generation anthropic/claude-haiku-5.5 baseline ChatGLM-6B: done
+Generation openai/gpt-6-luna baseline ChatGLM-6B: done
+Generation anthropic/claude-haiku-5.5 baseline SMSBoom: failed
+
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 632, in generate_rubric_score
+    res, cost = judge.generate_raw_response(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomLLM' object has no attribute 'generate_raw_response'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/scripts/run_full_benchmark.py", line 40, in main
+    evaluate_outputs(paths, experiment)
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 254, in evaluate_outputs
+    metric.measure(test_case)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 139, in measure
+    g_score, reason = self._evaluate(
+                      ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 370, in _evaluate
+    return generate_rubric_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 643, in generate_rubric_score
+    return generate_with_schema_and_extract(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/generation.py", line 127, in generate_with_schema_and_extract
+    result = judge.generate_with_schema(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 158, in generate_with_schema
+    raw = self._post_chat(
+          ^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 126, in _post_chat
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/sessions.py", line 827, in send
+    r.content
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/models.py", line 1042, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/requests/models.py", line 937, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/urllib3/response.py", line 1284, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/urllib3/response.py", line 1459, in read_chunked
+    self._update_chunk_length()
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/urllib3/response.py", line 1367, in _update_chunk_length
+    line = self._fp.fp.readline(_MAX_CHUNK_LINE_LENGTH + 1)  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/scripts/run_full_benchmark.py", line 53, in <module>
+    main()
+  File "/home/ilya/README_benchmark/scripts/run_full_benchmark.py", line 35, in main
+    with ThreadPoolExecutor(max_workers=len(MODELS)) as pool:
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+  File "/usr/lib/python3.12/threading.py", line 1147, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.12/threading.py", line 1167, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Generation openai/gpt-6-luna baseline SMSBoom: done
+Generation anthropic/claude-haiku-5.5 baseline mackup: done

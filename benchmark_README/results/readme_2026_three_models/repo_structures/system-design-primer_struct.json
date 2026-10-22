@@ -1,0 +1,524 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.txt",
+    "type": "file"
+  },
+  {
+    "name": "TRANSLATIONS.md",
+    "type": "file"
+  },
+  {
+    "name": "epub-metadata.yaml",
+    "type": "file"
+  },
+  {
+    "name": "generate-epub.sh",
+    "type": "file"
+  },
+  {
+    "name": "resources",
+    "type": "dir",
+    "children": [
+      {
+        "name": "flash_cards",
+        "type": "dir",
+        "children": [
+          {
+            "name": "OO Design.apkg",
+            "type": "file"
+          },
+          {
+            "name": "System Design Exercises.apkg",
+            "type": "file"
+          },
+          {
+            "name": "System Design.apkg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "study_guide.graffle",
+        "type": "file"
+      },
+      {
+        "name": "study_guide.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "solutions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "object_oriented_design",
+        "type": "dir",
+        "children": [
+          {
+            "name": "call_center",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "call_center.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "call_center.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "deck_of_cards",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "deck_of_cards.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "deck_of_cards.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "hash_table",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "hash_map.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "hash_map.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "lru_cache",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "lru_cache.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "lru_cache.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "online_chat",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "online_chat.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "online_chat.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "parking_lot",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "parking_lot.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "parking_lot.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "system_design",
+        "type": "dir",
+        "children": [
+          {
+            "name": "mint",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "mint.graffle",
+                "type": "file"
+              },
+              {
+                "name": "mint.png",
+                "type": "file"
+              },
+              {
+                "name": "mint_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "mint_basic.png",
+                "type": "file"
+              },
+              {
+                "name": "mint_mapreduce.py",
+                "type": "file"
+              },
+              {
+                "name": "mint_snippets.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pastebin",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "pastebin.graffle",
+                "type": "file"
+              },
+              {
+                "name": "pastebin.png",
+                "type": "file"
+              },
+              {
+                "name": "pastebin.py",
+                "type": "file"
+              },
+              {
+                "name": "pastebin_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "pastebin_basic.png",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "query_cache",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "query_cache.graffle",
+                "type": "file"
+              },
+              {
+                "name": "query_cache.png",
+                "type": "file"
+              },
+              {
+                "name": "query_cache_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "query_cache_basic.png",
+                "type": "file"
+              },
+              {
+                "name": "query_cache_snippets.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sales_rank",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "sales_rank.graffle",
+                "type": "file"
+              },
+              {
+                "name": "sales_rank.png",
+                "type": "file"
+              },
+              {
+                "name": "sales_rank_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "sales_rank_basic.png",
+                "type": "file"
+              },
+              {
+                "name": "sales_rank_mapreduce.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "scaling_aws",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws.graffle",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_1.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_2.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_3.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_4.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_5.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_6.png",
+                "type": "file"
+              },
+              {
+                "name": "scaling_aws_7.png",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "social_graph",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "social_graph.graffle",
+                "type": "file"
+              },
+              {
+                "name": "social_graph.png",
+                "type": "file"
+              },
+              {
+                "name": "social_graph_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "social_graph_basic.png",
+                "type": "file"
+              },
+              {
+                "name": "social_graph_snippets.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "template",
+            "type": "dir",
+            "children": [
+              {
+                "name": "template.graffle",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "twitter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "twitter.graffle",
+                "type": "file"
+              },
+              {
+                "name": "twitter.png",
+                "type": "file"
+              },
+              {
+                "name": "twitter_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "twitter_basic.png",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "web_crawler",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README-zh-Hans.md",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler.graffle",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler.png",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler_basic.graffle",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler_basic.png",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler_mapreduce.py",
+                "type": "file"
+              },
+              {
+                "name": "web_crawler_snippets.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+I’ll inspect the repository’s files and existing project metadata, then create a README grounded only in what the code supports.
+The repository is a Python CLI for Pythagora Core, with agent-driven project generation, persisted project state, and provider-backed LLM calls. I’m documenting the actual CLI/configuration flow and distinguishing the included templates from template files that are not currently registered.
+Created `README.md` in the repository root, starting with a level-one heading. It covers setup, configuration, CLI usage, included templates, tests, repository layout, telemetry, and licensing, based on the repository contents. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "*" [90m200 matches[0m
+[0m✱ [0mGlob "**/*" [90m484 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead main.py 
+[0m→ [0mRead core/cli/main.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead example-config.json 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead CHANGELOG.md 
+[0m→ [0mRead docs/TELEMETRY.md 
+[0m→ [0mRead core/config/constants.py 
+[0m→ [0mRead core/templates/registry.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead core/cli/helpers.py 
+[0m→ [0mRead core/config/user_settings.py 
+[0m→ [0mRead core/config/env_importer.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead core/config/actions.py 
+[0m→ [0mRead core/ui/base.py 
+[0m→ [0mRead core/templates/vite_react.py 
+[0m→ [0mRead core/templates/vite_react_swagger.py 
+[0m→ [0mRead core/telemetry/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead core/config/__init__.py 
+[0m→ [0mRead tests/cli/test_cli.py 
+[0m→ [0mRead core/templates/base.py 
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "README.md" [90m1 match[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead core/templates/info/vite_react/summary.tpl 
+[0m→ [0mRead tests/conftest.py 
+[0m→ [0mRead core/templates/info/vite_react_swagger/summary.tpl 
+[0m✱ [0mGrep "getenv\(|os.environ|OPENAI_API_KEY|ANTHROPIC_API_KEY|GROQ_API_KEY" [90min core/llm · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead core/llm/openai_client.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

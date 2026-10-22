@@ -1,0 +1,167 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63985,
+    "tree_files": 89,
+    "tracked_files": 89,
+    "selected": [
+      {
+        "path": "pdf/README.md",
+        "tokens": 1395,
+        "truncated": false
+      },
+      {
+        "path": "parse.js",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "pdf/create_index.py",
+        "tokens": 292,
+        "truncated": false
+      },
+      {
+        "path": "pdf/remove_links.py",
+        "tokens": 1929,
+        "truncated": false
+      },
+      {
+        "path": "web/convert_table.py",
+        "tokens": 390,
+        "truncated": false
+      },
+      {
+        "path": "web/covid_cases.js",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "web/covid_deaths.js",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "web/empty_script.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "web/highlight.min.js",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "web/jquery-3.4.0.min.js",
+        "tokens": 8344,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      "index.html",
+      "pdf/descripitive_image_final-01.png",
+      "pdf/descripitive_image_final.png",
+      "pdf/index_for_pdf.html",
+      "pdf/index_for_pdf_print.html",
+      "pdf/popup.html",
+      "web/continents.csv",
+      "web/covid_cases.png",
+      "web/covid_deaths.png",
+      "web/default.min.css",
+      "web/default_dark.min.css",
+      "web/default_dark1.min.css",
+      "web/default_dark2.min.css",
+      "web/default_dark3.min.css",
+      "web/faq.html",
+      "web/favicon.png",
+      "web/image_720.jpeg",
+      "web/image_888.jpeg",
+      "web/image_960.jpeg",
+      "web/image_orig.jpeg",
+      "web/image_orig_blue6.png",
+      "web/image_social.jpeg",
+      "web/image_social_2.png",
+      "web/image_social_3.png",
+      "web/image_social_4.png",
+      "web/image_social_bckp.png",
+      "web/image_twitter_card.jpeg",
+      "web/image_twitter_card_2.jpeg",
+      "web/jquery-3.4.0.slim.min.js",
+      "web/mario_bros.png",
+      "web/plotly.min.js",
+      "web/script_2.js",
+      "web/showdown.min.js",
+      "web/style.css",
+      "web/style_dark.css",
+      "web/style_dark1.css",
+      "web/style_dark2.css",
+      "web/style_dark3.css",
+      "web/template.html",
+      "web/twitter_card_large.jpeg",
+      "web/twitter_card_large_bckp.jpeg",
+      "web/update_plots.py",
+      "pdf/Acrobat/Chapter_1.xml",
+      "pdf/Acrobat/bottom_line.xml",
+      "pdf/Acrobat/chapter_2.xml",
+      "pdf/Acrobat/chapter_3.xml",
+      "pdf/Acrobat/chapter_4.xml",
+      "pdf/Acrobat/chapter_5.xml",
+      "pdf/Acrobat/chapter_6.xml",
+      "pdf/Acrobat/chapter_7.xml",
+      "pdf/Acrobat/chapter_8.xml",
+      "pdf/Acrobat/even_pages.xml",
+      "pdf/Acrobat/odd_pages.xml",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/License.txt",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Online_Web_Fonts.url",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/License.txt",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Online_Web_Fonts.url",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/9f94dc20bb2a09c15241d3a880b7ad01.eot",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/9f94dc20bb2a09c15241d3a880b7ad01.svg",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/9f94dc20bb2a09c15241d3a880b7ad01.ttf",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/9f94dc20bb2a09c15241d3a880b7ad01.woff",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/9f94dc20bb2a09c15241d3a880b7ad01.woff2",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/@font-face/Demo.html",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Menlo Regular/Menlo Regular.eot",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Menlo Regular/Menlo Regular.svg",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Menlo Regular/Menlo Regular.ttf",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Menlo Regular/Menlo Regular.woff",
+      "web/OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1/Menlo Regular/Menlo Regular.woff2",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/Menlo Bold.eot",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/Menlo Bold.svg",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/Menlo Bold.ttf",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/Menlo Bold.woff",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/Menlo Bold.woff2",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/Demo.html",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/a6ffc5d72a96b65159e710ea6d258ba4.eot",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/a6ffc5d72a96b65159e710ea6d258ba4.svg",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/a6ffc5d72a96b65159e710ea6d258ba4.ttf",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/a6ffc5d72a96b65159e710ea6d258ba4.woff",
+      "web/OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88/Menlo Bold/@font-face/a6ffc5d72a96b65159e710ea6d258ba4.woff2"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 97033,
+    "completion_tokens": 5386,
+    "total_tokens": 102419,
+    "cost": 0.0123963,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0123963,
+      "upstream_inference_prompt_cost": 0.0097033,
+      "upstream_inference_completions_cost": 0.002693
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1596,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606681-Jxt0K2BCMxu912N73aqd"
+}

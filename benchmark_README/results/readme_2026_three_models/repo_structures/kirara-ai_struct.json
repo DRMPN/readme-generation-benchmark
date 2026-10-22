@@ -1,0 +1,1914 @@
+[
+  {
+    "name": "\".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "quickstarts",
+        "type": "dir",
+        "children": [
+          {
+            "name": "windows",
+            "type": "dir",
+            "children": [
+              {
+                "name": "scripts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "\\345\\220\\257\\345\\212\\250.cmd\"",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".cursor",
+    "type": "dir",
+    "children": [
+      {
+        "name": "rules",
+        "type": "dir",
+        "children": [
+          {
+            "name": "create-workflow.mdc",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug-report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature-request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "preview.png",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "docker-latest.yml",
+            "type": "file"
+          },
+          {
+            "name": "docker-tag.yml",
+            "type": "file"
+          },
+          {
+            "name": "pr_review.yml",
+            "type": "file"
+          },
+          {
+            "name": "project_check.yml",
+            "type": "file"
+          },
+          {
+            "name": "quickstart-windows.yml",
+            "type": "file"
+          },
+          {
+            "name": "run-tests.yml",
+            "type": "file"
+          },
+          {
+            "name": "stale.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": ".pylintrc",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "alembic.ini",
+    "type": "file"
+  },
+  {
+    "name": "config.yaml.example",
+    "type": "file"
+  },
+  {
+    "name": "docker",
+    "type": "dir",
+    "children": [
+      {
+        "name": "start.sh",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "kirara_ai",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__main__.py",
+        "type": "file"
+      },
+      {
+        "name": "alembic",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README",
+            "type": "file"
+          },
+          {
+            "name": "env.py",
+            "type": "file"
+          },
+          {
+            "name": "script.py.mako",
+            "type": "file"
+          },
+          {
+            "name": "versions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "4a364dbb8dab_initial_migration.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config_loader.py",
+            "type": "file"
+          },
+          {
+            "name": "global_config.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "database",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "manager.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "entry.py",
+        "type": "file"
+      },
+      {
+        "name": "events",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "application.py",
+            "type": "file"
+          },
+          {
+            "name": "event_bus.py",
+            "type": "file"
+          },
+          {
+            "name": "im.py",
+            "type": "file"
+          },
+          {
+            "name": "listen.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin.py",
+            "type": "file"
+          },
+          {
+            "name": "tracing",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "llm.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "workflow.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "im",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "adapter.py",
+            "type": "file"
+          },
+          {
+            "name": "im_registry.py",
+            "type": "file"
+          },
+          {
+            "name": "manager.py",
+            "type": "file"
+          },
+          {
+            "name": "message.py",
+            "type": "file"
+          },
+          {
+            "name": "profile.py",
+            "type": "file"
+          },
+          {
+            "name": "sender.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "internal.py",
+        "type": "file"
+      },
+      {
+        "name": "ioc",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "container.py",
+            "type": "file"
+          },
+          {
+            "name": "inject.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "adapter.py",
+            "type": "file"
+          },
+          {
+            "name": "format",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "embedding.py",
+                "type": "file"
+              },
+              {
+                "name": "message.py",
+                "type": "file"
+              },
+              {
+                "name": "request.py",
+                "type": "file"
+              },
+              {
+                "name": "rerank.py",
+                "type": "file"
+              },
+              {
+                "name": "response.py",
+                "type": "file"
+              },
+              {
+                "name": "tool.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "llm_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "llm_registry.py",
+            "type": "file"
+          },
+          {
+            "name": "model_types.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "logger.py",
+        "type": "file"
+      },
+      {
+        "name": "mcp_module",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "manager.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "server.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "media",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "carrier",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "provider.py",
+                "type": "file"
+              },
+              {
+                "name": "registry.py",
+                "type": "file"
+              },
+              {
+                "name": "service.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "manager.py",
+            "type": "file"
+          },
+          {
+            "name": "media_object.py",
+            "type": "file"
+          },
+          {
+            "name": "metadata.py",
+            "type": "file"
+          },
+          {
+            "name": "types",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "media_type.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "mime.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "composes",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "builtin_composes.py",
+                "type": "file"
+              },
+              {
+                "name": "composer_strategy.py",
+                "type": "file"
+              },
+              {
+                "name": "decomposer_strategy.py",
+                "type": "file"
+              },
+              {
+                "name": "xml_helper.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "entry.py",
+            "type": "file"
+          },
+          {
+            "name": "memory_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "persistences",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "codecs.py",
+                "type": "file"
+              },
+              {
+                "name": "file_persistence.py",
+                "type": "file"
+              },
+              {
+                "name": "redis_persistence.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "registry.py",
+            "type": "file"
+          },
+          {
+            "name": "scopes",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base.py",
+                "type": "file"
+              },
+              {
+                "name": "builtin_scopes.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "plugin_manager",
+        "type": "dir",
+        "children": [
+          {
+            "name": "models.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin_event_bus.py",
+            "type": "file"
+          },
+          {
+            "name": "plugin_loader.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "plugins",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".gitkeep",
+            "type": "file"
+          },
+          {
+            "name": "bundled_frpc",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "frpc_manager.py",
+                "type": "file"
+              },
+              {
+                "name": "models.py",
+                "type": "file"
+              },
+              {
+                "name": "routes.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "im_http_legacy_adapter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "setup.py",
+                "type": "file"
+              },
+              {
+                "name": "tests",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "api_test.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "im_qqbot_adapter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "setup.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "im_telegram_adapter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "setup.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "im_wecom_adapter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "delegates.py",
+                "type": "file"
+              },
+              {
+                "name": "setup.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "llm_preset_adapters",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "alibabacloud_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "claude_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "deepseek_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "gemini_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "minimax_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "mistral_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "moonshot_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "ollama_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "openai_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "openrouter_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "setup.py",
+                "type": "file"
+              },
+              {
+                "name": "siliconflow_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "tencentcloud_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "tests",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_utils.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              },
+              {
+                "name": "volcengine_adapter.py",
+                "type": "file"
+              },
+              {
+                "name": "voyage_adapter.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "system",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "updater.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tracing",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "core.py",
+            "type": "file"
+          },
+          {
+            "name": "decorator.py",
+            "type": "file"
+          },
+          {
+            "name": "llm_tracer.py",
+            "type": "file"
+          },
+          {
+            "name": "manager.py",
+            "type": "file"
+          },
+          {
+            "name": "models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "web",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "api",
+            "type": "dir",
+            "children": [
+              {
+                "name": "block",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "diagnostics",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "base_diagnostic.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "import_check.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "jedi_syntax_check.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "mandatory_function.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "pyflakes_check.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "python_lsp.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "dispatch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "im",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "llm",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "mcp",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "media",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "plugin",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "system",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "utils.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "tracing",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "workflow",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "routes.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "auth",
+            "type": "dir",
+            "children": [
+              {
+                "name": "middleware.py",
+                "type": "file"
+              },
+              {
+                "name": "models.py",
+                "type": "file"
+              },
+              {
+                "name": "routes.py",
+                "type": "file"
+              },
+              {
+                "name": "services.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workflow",
+        "type": "dir",
+        "children": [
+          {
+            "name": "core",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "block",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "base.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "input_output.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "param.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "registry.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "schema.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "type_system.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "dispatch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "dispatcher.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "exceptions.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "models",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "dispatch_rules.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "registry.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "rules",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "base.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "message_rules.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "sender_rules.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "system_rules.py",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "execution",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "exceptions.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "executor.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "workflow",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "base.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "builder.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "registry.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "implementations",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "blocks",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "game",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "dice.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "gacha.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "im",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "basic.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "messages.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "states.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "user_profile.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "llm",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "basic.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "chat.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "image.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "mcp",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "tool.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "memory",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "chat_memory.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "clear_memory.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "system",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "basic.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "help.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "system_blocks.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "variables",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "variable_blocks.py",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "factories",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "default_factory.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "game_factory.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "system_factory.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "workflows",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "system_workflows.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "pytest.ini",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "llm_adapters",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file"
+          },
+          {
+            "name": "mock_app",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "app.py",
+                "type": "file"
+              },
+              {
+                "name": "gemini.py",
+                "type": "file"
+              },
+              {
+                "name": "models",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "gemini.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "openai.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ollama.py",
+                "type": "file"
+              },
+              {
+                "name": "openai.py",
+                "type": "file"
+              },
+              {
+                "name": "voyage.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_gemini_adapter.py",
+            "type": "file"
+          },
+          {
+            "name": "test_ollama_adapter.py",
+            "type": "file"
+          },
+          {
+            "name": "test_openai_adapter.py",
+            "type": "file"
+          },
+          {
+            "name": "test_voyage_adapter.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_composer_decomposer.py",
+            "type": "file"
+          },
+          {
+            "name": "test_composer_strategy.py",
+            "type": "file"
+          },
+          {
+            "name": "test_decomposer_strategy.py",
+            "type": "file"
+          },
+          {
+            "name": "test_memory_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "test_persistence.py",
+            "type": "file"
+          },
+          {
+            "name": "test_scope.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "resources",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_image.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "system_blocks",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "game",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_dice.py",
+                "type": "file"
+              },
+              {
+                "name": "test_gacha.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "im",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_messages.py",
+                "type": "file"
+              },
+              {
+                "name": "test_states.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "llm",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_basic.py",
+                "type": "file"
+              },
+              {
+                "name": "test_chat.py",
+                "type": "file"
+              },
+              {
+                "name": "test_image.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "memory",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_chat_memory.py",
+                "type": "file"
+              },
+              {
+                "name": "test_clear_memory.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "system",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_basic.py",
+                "type": "file"
+              },
+              {
+                "name": "test_help.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "test_config_loader.py",
+        "type": "file"
+      },
+      {
+        "name": "test_game_blocks.py",
+        "type": "file"
+      },
+      {
+        "name": "test_mcp_server.py",
+        "type": "file"
+      },
+      {
+        "name": "test_media.py",
+        "type": "file"
+      },
+      {
+        "name": "test_media_element.py",
+        "type": "file"
+      },
+      {
+        "name": "test_system_blocks.py",
+        "type": "file"
+      },
+      {
+        "name": "test_workflow_builder.py",
+        "type": "file"
+      },
+      {
+        "name": "test_workflow_factories.py",
+        "type": "file"
+      },
+      {
+        "name": "tracing",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_base.py",
+            "type": "file"
+          },
+          {
+            "name": "test_core.py",
+            "type": "file"
+          },
+          {
+            "name": "test_decorator.py",
+            "type": "file"
+          },
+          {
+            "name": "test_llm_tracer.py",
+            "type": "file"
+          },
+          {
+            "name": "test_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "test_models.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "auth_test_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "test_block_registry.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "web",
+        "type": "dir",
+        "children": [
+          {
+            "name": "api",
+            "type": "dir",
+            "children": [
+              {
+                "name": "im",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_im.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "llm",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_llm.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "media",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_media.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "plugin",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_plugin.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "system",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_system.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "workflow",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_workflow.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "auth",
+            "type": "dir",
+            "children": [
+              {
+                "name": "test_auth.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "workflow_executor",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test_block.py",
+            "type": "file"
+          },
+          {
+            "name": "test_executor.py",
+            "type": "file"
+          },
+          {
+            "name": "test_input_output.py",
+            "type": "file"
+          },
+          {
+            "name": "test_workflow_basic.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

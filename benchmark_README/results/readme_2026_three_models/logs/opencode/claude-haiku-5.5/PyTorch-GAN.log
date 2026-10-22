@@ -1,0 +1,128 @@
+I'll start by looking at the repository layout and existing files.
+No README exists yet. Next I'll read the requirements, license, data scripts, and a few implementations to confirm how they work.
+The CycleGAN and GAN scripts show how data paths and arguments work. Next I'll check the remaining data paths and the pix2pix download script.
+I have enough to write an accurate README. Writing it now.
+The README is written. Before finishing, I'll verify a few claims I'm not yet sure of: the git remote URL, how ESRGAN loads data, and where ESRGAN and CCGAN get their datasets.
+The git remote is a local path, not GitHub, so the clone URL I wrote is invented. ESRGAN reads a flat folder of images, and I also grouped `aae` under conditional models, which is wrong. I'll fix those and remove the unverified deprecation claim.
+One more fix: the README only uses `logo.png` from `assets/`, so the claim about the other images being used in the README is inaccurate.
+I wrote `README.md` in the repository root, and it's the only file I created. It starts with a level-one heading and covers the repository layout, the 32 model directories, requirements, setup, dataset download scripts, how to run the examples, the command-line options, the outputs, and the MIT license.
+
+I wrote it from reading the code and scripts, not by running them. A few things it says are worth knowing:
+
+- **No clone URL.** The git remote in `.git/config` is a local path, so the README uses a `<repository-url>` placeholder instead of a made-up GitHub address.
+- **Run from each model's directory.** Scripts use relative paths for outputs and datasets (`../../data/...`), and the README says so.
+- **No performance claims.** The README doesn't report any results, and it says there are no tests or CI.
+- **Dependencies aren't pinned.** `requirements.txt` gives only `torch>=0.4.0` and unpinned packages, so the README doesn't claim any tested versions.
+- **Some dataset steps are manual.** CelebA (`img_align_celeba`) has to be downloaded by hand. MNIST and MNIST-M download automatically.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90m88 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead data/download_cyclegan_dataset.sh 
+[0m→ [0mRead implementations/esrgan/test_on_image.py 
+[0m→ [0mRead implementations/gan/gan.py 
+[0m→ [0mRead implementations/cyclegan/cyclegan.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead data/download_pix2pix_dataset.sh 
+[0m✱ [0mGrep "add_argument\("--(dataset_name|img_size|img_height|lr|n_epochs)"" [90min implementations/srgan/srgan.py · 3 matches[0m
+[0m✱ [0mGrep "\.\./\.\./data|download=True|os\.makedirs\("(images|saved_models)" [90min implementations · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.worktree_list(),\n]);\nreturn r;"} 
+[0m✱ [0mGrep "data|root|os\.path" [90min implementations/esrgan · 16 matches[0m
+[0m✱ [0mGrep "url|remote" [90min .git/config · 4 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -101,9 +101,9 @@
+ 
+ Clone the repository:
+ 
+ ```bash
+-git clone https://github.com/eriklindernoren/PyTorch-GAN.git
++git clone <repository-url>
+ cd PyTorch-GAN
+ pip install -r requirements.txt
+ ```
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -67,9 +67,10 @@
+ 
+ Some examples in the table are grouped by task:
+ 
+ - **Basic GANs and loss variants:** `gan`, `dcgan`, `lsgan`, `wgan`, `wgan_gp`, `wgan_div`, `dragan`, `bgan`, `began`, `ebgan`, `relativistic_gan`, `softmax_gan`
+-- **Conditional and structured GANs:** `cgan`, `acgan`, `infogan`, `ccgan`, `cluster_gan`, `aae`, `sgan`
++- **Conditional and structured GANs:** `cgan`, `acgan`, `infogan`, `ccgan`, `cluster_gan`, `sgan`
++- **Autoencoder-based:** `aae`
+ - **Image-to-image translation:** `pix2pix`, `cyclegan`, `discogan`, `dualgan`, `unit`, `munit`, `bicyclegan`, `stargan`
+ - **Domain adaptation:** `cogan`, `pixelda`
+ - **Image inpainting:** `context_encoder`
+ - **Super-resolution:** `srgan`, `esrgan`
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -145,9 +145,10 @@
+ 
+ ### Other datasets
+ 
+ - **CelebA (`img_align_celeba`):** used by the `srgan` and `context_encoder` examples. These scripts' comments say to download the `img_align_celeba` folder and place it in `data/`. The dataset is not downloaded automatically.
+-- **Other models** (for example, `esrgan`, `ccgan`, `discogan`, `dualgan`, `munit`, `unit`, `stargan`) read from `data/<dataset_name>` as well. Prepare the folder layout the matching `datasets.py` expects. Check that file for the exact structure.
++- **Other models** (for example, `ccgan`, `discogan`, `dualgan`, `munit`, `unit`, `stargan`) read from `data/<dataset_name>`. Check each model's `datasets.py` for the exact folder layout it expects.
++- **ESRGAN:** `esrgan.py` loads every file in `data/<dataset_name>` (default `img_align_celeba`) as a high-resolution image.
+ 
+ ## Running the examples
+ 
+ Each example prints its options at startup and runs the training loop. Run the examples from their own directories.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -216,9 +216,8 @@
+ 
+ - Each implementation is intended as a compact reference for the model's core ideas. The code is not a benchmarked or production training framework, and this README does not report quantitative results.
+ - The repository has no automated tests or CI configuration. The scripts have not been verified in this README.
+ - Some scripts depend on other files in their own directory (`models.py`, `datasets.py`, `utils.py`, `mnistm.py`). Run them from the implementation directory so these imports and the relative data paths resolve.
+-- Several scripts were written for older PyTorch versions (`requirements.txt` specifies `torch>=0.4.0`). Newer PyTorch releases may emit deprecation warnings.
+ 
+ ## License
+ 
+ This project is licensed under the MIT License. See [LICENSE](LICENSE) for the full text.
+
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -209,9 +209,9 @@
+ - `images/` — sample images written during training (for example, `gan.py` writes 25-image grids every `--sample_interval` batches).
+ - `images/<dataset_name>/` — sample grids for dataset-based models such as CycleGAN.
+ - `saved_models/<dataset_name>/` — model checkpoints for dataset-based models such as CycleGAN.
+ 
+-The `assets/` directory contains example images and GIFs used in this README and elsewhere in the repository.
++The `assets/` directory contains example images and GIFs for the models (for example, `cyclegan.png`, `gan.gif`). The README displays only `logo.png`.
+ 
+ ## Notes
+ 
+ - Each implementation is intended as a compact reference for the model's core ideas. The code is not a benchmarked or production training framework, and this README does not report quantitative results.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

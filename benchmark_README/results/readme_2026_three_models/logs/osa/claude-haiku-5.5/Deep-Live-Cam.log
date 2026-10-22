@@ -1,0 +1,395 @@
+[21:34:56] INFO     [21:34:56] - Logging initialized. Log file:     logger.py:49
+                    /home/ilya/README_benchmark/.tools/src/OSA/logs             
+                    /Deep-Live-Cam-33zc4mp2_2026-10-21_21-34-56.log             
+           INFO     [21:34:56] - Repository already exists at   git_agent.py:370
+                    /home/ilya/README_benchmark/benchmark_READM                 
+                    E/results/readme_2026_three_models/workspac                 
+                    es/Deep-Live-Cam-33zc4mp2. Initializing...                  
+           INFO     [21:34:56] - Repository initialized from    git_agent.py:372
+                    existing directory                                          
+[21:34:57] INFO     [21:34:57] - Advanced mode selected for task scheduler.py:71
+                    scheduler.                                                  
+           INFO     [21:34:57] - Web mode enabled, returning     scheduler.py:92
+                    plan for web interface.                                     
+
+────────────────────────────── README generation ───────────────────────────────
+           INFO     [21:34:57] - ========== README GENERATION readme_agent.py:37
+                    START ==========                                            
+           INFO     [21:34:57] - Processing repository:       readme_agent.py:38
+                    /home/ilya/README_benchmark/benchmark_REA                   
+                    DME/results/readme_2026_three_models/work                   
+                    spaces/Deep-Live-Cam-33zc4mp2                               
+           INFO     [21:34:57] - [ContextCollector]     context_collector.py:291
+                    Gathering repository context...                             
+           INFO     [21:34:57] - [ContextCollector]     context_collector.py:296
+                    Token budgets: {'tree': 3626,                               
+                    'existing_readme': 3022,                                    
+                    'key_files': 4835, 'examples':                              
+                    1208, 'pdf': 2417}                                          
+           INFO     [21:34:57] - [ContextCollector]     context_collector.py:197
+                    Tree: 188 tokens (raw 188 tokens)                           
+[21:35:00] INFO     [21:35:00] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:00] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:00] - [ContextCollector] LLM context_collector.py:218
+                    selected 6 key files                                        
+           INFO     [21:35:00] - [ContextCollector]     context_collector.py:224
+                    Read 5/6 key files (4894 tokens)                            
+[21:35:08] INFO     [21:35:08] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:08] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+[21:35:15] INFO     [21:35:15] - Asynchronous LLM request completed   llm.py:517
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:15] - Async send and parse request success llm.py:566
+                    on attempt 1/3.                                             
+           INFO     [21:35:15] - [ContextCollector]     context_collector.py:314
+                    Context collected:                                          
+                    key_files=['run.py',                                        
+                    'modules/core.py',                                          
+                    'modules/processors/frame/core.py',                         
+                    'modules/processors/frame/face_swap                         
+                    per.py',                                                    
+                    'modules/face_analyser.py'],                                
+                    has_tests=False, pdf=False                                  
+           INFO     [21:35:15] - [IntentAnalyzer]          intent_analyzer.py:27
+                    Analyzing user intent...                                    
+           INFO     [21:35:15] - [IntentAnalyzer]          intent_analyzer.py:41
+                    Fast-path: generate/full                                    
+           INFO     [21:35:15] - [SectionPlanner]         section_planner.py:116
+                    Planning README sections...                                 
+[21:35:18] INFO     [21:35:18] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:18] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:18] - [SectionPlanner] Planned section_planner.py:134
+                    12 sections: [('header',                                    
+                    'deterministic'),                                           
+                    ('table_of_contents',                                       
+                    'keep_existing'), ('overview',                              
+                    'llm'), ('core_features', 'llm'),                           
+                    ('installation', 'deterministic'),                          
+                    ('getting_started', 'llm'),                                 
+                    ('architecture', 'llm'), ('examples',                       
+                    'deterministic'), ('documentation',                         
+                    'deterministic'), ('contributing',                          
+                    'deterministic'), ('license',                               
+                    'deterministic'), ('citation',                              
+                    'deterministic')]                                           
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'header'                                 
+                    (Header)...                                                 
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'overview'                               
+                    (Overview)...                                               
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'core_features'                          
+                    (Core Features)...                                          
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'installation'                           
+                    (Installation)...                                           
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'getting_started'                        
+                    (Getting Started)...                                        
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'architecture'                           
+                    (Architecture)...                                           
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'examples'                               
+                    (Examples)...                                               
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'documentation'                          
+                    (Documentation)...                                          
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'contributing'                           
+                    (Contributing)...                                           
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'license'                                
+                    (License)...                                                
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'citation'                               
+                    (Citation)...                                               
+           INFO     [21:35:18] -                     deterministic_builder.py:87
+                    [DeterministicBuilder] Building                             
+                    section: header                                             
+           INFO     [21:35:18] -                     deterministic_builder.py:93
+                    [DeterministicBuilder] Building                             
+                    section: installation                                       
+           INFO     [21:35:18] -                     deterministic_builder.py:99
+                    [DeterministicBuilder] Building                             
+                    section: examples                                           
+           INFO     [21:35:18] -                    deterministic_builder.py:101
+                    [DeterministicBuilder] Section                              
+                    'examples' skipped: no examples                             
+                    detected                                                    
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'examples' done                                     
+                    (deterministic, 0 chars).                                   
+           INFO     [21:35:18] -                    deterministic_builder.py:110
+                    [DeterministicBuilder] Building                             
+                    section: documentation                                      
+           INFO     [21:35:18] -                    deterministic_builder.py:116
+                    [DeterministicBuilder] Section                              
+                    'documentation' skipped: docs                               
+                    not found                                                   
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'documentation' done                                
+                    (deterministic, 0 chars).                                   
+           INFO     [21:35:18] -                    deterministic_builder.py:125
+                    [DeterministicBuilder] Building                             
+                    section: contributing                                       
+           INFO     [21:35:18] -                    deterministic_builder.py:149
+                    [DeterministicBuilder] Section                              
+                    'contributing' built                                        
+                    (discussions=False,                                         
+                    contributing_file=True)                                     
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'contributing' done                                 
+                    (deterministic, 143 chars).                                 
+           INFO     [21:35:18] -                    deterministic_builder.py:157
+                    [DeterministicBuilder] Building                             
+                    section: license                                            
+           INFO     [21:35:18] -                    deterministic_builder.py:165
+                    [DeterministicBuilder] Section                              
+                    'license' built from local                                  
+                    file=LICENSE (license_name=MIT)                             
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'license' done                                      
+                    (deterministic, 116 chars).                                 
+           INFO     [21:35:18] -                    deterministic_builder.py:184
+                    [DeterministicBuilder] Building                             
+                    section: citation                                           
+           INFO     [21:35:18] -                    deterministic_builder.py:223
+                    [DeterministicBuilder] Checking                             
+                    existing README for citation                                
+                    block                                                       
+           INFO     [21:35:18] - [PyPiInspector]       pypi_status_checker.py:30
+                    Resolving PyPI package info                                 
+           INFO     [21:35:18] - [PyPiInspector]       pypi_status_checker.py:33
+                    Published package not found                                 
+           INFO     [21:35:18] -                    deterministic_builder.py:227
+                    [DeterministicBuilder]                                      
+                    Detecting citations in README                               
+                    via LLM...                                                  
+           INFO     [21:35:18] - [HeaderBuilder] Building README    header.py:58
+                    header                                                      
+           INFO     [21:35:18] - [PyPiInspector]       pypi_status_checker.py:30
+                    Resolving PyPI package info                                 
+           INFO     [21:35:18] - [HeaderBuilder] Header built (447  header.py:64
+                    chars)                                                      
+           INFO     [21:35:18] -                     deterministic_builder.py:89
+                    [DeterministicBuilder] Section                              
+                    'header' built (447 chars)                                  
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'header' done                                       
+                    (deterministic, 447 chars).                                 
+           INFO     [21:35:18] - [PyPiInspector]       pypi_status_checker.py:33
+                    Published package not found                                 
+           INFO     [21:35:18] - [InstallationBuilder]        installation.py:41
+                    Building installation section                               
+           INFO     [21:35:18] - [InstallationBuilder] Using  installation.py:69
+                    local checkout installation path for                        
+                    repo=/home/ilya/README_benchmark/benchmar                   
+                    k_README/results/readme_2026_three_models                   
+                    /workspaces/Deep-Live-Cam-33zc4mp2                          
+           INFO     [21:35:18] - [InstallationBuilder]        installation.py:47
+                    Installation section built (284 chars)                      
+           INFO     [21:35:18] -                     deterministic_builder.py:95
+                    [DeterministicBuilder] Section                              
+                    'installation' built (284 chars)                            
+           INFO     [21:35:18] - [SectionGenerator]      section_generator.py:86
+                    Section 'installation' done                                 
+                    (deterministic, 284 chars).                                 
+[21:35:19] INFO     [21:35:19] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:19] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:19] -                    deterministic_builder.py:234
+                    [DeterministicBuilder] Citation                             
+                    detection complete                                          
+                    (found=False)                                               
+           INFO     [21:35:19] -                    deterministic_builder.py:209
+                    [DeterministicBuilder] Section                              
+                    'citation' built from local                                 
+                    fallback template                                           
+           INFO     [21:35:19] - [SectionGenerator]      section_generator.py:86
+                    Section 'citation' done                                     
+                    (deterministic, 601 chars).                                 
+[21:35:20] INFO     [21:35:20] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:20] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:20] - [SectionGenerator]     section_generator.py:135
+                    Section 'overview' done (llm, 567                           
+                    chars).                                                     
+[21:35:21] INFO     [21:35:21] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:21] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:21] - [SectionGenerator]     section_generator.py:135
+                    Section 'core_features' done (llm,                          
+                    1010 chars).                                                
+           INFO     [21:35:21] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:21] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:21] - [SectionGenerator]     section_generator.py:135
+                    Section 'architecture' done (llm,                           
+                    1686 chars).                                                
+[21:35:25] INFO     [21:35:25] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:25] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:25] - [SectionGenerator]     section_generator.py:135
+                    Section 'getting_started' done                              
+                    (llm, 1338 chars).                                          
+           INFO     [21:35:25] - [Assembler] Assembling README  assembler.py:127
+                    draft...                                                    
+           INFO     [21:35:25] - [Assembler] Draft assembled    assembler.py:134
+                    (6553 chars).                                               
+           INFO     [21:35:25] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    1...                                                        
+[21:35:39] INFO     [21:35:39] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:39] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           WARNING  [21:35:39] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): header                                            
+           WARNING  [21:35:39] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): installation                                      
+           WARNING  [21:35:39] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): citation                                          
+           INFO     [21:35:39] - [SelfEval] Cycle 1:            self_eval.py:129
+                    derived_score=0.0, issues=13,                               
+                    effective_finish=False, should_stop=False,                  
+                    rerun=['core_features', 'getting_started',                  
+                    'architecture']                                             
+           INFO     [21:35:39] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'core_features'                          
+                    (Core Features)...                                          
+           INFO     [21:35:39] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'getting_started'                        
+                    (Getting Started)...                                        
+           INFO     [21:35:39] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'architecture'                           
+                    (Architecture)...                                           
+[21:35:45] INFO     [21:35:45] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:45] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:45] - [SectionGenerator]     section_generator.py:135
+                    Section 'architecture' done (llm,                           
+                    1833 chars).                                                
+           INFO     [21:35:45] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:45] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:45] - [SectionGenerator]     section_generator.py:135
+                    Section 'core_features' done (llm,                          
+                    1272 chars).                                                
+[21:35:46] INFO     [21:35:46] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:35:46] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:35:46] - [SectionGenerator]     section_generator.py:135
+                    Section 'getting_started' done                              
+                    (llm, 1031 chars).                                          
+           INFO     [21:35:46] - [Assembler] Assembling README  assembler.py:127
+                    draft...                                                    
+           INFO     [21:35:46] - [Assembler] Draft assembled    assembler.py:134
+                    (6655 chars).                                               
+           INFO     [21:35:46] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    2...                                                        
+[21:36:03] INFO     [21:36:03] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:36:03] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           WARNING  [21:36:03] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): header                                            
+           WARNING  [21:36:03] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): installation                                      
+           WARNING  [21:36:03] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): license                                           
+           WARNING  [21:36:03] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): citation                                          
+           INFO     [21:36:03] - [SelfEval] Cycle 2:            self_eval.py:129
+                    derived_score=0.0, issues=13,                               
+                    effective_finish=False, should_stop=False,                  
+                    rerun=['core_features', 'architecture']                     
+           INFO     [21:36:03] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'core_features'                          
+                    (Core Features)...                                          
+           INFO     [21:36:03] - [SectionGenerator]      section_generator.py:75
+                    Generating section 'architecture'                           
+                    (Architecture)...                                           
+[21:36:06] INFO     [21:36:06] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:36:06] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:36:06] - [SectionGenerator]     section_generator.py:135
+                    Section 'core_features' done (llm,                          
+                    847 chars).                                                 
+[21:36:08] INFO     [21:36:08] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:36:08] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           INFO     [21:36:08] - [SectionGenerator]     section_generator.py:135
+                    Section 'architecture' done (llm,                           
+                    1525 chars).                                                
+           INFO     [21:36:08] - [Assembler] Assembling README  assembler.py:127
+                    draft...                                                    
+           INFO     [21:36:08] - [Assembler] Draft assembled    assembler.py:134
+                    (5922 chars).                                               
+           INFO     [21:36:08] - [SelfEval] Evaluation cycle     self_eval.py:83
+                    3...                                                        
+[21:36:24] INFO     [21:36:24] - Synchronous LLM request completed    llm.py:327
+                    with model anthropic/claude-haiku-5.5                       
+           INFO     [21:36:24] - Send and parse request success on    llm.py:472
+                    attempt 1/3.                                                
+           WARNING  [21:36:24] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): header                                            
+           WARNING  [21:36:24] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): installation                                      
+           WARNING  [21:36:24] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): license                                           
+           WARNING  [21:36:24] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): citation                                          
+           WARNING  [21:36:24] - [SelfEval] Dropping invalid     self_eval.py:50
+                    sections_to_rerun (not a planned LLM                        
+                    section): contributing                                      
+           INFO     [21:36:24] - [SelfEval] Cycle 3:            self_eval.py:129
+                    derived_score=0.0, issues=12,                               
+                    effective_finish=False, should_stop=False,                  
+                    rerun=['getting_started', 'architecture',                   
+                    'overview']                                                 
+           INFO     [21:36:24] - [Writer] Writing README.md to      writer.py:16
+                    disk...                                                     
+           INFO     [21:36:24] - [Writer] README.md written to      writer.py:32
+                    /home/ilya/README_benchmark/benchmark_README/re             
+                    sults/readme_2026_three_models/workspaces/Deep-             
+                    Live-Cam-33zc4mp2/README.md                                 
+           INFO     [21:36:24] - README.md generated in       readme_agent.py:53
+                    /home/ilya/README_benchmark/benchmark_REA                   
+                    DME/results/readme_2026_three_models/work                   
+                    spaces/Deep-Live-Cam-33zc4mp2                               
+           INFO     [21:36:24] - =========== README           readme_agent.py:54
+                    GENERATION END ===========                                  
+
+──────── All operations completed successfully in total time: 00:01:27 ─────────
+
+--- stderr ---
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+/home/ilya/README_benchmark/.tools/venvs/osa/lib/python3.12/site-packages/langgraph/cache/base/__init__.py:8: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.
+  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer

@@ -1,0 +1,125 @@
+I'll start by looking at the repository layout and existing docs.
+There's no existing README. Next I'll read the packaging, config, Docker, and CI files, plus the top-level package listing.
+Key facts so far: entry point `kirara_ai`, config at `./data/config.yaml`, Docker setup, and a set of IM and LLM plugins. Next I'll check CI, the quickstart docs, the test config, and the remaining plugins.
+Next I'll confirm the adapter names each plugin registers, plus the web server, the Windows quickstart scripts, and the contributor docs.
+I still need the exact adapter identifiers that `config.yaml` uses, so I'll check the plugin entry points and how the IM and LLM managers map them.
+Now I'll check how internal and external plugins are discovered, and where external plugins live on disk.
+Internal plugins are auto-discovered from `kirara_ai/plugins/`, and external ones come from installed packages listed in `plugins.enable`. Last, I'll check the Windows launcher, the auth/password setup, the bundled frpc binary, and the MCP server.
+The frpc binary is downloaded at runtime rather than shipped. Two more checks: the frpc download source, and whether the WebUI is installed automatically outside Docker.
+I have enough for the README. One last check: the registration key for the legacy HTTP adapter, so I can list it accurately.
+I have what I need. Writing the README now, using only what the code and config show.
+The README is written. I'll tighten one claim I stated more strongly than the code supports: what the Docker-installed `ffmpeg` and `wkhtmltopdf` are used for.
+I wrote `README.md` in the repository root, and it is the only file I created. It starts with a level-one heading.
+
+The repository had no existing README. I based the content on the code, config files, and CI workflows, and I left out anything I could not confirm from them. The README covers:
+
+- **Overview and features:** IM adapters, LLM backends, workflows, dispatch rules, memory, MCP client, plugins, tracing, web UI, and optional FRP tunnel.
+- **Requirements:** Python 3.10+ and the system packages the Dockerfile installs.
+- **Installation:** Docker (build locally or use `lss233/kirara-agent-framework`), from source with `pip install -e .`, and the Windows quickstart script.
+- **Configuration:** `data/config.yaml`, with a table of each section and a sample from `config.yaml.example`.
+- **Running:** the `-H`/`-p` options, startup sequence, first-login password setup, and shutdown behavior.
+- **IM platforms, LLM providers, plugins, workflows, MCP, tests, and project structure.**
+
+Some things to check before you publish it:
+
+- **Voyage is left out of the LLM provider list.** Its adapter is imported in `llm_preset_adapters` but never registered.
+- **The Docker run command is my suggestion.** It mounts `./data` to `/app/data` so state persists. The repo does not document this.
+- **Docs and issue links point to upstream.** The README uses the URLs from `pyproject.toml` and the `chatgpt-mirai-qq-bot` GitHub repo. Update them if this is a fork.
+- **The sample config is mostly Chinese.** The README says so and summarizes each section in English.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead config.yaml.example 
+[0m→ [0mRead kirara_ai 
+[0m→ [0mRead .github 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead docker/start.sh 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+[0m→ [0mRead kirara_ai/__main__.py 
+[0m→ [0mRead kirara_ai/entry.py 
+[0m✱ [0mGlob "kirara_ai/plugins/*" [90m0 matches[0m
+[0m✱ [0mGlob "kirara_ai/llm/**/*.py" [90m11 matches[0m
+[0m✱ [0mGlob "kirara_ai/**/*.py" [90m221 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/quickstarts 
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead kirara_ai/plugins 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead .cursor 
+[0m→ [0mRead kirara_ai/config/global_config.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/workflows/run-tests.yml 
+[0m→ [0mRead .github/workflows/docker-latest.yml 
+[0m→ [0mRead .github/quickstarts/windows 
+[0m→ [0mRead kirara_ai/plugins/im_telegram_adapter/adapter.py [90m[limit=60][0m
+[0m→ [0mRead kirara_ai/plugins/im_http_legacy_adapter/adapter.py [90m[limit=60][0m
+[0m→ [0mRead kirara_ai/plugins/bundled_frpc/__init__.py [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .cursor/rules 
+[0m→ [0mRead .github/quickstarts/windows/scripts 
+[0m→ [0mRead kirara_ai/web/app.py [90m[limit=120][0m
+[0m✱ [0mGrep "@(register_im_adapter|register_llm_adapter|register_adapter|im_adapter|llm_adapter)\(|register_im|register_llm|adapter_name|name=\"" [90min kirara_ai · 11 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+[0m→ [0mRead kirara_ai/im/im_registry.py 
+[0m→ [0mRead kirara_ai/llm/llm_registry.py 
+[0m→ [0mRead kirara_ai/plugins/im_telegram_adapter/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/im_qqbot_adapter/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/llm_preset_adapters/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/im_wecom_adapter/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "def discover_|plugins_dir|external|data/plugins|\./data|os\.path\.join\(|enable" [90min kirara_ai/plugin_manager/plugin_loader.py · 28 matches[0m
+[0m✱ [0mGrep "\./data|data/|\.dockerignore|web/" [90min kirara_ai/web/utils.py · 0 matches[0m
+[0m✱ [0mGrep "\./data|data/" [90min kirara_ai/database/manager.py · 1 match[0m
+[0m→ [0mRead data/dispatch_rules/rules.yaml [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "data/|\./data|plugins" [90min kirara_ai/plugin_manager/utils.py · 0 matches[0m
+[0m→ [0mRead kirara_ai/plugin_manager/plugin_loader.py [90m[offset=51, limit=30][0m
+[0m→ [0mRead kirara_ai/plugin_manager/plugin_loader.py [90m[offset=465, limit=50][0m
+[0m✱ [0mGrep "\./data|plugins" [90min kirara_ai/system/updater.py · 0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead kirara_ai/plugins/bundled_frpc 
+[0m✱ [0mGrep "password|setup|first" [90min kirara_ai/web/auth/routes.py · 13 matches[0m
+[0m✱ [0mGrep "frpc" [90min kirara_ai/plugins/bundled_frpc/frpc_manager.py · 15 matches[0m
+[0m→ [0mRead .github/quickstarts/windows/scripts/启动.cmd 
+[0m→ [0mRead kirara_ai/mcp_module/server.py [90m[limit=50][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "https?://|def install_webui|npm|registry" [90min kirara_ai/plugins/bundled_frpc/frpc_manager.py · 9 matches[0m
+[0m✱ [0mGrep "def install_webui|npm|registry|https?://|def " [90min kirara_ai/web/utils.py · 22 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "install_webui\(|STATIC_FOLDER|web/index|index.html" [90min kirara_ai/web/app.py · 19 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "register\(|^\s+"[a-z_]+",$" [90min kirara_ai/plugins/im_http_legacy_adapter/__init__.py · 1 match[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead kirara_ai/plugins/im_http_legacy_adapter/__init__.py [90m[limit=30][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -22,9 +22,9 @@
+ ## Requirements
+ 
+ - Python 3.10 or newer (`requires-python = ">=3.10"` in `pyproject.toml`). The Dockerfile uses Python 3.11.
+ - `libmagic` (installed automatically on Windows via `python-magic-bin`; on Linux the Dockerfile installs `libmagic1`).
+-- For media processing, the Docker image also installs `ffmpeg` and `wkhtmltopdf`. Outside Docker, you must install these yourself if you need the related features.
++- The Docker image also installs `ffmpeg` and `wkhtmltopdf`. These are not listed in `pyproject.toml`, so if you run from source you must install them yourself if you need features that use them.
+ - Redis is optional, and only needed if you set `memory.persistence.type` to `redis`.
+ 
+ ## Installation
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5

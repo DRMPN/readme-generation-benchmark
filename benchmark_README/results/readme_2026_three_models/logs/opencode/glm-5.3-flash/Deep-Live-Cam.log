@@ -1,0 +1,96 @@
+I now have a complete picture of the codebase. Writing the README:
+Verifying two claims I made before finishing (switch-state persistence and the load path):
+The README is complete and every claim in it was verified against the code. Created only `README.md` in the repository root.
+
+## What I based it on
+
+- **Identity & version** — `modules/metadata.py` (name `Deep-Live-Cam`, version `1.8`, "GitHub Edition"), `LICENSE` (AGPL-3.0), and the HuggingFace model URLs confirming the upstream repo (`hacksider/Deep-Live-Cam`).
+- **Features** — the CLI parser in `modules/core.py` and UI toggles in `modules/ui.py` (face enhancer, many faces, map faces, mouth mask, NSFW filter, keep fps/audio/frames, color correction, live mirror/resizable, show FPS, video encoder/quality options).
+- **Requirements** — `requirements.txt` (Python 3.9+ check lives in `core.py:pre_check()`; ffmpeg checked there too), plus platform-specific details: `run-cuda.bat`/`run-directml.bat`, `onnxruntime-silicon` for Apple Silicon, dynamic execution-provider choices.
+- **Models** — `models/instructions.txt` for the two model files and their download URLs.
+- **Usage & options table** — transcribed exactly from `argparse` definitions in `modules/core.py`, including headless mode (triggered by `-s`/`-t`/`-o`).
+- **Localization, contributing, credits** — `locales/` contents, `modules/gettext.py`, `CONTRIBUTING.md` (premain/experimental branching), and the libraries actually imported in the code.
+
+## Things I deliberately did not include
+
+- No performance claims, star counts, or CI badges (there are no workflows in `.github/`).
+- No invented troubleshooting steps — only behaviors verifiable in the code (e.g., models auto-download attempt on startup, switch-state persistence to `switch_states.json`).
+- A brief responsible-use disclaimer, which is appropriate for a deepfake tool and mirrors the project's purpose statement.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead run.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead CONTRIBUTING.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead media 
+[0m→ [0mRead .github 
+[0m→ [0mRead modules 
+[0m→ [0mRead models 
+[0m→ [0mRead locales 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/metadata.py 
+[0m→ [0mRead models/instructions.txt 
+[0m→ [0mRead modules/globals.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/core.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead run-cuda.bat 
+[0m→ [0mRead run-directml.bat 
+[0m→ [0mRead modules/processors 
+[0m→ [0mRead .github/ISSUE_TEMPLATE 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead modules/gettext.py 
+[0m→ [0mRead modules/processors/frame 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead mypi.ini 
+[0m→ [0mRead modules/processors/frame/face_swapper.py [90m[limit=80][0m
+[0m→ [0mRead modules/processors/frame/face_enhancer.py [90m[limit=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const { execSync } = require('child_process');\n"} 
+[0m→ [0mRead modules/typing.py 
+[0m→ [0mRead .github/ISSUE_TEMPLATE/bug_report.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/utilities.py [90m[limit=100][0m
+[0m→ [0mRead modules/ui.py [90m[limit=120][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .gitattributes 
+[0m→ [0mRead modules/video_capture.py 
+[0m→ [0mRead modules/predicter.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await (await fetch('https://api.github.com/repos/hacksider/Deep-Live-Cam')).json();\nreturn { name: r.name, description: r.description, homepage: r.homepage, license: r.license && r.license.spdx_id, stars: r.stargazers_count, topics: r.topics };\n"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/ui.json 
+[0m✱ [0mGrep "def conditional_download|def resolve_relative_path" [90min modules/utilities.py · 2 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "ctk\.CTkButton\(|text=_[\"\(]|translate_text" [90min modules/ui.py · 39 matches[0m
+[0m→ [0mRead modules/utilities.py [90m[offset=185, limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"await tools.opencode.list_mcp_resources().catch(e => String(e));\n"} 
+[0m✱ [0mGrep "execution-provider|coreml|openvino|rocm|cuda|dml|cpu" [90min modules/core.py · 14 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/utilities.py [90m[limit=60][0m
+[0m→ [0mRead modules/capturer.py [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def normalize_output_path|def has_image_extension|def is_image|def is_video" [90min modules/utilities.py · 4 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/utilities.py [90m[offset=110, limit=75][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob ".git/config" [90m0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .git 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .git/config 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead modules/processors/frame/face_enhancer.py [90m[offset=61, limit=80][0m
+[0m✱ [0mGrep "cv2\.imshow|destroyAllWindows|waitKey" [90min modules/ui.py · 1 match[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "load_switch_states|save_switch_states" [90min modules/ui.py · 12 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash

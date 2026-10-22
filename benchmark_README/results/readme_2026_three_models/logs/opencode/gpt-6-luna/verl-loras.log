@@ -1,0 +1,53 @@
+I’ll inspect the repository’s source, configuration, and existing docs, then write a README grounded only in what the files support. I’ll create or update only `README.md`.
+This is a `verl` codebase rather than a standalone LoRA-only package: it includes RL training, SFT, generation/evaluation, and version-specific vLLM integrations. I’m checking the entry points and examples now so the README describes actual workflows and doesn’t imply broader LoRA support than the code shows.
+Created `README.md` with repository overview, installation options, GRPO and LoRA SFT examples, project layout, documentation and testing pointers, and licensing. The examples and requirements are based on files in the repository. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m300 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead run_master.sh 
+[0m→ [0mRead requirements_sglang.txt 
+[0m→ [0mRead run_worker.sh 
+[0m→ [0mRead docs/README.md 
+[0m→ [0mRead verl/version/version 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "docs/*" [90m9 matches[0m
+[0m✱ [0mGlob "verl/trainer/**/*.py" [90m9 matches[0m
+[0m✱ [0mGlob "examples/**/*.sh" [90m46 matches[0m
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead recipe/r1/README.md 
+[0m→ [0mRead recipe/dapo/README.md 
+[0m✱ [0mGrep "LoRA|lora|PEFT|peft" [90m100 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/index.rst 
+[0m→ [0mRead docs/data.rst [90m[limit=250][0m
+[0m→ [0mRead docs/hybrid_flow.rst [90m[limit=250][0m
+[0m→ [0mRead verl/trainer/main_generation.py [90m[limit=100][0m
+[0m→ [0mRead verl/trainer/main_ppo.py [90m[limit=180][0m
+[0m→ [0mRead verl/trainer/fsdp_sft_trainer.py [90m[limit=100][0m
+[0m→ [0mRead examples/sft/gsm8k/run_qwen_05_peft.sh 
+[0m✱ [0mGlob "verl/trainer/config/**/*" [90m5 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead examples/grpo_trainer/run_qwen2-7b.sh [90m[limit=120][0m
+[0m✗ [0mRead examples/ppo_trainer/run_qwen2-7b.sh failed
+[91m[1mError: [0mFile not found: examples/ppo_trainer/run_qwen2-7b.sh
+[0m→ [0mRead examples/sft/gsm8k/run_qwen_05_sp2.sh [90m[limit=100][0m
+[0m→ [0mRead docs/requirements-docs.txt 
+[0m→ [0mRead docs/README_vllm0.8.md [90m[limit=120][0m
+[0m→ [0mRead tests/e2e/run_test.sh 
+[0m→ [0mRead verl/utils/dataset/README.md 
+[0m✱ [0mGrep "if __name__ == ['"]__main__['"]|@hydra.main" [90min verl/trainer · 8 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

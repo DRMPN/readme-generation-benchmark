@@ -1,0 +1,46 @@
+This is the MkDocs project itself. Let me inspect key files to write an accurate README.
+Let me gather a few more details for accuracy — license, contributing docs, CLI commands, and development setup.
+Let me verify the exact CLI command names before writing.
+Now I have everything I need. Writing the README:
+Created `README.md` in the repository root. This is the **MkDocs** project itself (v1.6.1), so I wrote the README entirely from evidence in the repo:
+
+**Contents:**
+- **Intro & tagline** — taken from `pyproject.toml` ("Project documentation with Markdown.") and `docs/index.md`
+- **Features** — the four feature cards from `docs/index.md` (themes, customization, live-reload dev server, static hosting)
+- **Installation** — `pip install mkdocs`, plus the `i18n` extra (from `pyproject.toml` optional-dependencies) and the Python ≥3.8 requirement
+- **Quick start** — `mkdocs new` / `mkdocs serve` / `mkdocs build` walkthrough condensed from `docs/getting-started.md`
+- **Commands** — all five CLI commands verified against the click decorators in `mkdocs/__main__.py`: `new`, `serve`, `build`, `gh-deploy`, `get-deps`
+- **Documentation links** — from the `[project.urls]` section of `pyproject.toml`
+- **Getting help** — GitHub discussions/issues, as referenced in `docs/getting-started.md`
+- **Contributing** — Hatch-based workflow and check commands matching `CONTRIBUTING.md` and the hatch envs in `pyproject.toml`, plus the PyPA Code of Conduct
+- **License** — BSD-2-Clause, per `pyproject.toml` and the `LICENSE` file
+
+Every claim is traceable to a repository file — no invented features, numbers, or links.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead mkdocs 
+[0m→ [0mRead docs 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead mkdocs/__init__.py 
+[0m→ [0mRead docs/getting-started.md 
+[0m→ [0mRead docs/index.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[limit=10][0m
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead mkdocs/__main__.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github 
+[0m✱ [0mGrep "@click\.(command|group|option)" [90min mkdocs/__main__.py · 23 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources().catch(e => e.message);\nreturn r;"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "^def |cli\.command|add_command" [90min mkdocs/__main__.py · 17 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

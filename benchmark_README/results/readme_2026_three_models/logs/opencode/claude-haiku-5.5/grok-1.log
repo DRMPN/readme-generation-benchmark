@@ -1,0 +1,39 @@
+I'll start by looking at the repository's files.
+I have what I need. The repo contains the model code, an example script, and a tokenizer, but no checkpoint weights. I'll write the README to reflect that.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The README covers what the repository contains:
+
+- **Contents:** a table describing each file, from `model.py` through `tokenizer.model` and `LICENSE.txt`.
+- **Model configuration:** the values from `run.py`, such as 64 layers, 8 experts with 2 selected per token, and an 8,192-token context.
+- **Setup:** the pinned dependencies in `requirements.txt`, the install command, and the checkpoint layout that `checkpoint.py` expects.
+- **Running and API use:** how to run `run.py`, and the steps for using `InferenceRunner` and `sample_from_model` from `runners.py`.
+- **Limitations:** no tests, no weights, and no Python version or hardware requirement beyond the 8-device mesh and CUDA 12 build.
+
+Two things the README states plainly because the repository doesn't settle them:
+
+- **Weights:** the `checkpoints/` directory contains only a placeholder, so the example cannot run until you supply the checkpoint. The repository doesn't say where to get it, so the README doesn't either.
+- **Licensing:** the code is Apache 2.0. The repository says nothing about the weights' license, and the README says so.
+
+I did not run the code, so the setup and run instructions are based on reading the source, not on a test run.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.list_mcp_resources({}),\n]);\nreturn r.length;"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 10 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead model.py 
+[0m→ [0mRead run.py 
+[0m→ [0mRead runners.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead checkpoint.py 
+[0m→ [0mRead checkpoints/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "Apache License|Version 2.0|Grok|github|xai-org" [90min . · 10 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

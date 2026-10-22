@@ -1,0 +1,568 @@
+[
+  {
+    "name": "12306.py",
+    "type": "file"
+  },
+  {
+    "name": "2020",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "api",
+        "type": "dir",
+        "children": [
+          {
+            "name": "api.py",
+            "type": "file"
+          },
+          {
+            "name": "test_1.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "bilibili",
+        "type": "dir",
+        "children": [
+          {
+            "name": "download.py",
+            "type": "file"
+          },
+          {
+            "name": "xml2ass.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "dmzj",
+        "type": "dir",
+        "children": [
+          {
+            "name": "cartoon.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "taobao",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1.png",
+            "type": "file"
+          },
+          {
+            "name": "taobao_login.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "xbqg",
+        "type": "dir",
+        "children": [
+          {
+            "name": "xbqg_spider.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "zycjw",
+        "type": "dir",
+        "children": [
+          {
+            "name": "video_download.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Netease",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Netease.py",
+        "type": "file"
+      },
+      {
+        "name": "music_list.txt",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "baiduwenku.py",
+    "type": "file"
+  },
+  {
+    "name": "baiduwenku_pro_1.py",
+    "type": "file"
+  },
+  {
+    "name": "baiwan",
+    "type": "dir",
+    "children": [
+      {
+        "name": "app.js",
+        "type": "file"
+      },
+      {
+        "name": "baiwan.py",
+        "type": "file"
+      },
+      {
+        "name": "file.txt",
+        "type": "file"
+      },
+      {
+        "name": "index.html",
+        "type": "file"
+      },
+      {
+        "name": "question.txt",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "bilibili",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "bilibili.py",
+        "type": "file"
+      },
+      {
+        "name": "xml2ass.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "bilibili_luckyman",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "bilibili_luckyman.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "biqukan.py",
+    "type": "file"
+  },
+  {
+    "name": "cartoon",
+    "type": "dir",
+    "children": [
+      {
+        "name": "cartoon",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__pycache__",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.cpython-34.pyc",
+                "type": "file"
+              },
+              {
+                "name": "items.cpython-34.pyc",
+                "type": "file"
+              },
+              {
+                "name": "pipelines.cpython-34.pyc",
+                "type": "file"
+              },
+              {
+                "name": "settings.cpython-34.pyc",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "items.py",
+            "type": "file"
+          },
+          {
+            "name": "middlewares.py",
+            "type": "file"
+          },
+          {
+            "name": "pipelines.py",
+            "type": "file"
+          },
+          {
+            "name": "settings.py",
+            "type": "file"
+          },
+          {
+            "name": "spiders",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "__pycache__",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "comic_spider.cpython-34.pyc",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "comic_spider.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "scrapy.cfg",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "daili.py",
+    "type": "file"
+  },
+  {
+    "name": "dingdong",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "jd.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "douyin",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "douyin.py",
+        "type": "file"
+      },
+      {
+        "name": "fuck-byted-acrawler.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "douyin.py",
+    "type": "file"
+  },
+  {
+    "name": "douyin_pro.py",
+    "type": "file"
+  },
+  {
+    "name": "downloader.py",
+    "type": "file"
+  },
+  {
+    "name": "financical.py",
+    "type": "file"
+  },
+  {
+    "name": "geetest.py",
+    "type": "file"
+  },
+  {
+    "name": "hero.py",
+    "type": "file"
+  },
+  {
+    "name": "one_hour_spider",
+    "type": "dir",
+    "children": [
+      {
+        "name": "biquge20180731.py",
+        "type": "file"
+      },
+      {
+        "name": "biqukan.py",
+        "type": "file"
+      },
+      {
+        "name": "unsplash.py",
+        "type": "file"
+      },
+      {
+        "name": "unsplash20180731.py",
+        "type": "file"
+      },
+      {
+        "name": "vidoe_downloader.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "shuaia.py",
+    "type": "file"
+  },
+  {
+    "name": "video_downloader",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Images",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bg.png",
+            "type": "file"
+          },
+          {
+            "name": "qrcode.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "MyQR",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__pycache__",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.cpython-34.pyc",
+                "type": "file"
+              },
+              {
+                "name": "__init__.cpython-35.pyc",
+                "type": "file"
+              },
+              {
+                "name": "myqr.cpython-34.pyc",
+                "type": "file"
+              },
+              {
+                "name": "myqr.cpython-35.pyc",
+                "type": "file"
+              },
+              {
+                "name": "terminal.cpython-35.pyc",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "mylibs",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ECC.py",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "__pycache__",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ECC.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ECC.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "__init__.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "constant.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "constant.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "data.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "data.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "draw.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "draw.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "matrix.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "matrix.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "structure.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "structure.cpython-35.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theqrmodule.cpython-34.pyc",
+                    "type": "file"
+                  },
+                  {
+                    "name": "theqrmodule.cpython-35.pyc",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "constant.py",
+                "type": "file"
+              },
+              {
+                "name": "data.py",
+                "type": "file"
+              },
+              {
+                "name": "draw.py",
+                "type": "file"
+              },
+              {
+                "name": "matrix.py",
+                "type": "file"
+              },
+              {
+                "name": "structure.py",
+                "type": "file"
+              },
+              {
+                "name": "theqrmodule.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "myqr.py",
+            "type": "file"
+          },
+          {
+            "name": "terminal.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "video_downloader.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "zhengfang_system_spider",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "code.jpg",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "screenshot",
+        "type": "dir",
+        "children": [
+          {
+            "name": "spider.png",
+            "type": "file"
+          },
+          {
+            "name": "zf.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "spider.py",
+        "type": "file"
+      },
+      {
+        "name": "zhengfang.txt",
+        "type": "file"
+      }
+    ]
+  }
+]

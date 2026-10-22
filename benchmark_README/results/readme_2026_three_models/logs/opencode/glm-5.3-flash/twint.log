@@ -1,0 +1,83 @@
+I now have a full picture of the codebase. Writing the README:
+Let me verify the remaining pandas claims against the code:
+All claims verified against the source. The README is complete:
+Created `README.md` at the repository root. It documents the **TWINT** project (v2.1.21 in this tree), and every claim is grounded in what I inspected:
+
+- **What the repo is** — description and identity taken from `setup.py`, `twint/__init__.py`, and `twint/cli.py`; a status note that the upstream GitHub repository is archived (verified against the GitHub API).
+- **How it works** — derived from `twint/token.py` (guest token from twitter.com), `twint/run.py` (public bearer token), and `twint/url.py` (the exact endpoints used for search, timeline, and mobile pages).
+- **Features, requirements, installation** — from `setup.py` (Python 3.6+, full dependency list, PyPI package), the `Dockerfile`, and Travis config.
+- **CLI usage** — example commands composed strictly from flags in `twint/cli.py`, followed by a complete options table (all ~50 arguments with their help text, grouped by purpose).
+- **Custom format placeholders** — enumerated from `twint/format.py`.
+- **Python API** — runners (`Search`, `Profile`, `Followers`, `Following`, `Favorites`, `Lookup`) from `twint/run.py`, and the pandas integration (`twint.storage.panda.Tweets_df`/`Follow_df`/`User_df`, HDF5 vs Pickle) verified in `twint/output.py` and `twint/storage/panda.py`. Notably, I only documented the `c.Pandas = True` path for the API and kept `--store-pandas` as a listed option, because in this codebase `initialize()` never wires that CLI flag into the config.
+- **Storage, Elasticsearch, scheduling, debugging, testing, contributing, license** — from `twint/storage/db.py` (SQLite table names), `elasticsearch/README.md` (Wiki link), `automate.py`, the `TWINT_DEBUG` env var in `__init__.py`, `test.py`/`.travis.yml`, the issue template, `FUNDING.yml`, and `LICENSE`.
+
+Only `README.md` was created.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m28 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.py 
+[0m→ [0mRead twint/__version__.py 
+[0m→ [0mRead twint/__init__.py 
+[0m→ [0mRead twint/cli.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead test.py 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead automate.py 
+[0m→ [0mRead elasticsearch/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .travis.yml 
+[0m→ [0mRead MANIFEST.in 
+[0m→ [0mRead .github 
+[0m→ [0mRead twint/run.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "requirements*.txt" [90m0 matches[0m
+[0m→ [0mRead .github/ISSUE_TEMPLATE 
+[0m→ [0mRead twint/config.py 
+[0m⚙ [0mexecute {"code":"const r = await fetch('https://api.github.com/repos/twintproject/twint', {headers: {'User-Agent': 'readme-check'}});\nconst j = await r.json();\nreturn {status: r.status, description: j.description, stars: j.stargazers_count, archived: j.archived, homepage: j.homepage, topics: j.topics};"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead twint/storage/__init__.py 
+[0m→ [0mRead twint/storage/panda.py [90m[limit=60][0m
+[0m⚙ [0mexecute {"code":"const r = await fetch('https://pypi.org/pypi/twint/json');\nconst j = await r.json();\nconst rel = Object.entries(j.releases || {}).map(([v, files]) => ({v, date: files[0]?.upload_time_iso_8601 || files[0]?.upload_time}));\nrel.sort((a,b) => new Date(b.date) - new Date(a.date));\nreturn {latest: j.info?.version, recent: rel.slice(0, 5)};"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"// Use glob tool via catalog? Not available in code mode. Fall back: read .git HEAD info via fetch is not possible for local fs.\nreturn \"skip\""} 
+[0m→ [0mRead twint/format.py [90m[limit=40][0m
+[0m→ [0mRead twint/storage/db.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead twint/verbose.py 
+[0m→ [0mRead twint/storage/elasticsearch.py [90m[limit=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "Instance = Elasticsearch|Elasticsearch\(\[|config.Elasticsearch" [90min twint/storage/elasticsearch.py · 3 matches[0m
+[0m✱ [0mGrep "Elasticsearch\(" [90min twint · 3 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead twint/url.py 
+[0m→ [0mRead twint/token.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/ISSUE_TEMPLATE.md 
+[0m→ [0mRead .github/FUNDING.yml 
+[0m→ [0mRead twint/tweet.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .git/config 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "Store_object|_object_blocks|panda" [90min twint/output.py · 19 matches[0m
+[0m✱ [0mGrep "table_followers|table_following|CREATE TABLE IF NOT EXISTS" [90min twint/storage/db.py · 17 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead twint/output.py [90m[offset=130, limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "\.Pandas\s*=|Pandas_au|Pandas_clean" [90min twint · 13 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "Store_pandas|Pandas =|Pandas=|pandas_type" [90min twint · 1 match[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "Pandas" [90min twint · 24 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead twint/storage/panda.py [90m[offset=60][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash

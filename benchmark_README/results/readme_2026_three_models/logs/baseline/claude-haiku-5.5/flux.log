@@ -1,0 +1,279 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63912,
+    "tree_files": 61,
+    "tracked_files": 61,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2269,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 712,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/__main__.py",
+        "tokens": 114,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/cli.py",
+        "tokens": 2477,
+        "truncated": false
+      },
+      {
+        "path": "docs/fill.md",
+        "tokens": 404,
+        "truncated": false
+      },
+      {
+        "path": "docs/image-editing.md",
+        "tokens": 475,
+        "truncated": false
+      },
+      {
+        "path": "docs/image-variation.md",
+        "tokens": 335,
+        "truncated": false
+      },
+      {
+        "path": "docs/structural-conditioning.md",
+        "tokens": 915,
+        "truncated": false
+      },
+      {
+        "path": "docs/text-to-image.md",
+        "tokens": 1020,
+        "truncated": false
+      },
+      {
+        "path": "model_cards/FLUX.1-dev.md",
+        "tokens": 669,
+        "truncated": false
+      },
+      {
+        "path": "model_cards/FLUX.1-kontext-dev.md",
+        "tokens": 1738,
+        "truncated": false
+      },
+      {
+        "path": "model_cards/FLUX.1-schnell.md",
+        "tokens": 611,
+        "truncated": false
+      },
+      {
+        "path": "demo_gr.py",
+        "tokens": 2232,
+        "truncated": false
+      },
+      {
+        "path": "demo_st.py",
+        "tokens": 2465,
+        "truncated": false
+      },
+      {
+        "path": "demo_st_fill.py",
+        "tokens": 4170,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/ci.yaml",
+        "tokens": 149,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/__init__.py",
+        "tokens": 84,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/cli_control.py",
+        "tokens": 3163,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/cli_fill.py",
+        "tokens": 2554,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/cli_kontext.py",
+        "tokens": 2986,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/cli_redux.py",
+        "tokens": 2295,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/content_filters.py",
+        "tokens": 1259,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/math.py",
+        "tokens": 421,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/model.py",
+        "tokens": 1015,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/sampling.py",
+        "tokens": 3397,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/util.py",
+        "tokens": 6518,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/modules/autoencoder.py",
+        "tokens": 2698,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/modules/conditioner.py",
+        "tokens": 330,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/modules/image_embedders.py",
+        "tokens": 896,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/modules/layers.py",
+        "tokens": 2565,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/modules/lora.py",
+        "tokens": 549,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/__init__.py",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_manager.py",
+        "tokens": 2345,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/__init__.py",
+        "tokens": 290,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/base_engine.py",
+        "tokens": 2379,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/clip_engine.py",
+        "tokens": 408,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/t5_engine.py",
+        "tokens": 407,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/transformer_engine.py",
+        "tokens": 602,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/engine/vae_engine.py",
+        "tokens": 731,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_config/__init__.py",
+        "tokens": 315,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_config/base_trt_config.py",
+        "tokens": 2512,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_config/clip_trt_config.py",
+        "tokens": 498,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_config/t5_trt_config.py",
+        "tokens": 650,
+        "truncated": false
+      },
+      {
+        "path": "src/flux/trt/trt_config/transformer_trt_config.py",
+        "tokens": 255,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "assets/cup.png",
+      "assets/cup_mask.png",
+      "assets/dev_grid.jpg",
+      "assets/grid.jpg",
+      "assets/robot.webp",
+      "assets/schnell_grid.jpg",
+      "model_licenses/LICENSE-FLUX1-dev",
+      "model_licenses/LICENSE-FLUX1-schnell",
+      "assets/docs/canny.png",
+      "assets/docs/depth.png",
+      "assets/docs/inpainting.png",
+      "assets/docs/kontext.png",
+      "assets/docs/outpainting.png",
+      "assets/docs/redux.png",
+      "src/flux/trt/trt_config/vae_trt_config.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 103899,
+    "completion_tokens": 7514,
+    "total_tokens": 111413,
+    "cost": 0.0707345,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0707345,
+      "upstream_inference_prompt_cost": 0.0519495,
+      "upstream_inference_completions_cost": 0.018785
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606854-DWY8YKSz0zcF8zZCCLwS"
+}

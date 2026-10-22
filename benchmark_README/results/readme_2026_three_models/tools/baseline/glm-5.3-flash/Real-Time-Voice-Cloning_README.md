@@ -1,0 +1,177 @@
+# SV2TTS Toolbox — Voice Cloning with Speaker Verification, Tacotron and WaveRNN
+
+This repository implements a voice cloning pipeline based on **SV2TTS (Speaker Verification and TTS)**. Given a short audio sample of an unseen speaker (5–10 seconds), the system extracts a speaker embedding, synthesizes a mel spectrogram from arbitrary text conditioned on that embedding, and vocodes the spectrogram into audible speech. The project is composed of three independently trainable models — a **speaker encoder**, a **Tacotron-based synthesizer**, and a **WaveRNN vocoder** — plus two end-user entry points: a graphical **toolbox** and a **command-line demo**.
+
+## Overview
+
+The pipeline is structured around three packages:
+
+| Package | Model | Role |
+|---|---|---|
+| `encoder/` | GE2E LSTM speaker encoder | Converts preprocessed audio into a 256-dimensional speaker embedding |
+| `synthesizer/` | Tacotron (SV2TTS variant) | Generates mel spectrograms from text + speaker embeddings |
+| `vocoder/` | WaveRNN (Fatchord version) | Converts mel spectrograms into raw waveforms |
+
+Training data for the encoder comes from **LibriSpeech, VoxCeleb1 and VoxCeleb2**; the synthesizer expects **LibriSpeech** (or LibriTTS-style datasets with alignment files). Each model has its own preprocessing script, training script and inference interface, so all three can be trained or fine-tuned independently.
+
+Pretrained weights for all three models are fetched automatically by `utils/default_models.py` into `saved_models/default/` (as `encoder.pt`, `synthesizer.pt` and `vocoder.pt`).
+
+## Requirements
+
+Dependencies are listed in `requirements.txt`. Key components include:
+
+- **PyTorch** (CUDA strongly recommended for training and inference speed)
+- **librosa**, **soundfile**, **sounddevice** (audio loading, saving and playback)
+- **PyQt5** (toolbox GUI), **matplotlib** (visualizations)
+- **webrtcvad** (recommended — enables silence trimming / noise removal; the tools warn and continue if missing)
+- **visdom** and **umap** (training visualizations), **tqdm**, **inflect**, **unidecode**
+
+A GPU with reasonable VRAM is recommended for training; inference works on CPU with the `--cpu` flag.
+
+## Setup
+
+1. Clone the repository.
+2. Install the dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. (Recommended) Install `webrtcvad` for noise/silence removal. If installation fails, preprocessing tools offer a `--no_trim` fallback.
+4. Model weights are downloaded on first launch of the toolbox or CLI demo via `ensure_default_models()`, which fetches them from Google Drive into `saved_models/default/` and verifies file sizes. If automatic download fails, the models can be downloaded manually from the Google Drive folder referenced in `utils/default_models.py`.
+
+## Usage
+
+### The toolbox (GUI)
+
+```
+python demo_toolbox.py -d <datasets_root>
+```
+
+Arguments:
+
+- `-d, --datasets_root` — path containing recognized datasets (LibriSpeech, LibriTTS, LJSpeech-1.1, VoxCeleb1, VoxCeleb2, VCTK-Corpus; see the list in `toolbox/__init__.py`).
+- `-m, --models_dir` — directory containing saved models (default `saved_models`).
+- `--cpu` — force CPU inference.
+- `--seed` — make generation deterministic.
+
+The toolbox lets you browse datasets or record your own voice (5 seconds), visualize mel spectrograms and speaker embeddings, compute UMAP projections of collected utterances, synthesize any text with the selected speaker embedding, and vocode the result with playback and export to `.wav`/`.flac`. Options include random seeds for deterministic synthesis, "synthesize only"/"vocode only" modes, and trimming of excess silences in vocoder output (requires `webrtcvad`).
+
+### The command-line demo
+
+```
+python demo_cli.py
+```
+
+The demo first runs a self-test of your configuration (encoder, synthesizer and vocoder are exercised with small inputs), then enters an interactive loop: supply a reference audio file (mp3, wav, m4a, flac, ...), enter a sentence (~20 words), and the cloned speech is played and saved as `demo_output_XX.wav`. Options:
+
+- `-e / -s / -v` — paths to encoder/synthesizer/vocoder weights (defaulting to `saved_models/default/*.pt`)
+- `--cpu`, `--no_sound`, `--seed`
+
+### Using the models programmatically
+
+The inference interfaces are minimal:
+
+```python
+from encoder import inference as encoder
+from synthesizer.inference import Synthesizer
+from vocoder import inference as vocoder
+
+encoder.load_model(Path("saved_models/default/encoder.pt"))
+synthesizer = Synthesizer(Path("saved_models/default/synthesizer.pt"))
+vocoder.load_model(Path("saved_models/default/vocoder.pt"))
+
+wav = encoder.preprocess_wav("reference.mp3")
+embed = encoder.embed_utterance(wav)
+mel = synthesizer.synthesize_spectrograms(["hello world"], [embed])[0]
+audio = vocoder.infer_waveform(mel)
+```
+
+Note that the encoder expects the output of `encoder.preprocess_wav` (16 kHz, volume-normalized, silence-trimmed via VAD), and the vocoder expects spectrograms generated by the synthesizer — mixing formats across tools will degrade quality. `demo_cli.py` is thoroughly commented and serves as a reference integration.
+
+## Training Your Own Models
+
+Place datasets in a single root directory, e.g. `datasets_root/LibriSpeech/train-other-500`, `datasets_root/VoxCeleb1/wav`, etc.
+
+### Speaker encoder
+
+1. Preprocess (computes mel spectrograms for each utterance):
+   ```
+   python encoder_preprocess.py <datasets_root> -d librispeech_other,voxceleb1,voxceleb2
+   ```
+   Options: `-o` output dir (default `<datasets_root>/SV2TTS/encoder/`), `--skip_existing`, `--no_trim`. VoxCeleb1 filtering keeps only presumed-anglophone speakers.
+
+2. Train:
+   ```
+   python encoder_train.py <run_id> <datasets_root>/SV2TTS/encoder
+   ```
+   Options include `-s/--save_every`, `-b/--backup_every`, `-u/--umap_every`, `-v/--vis_every`, `--no_visdom`, `--visdom_server`, `-f/--force_restart`. Training resumes automatically from `saved_models/<run_id>/encoder.pt` if it exists. Monitor loss and EER with a visdom server (`visdom` in your CLI). Hyperparameters (LSTM size 256, embedding size 256, 3 layers, 64 speakers × 10 utterances per batch) live in `encoder/params_model.py` and `encoder/params_data.py`.
+
+### Synthesizer
+
+1. Preprocess audio and text:
+   ```
+   python synthesizer_preprocess_audio.py <datasets_root>
+   ```
+   Defaults to `LibriSpeech/train-clean-100,train-clean-360`. Use `--no_alignments` for datasets without alignment files, `--datasets_name` and `--subfolders` to target other directories, `-n` for parallel processes, and `--hparams` for overrides.
+
+2. Create speaker embeddings:
+   ```
+   python synthesizer_preprocess_embeds.py <datasets_root>/SV2TTS/synthesizer -e <encoder_checkpoint>
+   ```
+
+3. Train:
+   ```
+   python synthesizer_train.py <run_id> <datasets_root>/SV2TTS/synthesizer
+   ```
+   Training follows the progressive schedule defined in `synthesizer/hparams.py` (`tts_schedule`: reduction factor, learning rate, max step, batch size). Evaluation samples (attention plots, predicted mels, Griffin-Lim wavs) are saved to the run directory. Override hyperparameters with `--hparams name=value,...`.
+
+### Vocoder
+
+1. Generate ground-truth aligned (GTA) spectrograms using your synthesizer:
+   ```
+   python vocoder_preprocess.py <datasets_root> -s <synthesizer_checkpoint>
+   ```
+
+2. Train:
+   ```
+   python vocoder_train.py <run_id> <datasets_root> [-g]
+   ```
+   By default the vocoder trains on GTA mels; pass `-g/--ground_truth` to train on ground-truth spectrograms instead. WaveRNN configuration (mode `RAW`/`MOL`, upsample factors, batched generation with `voc_target=8000`, `voc_overlap=400`) is in `vocoder/hparams.py`.
+
+## Configuration
+
+- **Encoder data parameters** — `encoder/params_data.py`: 16 kHz sampling, 40 mel channels, 25 ms windows with 10 ms hops, 160-frame partial utterances (1.6 s), VAD settings, target loudness of −30 dBFS.
+- **Encoder model parameters** — `encoder/params_model.py`: hidden size 256, embedding size 256, learning rate 1e-4, batch composition.
+- **Synthesizer** — `synthesizer/hparams.py`: signal processing (16 kHz, 80 mels, hop 200, fmin 55, fmax 7600), Tacotron architecture, TTS schedule, stop threshold, SV2TTS-specific parameters (256-dim speaker embedding, utterance splitting durations). Hyperparameters can be overridden at runtime via `--hparams` comma-separated `name=value` pairs.
+- **Vocoder** — `vocoder/hparams.py`: audio settings are inherited from the synthesizer to guarantee consistency; WaveRNN dims, training batch size and generation options are defined here.
+
+## Development Notes
+
+- `utils/logmmse.py` provides optional log-MMSE noise reduction used during synthesizer preprocessing; `utils/profiler.py` instruments the encoder training loop.
+- Encoder training data objects (`RandomCycler`, `Speaker`, `Utterance`, `SpeakerBatch`) lazily load mel frames from disk and cycle speakers/utterances in a constrained-random order.
+- The demo performs a configuration self-test at startup; if all three models forward correctly, your environment is ready.
+- Audio is saved as 16-bit PCM by the synthesizer (`save_wav`) and float32 by the demo/vocoder paths; playback quirks (one-second truncation with sounddevice) are compensated by padding.
+
+## Samples
+
+The `samples/` directory contains reference utterances for toolbox testing and benchmarking: `p240_00000.mp3` and `p260_00000.mp3` are compressed excerpts from the **VCTK corpus** (CC BY 4.0, see `samples/VCTK.txt`), while `1320_00000.mp3`, `3575_00000.mp3`, `6829_00000.mp3` and `8230_00000.mp3` come from **LibriSpeech** (CC BY 4.0). These are the same reference utterances used by the SV2TTS authors for their published samples.
+
+## Testing
+
+There is no dedicated test suite in this repository. Verification consists of:
+
+- The built-in configuration self-test in `demo_cli.py`, which exercises the encoder, synthesizer and vocoder end-to-end before interactive use.
+- Visual verification of training via visdom (loss, EER curves, UMAP projections for the encoder; attention plots, spectrograms and Griffin-Lim reconstruction wavs for the synthesizer; generated test wavs for the vocoder via `gen_testset`).
+- Manual checking with the reference files in `samples/`.
+
+## License
+
+This project is released under the MIT License (see `LICENSE.md`). It builds upon the work of several authors, each with their own copyright and MIT license notices included in their respective directories:
+
+- Modified & original work © 2019 Corentin Jemine
+- Synthesizer: original work © 2018 Rayhane Mama, © 2019 fatchord; modified work © 2019 Corentin Jemine, © 2020 blue-fish (`synthesizer/LICENSE.txt`)
+- Vocoder: original work © 2019 fatchord; modified work © 2019 Corentin Jemine (`vocoder/LICENSE.txt`)
+- `utils/logmmse.py`: © 2015 braindead (MIT)
+
+The `samples/` audio files carry their own dataset licenses as described in `samples/README.md`.

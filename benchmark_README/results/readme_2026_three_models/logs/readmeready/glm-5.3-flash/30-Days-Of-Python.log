@@ -1,0 +1,60 @@
+Processing repository...
+Processing 41 files and 50 folders...
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 36, in <module>
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/index.py", line 40, in index
+    process_repository(
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 292, in process_repository
+    list(pool.map(process_file, file_params))
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 160, in process_file
+    responses = [call_llm(prompt, model.llm) for prompt in prompts]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 70, in call_llm
+    return model.invoke(prompt)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 395, in invoke
+    self.generate_prompt(
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_openai/chat_models/base.py", line 1213, in _generate
+    raise e
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_openai/chat_models/base.py", line 1208, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/openai/_legacy_response.py", line 369, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py", line 1296, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/openai/_base_client.py", line 1375, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/openai/_base_client.py", line 1148, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This endpoint's maximum context length is 1048576 tokens. However, you requested about 1712069 tokens (1712069 of text input). Please reduce the length of either one, or use the context-compression plugin to compress your prompt automatically.", 'code': 400, 'metadata': {'provider_name': None}}}

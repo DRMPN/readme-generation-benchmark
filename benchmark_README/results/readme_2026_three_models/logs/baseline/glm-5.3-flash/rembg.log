@@ -1,0 +1,414 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 53418,
+    "tree_files": 160,
+    "tracked_files": 160,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 87,
+        "truncated": false
+      },
+      {
+        "path": "docker-compose.yml",
+        "tokens": 82,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 117,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 130,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 555,
+        "truncated": false
+      },
+      {
+        "path": "rembg/cli.py",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "USAGE.md",
+        "tokens": 559,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 143,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 122,
+        "truncated": false
+      },
+      {
+        "path": ".markdownlint.yaml",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE.txt",
+        "tokens": 220,
+        "truncated": false
+      },
+      {
+        "path": "pytest.ini",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "rembg.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "rembg.py",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "versioneer.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "rembg/__init__.py",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "rembg/_version.py",
+        "tokens": 5657,
+        "truncated": false
+      },
+      {
+        "path": "rembg/bg.py",
+        "tokens": 2652,
+        "truncated": false
+      },
+      {
+        "path": "rembg/session_factory.py",
+        "tokens": 361,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_remove.py",
+        "tokens": 571,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/close_inactive_issues.yml",
+        "tokens": 176,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/lint_python.yml",
+        "tokens": 217,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/publish_docker.yml",
+        "tokens": 419,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/publish_pypi.yml",
+        "tokens": 143,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/test_install.yml",
+        "tokens": 216,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/windows_installer.yml",
+        "tokens": 216,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/__init__.py",
+        "tokens": 74,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/b_command.py",
+        "tokens": 1058,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/d_command.py",
+        "tokens": 66,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/i_command.py",
+        "tokens": 643,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/p_command.py",
+        "tokens": 1255,
+        "truncated": false
+      },
+      {
+        "path": "rembg/commands/s_command.py",
+        "tokens": 2208,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/__init__.py",
+        "tokens": 585,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/base.py",
+        "tokens": 657,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/ben_custom.py",
+        "tokens": 600,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_cod.py",
+        "tokens": 345,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_dis.py",
+        "tokens": 344,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_general.py",
+        "tokens": 618,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_general_lite.py",
+        "tokens": 352,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_hrsod.py",
+        "tokens": 349,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_massive.py",
+        "tokens": 358,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/birefnet_portrait.py",
+        "tokens": 343,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/bria_rmbg.py",
+        "tokens": 622,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/dis_anime.py",
+        "tokens": 565,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/dis_custom.py",
+        "tokens": 600,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/dis_general_use.py",
+        "tokens": 592,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/sam.py",
+        "tokens": 2468,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/silueta.py",
+        "tokens": 640,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/u2net.py",
+        "tokens": 585,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/u2net_cloth_seg.py",
+        "tokens": 917,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/u2net_custom.py",
+        "tokens": 611,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/u2net_human_seg.py",
+        "tokens": 578,
+        "truncated": false
+      },
+      {
+        "path": "rembg/sessions/u2netp.py",
+        "tokens": 514,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".dockerignore",
+      ".editorconfig",
+      ".gitattributes",
+      ".gitignore",
+      ".python-version",
+      "CITATION.cff",
+      "Dockerfile_nvidia_cuda_cudnn_gpu",
+      "MANIFEST.in",
+      "_build-exe.ps1",
+      "_modpath.iss",
+      "_setup.iss",
+      "onnxruntime-installation-matrix.png",
+      "rembg.spec",
+      "examples/animal-1.jpg",
+      "examples/animal-1.out.png",
+      "examples/animal-2.jpg",
+      "examples/animal-2.out.png",
+      "examples/animal-3.jpg",
+      "examples/animal-3.out.png",
+      "examples/anime-girl-1.jpg",
+      "examples/anime-girl-1.out.png",
+      "examples/anime-girl-2.jpg",
+      "examples/anime-girl-2.out.png",
+      "examples/anime-girl-3.jpg",
+      "examples/anime-girl-3.out.png",
+      "examples/car-1.jpg",
+      "examples/car-1.out.png",
+      "examples/car-2.jpg",
+      "examples/car-2.out.png",
+      "examples/car-3.jpg",
+      "examples/car-3.out.png",
+      "examples/food-1.jpg",
+      "examples/food-1.out.alpha.jpg",
+      "examples/food-1.out.jpg",
+      "examples/girl-1.jpg",
+      "examples/girl-1.out.png",
+      "examples/girl-2.jpg",
+      "examples/girl-2.out.png",
+      "examples/girl-3.jpg",
+      "examples/girl-3.out.png",
+      "examples/plants-1.jpg",
+      "examples/plants-1.out.png",
+      "tests/fixtures/anime-girl-1.jpg",
+      "tests/fixtures/car-1.jpg",
+      "tests/fixtures/cloth-1.jpg",
+      "tests/fixtures/plants-1.jpg",
+      "tests/results/anime-girl-1.birefnet-cod.png",
+      "tests/results/anime-girl-1.birefnet-dis.png",
+      "tests/results/anime-girl-1.birefnet-general-lite.png",
+      "tests/results/anime-girl-1.birefnet-general.png",
+      "tests/results/anime-girl-1.birefnet-hrsod.png",
+      "tests/results/anime-girl-1.birefnet-massive.png",
+      "tests/results/anime-girl-1.birefnet-portrait.png",
+      "tests/results/anime-girl-1.isnet-anime.png",
+      "tests/results/anime-girl-1.isnet-general-use.png",
+      "tests/results/anime-girl-1.sam.png",
+      "tests/results/anime-girl-1.silueta.png",
+      "tests/results/anime-girl-1.u2net.png",
+      "tests/results/anime-girl-1.u2net_cloth_seg.png",
+      "tests/results/anime-girl-1.u2net_human_seg.png",
+      "tests/results/anime-girl-1.u2netp.png",
+      "tests/results/car-1.birefnet-cod.png",
+      "tests/results/car-1.birefnet-dis.png",
+      "tests/results/car-1.birefnet-general-lite.png",
+      "tests/results/car-1.birefnet-general.png",
+      "tests/results/car-1.birefnet-hrsod.png",
+      "tests/results/car-1.birefnet-massive.png",
+      "tests/results/car-1.birefnet-portrait.png",
+      "tests/results/car-1.isnet-anime.png",
+      "tests/results/car-1.isnet-general-use.png",
+      "tests/results/car-1.sam.png",
+      "tests/results/car-1.silueta.png",
+      "tests/results/car-1.u2net.png",
+      "tests/results/car-1.u2net_cloth_seg.png",
+      "tests/results/car-1.u2net_human_seg.png",
+      "tests/results/car-1.u2netp.png",
+      "tests/results/cloth-1.birefnet-cod.png",
+      "tests/results/cloth-1.birefnet-dis.png",
+      "tests/results/cloth-1.birefnet-general-lite.png",
+      "tests/results/cloth-1.birefnet-general.png",
+      "tests/results/cloth-1.birefnet-hrsod.png",
+      "tests/results/cloth-1.birefnet-massive.png",
+      "tests/results/cloth-1.birefnet-portrait.png",
+      "tests/results/cloth-1.isnet-anime.png",
+      "tests/results/cloth-1.isnet-general-use.png",
+      "tests/results/cloth-1.sam.png",
+      "tests/results/cloth-1.silueta.png",
+      "tests/results/cloth-1.u2net.png",
+      "tests/results/cloth-1.u2net_cloth_seg.png",
+      "tests/results/cloth-1.u2net_human_seg.png",
+      "tests/results/cloth-1.u2netp.png",
+      "tests/results/plants-1.birefnet-cod.png",
+      "tests/results/plants-1.birefnet-dis.png",
+      "tests/results/plants-1.birefnet-general-lite.png",
+      "tests/results/plants-1.birefnet-general.png",
+      "tests/results/plants-1.birefnet-hrsod.png",
+      "tests/results/plants-1.birefnet-massive.png",
+      "tests/results/plants-1.birefnet-portrait.png",
+      "tests/results/plants-1.isnet-anime.png",
+      "tests/results/plants-1.isnet-general-use.png",
+      "tests/results/plants-1.sam.png",
+      "tests/results/plants-1.silueta.png",
+      "tests/results/plants-1.u2net.png",
+      "tests/results/plants-1.u2net_cloth_seg.png",
+      "tests/results/plants-1.u2net_human_seg.png",
+      "tests/results/plants-1.u2netp.png"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 53701,
+    "completion_tokens": 5710,
+    "total_tokens": 59411,
+    "cost": 0.002027814255,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 29896,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002027814255,
+      "upstream_inference_prompt_cost": 0.001342614255,
+      "upstream_inference_completions_cost": 0.0006852
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3526,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792608075-eAfickfw6UqGFmgKZulT"
+}

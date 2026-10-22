@@ -1,0 +1,28 @@
+I’ve confirmed this is the MkDocs Python project: its package metadata sets Python 3.8+ and BSD-2-Clause licensing, while the docs describe the install-and-build workflow and bundled themes. I’ll keep the README anchored to those repository facts and link to the fuller guides for details.
+Created `README.md` in the current directory. It covers MkDocs’ purpose and features, Python requirement and installation, a quick start, build and GitHub Pages deployment commands, documentation links, contribution and support channels, and the license. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m150 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/index.md 
+[0m→ [0mRead docs/getting-started.md 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead mkdocs/__main__.py 
+[0m→ [0mRead mkdocs/__init__.py 
+[0m→ [0mRead docs/user-guide/installation.md 
+[0m→ [0mRead docs/user-guide/cli.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead mkdocs.yml 
+[0m→ [0mRead LICENSE [90m[limit=80][0m
+[0m→ [0mRead setup.py 
+[0m→ [0mRead docs/user-guide/README.md 
+[0m→ [0mRead docs/user-guide/configuration.md [90m[limit=180][0m
+[0m→ [0mRead docs/user-guide/deploying-your-docs.md [90m[limit=110][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

@@ -1,0 +1,39 @@
+Let me look at the repository structure directly.
+Let me read the source files to understand what this project does.
+Now let me check the frontend files and the other docs for context.
+I now have a complete picture of the project. Let me write the README.
+I've created `README.md` in the repository root. It's based entirely on the actual source code and existing documentation:
+
+- **Overview** — Describes it as a Flask app that fetches contributions from GitHub, GitLab, and Bitbucket and exposes them via a REST API.
+- **Project structure** — Maps the `src/api_clients` and `src/web` directories accurately.
+- **Requirements/Installation** — Lists the actual imports found in the code (`Flask`, `Flask-SQLAlchemy`, `Flask-CORS`, `requests`).
+- **Configuration** — Documents the `DATABASE_URL` env var and the SQLite default found in `app.py`.
+- **Running** — Uses the actual entry point (`python src/web/app.py`) and notes the `db.create_all()` / debug behavior.
+- **API endpoints** — A table of all routes defined in `app.py`.
+- **Contributing & License** — Links to the existing `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `LICENSE` (MIT, Stephen Ombuya, 2025).
+
+No unsupported claims were included — every statement traces back to something in the repository.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.read({path: '/tmp/Code-Contribution-Analyzer-notxhon0'}),\n]);\nreturn r.map(x => x.status === 'fulfilled' ? x.value : String(x.reason));"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "**/*" [90m12 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/web/app.py 
+[0m→ [0mRead src/web/models.py 
+[0m→ [0mRead src/api_clients/base_client.py 
+[0m→ [0mRead src/api_clients/bitbucket_client.py 
+[0m→ [0mRead src/api_clients/github_client.py 
+[0m→ [0mRead src/api_clients/gitlab_client.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead src/web/templates/index.html 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

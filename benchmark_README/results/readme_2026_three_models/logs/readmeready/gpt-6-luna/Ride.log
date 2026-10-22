@@ -1,0 +1,46 @@
+Processing repository...
+Processing 23 files and 9 folders...
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 36, in <module>
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/index.py", line 40, in index
+    process_repository(
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 292, in process_repository
+    list(pool.map(process_file, file_params))
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 160, in process_file
+    responses = [call_llm(prompt, model.llm) for prompt in prompts]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/process_repository.py", line 70, in call_llm
+    return model.invoke(prompt)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 395, in invoke
+    self.generate_prompt(
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 842, in generate
+    self._generate_with_cache(
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_openai/chat_models/base.py", line 1220, in _generate
+    return self._create_chat_result(response, generation_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/.tools/venvs/readmeready/lib/python3.12/site-packages/langchain_openai/chat_models/base.py", line 1275, in _create_chat_result
+    raise ValueError(response_dict.get("error"))
+ValueError: {'message': 'Your input exceeds the context window of this model. Please adjust your input and try again.', 'code': 400, 'metadata': {'error_type': 'invalid_request', 'provider_code': 'context_length_exceeded'}}

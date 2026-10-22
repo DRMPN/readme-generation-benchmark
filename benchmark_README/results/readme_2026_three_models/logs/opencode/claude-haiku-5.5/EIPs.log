@@ -1,0 +1,145 @@
+I'll start by looking at the repository layout and any existing docs.
+This looks like the Ethereum EIPs repository. I'll read the config, build, and process files to ground the README.
+Next I'll read the contributing guide, the CI workflows, and the EIP-1 process document.
+The workflows directory needs to be read file by file. I'll also check the git remote and the CI and Jekyll workflow configs.
+I have the core build and validation setup. I'll check the remaining workflows, the PR template, and whether ERC files live in this repo.
+ERC files are not in this repo, so the build pulls them from another repository. I'll check the hidden config files the workflows reference and the existing Jekyll index.
+I have enough to write an accurate README. I'll write it now.
+The README is written. I'll correct a few statements that went beyond what I verified: the category list, the filename convention, the label bot and editor config descriptions, and the `eip_validator` claim.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The repository is the Ethereum EIPs source, which powers https://eips.ethereum.org. The README covers:
+
+- **Purpose:** what EIPs are and where the process is defined (EIP-1).
+- **Repository layout:** the `EIPS/` and `assets/` folders, the Jekyll site files, and the config and workflow folders.
+- **Categories and statuses:** the Standards Track, Meta, and Informational types, and the lifecycle statuses from `_data/statuses.yaml`.
+- **Contributing:** the steps from EIP-1 and the template, plus the `EIP-N` reference format.
+- **CI checks:** the Jekyll/HTML build, link check, spell check, `eipw` validation, and Markdown lint, plus the other bot and deployment workflows.
+- **Local build:** Ruby 3.1 with `bundle install` and `bundle exec jekyll serve`.
+- **License:** CC0 1.0 Universal.
+
+A few points you might not expect:
+
+- ERC proposals now live in `ethereum/ERCs`. CI copies them into this site and renames them, so they are not in this repository. A local build does not include them.
+- `_config.yml` excludes `README.md` from the Jekyll build, so this file will not appear on the published site.
+- I left out the repository's local git remote path, since it is specific to this machine.
+- I did not state EIP counts because I did not tally them.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m300 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead _config.yml 
+[0m→ [0mRead Gemfile 
+[0m→ [0mRead CNAME 
+[0m→ [0mRead LICENSE.md [90m[limit=15][0m
+[0m→ [0mRead eip-template.md 
+[0m→ [0mRead .github 
+[0m→ [0mRead config/eipw.toml 
+[0m→ [0mRead config/mlc_config.json 
+[0m→ [0mRead _data/statuses.yaml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/CONTRIBUTING.md 
+[0m→ [0mRead .github/CODEOWNERS 
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead EIPS/eip-1.md [90m[limit=120][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/workflows/ci.yml 
+[0m→ [0mRead .github/workflows/jekyll.yml 
+[0m→ [0mRead .git/config 
+[0m→ [0mRead .github/workflows/post-ci.yml 
+[0m→ [0mRead .github/workflows/auto-review-bot.yml 
+[0m→ [0mRead .github/workflows/stale.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/PULL_REQUEST_TEMPLATE.md 
+[0m→ [0mRead .github/workflows/auto-stagnate-bot.yml 
+[0m→ [0mRead .github/workflows/jekyll-label-bot.yml 
+[0m✱ [0mGlob "EIPS/erc-*.md" [90m0 matches[0m
+[0m✱ [0mGlob "EIPS/eip-*.md" [90m3 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead index.html [90m[limit=40][0m
+[0m→ [0mRead .github/workflows/auto-review-trigger.yml 
+[0m✱ [0mGlob "config/.*" [90m3 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -26,9 +26,9 @@
+ ## EIP categories and statuses
+ 
+ Each EIP has a `type` in its preamble:
+ 
+-- **Standards Track**: changes that affect most or all Ethereum implementations. Standards Track EIPs have a `category` of Core, Networking, Interface, or ERC.
++- **Standards Track**: changes that affect most or all Ethereum implementations. Standards Track EIPs have a `category` of Core, Networking, or Interface. The template also lists ERC.
+ - **Meta**: process-related proposals.
+ - **Informational**: design issues or general guidance. These do not propose a new feature.
+ 
+ The lifecycle statuses are defined in `_data/statuses.yaml` and [EIP-1](EIPS/eip-1.md): Idea, Draft, Review, Last Call, Final, Stagnant, Withdrawn, and Living. Only Draft, Review, Last Call, Final, Stagnant, Withdrawn, and Living are accepted in an EIP's `status` header.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -36,9 +36,9 @@
+ ## Contributing
+ 
+ 1. Read [EIP-1](EIPS/eip-1.md). It covers the process, required sections, and header format.
+ 2. Discuss the idea first. EIP-1 recommends opening a thread on the [Ethereum Magicians forum](https://ethereum-magicians.org/).
+-3. Copy [`eip-template.md`](eip-template.md) and fill in the preamble and sections. Use a short filename that describes the proposal, as the template comments describe.
++3. Copy [`eip-template.md`](eip-template.md) and fill in the preamble and sections. The template comments suggest naming the file `eip-draft_<title_abbrev>.md` until an editor assigns a number.
+ 4. Put any supporting files in `assets/eip-<number>/`. Link to them with relative paths. External links are generally not allowed in the body of an EIP, per the template.
+ 5. Open a pull request against this repository. The pull request template describes the automatic merge criteria for some edits to existing Draft EIPs.
+ 
+ Refer to other proposals in the form `EIP-N` or `ERC-N`. The EIP validator flags other forms such as `EIPN` or `EIP N`.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -55,11 +55,11 @@
+ 
+ Other workflows handle deployment and housekeeping:
+ 
+ - `jekyll.yml` builds and deploys the site to GitHub Pages on pushes to `master`, and also runs on a schedule.
+-- `auto-review-bot.yml` and `auto-review-trigger.yml` run the EIP review bot. The bot's editor configuration is in `config/eip-editors.yml`.
+-- `auto-stagnate-bot.yml` and `stale.yml` mark inactive proposals and issues as stale or stagnant.
+-- `jekyll-label-bot.yml` labels pull requests based on the files they change.
++- `auto-review-bot.yml` and `auto-review-trigger.yml` run the EIP review bot, which reads `config/eip-editors.yml`.
++- `auto-stagnate-bot.yml` runs a weekly job that marks EIPs as stagnant. `stale.yml` runs daily and marks inactive issues and pull requests as stale.
++- `jekyll-label-bot.yml` applies labels to pull requests using `config/.jekyll-labels.yml`.
+ - `post-ci.yml` adds a comment and a `w-ci` label to a pull request when the CI run fails.
+ 
+ ## Building the site locally
+ 
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -69,11 +69,11 @@
+ bundle install
+ bundle exec jekyll serve
+ ```
+ 
+-`bundle exec jekyll serve` is mentioned in the `Gemfile` comments. The CI build first copies ERC files from `ethereum/ERCs` into the site. A local build from this repository alone does not include them.
++The CI build first copies ERC files from `ethereum/ERCs` into the site. A local build from this repository alone does not include them.
+ 
+-The `Gemfile` also includes `html-proofer` and `eip_validator`, which the CI checks use.
++The `Gemfile` also includes `html-proofer`, which the HTML check in CI uses.
+ 
+ `_config.yml` excludes `README.md` from the Jekyll build, so this file is not published on the site.
+ 
+ ## License
+
+> readme-benchmark · anthropic/claude-haiku-5.5

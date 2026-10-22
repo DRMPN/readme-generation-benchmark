@@ -1,0 +1,157 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 18962,
+    "tree_files": 35,
+    "tracked_files": 35,
+    "selected": [
+      {
+        "path": "requirements.txt",
+        "tokens": 124,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/Dockerfile",
+        "tokens": 107,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/requirements.txt",
+        "tokens": 47,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/app.py",
+        "tokens": 536,
+        "truncated": false
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "tokens": 91,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 383,
+        "truncated": false
+      },
+      {
+        "path": "SECURITY.md",
+        "tokens": 574,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/README.md",
+        "tokens": 896,
+        "truncated": false
+      },
+      {
+        "path": "TaskMatrix.AI/README.md",
+        "tokens": 198,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE.txt",
+        "tokens": 392,
+        "truncated": false
+      },
+      {
+        "path": "visual_chatgpt.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "LowCodeLLM/src/executingLLM.py",
+        "tokens": 448,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/lowCodeLLM.py",
+        "tokens": 450,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/openAIWrapper.py",
+        "tokens": 426,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/planningLLM.py",
+        "tokens": 1294,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/test_execute.py",
+        "tokens": 164,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/test_extend_workflow.py",
+        "tokens": 148,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/test_get_workflow.py",
+        "tokens": 117,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/testcases/execute_test_cases.json",
+        "tokens": 997,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/testcases/extend_workflow_test_cases.json",
+        "tokens": 945,
+        "truncated": false
+      },
+      {
+        "path": "LowCodeLLM/src/test/testcases/get_workflow_test_cases.json",
+        "tokens": 58,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".DS_Store",
+      "LowCodeLLM/.DS_Store",
+      "LowCodeLLM/config.template",
+      "assets/demo.gif",
+      "assets/demo_inf.gif",
+      "assets/demo_short.gif",
+      "assets/figure.jpg",
+      "assets/low-code-demovideo.mp4",
+      "assets/low-code-llm.png",
+      "assets/low-code-operation.png",
+      "assets/overview.png",
+      "assets/paradigm.png",
+      "LowCodeLLM/src/index.html",
+      "LowCodeLLM/src/supervisord.conf"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 18761,
+    "completion_tokens": 2003,
+    "total_tokens": 20764,
+    "cost": 0.00334655,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 18758,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00334655,
+      "upstream_inference_prompt_cost": 0.00234505,
+      "upstream_inference_completions_cost": 0.0010015
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 349,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606124-2qPJ4sBtjVpkh22spRKQ"
+}

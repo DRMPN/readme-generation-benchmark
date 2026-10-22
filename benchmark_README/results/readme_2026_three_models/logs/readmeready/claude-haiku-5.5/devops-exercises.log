@@ -1,0 +1,88 @@
+Processing repository...
+Processing 44 files and 154 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/aws/images/lambda/aws_lambda_direct_access.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/cicd/solutions/deploy_to_kubernetes/html/images/favicon.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/kubernetes/images/service_solution.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/kubernetes/images/cluster_architecture_exercise.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/kubernetes/images/cluster_architecture_solution.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/topics/kubernetes/images/service_exercise.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/network.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/general.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/devops_exercises.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/puppet.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/linux_master.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/elastic.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/kubernetes.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/jenkins/jenkins-to-kibana.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/containers.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/infraverse.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/devops.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/how_they_devops.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/openstack.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/git.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/hardware.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/os.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/storage.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/virtualization.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/devops_resources.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/HR.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design/input-process-output.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design/cdn-no-downtime.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design/producers_consumers_fix.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design/producers_consumers_issue.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/design/development/git_fsmonitor.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/sre_checklist.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/circleci.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/argo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/linux.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/kafka.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/chaos_engineering.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/grafana.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/logos/datadog.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/cloud.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/azure.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/you.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/exercises.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/aws/identify_load_balancer.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/apps/system_design_hero.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/apps/linux_master.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/apps/kubeprep.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/sql.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/certificates.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/googlecloud.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/regex.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/jenkins.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/programming.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/openshift.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/dns.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/cicd.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/system_design_notebook.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/bash.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/security.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/databases.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/ansible.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/nodejs.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/python.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/perl.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/big-data.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/prometheus.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/observability.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/aws.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/mongo.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/Go.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/images/terraform.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/devops-exercises-l1tm7fz5/scripts/aws s3 event triggering/sample.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Splitting text into chunks for 46 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/claude-haiku-5.5/_work/devops-exercises/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/claude-haiku-5.5/_work/devops-exercises/docs/data/README_GPT4.md
+
+--- stderr ---

@@ -1,0 +1,79 @@
+I'll start by inspecting the repository structure.
+No existing top-level README. Let me read the key files to understand the project.
+The requirements.txt read failed as binary — let me extract its content with grep and read the main scripts.
+This is the SV2TTS-based voice cloning toolbox. Let me examine the remaining components and scripts.
+Let me examine the remaining scripts and package structure.
+Let me check remaining training scripts, model parameters, and git metadata to confirm the project's origin and details.
+I have a complete picture now. Let me verify the samples folder contents before writing.
+Now I'll write the README based on what the code actually contains.
+Let me verify a couple of claims I made, particularly about the encoder training loss.
+The README is written. Every claim in it traces back to something I verified in the repository:
+
+## What I found
+
+This repository is a **PyTorch implementation of the SV2TTS toolbox** (speaker encoding → Tacotron synthesis → WaveRNN vocoding), MIT-licensed by Corentin Jemine (2019), building on the Tacotron implementation by Rayhane Mama and the WaveRNN implementation by fatchord.
+
+## Key facts verified from the code
+
+- **Three-stage pipeline**: `encoder/` (3-layer LSTM, 256-dim embeddings, GE2E loss — explicitly referenced in `encoder/model.py`), `synthesizer/` (speaker-conditional Tacotron, 16 kHz / 80 mels per `synthesizer/hparams.py`), `vocoder/` (WaveRNN per `vocoder/models/fatchord_version.py`).
+- **Pretrained models** auto-download on first run of either demo (`utils/default_models.py`) into `saved_models/default/`, with sizes ~17 MB / ~370 MB / ~54 MB, plus a manual Google Drive fallback link taken verbatim from the code.
+- **Two entry points**: `demo_toolbox.py` (PyQt5 GUI — dataset browsing, 5-second mic recording, UMAP embedding projections, Griffin-Lim fallback, wav export) and `demo_cli.py` (GUI-less interactive demo that doubles as an API example).
+- **Full training pipeline** documented from the argparse definitions of all 7 preprocess/train scripts, including default output paths (`<datasets_root>/SV2TTS/{encoder,synthesizer,vocoder}`) and the exact dataset layout shown in `encoder_preprocess.py`'s help text.
+- **Supported datasets** list taken verbatim from `toolbox/__init__.py` (LibriSpeech, LibriTTS, LJSpeech-1.1, VoxCeleb1/2, VCTK).
+- **Dependencies** from `requirements.txt`, including the note that PyTorch itself is *not* listed there (correct — it's absent from the file), plus the `webrtcvad` silence-trimming and `visdom` visualization caveats surfaced by the scripts.
+- **Samples folder** licensing details from `samples/README.md` (VCTK and LibriSpeech sources, CC BY 4.0).
+
+## What I deliberately avoided
+
+Per your instruction not to invent unsupported claims, I omitted anything not in the repo: specific Python version requirements, performance/real-time-factor numbers, paper arXiv IDs, GitHub star counts, and feature screenshots. The only external link asserted as the project's method is the SV2TTS publication page, which is cited inside `samples/README.md` itself.
+
+The file is at `README.md` in the repository root, starting with a level-one heading, and is the only file created.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*.md" [90m2 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead samples/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead demo_cli.py 
+[0m✱ [0mGrep "." [90min requirements.txt · 16 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead demo_toolbox.py 
+[0m→ [0mRead encoder_preprocess.py 
+[0m→ [0mRead utils/default_models.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead synthesizer_preprocess_audio.py 
+[0m→ [0mRead synthesizer_train.py 
+[0m→ [0mRead toolbox 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead synthesizer_preprocess_embeds.py 
+[0m→ [0mRead vocoder_preprocess.py 
+[0m→ [0mRead toolbox/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead encoder_train.py 
+[0m→ [0mRead vocoder_train.py 
+[0m→ [0mRead .git/config 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead encoder/params_model.py 
+[0m→ [0mRead synthesizer/hparams.py 
+[0m✱ [0mGrep "arxiv|SV2TTS|paper|citation|cite" [90m26 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead vocoder 
+[0m✱ [0mGlob "*.py" [90m59 matches[0m
+[0m✱ [0mGrep "WaveRNN|wavernn" [90m16 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead encoder/params_data.py 
+[0m✱ [0mGrep "python|Python 3|torch" [90m0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "samples/*" [90m8 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "similarity|GE2E|loss" [90m43 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash

@@ -1,0 +1,131 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 26195,
+    "tree_files": 25,
+    "tracked_files": 25,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2292,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 530,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 180,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 215,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 118,
+        "truncated": false
+      },
+      {
+        "path": "_config.yml",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/MLTracker.py",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/__init__.py",
+        "tokens": 91,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/emission_track.py",
+        "tokens": 6113,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/utils.py",
+        "tokens": 3966,
+        "truncated": false
+      },
+      {
+        "path": "examples/Eco2AI tutorial tensorflow.ipynb",
+        "tokens": 2240,
+        "truncated": false
+      },
+      {
+        "path": "examples/Eco2AI tutorial torch.ipynb",
+        "tokens": 2013,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/data/config.txt",
+        "tokens": 46,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/tools/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/tools/tools_cpu.py",
+        "tokens": 5532,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/tools/tools_gpu.py",
+        "tokens": 1895,
+        "truncated": false
+      },
+      {
+        "path": "eco2ai/tools/tools_ram.py",
+        "tokens": 534,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "poetry.lock",
+      "images/AIRI - Full logo (2).png",
+      "images/eco2ai_logo.jpg",
+      "images/eco2ai_logo_cut.jpg",
+      "images/photo_2022-06-14_13-02-37.jpg",
+      "eco2ai/data/carbon_index.csv",
+      "eco2ai/data/cpu_names.csv"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 26157,
+    "completion_tokens": 2542,
+    "total_tokens": 28699,
+    "cost": 0.002444018,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002444018,
+      "upstream_inference_prompt_cost": 0.001935618,
+      "upstream_inference_completions_cost": 0.0005084
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792608949-C3r6iYJ4EWfRK2fA9BFw"
+}

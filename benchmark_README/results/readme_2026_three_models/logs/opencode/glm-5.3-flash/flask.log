@@ -1,0 +1,85 @@
+This is the Flask source repository. Let me read the key files to get accurate details.
+Let me check a few more details to make the README accurate.
+I now have all the information needed. Writing the README:
+Let me verify the example code matches the repo's documented quickstart to avoid unsupported claims.
+The docs use a slightly different example and run command. Let me align the README with the documented quickstart:
+Created `README.md` in the repository root. It's based entirely on the repo's actual content — `pyproject.toml`, `docs/index.rst`, `docs/installation.rst`, `docs/quickstart.rst`, `CHANGES.rst`, and `LICENSE.txt`:
+
+**What it covers:**
+- **Level-one heading** and the tagline from `pyproject.toml` ("A simple framework for building complex web applications.")
+- **Overview** — lightweight WSGI framework, flexible/no enforced project layout, based on the docs' description
+- **Installation** — `pip install Flask`, Python 3.10+ requirement, plus the exact dependency list (Werkzeug, Jinja, MarkupSafe, ItsDangerous, Click, Blinker) with descriptions from `docs/installation.rst`
+- **Optional dependencies** — `Flask[async]`, `Flask[dotenv]`, Watchdog, and greenlet, all documented in the repo
+- **A Simple Example** — copied from the documented quickstart (`hello.py` with `flask --app hello run`), including the builtin-server caveat
+- **Documentation links** — official docs, changes, source, Discord chat, and donation links matching `pyproject.toml` URLs
+- **Contributing** — mentions tox, pytest, and uv, which are all present in the project configuration
+- **License** — BSD-3-Clause, referencing `LICENSE.txt`
+
+I verified the example code and CLI output against `docs/quickstart.rst` and updated the initial draft to match the documented minimal application exactly, so nothing is invented or unsupported.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead LICENSE.txt [90m[limit=10][0m
+[0m→ [0mRead src/flask/__init__.py [90m[limit=60][0m
+[0m→ [0mRead docs/index.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CHANGES.rst [90m[limit=15][0m
+[0m→ [0mRead docs/installation.rst [90m[limit=40][0m
+[0m✱ [0mGlob "src/flask/*.py" [90m18 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/installation.rst [90m[offset=41, limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/quickstart.rst [90m[limit=90][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -37,25 +37,30 @@
+ - [greenlet](https://greenlet.readthedocs.io/) is required when using gevent or eventlet with your application.
+ 
+ ## A Simple Example
+ 
++Save this as `hello.py`:
++
+ ```python
+-# save this as app.py
+ from flask import Flask
+ 
+ app = Flask(__name__)
+ 
+ @app.route("/")
+-def hello():
+-    return "Hello, World!"
++def hello_world():
++    return "<p>Hello, World!</p>"
+ ```
+ 
++Run it with the `flask` command:
++
+ ```sh
+-$ python app.py
+- * Serving Flask app 'app'
+- * Running on http://127.0.0.1:5000
++$ flask --app hello run
++ * Serving Flask app 'hello'
++ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ ```
+ 
++Then visit http://127.0.0.1:5000/ in your browser to see the hello world greeting. This launches a very simple builtin server, which is good enough for testing but probably not what you want to use in production.
++
+ ## Documentation
+ 
+ The full documentation is available at [flask.palletsprojects.com](https://flask.palletsprojects.com/), including a user's guide, a tutorial that shows how to create a small but complete application, common patterns, a deployment guide, and the full API reference.
+ 
+
+> readme-benchmark · z-ai/glm-5.3-flash

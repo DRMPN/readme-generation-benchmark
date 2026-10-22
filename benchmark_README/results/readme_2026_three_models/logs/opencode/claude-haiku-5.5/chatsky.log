@@ -1,0 +1,84 @@
+I'll start by looking at the repository layout and existing docs.
+The repo is Chatsky. There's no README at the root yet. I'll read the key metadata and docs files next.
+The package imports `chatsky.conditions`, which didn't show up in the glob. I'll map the package tree, tutorials, docs, and CI next.
+The `.env_file` contains only placeholder test credentials, so I'll describe it without repeating values. Next I'll read the context storages, messengers, stats, and getting-started docs.
+I have the install, test, and Docker details. For an accurate usage example, I'll read the basic tutorial, the console messenger, and the Pipeline API.
+I'll confirm the Pipeline constructor, `run()`, and the context storage factory before writing the usage example.
+I'll confirm the default messenger and the stats entry point, then write the README.
+I have enough to write an accurate README. I'll create it at the repository root.
+I wrote the README. One description, for `chatsky/config`, is a guess, so I'll check it before finishing.
+The `chatsky/config` directory holds the Superset dashboard configuration, so I'll correct that entry.
+I wrote `README.md` at the repository root. It is the only file I created, and it starts with a level-one heading.
+
+I based the content on the code and project files: `pyproject.toml`, `CONTRIBUTING.md`, `compose.yml`, `scripts/`, the GitHub workflows, the docs, and the tutorials. The README covers what Chatsky is, its features, requirements, installation and extras, a quick-start example, the tutorials, configuration, development commands, Docker services, project structure, and license.
+
+Three points to be aware of:
+
+- **Quick-start example:** I checked the `Pipeline` constructor, `run()`, the default CLI messenger, and the imports against the source. I did not execute the example.
+- **Credentials:** `.env_file` contains only placeholder values. The README names the variables but does not repeat the values.
+- **Repository has no existing README:** The root `pyproject.toml` already points to `README.md`, so this file will be picked up by the package metadata.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead compose.yml 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead tutorials 
+[0m→ [0mRead chatsky/__init__.py 
+[0m→ [0mRead docs 
+[0m→ [0mRead .github 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tutorials 
+[0m→ [0mRead chatsky 
+[0m→ [0mRead docs/source 
+[0m→ [0mRead utils 
+[0m→ [0mRead .github/workflows 
+[0m✱ [0mGrep "^[A-Z_]+=" [90min .env_file · 26 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/source/get_started.rst 
+[0m→ [0mRead scripts/test.py 
+[0m✱ [0mGlob "tutorials/**/*" [90min . · 41 matches[0m
+[0m→ [0mRead .github/workflows/test_full.yml 
+[0m✱ [0mGlob "chatsky/{context_storages,messengers,stats,config,conditions,llm,utils}/**/*.py" [90min . · 51 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tutorials/service/1_basics.py 
+[0m→ [0mRead tutorials/script/core/1_basics.py 
+[0m✱ [0mGrep "def (from_script|run|from_dict|__init__|_run_pipeline|__call__|connect)\b|class (Pipeline|ConsoleMessenger|CLIMessenger)" [90min chatsky · 74 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead chatsky/core/pipeline.py [90m[offset=100, limit=200][0m
+[0m→ [0mRead chatsky/messengers/__init__.py 
+[0m→ [0mRead chatsky/context_storages/__init__.py 
+[0m→ [0mRead chatsky/messengers/console.py [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "messenger_interface: MessengerInterface|CLIMessengerInterface\(\)|def main" [90min chatsky · 3 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "chatsky/config/**/*" [90min . · 24 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -197,9 +197,9 @@
+ 
+ ```
+ chatsky/          Library source code
+   conditions/       Transition conditions
+-  config/           Configuration
++  config/           Superset dashboard configuration for statistics
+   context_storages/ Context storage backends
+   core/             Script, pipeline, context, transitions, services
+   destinations/     Transition destinations
+   llm/              LLM integration
+
+> readme-benchmark · anthropic/claude-haiku-5.5

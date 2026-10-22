@@ -1,0 +1,97 @@
+This looks like a multi-tool hacking/pentesting framework. Let me read the key files to understand it accurately.
+This is the Z4nzu/hackingtool framework. There's a `generate_readme.py` that builds a README from tool metadata. Let me extract the tool categories and metadata.
+Now let me read the tool files to extract each category's title, tools, and project URLs. I'll read them in batches.
+Continuing with the remaining tool modules.
+Now let me read the sub-category files under `tools/others/`.
+Now let me read the installation files, Docker config, and license.
+Let me check git info and the image files for reference.
+Let me check the images to see if they contain anything useful for the README (e.g., a banner).
+The images are UI screenshots. Let me check the remaining ones to reference them correctly in the README.
+I now have a complete picture of the repository. Let me write the README.md.
+The README.md is complete. Here's a summary of what I did:
+
+## Summary
+
+I inspected the repository — it's **Hackingtool v1.1.0** by Z4nzu, a menu-driven Python 3 framework that bundles open-source security/penetration-testing tools for Linux — and wrote a complete `README.md` based strictly on the actual code.
+
+### How I verified accuracy
+- **Entry point & framework** (`hackingtool.py`, `core.py`): version 1.1.0, root requirement, first-run tool-path setup (`~/hackingtoolpath.txt`, default `/home/hackingtool/`), menu mechanics (`[98]` project page, `[99]` back), figlet/boxes/lolcat UI
+- **All 20 tool modules** read individually: I extracted every registered tool's exact title, description, and upstream URL for the Tool Index (carefully excluding classes defined in code but *not* registered in the menus, e.g. the `ddos` and `WifiPhisher` entries)
+- **Installer** (`install.sh`, `update.sh`): apt (Kali/Parrot) vs pacman (Arch) flow, install paths, `/usr/bin/hackingtool` launcher
+- **Docker** (`Dockerfile`, `docker-compose.yml`): Kali-rolling base, `vgpastor/hackingtool` compose image
+- **License**: MIT, © 2020 Mr.Z4nzu — plus the "educational use only / don't use for illegal activity" disclaimers that appear in the code itself
+
+### Notable accuracy choices
+- Tool count stated as "more than 125" (counted 129 menu entries from code, no invented figures)
+- Only files/images that exist are referenced (`images/A00.png`, `images/A0.png` screenshots)
+- No claims about stars, releases, or features not present in this version
+- Only `README.md` was created in the repo root
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const out = await tools.opencode.list_mcp_resources();\nreturn out;"} 
+[0m✱ [0mGlob "**/*" [90m43 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead hackingtool.py 
+[0m→ [0mRead generate_readme.py 
+[0m→ [0mRead core.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead requirements.txt 
+[0m✱ [0mGrep "^(TITLE|PROJECT_URL|DESCRIPTION)" [90min tools · 0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/wordlist_generator.py 
+[0m→ [0mRead tools/anonsurf.py 
+[0m→ [0mRead tools/information_gathering_tools.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/wireless_attack_tools.py 
+[0m→ [0mRead tools/sql_tools.py 
+[0m→ [0mRead tools/phising_attack.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/post_exploitation.py 
+[0m→ [0mRead tools/webattack.py 
+[0m→ [0mRead tools/forensic_tools.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/payload_creator.py 
+[0m→ [0mRead tools/exploit_frameworks.py 
+[0m→ [0mRead tools/reverse_engineering.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/xss_attack.py 
+[0m→ [0mRead tools/ddos.py 
+[0m→ [0mRead tools/remote_administration.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/steganography.py 
+[0m→ [0mRead tools/tool_manager.py 
+[0m→ [0mRead tools/other_tools.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/others/socialmedia.py 
+[0m→ [0mRead tools/others/android_attack.py 
+[0m→ [0mRead tools/others/homograph_attacks.py 
+[0m→ [0mRead tools/others/email_verifier.py 
+[0m→ [0mRead tools/others/hash_crack.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tools/others/wifi_jamming.py 
+[0m→ [0mRead tools/others/payload_injection.py 
+[0m→ [0mRead tools/others/socialmedia_finder.py 
+[0m→ [0mRead tools/others/mix_tools.py 
+[0m→ [0mRead tools/others/web_crawling.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead install.sh 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead update.sh 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"return await tools.opencode.list_mcp_resources();"} 
+[0m✱ [0mGrep "Readme|README" [90min . · 2 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead images/A0.png 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead images/A1.png 
+[0m→ [0mRead images/A00.png 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md [90m[limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash

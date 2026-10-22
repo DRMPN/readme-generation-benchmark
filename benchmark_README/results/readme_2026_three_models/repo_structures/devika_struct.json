@@ -1,0 +1,898 @@
+[
+  {
+    "name": ".assets",
+    "type": "dir",
+    "children": [
+      {
+        "name": "devika-avatar.png",
+        "type": "file"
+      },
+      {
+        "name": "devika-pygame-demo.mp4",
+        "type": "file"
+      },
+      {
+        "name": "devika-screenshot.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          },
+          {
+            "name": "issue.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pull_request_template.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "ARCHITECTURE.md",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "ROADMAP.md",
+    "type": "file"
+  },
+  {
+    "name": "app.dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "benchmarks",
+    "type": "dir",
+    "children": [
+      {
+        "name": "BENCHMARKS.md",
+        "type": "file"
+      },
+      {
+        "name": "SWE-bench.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "devika.dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "devika.py",
+    "type": "file"
+  },
+  {
+    "name": "docker-compose.yaml",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Installation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ollama.md",
+            "type": "file"
+          },
+          {
+            "name": "search_engine.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "architecture",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ARCHITECTURE.md",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "UNDER_THE_HOOD.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "sample.config.toml",
+    "type": "file"
+  },
+  {
+    "name": "setup.sh",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "agents",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "action",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "action.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "agent.py",
+            "type": "file"
+          },
+          {
+            "name": "answer",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "answer.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "coder",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "coder.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "decision",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "decision.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "feature",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "feature.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "formatter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "formatter.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "internal_monologue",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "internal_monologue.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "patcher",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "patcher.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "planner",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "planner.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "reporter",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              },
+              {
+                "name": "reporter.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "researcher",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              },
+              {
+                "name": "researcher.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "runner",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "prompt.jinja2",
+                "type": "file"
+              },
+              {
+                "name": "rerunner.jinja2",
+                "type": "file"
+              },
+              {
+                "name": "runner.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "apis",
+        "type": "dir",
+        "children": [
+          {
+            "name": "project.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "bert",
+        "type": "dir",
+        "children": [
+          {
+            "name": "sentence.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "browser",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "browser.py",
+            "type": "file"
+          },
+          {
+            "name": "interaction.py",
+            "type": "file"
+          },
+          {
+            "name": "search.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "config.py",
+        "type": "file"
+      },
+      {
+        "name": "documenter",
+        "type": "dir",
+        "children": [
+          {
+            "name": "graphwiz.py",
+            "type": "file"
+          },
+          {
+            "name": "pdf.py",
+            "type": "file"
+          },
+          {
+            "name": "uml.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "experts",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__UNIMPLEMENTED__",
+            "type": "file"
+          },
+          {
+            "name": "chemistry.py",
+            "type": "file"
+          },
+          {
+            "name": "game-dev.py",
+            "type": "file"
+          },
+          {
+            "name": "math.py",
+            "type": "file"
+          },
+          {
+            "name": "medical.py",
+            "type": "file"
+          },
+          {
+            "name": "physics.py",
+            "type": "file"
+          },
+          {
+            "name": "stackoverflow.py",
+            "type": "file"
+          },
+          {
+            "name": "web-design.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "filesystem",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "read_code.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "init.py",
+        "type": "file"
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "claude_client.py",
+            "type": "file"
+          },
+          {
+            "name": "gemini_client.py",
+            "type": "file"
+          },
+          {
+            "name": "groq_client.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "lm_studio_client.py",
+            "type": "file"
+          },
+          {
+            "name": "mistral_client.py",
+            "type": "file"
+          },
+          {
+            "name": "ollama_client.py",
+            "type": "file"
+          },
+          {
+            "name": "openai_client.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "logger.py",
+        "type": "file"
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "knowledge_base.py",
+            "type": "file"
+          },
+          {
+            "name": "rag.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "project.py",
+        "type": "file"
+      },
+      {
+        "name": "sandbox",
+        "type": "dir",
+        "children": [
+          {
+            "name": "code_runner.py",
+            "type": "file"
+          },
+          {
+            "name": "firejail.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "services",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "git.py",
+            "type": "file"
+          },
+          {
+            "name": "github.py",
+            "type": "file"
+          },
+          {
+            "name": "netlify.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "socket_instance.py",
+        "type": "file"
+      },
+      {
+        "name": "state.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "ui",
+    "type": "dir",
+    "children": [
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": ".npmrc",
+        "type": "file"
+      },
+      {
+        "name": "bun.lockb",
+        "type": "file"
+      },
+      {
+        "name": "components.json",
+        "type": "file"
+      },
+      {
+        "name": "package.json",
+        "type": "file"
+      },
+      {
+        "name": "postcss.config.cjs",
+        "type": "file"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "children": [
+          {
+            "name": "app.html",
+            "type": "file"
+          },
+          {
+            "name": "app.pcss",
+            "type": "file"
+          },
+          {
+            "name": "lib",
+            "type": "dir",
+            "children": [
+              {
+                "name": "api.js",
+                "type": "file"
+              },
+              {
+                "name": "components",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "BrowserWidget.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ControlPanel.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "EditorWidget.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "MessageContainer.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "MessageInput.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "MonacoEditor.js",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Sidebar.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "TerminalWidget.svelte",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ui",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "Seperator.svelte",
+                        "type": "file"
+                      },
+                      {
+                        "name": "SidebarButton.svelte",
+                        "type": "file"
+                      },
+                      {
+                        "name": "resizable",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resizable-handle.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "resizable-pane-group.svelte",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "select",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "select-content.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "select-item.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "select-label.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "select-separator.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "select-trigger.svelte",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "sonner",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "sonner.svelte",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tabs",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "index.js",
+                            "type": "file"
+                          },
+                          {
+                            "name": "tabs-content.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "tabs-list.svelte",
+                            "type": "file"
+                          },
+                          {
+                            "name": "tabs-trigger.svelte",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "icons.js",
+                "type": "file"
+              },
+              {
+                "name": "sockets.js",
+                "type": "file"
+              },
+              {
+                "name": "store.js",
+                "type": "file"
+              },
+              {
+                "name": "token.js",
+                "type": "file"
+              },
+              {
+                "name": "utils.js",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "routes",
+            "type": "dir",
+            "children": [
+              {
+                "name": "+layout.js",
+                "type": "file"
+              },
+              {
+                "name": "+layout.svelte",
+                "type": "file"
+              },
+              {
+                "name": "+page.svelte",
+                "type": "file"
+              },
+              {
+                "name": "logs",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "+page.svelte",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "settings",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "+page.svelte",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "favicon.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "svelte.config.js",
+        "type": "file"
+      },
+      {
+        "name": "tailwind.config.js",
+        "type": "file"
+      },
+      {
+        "name": "vite.config.js",
+        "type": "file"
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+I'll start by looking at the repository's layout and existing docs.
+This is the Flask source tree. Next I'll read the project metadata, the changelog head, and the contributing guide so the README matches what the repo actually says.
+The `pyproject.toml` already points to a `README.md`, so that's the right file. Next I'll check the install and quickstart docs, the CI workflows, and the public exports, so the README's commands are accurate.
+The `.github` glob came back empty because hidden directories are excluded by default. I'll rerun it with hidden files enabled and check the CLI commands and the docs index.
+I have enough to write an accurate README. It's based on `pyproject.toml`, the docs, the tox config, and the CI workflow.
+I'll remove one link I added from general knowledge rather than from the repo, so the README only cites sources I checked.
+I wrote `README.md` in the repository root. It's the only file I created, and it starts with a level-one heading.
+
+The repo is the Flask source tree (version 3.2.0.dev). `pyproject.toml` already sets `readme = "README.md"`, so the new file fits the package metadata.
+
+The README covers:
+- **Overview and links:** documentation, changelog, source, and Discord, plus the maintainer and BSD-3-Clause license.
+- **Requirements:** Python 3.10+, the six required dependencies, and the `async` and `dotenv` extras.
+- **Installation:** virtual environment setup for macOS/Linux and Windows, and `pip install Flask`.
+- **Quick start:** the hello-world app from the docs, how to run it with `flask --app hello run`, and the `app.py`/`wsgi.py` discovery shortcut.
+- **Debug mode and networking:** the security warning from the docs and the `--host=0.0.0.0` caveat.
+- **Command line:** `run`, `shell`, and `routes`.
+- **Documentation and examples:** links to the docs sections and the JavaScript example.
+- **Development:** `uv sync`, `pytest`, the main tox environments, and what CI runs.
+- **Contributing and license:** the contributing guide, a note to report security issues privately, and a link to `LICENSE.txt`.
+
+I checked the claims against `pyproject.toml`, the docs, `cli.py`, `tests.yaml`, and the tox config. I left out badges, performance claims, and feature lists I couldn't verify in the repo. I also removed one external link I had added from general knowledge rather than from the repo.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const [ls, readme, pyproj, git] = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead CHANGES.rst [90m[limit=60][0m
+[0m→ [0mRead docs/contributing.rst 
+[0m✱ [0mGlob "{docs/*.rst,docs/**/*.rst,.github/**/*,.devcontainer/**/*}" [90m75 matches[0m
+[0m→ [0mRead examples/javascript/README.rst 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead docs/quickstart.rst [90m[limit=120][0m
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+[0m→ [0mRead src/flask/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/index.rst 
+[0m✱ [0mGrep "@(click\.)?command|@with_appcontext|add_command|def (routes|shell|run)\b" [90min src/flask/cli.py · 11 matches[0m
+[0m✱ [0mGlob ".github/**/*" [90m8 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .devcontainer 
+[0m→ [0mRead .github/workflows/tests.yaml 
+[0m→ [0mRead .github/ISSUE_TEMPLATE/config.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -1,7 +1,7 @@
+ # Flask
+ 
+-Flask is a lightweight [WSGI](https://wsgi.readthedocs.io/) web application framework for Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.
++Flask is a lightweight WSGI web application framework for Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.
+ 
+ - Documentation: <https://flask.palletsprojects.com/>
+ - Changes: <https://flask.palletsprojects.com/page/changes/>
+ - Source code: <https://github.com/pallets/flask/>
+
+> readme-benchmark · anthropic/claude-haiku-5.5

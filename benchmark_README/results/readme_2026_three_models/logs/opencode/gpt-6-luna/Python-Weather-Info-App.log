@@ -1,0 +1,19 @@
+I found a small Tkinter desktop app with a bundled screenshot and image assets. I’m documenting its actual startup/search behavior, configuration, dependencies, and API-key setup without repeating the key currently present in `config.py`.
+Created `README.md` with setup instructions, features, configuration reference, project files, and license information. It starts with a level-one heading and avoids reproducing the API key. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m8 matches[0m
+[0m✱ [0mGrep "." [90min . · 167 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead config.py 
+[0m→ [0mRead weather_app.py [90m[offset=1, limit=180][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

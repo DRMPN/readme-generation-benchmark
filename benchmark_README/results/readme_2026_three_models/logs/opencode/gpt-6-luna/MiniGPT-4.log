@@ -1,0 +1,41 @@
+Created `README.md` in the repository root with an overview, setup instructions, demo commands, training and evaluation guidance, and links to the detailed data-preparation docs. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m183 matches[0m
+[0m✱ [0mGrep "." [90min . · 300 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead MiniGPT4_Train.md 
+[0m→ [0mRead demo.py 
+[0m→ [0mRead MiniGPTv2_Train.md 
+[0m→ [0mRead demo_v2.py 
+[0m→ [0mRead train.py 
+[0m→ [0mRead environment.yml 
+[0m→ [0mRead eval_configs/minigpt4_eval.yaml 
+[0m→ [0mRead eval_scripts/EVAL_README.md 
+[0m→ [0mRead eval_configs/minigptv2_eval.yaml 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead dataset/README_1_STAGE.md 
+[0m→ [0mRead dataset/README_MINIGPTv2_FINETUNE.md 
+[0m→ [0mRead dataset/README_2_STAGE.md 
+[0m→ [0mRead LICENSE_Lavis.md 
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead eval_configs/minigptv2_benchmark_evaluation.yaml 
+[0m→ [0mRead minigpt4/models/minigpt4.py 
+[0m→ [0mRead minigpt4/models/minigpt_v2.py 
+[0m✱ [0mGrep "https?://|checkpoint|Demo|MiniGPT-v2|MiniGPT-4" [90min . · 80 matches[0m
+[0m✱ [0mGlob "README.md" [90min . · 1 match[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✗ [0mRead git status --short failed
+[91m[1mError: [0mFile not found: git status --short
+[0m→ [0mRead train_configs/minigptv2_finetune.yaml 
+[0m→ [0mRead train_configs/minigpt4_llama2_stage2_finetune.yaml 
+[0m→ [0mRead minigpt4/configs/models/minigpt4_llama2.yaml 
+[0m→ [0mRead minigpt4/configs/default.yaml 
+[0m→ [0mRead minigpt4/configs/datasets/cc_sbu/align.yaml 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead minigpt4/common/config.py 
+> readme-benchmark · openai/gpt-6-luna

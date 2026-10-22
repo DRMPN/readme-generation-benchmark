@@ -1,0 +1,132 @@
+I'll start by looking at the repository layout and existing docs.
+There's no root README yet. I'll read the package sources and the existing sub-READMEs to ground the content.
+Next I'll read the C++ library, the utilities, the model READMEs, and the CI config.
+I have the core APIs. Now the C++ header, the tutorial READMEs, the CI workflows, and the test scripts.
+The Python API and test expectations are clear. Next I'll check the C++ implementation, the model-prep script, submodules, and the Doxygen config.
+The `docs/Doxyfile` reads `../README.md` as its input, so a root README is expected there. Last, I'll pull the canonical usage calls from the tutorial notebooks so the examples match what the project actually does.
+I have enough to write an accurate README. Before writing, I'll confirm two details I'd otherwise have to guess: the license header and whether the repo names its backbone architectures or cites a paper.
+I have what I need. Writing the README now, with every claim tied to a file I read.
+The README is written. A few statements came from directory listings rather than file contents, so I'll verify them before finishing.
+Three statements need correcting: the docs workflow deploys to GitHub Pages, `emotions_llm` is an IJCAI 2024 dialogue demo, and the mobile scripts live under `mobile_apps/demo`. I'll also remove one vague sentence.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+The repo had no root README, so I built it from the code and the existing sub-READMEs. Every API signature, model name, label set, install extra, build option, and test step comes from a file I read. Three things I checked against the source:
+
+- **Model table:** which models each engine supports. The C++ Torch backend lists five models; `mbf_va_mtl` and `mobilevit_va_mtl` are ONNX-only there.
+- **Engagement:** the classifier expects 2560-dimensional features, and the test suite only runs engagement tests for `enet_b0` models.
+- **Model download:** weights are fetched from GitHub on first use and cached in `~/.emotiefflib/`.
+
+I did not run the code, install the packages, or download the models. The install commands and the `pip install emotiefflib` route come from the existing docs, so I did not check them against PyPI.
+
+The existing sub-READMEs have some inconsistencies I left alone, since you asked only for the root README. The Python README's license section names "EmotiEffCppLib", and the training README points to a `mobile_app` folder that is actually `mobile_apps/`.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead README.md failed
+[91m[1mError: [0mFile not found: /tmp/EmotiEffLib-1_1zulyk/README.md
+[0m✱ [0mGlob "**/*" [90m199 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead emotiefflib/README.md 
+[0m→ [0mRead emotiefflib/facial_analysis.py 
+[0m→ [0mRead emotiefflib/__init__.py 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead requirements-torch.txt 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements-engagement.txt 
+[0m→ [0mRead docs/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead emotieffcpplib/README.md 
+[0m→ [0mRead emotiefflib/utils.py 
+[0m→ [0mRead emotieffcpplib/CMakeLists.txt 
+[0m→ [0mRead emotiefflib/engagement_classification_model.py 
+[0m→ [0mRead tests/README.md 
+[0m→ [0mRead training_and_examples/README.md 
+[0m→ [0mRead models/affectnet_emotions/README.md 
+[0m→ [0mRead docs/tutorials/README.md 
+[0m✱ [0mGlob ".github/**/*" [90m4 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead emotieffcpplib/include/emotiefflib/facial_analysis.h 
+[0m→ [0mRead docs/tutorials/python/README.md 
+[0m→ [0mRead docs/tutorials/cpp/README.md 
+[0m→ [0mRead tests/requirements.txt 
+[0m→ [0mRead tests/test_facial_analysis.py 
+[0m→ [0mRead tests/download_test_data.sh 
+[0m→ [0mRead .github/workflows/tests.yml 
+[0m→ [0mRead .github/workflows/lint.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .gitmodules 
+[0m→ [0mRead models/prepare_models_for_emotieffcpplib.py 
+[0m→ [0mRead emotieffcpplib/src/facial_analysis.cpp 
+[0m→ [0mRead tests/test_module_loading.py 
+[0m→ [0mRead tests/check_installed_libs.sh 
+[0m✱ [0mGrep "OUTPUT_DIRECTORY|INPUT|GENERATE_HTML|PROJECT_NAME" [90min docs · 22 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "EmotiEffLib(Recognizer|Config|LibRecognizer)|createInstance|predict_(emotions|engagement)|predictEmotions|predictEngagement|from emotiefflib|#include" [90min docs/tutorials · 60 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "EmotiEffLibRecognizer\(|predict_emotions\(|predict_engagement\(|import emotiefflib|from emotiefflib" [90min docs/tutorials/python · 20 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=3][0m
+[0m✱ [0mGrep "Apache|efficientnet|EfficientNet|arxiv|@article|@inproceedings" [90min . · 30 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .github/workflows/generate_documentation.yml 
+[0m→ [0mRead training_and_examples/emotions_llm/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -265,9 +265,9 @@
+ CI runs the Python tests on Python 3.10 and the C++ tests on Linux with LibTorch 2.6.0 (CPU) and ONNX Runtime 1.20.1 (`.github/workflows/tests.yml`).
+ 
+ ## Documentation and tutorials
+ 
+-- [docs/README.md](docs/README.md) describes how to generate Doxygen documentation (`doxygen`, `doxygen Doxyfile-cpp`, `doxygen Doxyfile-python`). The output goes to `html/`. CI also builds the documentation (`.github/workflows/generate_documentation.yml`).
++- [docs/README.md](docs/README.md) describes how to generate Doxygen documentation (`doxygen`, `doxygen Doxyfile-cpp`, `doxygen Doxyfile-python`). The output goes to `docs/html/`. On pushes to `main`, `.github/workflows/generate_documentation.yml` builds it and deploys it to GitHub Pages.
+ - [Python tutorials](docs/tutorials/python/README.md): one-image emotion recognition, emotions on video, and engagement and emotions on video.
+ - [C++ tutorials](docs/tutorials/cpp/README.md): the same three topics in C++. These run as Jupyter notebooks with the `xcpp17` kernel from [xeus-cling](https://github.com/jupyter-xeus/xeus-cling). Building them requires the C++ library built with `-DBUILD_TESTS=ON -DBUILD_SHARED_LIBS=ON`.
+ 
+ ## Training and examples
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -276,10 +276,10 @@
+ 
+ - `affectnet/`: training notebooks for the EmotiEffNet models and evaluation scripts, including `robust_optimization.py`.
+ - `ABAW/`: classifiers built on the emotional features for ABAW challenges.
+ - `personalized_models/`: notebooks for personalized engagement models.
+-- `emotions_llm/`: scripts and notebooks for the LLM-related experiments.
+-- `mobile_apps/`: Android example apps (`demo` and `emotional_dialogue`). The README says to run `to_tflite.py` and `to_pytorchlite.py` in the mobile app folder to prepare their models.
++- `emotions_llm/`: code for a demo of an emotional multi-agent multimodal dialogue system, published at IJCAI 2024.
++- `mobile_apps/`: Android example apps (`demo` and `emotional_dialogue`). To prepare models for the `demo` app, run `to_tflite.py` and `to_pytorchlite.py` in `mobile_apps/demo/`.
+ 
+ Pre-trained models are in [models/](models/). [models/affectnet_emotions/README.md](models/affectnet_emotions/README.md) notes that some other models are available on Google Drive.
+ 
+ ## License
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -199,9 +199,8 @@
+ include_directories("path/to/EmotiEffLib/emotieffcpplib/include")
+ target_link_libraries(your_project PRIVATE emotiefflib)
+ ```
+ 
+-The C++ README also shows the variant where `WITH_TORCH` is set in the same way.
+ 
+ ## C++: usage
+ 
+ The public API is in `emotieffcpplib/include/emotiefflib/facial_analysis.h`, namespace `EmotiEffLib`.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

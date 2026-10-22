@@ -1,0 +1,59 @@
+Created `README.md` in the repository root with setup instructions, Python and CLI examples, configuration notes, and links to the project’s frontend, multi-agent, and contribution guides. No other files were created or changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+[0m✱ [0mGrep "TODO|README|description|scripts|dependencies" [90m0 matches[0m
+[0m→ [0mRead . 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead cli.py 
+[0m→ [0mRead main.py 
+[0m→ [0mRead .env.example 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead multi_agents/README.md 
+[0m→ [0mRead mcp-server/README.md 
+[0m→ [0mRead frontend/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_researcher 
+[0m→ [0mRead backend/server/app.py 
+[0m→ [0mRead backend/server/server.py 
+[0m→ [0mRead requirements_minimal.txt 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead langgraph.json 
+[0m→ [0mRead gpt_researcher/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead gpt_researcher/agent.py [90m[limit=250][0m
+[0m→ [0mRead gpt_researcher/config 
+[0m→ [0mRead gpt_researcher/utils/enum.py 
+[0m→ [0mRead gpt_researcher/context 
+[0m→ [0mRead backend/server/websocket_manager.py [90m[limit=220][0m
+[0m✱ [0mGlob "docs/**/*" [90m100 matches[0m
+[0m✱ [0mGrep "os.getenv|environ.get|API_KEY|RETRIEVER|SEARCH" [90min gpt_researcher · 66 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/docs/gpt-researcher/getting-started/getting-started.md 
+[0m→ [0mRead docs/docs/gpt-researcher/getting-started/introduction.md 
+[0m→ [0mRead docs/docs/gpt-researcher/getting-started/cli.md 
+[0m→ [0mRead gpt_researcher/config/config.py [90m[limit=180][0m
+[0m→ [0mRead gpt_researcher/config/variables/default.py 
+[0m→ [0mRead docs/docs/gpt-researcher/gptr/example.md 
+[0m→ [0mRead docs/docs/gpt-researcher/gptr/config.md 
+[0m→ [0mRead docs/docs/gpt-researcher/gptr/pip-package.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead tests 
+[0m→ [0mRead LICENSE [90m[limit=15][0m
+[0m→ [0mRead gpt_researcher/skills/researcher.py [90m[limit=120][0m
+[0m→ [0mRead docs/docs/gpt-researcher/getting-started/getting-started-with-docker.md [90m[limit=120][0m
+[0m→ [0mRead docs/docs/gpt-researcher/llms/llms.md [90m[limit=120][0m
+[0m→ [0mRead docs/docs/gpt-researcher/search-engines/search-engines.md [90m[limit=100][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "frontend/nextjs/*" [90m11 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

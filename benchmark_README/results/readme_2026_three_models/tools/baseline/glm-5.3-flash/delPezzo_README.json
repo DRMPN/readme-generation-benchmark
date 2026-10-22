@@ -1,0 +1,164 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 30896,
+    "tree_files": 26,
+    "tracked_files": 26,
+    "selected": [
+      {
+        "path": "pyproject.toml",
+        "tokens": 111,
+        "truncated": false
+      },
+      {
+        "path": "bibliography.rst",
+        "tokens": 641,
+        "truncated": false
+      },
+      {
+        "path": ".devcontainer/devcontainer.json",
+        "tokens": 254,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_Lubbes.py",
+        "tokens": 158,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_blowups.py",
+        "tokens": 248,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_contraction.py",
+        "tokens": 172,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg1.py",
+        "tokens": 377,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg2.py",
+        "tokens": 261,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg2_B2.py",
+        "tokens": 749,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg2_KimPark.py",
+        "tokens": 456,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg3.py",
+        "tokens": 486,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg4.py",
+        "tokens": 320,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_deg5.py",
+        "tokens": 90,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_finder.py",
+        "tokens": 181,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_surface.py",
+        "tokens": 392,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_various.py",
+        "tokens": 465,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_weak_deg6.py",
+        "tokens": 363,
+        "truncated": false
+      },
+      {
+        "path": "tests/tests.ipynb",
+        "tokens": 761,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/Lubbes_list.txt",
+        "tokens": 4323,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/Lubbes_parse.py",
+        "tokens": 548,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/__init__.py",
+        "tokens": 77,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/cone.py",
+        "tokens": 3324,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/cylinder.py",
+        "tokens": 7517,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/finder.py",
+        "tokens": 544,
+        "truncated": false
+      },
+      {
+        "path": "src/delPezzo/surface.py",
+        "tokens": 7603,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 30972,
+    "completion_tokens": 4776,
+    "total_tokens": 35748,
+    "cost": 0.002174093652,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002174093652,
+      "upstream_inference_prompt_cost": 0.001600973652,
+      "upstream_inference_completions_cost": 0.00057312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1772,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792608660-xIkWLCr4VWJ5x8tQLobZ"
+}

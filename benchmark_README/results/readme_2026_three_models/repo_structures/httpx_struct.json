@@ -1,0 +1,594 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "FUNDING.yml",
+        "type": "file"
+      },
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1-issue.md",
+            "type": "file"
+          },
+          {
+            "name": "config.yml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "type": "file"
+      },
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "publish.yml",
+            "type": "file"
+          },
+          {
+            "name": "test-suite.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.md",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "CNAME",
+        "type": "file"
+      },
+      {
+        "name": "advanced",
+        "type": "dir",
+        "children": [
+          {
+            "name": "authentication.md",
+            "type": "file"
+          },
+          {
+            "name": "clients.md",
+            "type": "file"
+          },
+          {
+            "name": "event-hooks.md",
+            "type": "file"
+          },
+          {
+            "name": "extensions.md",
+            "type": "file"
+          },
+          {
+            "name": "proxies.md",
+            "type": "file"
+          },
+          {
+            "name": "resource-limits.md",
+            "type": "file"
+          },
+          {
+            "name": "ssl.md",
+            "type": "file"
+          },
+          {
+            "name": "text-encodings.md",
+            "type": "file"
+          },
+          {
+            "name": "timeouts.md",
+            "type": "file"
+          },
+          {
+            "name": "transports.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "api.md",
+        "type": "file"
+      },
+      {
+        "name": "async.md",
+        "type": "file"
+      },
+      {
+        "name": "code_of_conduct.md",
+        "type": "file"
+      },
+      {
+        "name": "compatibility.md",
+        "type": "file"
+      },
+      {
+        "name": "contributing.md",
+        "type": "file"
+      },
+      {
+        "name": "css",
+        "type": "dir",
+        "children": [
+          {
+            "name": "custom.css",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "environment_variables.md",
+        "type": "file"
+      },
+      {
+        "name": "exceptions.md",
+        "type": "file"
+      },
+      {
+        "name": "http2.md",
+        "type": "file"
+      },
+      {
+        "name": "img",
+        "type": "dir",
+        "children": [
+          {
+            "name": "butterfly.png",
+            "type": "file"
+          },
+          {
+            "name": "gh-actions-fail-check.png",
+            "type": "file"
+          },
+          {
+            "name": "gh-actions-fail-test.png",
+            "type": "file"
+          },
+          {
+            "name": "gh-actions-fail.png",
+            "type": "file"
+          },
+          {
+            "name": "httpx-help.png",
+            "type": "file"
+          },
+          {
+            "name": "httpx-request.png",
+            "type": "file"
+          },
+          {
+            "name": "logo.jpg",
+            "type": "file"
+          },
+          {
+            "name": "rich-progress.gif",
+            "type": "file"
+          },
+          {
+            "name": "speakeasy.png",
+            "type": "file"
+          },
+          {
+            "name": "tqdm-progress.gif",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "index.md",
+        "type": "file"
+      },
+      {
+        "name": "logging.md",
+        "type": "file"
+      },
+      {
+        "name": "overrides",
+        "type": "dir",
+        "children": [
+          {
+            "name": "partials",
+            "type": "dir",
+            "children": [
+              {
+                "name": "nav.html",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "quickstart.md",
+        "type": "file"
+      },
+      {
+        "name": "third_party_packages.md",
+        "type": "file"
+      },
+      {
+        "name": "troubleshooting.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "httpx",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__version__.py",
+        "type": "file"
+      },
+      {
+        "name": "_api.py",
+        "type": "file"
+      },
+      {
+        "name": "_auth.py",
+        "type": "file"
+      },
+      {
+        "name": "_client.py",
+        "type": "file"
+      },
+      {
+        "name": "_config.py",
+        "type": "file"
+      },
+      {
+        "name": "_content.py",
+        "type": "file"
+      },
+      {
+        "name": "_decoders.py",
+        "type": "file"
+      },
+      {
+        "name": "_exceptions.py",
+        "type": "file"
+      },
+      {
+        "name": "_main.py",
+        "type": "file"
+      },
+      {
+        "name": "_models.py",
+        "type": "file"
+      },
+      {
+        "name": "_multipart.py",
+        "type": "file"
+      },
+      {
+        "name": "_status_codes.py",
+        "type": "file"
+      },
+      {
+        "name": "_transports",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "asgi.py",
+            "type": "file"
+          },
+          {
+            "name": "base.py",
+            "type": "file"
+          },
+          {
+            "name": "default.py",
+            "type": "file"
+          },
+          {
+            "name": "mock.py",
+            "type": "file"
+          },
+          {
+            "name": "wsgi.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "_types.py",
+        "type": "file"
+      },
+      {
+        "name": "_urlparse.py",
+        "type": "file"
+      },
+      {
+        "name": "_urls.py",
+        "type": "file"
+      },
+      {
+        "name": "_utils.py",
+        "type": "file"
+      },
+      {
+        "name": "py.typed",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "mkdocs.yml",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "build",
+        "type": "file"
+      },
+      {
+        "name": "check",
+        "type": "file"
+      },
+      {
+        "name": "clean",
+        "type": "file"
+      },
+      {
+        "name": "coverage",
+        "type": "file"
+      },
+      {
+        "name": "docs",
+        "type": "file"
+      },
+      {
+        "name": "install",
+        "type": "file"
+      },
+      {
+        "name": "lint",
+        "type": "file"
+      },
+      {
+        "name": "publish",
+        "type": "file"
+      },
+      {
+        "name": "sync-version",
+        "type": "file"
+      },
+      {
+        "name": "test",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "client",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_async_client.py",
+            "type": "file"
+          },
+          {
+            "name": "test_auth.py",
+            "type": "file"
+          },
+          {
+            "name": "test_client.py",
+            "type": "file"
+          },
+          {
+            "name": "test_cookies.py",
+            "type": "file"
+          },
+          {
+            "name": "test_event_hooks.py",
+            "type": "file"
+          },
+          {
+            "name": "test_headers.py",
+            "type": "file"
+          },
+          {
+            "name": "test_properties.py",
+            "type": "file"
+          },
+          {
+            "name": "test_proxies.py",
+            "type": "file"
+          },
+          {
+            "name": "test_queryparams.py",
+            "type": "file"
+          },
+          {
+            "name": "test_redirects.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "common.py",
+        "type": "file"
+      },
+      {
+        "name": "concurrency.py",
+        "type": "file"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file"
+      },
+      {
+        "name": "fixtures",
+        "type": "dir",
+        "children": [
+          {
+            "name": ".netrc",
+            "type": "file"
+          },
+          {
+            "name": ".netrc-nopassword",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_cookies.py",
+            "type": "file"
+          },
+          {
+            "name": "test_headers.py",
+            "type": "file"
+          },
+          {
+            "name": "test_queryparams.py",
+            "type": "file"
+          },
+          {
+            "name": "test_requests.py",
+            "type": "file"
+          },
+          {
+            "name": "test_responses.py",
+            "type": "file"
+          },
+          {
+            "name": "test_url.py",
+            "type": "file"
+          },
+          {
+            "name": "test_whatwg.py",
+            "type": "file"
+          },
+          {
+            "name": "whatwg.json",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_api.py",
+        "type": "file"
+      },
+      {
+        "name": "test_asgi.py",
+        "type": "file"
+      },
+      {
+        "name": "test_auth.py",
+        "type": "file"
+      },
+      {
+        "name": "test_config.py",
+        "type": "file"
+      },
+      {
+        "name": "test_content.py",
+        "type": "file"
+      },
+      {
+        "name": "test_decoders.py",
+        "type": "file"
+      },
+      {
+        "name": "test_exceptions.py",
+        "type": "file"
+      },
+      {
+        "name": "test_exported_members.py",
+        "type": "file"
+      },
+      {
+        "name": "test_main.py",
+        "type": "file"
+      },
+      {
+        "name": "test_multipart.py",
+        "type": "file"
+      },
+      {
+        "name": "test_status_codes.py",
+        "type": "file"
+      },
+      {
+        "name": "test_timeouts.py",
+        "type": "file"
+      },
+      {
+        "name": "test_utils.py",
+        "type": "file"
+      },
+      {
+        "name": "test_wsgi.py",
+        "type": "file"
+      }
+    ]
+  }
+]

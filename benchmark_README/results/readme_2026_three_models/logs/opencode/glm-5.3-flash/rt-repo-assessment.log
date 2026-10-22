@@ -1,0 +1,80 @@
+I've inspected the repository. Here's a summary of what I found, followed by the README.
+
+**Project:** `rt-repo-assessment` — a Python tool (v0.1.0, MIT licensed, by Ready Tensor, Inc.) that automatically assesses the quality of software repositories.
+
+**How it works** (from `src/main.py`):
+1. Downloads repos (zip for public, git clone for private) into `data/inputs/` — or scores a local project directory directly
+2. Extracts metadata (README, directory tree, dependency files, script lengths, secret files)
+3. Scores ~100 criteria defined in YAML across five categories: Repository Architecture, Documentation, Code Quality, Environment & Dependencies, and License & Legal
+4. Uses three scoring methods: deterministic Python logic (e.g., script length, secret detection, repo size), LLM-based metadata scoring (README/tree-level), and LLM-based per-file content scoring in parallel
+5. Aggregates per-file scores with AND/OR logic and reports per Essential/Professional/Elite tiers
+6. Writes `assessment.json`, `file_scores.json`, and `report.md` to `data/outputs/<repo>/`
+
+**Tech stack:** Python ≥3.12, uv, LangChain + OpenAI-compatible APIs (OpenAI or OpenRouter), pytest, mypy.
+
+Now writing the README:
+Let me verify the claims I made against the actual config files to ensure full accuracy:
+Verification complete — every claim in the README checks out against the source code:
+
+- **`config.json`** matches the documented fields exactly (`from_inputs_directory`, `project_name`, `urls`, `max_workers`)
+- **`paths.py`** confirms the `data/inputs/` and `data/outputs/<repo-name>/` structure
+- **`llm.py`** confirms the OpenRouter routing via `OPEN_ROUTER_API_KEY`
+- **`main.py`** confirms the 3-download-retry behavior, the three scoring stages (logic-based → metadata-based → content-based), and the three output files (`assessment.json`, `file_scores.json`, `report.md`)
+
+The README has been created at `README.md`. Summary of its contents:
+
+1. **Overview** — what the tool does (deterministic + LLM-based repository quality assessment)
+2. **How It Works** — the 4-stage pipeline (acquisition, metadata extraction, scoring, reporting)
+3. **Scoring Criteria** — table of the 5 YAML criteria files, the three scoring approaches, and the Essential/Professional/Elite tiers
+4. **Outputs** — the three result files with descriptions
+5. **Getting Started** — prerequisites, `make install`, API key setup, and `config.json` documentation with a real example from the repo
+6. **Project Structure** — annotated source tree
+7. **Key Libraries** — LangChain, GitPython, pypdf, pandas, pytest, mypy
+8. **Testing** and **License** (MIT, linked to LICENSE)
+
+No unsupported claims were included — everything is grounded in the actual code, config files, and Makefile.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m31 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .env.example 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/main.py 
+[0m→ [0mRead src/config/config.json 
+[0m→ [0mRead src/config/paths.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/config/tracked_files.yaml 
+[0m→ [0mRead src/utils/llm.py 
+[0m→ [0mRead src/config/logic_based_scoring.py 
+[0m→ [0mRead src/utils/project_validators.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/config/scoring/documentation_criteria.yaml 
+[0m→ [0mRead src/config/scoring/code_quality_criteria.yaml 
+[0m→ [0mRead src/config/scoring/structure_criteria.yaml 
+[0m→ [0mRead src/config/scoring/license_criteria.yaml 
+[0m→ [0mRead src/config/scoring/dependancies_criteria.yaml 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/generators.py 
+[0m→ [0mRead src/config/prompts.yaml 
+[0m→ [0mRead src/report.py 
+[0m→ [0mRead src/directory_scorer/content_based_scorer.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .python-version 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead src/utils/repository.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/config/config.json 
+[0m→ [0mRead src/config/paths.py 
+[0m→ [0mRead src/utils/llm.py 
+[0m→ [0mRead src/main.py 
+> readme-benchmark · z-ai/glm-5.3-flash

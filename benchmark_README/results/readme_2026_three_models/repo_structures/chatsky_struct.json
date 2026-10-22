@@ -1,0 +1,1594 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".env_file",
+    "type": "file"
+  },
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "type": "file"
+      },
+      {
+        "name": "dependabot.yml",
+        "type": "file"
+      },
+      {
+        "name": "process_github_events.py",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "build_and_publish_docs.yml",
+            "type": "file"
+          },
+          {
+            "name": "build_and_upload_release.yml",
+            "type": "file"
+          },
+          {
+            "name": "codestyle.yml",
+            "type": "file"
+          },
+          {
+            "name": "event_handler.yml",
+            "type": "file"
+          },
+          {
+            "name": "generate_version_switcher.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_coverage.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_full.yml",
+            "type": "file"
+          },
+          {
+            "name": "update_dashboard.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "chatsky",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "__rebuild_pydantic_models__.py",
+        "type": "file"
+      },
+      {
+        "name": "conditions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "service.py",
+            "type": "file"
+          },
+          {
+            "name": "slots.py",
+            "type": "file"
+          },
+          {
+            "name": "standard.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "superset_dashboard",
+            "type": "dir",
+            "children": [
+              {
+                "name": "charts",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Current_topic_slot_bar_chart_4.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Current_topic_time_series_bar_chart_2.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Flow_visit_ratio_monitor_13.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Node_Visits_7.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Node_counts_3.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Node_visit_ratio_monitor_8.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Node_visits_ratio_6.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Node_visits_sunburst_5.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Rating_slot_line_chart_1.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Requests_17.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Responses_16.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Service_load_users_9.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Table_14.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Terminal_labels_15.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Transition_counts_12.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Transition_layout_10.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "Transition_ratio_chord_11.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "dashboards",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "chatsky_statistics_dashboard_1.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "databases",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "chatsky_database.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "datasets",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "chatsky_database",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "chatsky_final_nodes.yaml",
+                        "type": "file"
+                      },
+                      {
+                        "name": "chatsky_node_stats.yaml",
+                        "type": "file"
+                      },
+                      {
+                        "name": "chatsky_stats.yaml",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "metadata.yaml",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "context_storages",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "database.py",
+            "type": "file"
+          },
+          {
+            "name": "file.py",
+            "type": "file"
+          },
+          {
+            "name": "memory.py",
+            "type": "file"
+          },
+          {
+            "name": "mongo.py",
+            "type": "file"
+          },
+          {
+            "name": "protocol.py",
+            "type": "file"
+          },
+          {
+            "name": "protocols.json",
+            "type": "file"
+          },
+          {
+            "name": "redis.py",
+            "type": "file"
+          },
+          {
+            "name": "sql.py",
+            "type": "file"
+          },
+          {
+            "name": "ydb.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "core",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "context.py",
+            "type": "file"
+          },
+          {
+            "name": "ctx_dict.py",
+            "type": "file"
+          },
+          {
+            "name": "ctx_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "message.py",
+            "type": "file"
+          },
+          {
+            "name": "node_label.py",
+            "type": "file"
+          },
+          {
+            "name": "pipeline.py",
+            "type": "file"
+          },
+          {
+            "name": "script.py",
+            "type": "file"
+          },
+          {
+            "name": "script_function.py",
+            "type": "file"
+          },
+          {
+            "name": "script_parsing.py",
+            "type": "file"
+          },
+          {
+            "name": "service",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "actor.py",
+                "type": "file"
+              },
+              {
+                "name": "component.py",
+                "type": "file"
+              },
+              {
+                "name": "extra.py",
+                "type": "file"
+              },
+              {
+                "name": "group.py",
+                "type": "file"
+              },
+              {
+                "name": "service.py",
+                "type": "file"
+              },
+              {
+                "name": "types.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "transition.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "destinations",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "standard.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "_langchain_imports.py",
+            "type": "file"
+          },
+          {
+            "name": "filters.py",
+            "type": "file"
+          },
+          {
+            "name": "langchain_context.py",
+            "type": "file"
+          },
+          {
+            "name": "llm_api.py",
+            "type": "file"
+          },
+          {
+            "name": "methods.py",
+            "type": "file"
+          },
+          {
+            "name": "prompt.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "messengers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "common",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "interface.py",
+                "type": "file"
+              },
+              {
+                "name": "types.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "console.py",
+            "type": "file"
+          },
+          {
+            "name": "telegram",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "abstract.py",
+                "type": "file"
+              },
+              {
+                "name": "interface.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "processing",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "slots.py",
+            "type": "file"
+          },
+          {
+            "name": "standard.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "responses",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "slots.py",
+            "type": "file"
+          },
+          {
+            "name": "standard.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "slots",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "slots.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "stats",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "__main__.py",
+            "type": "file"
+          },
+          {
+            "name": "cli.py",
+            "type": "file"
+          },
+          {
+            "name": "default_extractors.py",
+            "type": "file"
+          },
+          {
+            "name": "instrumentor.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "db_benchmark",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "basic_config.py",
+                "type": "file"
+              },
+              {
+                "name": "benchmark.py",
+                "type": "file"
+              },
+              {
+                "name": "report.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "decorations.py",
+            "type": "file"
+          },
+          {
+            "name": "devel",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "async_helpers.py",
+                "type": "file"
+              },
+              {
+                "name": "extra_field_helpers.py",
+                "type": "file"
+              },
+              {
+                "name": "json_serialization.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "docker",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "dockerfile_stats",
+                "type": "file"
+              },
+              {
+                "name": "entrypoint_stats.sh",
+                "type": "file"
+              },
+              {
+                "name": "superset_config_docker.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "logging.py",
+            "type": "file"
+          },
+          {
+            "name": "otel",
+            "type": "dir",
+            "children": [
+              {
+                "name": "otelcol-config-extras.yml",
+                "type": "file"
+              },
+              {
+                "name": "otelcol-config.yml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "testing",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "cleanup_db.py",
+                "type": "file"
+              },
+              {
+                "name": "common.py",
+                "type": "file"
+              },
+              {
+                "name": "toy_script.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "source",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "_static",
+            "type": "dir",
+            "children": [
+              {
+                "name": "css",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "custom.css",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "_templates",
+            "type": "dir",
+            "children": [
+              {
+                "name": "example-links.html",
+                "type": "file"
+              },
+              {
+                "name": "source-links.html",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "about_us.rst",
+            "type": "file"
+          },
+          {
+            "name": "community.rst",
+            "type": "file"
+          },
+          {
+            "name": "conf.py",
+            "type": "file"
+          },
+          {
+            "name": "development.rst",
+            "type": "file"
+          },
+          {
+            "name": "drawio_src",
+            "type": "dir",
+            "children": [
+              {
+                "name": "core",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "user_actor.drawio",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "examples.rst",
+            "type": "file"
+          },
+          {
+            "name": "get_started.rst",
+            "type": "file"
+          },
+          {
+            "name": "index.rst",
+            "type": "file"
+          },
+          {
+            "name": "reference.rst",
+            "type": "file"
+          },
+          {
+            "name": "setup.py",
+            "type": "file"
+          },
+          {
+            "name": "tutorials.rst",
+            "type": "file"
+          },
+          {
+            "name": "user_guides",
+            "type": "dir",
+            "children": [
+              {
+                "name": "basic_conceptions.rst",
+                "type": "file"
+              },
+              {
+                "name": "context_guide.rst",
+                "type": "file"
+              },
+              {
+                "name": "llm_integration.rst",
+                "type": "file"
+              },
+              {
+                "name": "optimization_guide.rst",
+                "type": "file"
+              },
+              {
+                "name": "pipeline_import.rst",
+                "type": "file"
+              },
+              {
+                "name": "slot_extraction.rst",
+                "type": "file"
+              },
+              {
+                "name": "superset_guide.rst",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "user_guides.rst",
+            "type": "file"
+          },
+          {
+            "name": "utils",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "custom_directives.py",
+                "type": "file"
+              },
+              {
+                "name": "generate_tutorials.py",
+                "type": "file"
+              },
+              {
+                "name": "link_misc_files.py",
+                "type": "file"
+              },
+              {
+                "name": "notebook.py",
+                "type": "file"
+              },
+              {
+                "name": "regenerate_apiref.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "clean.py",
+        "type": "file"
+      },
+      {
+        "name": "codestyle.py",
+        "type": "file"
+      },
+      {
+        "name": "doc.py",
+        "type": "file"
+      },
+      {
+        "name": "misc.py",
+        "type": "file"
+      },
+      {
+        "name": "patch_sphinx.py",
+        "type": "file"
+      },
+      {
+        "name": "switcher_gen.py",
+        "type": "file"
+      },
+      {
+        "name": "test.py",
+        "type": "file"
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file"
+      },
+      {
+        "name": "context_storages",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_dbs.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "core",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file"
+          },
+          {
+            "name": "script_parsing",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "custom",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "submodule",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__init__.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "submodule",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "file.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "custom_dir",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "__init__.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "module.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "pipeline.json",
+                "type": "file"
+              },
+              {
+                "name": "pipeline.yaml",
+                "type": "file"
+              },
+              {
+                "name": "test_script_parsing.py",
+                "type": "file"
+              },
+              {
+                "name": "wrong_type.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_actor.py",
+            "type": "file"
+          },
+          {
+            "name": "test_conditions.py",
+            "type": "file"
+          },
+          {
+            "name": "test_context.py",
+            "type": "file"
+          },
+          {
+            "name": "test_context_dict.py",
+            "type": "file"
+          },
+          {
+            "name": "test_destinations.py",
+            "type": "file"
+          },
+          {
+            "name": "test_message.py",
+            "type": "file"
+          },
+          {
+            "name": "test_node_label.py",
+            "type": "file"
+          },
+          {
+            "name": "test_processing.py",
+            "type": "file"
+          },
+          {
+            "name": "test_responses.py",
+            "type": "file"
+          },
+          {
+            "name": "test_script.py",
+            "type": "file"
+          },
+          {
+            "name": "test_script_function.py",
+            "type": "file"
+          },
+          {
+            "name": "test_transition.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_llm.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "messengers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "telegram",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "test_happy_paths.json",
+                "type": "file"
+              },
+              {
+                "name": "test_tutorials.py",
+                "type": "file"
+              },
+              {
+                "name": "utils.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pipeline",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file"
+          },
+          {
+            "name": "test_messenger_interface.py",
+            "type": "file"
+          },
+          {
+            "name": "test_service.py",
+            "type": "file"
+          },
+          {
+            "name": "test_update_ctx_misc.py",
+            "type": "file"
+          },
+          {
+            "name": "test_validation.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "slots",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file"
+          },
+          {
+            "name": "test_slot_functions.py",
+            "type": "file"
+          },
+          {
+            "name": "test_slot_manager.py",
+            "type": "file"
+          },
+          {
+            "name": "test_slot_partial_extraction.py",
+            "type": "file"
+          },
+          {
+            "name": "test_slot_types.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "stats",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conftest.py",
+            "type": "file"
+          },
+          {
+            "name": "test_defaults.py",
+            "type": "file"
+          },
+          {
+            "name": "test_instrumentation.py",
+            "type": "file"
+          },
+          {
+            "name": "test_main.py",
+            "type": "file"
+          },
+          {
+            "name": "test_tutorials.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_utils.py",
+        "type": "file"
+      },
+      {
+        "name": "tutorials",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_format.py",
+            "type": "file"
+          },
+          {
+            "name": "test_tutorials.py",
+            "type": "file"
+          },
+          {
+            "name": "test_utils.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "test_benchmark.py",
+            "type": "file"
+          },
+          {
+            "name": "test_serialization.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tutorials",
+    "type": "dir",
+    "children": [
+      {
+        "name": "context_storages",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1_basics.py",
+            "type": "file"
+          },
+          {
+            "name": "2_postgresql.py",
+            "type": "file"
+          },
+          {
+            "name": "3_mongodb.py",
+            "type": "file"
+          },
+          {
+            "name": "4_redis.py",
+            "type": "file"
+          },
+          {
+            "name": "5_mysql.py",
+            "type": "file"
+          },
+          {
+            "name": "6_sqlite.py",
+            "type": "file"
+          },
+          {
+            "name": "7_yandex_database.py",
+            "type": "file"
+          },
+          {
+            "name": "8_partial_updates.py",
+            "type": "file"
+          },
+          {
+            "name": "9_db_benchmarking.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1_basics.py",
+            "type": "file"
+          },
+          {
+            "name": "2_prompt_usage.py",
+            "type": "file"
+          },
+          {
+            "name": "3_filtering_history.py",
+            "type": "file"
+          },
+          {
+            "name": "4_structured_output.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "messengers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "telegram",
+            "type": "dir",
+            "children": [
+              {
+                "name": "1_basic.py",
+                "type": "file"
+              },
+              {
+                "name": "2_attachments.py",
+                "type": "file"
+              },
+              {
+                "name": "3_advanced.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "web_api_interface",
+            "type": "dir",
+            "children": [
+              {
+                "name": "1_fastapi.py",
+                "type": "file"
+              },
+              {
+                "name": "2_websocket_chat.py",
+                "type": "file"
+              },
+              {
+                "name": "3_load_testing_with_locust.py",
+                "type": "file"
+              },
+              {
+                "name": "4_streamlit_chat.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "script",
+        "type": "dir",
+        "children": [
+          {
+            "name": "core",
+            "type": "dir",
+            "children": [
+              {
+                "name": "1_basics.py",
+                "type": "file"
+              },
+              {
+                "name": "2_conditions.py",
+                "type": "file"
+              },
+              {
+                "name": "3_responses.py",
+                "type": "file"
+              },
+              {
+                "name": "4_transitions.py",
+                "type": "file"
+              },
+              {
+                "name": "5_global_local.py",
+                "type": "file"
+              },
+              {
+                "name": "6_context_serialization.py",
+                "type": "file"
+              },
+              {
+                "name": "7_pre_response_processing.py",
+                "type": "file"
+              },
+              {
+                "name": "8_misc.py",
+                "type": "file"
+              },
+              {
+                "name": "9_pre_transition_processing.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "responses",
+            "type": "dir",
+            "children": [
+              {
+                "name": "1_media.py",
+                "type": "file"
+              },
+              {
+                "name": "2_multi_message.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "service",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1_basics.py",
+            "type": "file"
+          },
+          {
+            "name": "2_advanced.py",
+            "type": "file"
+          },
+          {
+            "name": "3_groups.py",
+            "type": "file"
+          },
+          {
+            "name": "4_conditions_and_paths.py",
+            "type": "file"
+          },
+          {
+            "name": "5_extra_handlers.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "slots",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1_basic_example.py",
+            "type": "file"
+          },
+          {
+            "name": "2_partial_extraction.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "stats",
+        "type": "dir",
+        "children": [
+          {
+            "name": "1_extractor_functions.py",
+            "type": "file"
+          },
+          {
+            "name": "2_pipeline_integration.py",
+            "type": "file"
+          },
+          {
+            "name": "example_config.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "utils",
+    "type": "dir",
+    "children": [
+      {
+        "name": "db_benchmark",
+        "type": "dir",
+        "children": [
+          {
+            "name": "benchmark_dbs.py",
+            "type": "file"
+          },
+          {
+            "name": "benchmark_schema.json",
+            "type": "file"
+          },
+          {
+            "name": "benchmark_streamlit.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pipeline_yaml_import_example",
+        "type": "dir",
+        "children": [
+          {
+            "name": "custom_dir",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "rsp.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pipeline.py",
+            "type": "file"
+          },
+          {
+            "name": "pipeline.yaml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "stats",
+        "type": "dir",
+        "children": [
+          {
+            "name": "sample_data_provider.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_data_generators",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "telegram_tutorial_data.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

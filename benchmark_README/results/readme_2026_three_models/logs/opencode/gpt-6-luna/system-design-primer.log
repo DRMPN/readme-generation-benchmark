@@ -1,0 +1,42 @@
+I’ll inspect the repository’s files and existing project metadata, then write a README grounded only in what the code supports. I’ll limit changes to `README.md`.
+This checkout has no root README or build/test configuration. It does contain system-design case-study writeups, object-oriented design notebooks and Python examples, translation notes, and an EPUB script; I’m checking those remaining files so the README distinguishes what’s documented from what’s merely illustrative.
+Created `README.md` with an overview of the repository, links to its case studies and object-oriented exercises, notes on incomplete example code, EPUB-generation requirements, contribution guidance, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m132 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead TRANSLATIONS.md 
+[0m✱ [0mGlob "*.md" [90m18 matches[0m
+[0m→ [0mRead epub-metadata.yaml 
+[0m→ [0mRead generate-epub.sh 
+[0m✱ [0mGlob "solutions/**/*.md" [90m16 matches[0m
+[0m✱ [0mGlob "solutions/**/*" [90m86 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead solutions/system_design/twitter/README.md 
+[0m→ [0mRead solutions/system_design/web_crawler/README.md 
+[0m→ [0mRead solutions/system_design/scaling_aws/README.md 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead solutions/system_design/query_cache/README.md 
+[0m→ [0mRead solutions/system_design/sales_rank/README.md 
+[0m→ [0mRead solutions/system_design/social_graph/README.md 
+[0m→ [0mRead solutions/system_design/mint/README.md 
+[0m→ [0mRead solutions/system_design/pastebin/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead solutions/object_oriented_design/parking_lot/parking_lot.py 
+[0m→ [0mRead solutions/object_oriented_design/lru_cache/lru_cache.py 
+[0m→ [0mRead solutions/object_oriented_design/call_center/call_center.py 
+[0m→ [0mRead LICENSE.txt 
+[0m→ [0mRead .github 
+[0m→ [0mRead solutions/object_oriented_design/deck_of_cards/deck_of_cards.py 
+[0m→ [0mRead solutions/object_oriented_design/hash_table/hash_map.py 
+[0m→ [0mRead solutions/object_oriented_design/online_chat/online_chat.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+[0m✱ [0mGlob "README.md" [90m9 matches[0m
+> readme-benchmark · openai/gpt-6-luna

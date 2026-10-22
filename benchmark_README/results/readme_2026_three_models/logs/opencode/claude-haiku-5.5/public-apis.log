@@ -1,0 +1,40 @@
+I'll start by looking at the repository's structure and existing docs.
+No README exists yet. I'll read the contributing guide, the scripts, and the git history.
+The main API list isn't in the working tree. I'll check the git history, the tests, and the attributes file.
+The git log only shows a clone. I'll check whether the index tracks a README or other files I haven't seen.
+The repo is a partial snapshot of public-apis. It has the contribution guide, validation scripts, tests, and license, but not the API catalog itself. I'll write the README to describe what's actually here and not claim a catalog I can't see.
+I created `README.md` in the repository root. It starts with a level-one heading.
+
+The repository is missing its main file. There is no API catalog, so the README can't list any APIs. `.gitattributes` refers to `README.md` and `.github`, and `CONTRIBUTING.md` refers to a catalog and a CI build, but none of those are in this copy. The README says so at the top and only describes what's present: the contribution rules, the two validation scripts, the pinned dependencies, the tests, and the MIT license.
+
+I didn't run the scripts or tests, because I had no shell. The test command in the README (`cd scripts && python -m unittest discover -s tests`) is my inference from the imports, and the README says the repo doesn't state one.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90m10 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead scripts/validate/format.py 
+[0m→ [0mRead scripts/validate/links.py 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead scripts/github_pull_request.sh 
+[0m→ [0mRead scripts/requirements.txt 
+[0m⚙ [0mexecute {"code":"const out = await Promise.allSettled([\n  tools.opencode.list_mcp_resources({}),\n]);\nreturn \"skip\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+[0m→ [0mRead .gitattributes 
+[0m→ [0mRead scripts/tests/test_validate_format.py [90m[limit=60][0m
+[0m→ [0mRead scripts/tests/test_validate_links.py [90m[limit=40][0m
+[0m✱ [0mGrep "." [90min .git/logs/HEAD · 1 match[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead scripts/tests/test_validate_format.py [90m[offset=60, limit=200][0m
+[0m→ [0mRead scripts/tests/test_validate_links.py [90m[offset=40, limit=200][0m
+[0m✱ [0mGrep "README|\.github|\.travis|build/" [90min .git/index · 0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

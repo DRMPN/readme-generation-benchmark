@@ -1,0 +1,93 @@
+I'll start by looking at the repository layout and existing files.
+This is a Python project with no existing README. I'll read the core files next.
+Code Mode can't read local files, so I'll use the read tool directly.
+The entry point is clear. Next I'll read the scoring, LLM, repository, and report modules to see how they work.
+Next I'll read the remaining modules, the scoring criteria, and the test setup.
+Still unread: the criteria YAMLs and the package `__init__` files. I'll check those, and whether `tiktoken` and `requests` appear in the lockfile, since the code imports them but `pyproject.toml` doesn't declare them.
+I have enough to write an accurate README. The repo has no existing README, and I'll document only what the code and config show.
+I wrote one model-name sentence that's muddled. `main.py` uses `gpt-4o-mini` for every LLM call, so I'll correct it.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+The README is based on the code and config files, and it covers:
+
+- **What the tool does:** it scores a repository against YAML-defined criteria, mixing Python checks with LLM scoring, and writes `assessment.json`, `file_scores.json`, and `report.md`.
+- **Setup and usage:** `make install`, the `.env` API key options, the `config.json` settings, and `uv run python src/main.py`.
+- **Output layout, criteria, project structure, testing, dependencies, limitations, and license.**
+
+Things to know:
+
+- **I did not run the tool.** The usage instructions are based on reading `src/main.py` and the Makefile. I did not run the pipeline or the test suite.
+- **Test coverage is narrow.** The only test file covers the file-presence helpers. The README says this.
+- **Some imports are not declared.** `tiktoken`, `requests`, and `pydantic` are imported by the code but are not listed in `pyproject.toml`. They appear in `uv.lock`, and the README notes this.
+- **Some behavior is unverified.** Whether `gpt-4o-mini` works through the OpenRouter endpoint depends on the provider, so the README doesn't claim it does.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.worktree_list(),\n]);\nr"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "*" [90min . · 36 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const files = [\"pyproject.toml\",\"Makefile\",\".env.example\",\".python-version\",\"pytest.ini\",\".gitignore\",\"data/outputs/.gitignore\",\"data/inputs/.gitignore\",\"src/main.py\",\"src/config/config.json\",\"src/config/tracked_files.yaml\",\"src/config/paths.py\",\"LICENSE\"];\nconst out = {};\nawait Promise.all(files.map(async f => { out[f] = await tools.opencode ? null : null; }));\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead .env.example 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead src/main.py 
+[0m→ [0mRead src/config/config.json 
+[0m→ [0mRead src/config/paths.py 
+[0m→ [0mRead data/outputs/.gitignore 
+[0m→ [0mRead data/inputs/.gitignore 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/generators.py 
+[0m→ [0mRead src/utils/llm.py 
+[0m→ [0mRead src/utils/repository.py 
+[0m→ [0mRead src/report.py 
+[0m→ [0mRead tests/test_project_validators.py 
+[0m→ [0mRead src/config/tracked_files.yaml 
+[0m→ [0mRead src/config/logic_based_scoring.py 
+[0m→ [0mRead src/config/prompts.yaml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/output_parsers.py 
+[0m→ [0mRead src/directory_scorer/content_based_scorer.py 
+[0m→ [0mRead src/directory_scorer/tree.py 
+[0m→ [0mRead .python-version 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead tests/conftest.py 
+[0m→ [0mRead src/logger.py 
+[0m→ [0mRead src/utils/project_validators.py 
+[0m→ [0mRead src/utils/general.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead src/utils/__init__.py 
+[0m→ [0mRead src/directory_scorer/__init__.py 
+[0m→ [0mRead src/config/__init__.py 
+[0m→ [0mRead src/config/scoring/structure_criteria.yaml 
+[0m→ [0mRead src/config/scoring/documentation_criteria.yaml 
+[0m→ [0mRead src/config/scoring/license_criteria.yaml 
+[0m→ [0mRead src/config/scoring/code_quality_criteria.yaml 
+[0m→ [0mRead src/config/scoring/dependancies_criteria.yaml 
+[0m✱ [0mGrep "name = "(tiktoken|requests|docx2txt|pydantic)"" [90min uv.lock · 14 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -53,9 +53,9 @@
+ # Or you can use OpenRouter key
+ OPEN_ROUTER_API_KEY=...
+ ```
+ 
+-If `OPEN_ROUTER_API_KEY` is set, `src/utils/llm.py` sends requests to `https://openrouter.ai/api/v1`. Otherwise, it uses the default OpenAI endpoint. The scoring code uses the model identifiers `gpt-4o-mini` and `gpt-4o-mini`/`gpt-4o` as defined in `src/utils/llm.py`.
++If `OPEN_ROUTER_API_KEY` is set, `src/utils/llm.py` sends requests to `https://openrouter.ai/api/v1`. Otherwise, it uses the default OpenAI endpoint. The scoring pipeline in `src/main.py` and `src/directory_scorer/content_based_scorer.py` uses the `gpt-4o-mini` model (`GPT_4O_MINI` in `src/utils/llm.py`).
+ 
+ ### Run settings
+ 
+ Runtime settings are in `src/config/config.json`:
+
+> readme-benchmark · anthropic/claude-haiku-5.5

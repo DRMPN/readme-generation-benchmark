@@ -1,0 +1,60 @@
+Created `README.md` in the current directory. It documents the project, installation caveats, inference demos, training workflow, dataset expectations, and licensing notes. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "*" [90m71 matches[0m
+[0m✱ [0mGlob "**/*" [90m71 matches[0m
+[0m✱ [0mGrep "README" [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m→ [0mRead demo_cli.py 
+[0m→ [0mRead demo_toolbox.py 
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead utils/default_models.py 
+[0m→ [0mRead samples/README.md 
+[0m→ [0mRead samples/VCTK.txt 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min requirements.txt · 16 matches[0m
+[0m→ [0mRead encoder_preprocess.py 
+[0m→ [0mRead synthesizer_preprocess_audio.py 
+[0m→ [0mRead synthesizer_preprocess_embeds.py 
+[0m→ [0mRead vocoder_preprocess.py 
+[0m→ [0mRead encoder_train.py 
+[0m→ [0mRead synthesizer_train.py 
+[0m→ [0mRead vocoder_train.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead toolbox/__init__.py 
+[0m→ [0mRead encoder/params_model.py 
+[0m→ [0mRead synthesizer/hparams.py 
+[0m→ [0mRead vocoder/hparams.py 
+[0m→ [0mRead encoder/inference.py 
+[0m→ [0mRead synthesizer/inference.py 
+[0m→ [0mRead toolbox/ui.py [90m[limit=130][0m
+[0m→ [0mRead vocoder/inference.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead encoder/preprocess.py [90m[limit=240][0m
+[0m→ [0mRead synthesizer/preprocess.py 
+[0m✗ [0mGrep "*.pt|saved_models|encoder.pt|synthesizer.pt|vocoder.pt" failed
+[91m[1mError: [0mInvalid regex pattern: rg: regex parse error:
+    (?:*.pt|saved_models|encoder.pt|synthesizer.pt|vocoder.pt)
+       ^
+error: repetition operator missing expression
+[0m→ [0mRead vocoder/train.py [90m[limit=160][0m
+[0m→ [0mRead vocoder/LICENSE.txt 
+[0m→ [0mRead synthesizer/LICENSE.txt 
+[0m→ [0mRead encoder/params_data.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "^import torch|^from torch" [90min . · 36 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "\.pt|model_dir" [90min encoder/train.py · 5 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "\.pt|model_dir" [90min synthesizer/train.py · 8 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+[0m✱ [0mGlob "README.md" [90m2 matches[0m
+> readme-benchmark · openai/gpt-6-luna

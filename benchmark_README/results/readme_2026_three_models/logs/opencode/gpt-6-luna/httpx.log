@@ -1,0 +1,37 @@
+I’ll inspect the repository’s source, configuration, and tests, then write a README grounded only in what the project actually supports. I’ll limit changes to `README.md`.
+The repository is the Python HTTPX client, and its docs/config establish the supported Python version, sync/async APIs, protocol options, transports, and install extras. I’m using those as the source of truth and will keep the README focused on setup, common usage, key behavior, and links to the detailed docs.
+Created `README.md` with installation instructions, sync and async examples, supported features and optional extras, CLI usage, documentation links, development commands, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m113 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+[0m✱ [0mGrep "^" [90min . · 0 matches[0m
+[0m✱ [0mGrep "^" [90min . · 0 matches[0m
+[0m✱ [0mGrep "^" [90min . · 120 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/index.md [90m[limit=220][0m
+[0m→ [0mRead docs/async.md [90m[limit=220][0m
+[0m→ [0mRead docs/quickstart.md [90m[limit=260][0m
+[0m→ [0mRead pyproject.toml [90m[limit=170][0m
+[0m→ [0mRead CHANGELOG.md [90m[limit=100][0m
+[0m→ [0mRead LICENSE.md [90m[limit=60][0m
+[0m→ [0mRead httpx/__init__.py [90m[limit=180][0m
+[0m→ [0mRead httpx/_main.py [90m[limit=220][0m
+[0m→ [0mRead docs/compatibility.md [90m[limit=160][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead scripts/check [90m[limit=100][0m
+[0m→ [0mRead scripts/test [90m[limit=100][0m
+[0m→ [0mRead docs/contributing.md [90m[limit=180][0m
+[0m→ [0mRead httpx/_api.py [90m[limit=200][0m
+[0m→ [0mRead docs/http2.md [90m[limit=120][0m
+[0m→ [0mRead scripts/lint [90m[limit=100][0m
+[0m→ [0mRead docs/advanced/clients.md [90m[limit=140][0m
+[0m→ [0mRead docs/advanced/transports.md [90m[limit=130][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md [90m[limit=200][0m
+> readme-benchmark · openai/gpt-6-luna

@@ -1,0 +1,75 @@
+I'll start by looking at the repository layout and any existing docs.
+That call was a mistake: the `execute` runtime only exposes OpenCode management tools, so I'll use the file tools directly.
+The listing is truncated at 300 entries, so I'll check for hidden files and read the key sources.
+`requirements.txt` was flagged as binary, so I'll grep it. I'll also read the dataset list, preprocessing scripts, and training entry points.
+Most of the entry points are clear now. Next I'll check the audio and model parameters, the GUI's model options, the preprocessing dataset handling, and the ignore rules.
+I still need the concrete audio parameters and the synthesizer hyperparameters to document accurately.
+I have enough detail to write an accurate README. Writing it now.
+The README is written. One line overstates what the code supports: not every inference entry point has `--cpu` (for example, `synthesizer_preprocess_embeds.py` does not). I'll correct it.
+I wrote `README.md` in the repository root. It starts with a level-one heading and only describes behavior I confirmed in the code.
+
+It covers:
+- **What the project is:** an SV2TTS voice-cloning pipeline with a speaker encoder, a Tacotron-style synthesizer, and a WaveRNN-style vocoder (Griffin-Lim is the toolbox's non-neural fallback).
+- **Requirements:** the pinned packages from `requirements.txt`, plus a note that PyTorch is used but not listed there, so it must be installed separately.
+- **Pretrained models:** the three default files, their sizes, and where the code downloads them.
+- **Usage:** the toolbox and CLI demo, with their flags and the dataset layouts the toolbox recognizes.
+- **Training:** the required order (encoder, then synthesizer, then vocoder), with each script's arguments and defaults.
+- **Repository layout** and **license**: MIT, plus the separate terms for the audio in `samples/`.
+
+I did not state a Python version or a PyTorch version because the repository doesn't pin either. The README also doesn't claim anything about output quality or benchmarks, since the repo doesn't document any.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 71 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m✱ [0mGlob "{.*,*.md,*.txt,*.cfg,*.toml,*.yml,*.yaml,*.sh}" [90m8 matches[0m
+[0m→ [0mRead demo_cli.py 
+[0m→ [0mRead demo_toolbox.py 
+[0m→ [0mRead LICENSE.md [90m[limit=15][0m
+[0m→ [0mRead utils/default_models.py 
+[0m→ [0mRead samples/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "." [90min requirements.txt · 16 matches[0m
+[0m→ [0mRead encoder_preprocess.py 
+[0m→ [0mRead toolbox/__init__.py 
+[0m→ [0mRead synthesizer_preprocess_audio.py 
+[0m→ [0mRead synthesizer_preprocess_embeds.py 
+[0m→ [0mRead vocoder_preprocess.py 
+[0m→ [0mRead encoder_train.py 
+[0m→ [0mRead synthesizer_train.py 
+[0m→ [0mRead vocoder_train.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "saved_models|Griffin|default|vocoder|encoder|synthesizer|Visdom|visdom" [90min toolbox/ui.py · 34 matches[0m
+[0m→ [0mRead .gitignore 
+[0m✱ [0mGrep "sample_rate|sampling_rate|hop_size|num_mels|speaker_embed|model_hidden_size|model_embedding_size|partials_n_frames|mode=|bits|rnn_dims|voc_mode" [90min . · 80 matches[0m
+[0m✱ [0mGrep "def preprocess_|def create_embeddings|def run_synthesis|def train\(" [90min . · 11 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead encoder/inference.py [90m[limit=40][0m
+[0m✱ [0mGrep "sample_rate\s*=|sampling_rate\s*=|hop_size\s*=|num_mels\s*=|speaker_embedding_size\s*=|model_embedding_size\s*=|model_hidden_size\s*=|partials_n_frames\s*=|utterances_per_speaker|speakers_per_batch|rnn_dims\s*=|voc_mode\s*=|tacotron|encoder_dims|num_mels|fmax|n_fft\s*=|win_size\s*=|frame_shift" [90min . · 60 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -15,9 +15,9 @@
+ - Python with the packages listed in `requirements.txt`:
+   `inflect==5.3.0`, `librosa==0.8.1`, `matplotlib==3.5.1`, `numpy==1.20.3`, `Pillow==8.4.0`, `PyQt5==5.15.6`, `scikit-learn==1.0.2`, `scipy==1.7.3`, `sounddevice==0.4.3`, `SoundFile==0.10.3.post1`, `tqdm==4.62.3`, `umap-learn==0.5.2`, `Unidecode==1.3.2`, `urllib3==1.26.7`, `visdom==0.1.8.9`, `webrtcvad==2.0.10`
+ - PyTorch. It is used throughout the code but is **not** listed in `requirements.txt`, so install it separately. No version is pinned in the repository.
+ - `webrtcvad` is needed for silence trimming during encoder preprocessing (use `--no_trim` to skip it) and for the toolbox's "Enhance vocoder output" option, which is disabled when it is not importable.
+-- A GPU is optional. Every entry point that runs inference has a `--cpu` flag.
++- A GPU is optional. The toolbox, the CLI demo, and `vocoder_preprocess.py` accept a `--cpu` flag.
+ 
+ Install the requirements:
+ 
+ ```bash
+
+> readme-benchmark · anthropic/claude-haiku-5.5

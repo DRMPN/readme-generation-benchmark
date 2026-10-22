@@ -1,0 +1,150 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".readthedocs.yml",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "benchmark_examples.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "examples.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "heuristic_example.ipynb",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "ride_pfa",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "benchmark.py",
+        "type": "file"
+      },
+      {
+        "name": "centroid_graph",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "centroids_graph_builder.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "clustering",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "clustering.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "drawer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "folium_drawer.py",
+            "type": "file"
+          },
+          {
+            "name": "matplotlib_drawer.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "exceptions.py",
+        "type": "file"
+      },
+      {
+        "name": "graph_osm_loader.py",
+        "type": "file"
+      },
+      {
+        "name": "heuristics.py",
+        "type": "file"
+      },
+      {
+        "name": "path_finding",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "advenced_pfa.py",
+            "type": "file"
+          },
+          {
+            "name": "dijkstra_pfa.py",
+            "type": "file"
+          },
+          {
+            "name": "excraction_pfa.py",
+            "type": "file"
+          },
+          {
+            "name": "heuristic_pfa.py",
+            "type": "file"
+          },
+          {
+            "name": "pfa.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  }
+]

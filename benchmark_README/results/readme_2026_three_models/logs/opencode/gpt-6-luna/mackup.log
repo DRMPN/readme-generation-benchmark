@@ -1,0 +1,43 @@
+I found the project metadata, CLI behavior, and detailed configuration guides. I’m writing the root README from those sources, including the important file-replacement/symlink behavior and linking to the deeper docs rather than guessing a static supported-app count.
+Created `README.md` in the current directory. It covers installation, quick start, commands and options, storage and application configuration, custom profiles, development, and links to the detailed guides. No other files were created.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m200 matches[0m
+[0m✱ [0mGrep "README" [90min . · 5 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead INSTALL.md 
+[0m→ [0mRead doc/README.md 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead doc/develop.md 
+[0m→ [0mRead mackup/config.py 
+[0m→ [0mRead mackup/main.py 
+[0m→ [0mRead doc/configuration_merge_guide.md 
+[0m→ [0mRead mackup/mackup.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead mackup/application.py 
+[0m→ [0mRead mackup/constants.py 
+[0m→ [0mRead mackup/utils.py [90m[limit=270][0m
+[0m→ [0mRead LICENSE [90m[limit=25][0m
+[0m→ [0mRead doc/.mackup.cfg 
+[0m→ [0mRead snap/snapcraft.yaml 
+[0m→ [0mRead tests/README.md 
+[0m→ [0mRead .github/CONTRIBUTING.md [90m[limit=80][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "can_file_be_synced|PLATFORM_|xdg_configuration_files" [90min mackup · 11 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead mackup/appsdb.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .markdownlint.yaml 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep ".{81}" [90min README.md · 2 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

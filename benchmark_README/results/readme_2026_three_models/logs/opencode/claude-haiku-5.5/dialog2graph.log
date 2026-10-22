@@ -1,0 +1,126 @@
+I'll start by looking at the repository layout and existing docs.
+The package's core pieces are still unread. I'll look at the pipelines, config, docs, and CI next.
+Next I'll read the CLI command implementations, the pipeline entry points, and the test scripts.
+Now the config loader, the pipeline base class, and the environment variables the code reads.
+Next, the three graph pipelines, the topic-generation pipeline, and the example data format.
+Next: the input format parser, the test CLI config, and the sample dialog layout.
+The CLI commands and config format are clear now. Last, the Python API usage guide, license, and CI matrix.
+I have enough to write an accurate README. One thing I noticed: `gen-data` appears broken as written, since `generate_data.py` calls `TopicGenerationPipeline.invoke(topic)` without the required `output_path` argument. I'll document that as a known issue rather than present the command as working.
+The README is written. Reviewing it against the code, I found two errors to fix: the Python example passes a `str` path, but the parser only accepts `PosixPath` for files, and I referred to a nonexistent `dialog2graph/docs` directory.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading as requested.
+
+I checked the content against the source code, the CLI command definitions, the CI workflows, `pyproject.toml`, and the docs. The README covers:
+
+- What the project does, and the three graph pipelines plus topic generation.
+- Requirements and installation (Python 3.10–3.12, Poetry 1.8.4).
+- Configuration: the `.env` variables the code reads and the model YAML format that `ModelStorage.load()` expects, with the default model keys for each pipeline.
+- Input data formats for dialogs and graphs.
+- CLI commands and their options, and a Python API example.
+- Testing, linting, and CI.
+- The MIT license.
+
+Two things to know:
+
+- **`gen-data` appears broken.** `generate_data.py` calls `TopicGenerationPipeline.invoke(topic)` without the required `output_path` argument, and it runs the pipeline twice. I documented this under "Known issues" rather than presenting the command as working.
+- **Some source material is inconsistent, so I didn't copy it.** The `examples/cli_usage/cfg.yml` uses a top-level `models:` key that `ModelStorage.load()` does not read. The `tests/cli/cfg.yml` uses `d2g_llm_*` keys, while the pipelines default to `three_stages_llm_*`. The README documents the format the code actually reads, and I pointed out the example file's layout difference.
+
+I also corrected a typo from `getting_started.rst`, which says `git https://...` and should be `git clone https://...`.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m300 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead dialog2graph/README.md 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead docs/source/getting_started.rst 
+[0m→ [0mRead dialog2graph/__init__.py 
+[0m→ [0mRead dialog2graph/cli/main.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/source/research.rst 
+[0m→ [0mRead docs/source/userguides/cli_usage.rst 
+[0m→ [0mRead examples/cli_usage/cfg.yml 
+[0m→ [0mRead docs/source/index.rst 
+[0m✱ [0mGlob "dialog2graph/**/*.py" [90m79 matches[0m
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead dialog2graph/cli/commands/generate_data.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_light.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_llm.py 
+[0m→ [0mRead scripts/test.py 
+[0m→ [0mRead scripts/codestyle.py 
+[0m→ [0mRead dialog2graph/cli/commands/generate_graph_extender.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead dialog2graph/pipelines/model_storage.py 
+[0m→ [0mRead dialog2graph/pipelines/core/pipeline.py 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead prompt_cache/docker-compose.yml 
+[0m✱ [0mGrep "getenv|environ|os\.environ|OPENAI|OPENROUTER|API_KEY|SQLALCHEMY|HF_|HUGGING|LANGSMITH|DATABASE" [90min dialog2graph · 26 matches[0m
+[0m✱ [0mGrep "." [90min .github · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead examples/example_data.json [90m[limit=80][0m
+[0m→ [0mRead dialog2graph/pipelines/d2g_light/pipeline.py 
+[0m→ [0mRead dialog2graph/pipelines/d2g_extender/pipeline.py 
+[0m→ [0mRead dialog2graph/pipelines/d2g_llm/pipeline.py 
+[0m→ [0mRead dialog2graph/pipelines/topic_generation/pipeline.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tests/cli/cfg.yml 
+[0m→ [0mRead tests/cli/test_cli_d2g.py 
+[0m→ [0mRead dialog2graph/pipelines/helpers/parse_data.py 
+[0m→ [0mRead dialog2graph/utils/prompt_caching.py [90m[limit=140][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead .github/workflows/test_release.yml 
+[0m→ [0mRead docs/source/userguides/basic_usage.rst 
+[0m→ [0mRead docs/source/userguides/generate_graphs.rst 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -157,17 +157,19 @@
+ 
+ The following example runs the LLM pipeline on a dialog file:
+ 
+ ```python
++from pathlib import Path
++
+ from dialog2graph.pipelines.model_storage import ModelStorage
+ from dialog2graph.pipelines.d2g_llm.pipeline import D2GLLMPipeline
+ from dialog2graph.pipelines.helpers.parse_data import PipelineRawDataType
+ 
+ ms = ModelStorage()
+ ms.load("cfg.yml")
+ 
+ pipeline = D2GLLMPipeline("d2g_llm", ms)
+-raw_data = PipelineRawDataType(dialogs="dialogs.json", true_graph=None)
++raw_data = PipelineRawDataType(dialogs=Path("dialogs.json"), true_graph=None)
+ result, report = pipeline.invoke(raw_data, enable_evals=False)
+ 
+ print(result.graph_dict["nodes"])
+ print(result.graph_dict["edges"])
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -175,9 +175,9 @@
+ print(result.graph_dict["edges"])
+ print(report)
+ ```
+ 
+-The `dialog2graph/docs` user guides show further examples with `Graph`, `Dialog`, sampling with `RecursiveDialogSampler`, and the extender and augmentation workflows. Those guides are written as Sphinx pages under `docs/source/userguides/`.
++The Sphinx user guides show further examples with `Graph`, `Dialog`, sampling with `RecursiveDialogSampler`, and the extender and augmentation workflows. Those guides are written as Sphinx pages under `docs/source/userguides/`.
+ 
+ ## Data
+ 
+ The user guides reference a generated dataset of 402 dialog graphs on various topics, hosted on Hugging Face at [`DeepPavlov/d2g_generated`](https://huggingface.co/datasets/DeepPavlov/d2g_generated). The data collections are described in `docs/source/research/data_collections.rst`. The repository also contains sample data in `examples/` and `tests/`.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

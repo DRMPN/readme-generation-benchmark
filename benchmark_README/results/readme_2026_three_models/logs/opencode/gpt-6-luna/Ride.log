@@ -1,0 +1,42 @@
+I found a Python package for weighted road-graph path finding, including clustering-based approaches, OSM graph loading, visualization, and benchmark helpers. I’m documenting the APIs and usage patterns present in the source and notebooks, without adding performance or correctness claims the repository doesn’t establish.
+Created `README.md` in the current directory. It starts with a level-one heading and documents the package’s APIs, installation, examples, and license based on the repository contents. No other files were created or modified.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m47 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead ride_pfa/__init__.py 
+[0m→ [0mRead ride_pfa/path_finding/pfa.py 
+[0m→ [0mRead ride_pfa/heuristics.py 
+[0m→ [0mRead ride_pfa/graph_osm_loader.py 
+[0m→ [0mRead ride_pfa/path_finding/heuristic_pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/excraction_pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/advenced_pfa.py 
+[0m→ [0mRead ride_pfa/path_finding/dijkstra_pfa.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead ride_pfa/utils.py 
+[0m→ [0mRead ride_pfa/clustering/clustering.py 
+[0m→ [0mRead ride_pfa/centroid_graph/centroids_graph_builder.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead ride_pfa/benchmark.py 
+[0m→ [0mRead ride_pfa/exceptions.py 
+[0m→ [0mRead ride_pfa/path_finding/__init__.py 
+[0m→ [0mRead ride_pfa/clustering/__init__.py 
+[0m→ [0mRead examples/examples.ipynb [90m[limit=80][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead examples/benchmark_examples.ipynb [90m[limit=100][0m
+[0m→ [0mRead examples/heuristic_example.ipynb [90m[limit=120][0m
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead .readthedocs.yml 
+[0m→ [0mRead ride_pfa/drawer/__init__.py 
+[0m→ [0mRead ride_pfa/drawer/folium_drawer.py 
+[0m→ [0mRead ride_pfa/drawer/matplotlib_drawer.py 
+[0m→ [0mRead examples/examples.ipynb [90m[offset=70, limit=160][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

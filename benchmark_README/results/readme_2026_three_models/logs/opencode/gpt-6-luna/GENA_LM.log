@@ -1,0 +1,51 @@
+The repository is a DNA-language-model codebase with custom BERT/RMT implementations, tokenizer and genome-corpus utilities, and downstream-task examples. I’m documenting those separately from pretrained weights and datasets, which are not included as a complete local training bundle.
+Created `README.md` in the repository root. It documents the project structure, setup and dependency caveats, model loading, corpus and tokenizer utilities, downstream-task examples, and licensing. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m145 matches[0m
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead downstream_tasks/DeepSea/README.md 
+[0m→ [0mRead downstream_tasks/promoter_prediction/README.md 
+[0m→ [0mRead downstream_tasks/SpliceAI/README.md 
+[0m→ [0mRead downstream_tasks/enformer/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead src/gena_lm/__init__.py 
+[0m→ [0mRead src/gena_lm/modeling_bert.py 
+[0m→ [0mRead src/gena_lm/modeling_rmt.py 
+[0m→ [0mRead data/download_human.sh 
+[0m→ [0mRead data/download_data.sh 
+[0m→ [0mRead src/gena_lm/utils.py 
+[0m→ [0mRead data/yeasts/ReadMe.md 
+[0m→ [0mRead data/athaliana/ReadMe.md 
+[0m→ [0mRead data/fly/ReadMe.md 
+[0m→ [0mRead src/gena_lm/tokenizers/tokenize_genomes.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead src/gena_lm/genome_tools/README.md 
+[0m→ [0mRead src/gena_lm/genome_tools/create_corpus.py [90m[limit=240][0m
+[0m→ [0mRead src/gena_lm/genome_tools/create_allele_corpus.py [90m[limit=180][0m
+[0m→ [0mRead notebooks/GENA_sequence_classification_example.ipynb [90m[limit=80][0m
+[0m✱ [0mGrep "https?://|GENA-LM|GENA-LM" [90m40 matches[0m
+[0m→ [0mRead notebooks/gena_enformer_usage.ipynb [90m[limit=80][0m
+[0m→ [0mRead data/configs/L12-H768-A12-V32k-preln.json 
+[0m→ [0mRead src/gena_lm/genome_tools/create_multigenome_corpus.sh 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "huggingface.co/AIRI-Institute|Pre-trained GENA-LM model|gena-lm-" [90min notebooks/GENA_sequence_classification_example.ipynb · 12 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead notebooks/GENA_sequence_classification_example.ipynb [90m[offset=4810, limit=280][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

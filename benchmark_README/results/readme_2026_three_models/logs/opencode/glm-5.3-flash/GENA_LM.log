@@ -1,0 +1,160 @@
+I've now reviewed the repository thoroughly. It's the GENA-LM project — DNA language models (BERT/BigBird-based) from AIRI, with model code, pre-training data tooling, downstream fine-tuning pipelines, notebooks, and supplementary manuscript tables. Writing the README now.
+Now let me fix two details I want to be precise about — the Colab link and the RMT backprop description.
+The README.md is complete and verified. Summary of what was done:
+
+## Work performed
+
+1. **Inspected the repository** — `src/gena_lm/` (model code, tokenizers, genome_tools), `data/` (download scripts, configs, pre-trained tokenizers), `downstream_tasks/` (8 task pipelines with their own READMEs), `notebooks/`, `manuscript_data/`, `setup.cfg`, `requirements.txt`, `LICENSE`.
+
+2. **Wrote `/tmp/GENA_LM-lg92uc_4/README.md`** (only file created), starting with `# GENA-LM` and containing:
+   - **Overview** — DNA language models (BERT/BigBird-based) from AIRI, with a pointer to the Hugging Face Hub (links as referenced in the repo's own notebooks).
+   - **Pre-trained models table** — transcribed directly from `manuscript_data/Suplementary_Table_2.csv` (8 public `gena-lm-*` models with parameters, architecture, positional info, sequence length, pre-training task, and dataset), plus notes on tokenizer, sizes, and LayerNorm variants.
+   - **Installation** — Python >= 3.6, `pip install -r requirements.txt` with the exact pins, `pip install .`, and caveats (DeepSpeed for sparse-attention configs; `lm_experiments_tools`/`horovod` used by downstream scripts but not in `requirements.txt`).
+   - **Usage** — loading snippets copied from the example notebooks (`AutoModel` with `trust_remote_code=True`, `BertForSequenceClassification` with `num_labels=2`), and the uppercase-DNA input requirement.
+   - **Repository structure** — annotated tree of `data/`, `downstream_tasks/`, `manuscript_data/`, `notebooks/`, `src/gena_lm/`.
+   - **Model code** — what `modeling_bert.py` extends (pre-LN, last-layer-norm, RoPE, DeepSpeed sparse attention) and what `modeling_rmt.py` provides (the three RMT wrapper classes, segment sizing, `bptt_depth` behavior).
+   - **Pre-training data preparation** — human download scripts (T2T-CHM13 v2.0 / GRCh38.p13), species scripts (yeasts PRJEB59413, fly, athaliana) with their tool dependencies, `create_corpus.py` usage and options, and pointer to `genome_tools/README.md` for multi-species and variation corpora.
+   - **Downstream tasks table** — one row per task directory with a short, sourced description and links to the sub-READMEs.
+   - **Notebooks** and **License** (MIT, AIRI 2022; Apache 2.0 provenance note for the HF-derived BERT code).
+
+Every claim is grounded in files actually present in the repository — no performance results, paper citations, or features were invented.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m✱ [0mGlob "**/*" [90m145 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/gena_lm 
+[0m→ [0mRead src/gena_lm/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/gena_lm/utils.py [90m[limit=80][0m
+[0m→ [0mRead src/gena_lm/modeling_rmt.py [90m[limit=100][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead downstream_tasks/promoter_prediction/README.md 
+[0m→ [0mRead downstream_tasks/enformer/README.md 
+[0m→ [0mRead downstream_tasks/DeepSTARR/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead downstream_tasks/SpliceAI/README.md 
+[0m→ [0mRead downstream_tasks/DeepSea/README.md 
+[0m→ [0mRead src/gena_lm/genome_tools/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"// Not available in code mode; use shell via tools? Actually no shell tool. Skip git inspection via execute (no fs access).\nreturn \"skip\";"} 
+[0m→ [0mRead data/yeasts/ReadMe.md 
+[0m→ [0mRead data/fly/ReadMe.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/athaliana/ReadMe.md 
+[0m✱ [0mGlob ".git/*" [90m0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/download_data.sh 
+[0m→ [0mRead data/download_human.sh 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/configs/L12-H768-A12-V32k-preln-lastln.json 
+[0m→ [0mRead data/configs/L12-H768-A12-V32k-L4096-preln-lastln-sparse-ln1e-05.json 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/gena_lm/modeling_bert.py [90m[limit=60][0m
+[0m→ [0mRead src/gena_lm/tokenizers/tokenize_genomes.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "pre_layer_norm|last_layer_norm|sparse|RotaryEmbedding|rope" [90min src/gena_lm/modeling_bert.py · 40 matches[0m
+[0m✱ [0mGrep "class |def " [90min src/gena_lm/modeling_rmt.py · 21 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/tokenizers/human/BPE_32k_all_chr_10M/tokenizer_config.json 
+[0m✱ [0mGrep "gena-lm|gena_lm|AIRI|Genome|pretrained" [90min notebooks · 40 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob ".git/**" [90m0 matches[0m
+[0m✱ [0mGrep "gena-lm-bert-base-t2t-v2|gena-lm-bigbird|gena-lm-bert-large|_revision|revision='|pre-trained" [90min notebooks · 19 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .git/config 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead manuscript_data/Suplementary_Table_2.csv [90m[limit=5][0m
+[0m→ [0mRead manuscript_data/Suplementary_Table_1.csv [90m[limit=5][0m
+[0m→ [0mRead downstream_tasks/promoter_prediction/finetune_promoter.sh 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead manuscript_data/Suplementary_Table_2.csv 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/gena_lm/genome_tools/create_corpus.py [90m[limit=50][0m
+[0m✱ [0mGrep "bioRxiv|biorxiv|doi|citation|cite|paper|arXiv" [90min . · 20 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead downstream_tasks/APARENT/run_aparent_finetuning.sh [90m[limit=40][0m
+[0m→ [0mRead downstream_tasks/enformer/finetune_enformer_rmt.sh [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead notebooks 
+[0m→ [0mRead data/tokenizers 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead notebooks/gena_clusterization_example.ipynb [90m[limit=40][0m
+[0m→ [0mRead notebooks/gena_enformer_usage.ipynb [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "model_cls|BertFor|Gen(a|e)Model|bigbird" [90min downstream_tasks · 30 matches[0m
+[0m✱ [0mGrep "^class \w+" [90min src/gena_lm/modeling_bert.py · 26 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/tokenizers/human 
+[0m✱ [0mGrep "^def |^class |description|click" [90min src/gena_lm/genome_tools/create_allele_corpus.py · 18 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mRead src/gena_lm/genome_tools/create_corpus.py failed
+[91m[1mError: [0mOffset 300 is out of range for this file (180 lines)
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead src/gena_lm/genome_tools/create_corpus.py [90m[offset=120][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead downstream_tasks/APARENT/model_and_not_used_loss_class.py [90m[limit=40][0m
+[0m→ [0mRead downstream_tasks/APARENT/run_APARENT_finetuning.py [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead downstream_tasks/splicing_onemut 
+[0m→ [0mRead downstream_tasks/splicing_onemut/canonical_dataset.txt [90m[limit=25][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/yeasts/download_and_process_yeast_data.sh [90m[limit=30][0m
+[0m→ [0mRead data/yeasts/yeast_holdouts/valid_species_stats.tsv [90m[limit=5][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead notebooks/HSE.task3.table_full.csv [90m[limit=3][0m
+[0m✱ [0mGrep "task|Task|species|cluster" [90min notebooks/public_gena_clusters.ipynb · 11 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead data/configs/hf_bigbird_L12-H768-A12-V32k-L4096.json 
+[0m→ [0mRead data/configs/L24-H1024-A16-V32k-preln-lastln.json 
+> readme-benchmark · z-ai/glm-5.3-flash
+[91m[1mError: [0mProvider reported an error (finish_reason: error)
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -146,9 +146,9 @@
+ Fine-tuning scripts generally take a pre-trained checkpoint, a tokenizer, and a model config, and select the model class via `--model_cls` (for example, `src.gena_lm.modeling_bert:BertForSequenceClassification` or the RMT classes in `src.gena_lm.modeling_rmt`).
+ 
+ ## Example notebooks
+ 
+-- `notebooks/GENA_sequence_classification_example.ipynb` — fine-tunes a pre-trained GENA-LM model on the promoter prediction task as sequence classification ([Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)).
++- `notebooks/GENA_sequence_classification_example.ipynb` — fine-tunes a pre-trained GENA-LM model on the promoter prediction task as sequence classification ([Open in Colab](https://colab.research.google.com/github/AIRI-Institute/GENA_LM/blob/main/notebooks/GENA_sequence_classification_example.ipynb)).
+ - `notebooks/gena_enformer_usage.ipynb` — uses the GENA-LM model fine-tuned on the Enformer dataset (loaded with `revision='enformer'`) to find mutations linked to a gene.
+ - `notebooks/gena_clusterization_example.ipynb` — clusters DNA sequences using GENA-LM embeddings.
+ - `notebooks/public_gena_clusters.ipynb` and `notebooks/public_gena_clusters_task.ipynb` — differentiate species (from yeast and bacteria to mammals) by embedding DNA chunks with GENA-LM and visualizing them with t-SNE/UMAP.
+ - `notebooks/HSE.task3.table_full.csv` and `notebooks/HSE.task3.table_sample.csv` — variant tables (`pos`, `ref`, `alt`) accompanying the clustering task; `2023-08-10 19_40_52.828317species_extended_metadata.csv` contains species assembly metadata.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -102,9 +102,9 @@
+   - `RMTEncoderForSequenceClassification`
+   - `RMTEncoderForTokenClassification`
+   - `RMTEncoderForEnformer`
+   
+-  The segment size is `input_size - num_mem_tokens - 3`; `bptt_depth` controls how many previous segments are kept in the computation graph.
++  The segment size is `input_size - num_mem_tokens - 3`; memory is detached for the earlier segments so that gradients are propagated only through the last `bptt_depth` segments.
+ 
+ ## Pre-training data preparation
+ 
+ The human genome download scripts fetch the T2T-CHM13 v2.0 assembly (`GCA_009914755.4`, via `data/download_data.sh`) or the GRCh38.p13 RefSeq FASTA (`data/download_human.sh`).
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash

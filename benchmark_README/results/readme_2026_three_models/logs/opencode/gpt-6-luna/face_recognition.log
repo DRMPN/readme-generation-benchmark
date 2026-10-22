@@ -1,0 +1,32 @@
+Created `README.md` with repository-based installation, API, CLI, examples, testing, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m97 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/readme.rst 
+[0m→ [0mRead docs/usage.rst 
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead face_recognition/face_recognition_cli.py 
+[0m→ [0mRead face_recognition/face_detection_cli.py 
+[0m→ [0mRead face_recognition/api.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead examples/find_faces_in_picture.py 
+[0m→ [0mRead face_recognition/__init__.py 
+[0m→ [0mRead examples/recognize_faces_in_pictures.py 
+[0m→ [0mRead HISTORY.rst 
+[0m→ [0mRead CONTRIBUTING.rst 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead examples/face_recognition_knn.py 
+[0m→ [0mRead docs/face_recognition.rst 
+[0m→ [0mRead docs/index.rst 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

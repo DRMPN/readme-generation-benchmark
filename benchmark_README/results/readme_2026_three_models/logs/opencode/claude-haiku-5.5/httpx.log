@@ -1,0 +1,70 @@
+I'll start by looking at the repository layout and existing files.
+This looks like the httpx Python library. I'll read the key metadata and project files.
+I have the core facts. Next I'll check the license, CI workflows, transports, and the CLI entry point to verify the details.
+Most facts are confirmed. Last, I'll pull the CLI option names and the `docs/advanced` list so the README is accurate.
+I've verified the facts I need. Writing the README now.
+Before finishing, I need to verify two claims I haven't checked yet: the default timeout and the `http_version` attribute.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The project is HTTPX, the Python HTTP client (version 0.28.1, BSD-3-Clause). The README covers:
+
+- **Overview and features**, taken from `docs/index.md` and the code.
+- **Requirements and installation**, including a table of optional extras (`http2`, `socks`, `brotli`, `zstd`, `cli`).
+- **Quick start** for sync and async clients, the JSON helper, and the CLI.
+- **HTTP/2**, noting it is opt-in via `http2=True`.
+- **Documentation links** to the files in `docs/`.
+- **Development**, listing the scripts in `scripts/` and the test-server ports (8000/8001).
+- **Contributing, changelog, and license** sections.
+
+I checked the main claims against the source. These include the default 5-second timeout (`_config.py`), the `http_version` property, the CLI options, the `py.typed` marker, the CI Python matrix (3.9–3.13), and the 100% coverage requirement.
+
+Two things to know:
+
+- The repository had no README, but `pyproject.toml` already expects one (it is used as the package long description and included in the sdist). The new file fills that gap.
+- I did not run the code examples, so the README's examples are taken from the existing docs rather than tested. The example outputs (such as `<Response [200 OK]>`) come from the docs and depend on live network responses.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  fetch(\"file:///tmp/httpx-4oiwqi9v\"), // placeholder, won't be used\n]);\nreturn \"skip\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead CHANGELOG.md [90m[limit=60][0m
+[0m→ [0mRead docs 
+[0m→ [0mRead httpx 
+[0m→ [0mRead scripts 
+[0m→ [0mRead .github 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/index.md 
+[0m→ [0mRead httpx/__version__.py 
+[0m→ [0mRead httpx/__init__.py 
+[0m→ [0mRead scripts/test 
+[0m→ [0mRead scripts/install 
+[0m→ [0mRead docs/quickstart.md [90m[limit=120][0m
+[0m→ [0mRead scripts/check 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE.md [90m[limit=5][0m
+[0m→ [0mRead httpx/_transports 
+[0m→ [0mRead .github/workflows 
+[0m→ [0mRead mkdocs.yml 
+[0m✱ [0mGrep "add_argument|@click\.(option|argument|command)|def main" [90min httpx/_main.py · 20 matches[0m
+[0m→ [0mRead docs/http2.md [90m[limit=30][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead scripts/coverage 
+[0m→ [0mRead scripts/docs 
+[0m→ [0mRead .github/workflows/test-suite.yml 
+[0m→ [0mRead docs/contributing.md 
+[0m→ [0mRead httpx/_transports/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead scripts/build 
+[0m→ [0mRead docs/advanced 
+[0m✱ [0mGrep "^\s+"--?[a-zA-Z][-a-zA-Z]*"" [90min httpx/_main.py · 24 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "DEFAULT_TIMEOUT_CONFIG\s*=|def http_version" [90min httpx · 2 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5

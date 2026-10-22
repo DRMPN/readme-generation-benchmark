@@ -1,0 +1,42 @@
+This appears to be the Python Fire library. Let me read the key files to write an accurate README.
+I have everything I need. This is **Python Fire** (v0.7.0) — Google's library for auto-generating CLIs. Writing the README based strictly on the repo contents:
+Created `README.md` in the repository root. Everything in it is drawn directly from the repo's own sources:
+
+- **Identity & description** — from `setup.py` and `docs/index.md` ("library for automatically generating command line interfaces (CLIs) from absolutely any Python object")
+- **Installation** — pip, conda, and source instructions from `docs/installation.md`
+- **Basic usage** — the two verbatim examples (function + class) from `docs/index.md`
+- **CLI usage & flags table** — condensed from `docs/using-cli.md` and the reference table in `docs/index.md` (help, interactive, separator, completion, trace, verbose, with the isolated `--` convention)
+- **Examples** — the four actual example directories (`cipher`, `diff`, `identity`, `widget`)
+- **Documentation links** — the six pages from `mkdocs.yml`'s nav, plus a note that docs use MkDocs
+- **Development** — testing (`pytest`, GitHub Actions) and linting (`pylint fire`) from `CONTRIBUTING.md`, dependencies from `setup.py` (`termcolor`; test deps `hypothesis`, `levenshtein`)
+- **Contributing** — CLA requirement and the Google Python Style Guide conventions (80-char lines, 2-space indent, PascalCase, quote style)
+- **Compatibility** — Python ≥3.7 (classifiers list 3.7–3.13), OS independent
+- **License & disclaimer** — Apache 2.0 per `LICENSE`, and the "not an official Google product" disclaimer from the docs
+
+I avoided any unsupported claims — no badges beyond what the docs reference, no invented version history, no fabricated features, and no URLs that aren't in the repo.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m77 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead docs/index.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead fire/__init__.py 
+[0m✱ [0mGlob ".github/**" [90m0 matches[0m
+[0m→ [0mRead docs/installation.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/using-cli.md [90m[limit=80][0m
+[0m✱ [0mGlob ".github/**" [90m4 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead mkdocs.yml 
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

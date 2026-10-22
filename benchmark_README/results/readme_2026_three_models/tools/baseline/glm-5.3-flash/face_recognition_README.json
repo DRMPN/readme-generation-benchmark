@@ -1,0 +1,383 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 49420,
+    "tree_files": 101,
+    "tracked_files": 101,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 402,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 210,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 647,
+        "truncated": false
+      },
+      {
+        "path": "docker-compose.yml",
+        "tokens": 126,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "requirements_dev.txt",
+        "tokens": 103,
+        "truncated": false
+      },
+      {
+        "path": "requirements_docs.txt",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 153,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 428,
+        "truncated": false
+      },
+      {
+        "path": "docs/Makefile",
+        "tokens": 2274,
+        "truncated": false
+      },
+      {
+        "path": "docker/cpu-jupyter-kubeflow/Dockerfile",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "docker/cpu/Dockerfile",
+        "tokens": 622,
+        "truncated": false
+      },
+      {
+        "path": "docker/gpu-jupyter-kubeflow/Dockerfile",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "docker/gpu/Dockerfile",
+        "tokens": 830,
+        "truncated": false
+      },
+      {
+        "path": "AUTHORS.rst",
+        "tokens": 133,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.rst",
+        "tokens": 642,
+        "truncated": false
+      },
+      {
+        "path": "HISTORY.rst",
+        "tokens": 876,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE.md",
+        "tokens": 95,
+        "truncated": false
+      },
+      {
+        "path": "docker/README.md",
+        "tokens": 521,
+        "truncated": false
+      },
+      {
+        "path": "docs/authors.rst",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "docs/contributing.rst",
+        "tokens": 11,
+        "truncated": false
+      },
+      {
+        "path": "docs/face_recognition.rst",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "docs/history.rst",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "docs/index.rst",
+        "tokens": 73,
+        "truncated": false
+      },
+      {
+        "path": "docs/installation.rst",
+        "tokens": 283,
+        "truncated": false
+      },
+      {
+        "path": "docs/modules.rst",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "docs/readme.rst",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "docs/usage.rst",
+        "tokens": 349,
+        "truncated": false
+      },
+      {
+        "path": "tox.ini",
+        "tokens": 121,
+        "truncated": false
+      },
+      {
+        "path": "docs/conf.py",
+        "tokens": 2114,
+        "truncated": false
+      },
+      {
+        "path": "examples/benchmark.py",
+        "tokens": 597,
+        "truncated": false
+      },
+      {
+        "path": "examples/blink_detection.py",
+        "tokens": 778,
+        "truncated": false
+      },
+      {
+        "path": "examples/blur_faces_on_webcam.py",
+        "tokens": 438,
+        "truncated": false
+      },
+      {
+        "path": "examples/digital_makeup.py",
+        "tokens": 472,
+        "truncated": false
+      },
+      {
+        "path": "examples/face_distance.py",
+        "tokens": 447,
+        "truncated": false
+      },
+      {
+        "path": "examples/face_recognition_knn.py",
+        "tokens": 2086,
+        "truncated": false
+      },
+      {
+        "path": "examples/face_recognition_svm.py",
+        "tokens": 570,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_from_video_file.py",
+        "tokens": 780,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_from_webcam.py",
+        "tokens": 774,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_from_webcam_faster.py",
+        "tokens": 980,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_from_webcam_multiprocessing.py",
+        "tokens": 1844,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_ipcamera_knn.py",
+        "tokens": 2138,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_on_raspberry_pi.py",
+        "tokens": 455,
+        "truncated": false
+      },
+      {
+        "path": "examples/facerec_on_raspberry_pi_Simplified_Chinese.py",
+        "tokens": 534,
+        "truncated": false
+      },
+      {
+        "path": "examples/find_faces_in_batches.py",
+        "tokens": 561,
+        "truncated": false
+      },
+      {
+        "path": "examples/find_faces_in_picture.py",
+        "tokens": 209,
+        "truncated": false
+      },
+      {
+        "path": "examples/find_faces_in_picture_cnn.py",
+        "tokens": 251,
+        "truncated": false
+      },
+      {
+        "path": "examples/find_facial_features_in_picture.py",
+        "tokens": 226,
+        "truncated": false
+      },
+      {
+        "path": "examples/identify_and_draw_boxes_on_faces.py",
+        "tokens": 695,
+        "truncated": false
+      },
+      {
+        "path": "examples/recognize_faces_in_pictures.py",
+        "tokens": 323,
+        "truncated": false
+      },
+      {
+        "path": "examples/web_service_example.py",
+        "tokens": 1657,
+        "truncated": false
+      },
+      {
+        "path": "examples/web_service_example_Simplified_Chinese.py",
+        "tokens": 1729,
+        "truncated": false
+      },
+      {
+        "path": "face_recognition/__init__.py",
+        "tokens": 71,
+        "truncated": false
+      },
+      {
+        "path": "face_recognition/api.py",
+        "tokens": 2589,
+        "truncated": false
+      },
+      {
+        "path": "face_recognition/face_detection_cli.py",
+        "tokens": 609,
+        "truncated": false
+      },
+      {
+        "path": "face_recognition/face_recognition_cli.py",
+        "tokens": 1063,
+        "truncated": false
+      },
+      {
+        "path": "tests/__init__.py",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_face_recognition.py",
+        "tokens": 3520,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/main.yml",
+        "tokens": 157,
+        "truncated": false
+      },
+      {
+        "path": "examples/ipynb_examples/track_faces_on_video_realtime.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".editorconfig",
+      ".gitignore",
+      "Dockerfile.gpu",
+      "MANIFEST.in",
+      "docker/Dockerfile-python-example",
+      "docs/make.bat",
+      "examples/alex-lacamoire.png",
+      "examples/biden.jpg",
+      "examples/hamilton_clip.mp4",
+      "examples/lin-manuel-miranda.png",
+      "examples/obama-1080p.jpg",
+      "examples/obama-240p.jpg",
+      "examples/obama-480p.jpg",
+      "examples/obama-720p.jpg",
+      "examples/obama.jpg",
+      "examples/obama2.jpg",
+      "examples/obama_small.jpg",
+      "examples/short_hamilton_clip.mp4",
+      "examples/two_people.jpg",
+      "tests/test_images/32bit.png",
+      "tests/test_images/biden.jpg",
+      "tests/test_images/obama.jpg",
+      "tests/test_images/obama2.jpg",
+      "tests/test_images/obama3.jpg",
+      "tests/test_images/obama_partial_face.jpg",
+      "tests/test_images/obama_partial_face2.jpg",
+      "examples/knn_examples/train/alex_lacamoire/img1.jpg",
+      "examples/knn_examples/train/biden/biden.jpg",
+      "examples/knn_examples/train/biden/biden2.jpg",
+      "examples/knn_examples/train/kit_harington/john1.jpeg",
+      "examples/knn_examples/train/kit_harington/john2.jpeg",
+      "examples/knn_examples/train/obama/obama.jpg",
+      "examples/knn_examples/train/obama/obama2.jpg",
+      "examples/knn_examples/train/rose_leslie/img1.jpg",
+      "examples/knn_examples/train/rose_leslie/img2.jpg",
+      "examples/knn_examples/test/alex_lacamoire1.jpg",
+      "examples/knn_examples/test/johnsnow_test1.jpg",
+      "examples/knn_examples/test/kit_with_rose.jpg",
+      "examples/knn_examples/test/obama1.jpg",
+      "examples/knn_examples/test/obama_and_biden.jpg"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 49695,
+    "completion_tokens": 3013,
+    "total_tokens": 52708,
+    "cost": 0.00428003,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00428003,
+      "upstream_inference_prompt_cost": 0.00367743,
+      "upstream_inference_completions_cost": 0.0006026
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 33,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606740-TAeQbzpjK9OfRPfmLQoI"
+}

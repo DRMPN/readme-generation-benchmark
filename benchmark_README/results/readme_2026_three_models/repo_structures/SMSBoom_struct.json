@@ -1,0 +1,148 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "run.yaml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "GETAPI.json",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "api.json",
+    "type": "file"
+  },
+  {
+    "name": "debug",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "api.db",
+        "type": "file"
+      },
+      {
+        "name": "api.js",
+        "type": "file"
+      },
+      {
+        "name": "api_tou.json",
+        "type": "file"
+      },
+      {
+        "name": "hz-web.json",
+        "type": "file"
+      },
+      {
+        "name": "spider-api.py",
+        "type": "file"
+      },
+      {
+        "name": "tou_api.py",
+        "type": "file"
+      },
+      {
+        "name": "touapi.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "img",
+    "type": "dir",
+    "children": [
+      {
+        "name": "GIF111.gif",
+        "type": "file"
+      },
+      {
+        "name": "cmd1.png",
+        "type": "file"
+      },
+      {
+        "name": "cmd2.png",
+        "type": "file"
+      },
+      {
+        "name": "e.g.1.png",
+        "type": "file"
+      },
+      {
+        "name": "test2.gif",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "logo.ico",
+    "type": "file"
+  },
+  {
+    "name": "requirements-dev.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "smsboom.py",
+    "type": "file"
+  },
+  {
+    "name": "smsboom_GUI.py",
+    "type": "file"
+  },
+  {
+    "name": "utils",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "log.py",
+        "type": "file"
+      },
+      {
+        "name": "models.py",
+        "type": "file"
+      },
+      {
+        "name": "req.py",
+        "type": "file"
+      },
+      {
+        "name": "sql.py",
+        "type": "file"
+      }
+    ]
+  }
+]

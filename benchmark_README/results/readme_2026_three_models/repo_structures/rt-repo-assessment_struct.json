@@ -1,0 +1,174 @@
+[
+  {
+    "name": ".env.example",
+    "type": "file"
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".python-version",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "pytest.ini",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "config",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config.json",
+            "type": "file"
+          },
+          {
+            "name": "logic_based_scoring.py",
+            "type": "file"
+          },
+          {
+            "name": "paths.py",
+            "type": "file"
+          },
+          {
+            "name": "prompts.yaml",
+            "type": "file"
+          },
+          {
+            "name": "scoring",
+            "type": "dir",
+            "children": [
+              {
+                "name": "code_quality_criteria.yaml",
+                "type": "file"
+              },
+              {
+                "name": "dependancies_criteria.yaml",
+                "type": "file"
+              },
+              {
+                "name": "documentation_criteria.yaml",
+                "type": "file"
+              },
+              {
+                "name": "license_criteria.yaml",
+                "type": "file"
+              },
+              {
+                "name": "structure_criteria.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "tracked_files.yaml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "directory_scorer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "content_based_scorer.py",
+            "type": "file"
+          },
+          {
+            "name": "tree.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "generators.py",
+        "type": "file"
+      },
+      {
+        "name": "logger.py",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "output_parsers.py",
+        "type": "file"
+      },
+      {
+        "name": "report.py",
+        "type": "file"
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "general.py",
+            "type": "file"
+          },
+          {
+            "name": "llm.py",
+            "type": "file"
+          },
+          {
+            "name": "project_validators.py",
+            "type": "file"
+          },
+          {
+            "name": "repository.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "conftest.py",
+        "type": "file"
+      },
+      {
+        "name": "test_project_validators.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "uv.lock",
+    "type": "file"
+  }
+]

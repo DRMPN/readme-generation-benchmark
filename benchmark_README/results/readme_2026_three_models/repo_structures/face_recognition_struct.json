@@ -1,0 +1,532 @@
+[
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE.md",
+        "type": "file"
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "main.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "AUTHORS.rst",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.rst",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile.gpu",
+    "type": "file"
+  },
+  {
+    "name": "HISTORY.rst",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "MANIFEST.in",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "docker",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Dockerfile-python-example",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "cpu",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cpu-jupyter-kubeflow",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "gpu",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "gpu-jupyter-kubeflow",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Dockerfile",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docker-compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "authors.rst",
+        "type": "file"
+      },
+      {
+        "name": "conf.py",
+        "type": "file"
+      },
+      {
+        "name": "contributing.rst",
+        "type": "file"
+      },
+      {
+        "name": "face_recognition.rst",
+        "type": "file"
+      },
+      {
+        "name": "history.rst",
+        "type": "file"
+      },
+      {
+        "name": "index.rst",
+        "type": "file"
+      },
+      {
+        "name": "installation.rst",
+        "type": "file"
+      },
+      {
+        "name": "make.bat",
+        "type": "file"
+      },
+      {
+        "name": "modules.rst",
+        "type": "file"
+      },
+      {
+        "name": "readme.rst",
+        "type": "file"
+      },
+      {
+        "name": "usage.rst",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "alex-lacamoire.png",
+        "type": "file"
+      },
+      {
+        "name": "benchmark.py",
+        "type": "file"
+      },
+      {
+        "name": "biden.jpg",
+        "type": "file"
+      },
+      {
+        "name": "blink_detection.py",
+        "type": "file"
+      },
+      {
+        "name": "blur_faces_on_webcam.py",
+        "type": "file"
+      },
+      {
+        "name": "digital_makeup.py",
+        "type": "file"
+      },
+      {
+        "name": "face_distance.py",
+        "type": "file"
+      },
+      {
+        "name": "face_recognition_knn.py",
+        "type": "file"
+      },
+      {
+        "name": "face_recognition_svm.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_from_video_file.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_from_webcam.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_from_webcam_faster.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_from_webcam_multiprocessing.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_ipcamera_knn.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_on_raspberry_pi.py",
+        "type": "file"
+      },
+      {
+        "name": "facerec_on_raspberry_pi_Simplified_Chinese.py",
+        "type": "file"
+      },
+      {
+        "name": "find_faces_in_batches.py",
+        "type": "file"
+      },
+      {
+        "name": "find_faces_in_picture.py",
+        "type": "file"
+      },
+      {
+        "name": "find_faces_in_picture_cnn.py",
+        "type": "file"
+      },
+      {
+        "name": "find_facial_features_in_picture.py",
+        "type": "file"
+      },
+      {
+        "name": "hamilton_clip.mp4",
+        "type": "file"
+      },
+      {
+        "name": "identify_and_draw_boxes_on_faces.py",
+        "type": "file"
+      },
+      {
+        "name": "ipynb_examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "track_faces_on_video_realtime.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "knn_examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "test",
+            "type": "dir",
+            "children": [
+              {
+                "name": "alex_lacamoire1.jpg",
+                "type": "file"
+              },
+              {
+                "name": "johnsnow_test1.jpg",
+                "type": "file"
+              },
+              {
+                "name": "kit_with_rose.jpg",
+                "type": "file"
+              },
+              {
+                "name": "obama1.jpg",
+                "type": "file"
+              },
+              {
+                "name": "obama_and_biden.jpg",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "train",
+            "type": "dir",
+            "children": [
+              {
+                "name": "alex_lacamoire",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "img1.jpg",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "biden",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "biden.jpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "biden2.jpg",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "kit_harington",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "john1.jpeg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "john2.jpeg",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "obama",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "obama.jpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "obama2.jpg",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "rose_leslie",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "img1.jpg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "img2.jpg",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lin-manuel-miranda.png",
+        "type": "file"
+      },
+      {
+        "name": "obama-1080p.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama-240p.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama-480p.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama-720p.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama2.jpg",
+        "type": "file"
+      },
+      {
+        "name": "obama_small.jpg",
+        "type": "file"
+      },
+      {
+        "name": "recognize_faces_in_pictures.py",
+        "type": "file"
+      },
+      {
+        "name": "short_hamilton_clip.mp4",
+        "type": "file"
+      },
+      {
+        "name": "two_people.jpg",
+        "type": "file"
+      },
+      {
+        "name": "web_service_example.py",
+        "type": "file"
+      },
+      {
+        "name": "web_service_example_Simplified_Chinese.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "face_recognition",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "api.py",
+        "type": "file"
+      },
+      {
+        "name": "face_detection_cli.py",
+        "type": "file"
+      },
+      {
+        "name": "face_recognition_cli.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements_dev.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements_docs.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "test_face_recognition.py",
+        "type": "file"
+      },
+      {
+        "name": "test_images",
+        "type": "dir",
+        "children": [
+          {
+            "name": "32bit.png",
+            "type": "file"
+          },
+          {
+            "name": "biden.jpg",
+            "type": "file"
+          },
+          {
+            "name": "obama.jpg",
+            "type": "file"
+          },
+          {
+            "name": "obama2.jpg",
+            "type": "file"
+          },
+          {
+            "name": "obama3.jpg",
+            "type": "file"
+          },
+          {
+            "name": "obama_partial_face.jpg",
+            "type": "file"
+          },
+          {
+            "name": "obama_partial_face2.jpg",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tox.ini",
+    "type": "file"
+  }
+]

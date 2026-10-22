@@ -1,0 +1,31 @@
+I’ll inspect the repository’s source, configuration, and existing documentation, then write a README grounded only in what the project actually contains. I’ll create or update `README.md` only.
+This checkout contains the contribution guide and validation scripts, but no API catalog or existing README. I’ll make the README describe the project’s stated purpose and the tooling that is actually present, and note that the catalog itself isn’t included here.
+Created `README.md` with the project overview, API entry format, validator usage, test command, and license. It notes that this checkout contains no API catalog file. No tests were run; only documentation was added.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m10 matches[0m
+[0m✱ [0mGrep "README|public API|API" [90m45 matches[0m
+[0m✱ [0mGlob "**/.*" [90m2 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead scripts/validate/format.py 
+[0m→ [0mRead scripts/validate/links.py 
+[0m→ [0mRead .gitattributes 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead scripts/requirements.txt 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead scripts/tests/test_validate_format.py [90m[limit=180][0m
+[0m→ [0mRead scripts/validate/__init__.py 
+[0m→ [0mRead scripts/github_pull_request.sh 
+[0m→ [0mRead scripts/tests/test_validate_links.py [90m[limit=180][0m
+[0m→ [0mRead scripts/tests/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

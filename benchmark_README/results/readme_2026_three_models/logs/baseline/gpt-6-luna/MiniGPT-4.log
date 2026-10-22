@@ -1,0 +1,428 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63906,
+    "tree_files": 186,
+    "tracked_files": 186,
+    "selected": [
+      {
+        "path": "environment.yml",
+        "tokens": 284,
+        "truncated": false
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "tokens": 1001,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE.md",
+        "tokens": 274,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE_Lavis.md",
+        "tokens": 275,
+        "truncated": false
+      },
+      {
+        "path": "MiniGPT4_Train.md",
+        "tokens": 532,
+        "truncated": false
+      },
+      {
+        "path": "MiniGPTv2_Train.md",
+        "tokens": 317,
+        "truncated": false
+      },
+      {
+        "path": "SECURITY.md",
+        "tokens": 149,
+        "truncated": false
+      },
+      {
+        "path": "dataset/README_1_STAGE.md",
+        "tokens": 824,
+        "truncated": false
+      },
+      {
+        "path": "dataset/README_2_STAGE.md",
+        "tokens": 160,
+        "truncated": false
+      },
+      {
+        "path": "dataset/README_MINIGPTv2_FINETUNE.md",
+        "tokens": 3276,
+        "truncated": false
+      },
+      {
+        "path": "eval_scripts/EVAL_README.md",
+        "tokens": 1031,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 215,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 118,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/vqa_tools/VQA/README.md",
+        "tokens": 1422,
+        "truncated": false
+      },
+      {
+        "path": "demo.py",
+        "tokens": 1511,
+        "truncated": false
+      },
+      {
+        "path": "demo_v2.py",
+        "tokens": 5873,
+        "truncated": false
+      },
+      {
+        "path": "train.py",
+        "tokens": 655,
+        "truncated": false
+      },
+      {
+        "path": "dataset/convert_cc_sbu.py",
+        "tokens": 132,
+        "truncated": false
+      },
+      {
+        "path": "dataset/convert_laion.py",
+        "tokens": 132,
+        "truncated": false
+      },
+      {
+        "path": "eval_configs/minigpt4_eval.yaml",
+        "tokens": 128,
+        "truncated": false
+      },
+      {
+        "path": "eval_configs/minigpt4_llama2_eval.yaml",
+        "tokens": 126,
+        "truncated": false
+      },
+      {
+        "path": "eval_configs/minigptv2_benchmark_evaluation.yaml",
+        "tokens": 572,
+        "truncated": false
+      },
+      {
+        "path": "eval_configs/minigptv2_eval.yaml",
+        "tokens": 139,
+        "truncated": false
+      },
+      {
+        "path": "eval_scripts/eval_ref.py",
+        "tokens": 1278,
+        "truncated": false
+      },
+      {
+        "path": "eval_scripts/eval_vqa.py",
+        "tokens": 2441,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/__init__.py",
+        "tokens": 224,
+        "truncated": false
+      },
+      {
+        "path": "train_configs/minigpt4_llama2_stage1_pretrain.yaml",
+        "tokens": 329,
+        "truncated": false
+      },
+      {
+        "path": "train_configs/minigpt4_llama2_stage2_finetune.yaml",
+        "tokens": 318,
+        "truncated": false
+      },
+      {
+        "path": "train_configs/minigpt4_stage1_pretrain.yaml",
+        "tokens": 327,
+        "truncated": false
+      },
+      {
+        "path": "train_configs/minigpt4_stage2_finetune.yaml",
+        "tokens": 317,
+        "truncated": false
+      },
+      {
+        "path": "train_configs/minigptv2_finetune.yaml",
+        "tokens": 1579,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/config.py",
+        "tokens": 3280,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/dist_utils.py",
+        "tokens": 843,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/eval_utils.py",
+        "tokens": 794,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/gradcam.py",
+        "tokens": 236,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/logger.py",
+        "tokens": 1288,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/optims.py",
+        "tokens": 819,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/registry.py",
+        "tokens": 1939,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/common/utils.py",
+        "tokens": 3162,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/configs/default.yaml",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/conversation/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/conversation/conversation.py",
+        "tokens": 1800,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/datasets/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/datasets/data_utils.py",
+        "tokens": 1302,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/Qformer.py",
+        "tokens": 9583,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/__init__.py",
+        "tokens": 1349,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/base_model.py",
+        "tokens": 1767,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/eva_vit.py",
+        "tokens": 5025,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/minigpt4.py",
+        "tokens": 1724,
+        "truncated": false
+      },
+      {
+        "path": "minigpt4/models/minigpt_base.py",
+        "tokens": 378,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "MiniGPTv2.pdf",
+      "examples/ad_1.png",
+      "examples/ad_2.png",
+      "examples/cook_1.png",
+      "examples/cook_2.png",
+      "examples/describe_1.png",
+      "examples/describe_2.png",
+      "examples/fact_1.png",
+      "examples/fact_2.png",
+      "examples/fix_1.png",
+      "examples/fix_2.png",
+      "examples/fun_1.png",
+      "examples/fun_2.png",
+      "examples/logo_1.png",
+      "examples/op_1.png",
+      "examples/op_2.png",
+      "examples/people_1.png",
+      "examples/people_2.png",
+      "examples/rhyme_1.png",
+      "examples/rhyme_2.png",
+      "examples/story_1.png",
+      "examples/story_2.png",
+      "examples/web_1.png",
+      "examples/wop_1.png",
+      "examples/wop_2.png",
+      "examples_v2/2000x1372_wmkn_0012149409555.jpg",
+      "examples_v2/KFC-20-for-20-Nuggets.jpg",
+      "examples_v2/cockdial.png",
+      "examples_v2/float.png",
+      "examples_v2/glip_test.jpg",
+      "examples_v2/office.jpg",
+      "examples_v2/sofa.jpg",
+      "examples_v2/thief.png",
+      "figs/demo.png",
+      "figs/minigpt2_demo.png",
+      "figs/online_demo.png",
+      "figs/overview.png",
+      "figs/examples/ad_1.png",
+      "figs/examples/ad_2.png",
+      "figs/examples/cook_1.png",
+      "figs/examples/cook_2.png",
+      "figs/examples/describe_1.png",
+      "figs/examples/describe_2.png",
+      "figs/examples/fact_1.png",
+      "figs/examples/fact_2.png",
+      "figs/examples/fix_1.png",
+      "figs/examples/fix_2.png",
+      "figs/examples/fun_1.png",
+      "figs/examples/fun_2.png",
+      "figs/examples/logo_1.png",
+      "figs/examples/op_1.png",
+      "figs/examples/op_2.png",
+      "figs/examples/people_1.png",
+      "figs/examples/people_2.png",
+      "figs/examples/rhyme_1.png",
+      "figs/examples/rhyme_2.png",
+      "figs/examples/story_1.png",
+      "figs/examples/story_2.png",
+      "figs/examples/web_1.png",
+      "figs/examples/wop_1.png",
+      "figs/examples/wop_2.png",
+      "minigpt4/models/minigpt_v2.py",
+      "minigpt4/models/modeling_llama.py",
+      "minigpt4/processors/__init__.py",
+      "minigpt4/processors/base_processor.py",
+      "minigpt4/processors/blip_processors.py",
+      "minigpt4/processors/randaugment.py",
+      "minigpt4/runners/__init__.py",
+      "minigpt4/runners/runner_base.py",
+      "minigpt4/tasks/__init__.py",
+      "minigpt4/tasks/base_task.py",
+      "minigpt4/tasks/image_text_pretrain.py",
+      "minigpt4/common/vqa_tools/__init__.py",
+      "minigpt4/common/vqa_tools/vqa.py",
+      "minigpt4/common/vqa_tools/vqa_eval.py",
+      "minigpt4/configs/models/minigpt4_llama2.yaml",
+      "minigpt4/configs/models/minigpt4_vicuna0.yaml",
+      "minigpt4/configs/models/minigpt_v2.yaml",
+      "minigpt4/datasets/builders/__init__.py",
+      "minigpt4/datasets/builders/base_dataset_builder.py",
+      "minigpt4/datasets/builders/image_text_pair_builder.py",
+      "minigpt4/datasets/datasets/__init__.py",
+      "minigpt4/datasets/datasets/aok_vqa_datasets.py",
+      "minigpt4/datasets/datasets/base_dataset.py",
+      "minigpt4/datasets/datasets/caption_datasets.py",
+      "minigpt4/datasets/datasets/cc_sbu_dataset.py",
+      "minigpt4/datasets/datasets/coco_caption.py",
+      "minigpt4/datasets/datasets/coco_dataset.py",
+      "minigpt4/datasets/datasets/coco_vqa_datasets.py",
+      "minigpt4/datasets/datasets/dataloader_utils.py",
+      "minigpt4/datasets/datasets/flickr.py",
+      "minigpt4/datasets/datasets/gqa_datasets.py",
+      "minigpt4/datasets/datasets/laion_dataset.py",
+      "minigpt4/datasets/datasets/llava_dataset.py",
+      "minigpt4/datasets/datasets/multitask_conversation.py",
+      "minigpt4/datasets/datasets/ocrvqa_dataset.py",
+      "minigpt4/datasets/datasets/text_caps.py",
+      "minigpt4/datasets/datasets/unnatural_instruction.py",
+      "minigpt4/datasets/datasets/vg_dataset.py",
+      "minigpt4/datasets/datasets/vqa_datasets.py",
+      "minigpt4/common/vqa_tools/VQA/license.txt",
+      "minigpt4/configs/datasets/aokvqa/defaults.yaml",
+      "minigpt4/configs/datasets/cc_sbu/align.yaml",
+      "minigpt4/configs/datasets/cc_sbu/defaults.yaml",
+      "minigpt4/configs/datasets/coco/caption.yaml",
+      "minigpt4/configs/datasets/coco/defaults_vqa.yaml",
+      "minigpt4/configs/datasets/coco_bbox/invrefcoco.yaml",
+      "minigpt4/configs/datasets/coco_bbox/invrefcocog.yaml",
+      "minigpt4/configs/datasets/coco_bbox/invrefcocop.yaml",
+      "minigpt4/configs/datasets/coco_bbox/refcoco.yaml",
+      "minigpt4/configs/datasets/coco_bbox/refcocog.yaml",
+      "minigpt4/configs/datasets/coco_bbox/refcocop.yaml",
+      "minigpt4/configs/datasets/flickr/caption_to_phrase.yaml",
+      "minigpt4/configs/datasets/flickr/default.yaml",
+      "minigpt4/configs/datasets/flickr/object_to_phrase.yaml",
+      "minigpt4/configs/datasets/gqa/balanced_val.yaml",
+      "minigpt4/configs/datasets/laion/defaults.yaml",
+      "minigpt4/configs/datasets/llava/conversation.yaml",
+      "minigpt4/configs/datasets/llava/detail.yaml",
+      "minigpt4/configs/datasets/llava/reason.yaml",
+      "minigpt4/configs/datasets/multitask_conversation/default.yaml",
+      "minigpt4/configs/datasets/nlp/unnatural_instruction.yaml",
+      "minigpt4/configs/datasets/ocrvqa/ocrvqa.yaml",
+      "minigpt4/configs/datasets/okvqa/defaults.yaml",
+      "minigpt4/configs/datasets/textcaps/caption.yaml",
+      "minigpt4/configs/datasets/vg/ref.yaml",
+      "minigpt4/common/vqa_tools/VQA/PythonEvaluationTools/vqaEvalDemo.py",
+      "minigpt4/common/vqa_tools/VQA/PythonHelperTools/vqaDemo.py",
+      "minigpt4/common/vqa_tools/VQA/QuestionTypes/abstract_v002_question_types.txt",
+      "minigpt4/common/vqa_tools/VQA/QuestionTypes/mscoco_question_types.txt",
+      "minigpt4/common/vqa_tools/VQA/PythonEvaluationTools/vqaEvaluation/__init__.py",
+      "minigpt4/common/vqa_tools/VQA/PythonEvaluationTools/vqaEvaluation/vqaEval.py",
+      "minigpt4/common/vqa_tools/VQA/PythonHelperTools/vqaTools/__init__.py",
+      "minigpt4/common/vqa_tools/VQA/PythonHelperTools/vqaTools/vqa.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64350,
+    "completion_tokens": 2299,
+    "total_tokens": 66649,
+    "cost": 0.009193175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 64347,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009193175,
+      "upstream_inference_prompt_cost": 0.008043675,
+      "upstream_inference_completions_cost": 0.0011495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 512,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606671-HulPwgVqWyz0LZRKT0Zx"
+}

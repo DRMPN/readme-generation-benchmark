@@ -1,0 +1,776 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "FUNDING.yml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "01_Day_Introduction",
+    "type": "dir",
+    "children": [
+      {
+        "name": "helloworld.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "02_Day_Variables_builtin_functions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "02_variables_builtin_functions.md",
+        "type": "file"
+      },
+      {
+        "name": "variables.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "03_Day_Operators",
+    "type": "dir",
+    "children": [
+      {
+        "name": "03_operators.md",
+        "type": "file"
+      },
+      {
+        "name": "day-3.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "04_Day_Strings",
+    "type": "dir",
+    "children": [
+      {
+        "name": "04_strings.md",
+        "type": "file"
+      },
+      {
+        "name": "day_4.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "05_Day_Lists",
+    "type": "dir",
+    "children": [
+      {
+        "name": "05_lists.md",
+        "type": "file"
+      },
+      {
+        "name": "day_5.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "06_Day_Tuples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "06_tuples.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "07_Day_Sets",
+    "type": "dir",
+    "children": [
+      {
+        "name": "07_sets.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "08_Day_Dictionaries",
+    "type": "dir",
+    "children": [
+      {
+        "name": "08_dictionaries.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "09_Day_Conditionals",
+    "type": "dir",
+    "children": [
+      {
+        "name": "09_conditionals.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "10_Day_Loops",
+    "type": "dir",
+    "children": [
+      {
+        "name": "10_loops.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "11_Day_Functions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "11_functions.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "12_Day_Modules",
+    "type": "dir",
+    "children": [
+      {
+        "name": "12_modules.md",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "mymodule.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "13_Day_List_comprehension",
+    "type": "dir",
+    "children": [
+      {
+        "name": "13_list_comprehension.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "14_Day_Higher_order_functions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "14_higher_order_functions.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "15_Day_Python_type_errors",
+    "type": "dir",
+    "children": [
+      {
+        "name": "15_python_type_errors.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "16_Day_Python_date_time",
+    "type": "dir",
+    "children": [
+      {
+        "name": "16_python_datetime.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "17_Day_Exception_handling",
+    "type": "dir",
+    "children": [
+      {
+        "name": "17_exception_handling.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "18_Day_Regular_expressions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "18_regular_expressions.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "19_Day_File_handling",
+    "type": "dir",
+    "children": [
+      {
+        "name": "19_file_handling.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "20_Day_Python_package_manager",
+    "type": "dir",
+    "children": [
+      {
+        "name": "20_python_package_manager.md",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "arithmetic.py",
+        "type": "file"
+      },
+      {
+        "name": "greet.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "21_Day_Classes_and_objects",
+    "type": "dir",
+    "children": [
+      {
+        "name": "21_classes_and_objects.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "22_Day_Web_scraping",
+    "type": "dir",
+    "children": [
+      {
+        "name": "22_web_scraping.md",
+        "type": "file"
+      },
+      {
+        "name": "scrapped_data.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "23_Day_Virtual_environment",
+    "type": "dir",
+    "children": [
+      {
+        "name": "23_virtual_environment.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "24_Day_Statistics",
+    "type": "dir",
+    "children": [
+      {
+        "name": "24_statistics.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "25_Day_Pandas",
+    "type": "dir",
+    "children": [
+      {
+        "name": "25_pandas.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "26_Day_Python_web",
+    "type": "dir",
+    "children": [
+      {
+        "name": "26_python_web.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "27_Day_Python_with_mongodb",
+    "type": "dir",
+    "children": [
+      {
+        "name": "27_python_with_mongodb.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "28_Day_API",
+    "type": "dir",
+    "children": [
+      {
+        "name": "28_API.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "29_Day_Building_API",
+    "type": "dir",
+    "children": [
+      {
+        "name": "29_building_API.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "30_Day_Conclusions",
+    "type": "dir",
+    "children": [
+      {
+        "name": "30_conclusions.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Chinese",
+    "type": "dir",
+    "children": [
+      {
+        "name": "02_variables_builtin_functions.md",
+        "type": "file"
+      },
+      {
+        "name": "03_operators.md",
+        "type": "file"
+      },
+      {
+        "name": "04_strings.md",
+        "type": "file"
+      },
+      {
+        "name": "05_lists.md",
+        "type": "file"
+      },
+      {
+        "name": "06_tuples.md",
+        "type": "file"
+      },
+      {
+        "name": "07_sets.md",
+        "type": "file"
+      },
+      {
+        "name": "08_dictionaries.md",
+        "type": "file"
+      },
+      {
+        "name": "09_conditionals.md",
+        "type": "file"
+      },
+      {
+        "name": "10_loops.md",
+        "type": "file"
+      },
+      {
+        "name": "11_functions.md",
+        "type": "file"
+      },
+      {
+        "name": "12_modules.md",
+        "type": "file"
+      },
+      {
+        "name": "13_list_comprehension.md",
+        "type": "file"
+      },
+      {
+        "name": "14_higher_order_functions.md",
+        "type": "file"
+      },
+      {
+        "name": "15_python_type_errors_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "16_python_datetime_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "17_exception_handling_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "18_regular_expressions_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "19_file_handling_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "20_python_package_manager_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "21_classes_and_objects_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "22_web_scraping_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "23_virtual_environment_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "24_statistics_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "25_pandas_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "26_python_web_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "27_python_with_mongodb_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "28_API_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "29_building_API_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "30_conclusions_cn.md",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Korean",
+    "type": "dir",
+    "children": [
+      {
+        "name": "02_Day_Variables_builtin_functions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "02_variables_builtin_functions.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "04_strings_ko.md",
+        "type": "file"
+      },
+      {
+        "name": "05_Day_Lists",
+        "type": "dir",
+        "children": [
+          {
+            "name": "05_lists.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "07_sets_ko.md",
+        "type": "file"
+      },
+      {
+        "name": "08_Day_Dictionaries",
+        "type": "dir",
+        "children": [
+          {
+            "name": "08_dictionaries.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "10_loops_ko.md",
+        "type": "file"
+      },
+      {
+        "name": "readme_ko.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Portuguese",
+    "type": "dir",
+    "children": [
+      {
+        "name": "02_Dia_Variaveis_BuiltIn_Functions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "files",
+    "type": "dir",
+    "children": [
+      {
+        "name": "csv_example.csv",
+        "type": "file"
+      },
+      {
+        "name": "example.txt",
+        "type": "file"
+      },
+      {
+        "name": "excel_example.xlsx",
+        "type": "file"
+      },
+      {
+        "name": "json_example.json",
+        "type": "file"
+      },
+      {
+        "name": "reading_file_example.txt",
+        "type": "file"
+      },
+      {
+        "name": "xml_example.xml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "korean",
+    "type": "dir",
+    "children": [
+      {
+        "name": "03_Day_Operators",
+        "type": "dir",
+        "children": [
+          {
+            "name": "03_operators.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "readme.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "mymodule.py",
+    "type": "file"
+  },
+  {
+    "name": "mypackage",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "arithmetics.py",
+        "type": "file"
+      },
+      {
+        "name": "greet.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "numpy.md",
+    "type": "file"
+  },
+  {
+    "name": "numpy_files",
+    "type": "dir",
+    "children": [
+      {
+        "name": "numpy_108_1.png",
+        "type": "file"
+      },
+      {
+        "name": "numpy_122_0.png",
+        "type": "file"
+      },
+      {
+        "name": "numpy_123_1.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "old_files",
+    "type": "dir",
+    "children": [
+      {
+        "name": "readme.md",
+        "type": "file"
+      },
+      {
+        "name": "readme10-12.md",
+        "type": "file"
+      },
+      {
+        "name": "readme13-15.md",
+        "type": "file"
+      },
+      {
+        "name": "readme16-18.md",
+        "type": "file"
+      },
+      {
+        "name": "readme19-21.md",
+        "type": "file"
+      },
+      {
+        "name": "readme22-24.md",
+        "type": "file"
+      },
+      {
+        "name": "readme25-27.md",
+        "type": "file"
+      },
+      {
+        "name": "readme28-30.md",
+        "type": "file"
+      },
+      {
+        "name": "readme4-6.md",
+        "type": "file"
+      },
+      {
+        "name": "readme7-9.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "python_for_web",
+    "type": "dir",
+    "children": [
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": "Procfile",
+        "type": "file"
+      },
+      {
+        "name": "app.py",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "static",
+        "type": "dir",
+        "children": [
+          {
+            "name": "css",
+            "type": "dir",
+            "children": [
+              {
+                "name": "main.css",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "templates",
+        "type": "dir",
+        "children": [
+          {
+            "name": "about.html",
+            "type": "file"
+          },
+          {
+            "name": "home.html",
+            "type": "file"
+          },
+          {
+            "name": "layout.html",
+            "type": "file"
+          },
+          {
+            "name": "post.html",
+            "type": "file"
+          },
+          {
+            "name": "result.html",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test_files",
+    "type": "dir",
+    "children": [
+      {
+        "name": "test_121_0.png",
+        "type": "file"
+      },
+      {
+        "name": "test_141_0.png",
+        "type": "file"
+      },
+      {
+        "name": "test_143_0.png",
+        "type": "file"
+      }
+    ]
+  }
+]

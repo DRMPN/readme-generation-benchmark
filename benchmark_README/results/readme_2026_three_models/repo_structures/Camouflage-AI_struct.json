@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Camouflage AI.py",
+    "type": "file"
+  },
+  {
+    "name": "Input video",
+    "type": "dir",
+    "children": [
+      {
+        "name": "sample video.mp4",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Output video",
+    "type": "dir",
+    "children": [
+      {
+        "name": "sample video_color_bg.mp4",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "process_video.py",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  }
+]

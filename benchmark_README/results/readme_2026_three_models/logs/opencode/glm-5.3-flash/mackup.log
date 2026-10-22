@@ -1,0 +1,82 @@
+I need to use the standard tools outside Code Mode for file operations. Let me inspect the repository structure and content.
+I've identified this is a Python project called `mackup`. Now let me read the core documentation and source files to gather all the necessary details.
+Now let me look at the core application logic to understand the CLI commands and how it works.
+I have gathered all the necessary information about the project. Now I'll write the comprehensive `README.md` file.
+The README has been created. Let me make one small accuracy fix to the development setup commands (to match `doc/develop.md` exactly) and verify the final file.
+I've inspected the repository and created a complete `README.md` at the repository root. Here's a summary of the work:
+
+## What I Inspected
+
+- **`pyproject.toml`** — Project name (`mackup`), description, license (GPL-3.0-or-later), Python 3.8+ requirement, and repository URL
+- **`doc/README.md`** — Detailed configuration documentation (storage engines, application filtering, custom apps, XDG support)
+- **`mackup/main.py`** — CLI usage, available commands, and options
+- **`mackup/constants.py`** — Supported storage engines
+- **`mackup/applications/`** — ~580 application config files confirming the breadth of support
+- **`INSTALL.md`, `Makefile`, `doc/develop.md`, `doc/release.md`, `tests/README.md`** — Installation, development, testing, and release procedures
+
+## README.md Structure
+
+The final `README.md` (263 lines) includes:
+
+1. **Introduction** — Project purpose with an accurate description of how syncing works (copies files to synced storage, creates links in original locations)
+2. **Features** — Verified against the CLI options and configuration docs
+3. **Supported Applications** — All named apps confirmed to exist in `mackup/applications/` (git, ssh, vim, iterm2, etc.)
+4. **Installation** — Homebrew (macOS) and pip (macOS/Linux), matching `INSTALL.md`
+5. **Usage** — Full CLI usage block copied directly from `main.py`, plus the five documented modes (`backup`, `restore`, `uninstall`, `list`, `show`)
+6. **Configuration** — All four storage engines, `[applications_to_sync]`/`[applications_to_ignore]`, custom app configs, XDG support, and storage-switching steps
+7. **Development** — Poetry setup, `make test`/`lint`/`ruff`, and release steps from `doc/release.md`
+8. **Contributing** — Local testing workflow from the docs
+9. **License** — GPL-3.0-or-later with correct copyright
+
+Every claim is backed by repository content — no invented features, badges, or unsupported statements. I also corrected the development setup command to exactly match the documented `cd .../mackup` placeholder path.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const ls = await tools.glob({ pattern: \"**/*\", hidden: true, limit: 500 });\nreturn ls;"} 
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"return search(\"glob\");"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"return search({ query: \"glob\" });"} 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead doc 
+[0m→ [0mRead mackup 
+[0m→ [0mRead tests 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead INSTALL.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead Makefile 
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead doc/README.md 
+[0m→ [0mRead doc/develop.md 
+[0m→ [0mRead tests/README.md 
+[0m→ [0mRead doc/release.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead mackup/main.py 
+[0m→ [0mRead mackup/constants.py 
+[0m→ [0mRead mackup/applications 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -208,9 +208,9 @@
+ Install a recent Python and the dependency management tooling, then install dependencies:
+ 
+ ```bash
+ pipx install poetry
+-cd mackup
++cd .../mackup
+ poetry install --with dev
+ ```
+ 
+ You can now edit files and see the impact of your changes:
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash

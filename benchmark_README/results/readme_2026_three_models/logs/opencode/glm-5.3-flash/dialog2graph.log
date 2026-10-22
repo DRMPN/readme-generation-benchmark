@@ -1,0 +1,35 @@
+I have gathered enough information to construct a complete and accurate `README.md`. Now I will write it to the root of the repository.
+I have inspected the repository and successfully created a comprehensive `README.md` at the root of the project (`/tmp/dialog2graph-22samf2o/README.md`).
+
+### Key Highlights of the README:
+1. **Introduction:** Describes **Dialog2Graph** as a tool to convert conversational data into structured dialog graphs using LLMs, based on the Chatsky project.
+2. **Features:** Detailed sections for graph generation (3 pipelines), synthetic data generation, dialog sampling, augmentation, evaluation, visualization, and CLI support.
+3. **Installation:** Accurate setup steps using Poetry, PyGraphviz for visualization, and `.env` for credentials, sourced directly from `docs/source/getting_started.rst`.
+4. **Usage:** Includes Python API examples (using `Graph` and `RecursiveDialogSampler`) and CLI commands (`gen_data`, `gen_graph_light`, `gen_graph_llm`, `gen_graph_extender`) configured via `cfg.yml`, referencing the actual files and notebooks found in the `examples/` directory.
+5. **Documentation:** Guides users on building the Sphinx documentation located in `docs/`.
+6. **Development:** Provides Poetry-based commands for running tests, linting, and checking metrics, which match the scripts defined in `pyproject.toml`.
+
+All descriptions are backed by the repository's source code, configuration files, and documentation to ensure accuracy without any invented claims.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources().catch(e => String(e));\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead dialog2graph/README.md 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/source/index.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/source/getting_started.rst 
+[0m→ [0mRead docs/doc_structure.md 
+[0m→ [0mRead dialog2graph/cli/main.py 
+[0m→ [0mRead docs/source/userguides/basic_usage.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/source/userguides.rst 
+[0m→ [0mRead examples/cli_usage/cfg.yml 
+[0m→ [0mRead docs/source/research.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

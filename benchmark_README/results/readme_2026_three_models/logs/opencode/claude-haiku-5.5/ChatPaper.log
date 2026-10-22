@@ -1,0 +1,107 @@
+I'll look through the repository first so the README only describes what's actually there.
+No root README exists yet. I'll read the main entry points, dependencies, and the existing sub-READMEs and docs.
+The main scripts are clear. Now the sub-projects, docs, config handling, and license.
+The license is CC BY-NC-ND 4.0, which needs to be stated accurately. Next I'll check how config keys are read, the reviewer/response scripts, and the Grobid setup.
+I still need the apikey.ini format, the reading tutorial, and what the reviewer and response scripts actually do.
+I have the core picture. Before writing, I'll verify a few details that affect accuracy: the GROBID endpoint, whether image saving is actually wired in, and whether the Flask `app.py` exists at the root.
+Confirmed: the root has no `app.py`, no `apikey.ini`, and no `ChatPaper2Xmind` directory. Image extraction is only called from the Hugging Face copy, not the root scripts. One more check on the auto_survey dependencies before writing.
+I have enough to write an accurate README. Writing it now.
+The README is written. I'll remove two sentences I can't fully back up: a claim about where the key is sent, and a loose claim about Sphinx build dependencies.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with `# ChatPaper`.
+
+It covers the main workflow (arXiv search, PDF download, and OpenAI summaries from `chat_paper.py` and `chat_arxiv.py`) and the other tools: PDF translation, review-response and reviewer drafting, the literature survey generator, the Flask app, and Docker. It also has installation steps, the `apikey.ini` settings the code reads, command-line arguments and defaults, output locations, and a list of known limitations.
+
+Things I found in the repository that you should know about:
+
+- **The root has no `app.py`.** The tutorial says to run `python app.py` from the root, but the Flask app is only in `HuggingFaceDeploy/`, and it imports modules that are not in that folder. The README says so.
+- **`apikey.ini` is not in the repository.** It is git-ignored, so the README shows a minimal template based on the keys the code reads.
+- **`--save_image` does not save images in the root summary flow.** The image functions are only called from the Hugging Face copy.
+- **`start.sh` and the Dockerfile's working directory may not agree.** I did not run the container, so the README flags this as untested.
+- **The licenses conflict.** The root `LICENSE.md` is CC BY-NC-ND 4.0, but `auto_survey/README.md` says MIT. The README reports both and does not pick one.
+- **`ChatPaper2Xmind` is missing.** `.gitmodules` refers to it, but the directory is not in this copy.
+
+I did not install dependencies or run any of the scripts, so the usage examples come from the code and existing docs, not from a test run.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "*" [90min . · 100 matches[0m
+[0m✱ [0mGlob "**/*" [90min . · 108 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead chat_paper.py 
+[0m→ [0mRead chat_arxiv.py 
+[0m→ [0mRead chat_translate.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead .gitmodules 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead start.sh 
+[0m→ [0mRead HuggingFaceDeploy/app.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ChatReviewerAndResponse/README.md 
+[0m→ [0mRead auto_survey/README.md 
+[0m→ [0mRead docker/README.md 
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead docker/docker-compose.yaml 
+[0m→ [0mRead source/tutorial/getting_started.md 
+[0m→ [0mRead source/troubleshooting/troubleshooting.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead scipdf_parser-master/serve_grobid.sh 
+[0m→ [0mRead auto_survey/main.py 
+[0m✱ [0mGrep "config\.get\(|apikey|OPENAI_KEY|argparse|add_argument\(" [90min ChatReviewerAndResponse · 19 matches[0m
+[0m→ [0mRead HuggingFaceDeploy/README.md 
+[0m→ [0mRead source/index.rst 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ChatReviewerAndResponse/chat_response.py [90m[offset=1, limit=170][0m
+[0m→ [0mRead source/tutorial/reading_papers.md 
+[0m✱ [0mGrep "OPENAI_API_KEYS|OPENAI_API_BASE|CHATGPT_MODEL" [90min . · 18 matches[0m
+[0m→ [0mRead ChatReviewerAndResponse/chat_reviewer.py [90m[offset=1, limit=80][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "8070|GROBID_URL|grobid_url" [90min scipdf_parser-master/scipdf · 8 matches[0m
+[0m✱ [0mGlob "{app.py,ChatPaper2Xmind/**,apikey.ini,chat_response.py,chat_reviewer.py}" [90min . · 0 matches[0m
+[0m✱ [0mGrep "get_image_path\(|upload_gitee\(" [90min . · 12 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead auto_survey/requirements.txt failed
+[91m[1mError: [0mCannot read binary file: auto_survey/requirements.txt
+[0m✱ [0mGrep "^import|^from" [90min auto_survey/utils · 38 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -83,9 +83,9 @@
+ - `chat_paper.py` uses `CHATGPT_MODEL`. `chat_arxiv.py`, `chat_response.py`, and `chat_reviewer.py` hard-code `gpt-3.5-turbo` in their API calls.
+ - If no OpenAI key is found in `[OpenAI]` or `OPENAI_KEY`, `chat_paper.py` falls back to an `[AzureOPenAI]` section with `OPENAI_API_KEYS`, `CHATGPT_MODEL`, `OPENAI_API_BASE`, and `OPENAI_API_VERSION`.
+ - The `[Gitee]` section (`api`, `owner`, `repo`, `path`) is read only when `--save_image` is set. See [Known limitations](#known-limitations).
+ 
+-Keep your key private. The tutorial notes that the key stays on your machine, and the code does not send it anywhere other than the configured API base.
++Keep your key private. The tutorial notes that the key stays on your machine, and `apikey.ini` is listed in `.gitignore` so it is not committed.
+ 
+ ### Chinese and English output
+ 
+ `--language zh` (the default in `chat_paper.py` and `chat_arxiv.py`) writes Chinese output. `--language en` writes English. Other values fall back to Chinese.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -238,9 +238,9 @@
+ - `source/tutorial/getting_started.md` (English) and `getting_started_zh.md` (Chinese): prerequisites and installation.
+ - `source/tutorial/reading_papers.md` and `reading_papers_zh.md`: command-line usage, Flask, Docker, and Hugging Face.
+ - `source/troubleshooting/troubleshooting.md` and `troubleshooting_zh.md`: proxy settings and OpenAI API errors.
+ 
+-To build the Sphinx documentation, `source/conf.py` and `.readthedocs.yaml` are provided. The build dependencies are listed in `requirements.txt`.
++The Sphinx configuration is in `source/conf.py`, and `.readthedocs.yaml` is provided for Read the Docs.
+ 
+ ## Acknowledgements
+ 
+ - `auto_survey/README.md` says the survey code is based mainly on [auto-draft](https://github.com/CCCBora/auto-draft).
+
+> readme-benchmark · anthropic/claude-haiku-5.5

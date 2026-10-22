@@ -1,0 +1,130 @@
+I'll start by looking at the repository layout and existing docs.
+There's no root README yet. The existing sub-READMEs and main source files should describe the project, so I'll read those next.
+The main script is long, so I'll read the rest of it, plus the LowCodeLLM and CONTRIBUTING files.
+Next I'll read the LowCodeLLM core modules, the API wrapper, and the test files.
+I have the core logic. Last, I'll check the license, the security policy, and any hidden config files so the README doesn't miss anything.
+I've read enough to write it. The repo has no root README, and the sub-READMEs and source files cover two projects. I'll write the root README now.
+The README is written. Before finishing, I'll fix three statements I haven't verified: the test mocking claim, the description of the UI operations, and the `figure.jpg` description.
+One more accuracy fix: the generated image filename formats in the code differ from what I wrote in the Visual ChatGPT section.
+I wrote `README.md` in the repository root. It is the only file I created, and it starts with a level-one heading.
+
+The repository had no root README, so this one covers the whole repo. It describes two projects:
+
+- **Visual ChatGPT** (`visual_chatgpt.py`): a Gradio app where an OpenAI-backed agent calls about 25 visual tools. The README includes a table of tool names, the models behind them, and what each does. It also covers the `--load` option, the Gradio port (7861), and the model weights that download on first run.
+- **Low-code LLM** (`LowCodeLLM/`): a Flask app with a planning LLM and an executing LLM. The README covers the three API endpoints, the config variables, Docker and non-Docker startup (port 8888), and the test setup.
+
+I took the content from the source code and the existing sub-READMEs, not from outside sources. The README also records some issues I found in the code:
+
+- `visual_chatgpt.py` imports `groundingdino` and `segment_anything`, but `requirements.txt` does not list them.
+- `InfinityOutPainting` uses `Image.ANTIALIAS`, which was removed in Pillow 10. The dependencies are not pinned, so this may break.
+- The Gradio UI uses `.style(...)`, an API from older Gradio versions.
+- The bundled front end calls `http://127.0.0.1:8888` directly, so the server has to run on that address.
+- The LowCodeLLM `Dockerfile` sets `WORKERS`, but `supervisord.conf` does not use it.
+
+I did not run the code, so the install and run steps are taken from the existing files and not tested.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*.md" [90min . · 5 matches[0m
+[0m✱ [0mGlob "*" [90min . · 33 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead TaskMatrix.AI/README.md 
+[0m→ [0mRead visual_chatgpt.py 
+[0m→ [0mRead LowCodeLLM/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead visual_chatgpt.py [90m[offset=974][0m
+[0m→ [0mRead LowCodeLLM/Dockerfile 
+[0m→ [0mRead LowCodeLLM/config.template 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LowCodeLLM/src/requirements.txt 
+[0m→ [0mRead LowCodeLLM/src/app.py 
+[0m→ [0mRead LowCodeLLM/src/supervisord.conf 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LowCodeLLM/src/lowCodeLLM.py 
+[0m→ [0mRead LowCodeLLM/src/openAIWrapper.py 
+[0m→ [0mRead LowCodeLLM/src/planningLLM.py 
+[0m→ [0mRead LowCodeLLM/src/executingLLM.py 
+[0m✱ [0mGrep "(fetch|/api/|localhost|8888|7861)" [90min LowCodeLLM/src/index.html · 3 matches[0m
+[0m→ [0mRead LowCodeLLM/src/test/test_get_workflow.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"skip\";"} 
+[0m→ [0mRead LICENSE.txt [90m[limit=5][0m
+[0m✱ [0mGlob ".*" [90min . · 2 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -198,9 +198,9 @@
+ ```
+ 
+ ### Tests
+ 
+-Tests are in `LowCodeLLM/src/test/`. They call the configured LLM through `lowCodeLLM`, so they need valid API credentials and network access. Run them from `LowCodeLLM/src` because the tests read cases from `./test/testcases/`. The test files do not use a mock, and `pytest` is not listed in `requirements.txt`.
++Tests are in `LowCodeLLM/src/test/`, with cases in `LowCodeLLM/src/test/testcases/`. The `test_get_workflow.py` test calls the configured LLM through `lowCodeLLM`, so it needs valid API credentials and network access. Run tests from `LowCodeLLM/src`, because the test code reads cases from `./test/testcases/`. `pytest` is not listed in `requirements.txt`, so install it separately.
+ 
+ ## Documentation Assets
+ 
+ The `assets/` folder contains:
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -120,9 +120,9 @@
+ 
+ Low-code LLM is a minimum viable web app that demonstrates the interaction pattern from the paper. The user:
+ 
+ 1. Enters a task. The **planning LLM** returns a step-by-step workflow, with optional conditional jumps between steps.
+-2. Edits the workflow with the low-code operations in the web UI, such as adding, changing, or extending steps.
++2. Edits the workflow with the predefined low-code operations shown in the figure below.
+ 3. Chats with the **executing LLM**, which answers while following the confirmed workflow without showing the steps to the user.
+ 4. Refines the workflow until the results are satisfactory.
+ 
+ ![Low-code LLM system overview](assets/low-code-llm.png)
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -206,9 +206,9 @@
+ The `assets/` folder contains:
+ 
+ - `paradigm.png` and `overview.png`: TaskMatrix.AI diagrams.
+ - `demo.gif`, `demo_short.gif`, and `demo_inf.gif`: Visual ChatGPT demos.
+-- `figure.jpg`: an additional figure.
++- `figure.jpg`: an image file that is not referenced by the README.
+ - `low-code-llm.png`, `low-code-operation.png`, and `low-code-demovideo.mp4`: Low-code LLM figures and video.
+ 
+ ## Contributing
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -29,9 +29,9 @@
+ | `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` | Contribution, conduct, and security policies. |
+ 
+ ## Visual ChatGPT
+ 
+-Visual ChatGPT lets you chat with a language model about images. You can upload an image, ask questions about it, and ask for new images to be generated or edited. The agent picks which tools to call. Each generated image is saved under `image/` with a name such as `image/3f2a9c1b.png` or `<uuid>_<tool>_<previous>_<original>.png`, and the agent is instructed to refer to images only by the filenames returned by tools.
++Visual ChatGPT lets you chat with a language model about images. You can upload an image, ask questions about it, and ask for new images to be generated or edited. The agent picks which tools to call. Images are saved under `image/`. Text-to-image tools save files named with an 8-character random ID (for example `image/3f2a9c1b.png`), and tools that transform an existing image save files named `<4-char-id>_<operation>_<previous-name>_<original-name>.png`. The agent is instructed to refer to images only by the filenames returned by tools.
+ 
+ ![Visual ChatGPT demo](assets/demo_short.gif)
+ 
+ ### Tools
+
+> readme-benchmark · anthropic/claude-haiku-5.5

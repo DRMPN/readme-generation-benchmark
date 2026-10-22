@@ -1,0 +1,304 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63950,
+    "tree_files": 146,
+    "tracked_files": 146,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 224,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 91,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 119,
+        "truncated": false
+      },
+      {
+        "path": "data/athaliana/ReadMe.md",
+        "tokens": 231,
+        "truncated": false
+      },
+      {
+        "path": "data/fly/ReadMe.md",
+        "tokens": 226,
+        "truncated": false
+      },
+      {
+        "path": "data/yeasts/ReadMe.md",
+        "tokens": 200,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/DeepSTARR/README.md",
+        "tokens": 356,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/DeepSea/README.md",
+        "tokens": 502,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/SpliceAI/README.md",
+        "tokens": 262,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/enformer/README.md",
+        "tokens": 847,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/promoter_prediction/README.md",
+        "tokens": 434,
+        "truncated": false
+      },
+      {
+        "path": "src/gena_lm/genome_tools/README.md",
+        "tokens": 570,
+        "truncated": false
+      },
+      {
+        "path": "data/download_data.sh",
+        "tokens": 535,
+        "truncated": false
+      },
+      {
+        "path": "data/download_human.sh",
+        "tokens": 90,
+        "truncated": false
+      },
+      {
+        "path": "downstream_tasks/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "notebooks/GENA_sequence_classification_example.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "notebooks/gena_clusterization_example.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "notebooks/gena_enformer_usage.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "notebooks/public_gena_clusters.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "notebooks/public_gena_clusters_task.ipynb",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "data/athaliana/download_and_process_athaliana_data.sh",
+        "tokens": 1811,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/L12-H768-A12-V32k-L4096-preln-lastln-sparse-ln1e-05.json",
+        "tokens": 292,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/L12-H768-A12-V32k-L4096-preln-sparse-rope.json",
+        "tokens": 311,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/L12-H768-A12-V32k-preln-lastln.json",
+        "tokens": 201,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/L12-H768-A12-V32k-preln.json",
+        "tokens": 209,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/L24-H1024-A16-V32k-preln-lastln.json",
+        "tokens": 203,
+        "truncated": false
+      },
+      {
+        "path": "data/configs/hf_bigbird_L12-H768-A12-V32k-L4096.json",
+        "tokens": 238,
+        "truncated": false
+      },
+      {
+        "path": "data/fly/download_and_process_fly_data.sh",
+        "tokens": 1673,
+        "truncated": false
+      },
+      {
+        "path": "data/fly/fly.genomes.txt",
+        "tokens": 1818,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "data/full_ensembl_genomes_metadata.cvs",
+      "manuscript_data/Suplementary_Table_1.csv",
+      "manuscript_data/Suplementary_Table_2.csv",
+      "notebooks/2023-08-10 19_40_52.828317species_extended_metadata.csv",
+      "notebooks/HSE.task3.table_full.csv",
+      "notebooks/HSE.task3.table_sample.csv",
+      "data/yeasts/ENA_PRJEB59413_assmebly_links.tsv",
+      "data/yeasts/download_and_process_yeast_data.sh",
+      "downstream_tasks/APARENT/AparentDataset.py",
+      "downstream_tasks/APARENT/AparentDataset_test_data.csv",
+      "downstream_tasks/APARENT/model_and_not_used_loss_class.py",
+      "downstream_tasks/APARENT/run_APARENT_finetuning.py",
+      "downstream_tasks/APARENT/run_aparent_finetuning.sh",
+      "downstream_tasks/APARENT/test_AparentDataset.py",
+      "downstream_tasks/DeepSTARR/DeepSTARRDataset.py",
+      "downstream_tasks/DeepSTARR/finetune_deepstarr.sh",
+      "downstream_tasks/DeepSTARR/run_deepstarr_finetuning.py",
+      "downstream_tasks/DeepSTARR/test_DeepSTARRDataset.py",
+      "downstream_tasks/DeepSTARR/test_Sequences.fa",
+      "downstream_tasks/DeepSTARR/test_Sequences_activity.txt",
+      "downstream_tasks/DeepSea/DeepSeaDataset.py",
+      "downstream_tasks/DeepSea/extend_dataset.py",
+      "downstream_tasks/DeepSea/finetune_deepsea.sh",
+      "downstream_tasks/DeepSea/prepare_dataset.py",
+      "downstream_tasks/DeepSea/run_deepsea_finetuning.py",
+      "downstream_tasks/DeepSea/test.dataset.csv.gz",
+      "downstream_tasks/DeepSea/test_DeepSeaDataset.py",
+      "downstream_tasks/SpliceAI/SpliceAIDataset.py",
+      "downstream_tasks/SpliceAI/__init__.py",
+      "downstream_tasks/SpliceAI/finetune_spliceai.sh",
+      "downstream_tasks/SpliceAI/finetune_spliceai_large.sh",
+      "downstream_tasks/SpliceAI/finetune_spliceai_rmt.sh",
+      "downstream_tasks/SpliceAI/finetune_spliceai_rmt_pretrained.sh",
+      "downstream_tasks/SpliceAI/finetune_spliceai_sparse_4096.sh",
+      "downstream_tasks/SpliceAI/run_spliceai_finetuning.py",
+      "downstream_tasks/SpliceAI/run_spliceai_finetuning_rmt.py",
+      "downstream_tasks/SpliceAI/split_train_valid.py",
+      "downstream_tasks/SpliceAI/test_Dataset_data.csv",
+      "downstream_tasks/SpliceAI/test_SpliceAIDataset.py",
+      "downstream_tasks/clinvar_analysis/clinvar.ipynb",
+      "downstream_tasks/clinvar_analysis/clinvar_attribution_prediction.ipynb",
+      "downstream_tasks/clinvar_analysis/clinvar_promoter_prediction.ipynb",
+      "downstream_tasks/clinvar_analysis/clinvar_significance_mapping.txt",
+      "downstream_tasks/clinvar_analysis/human_epdnew_fH7d2.bed",
+      "downstream_tasks/clinvar_analysis/make_exons_bed.ipynb",
+      "downstream_tasks/enformer/convert_basenji_dataset.py",
+      "downstream_tasks/enformer/enformer_dataset.py",
+      "downstream_tasks/enformer/enformer_metrics.py",
+      "downstream_tasks/enformer/enformer_model.py",
+      "downstream_tasks/enformer/evaluate_enformer.sh",
+      "downstream_tasks/enformer/evaluate_enformer_augs.sh",
+      "downstream_tasks/enformer/evaluate_enformer_rmt_sparse.sh",
+      "downstream_tasks/enformer/finetune_enformer.sh",
+      "downstream_tasks/enformer/finetune_enformer_large.sh",
+      "downstream_tasks/enformer/finetune_enformer_large_rmt.sh",
+      "downstream_tasks/enformer/finetune_enformer_large_rmt_continue.sh",
+      "downstream_tasks/enformer/finetune_enformer_rmt.sh",
+      "downstream_tasks/enformer/finetune_enformer_rmt_continue.sh",
+      "downstream_tasks/enformer/finetune_enformer_sparse_hf.sh",
+      "downstream_tasks/enformer/finetune_enformer_sparse_hf_rmt.sh",
+      "downstream_tasks/enformer/run_enformer_evaluation.py",
+      "downstream_tasks/enformer/run_enformer_evaluation_augs.py",
+      "downstream_tasks/enformer/run_enformer_finetuning.py",
+      "downstream_tasks/enformer/run_enformer_finetuning_rmt.py",
+      "downstream_tasks/promoter_prediction/dataset.py",
+      "downstream_tasks/promoter_prediction/dataset_fold_split.py",
+      "downstream_tasks/promoter_prediction/dataset_generator.py",
+      "downstream_tasks/promoter_prediction/finetune_promoter.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_16000.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_16000_nar_rmt_large.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_16000_nar_rmt_large_pretrained.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_2000.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_2000_large.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_2000_nar_large.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_2000_nar_large_rmt.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_large.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_rmt.sh",
+      "downstream_tasks/promoter_prediction/finetune_promoter_rmt_pretrained.sh",
+      "downstream_tasks/promoter_prediction/hg38_len_2000.fa.txt",
+      "downstream_tasks/promoter_prediction/hg38_len_300.fa.txt",
+      "downstream_tasks/promoter_prediction/hg38_promoters_len_300_dataset.csv",
+      "downstream_tasks/promoter_prediction/run_promoter_finetuning.py",
+      "downstream_tasks/promoter_prediction/run_promoter_finetuning_rmt.py",
+      "downstream_tasks/splicing_onemut/canonical_dataset.txt",
+      "downstream_tasks/splicing_onemut/genes.txt",
+      "downstream_tasks/splicing_onemut/splice_check.ipynb",
+      "src/gena_lm/__init__.py",
+      "src/gena_lm/modeling_bert.py",
+      "src/gena_lm/modeling_rmt.py",
+      "src/gena_lm/utils.py",
+      "data/athaliana/athaliana_holdouts/GCF_000001735_4.testholdout.bed",
+      "data/athaliana/athaliana_holdouts/valid_species_stats.tsv",
+      "data/fly/fly_holdouts/D_MELANOGASTER.testholdout.bed",
+      "data/fly/fly_holdouts/valid_species_stats.tsv",
+      "data/tokenizers/t2t_1000h_multi_32k/special_tokens_map.json",
+      "data/tokenizers/t2t_1000h_multi_32k/tokenizer.json",
+      "data/tokenizers/t2t_1000h_multi_32k/tokenizer_config.json",
+      "data/yeasts/yeast_holdouts/sacCer3.testholdout.bed",
+      "data/yeasts/yeast_holdouts/valid_species_stats.tsv",
+      "src/gena_lm/genome_tools/1KG+HGDP.selected_samples.tsv",
+      "src/gena_lm/genome_tools/__init__.py",
+      "src/gena_lm/genome_tools/create_allele_corpus.py",
+      "src/gena_lm/genome_tools/create_corpus.py",
+      "src/gena_lm/genome_tools/create_multigenome_corpus.sh",
+      "src/gena_lm/genome_tools/full_ensembl_genomes_metadata.cvs",
+      "src/gena_lm/tokenizers/__init__.py",
+      "src/gena_lm/tokenizers/tokenize_genomes.py",
+      "data/tokenizers/human/BPE/BPE.json",
+      "data/tokenizers/human/BPE_32k/special_tokens_map.json",
+      "data/tokenizers/human/BPE_32k/tokenizer.json",
+      "data/tokenizers/human/BPE_32k/tokenizer_config.json",
+      "data/tokenizers/human/BPE_32k_all_chr_10M/special_tokens_map.json",
+      "data/tokenizers/human/BPE_32k_all_chr_10M/tokenizer.json",
+      "data/tokenizers/human/BPE_32k_all_chr_10M/tokenizer_config.json",
+      "data/tokenizers/human/BPE_all_chr/BPE_no_n_all_chr.json"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 64418,
+    "completion_tokens": 2051,
+    "total_tokens": 66469,
+    "cost": 0.009077675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 64415,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009077675,
+      "upstream_inference_prompt_cost": 0.008052175,
+      "upstream_inference_completions_cost": 0.0010255
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 364,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606975-YHKa2eAEuT1qfh3b0CFV"
+}

@@ -1,0 +1,94 @@
+I've now inspected the full repository — the CLI (`smsboom.py`), the `utils` package, both endpoint data files, the GUI, the `debug/` scraping scripts, the Dockerfile, CI workflow, and license. Before writing, one important note on scope:
+
+This is SMSBoom, an SMS "bomber" (短信轰炸机) — its function is to flood a phone number with verification SMS by replaying third-party websites' send-code endpoints. That is a harassment technique, so I've documented the repository accurately and completely (structure, components, dependencies, caveats) but deliberately left out a "how to run it against a number" usage guide, since I'm not willing to provide operating instructions for harassing people. The README states this omission openly.
+Created `README.md` in the repository root — it's the only file I created or modified.
+
+**What it covers** (everything verified against the code, no invented claims):
+
+- **What the project is** — a Python tool that floods a phone number with SMS verification codes by replaying third-party send-code endpoints (87 definitions in `api.json`, 1,018 raw GET URLs in `GETAPI.json`), with a prominent notice that using it against numbers without consent is harassment/illegal
+- **How it works** — endpoint substitution (`[phone]`/`[timestamp]`), the four CLI commands (`run`, `asyncRun`, `oneRun`, `update`), threading/asyncio model, proxy file support, User-Agent rotation, and the disabled TLS verification
+- **Repository layout** — a table covering every file and directory, including details like the GUI being an unwired Tkinter skeleton and the `debug/` harvesting scripts
+- **Dependencies** — pinned `click`/`httpx`/`loguru`/`pydantic`, Python versions from the CI/Docker configs, and undeclared imports in the debug scripts
+- **Known caveats** — notably that the Dockerfile's `pipenv install` will fail because no `Pipfile` exists in the repo
+- **For defenders** — brief mitigation guidance for the abuse pattern it exploits
+- **License** — Apache 2.0
+
+**What I left out and why:** a usage section with runnable attack commands (phone-number flags, wave/frequency tuning, proxy setup for evasion, CI automation setup). Providing those would make the tool directly usable for harassing phone users, which I won't do. The README states this omission explicitly in the notice block.
+
+If you'd like, I can translate the README into Chinese, adjust its tone or structure, or expand any descriptive section further.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m27 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m→ [0mRead smsboom.py 
+[0m→ [0mRead Dockerfile 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead smsboom_GUI.py 
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m⚙ [0mexecute {"code":"const files = ['requirements.txt', 'requirements-dev.txt', '.git/config'];\nfor (const f of files) {\n  try {\n    const res = await fetch('file://' + (f.startsWith('.git') ? '/tmp/SMSBoom-fb6q5dic/.git/config' : '/tmp/SMSBoom-fb6q5dic/' + f));\n    const text = await res.text();\n    return { [f]: text.slice(0, 2000) };\n  } catch (e) {\n    return { error: String(e), f };\n  }\n}"} 
+[0m→ [0mRead utils/req.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github 
+[0m→ [0mRead utils/models.py 
+[0m✱ [0mGrep "httpx|loguru|click|aiohttp|requests|gi|\bPillow\b|pyinstaller" [90min requirements.txt · 3 matches[0m
+[0m✱ [0mGrep "." [90min requirements-dev.txt · 84 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead utils/__init__.py 
+[0m→ [0mRead .github/workflows 
+[0m✱ [0mGrep "^[a-zA-Z-]+==" [90min requirements.txt · 12 matches[0m
+[0m→ [0mRead utils/log.py 
+[0m→ [0mRead utils/sql.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead debug/spider-api.py 
+[0m→ [0mRead .github/workflows/run.yaml 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"// No filesystem access in code mode; use git via read of .git files instead.\nreturn \"n/a\""} 
+[0m→ [0mRead api.json [90m[limit=40][0m
+[0m→ [0mRead GETAPI.json [90m[limit=15][0m
+[0m✱ [0mGlob "Pipfile*" [90m0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead debug/tou_api.py 
+[0m✱ [0mGrep ""desc":" [90min api.json · 87 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"// Count entries in GETAPI.json and api.json by fetching via... no fs access.\n// Instead use grep tool counts through tools catalog? Not available in code mode.\nreturn \"use grep directly\""} 
+[0m✱ [0mGrep "^\s+"http" [90min GETAPI.json · 5 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[offset=590, limit=40][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=15][0m
+[0m→ [0mRead debug/api.js [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .git/config 
+[0m→ [0mRead debug/hz-web.json [90m[limit=30][0m
+[0m→ [0mRead img 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead img/cmd1.png 
+[0m→ [0mRead img/e.g.1.png 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[offset=630, limit=5][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=10][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=10][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[offset=635, limit=10][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead GETAPI.json [90m[limit=15][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "^\]" [90min GETAPI.json · 1 match[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "^\s+"http" [90min GETAPI.json · 1018 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

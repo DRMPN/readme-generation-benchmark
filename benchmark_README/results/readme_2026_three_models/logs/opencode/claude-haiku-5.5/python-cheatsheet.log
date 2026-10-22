@@ -1,0 +1,55 @@
+I'll start by looking at what's in the repository.
+The repo has no root README yet. I'll read the main scripts and the existing pdf/README.md.
+The `parse.js` header says it builds `index.html` from `README.md`, which matters here. I'll read the rest of that script and check hidden files, git metadata, and the template.
+The script is long. I'll grep for its key steps instead of reading all of it.
+Key finding: `parse.js` reads `README.md` as the source for `index.html`. I'll check the build section to see exactly what it does.
+I have enough to write an accurate README. One thing to flag before I write: the build script reads the root `README.md` as its cheatsheet source, and that file is missing from this checkout. Writing a new `README.md` here will change what `./parse.js` builds, so I'll call that out in the README and in my reply.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The main thing to know: `parse.js` builds `index.html` from the root `README.md`, and this checkout doesn't have a root `README.md`. The cheatsheet's Markdown source is presumably what should be there. The file I wrote describes the project instead, so running `node parse.js` now would replace the published cheatsheet content in `index.html` with this description. I didn't run the build. The README includes a note about this.
+
+Decision for you: should I keep the project description here and move the cheatsheet source to another name (the build script would need a matching change), or restore the cheatsheet as `README.md` and put the project description elsewhere?
+
+The README covers:
+- What each top-level path is and what it does.
+- How to use the page: search, section links, theme switching.
+- The eight topic groups from the table of contents.
+- How to build with Node and the npm packages named in `parse.js`.
+- The helper scripts in `web/` and `pdf/`, and the PDF process.
+- Licensing: no license file exists in the repo, so I said so rather than naming one.
+
+Two things I noticed while reading the code:
+- `pdf/remove_links.py` opens `../index.html` relative to the current directory, so it has to be run from inside `pdf/`. The `pdf/README.md` instructions call it as `./pdf/remove_links.py` from the root, which would fail.
+- The `pdf/README.md` refers to `pdf/acrobat/`, but the directory is named `pdf/Acrobat/`.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90min . · 89 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead parse.js 
+[0m→ [0mRead pdf/README.md 
+[0m→ [0mRead pdf/create_index.py 
+[0m→ [0mRead web/convert_table.py 
+[0m→ [0mRead web/update_plots.py 
+[0m→ [0mRead pdf/remove_links.py 
+[0m→ [0mRead web/empty_script.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+[0m✱ [0mGlob "{.*,LICENSE*,*.md,*.txt,.github/**/*}" [90min . · 0 matches[0m
+[0m→ [0mRead parse.js [90m[offset=480, limit=200][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .git/config 
+[0m✱ [0mGrep "python-cheatsheet|gto76|README|license|License" [90min web/template.html · 8 matches[0m
+[0m✱ [0mGrep "README|template|index.html|readFileSync|writeFileSync|showdown|jsdom\.|\.md" [90min parse.js · 20 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead parse.js [90m[offset=785, limit=60][0m
+[0m→ [0mRead parse.js [90m[offset=1010, limit=40][0m
+[0m✱ [0mGrep "^(const|function|var) |^  (var|const) [a-zA-Z_]+ = " [90min parse.js · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

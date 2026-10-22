@@ -1,0 +1,896 @@
+[
+  {
+    "name": ".dockerignore",
+    "type": "file"
+  },
+  {
+    "name": ".env.example",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "pull_request_template.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".well-known",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ai-plugin.json",
+        "type": "file"
+      },
+      {
+        "name": "logo.png",
+        "type": "file"
+      },
+      {
+        "name": "openapi.yaml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "Makefile",
+    "type": "file"
+  },
+  {
+    "name": "datastore",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "datastore.py",
+        "type": "file"
+      },
+      {
+        "name": "factory.py",
+        "type": "file"
+      },
+      {
+        "name": "providers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "analyticdb_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "azurecosmosdb_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "azuresearch_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "chroma_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "elasticsearch_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "llama_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "milvus_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "mongodb_atlas_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "pgvector_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "pinecone_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "postgres_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "qdrant_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "redis_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "supabase_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "weaviate_datastore.py",
+            "type": "file"
+          },
+          {
+            "name": "zilliz_datastore.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "deployment",
+        "type": "dir",
+        "children": [
+          {
+            "name": "flyio.md",
+            "type": "file"
+          },
+          {
+            "name": "heroku.md",
+            "type": "file"
+          },
+          {
+            "name": "other-options.md",
+            "type": "file"
+          },
+          {
+            "name": "removing-unused-dependencies.md",
+            "type": "file"
+          },
+          {
+            "name": "render-thumbnail.png",
+            "type": "file"
+          },
+          {
+            "name": "render.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "deprecated",
+        "type": "dir",
+        "children": [
+          {
+            "name": "plugins.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "providers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "analyticdb",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "azurecosmosdb",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "azuresearch",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "chroma",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "elasticsearch",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "llama",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "milvus",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "mongodb",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pinecone",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "postgres",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "qdrant",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "redis",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "supabase",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "weaviate",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "zilliz",
+            "type": "dir",
+            "children": [
+              {
+                "name": "setup.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "authentication-methods",
+        "type": "dir",
+        "children": [
+          {
+            "name": "no-auth",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ai-plugin.json",
+                "type": "file"
+              },
+              {
+                "name": "main.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "oauth",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ai-plugin.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "service-http",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ai-plugin.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "user-http",
+            "type": "dir",
+            "children": [
+              {
+                "name": "ai-plugin.json",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "docker",
+        "type": "dir",
+        "children": [
+          {
+            "name": "elasticsearch",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "docker-compose.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "milvus",
+            "type": "dir",
+            "children": [
+              {
+                "name": "docker-compose.yaml",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "qdrant",
+            "type": "dir",
+            "children": [
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "docker-compose.yaml",
+                "type": "file"
+              },
+              {
+                "name": "documents.json",
+                "type": "file"
+              },
+              {
+                "name": "queries.json",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "redis",
+            "type": "dir",
+            "children": [
+              {
+                "name": "docker-compose.yml",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "function-calling",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "memory",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "ai-plugin.json",
+            "type": "file"
+          },
+          {
+            "name": "main.py",
+            "type": "file"
+          },
+          {
+            "name": "openapi.yaml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "providers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "azurecosmosdb",
+            "type": "dir",
+            "children": [
+              {
+                "name": "semantic-search.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "elasticsearch",
+            "type": "dir",
+            "children": [
+              {
+                "name": "search.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "mongodb",
+            "type": "dir",
+            "children": [
+              {
+                "name": "semantic-search.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "pinecone",
+            "type": "dir",
+            "children": [
+              {
+                "name": "semantic-search.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "redis",
+            "type": "dir",
+            "children": [
+              {
+                "name": "semantic-search-and-filter.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "supabase",
+            "type": "dir",
+            "children": [
+              {
+                "name": ".gitignore",
+                "type": "file"
+              },
+              {
+                "name": "config.toml",
+                "type": "file"
+              },
+              {
+                "name": "migrations",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "20230414142107_init_pg_vector.sql",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "seed.sql",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "local_server",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ai-plugin.json",
+        "type": "file"
+      },
+      {
+        "name": "logo.png",
+        "type": "file"
+      },
+      {
+        "name": "main.py",
+        "type": "file"
+      },
+      {
+        "name": "openapi.yaml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "models",
+    "type": "dir",
+    "children": [
+      {
+        "name": "api.py",
+        "type": "file"
+      },
+      {
+        "name": "models.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "poetry.lock",
+    "type": "file"
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "process_json",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "example.json",
+            "type": "file"
+          },
+          {
+            "name": "process_json.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "process_jsonl",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "example.jsonl",
+            "type": "file"
+          },
+          {
+            "name": "process_jsonl.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "process_zip",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "example.zip",
+            "type": "file"
+          },
+          {
+            "name": "process_zip.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "server",
+    "type": "dir",
+    "children": [
+      {
+        "name": "main.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "services",
+    "type": "dir",
+    "children": [
+      {
+        "name": "chunks.py",
+        "type": "file"
+      },
+      {
+        "name": "date.py",
+        "type": "file"
+      },
+      {
+        "name": "extract_metadata.py",
+        "type": "file"
+      },
+      {
+        "name": "file.py",
+        "type": "file"
+      },
+      {
+        "name": "openai.py",
+        "type": "file"
+      },
+      {
+        "name": "pii_detection.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "datastore",
+        "type": "dir",
+        "children": [
+          {
+            "name": "providers",
+            "type": "dir",
+            "children": [
+              {
+                "name": "analyticdb",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_analyticdb_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "azurecosmosdb",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_azurecosmosdb_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "azuresearch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_azuresearch_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "chroma",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_chroma_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "elasticsearch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_elasticsearch_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "llama",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_llama_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "milvus",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_milvus_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "mongodb_atlas",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_integration.py",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test_mongodb_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "postgres",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_postgres_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "qdrant",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_qdrant_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "redis",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_redis_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "supabase",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_supabase_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "weaviate",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "docker-compose.yml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "test_weaviate_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "zilliz",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "test_zilliz_datastore.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

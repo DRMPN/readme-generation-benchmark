@@ -1,0 +1,230 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 42104,
+    "tree_files": 64,
+    "tracked_files": 64,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 2265,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/main.py",
+        "tokens": 3814,
+        "truncated": false
+      },
+      {
+        "path": "FAQ.md",
+        "tokens": 317,
+        "truncated": false
+      },
+      {
+        "path": "PROJECT.md",
+        "tokens": 1625,
+        "truncated": false
+      },
+      {
+        "path": "UPDATE.md",
+        "tokens": 2062,
+        "truncated": false
+      },
+      {
+        "path": "improve/README.md",
+        "tokens": 1413,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/README.md",
+        "tokens": 4012,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/README_en.md",
+        "tokens": 3723,
+        "truncated": false
+      },
+      {
+        "path": "resources/WECHAT.md",
+        "tokens": 68,
+        "truncated": false
+      },
+      {
+        "path": "api.py",
+        "tokens": 434,
+        "truncated": false
+      },
+      {
+        "path": "cli_demo.py",
+        "tokens": 463,
+        "truncated": false
+      },
+      {
+        "path": "cli_demo_vision.py",
+        "tokens": 446,
+        "truncated": false
+      },
+      {
+        "path": "utils.py",
+        "tokens": 527,
+        "truncated": false
+      },
+      {
+        "path": "web_demo.py",
+        "tokens": 865,
+        "truncated": false
+      },
+      {
+        "path": "web_demo2.py",
+        "tokens": 552,
+        "truncated": false
+      },
+      {
+        "path": "web_demo_old.py",
+        "tokens": 494,
+        "truncated": false
+      },
+      {
+        "path": "web_demo_vision.py",
+        "tokens": 1078,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/arguments.py",
+        "tokens": 1749,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/deepspeed.json",
+        "tokens": 156,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/ds_train_finetune.sh",
+        "tokens": 219,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/evaluate.sh",
+        "tokens": 178,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/evaluate_finetune.sh",
+        "tokens": 146,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/train.sh",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/train_chat.sh",
+        "tokens": 198,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/trainer.py",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "ptuning/trainer_seq2seq.py",
+        "tokens": 2405,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/web_demo.py",
+        "tokens": 1310,
+        "truncated": false
+      },
+      {
+        "path": "ptuning/web_demo.sh",
+        "tokens": 69,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.yaml",
+        "tokens": 431,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/config.yml",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+        "tokens": 168,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "MODEL_LICENSE",
+      "examples/ad-writing-2.png",
+      "examples/blog-outline.png",
+      "examples/comments-writing.png",
+      "examples/email-writing-1.png",
+      "examples/email-writing-2.png",
+      "examples/information-extraction.png",
+      "examples/role-play.png",
+      "examples/self-introduction.png",
+      "examples/sport.png",
+      "examples/tour-guide.png",
+      "improve/data_sample.jsonl",
+      "limitations/factual_error.png",
+      "limitations/math_error.png",
+      "limitations/self-confusion_google.jpg",
+      "limitations/self-confusion_openai.jpg",
+      "limitations/self-confusion_tencent.jpg",
+      "resources/cli-demo.png",
+      "resources/english-q1-new.png",
+      "resources/english-q1-old.png",
+      "resources/english-q2-new.png",
+      "resources/english-q2-old.png",
+      "resources/english-q3-new.png",
+      "resources/english-q3-old.png",
+      "resources/english-q4-new.png",
+      "resources/english-q4-old.png",
+      "resources/visualglm.png",
+      "resources/web-demo.gif",
+      "resources/web-demo.png",
+      "resources/webglm.jpg",
+      "resources/wechat.jpg"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 40087,
+    "completion_tokens": 2082,
+    "total_tokens": 42169,
+    "cost": 0.0060518,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 40084,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0060518,
+      "upstream_inference_prompt_cost": 0.0050108,
+      "upstream_inference_completions_cost": 0.001041
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 309,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792605977-9N5hWjE7QF8FDYZmvJ52"
+}

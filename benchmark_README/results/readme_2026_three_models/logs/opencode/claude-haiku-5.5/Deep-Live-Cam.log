@@ -1,0 +1,141 @@
+I'll start by looking at the repository layout and any existing docs.
+Now I'll read the main files in parallel.
+Next, the processing modules, UI, and metadata.
+Next: the UI, face analysis, license, and repo config.
+I have the core picture. Now I'll check the git remote, the issue templates, and the live-preview code path.
+The git remote points to a local path, so I won't use it as a project URL. Last checks: the webcam path, the locale loader, and the available translations.
+I have enough to write an accurate README. Key facts I confirmed from the code: the AGPL-3.0 license, the CLI flags and defaults, the required model files, the ffmpeg requirement, and the Windows `.bat` launchers. Writing it now.
+The README is written. Before finishing, I want to verify two claims I made from partial reads: when switch settings are saved, and how the live webcam loop runs frame processors.
+Two corrections are needed: switch settings are saved when a switch is toggled, not when the window closes, and the thread default is always 8 because it is computed before any provider is set. I'll fix those and remove the speculative troubleshooting lines.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The README covers what the project does, the requirements, installation, the model files, GUI and command-line usage, a table of every CLI option with its code default, how the pipeline works, the project layout, the translation files, troubleshooting, contributing, and the license (AGPL-3.0, from `LICENSE`).
+
+I checked the claims against the source files. A few things you should know:
+
+- **Installation steps are my reconstruction.** The repo has no install guide, so the steps come from `requirements.txt` and the code. I did not run them, so the README says they are unverified.
+- **The face-swapper model download looks broken.** `face_swapper.py` downloads `inswapper_128_fp16.onnx` from a Hugging Face `/blob/` page URL into `modules/processors/frame/`, but the code loads it from `models/`. The README tells users to place the file manually from the `/resolve/` URL into `models/`, and it flags this issue.
+- **`--keep-audio` is effectively always on.** It is defined as `store_true` with a default of `True`. The README documents this as it is.
+- **Headless mode needs `-o`.** Without it, the code calls `shutil.copy2` with no destination. The README says to pass `-o`.
+- **The NSFW switch is commented out in the GUI.** The filter is only reachable through `--nsfw-filter`, and the README says so.
+- **The README does not include performance numbers.** It only embeds `media/demo.gif`.
+
+I also added a short responsible-use note near the top about consent and impersonation. It is a caution, not a claim the repo makes.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90min . · 44 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead run.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead run-cuda.bat 
+[0m→ [0mRead run-directml.bat 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead models/instructions.txt 
+[0m→ [0mRead modules/globals.py 
+[0m→ [0mRead modules/core.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead modules/metadata.py 
+[0m→ [0mRead modules/predicter.py 
+[0m→ [0mRead modules/utilities.py 
+[0m→ [0mRead modules/processors/frame/face_swapper.py 
+[0m→ [0mRead modules/processors/frame/face_enhancer.py 
+[0m→ [0mRead modules/processors/frame/core.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=30][0m
+[0m→ [0mRead modules/face_analyser.py 
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead mypi.ini 
+[0m→ [0mRead .github 
+[0m✱ [0mGrep "Tk\(|title\(|add_argument|def init|text=|\.json|locales|webcam|camera|get_available|cv2_enumerate|DEFAULT_|"title"|button|Button\(|CTkButton|CTkLabel" [90min modules/ui.py · 120 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"\";"} 
+[0m→ [0mRead .github/ISSUE_TEMPLATE 
+[0m→ [0mRead modules/ui.py [90m[offset=80, limit=100][0m
+[0m✱ [0mGrep "url|remote" [90min .git/config · 4 matches[0m
+[0m→ [0mRead modules/ui.py [90m[offset=740, limit=120][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead modules/gettext.py 
+[0m✱ [0mGlob "locales/*.json" [90m9 matches[0m
+[0m✱ [0mGrep "def create_webcam_preview|cv2.VideoCapture\(|CAP_PROP|def check_and_ignore_nsfw|predict_frame|predict_image|predict_video|def create_source_target_popup_for_webcam" [90min modules · 29 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "save_switch_states\(\)|process_frame\(|show_fps|live_mirror" [90min modules/ui.py · 25 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -93,9 +93,9 @@
+ 5. Click **Destroy** to stop and clean up temporary files.
+ 
+ The NSFW filter switch is commented out in the GUI code. The NSFW filter is available only through the `--nsfw-filter` command-line flag.
+ 
+-Switch settings are saved to `switch_states.json` in the working directory when the GUI is closed.
++Toggling a switch in the GUI saves the current switch states to `switch_states.json` in the working directory, and those states are loaded the next time the GUI starts.
+ 
+ ### Command-line mode
+ 
+ Passing any of `-s/--source`, `-t/--target`, or `-o/--output` runs in headless mode, which processes the target without opening the GUI. In headless mode, pass `-o` with the output file path (or directory when used with `-s` and `-t`).
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -130,9 +130,9 @@
+ | `--nsfw-filter` | off | Check the target with the NSFW model before processing. |
+ | `--video-encoder` | `libx264` | One of `libx264`, `libx265`, `libvpx-vp9`. |
+ | `--video-quality` | `18` | Constant rate factor for the video encoder, from `0` to `51`. |
+ | `--execution-provider` | `cpu` | One or more execution providers. Choices come from the ONNX Runtime providers installed on your system. Names are lowercase, such as `cpu`, `cuda`, `dml`, `coreml`, or `rocm`. |
+-| `--execution-threads` | `8` (`1` for DirectML or ROCm) | Number of worker threads. |
++| `--execution-threads` | `8` | Number of worker threads. The default is fixed at `8` when the arguments are defined, so it does not change with the chosen provider. Set it explicitly (for example `1`) when using DirectML or ROCm. |
+ | `--max-memory` | `16` GB (`4` on macOS) | Memory limit in GB. |
+ | `--live-mirror` | off | Mirror the live camera view. |
+ | `--live-resizable` | off | Make the live camera window resizable. |
+ | `-l, --lang` | `en` | GUI language code (see [Language](#language)). |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -9,9 +9,9 @@
+ ## Features
+ 
+ - **Image face swap:** Swap a face from a source image onto a target image.
+ - **Video face swap:** Swap faces frame by frame in a target video, with options to keep the original FPS and audio.
+-- **Live mode:** Run the swap on a webcam feed from the GUI, with an optional mirror view and an optional FPS overlay.
++- **Live mode:** Run the swap on a webcam feed from the GUI, with options for a mirrored view and an FPS display.
+ - **Face mapping (`--map-faces`):** Choose which source face replaces which target face when a frame contains several people. Mapping is set up in the GUI.
+ - **Many faces (`--many-faces`):** Process every detected face instead of only one.
+ - **Face enhancer:** An optional GFPGAN-based pass that enhances the swapped face (`--frame-processor face_enhancer`).
+ - **Mouth mask (`--mouth-mask`):** Keeps the lower-mouth region of the original target face.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -188,10 +188,8 @@
+ - **"ffmpeg is not installed."** Install ffmpeg and make sure `ffmpeg` is on your `PATH`.
+ - **"Python version is not supported."** Use Python 3.9 or newer.
+ - **"No face in source path detected."** Use a source image where a face is clearly visible.
+ - **"No cameras found"** in the GUI. Check that the camera is connected and not in use by another app. On Linux, the app checks the first 10 camera indices.
+-- **Frame processor fails to load.** Check that the model files are in `models/`.
+-- **Video output has no audio or the wrong frame rate.** Audio restore and FPS handling depend on ffmpeg and on the `--keep-fps` option.
+ 
+ ## Contributing
+ 
+ Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. It describes the `premain` and `experimental` branch workflow and the pre-pull-request checks (face swap with and without the face enhancer, map faces, camera listing, real-time FPS, boot time, and GPU stability). Bug reports can use the template in `.github/ISSUE_TEMPLATE/bug_report.md`.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

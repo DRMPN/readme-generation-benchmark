@@ -1,0 +1,100 @@
+I'll start by looking at what's in the repository.
+This looks like the ChatGLM-6B repository. I'll read the main code and documentation files.
+Code Mode has no file-read function, so I'll read the files directly.
+Next I'll read the remaining docs, the fine-tuning scripts, and the license files.
+I have the core documentation. Next I'll check the fine-tuning and demo scripts for exact commands and parameters.
+I have enough to write an accurate README. Two last checks: the WeChat resource note and the fine-tuning argument defaults.
+I have what I need. Writing the README now, limited to what the repository's code and docs support.
+The README is written. Before finishing, I'm removing one claim I can't support from the repository: the "6.2 billion parameters" figure isn't stated in any file I read.
+I wrote `README.md` in the repository root. It starts with a level-one heading, and every statement is taken from the repository's code or docs. I didn't create or change any other file.
+
+This is the ChatGLM-6B repository. The README covers:
+
+- **Repository layout:** what each script and directory is for.
+- **Requirements and installation:** from `requirements.txt`, plus extra dependencies that the code needs but the file doesn't list (`streamlit`, `streamlit_chat`, SwissArmyTransformer, torchvision, DeepSpeed).
+- **Quick start and demos:** the CLI, Gradio, Streamlit, and VisualGLM demos, plus the Python usage from the P-tuning docs.
+- **HTTP API:** the `POST /` endpoint in `api.py`, its fields and defaults, and an example `curl` call.
+- **Fine-tuning:** P-Tuning v2, full fine-tuning, and chat-data training, with the ADGEN results table from `ptuning/README.md`.
+- **Model versions, limitations, badcase feedback, related projects, and licensing.**
+
+Some things to know:
+
+- **Hardware:** the demo scripts call `.cuda()`, so they need an NVIDIA GPU as written. The README says so and doesn't claim Apple Silicon support, since no setup for it exists in the repo.
+- **Missing top-level README:** `ptuning/README.md` links to `../README_en.md`, which isn't in this directory. The README doesn't reference it.
+- **API security:** `api.py` binds to `0.0.0.0` with no authentication. The README warns about this.
+- **Unverified sections:** I didn't run any of the scripts. The README describes what the code does, not tested behavior.
+- **Parameter count removed:** I first wrote "6.2 billion parameters," but no file in the repo states that, so I removed it.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.worktree_list(),\n]);\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m60 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const files = [\"requirements.txt\",\"PROJECT.md\",\"UPDATE.md\",\"api.py\",\"cli_demo.py\",\"cli_demo_vision.py\",\"web_demo.py\",\"web_demo2.py\",\"web_demo_vision.py\",\"web_demo_old.py\",\"utils.py\",\"resources/WECHAT.md\",\"LICENSE\",\"MODEL_LICENSE\",\"improve/README.md\",\"ptuning/README.md\",\"ptuning/train.sh\",\"ptuning/evaluate.sh\",\"ptuning/train_chat.sh\",\"ptuning/web_demo.sh\",\"ptuning/ds_train_finetune.sh\",\"ptuning/evaluate_finetune.sh\"];\nconst out = {};\nconst res = await Promise.allSettled(files.map(f => tools.opencode.read_mcp_resource ? null : null));\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead PROJECT.md 
+[0m→ [0mRead api.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead web_demo.py 
+[0m→ [0mRead cli_demo.py 
+[0m→ [0mRead web_demo2.py 
+[0m→ [0mRead utils.py 
+[0m→ [0mRead UPDATE.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead FAQ.md 
+[0m→ [0mRead ptuning/README.md 
+[0m→ [0mRead improve/README.md 
+[0m→ [0mRead cli_demo_vision.py 
+[0m→ [0mRead web_demo_vision.py 
+[0m→ [0mRead web_demo_old.py 
+[0m→ [0mRead MODEL_LICENSE 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead ptuning/train.sh 
+[0m→ [0mRead ptuning/evaluate.sh 
+[0m→ [0mRead ptuning/web_demo.sh 
+[0m→ [0mRead ptuning/ds_train_finetune.sh 
+[0m→ [0mRead ptuning/train_chat.sh 
+[0m→ [0mRead ptuning/web_demo.py 
+[0m→ [0mRead ptuning/main.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead resources/WECHAT.md 
+[0m✱ [0mGrep "default=|help=" [90min ptuning/arguments.py · 33 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -1,7 +1,7 @@
+ # ChatGLM-6B
+ 
+-ChatGLM-6B is an open-source, bilingual (Chinese and English) dialogue language model with 6.2 billion parameters, released by the ChatGLM-6B Model Team (THUDM). This repository contains the model's inference demos (command line, web, API), parameter-efficient fine-tuning code, and related documentation. The model weights are downloaded from Hugging Face (`THUDM/chatglm-6b`) when the scripts run.
++ChatGLM-6B is an open-source, bilingual (Chinese and English) dialogue language model released by the ChatGLM-6B Model Team (THUDM). This repository contains the model's inference demos (command line, web, API), parameter-efficient fine-tuning code, and related documentation. The model weights are downloaded from Hugging Face (`THUDM/chatglm-6b`) when the scripts run.
+ 
+ Most of the repository's documentation and code comments are written in Chinese. This README is in English; the linked Chinese documents contain more detail.
+ 
+ ## Contents
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -227,9 +227,9 @@
+ - produce factual errors;
+ - generate harmful content;
+ - lose dialogue-context consistency.
+ 
+-The `limitations/` directory contains example screenshots of factual errors, math errors, and self-identity confusion. The model is also documented as possibly mixing Chinese words into English answers, which v1.1 aimed to reduce.
++The `limitations/` directory contains example screenshots of factual errors, math errors, and self-confusion (file names `self-confusion_*`). The model is also documented as possibly mixing Chinese words into English answers, which v1.1 aimed to reduce.
+ 
+ Fine-tuning can fix some of these issues, but `improve/README.md` notes that it can cause catastrophic forgetting, which may reduce general conversation ability or generalization.
+ 
+ ## Badcase feedback
+
+> readme-benchmark · anthropic/claude-haiku-5.5

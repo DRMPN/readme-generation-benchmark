@@ -1,0 +1,1010 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE_Lavis.md",
+    "type": "file"
+  },
+  {
+    "name": "MiniGPT4_Train.md",
+    "type": "file"
+  },
+  {
+    "name": "MiniGPTv2.pdf",
+    "type": "file"
+  },
+  {
+    "name": "MiniGPTv2_Train.md",
+    "type": "file"
+  },
+  {
+    "name": "SECURITY.md",
+    "type": "file"
+  },
+  {
+    "name": "dataset",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README_1_STAGE.md",
+        "type": "file"
+      },
+      {
+        "name": "README_2_STAGE.md",
+        "type": "file"
+      },
+      {
+        "name": "README_MINIGPTv2_FINETUNE.md",
+        "type": "file"
+      },
+      {
+        "name": "convert_cc_sbu.py",
+        "type": "file"
+      },
+      {
+        "name": "convert_laion.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "demo.py",
+    "type": "file"
+  },
+  {
+    "name": "demo_v2.py",
+    "type": "file"
+  },
+  {
+    "name": "environment.yml",
+    "type": "file"
+  },
+  {
+    "name": "eval_configs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "minigpt4_eval.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigpt4_llama2_eval.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigptv2_benchmark_evaluation.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigptv2_eval.yaml",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "eval_scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "EVAL_README.md",
+        "type": "file"
+      },
+      {
+        "name": "eval_ref.py",
+        "type": "file"
+      },
+      {
+        "name": "eval_vqa.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ad_1.png",
+        "type": "file"
+      },
+      {
+        "name": "ad_2.png",
+        "type": "file"
+      },
+      {
+        "name": "cook_1.png",
+        "type": "file"
+      },
+      {
+        "name": "cook_2.png",
+        "type": "file"
+      },
+      {
+        "name": "describe_1.png",
+        "type": "file"
+      },
+      {
+        "name": "describe_2.png",
+        "type": "file"
+      },
+      {
+        "name": "fact_1.png",
+        "type": "file"
+      },
+      {
+        "name": "fact_2.png",
+        "type": "file"
+      },
+      {
+        "name": "fix_1.png",
+        "type": "file"
+      },
+      {
+        "name": "fix_2.png",
+        "type": "file"
+      },
+      {
+        "name": "fun_1.png",
+        "type": "file"
+      },
+      {
+        "name": "fun_2.png",
+        "type": "file"
+      },
+      {
+        "name": "logo_1.png",
+        "type": "file"
+      },
+      {
+        "name": "op_1.png",
+        "type": "file"
+      },
+      {
+        "name": "op_2.png",
+        "type": "file"
+      },
+      {
+        "name": "people_1.png",
+        "type": "file"
+      },
+      {
+        "name": "people_2.png",
+        "type": "file"
+      },
+      {
+        "name": "rhyme_1.png",
+        "type": "file"
+      },
+      {
+        "name": "rhyme_2.png",
+        "type": "file"
+      },
+      {
+        "name": "story_1.png",
+        "type": "file"
+      },
+      {
+        "name": "story_2.png",
+        "type": "file"
+      },
+      {
+        "name": "web_1.png",
+        "type": "file"
+      },
+      {
+        "name": "wop_1.png",
+        "type": "file"
+      },
+      {
+        "name": "wop_2.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "examples_v2",
+    "type": "dir",
+    "children": [
+      {
+        "name": "2000x1372_wmkn_0012149409555.jpg",
+        "type": "file"
+      },
+      {
+        "name": "KFC-20-for-20-Nuggets.jpg",
+        "type": "file"
+      },
+      {
+        "name": "cockdial.png",
+        "type": "file"
+      },
+      {
+        "name": "float.png",
+        "type": "file"
+      },
+      {
+        "name": "glip_test.jpg",
+        "type": "file"
+      },
+      {
+        "name": "office.jpg",
+        "type": "file"
+      },
+      {
+        "name": "sofa.jpg",
+        "type": "file"
+      },
+      {
+        "name": "thief.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "figs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "demo.png",
+        "type": "file"
+      },
+      {
+        "name": "examples",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ad_1.png",
+            "type": "file"
+          },
+          {
+            "name": "ad_2.png",
+            "type": "file"
+          },
+          {
+            "name": "cook_1.png",
+            "type": "file"
+          },
+          {
+            "name": "cook_2.png",
+            "type": "file"
+          },
+          {
+            "name": "describe_1.png",
+            "type": "file"
+          },
+          {
+            "name": "describe_2.png",
+            "type": "file"
+          },
+          {
+            "name": "fact_1.png",
+            "type": "file"
+          },
+          {
+            "name": "fact_2.png",
+            "type": "file"
+          },
+          {
+            "name": "fix_1.png",
+            "type": "file"
+          },
+          {
+            "name": "fix_2.png",
+            "type": "file"
+          },
+          {
+            "name": "fun_1.png",
+            "type": "file"
+          },
+          {
+            "name": "fun_2.png",
+            "type": "file"
+          },
+          {
+            "name": "logo_1.png",
+            "type": "file"
+          },
+          {
+            "name": "op_1.png",
+            "type": "file"
+          },
+          {
+            "name": "op_2.png",
+            "type": "file"
+          },
+          {
+            "name": "people_1.png",
+            "type": "file"
+          },
+          {
+            "name": "people_2.png",
+            "type": "file"
+          },
+          {
+            "name": "rhyme_1.png",
+            "type": "file"
+          },
+          {
+            "name": "rhyme_2.png",
+            "type": "file"
+          },
+          {
+            "name": "story_1.png",
+            "type": "file"
+          },
+          {
+            "name": "story_2.png",
+            "type": "file"
+          },
+          {
+            "name": "web_1.png",
+            "type": "file"
+          },
+          {
+            "name": "wop_1.png",
+            "type": "file"
+          },
+          {
+            "name": "wop_2.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "minigpt2_demo.png",
+        "type": "file"
+      },
+      {
+        "name": "online_demo.png",
+        "type": "file"
+      },
+      {
+        "name": "overview.png",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "minigpt4",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "common",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "config.py",
+            "type": "file"
+          },
+          {
+            "name": "dist_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "eval_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "gradcam.py",
+            "type": "file"
+          },
+          {
+            "name": "logger.py",
+            "type": "file"
+          },
+          {
+            "name": "optims.py",
+            "type": "file"
+          },
+          {
+            "name": "registry.py",
+            "type": "file"
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          },
+          {
+            "name": "vqa_tools",
+            "type": "dir",
+            "children": [
+              {
+                "name": "VQA",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "PythonEvaluationTools",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "vqaEvalDemo.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "vqaEvaluation",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "vqaEval.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "PythonHelperTools",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "vqaDemo.py",
+                        "type": "file"
+                      },
+                      {
+                        "name": "vqaTools",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__init__.py",
+                            "type": "file"
+                          },
+                          {
+                            "name": "vqa.py",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "QuestionTypes",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "abstract_v002_question_types.txt",
+                        "type": "file"
+                      },
+                      {
+                        "name": "mscoco_question_types.txt",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "license.txt",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "vqa.py",
+                "type": "file"
+              },
+              {
+                "name": "vqa_eval.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "configs",
+        "type": "dir",
+        "children": [
+          {
+            "name": "datasets",
+            "type": "dir",
+            "children": [
+              {
+                "name": "aokvqa",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "defaults.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "cc_sbu",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "align.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "defaults.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "coco",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "caption.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "defaults_vqa.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "coco_bbox",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "invrefcoco.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "invrefcocog.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "invrefcocop.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "refcoco.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "refcocog.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "refcocop.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "flickr",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "caption_to_phrase.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "default.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "object_to_phrase.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "gqa",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "balanced_val.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "laion",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "defaults.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "llava",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "conversation.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "detail.yaml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "reason.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "multitask_conversation",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "default.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "nlp",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "unnatural_instruction.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ocrvqa",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ocrvqa.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "okvqa",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "defaults.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "textcaps",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "caption.yaml",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "vg",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "ref.yaml",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "default.yaml",
+            "type": "file"
+          },
+          {
+            "name": "models",
+            "type": "dir",
+            "children": [
+              {
+                "name": "minigpt4_llama2.yaml",
+                "type": "file"
+              },
+              {
+                "name": "minigpt4_vicuna0.yaml",
+                "type": "file"
+              },
+              {
+                "name": "minigpt_v2.yaml",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "conversation",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "conversation.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "datasets",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "builders",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "base_dataset_builder.py",
+                "type": "file"
+              },
+              {
+                "name": "image_text_pair_builder.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "data_utils.py",
+            "type": "file"
+          },
+          {
+            "name": "datasets",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "aok_vqa_datasets.py",
+                "type": "file"
+              },
+              {
+                "name": "base_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "caption_datasets.py",
+                "type": "file"
+              },
+              {
+                "name": "cc_sbu_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "coco_caption.py",
+                "type": "file"
+              },
+              {
+                "name": "coco_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "coco_vqa_datasets.py",
+                "type": "file"
+              },
+              {
+                "name": "dataloader_utils.py",
+                "type": "file"
+              },
+              {
+                "name": "flickr.py",
+                "type": "file"
+              },
+              {
+                "name": "gqa_datasets.py",
+                "type": "file"
+              },
+              {
+                "name": "laion_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "llava_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "multitask_conversation.py",
+                "type": "file"
+              },
+              {
+                "name": "ocrvqa_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "text_caps.py",
+                "type": "file"
+              },
+              {
+                "name": "unnatural_instruction.py",
+                "type": "file"
+              },
+              {
+                "name": "vg_dataset.py",
+                "type": "file"
+              },
+              {
+                "name": "vqa_datasets.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Qformer.py",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base_model.py",
+            "type": "file"
+          },
+          {
+            "name": "eva_vit.py",
+            "type": "file"
+          },
+          {
+            "name": "minigpt4.py",
+            "type": "file"
+          },
+          {
+            "name": "minigpt_base.py",
+            "type": "file"
+          },
+          {
+            "name": "minigpt_v2.py",
+            "type": "file"
+          },
+          {
+            "name": "modeling_llama.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "processors",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base_processor.py",
+            "type": "file"
+          },
+          {
+            "name": "blip_processors.py",
+            "type": "file"
+          },
+          {
+            "name": "randaugment.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "runners",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "runner_base.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tasks",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "base_task.py",
+            "type": "file"
+          },
+          {
+            "name": "image_text_pretrain.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "train.py",
+    "type": "file"
+  },
+  {
+    "name": "train_configs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "minigpt4_llama2_stage1_pretrain.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigpt4_llama2_stage2_finetune.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigpt4_stage1_pretrain.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigpt4_stage2_finetune.yaml",
+        "type": "file"
+      },
+      {
+        "name": "minigptv2_finetune.yaml",
+        "type": "file"
+      }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+This is the `face_recognition` library. Let me read the key files to gather accurate details.
+Let me check the remaining configuration and documentation files to ensure accuracy on testing, contributing, and docker setup.
+I now have all the details needed. Let me write the README.md.
+The file is created. Let me verify two claims I made (Flask and scikit-learn in specific examples) to be sure they're supported, and confirm the final state of the directory.
+I've completed the task. After inspecting the repository, I created `/tmp/face_recognition-5_umxoy2/README.md`, which is the only new file in the current directory.
+
+**What the README covers (all verified against the actual code):**
+
+- **Project overview** — `face_recognition` v1.4.0 by Adam Geitgey, MIT licensed, wrapping dlib for face detection, landmarks, encodings, and comparison.
+- **Features** — HOG and CNN face detection, 68-point/5-point landmark models, 128-dimension face encodings, batched GPU detection, and two CLI commands — all taken directly from `face_recognition/api.py`, `face_recognition_cli.py`, and `face_detection_cli.py`.
+- **Requirements & Installation** — dependencies and Python versions from `setup.py`/`requirements.txt`, install instructions from `docs/installation.rst`, plus Docker guidance from `docker/README.md`, the root `Dockerfile`, and `docker-compose.yml`.
+- **Usage** — Python API examples (from `docs/usage.rst`), a table of all seven public API functions with their real signatures and defaults, and both CLI commands with their actual flags (`--cpus`, `--tolerance`, `--show-distance`, `--model`, `--upsample`).
+- **Examples** — a list of the real scripts in `examples/`, with dependency notes I verified by grepping the source (e.g., webcam/video examples need OpenCV, KNN/SVM examples need scikit-learn).
+- **Development** — testing, linting, and docs commands from `Makefile`, `tox.ini`, and `CONTRIBUTING.rst`.
+- **Credits & License** — from `AUTHORS.rst` and `LICENSE`.
+
+Everything is grounded in the repository's actual files — no claims were invented.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m97 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead face_recognition/api.py 
+[0m→ [0mRead face_recognition/__init__.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/readme.rst 
+[0m→ [0mRead face_recognition/face_recognition_cli.py 
+[0m→ [0mRead AUTHORS.rst 
+[0m→ [0mRead docker/README.md 
+[0m→ [0mRead HISTORY.rst 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead docs/usage.rst 
+[0m→ [0mRead docs/installation.rst 
+[0m✱ [0mGlob "README*" [90m1 match[0m
+[0m→ [0mRead face_recognition/face_detection_cli.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.rst 
+[0m→ [0mRead tox.ini 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead tests/test_face_recognition.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "flask|sklearn|scikit|opencv|cv2" [90min examples · 40 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead examples/face_recognition_svm.py 
+[0m✱ [0mGrep "flask|sklearn|scikit|svm|knn" [90min examples · 20 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash

@@ -1,0 +1,110 @@
+I'll start by looking at the repository layout and any existing docs.
+This looks like the GPT Researcher project. There's no root README.md yet. I'll read the key config and entry-point files.
+The repo has a `pyproject.toml` with two version numbers (0.13.3 under poetry, 0.14.0 under project). I'll check the config, retriever, LLM, and server code to confirm the features before writing anything.
+The retriever and LLM provider lists are in code. Next I'll check the report-source handling, the scrapers, the frontend, the multi-agent and deep-research READMEs, and the CI/test setup.
+The retriever directories are the authoritative list. Next I'll check the scrapers, report sources, the frontend, the Python version, and the CI workflows.
+The Docker setup and retriever/scraper lists are confirmed. Now I'll check the install path, frontend run scripts, the API surface, and the top-level package exports.
+The WebSocket protocol and REST routes are clear now. Next I'll pull the environment variable names straight from code, along with the `mcp-server` and `evals` directories.
+Environment variable names are confirmed from the code. Last, I'll read the `mcp-server` and `evals` READMEs so I describe them accurately.
+The core features are confirmed. Before writing, I'll check the few retrievers whose env vars didn't appear in the earlier search (custom, semantic_scholar, mcp, duckduckgo, arxiv).
+I have enough verified detail to write the README. The root has no existing README.md, so I'll create it now.
+The README is written. Before finishing, I want to verify one claim: the `/api/multi_agents` route calls `run_research_task` and `stream_output`, which I didn't see imported in `server_utils.py`.
+The `/api/multi_agents` route is broken as written. `server_utils.py` uses `run_research_task` and `stream_output` without importing them, so calling it would raise a `NameError`. I'll correct the README row so it doesn't promise working behavior.
+I wrote `README.md` in the repository root. It is the only file I created. Every section is based on code or config I read, and I didn't run the project.
+
+The README covers the project's features, requirements, installation, configuration (defaults, environment variables, retrievers, LLM providers, scrapers), usage for the CLI, Python library, web server, WebSocket, Next.js frontend, deep research, detailed reports, the multi-agent workflow, and MCP. It also covers Docker, output locations, project structure, testing, contributing, and license (MIT).
+
+Things I found while checking the code that you may want to fix:
+
+- **`/api/multi_agents` is broken.** `backend/server/server_utils.py` calls `run_research_task` and `stream_output` without importing them. The README says so instead of presenting the route as working.
+- **Two version numbers.** `pyproject.toml` lists `0.13.3` under `[tool.poetry]` and `0.14.0` under `[project]`. `setup.py` says `0.14.0`. I left the version out of the README.
+- **Deep research defaults differ between docs and code.** `backend/report_type/deep_research/README.md` says breadth defaults to 4 and concurrency to 2. The code (`default.py`) sets 3 and 4. The README uses the code values.
+- **`human_feedback` over WebSocket is a placeholder.** The handler logs the message and has a TODO to forward it.
+
+Some retrievers (`duckduckgo`, `arxiv`, `semantic_scholar`) don't read any API key in their modules, so the README marks them that way.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? Promise.resolve(null) : Promise.resolve(null),\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90m100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead main.py 
+[0m→ [0mRead cli.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead .env.example 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead Dockerfile 
+[0m✱ [0mGlob "*" [90min backend · 23 matches[0m
+[0m✱ [0mGlob "*" [90min gpt_researcher · 100 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead gpt_researcher/config/config.json failed
+[91m[1mError: [0mFile not found: /tmp/gpt-researcher-0pzegm4l/gpt_researcher/config/config.json
+[0m→ [0mRead gpt_researcher/config/config.py 
+[0m→ [0mRead backend/server/server.py 
+[0m→ [0mRead gpt_researcher/utils/enum.py 
+[0m✱ [0mGlob "*" [90min gpt_researcher/config · 6 matches[0m
+[0m→ [0mRead gpt_researcher/llm_provider/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead gpt_researcher/retrievers/utils.py 
+[0m→ [0mRead gpt_researcher/llm_provider/generic/base.py 
+[0m→ [0mRead gpt_researcher/config/variables/default.py 
+[0m→ [0mRead backend/report_type/__init__.py 
+[0m→ [0mRead gpt_researcher/memory/embeddings.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead CONTRIBUTING.md 
+[0m✱ [0mGlob "*" [90min gpt_researcher/retrievers · 30 matches[0m
+[0m✱ [0mGlob "*" [90min .github · 5 matches[0m
+[0m→ [0mRead multi_agents/README.md 
+[0m→ [0mRead backend/report_type/deep_research/README.md 
+[0m→ [0mRead gpt_researcher/mcp/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .python-version 
+[0m✱ [0mGrep "scraper|SCRAPER|def get_scraper|"bs"|"tavily_extract"|"firecrawl"|"browser"|"pymupdf"|"arxiv"|nodriver" [90min gpt_researcher/scraper/scraper.py · 41 matches[0m
+[0m✱ [0mGrep "ReportSource\.|report_source ==|report_source in|elif report_source|if report_source|case "" [90min gpt_researcher · 50 matches[0m
+[0m→ [0mRead Procfile 
+[0m✱ [0mGlob "*" [90min frontend · 100 matches[0m
+[0m→ [0mRead .github/workflows/docker-build.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead gpt_researcher/__init__.py 
+[0m→ [0mRead frontend/nextjs/package.json 
+[0m→ [0mRead docs/docs/welcome.md 
+[0m→ [0mRead backend/server/server_utils.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "*" [90min mcp-server · 1 match[0m
+[0m✱ [0mGrep "(os\.environ\[|os\.getenv\(|os\.environ\.get\()\s*"[A-Z_]+"" [90min gpt_researcher · 47 matches[0m
+[0m✱ [0mGlob "*" [90min evals · 9 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead mcp-server/README.md 
+[0m→ [0mRead evals/README.md 
+[0m→ [0mRead backend/report_type/detailed_report/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "environ|getenv|RETRIEVER_ENDPOINT|api_key" [90min gpt_researcher/retrievers · 60 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "run_research_task|def stream_output|import.*stream_output" [90min backend · 4 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -213,9 +213,9 @@
+ | `GET` | `/report/{research_id}` | Returns the generated `.docx` report |
+ | `GET` | `/files/` | Lists files in `DOC_PATH` |
+ | `POST` | `/upload/` | Uploads a document to `DOC_PATH` |
+ | `DELETE` | `/files/{filename}` | Deletes a document from `DOC_PATH` |
+-| `POST` | `/api/multi_agents` | Runs the multi-agent workflow on a fixed query and streams to the connected WebSocket |
++| `POST` | `/api/multi_agents` | Intended to run the multi-agent workflow on a fixed query. **Currently broken:** `backend/server/server_utils.py` calls `run_research_task` and `stream_output` without importing them, so the request fails with a `NameError`. |
+ | `WS` | `/ws` | Interactive research over WebSocket |
+ 
+ The WebSocket endpoint accepts text messages: `ping` (replies `pong`), `start <json>` (runs research with fields such as `task`, `report_type`, `tone`, `report_source`, `source_urls`, `document_urls`, `query_domains`, `headers`, `mcp_enabled`, `mcp_strategy`, and `mcp_configs`), `chat <json>`, and `human_feedback <json>`. Only one task runs per connection at a time. Note that `human_feedback` is currently a placeholder: the handler logs the feedback and contains a TODO for forwarding it.
+ 
+
+> readme-benchmark · anthropic/claude-haiku-5.5

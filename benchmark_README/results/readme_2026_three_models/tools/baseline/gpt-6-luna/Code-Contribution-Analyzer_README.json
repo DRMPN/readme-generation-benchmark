@@ -1,0 +1,91 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 3258,
+    "tree_files": 13,
+    "tracked_files": 13,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 221,
+        "truncated": false
+      },
+      {
+        "path": "src/web/app.py",
+        "tokens": 397,
+        "truncated": false
+      },
+      {
+        "path": "src/web/static/index.js",
+        "tokens": 68,
+        "truncated": false
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "tokens": 914,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 776,
+        "truncated": false
+      },
+      {
+        "path": "src/api_clients/base_client.py",
+        "tokens": 144,
+        "truncated": false
+      },
+      {
+        "path": "src/api_clients/bitbucket_client.py",
+        "tokens": 78,
+        "truncated": false
+      },
+      {
+        "path": "src/api_clients/github_client.py",
+        "tokens": 76,
+        "truncated": false
+      },
+      {
+        "path": "src/api_clients/gitlab_client.py",
+        "tokens": 73,
+        "truncated": false
+      },
+      {
+        "path": "src/web/models.py",
+        "tokens": 298,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "src/web/static/styles.css",
+      "src/web/templates/index.html"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 3293,
+    "completion_tokens": 2648,
+    "total_tokens": 5941,
+    "cost": 0.00173555,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 3290,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00173555,
+      "upstream_inference_prompt_cost": 0.00041155,
+      "upstream_inference_completions_cost": 0.001324
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 841,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792607084-rYN9EPCup4nOz6nkHo0g"
+}

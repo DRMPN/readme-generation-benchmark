@@ -1,0 +1,31 @@
+The repository is a small Flask/SQLAlchemy scaffold with API-client wrappers and a static page, rather than a complete contribution-analysis workflow. I’m documenting what is actually present, including setup/configuration and the implementation gaps that affect whether the advertised features work.
+Created `README.md` in the current directory. It documents the repository’s structure, API routes, configuration, provider wrappers, setup dependencies, and known implementation limitations. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m12 matches[0m
+[0m✱ [0mGlob "AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGlob "!node_modules/**" [90m12 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead src/web/app.py 
+[0m→ [0mRead src/web/models.py 
+[0m→ [0mRead src/api_clients/base_client.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead src/api_clients/github_client.py 
+[0m→ [0mRead src/api_clients/gitlab_client.py 
+[0m→ [0mRead src/api_clients/bitbucket_client.py 
+[0m→ [0mRead src/web/templates/index.html 
+[0m→ [0mRead src/web/static/index.js 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead CODE_OF_CONDUCT.md 
+[0m→ [0mRead . [90m[limit=200][0m
+[0m✱ [0mGlob "**/*" [90m13 matches[0m
+[0m✱ [0mGrep "requirements|pytest|DATABASE_URL|GitHubClient|Flask" [90min . · 9 matches[0m
+[0m→ [0mRead src/web/static/styles.css 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

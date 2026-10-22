@@ -1,0 +1,638 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 58747,
+    "tree_files": 168,
+    "tracked_files": 168,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 219,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 209,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 122,
+        "truncated": false
+      },
+      {
+        "path": "ui/package.json",
+        "tokens": 421,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/components/ui/resizable/index.js",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/components/ui/select/index.js",
+        "tokens": 163,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/components/ui/sonner/index.js",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/components/ui/tabs/index.js",
+        "tokens": 84,
+        "truncated": false
+      },
+      {
+        "path": "ARCHITECTURE.md",
+        "tokens": 2673,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 427,
+        "truncated": false
+      },
+      {
+        "path": "ROADMAP.md",
+        "tokens": 123,
+        "truncated": false
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "tokens": 233,
+        "truncated": false
+      },
+      {
+        "path": "benchmarks/BENCHMARKS.md",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "benchmarks/SWE-bench.md",
+        "tokens": 4,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "tokens": 243,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "tokens": 119,
+        "truncated": false
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/issue.md",
+        "tokens": 243,
+        "truncated": false
+      },
+      {
+        "path": "docs/Installation/ollama.md",
+        "tokens": 352,
+        "truncated": false
+      },
+      {
+        "path": "docs/Installation/search_engine.md",
+        "tokens": 592,
+        "truncated": false
+      },
+      {
+        "path": "docs/architecture/ARCHITECTURE.md",
+        "tokens": 2673,
+        "truncated": false
+      },
+      {
+        "path": "docs/architecture/README.md",
+        "tokens": 343,
+        "truncated": false
+      },
+      {
+        "path": "docs/architecture/UNDER_THE_HOOD.md",
+        "tokens": 913,
+        "truncated": false
+      },
+      {
+        "path": "devika.py",
+        "tokens": 1379,
+        "truncated": false
+      },
+      {
+        "path": "docker-compose.yaml",
+        "tokens": 376,
+        "truncated": false
+      },
+      {
+        "path": "sample.config.toml",
+        "tokens": 276,
+        "truncated": false
+      },
+      {
+        "path": "setup.sh",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "src/config.py",
+        "tokens": 1447,
+        "truncated": false
+      },
+      {
+        "path": "src/init.py",
+        "tokens": 223,
+        "truncated": false
+      },
+      {
+        "path": "src/logger.py",
+        "tokens": 483,
+        "truncated": false
+      },
+      {
+        "path": "src/project.py",
+        "tokens": 1378,
+        "truncated": false
+      },
+      {
+        "path": "src/socket_instance.py",
+        "tokens": 112,
+        "truncated": false
+      },
+      {
+        "path": "src/state.py",
+        "tokens": 1496,
+        "truncated": false
+      },
+      {
+        "path": "ui/components.json",
+        "tokens": 96,
+        "truncated": false
+      },
+      {
+        "path": "ui/svelte.config.js",
+        "tokens": 137,
+        "truncated": false
+      },
+      {
+        "path": "ui/tailwind.config.js",
+        "tokens": 433,
+        "truncated": false
+      },
+      {
+        "path": "ui/vite.config.js",
+        "tokens": 91,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/__init__.py",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/agent.py",
+        "tokens": 2767,
+        "truncated": false
+      },
+      {
+        "path": "src/apis/project.py",
+        "tokens": 421,
+        "truncated": false
+      },
+      {
+        "path": "src/bert/sentence.py",
+        "tokens": 114,
+        "truncated": false
+      },
+      {
+        "path": "src/browser/__init__.py",
+        "tokens": 12,
+        "truncated": false
+      },
+      {
+        "path": "src/browser/browser.py",
+        "tokens": 655,
+        "truncated": false
+      },
+      {
+        "path": "src/browser/interaction.py",
+        "tokens": 4500,
+        "truncated": false
+      },
+      {
+        "path": "src/browser/search.py",
+        "tokens": 1271,
+        "truncated": false
+      },
+      {
+        "path": "src/documenter/graphwiz.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/documenter/pdf.py",
+        "tokens": 148,
+        "truncated": false
+      },
+      {
+        "path": "src/documenter/uml.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/chemistry.py",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/game-dev.py",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/math.py",
+        "tokens": 12,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/medical.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/physics.py",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/stackoverflow.py",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "src/experts/web-design.py",
+        "tokens": 11,
+        "truncated": false
+      },
+      {
+        "path": "src/filesystem/__init__.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/filesystem/read_code.py",
+        "tokens": 246,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/__init__.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/claude_client.py",
+        "tokens": 132,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/gemini_client.py",
+        "tokens": 319,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/groq_client.py",
+        "tokens": 133,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/llm.py",
+        "tokens": 1324,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/lm_studio_client.py",
+        "tokens": 191,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/mistral_client.py",
+        "tokens": 211,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/ollama_client.py",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "src/llm/openai_client.py",
+        "tokens": 145,
+        "truncated": false
+      },
+      {
+        "path": "src/memory/__init__.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/memory/knowledge_base.py",
+        "tokens": 228,
+        "truncated": false
+      },
+      {
+        "path": "src/memory/rag.py",
+        "tokens": 11,
+        "truncated": false
+      },
+      {
+        "path": "src/sandbox/code_runner.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/sandbox/firejail.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/services/__init__.py",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "src/services/git.py",
+        "tokens": 118,
+        "truncated": false
+      },
+      {
+        "path": "src/services/github.py",
+        "tokens": 97,
+        "truncated": false
+      },
+      {
+        "path": "src/services/netlify.py",
+        "tokens": 155,
+        "truncated": false
+      },
+      {
+        "path": "src/services/utils.py",
+        "tokens": 563,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/action/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/action/action.py",
+        "tokens": 259,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/answer/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/answer/answer.py",
+        "tokens": 274,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/coder/__init__.py",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/coder/coder.py",
+        "tokens": 1005,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/decision/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/decision/decision.py",
+        "tokens": 231,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/feature/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/feature/feature.py",
+        "tokens": 919,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/formatter/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/formatter/formatter.py",
+        "tokens": 171,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/internal_monologue/__init__.py",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/internal_monologue/internal_monologue.py",
+        "tokens": 244,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/patcher/__init__.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/patcher/patcher.py",
+        "tokens": 966,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/planner/__init__.py",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/planner/planner.py",
+        "tokens": 574,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/reporter/__init__.py",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/reporter/reporter.py",
+        "tokens": 264,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/researcher/__init__.py",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/researcher/researcher.py",
+        "tokens": 331,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/runner/__init__.py",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "src/agents/runner/runner.py",
+        "tokens": 1405,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/api.js",
+        "tokens": 989,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/icons.js",
+        "tokens": 4025,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/sockets.js",
+        "tokens": 542,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/store.js",
+        "tokens": 285,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/token.js",
+        "tokens": 87,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/lib/utils.js",
+        "tokens": 399,
+        "truncated": false
+      },
+      {
+        "path": "ui/src/routes/+layout.js",
+        "tokens": 7,
+        "truncated": false
+      },
+      {
+        "path": "ui/static/assets/loading-lottie.json",
+        "tokens": 10000,
+        "truncated": true
+      },
+      {
+        "path": "ui/src/lib/components/MonacoEditor.js",
+        "tokens": 998,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "app.dockerfile",
+      "devika.dockerfile",
+      ".assets/devika-avatar.png",
+      ".assets/devika-pygame-demo.mp4",
+      ".assets/devika-screenshot.png",
+      "ui/.gitignore",
+      "ui/.npmrc",
+      "ui/bun.lockb",
+      "ui/postcss.config.cjs",
+      "src/experts/__UNIMPLEMENTED__",
+      "ui/src/app.html",
+      "ui/src/app.pcss",
+      "ui/static/favicon.png",
+      "docs/Installation/images/bing-1.png",
+      "docs/Installation/images/bing.png",
+      "docs/Installation/images/google-2.png",
+      "docs/Installation/images/google.png",
+      "src/agents/action/prompt.jinja2",
+      "src/agents/answer/prompt.jinja2",
+      "src/agents/coder/prompt.jinja2",
+      "src/agents/decision/prompt.jinja2",
+      "src/agents/feature/prompt.jinja2",
+      "src/agents/formatter/prompt.jinja2",
+      "src/agents/internal_monologue/prompt.jinja2",
+      "src/agents/patcher/prompt.jinja2",
+      "src/agents/planner/prompt.jinja2",
+      "src/agents/reporter/prompt.jinja2",
+      "src/agents/researcher/prompt.jinja2",
+      "src/agents/runner/prompt.jinja2",
+      "src/agents/runner/rerunner.jinja2",
+      "ui/src/routes/+layout.svelte",
+      "ui/src/routes/+page.svelte",
+      "ui/static/assets/bootup.mp3",
+      "ui/static/assets/devika-avatar.png",
+      "ui/static/assets/devika-avatar.svg",
+      "ui/static/assets/user-avatar.png",
+      "ui/static/assets/user-avatar.svg",
+      "ui/src/lib/components/BrowserWidget.svelte",
+      "ui/src/lib/components/ControlPanel.svelte",
+      "ui/src/lib/components/EditorWidget.svelte",
+      "ui/src/lib/components/MessageContainer.svelte",
+      "ui/src/lib/components/MessageInput.svelte",
+      "ui/src/lib/components/Sidebar.svelte",
+      "ui/src/lib/components/TerminalWidget.svelte",
+      "ui/src/routes/logs/+page.svelte",
+      "ui/src/routes/settings/+page.svelte",
+      "ui/src/lib/components/ui/Seperator.svelte",
+      "ui/src/lib/components/ui/SidebarButton.svelte",
+      "ui/src/lib/components/ui/resizable/resizable-handle.svelte",
+      "ui/src/lib/components/ui/resizable/resizable-pane-group.svelte",
+      "ui/src/lib/components/ui/select/select-content.svelte",
+      "ui/src/lib/components/ui/select/select-item.svelte",
+      "ui/src/lib/components/ui/select/select-label.svelte",
+      "ui/src/lib/components/ui/select/select-separator.svelte",
+      "ui/src/lib/components/ui/select/select-trigger.svelte",
+      "ui/src/lib/components/ui/sonner/sonner.svelte",
+      "ui/src/lib/components/ui/tabs/tabs-content.svelte",
+      "ui/src/lib/components/ui/tabs/tabs-list.svelte",
+      "ui/src/lib/components/ui/tabs/tabs-trigger.svelte"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 60762,
+    "completion_tokens": 4785,
+    "total_tokens": 65547,
+    "cost": 0.001942765654,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 36968,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001942765654,
+      "upstream_inference_prompt_cost": 0.001368565654,
+      "upstream_inference_completions_cost": 0.0005742
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2419,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606421-pNmRmp6aBTI8e88W61wp"
+}

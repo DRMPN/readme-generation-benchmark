@@ -1,0 +1,200 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          },
+          {
+            "name": "feature_request.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "lint_python.yml",
+            "type": "file"
+          },
+          {
+            "name": "test_install.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "Dockerfile",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "core.py",
+    "type": "file"
+  },
+  {
+    "name": "docker-compose.yml",
+    "type": "file"
+  },
+  {
+    "name": "generate_readme.py",
+    "type": "file"
+  },
+  {
+    "name": "hackingtool.py",
+    "type": "file"
+  },
+  {
+    "name": "install.sh",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "tools",
+    "type": "dir",
+    "children": [
+      {
+        "name": "anonsurf.py",
+        "type": "file"
+      },
+      {
+        "name": "ddos.py",
+        "type": "file"
+      },
+      {
+        "name": "exploit_frameworks.py",
+        "type": "file"
+      },
+      {
+        "name": "forensic_tools.py",
+        "type": "file"
+      },
+      {
+        "name": "information_gathering_tools.py",
+        "type": "file"
+      },
+      {
+        "name": "other_tools.py",
+        "type": "file"
+      },
+      {
+        "name": "others",
+        "type": "dir",
+        "children": [
+          {
+            "name": "android_attack.py",
+            "type": "file"
+          },
+          {
+            "name": "email_verifier.py",
+            "type": "file"
+          },
+          {
+            "name": "hash_crack.py",
+            "type": "file"
+          },
+          {
+            "name": "homograph_attacks.py",
+            "type": "file"
+          },
+          {
+            "name": "mix_tools.py",
+            "type": "file"
+          },
+          {
+            "name": "payload_injection.py",
+            "type": "file"
+          },
+          {
+            "name": "socialmedia.py",
+            "type": "file"
+          },
+          {
+            "name": "socialmedia_finder.py",
+            "type": "file"
+          },
+          {
+            "name": "web_crawling.py",
+            "type": "file"
+          },
+          {
+            "name": "wifi_jamming.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "payload_creator.py",
+        "type": "file"
+      },
+      {
+        "name": "phising_attack.py",
+        "type": "file"
+      },
+      {
+        "name": "post_exploitation.py",
+        "type": "file"
+      },
+      {
+        "name": "remote_administration.py",
+        "type": "file"
+      },
+      {
+        "name": "reverse_engineering.py",
+        "type": "file"
+      },
+      {
+        "name": "sql_tools.py",
+        "type": "file"
+      },
+      {
+        "name": "steganography.py",
+        "type": "file"
+      },
+      {
+        "name": "tool_manager.py",
+        "type": "file"
+      },
+      {
+        "name": "webattack.py",
+        "type": "file"
+      },
+      {
+        "name": "wireless_attack_tools.py",
+        "type": "file"
+      },
+      {
+        "name": "wordlist_generator.py",
+        "type": "file"
+      },
+      {
+        "name": "xss_attack.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "update.sh",
+    "type": "file"
+  }
+]

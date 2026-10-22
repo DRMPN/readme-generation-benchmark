@@ -1,0 +1,540 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "downstream_tasks",
+    "type": "dir",
+    "children": [
+      {
+        "name": "APARENT",
+        "type": "dir",
+        "children": [
+          {
+            "name": "AparentDataset.py",
+            "type": "file"
+          },
+          {
+            "name": "AparentDataset_test_data.csv",
+            "type": "file"
+          },
+          {
+            "name": "model_and_not_used_loss_class.py",
+            "type": "file"
+          },
+          {
+            "name": "run_APARENT_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "run_aparent_finetuning.sh",
+            "type": "file"
+          },
+          {
+            "name": "test_AparentDataset.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "DeepSTARR",
+        "type": "dir",
+        "children": [
+          {
+            "name": "DeepSTARRDataset.py",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "finetune_deepstarr.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_deepstarr_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "test_DeepSTARRDataset.py",
+            "type": "file"
+          },
+          {
+            "name": "test_Sequences.fa",
+            "type": "file"
+          },
+          {
+            "name": "test_Sequences_activity.txt",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "DeepSea",
+        "type": "dir",
+        "children": [
+          {
+            "name": "DeepSeaDataset.py",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "extend_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "finetune_deepsea.sh",
+            "type": "file"
+          },
+          {
+            "name": "prepare_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "run_deepsea_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "test.dataset.csv.gz",
+            "type": "file"
+          },
+          {
+            "name": "test_DeepSeaDataset.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "SpliceAI",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "SpliceAIDataset.py",
+            "type": "file"
+          },
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "finetune_spliceai.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_spliceai_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_spliceai_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_spliceai_rmt_pretrained.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_spliceai_sparse_4096.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_spliceai_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "run_spliceai_finetuning_rmt.py",
+            "type": "file"
+          },
+          {
+            "name": "split_train_valid.py",
+            "type": "file"
+          },
+          {
+            "name": "test_Dataset_data.csv",
+            "type": "file"
+          },
+          {
+            "name": "test_SpliceAIDataset.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "clinvar_analysis",
+        "type": "dir",
+        "children": [
+          {
+            "name": "clinvar.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "clinvar_attribution_prediction.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "clinvar_promoter_prediction.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "clinvar_significance_mapping.txt",
+            "type": "file"
+          },
+          {
+            "name": "human_epdnew_fH7d2.bed",
+            "type": "file"
+          },
+          {
+            "name": "make_exons_bed.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "enformer",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "convert_basenji_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "enformer_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "enformer_metrics.py",
+            "type": "file"
+          },
+          {
+            "name": "enformer_model.py",
+            "type": "file"
+          },
+          {
+            "name": "evaluate_enformer.sh",
+            "type": "file"
+          },
+          {
+            "name": "evaluate_enformer_augs.sh",
+            "type": "file"
+          },
+          {
+            "name": "evaluate_enformer_rmt_sparse.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_large_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_large_rmt_continue.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_rmt_continue.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_sparse_hf.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_enformer_sparse_hf_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "run_enformer_evaluation.py",
+            "type": "file"
+          },
+          {
+            "name": "run_enformer_evaluation_augs.py",
+            "type": "file"
+          },
+          {
+            "name": "run_enformer_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "run_enformer_finetuning_rmt.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "promoter_prediction",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "dataset_fold_split.py",
+            "type": "file"
+          },
+          {
+            "name": "dataset_generator.py",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_16000.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_16000_nar_rmt_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_16000_nar_rmt_large_pretrained.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_2000.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_2000_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_2000_nar_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_2000_nar_large_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_large.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_rmt.sh",
+            "type": "file"
+          },
+          {
+            "name": "finetune_promoter_rmt_pretrained.sh",
+            "type": "file"
+          },
+          {
+            "name": "hg38_len_2000.fa.txt",
+            "type": "file"
+          },
+          {
+            "name": "hg38_len_300.fa.txt",
+            "type": "file"
+          },
+          {
+            "name": "hg38_promoters_len_300_dataset.csv",
+            "type": "file"
+          },
+          {
+            "name": "run_promoter_finetuning.py",
+            "type": "file"
+          },
+          {
+            "name": "run_promoter_finetuning_rmt.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "splicing_onemut",
+        "type": "dir",
+        "children": [
+          {
+            "name": "canonical_dataset.txt",
+            "type": "file"
+          },
+          {
+            "name": "genes.txt",
+            "type": "file"
+          },
+          {
+            "name": "splice_check.ipynb",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "manuscript_data",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Suplementary_Table_1.csv",
+        "type": "file"
+      },
+      {
+        "name": "Suplementary_Table_2.csv",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "notebooks",
+    "type": "dir",
+    "children": [
+      {
+        "name": "2023-08-10 19_40_52.828317species_extended_metadata.csv",
+        "type": "file"
+      },
+      {
+        "name": "GENA_sequence_classification_example.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "HSE.task3.table_full.csv",
+        "type": "file"
+      },
+      {
+        "name": "HSE.task3.table_sample.csv",
+        "type": "file"
+      },
+      {
+        "name": "gena_clusterization_example.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "gena_enformer_usage.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "public_gena_clusters.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "public_gena_clusters_task.ipynb",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "src",
+    "type": "dir",
+    "children": [
+      {
+        "name": "gena_lm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "genome_tools",
+            "type": "dir",
+            "children": [
+              {
+                "name": "1KG+HGDP.selected_samples.tsv",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "create_allele_corpus.py",
+                "type": "file"
+              },
+              {
+                "name": "create_corpus.py",
+                "type": "file"
+              },
+              {
+                "name": "create_multigenome_corpus.sh",
+                "type": "file"
+              },
+              {
+                "name": "full_ensembl_genomes_metadata.cvs",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "modeling_bert.py",
+            "type": "file"
+          },
+          {
+            "name": "modeling_rmt.py",
+            "type": "file"
+          },
+          {
+            "name": "tokenizers",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "tokenize_genomes.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "utils.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

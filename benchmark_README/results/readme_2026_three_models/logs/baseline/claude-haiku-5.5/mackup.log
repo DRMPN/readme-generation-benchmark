@@ -1,0 +1,3189 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 61805,
+    "tree_files": 635,
+    "tracked_files": 635,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 7457,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 64,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 211,
+        "truncated": false
+      },
+      {
+        "path": "mackup/main.py",
+        "tokens": 1464,
+        "truncated": false
+      },
+      {
+        "path": "INSTALL.md",
+        "tokens": 314,
+        "truncated": false
+      },
+      {
+        "path": ".github/CONTRIBUTING.md",
+        "tokens": 415,
+        "truncated": false
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "tokens": 229,
+        "truncated": false
+      },
+      {
+        "path": "doc/README.md",
+        "tokens": 1794,
+        "truncated": false
+      },
+      {
+        "path": "doc/configuration_merge_guide.md",
+        "tokens": 1457,
+        "truncated": false
+      },
+      {
+        "path": "doc/develop.md",
+        "tokens": 101,
+        "truncated": false
+      },
+      {
+        "path": "doc/release.md",
+        "tokens": 66,
+        "truncated": false
+      },
+      {
+        "path": "tests/README.md",
+        "tokens": 92,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/Library/Mobile Documents/com~apple~CloudDocs/_blank_.md",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": ".linelint.yml",
+        "tokens": 149,
+        "truncated": false
+      },
+      {
+        "path": ".markdownlint.yaml",
+        "tokens": 9,
+        "truncated": false
+      },
+      {
+        "path": "doc/.mackup.cfg",
+        "tokens": 550,
+        "truncated": false
+      },
+      {
+        "path": "mackup/__init__.py",
+        "tokens": 6,
+        "truncated": false
+      },
+      {
+        "path": "mackup/application.py",
+        "tokens": 1799,
+        "truncated": false
+      },
+      {
+        "path": "mackup/appsdb.py",
+        "tokens": 1083,
+        "truncated": false
+      },
+      {
+        "path": "mackup/config.py",
+        "tokens": 1560,
+        "truncated": false
+      },
+      {
+        "path": "mackup/constants.py",
+        "tokens": 317,
+        "truncated": false
+      },
+      {
+        "path": "mackup/mackup.py",
+        "tokens": 789,
+        "truncated": false
+      },
+      {
+        "path": "mackup/utils.py",
+        "tokens": 2433,
+        "truncated": false
+      },
+      {
+        "path": "snap/snapcraft.yaml",
+        "tokens": 134,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_config.py",
+        "tokens": 1594,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_main.py",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_utils.py",
+        "tokens": 2384,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/install.yaml",
+        "tokens": 220,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/linelint.yaml",
+        "tokens": 128,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/markdown.yaml",
+        "tokens": 80,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/ruff.yaml",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": ".github/workflows/test.yaml",
+        "tokens": 141,
+        "truncated": false
+      },
+      {
+        "path": "doc/.mackup/gnupg.cfg",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "doc/.mackup/mackup.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "doc/.mackup/my-own-files.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "doc/.mackup/ssh.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/1password-4.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/2do.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ack.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/act.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/activitywatch.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/adium.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/adobe-camera-raw.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/aerc.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/aerospace.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/affinity-designer.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/affinity-photo.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/affinity-publisher.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/airflow.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/airmail.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/akamai-cli.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/alacritty.cfg",
+        "tokens": 53,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/alt-tab.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/amethyst.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ancient-domains-of-mystery.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/androidstudio-13.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ansible.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/appcleaner.cfg",
+        "tokens": 42,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/appcode-2.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/appcode-3.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/appcode-31.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/appcode-32.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/apple-music.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/apptivate.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/arara.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/aria2c.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/arm.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/asciinema.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/asdf.cfg",
+        "tokens": 46,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/aspell.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/astyle.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/atlantis.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/atom.cfg",
+        "tokens": 49,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/audacious.cfg",
+        "tokens": 42,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/auskey.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/autokey.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/awareness.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/aws.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/azure.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/b-ryan_powerline-shell.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bartender.cfg",
+        "tokens": 56,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/base.cfg",
+        "tokens": 57,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bash-it.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bash.cfg",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bat.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bc.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/beatport-pro.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/beets.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bettersnaptool.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bettertouchtool.cfg",
+        "tokens": 114,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/beyond-compare.cfg",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bibdesk.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/billings-pro-server-admin.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bitbar.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bitchx.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/blackfire.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/blender.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/blesh.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/boto.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/boxer.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/brackets.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/brave.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/btop.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bump.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/bundler.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/byobu.cfg",
+        "tokens": 134,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/caffeine.cfg",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/calibre.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/capture-one.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cartographica.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cerebro.cfg",
+        "tokens": 46,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/charles.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cheat.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/chef.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/chicken.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/choosy.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/chunkwm.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cider.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clashx.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clasp.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cleanshot.cfg",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clementine.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clion.cfg",
+        "tokens": 62,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clipmenu.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/clipy.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cloudapp.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/coda-2.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/colloquy.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/colorschemer-studio-2.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/colorslurp.cfg",
+        "tokens": 47,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/colorsync.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/composer.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/concentrate.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/conky.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/consular.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/contexts.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/controlplane.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/copyq.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cord.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/coteditor.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ctags.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/curl.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cursor.cfg",
+        "tokens": 60,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cvim.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/cyberduck.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/daisydisk.cfg",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dash.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/datagrip.cfg",
+        "tokens": 162,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/day-o.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dbeaver.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dbvisualizer.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/deal-alert.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/deepin-dde-dock.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/deepin-dde-file-manager.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/deepin-terminal.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/default-folder-x.cfg",
+        "tokens": 52,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/defaultkeybinding.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/devilspie.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/devilspie2.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dig.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/divvy.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/docker.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dolphin.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/doom-emacs.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/doublecmd.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/doxie.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dozer.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/draft.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/droplr.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/dropzone.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/drush.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/editorconfig.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/electrum.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/emacs.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/enjoyable.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/environmental-station-alpha.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/eqmac-2.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/eslint.cfg",
+        "tokens": 45,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/espanso.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/exercism.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/expandrive.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/factorio.cfg",
+        "tokens": 59,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fantastical.cfg",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fasd.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fastlane.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fastscripts.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/feeds.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/filezilla.cfg",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/finicky.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fish.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fisher.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/flake8.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/flameshot.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/flexget.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/flux.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/focus.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fontconfig.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fontexplorer-x.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/forge.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/fork.cfg",
+        "tokens": 42,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/forklift.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/franz.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gasmask.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gdb.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gearplayer.cfg",
+        "tokens": 48,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/geektool.cfg",
+        "tokens": 95,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ghci.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ghidra.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ghostty.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ghostwriter.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gimp.cfg",
+        "tokens": 533,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/git-hooks.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/git.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gitbox.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gitfox.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gitkraken.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gitup.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gmail-notifr.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gmailctl.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gmvault.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gnupg.cfg",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/go2shell.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/goku.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/goland.cfg",
+        "tokens": 182,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/goldendict.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/goodsync.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/goshare.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gradle.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/grandtotal-3.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/grsync.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/gstm.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hammerspoon.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/handbrake.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hands-off.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hazel.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hero-lab.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/heroku.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hexchat.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hexels.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hocus-focus.cfg",
+        "tokens": 78,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/homebrew.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/homebridge.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/houdini.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hstr.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/htop.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/httpie.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hub.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hyper.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hyperdock.cfg",
+        "tokens": 45,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/hyperswitch.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/i2cssh.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/i3.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/idapro.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ideavim.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/iina.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/illustrator.cfg",
+        "tokens": 560,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/inkscape.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/insomnia.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/intellijidea.cfg",
+        "tokens": 901,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ipython.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/irssi.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/istat-menus.cfg",
+        "tokens": 86,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/iterm2.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/itermocil.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/itsycal.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/itunes-scripts.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jankyborders.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/janus.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jitouch.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/joplin.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jrnl.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jsbeautifier.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jshint.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/julia.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jumpcut.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/jupyter.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/k9s.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kaggle.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kaleidoscope.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/karabiner-elements.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/karabiner.cfg",
+        "tokens": 67,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kdenlive.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keepassx.cfg",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keepassxc.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keepingyouawake.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keka.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keybase.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keyboard-maestro.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keymo.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/keyremap4macbook.cfg",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/khd.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kitty.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/krew.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kubectl.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/kwm.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/latexit.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/launchbar.cfg",
+        "tokens": 64,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lazygit.cfg",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ledger.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lf.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/libreoffice.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/liftoff.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/light-table.cfg",
+        "tokens": 47,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lightroom-classic.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lightroom.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/limechat.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/liquidprompt.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/littlesnitch.cfg",
+        "tokens": 91,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/livestreamer.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/logitech-options.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/logseq.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lollypop.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/loopback.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/luftrausers.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/lunarvim.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/macdive2.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/macdown.cfg",
+        "tokens": 42,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mackup.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/macosx.cfg",
+        "tokens": 60,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/macvim.cfg",
+        "tokens": 43,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/magic-launch.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/magicprefs.cfg",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/magnet.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/maid.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mail.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mailmate.cfg",
+        "tokens": 109,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mailplane.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mako.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/marked2.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/marta.cfg",
+        "tokens": 64,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/matlab.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/maven.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/max.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mendeley.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/menumeters.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mercurial.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mercurymover.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/messages.cfg",
+        "tokens": 56,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/micro.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/microsoft-remote-desktop.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mitmproxy.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mkcert.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/monodevelop.cfg",
+        "tokens": 69,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/moom.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mosaic.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mou.cfg",
+        "tokens": 45,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mpd.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mplayerx.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mps-youtube.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mpv.cfg",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mtmr.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/multitouch.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mumu.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/musicbrainz-picard.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mutespotifyads.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mycli.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/myrepos.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mysql.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/mysqlworkbench.cfg",
+        "tokens": 60,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/name-mangler.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nano.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/navicat.cfg",
+        "tokens": 78,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ncmpcpp.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/neofetch.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/neovim.cfg",
+        "tokens": 75,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nethack.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/netlify.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/newsbeuter.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ngrok.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ni.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nomacs.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nosqlbooster-for-mongodb.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/notion-enhancer.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nova.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/npm.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/npmrc.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nslogger.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nuget.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nushell.cfg",
+        "tokens": 52,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nvalt.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nvm.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/nvpy.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/obs.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/oci.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ogdesign-eagle.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/oh-my-fish.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/oh-my-tmux.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/omnifocus.cfg",
+        "tokens": 47,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/omnigraffle.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/openbox.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/openemu.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/p10k.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/paintbrush.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pandoc.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pass.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pastebot.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/path-finder.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pdfjam.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pear.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pentadactyl.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/perl.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pgsql.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/phoenix.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/phoneview.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/photoshop.cfg",
+        "tokens": 167,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/phpstorm.cfg",
+        "tokens": 681,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/picgo.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pidgin.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pip.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pixelsnap.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pixelsnap2.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/planner.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pnpm.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pock.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/poedit.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/poetry.cfg",
+        "tokens": 43,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pokerstars.cfg",
+        "tokens": 73,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/polybar.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/popclip.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/popcorn-time.cfg",
+        "tokens": 72,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/postico.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pow.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/powerline.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/prezto.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/processing.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/proselint.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/proxychains.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/proxyman.cfg",
+        "tokens": 58,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/prusa-slicer.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/psysh.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/punto-switcher.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pycharm.cfg",
+        "tokens": 304,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pypi.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/pyradio.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/querious.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/quicklook.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/quicksilver.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/quitter.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/qutebrowser.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/qv2ray.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/r.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rails.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ranger.cfg",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rbenv.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rclone.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rectangle.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/redshift-scheduler.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/redshift.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/remote-desktop-manager.cfg",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rhythmbox.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rime.cfg",
+        "tokens": 111,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ripgrep.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/robo3t.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rocket.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rofi.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/royaltsx.cfg",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rstudio.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rtorrent.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rtx.cfg",
+        "tokens": 61,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rubitrack5.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rubocop.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ruby-version.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ruby.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rubymine.cfg",
+        "tokens": 230,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rust.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/rvm.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/s3cmd.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sabnzbd.cfg",
+        "tokens": 40,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sbcl.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sbt.cfg",
+        "tokens": 142,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/scenario.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/screen.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/screenhero.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/scrivener.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/scroll-reverser.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/secure-pipes.cfg",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/securecrt.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/seil.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/selfcontrol.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sequel-pro.cfg",
+        "tokens": 54,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/shiftit.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/shifty.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/shimo.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/showyedge.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/shsh-blobs.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/shuttle.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sizeup.cfg",
+        "tokens": 37,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sizzy.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sketchybar.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/skhd.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/skim.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/skitch.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/slate.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/slic3r.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/slogger.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/smartgit.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/smooth-mouse.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/soulver.cfg",
+        "tokens": 56,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sourcetree.cfg",
+        "tokens": 61,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spacelauncher.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spacemacs.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spacevim.cfg",
+        "tokens": 48,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spamsieve.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spark.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spectacle.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spectrwm.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/splice.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spotify-notifications.cfg",
+        "tokens": 28,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/spotify.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sqitch.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ssh.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/starship.cfg",
+        "tokens": 62,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/startupizer2.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/stata.cfg",
+        "tokens": 49,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/stats.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/stay.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/storyist-3.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/streamdeck.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/subler.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sublime-merge.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sublime-text-2.cfg",
+        "tokens": 54,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sublime-text-3.cfg",
+        "tokens": 54,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/sublime-text.cfg",
+        "tokens": 48,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/subversion.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/superduper.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/surge.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/swaywm.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/swinsian.cfg",
+        "tokens": 61,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/swish.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/switchhosts.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/t.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tableplus.cfg",
+        "tokens": 74,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/taskpaper.cfg",
+        "tokens": 32,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/taskwarrior.cfg",
+        "tokens": 68,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/teamocil.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/telegram_macos.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/terminal.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/terminator.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/termite.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/termux.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/textexpander.cfg",
+        "tokens": 41,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/textmate.cfg",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/textual.cfg",
+        "tokens": 55,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tig.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tiles.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tilix.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/timeout.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tint2.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tinyfugue.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tmux.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tmuxinator.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tmuxp.cfg",
+        "tokens": 17,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/todotxt-cli.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/toothfairy.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/totalspaces2.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tower-2.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tower-3.cfg",
+        "tokens": 36,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tower.cfg",
+        "tokens": 51,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/transmission.cfg",
+        "tokens": 50,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/transmit.cfg",
+        "tokens": 39,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tripmode.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/trizen.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tunnelblick.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/tvnamer.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/twitterrific.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/typinator.cfg",
+        "tokens": 30,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/typora.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ubersicht.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ulauncher.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/ventrilo.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/verdaccio.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/versions.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vim.cfg",
+        "tokens": 104,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vimperator.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/viscosity.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vlc.cfg",
+        "tokens": 59,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/volt.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vs4mac.cfg",
+        "tokens": 81,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vscode-insiders.cfg",
+        "tokens": 82,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vscode-oss.cfg",
+        "tokens": 77,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vscode.cfg",
+        "tokens": 62,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/vscodium.cfg",
+        "tokens": 71,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wakatime.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/warp.cfg",
+        "tokens": 14,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/waybar.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/webstorm.cfg",
+        "tokens": 451,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wezterm.cfg",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wget.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/whatsapp.cfg",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/windsurf.cfg",
+        "tokens": 70,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wireshark.cfg",
+        "tokens": 20,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/witch.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wordgrinder.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/workrave.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/wp-cli.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/x11.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xamarinstudio-5.cfg",
+        "tokens": 25,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xbar.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xbindkeys.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xchat.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xcode.cfg",
+        "tokens": 115,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xee.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xemacs.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xld.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xonsh.cfg",
+        "tokens": 26,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/xtrafinder.cfg",
+        "tokens": 24,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/yabai.cfg",
+        "tokens": 31,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/yarn.cfg",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/yazi.cfg",
+        "tokens": 33,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/yummyftp.cfg",
+        "tokens": 49,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zabbix-cli.cfg",
+        "tokens": 21,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zathura.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zed.cfg",
+        "tokens": 22,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zoom.cfg",
+        "tokens": 59,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zoxide.cfg",
+        "tokens": 18,
+        "truncated": false
+      },
+      {
+        "path": "mackup/applications/zsh.cfg",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-apps_to_ignore.cfg",
+        "tokens": 23,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-apps_to_ignore_and_sync.cfg",
+        "tokens": 38,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-apps_to_sync.cfg",
+        "tokens": 19,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-empty.cfg",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-dropbox.cfg",
+        "tokens": 16,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-file_system-absolute.cfg",
+        "tokens": 34,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-file_system-no_path.cfg",
+        "tokens": 13,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-file_system.cfg",
+        "tokens": 35,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-google_drive.cfg",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-icloud.cfg",
+        "tokens": 44,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-engine-unknown.cfg",
+        "tokens": 8,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/mackup-old-config.cfg",
+        "tokens": 49,
+        "truncated": false
+      },
+      {
+        "path": "tests/fixtures/Library/Application Support/Box/Box Sync/sync_root_folder.txt",
+        "tokens": 6,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      ".markdownlintignore",
+      "poetry.lock",
+      "uv.lock",
+      "tests/fixtures/.dropbox/host.db",
+      "tests/fixtures/Library/Application Support/Google/Drive/sync_config.db"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 104291,
+    "completion_tokens": 5727,
+    "total_tokens": 110018,
+    "cost": 0.066463,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.066463,
+      "upstream_inference_prompt_cost": 0.0521455,
+      "upstream_inference_completions_cost": 0.0143175
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1824,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606014-GGavuWNiy4grgmoDgoLr"
+}

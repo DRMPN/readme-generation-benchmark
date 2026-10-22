@@ -1,0 +1,78 @@
+Let me check a couple more details in `visual_chatgpt.py` (device handling and model defaults) so the README isaccurate.
+I have a full picture of the code now. Let me quickly view the key assets so I can reference them accurately inthe README.
+The assets confirm the figure contents. Now I have everything needed — writing the README.
+Created `README.md`. I verified every claim against the repo contents before writing — here's a summary of what's in it and how I grounded it:
+
+## What the repository is
+
+This is Microsoft's **TaskMatrix** repo, containing three components:
+
+1. **Visual ChatGPT** (`visual_chatgpt.py`) — a Gradio + LangChain demo connecting ChatGPT with ~26 Visual Foundation Model tools
+2. **TaskMatrix.AI** (`TaskMatrix.AI/README.md`) — concept docs for the ecosystem paper
+3. **Low-code LLM** (`LowCodeLLM/`) — a Dockerized Flask demo of the human-in-the-loop workflow pattern
+
+## How I ensured accuracy
+
+- **Quick start commands** taken directly from the code and sub-READMEs — e.g., the default `--load "ImageCaptioning_cuda:0,Text2Image_cuda:0"`, port **7861** (`demo.launch(...)`), and the LowCodeLLM Docker workflow with port **8888** (`Dockerfile`/`supervisord.conf`)
+- **Tool table** — all 26 tool names extracted from the `@prompts` decorators in `visual_chatgpt.py`, mapped to their implementation classes
+- **API endpoints table** — the three Flask routes (`/api/get_workflow`, `/api/extend_workflow`, `/api/execute`) with their exact request fields from `app.py`
+- **Config table** — env variables from `config.template` and `openAIWrapper.py` (including the hardcoded `gpt-3.5-turbo` fallback)
+- **Paper links** — the three arXiv IDs are cited within the repo itself (`TaskMatrix.AI/README.md`, `LowCodeLLM/README.md`, `LICENSE.txt`)
+- **Figures** — I viewed `figure.jpg` and `demo.gif` to confirm they're Visual ChatGPT material before referencing them; `paradigm.png`, `overview.png`, `low-code-llm.png`, `low-code-operation.png` are used the same way as in the existing sub-READMEs
+
+## Honest caveats I flagged rather than hid
+
+- `groundingdino` and `segment_anything` are imported by `visual_chatgpt.py` but **missing** from `requirements.txt` — noted explicitly
+- The LowCodeLLM tests call the live OpenAI API, so I noted credentials are required
+- Avoided unverifiable claims (star counts, CI badges, exact Python versions beyond what's in the Dockerfile)
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.worktree_list?.() ?? null;\nreturn { r };"} 
+[0m→ [0mRead . 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGlob "**/*" [90m33 matches[0m
+[0m→ [0mRead requirements.txt 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead TaskMatrix.AI/README.md 
+[0m→ [0mRead LowCodeLLM/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead visual_chatgpt.py [90m[limit=120][0m
+[0m→ [0mRead LICENSE.txt [90m[limit=30][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "def main|__main__|argparse|add_argument|load_all|device=|load_param|docker|port" [90min visual_chatgpt.py · 40 matches[0m
+[0m✱ [0mGrep "class |def " [90min visual_chatgpt.py · 114 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead visual_chatgpt.py [90m[offset=1465][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LowCodeLLM/Dockerfile 
+[0m→ [0mRead LowCodeLLM/src/requirements.txt 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const r = await tools.execute_command({ command: \"cd /tmp/TaskMatrix-mt6ypo4p && git log --oneline -15 && git remote -v && git branch -a\" });\nreturn r;"} 
+[0m→ [0mRead LowCodeLLM/src/app.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead SECURITY.md [90m[limit=40][0m
+[0m→ [0mRead LowCodeLLM/config.template 
+[0m→ [0mRead LowCodeLLM/src/lowCodeLLM.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LowCodeLLM/src/planningLLM.py 
+[0m✱ [0mGrep "@prompts\(name=" [90min visual_chatgpt.py · 26 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LowCodeLLM/src/openAIWrapper.py 
+[0m→ [0mRead LowCodeLLM/src/supervisord.conf 
+[0m→ [0mRead LowCodeLLM/src/test/test_execute.py [90m[limit=50][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead LowCodeLLM/src/index.html [90m[limit=60][0m
+[0m→ [0mRead LowCodeLLM/src/executingLLM.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "device=|"cpu|cuda:0|template_model" [90min visual_chatgpt.py · 9 matches[0m
+[0m→ [0mRead visual_chatgpt.py [90m[limit=60, offset=246][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead assets/demo.gif 
+[0m→ [0mRead assets/figure.jpg 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash

@@ -1,0 +1,194 @@
+{
+  "model": "openai/gpt-6-luna",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 23166,
+    "tree_files": 36,
+    "tracked_files": 36,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 229,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 202,
+        "truncated": false
+      },
+      {
+        "path": "src/main.py",
+        "tokens": 1425,
+        "truncated": false
+      },
+      {
+        "path": "pytest.ini",
+        "tokens": 15,
+        "truncated": false
+      },
+      {
+        "path": "src/generators.py",
+        "tokens": 2103,
+        "truncated": false
+      },
+      {
+        "path": "src/logger.py",
+        "tokens": 168,
+        "truncated": false
+      },
+      {
+        "path": "src/output_parsers.py",
+        "tokens": 407,
+        "truncated": false
+      },
+      {
+        "path": "src/report.py",
+        "tokens": 987,
+        "truncated": false
+      },
+      {
+        "path": "tests/conftest.py",
+        "tokens": 63,
+        "truncated": false
+      },
+      {
+        "path": "tests/test_project_validators.py",
+        "tokens": 825,
+        "truncated": false
+      },
+      {
+        "path": "src/config/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/config/config.json",
+        "tokens": 53,
+        "truncated": false
+      },
+      {
+        "path": "src/config/logic_based_scoring.py",
+        "tokens": 1512,
+        "truncated": false
+      },
+      {
+        "path": "src/config/paths.py",
+        "tokens": 256,
+        "truncated": false
+      },
+      {
+        "path": "src/config/prompts.yaml",
+        "tokens": 207,
+        "truncated": false
+      },
+      {
+        "path": "src/config/tracked_files.yaml",
+        "tokens": 201,
+        "truncated": false
+      },
+      {
+        "path": "src/directory_scorer/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "src/directory_scorer/content_based_scorer.py",
+        "tokens": 2477,
+        "truncated": false
+      },
+      {
+        "path": "src/directory_scorer/tree.py",
+        "tokens": 1189,
+        "truncated": false
+      },
+      {
+        "path": "src/utils/__init__.py",
+        "tokens": 67,
+        "truncated": false
+      },
+      {
+        "path": "src/utils/general.py",
+        "tokens": 388,
+        "truncated": false
+      },
+      {
+        "path": "src/utils/llm.py",
+        "tokens": 377,
+        "truncated": false
+      },
+      {
+        "path": "src/utils/project_validators.py",
+        "tokens": 1094,
+        "truncated": false
+      },
+      {
+        "path": "src/utils/repository.py",
+        "tokens": 2237,
+        "truncated": false
+      },
+      {
+        "path": "src/config/scoring/code_quality_criteria.yaml",
+        "tokens": 2155,
+        "truncated": false
+      },
+      {
+        "path": "src/config/scoring/dependancies_criteria.yaml",
+        "tokens": 676,
+        "truncated": false
+      },
+      {
+        "path": "src/config/scoring/documentation_criteria.yaml",
+        "tokens": 1318,
+        "truncated": false
+      },
+      {
+        "path": "src/config/scoring/license_criteria.yaml",
+        "tokens": 486,
+        "truncated": false
+      },
+      {
+        "path": "src/config/scoring/structure_criteria.yaml",
+        "tokens": 1507,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      ".env.example",
+      ".gitignore",
+      ".python-version",
+      "uv.lock",
+      "data/inputs/.gitignore",
+      "data/outputs/.gitignore"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 23319,
+    "completion_tokens": 1789,
+    "total_tokens": 25108,
+    "cost": 0.0038093,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 23316,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0038093,
+      "upstream_inference_prompt_cost": 0.0029148,
+      "upstream_inference_completions_cost": 0.0008945
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 467,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792607065-GKCprrcAG8akVRRa6JID"
+}

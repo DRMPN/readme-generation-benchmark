@@ -1,0 +1,238 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE",
+        "type": "dir",
+        "children": [
+          {
+            "name": "bug_report.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "locales",
+    "type": "dir",
+    "children": [
+      {
+        "name": "de.json",
+        "type": "file"
+      },
+      {
+        "name": "es.json",
+        "type": "file"
+      },
+      {
+        "name": "fi.json",
+        "type": "file"
+      },
+      {
+        "name": "km.json",
+        "type": "file"
+      },
+      {
+        "name": "ko.json",
+        "type": "file"
+      },
+      {
+        "name": "pt-br.json",
+        "type": "file"
+      },
+      {
+        "name": "ru.json",
+        "type": "file"
+      },
+      {
+        "name": "th.json",
+        "type": "file"
+      },
+      {
+        "name": "zh.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "media",
+    "type": "dir",
+    "children": [
+      {
+        "name": "avgpcperformancedemo.gif",
+        "type": "file"
+      },
+      {
+        "name": "deepwarebench.gif",
+        "type": "file"
+      },
+      {
+        "name": "demo.gif",
+        "type": "file"
+      },
+      {
+        "name": "live_show.gif",
+        "type": "file"
+      },
+      {
+        "name": "ludwig.gif",
+        "type": "file"
+      },
+      {
+        "name": "meme.gif",
+        "type": "file"
+      },
+      {
+        "name": "movie.gif",
+        "type": "file"
+      },
+      {
+        "name": "streamers.gif",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "models",
+    "type": "dir",
+    "children": [
+      {
+        "name": "instructions.txt",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "modules",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "capturer.py",
+        "type": "file"
+      },
+      {
+        "name": "cluster_analysis.py",
+        "type": "file"
+      },
+      {
+        "name": "core.py",
+        "type": "file"
+      },
+      {
+        "name": "face_analyser.py",
+        "type": "file"
+      },
+      {
+        "name": "gettext.py",
+        "type": "file"
+      },
+      {
+        "name": "globals.py",
+        "type": "file"
+      },
+      {
+        "name": "metadata.py",
+        "type": "file"
+      },
+      {
+        "name": "predicter.py",
+        "type": "file"
+      },
+      {
+        "name": "processors",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "frame",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "core.py",
+                "type": "file"
+              },
+              {
+                "name": "face_enhancer.py",
+                "type": "file"
+              },
+              {
+                "name": "face_swapper.py",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "typing.py",
+        "type": "file"
+      },
+      {
+        "name": "ui.json",
+        "type": "file"
+      },
+      {
+        "name": "ui.py",
+        "type": "file"
+      },
+      {
+        "name": "utilities.py",
+        "type": "file"
+      },
+      {
+        "name": "video_capture.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "mypi.ini",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "run-cuda.bat",
+    "type": "file"
+  },
+  {
+    "name": "run-directml.bat",
+    "type": "file"
+  },
+  {
+    "name": "run.py",
+    "type": "file"
+  }
+]

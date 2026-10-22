@@ -1,0 +1,40 @@
+I’ve confirmed the repository is an inference implementation with five CLI workflows, optional Streamlit/Gradio demos, model-specific documentation, and separate code/model licenses. I’m documenting those directly from the source and keeping hardware requirements and performance claims out where the repository doesn’t specify them.
+Created `README.md` in the current directory with installation instructions, model access notes, CLI examples for all five workflows, demo and TensorRT setup, usage reporting, documentation links, and license distinctions. Claims are based on the repository’s source and docs; no other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m59 matches[0m
+[0m✱ [0mGrep "README" [90min . · 5 matches[0m
+[0m→ [0mRead . 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead src/flux/cli.py 
+[0m→ [0mRead src/flux/cli_fill.py 
+[0m→ [0mRead src/flux/cli_redux.py 
+[0m→ [0mRead src/flux/cli_control.py 
+[0m→ [0mRead src/flux/cli_kontext.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/text-to-image.md 
+[0m→ [0mRead src/flux/__main__.py 
+[0m→ [0mRead src/flux/util.py [90m[offset=1, limit=240][0m
+[0m→ [0mRead demo_st.py 
+[0m→ [0mRead demo_gr.py 
+[0m→ [0mRead demo_st_fill.py 
+[0m→ [0mRead docs/fill.md 
+[0m→ [0mRead docs/structural-conditioning.md 
+[0m→ [0mRead docs/image-variation.md 
+[0m→ [0mRead docs/image-editing.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead model_cards/FLUX.1-dev.md [90m[limit=100][0m
+[0m✱ [0mGrep "configs =|ModelSpec|FLUX_MODEL|FLUX_AE|FLUX_LORA|TRT" [90min src/flux/util.py · 18 matches[0m
+[0m→ [0mRead model_cards/FLUX.1-schnell.md [90m[limit=100][0m
+[0m✱ [0mGrep "trt|TensorRT|pip install|git clone|python -m flux" [90min .github · 2 matches[0m
+[0m→ [0mRead src/flux/util.py [90m[offset=240, limit=260][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

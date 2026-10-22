@@ -1,0 +1,142 @@
+I'll start by looking at the repository layout and existing docs.
+Code Mode can't reach the filesystem, so I'll use the file tools directly.
+Next I need the exact model names, the GPU Dockerfile, and the SAM session details.
+I have the core picture. I'll check the tests, CI workflows, and the custom-model session kwargs before writing.
+Last checks: the cloth-segmentation categories and the `_setup.iss` installer, so I describe them accurately.
+The model list, CLI, server, and Docker setup are clear. One more check: what `rembg/__init__.py` exports, so the Python import examples are correct.
+I have enough to write an accurate README. Writing it now.
+The README is written. Before finishing, I'm checking it against the code. A few statements are wrong or overstated, so I'm correcting them.
+I wrote `README.md` in the repository root. It is the only file I created. It starts with a level-one heading and covers installation, the Python API, the CLI, the HTTP server, Docker, the model list, environment variables, development, and license. Each claim was checked against the source code.
+
+I corrected several points during review:
+- The model count is 16 built-in models plus three custom-model options.
+- The MD5 check applies only to `u2net`, not to every model.
+- SAM rectangle prompts ignore the `label` field.
+
+Two things in the existing `USAGE.md` are wrong, and I left that file unchanged:
+- Its example uses `new_session("unet")`, which is not a registered model name.
+- It passes `input_points` to `remove`, but the SAM session reads `sam_prompt`. The README uses `sam_prompt`.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode.list_mcp_resources({}),\n]);\nconst { execSync } = await import(\"node:process\").then(()=>({execSync:null}));\nreturn \"noop\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 145 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead USAGE.md 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead docker-compose.yml 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead rembg/bg.py 
+[0m→ [0mRead rembg/cli.py 
+[0m→ [0mRead rembg/session_factory.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead rembg/commands/__init__.py 
+[0m→ [0mRead rembg/commands/i_command.py 
+[0m→ [0mRead rembg/commands/p_command.py 
+[0m→ [0mRead rembg/commands/s_command.py 
+[0m→ [0mRead rembg/commands/d_command.py 
+[0m→ [0mRead rembg/commands/b_command.py 
+[0m→ [0mRead rembg/sessions/__init__.py 
+[0m→ [0mRead rembg/sessions/base.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead Dockerfile_nvidia_cuda_cudnn_gpu 
+[0m✱ [0mGrep "return "" [90min rembg/sessions · 19 matches[0m
+[0m→ [0mRead rembg/sessions/sam.py 
+[0m→ [0mRead rembg.py 
+[0m→ [0mRead rembg/sessions/u2net.py 
+[0m→ [0mRead rembg/sessions/u2net_custom.py 
+[0m✱ [0mGlob ".github/**/*" [90m9 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead tests/test_remove.py 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead .github/workflows/test_install.yml 
+[0m→ [0mRead .github/workflows/lint_python.yml 
+[0m✱ [0mGrep "model_path|sam_model|sam_quant|kwargs.get" [90min rembg/sessions · 26 matches[0m
+[0m→ [0mRead .github/workflows/publish_docker.yml 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "cloth_category|upper|lower|"upper_body"|"lower_body"|"full_body"" [90min rembg/sessions/u2net_cloth_seg.py · 10 matches[0m
+[0m✱ [0mGrep "AppName|OutputBaseFilename|rembg" [90min _setup.iss · 10 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead rembg/__init__.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -22,9 +22,9 @@
+ 
+ ## Features
+ 
+ - Background removal from file paths, raw bytes, Pillow images, or NumPy arrays.
+-- Choice of 15 built-in models, plus support for custom ONNX models through `u2net_custom`, `dis_custom`, and `ben_custom`.
++- Choice of 16 built-in models, plus three options for custom ONNX models (`u2net_custom`, `dis_custom`, and `ben_custom`).
+ - Optional alpha matting, mask post-processing, mask-only output, and solid background colour replacement.
+ - Interactive point and rectangle prompts for the SAM model.
+ - CLI commands for single files, byte streams, and folders (with optional watch mode).
+ - FastAPI server with a Gradio web UI and an OpenAPI docs page.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -125,10 +125,10 @@
+ ### SAM prompts
+ 
+ The `sam` model accepts prompts through the `sam_prompt` argument. Each prompt is a dict with `type`, `label`, and `data`:
+ 
+-- `{"type": "point", "label": 1, "data": [x, y]}`: a foreground point (`label` 1) or background point (`label` 0).
+-- `{"type": "rectangle", "label": 0, "data": [x1, y1, x2, y2]}`: a bounding box.
++- `{"type": "point", "label": 1, "data": [x, y]}`: a point. The `label` is passed to the model as-is.
++- `{"type": "rectangle", "data": [x1, y1, x2, y2]}`: a bounding box. Its corners are sent to the model as two points with fixed labels, so `label` is not used.
+ 
+ ```python
+ session = new_session("sam")
+ output = remove(
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -315,11 +315,11 @@
+ | `u2net_custom` | Custom local ONNX model; requires `model_path`. |
+ | `dis_custom` | Custom local ONNX model; requires `model_path`. |
+ | `ben_custom` | Custom local ONNX model; requires `model_path`. |
+ 
+-Model files are downloaded from the project's GitHub releases on first use and cached in `~/.u2net` (see `U2NET_HOME` below). The downloads are checked with MD5 checksums unless checksum checking is disabled.
++Model files are downloaded from the project's GitHub releases on first use and cached in `~/.u2net` (see `U2NET_HOME` below). The `u2net` model is verified against an MD5 checksum unless `MODEL_CHECKSUM_DISABLED` is set.
+ 
+-The `tests/results` directory contains reference outputs for the test fixtures, produced by each model listed in the test suite.
++The `tests/results` directory contains reference outputs for the test fixtures, one per model and image pair.
+ 
+ ## Environment variables
+ 
+ | Variable | Description |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -296,9 +296,9 @@
+ 
+ | Name | Notes |
+ | --- | --- |
+ | `u2net` | Default model. |
+-| `u2netp` | Lightweight U2-Net variant. |
++| `u2netp` | U2-Net variant. |
+ | `u2net_human_seg` | U2-Net trained for human segmentation. |
+ | `u2net_cloth_seg` | Clothing segmentation; takes `cloth_category` (`upper`, `lower`, `full`). |
+ | `silueta` | |
+ | `isnet-general-use` | |
+
+> readme-benchmark · anthropic/claude-haiku-5.5

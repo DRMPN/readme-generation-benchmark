@@ -1,0 +1,46 @@
+I'll start by looking at what's in the repository.
+Several top-level docs and subdirectories. I'll read the key files.
+The antipatterns index links to `python-antipatterns.md`, which isn't in the file list. I'll check that and skim the remaining documents' headings and the git metadata.
+I have enough to write it. One note for the README: `antipatterns/README.md` links to `python-antipatterns.md`, which doesn't exist, so I'll flag that rather than list it as a resource.
+I created `README.md` in the repository root. It starts with a level-one heading and covers only what the repository contains.
+
+It describes:
+- **Contents:** a table of every top-level directory and file.
+- **Antipatterns:** the catalogs under `antipatterns/`.
+- **Training:** the web development, front-end, and Python pointer materials.
+- **Feature flags and glossary:** what each document covers.
+- **Contributing:** the pre-commit hooks (`pre-commit-hooks`, `black`, `doctoc`) and the setup command from `CONTRIBUTING.md`.
+- **License:** MIT, Copyright (c) 2017 Charles-Axel Dein, from `LICENSE`.
+
+The repository has no build, test, or run commands, so the README doesn't describe any.
+
+One broken link is in the source material, not in the README. `antipatterns/README.md` links to `python-antipatterns.md`, which doesn't exist. My README notes this rather than presenting that file as available. You may want to fix or remove that link upstream.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const [files, status, log] = await Promise.all([\n  tools.opencode ? null : null,\n  null, null\n].map(()=>null));\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m50 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead .pre-commit-config.yaml 
+[0m→ [0mRead feature-flags.md 
+[0m→ [0mRead glossary.md 
+[0m→ [0mRead antipatterns/README.md 
+[0m→ [0mRead training/learning-python/README.md 
+[0m→ [0mRead training/front-end/README.md 
+[0m→ [0mRead training/web-dev/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+[0m✱ [0mGrep "^#{1,2} " [90min . · 133 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .git/config 
+[0m→ [0mRead training/front-end/06-front-end-development-practices.md [90m[limit=40][0m
+[0m→ [0mRead training/front-end/03-typescript.md [90m[limit=30][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

@@ -1,0 +1,78 @@
+I'll start by looking at the repository layout and existing docs.
+No README exists yet. I'll read the core code, config, and docs next.
+The server and local dev server are clear. Next I'll check hidden files, every environment variable the code reads, and the setup docs.
+The env-var list is long. I still need `.env.example`, the `.well-known` directory that `server/main.py` mounts, the plugin manifest, the PII and metadata services, and the scripts.
+`.well-known/` exists, so the server mount is valid. Next I'll check whether the PII and metadata services are actually wired in, and read the script and example READMEs.
+The PII and metadata services are only used by the `scripts/process_*` utilities, not the server. I'll check the remaining deployment docs and the provider doc list before writing.
+I have enough for the main sections. Two last checks: whether `.env` is loaded automatically, and what the Azure and Redis/Chroma docs say about setup.
+I've verified enough to write the README. I'll create it now and keep every claim tied to the code or docs I read.
+I wrote `README.md` in the repository root. It is the only file I created. It starts with a level-one heading and every section is based on code or docs I read.
+
+It covers:
+- **Overview and pipeline:** chunking (about 200 tokens), OpenAI embeddings, storage, and querying with metadata filters.
+- **Setup:** Poetry quick start, Docker, and the unauthenticated `poetry run dev` server for localhost testing.
+- **API:** the `/upsert`, `/upsert-file`, `/query`, and `/delete` endpoints, plus the `/sub` query-only schema.
+- **Authentication:** the bearer token, and the server refusing to start without it.
+- **Configuration:** general, Azure OpenAI, and per-backend environment variables with the defaults from the code.
+- **Backends:** the 15 `DATASTORE` values, each linked to its setup guide.
+- **Other:** supported file types, the batch import scripts, examples, deployment guides, and tests.
+
+I also added a short "Known issues" section, since they affect how the service behaves:
+- `/upsert-file` writes every upload to the same fixed path, `/tmp/temp_file`, so concurrent uploads can overwrite each other.
+- The `/upsert-file` error detail is the literal string `str({e})`, because the f-string prefix is missing.
+- Most errors in `/upsert`, `/query`, and `/delete` return a generic message, and details appear only in the logs.
+
+Two things I did not verify by running the code:
+- The test suite. Most provider tests need live services, so I only described what the tests require.
+- Whether `poetry install` and Docker builds succeed in this environment.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead README.md failed
+[91m[1mError: [0mFile not found: /tmp/chatgpt-retrieval-plugin-o1hcs6_d/README.md
+[0m✱ [0mGlob "**/*" [90m113 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead datastore/factory.py 
+[0m→ [0mRead server/main.py 
+[0m→ [0mRead datastore/datastore.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead Dockerfile 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead models/models.py 
+[0m→ [0mRead models/api.py 
+[0m→ [0mRead services/openai.py 
+[0m→ [0mRead services/chunks.py 
+[0m→ [0mRead services/file.py 
+[0m→ [0mRead local_server/main.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/deprecated/plugins.md 
+[0m✱ [0mGlob ".*" [90min . · 4 matches[0m
+[0m✱ [0mGrep "environ|getenv" [90min . · 222 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead .env.example 
+[0m→ [0mRead local_server/ai-plugin.json 
+[0m✱ [0mGrep "well-known" [90min . · 27 matches[0m
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead services/pii_detection.py 
+[0m→ [0mRead services/extract_metadata.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "pii_detection|extract_metadata|screen_text_for_pii|extract_metadata_from_document" [90min . · 29 matches[0m
+[0m✱ [0mGlob ".well-known/*" [90min . · 3 matches[0m
+[0m→ [0mRead scripts/process_json/README.md 
+[0m→ [0mRead scripts/process_jsonl/README.md 
+[0m→ [0mRead scripts/process_zip/README.md 
+[0m→ [0mRead examples/memory/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/deployment/removing-unused-dependencies.md 
+[0m→ [0mRead docs/deployment/render.md 
+[0m→ [0mRead docs/providers/pinecone/setup.md 
+[0m→ [0mRead examples/docker/qdrant/README.md 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead docs/providers/chroma/setup.md 
+[0m✱ [0mGrep "load_dotenv|dotenv" [90min . · 6 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

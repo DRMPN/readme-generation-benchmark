@@ -1,0 +1,180 @@
+I'll start by looking at what's in the repository.
+The repo is a collection of many independent Python scripts. I'll check the existing READMEs, the top-level files, and any requirements files.
+The per-folder READMEs are partial and some are in Chinese. Next I'll read the entry scripts so the README describes what each one actually does.
+The sandbox blocks filesystem access from code, so I'll read the scripts directly.
+I have a good picture of most scripts. Next I'll pull each script's entry point and third-party imports so the README's dependency and run instructions are accurate.
+Next I'll check the remaining entry points: the Scrapy project, the 2020 folder scripts, and the `__main__` blocks of a few others.
+I have enough on the scripts. Last, I'll check for a license file and the git remote so the README doesn't claim anything that isn't in the repo.
+I've reviewed the repository. There's no top-level README, no license file, and no top-level requirements file. I'll write the README now and keep claims to what the code and existing docs show.
+The README is written. Rereading it, I see a few claims I didn't verify in the code: the Netease playlist behavior, proxy checking in `daili.py`, MySQL writes in `financical.py`, a prompt in `douyin.py`, and "GPA" where the source says grade points. I'm also removing a duplicated table row. I'll fix those now.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The repository is a collection of independent Python scraping and download scripts, not one installable package, so the README covers each project separately. It starts with a level-one heading and includes:
+
+- **Status warnings:** many examples are probably outdated, some need placeholder values replaced, some hard-code Windows paths or a third-party signature service, and there are no tests or license file.
+- **Contents table:** what each folder or file does, with its entry point.
+- **Requirements:** the two requirements files that exist, plus the third-party packages the scripts import that no file lists (for example `selenium`, `scrapy`, `pycryptodome`, `click`, `pymysql`).
+- **Usage examples** for the projects I checked in detail: Bilibili, JD review images, ZhengFang, the video GUI, and the Scrapy comic crawler.
+- **Responsible-use notes** and **attribution** to Jack Cui, taken from the source headers and existing READMEs.
+
+I did not verify behavior by running anything. Some entries are based on file names, imports, and header comments rather than full reads. The README says so where that applies, for example in the note that a few files are not described in detail. The main gaps are the `2020/` subfolders, `baiduwenku_pro_1.py`, and `douyin_pro.py`.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? \"\" : \"\",\n]);\nreturn r;"} 
+[0m✱ [0mGlob "**/*" [90m102 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "*" [90m100 matches[0m
+[0m✱ [0mGlob "**/*.py" [90m51 matches[0m
+[0m✱ [0mGlob "**/*.{md,txt,cfg,json,yml,yaml,toml}" [90m13 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead 2020/README.md 
+[0m→ [0mRead douyin/README.md 
+[0m→ [0mRead bilibili/README.md 
+[0m→ [0mRead dingdong/README.md 
+[0m→ [0mRead zhengfang_system_spider/README.md 
+[0m→ [0mRead bilibili_luckyman/README.md 
+[0m→ [0mRead zhengfang_system_spider/requirements.txt 
+[0m→ [0mRead video_downloader/requirements.txt 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const files = [\n\"geetest.py\",\"shuaia.py\",\"daili.py\",\"douyin_pro.py\",\"hero.py\",\"financical.py\",\"12306.py\",\"baiduwenku.py\",\"baiduwenku_pro_1.py\",\"biqukan.py\",\"downloader.py\",\n\"douyin/douyin.py\",\"bilibili/bilibili.py\",\"bilibili/xml2ass.py\",\"baiwan/baiwan.py\",\"Netease/Netease.py\",\"video_downloader/video_downloader.py\",\n\"video_downloader/MyQR/myqr.py\",\"bilibili_luckyman/bilibili_luckyman.py\",\"dingdong/jd.py\",\"zhengfang_system_spider/spider.py\",\n\"one_hour_spider/unsplash.py\",\"one_hour_spider/unsplash20180731.py\",\"one_hour_spider/vidoe_downloader.py\",\"one_hour_spider/biquge20180731.py\",\"one_hour_spider/biqukan.py\",\n\"2020/api/api.py\",\"2020/xbqg/xbqg_spider.py\",\"2020/bilibili/download.py\",\"2020/bilibili/xml2ass.py\",\"2020/dmzj/cartoon.py\",\"2020/taobao/taobao_login.py\",\"2020/zycjw/video_download.py\",\n\"cartoon/cartoon/spiders/comic_spider.py\",\"cartoon/cartoon/settings.py\",\"cartoon/cartoon/pipelines.py\"\n];\nconst out = {};\nfor (const f of files) {\n  const t = await fetch(\"file:///tmp/python-spider-e4t6m_eq/\" + f).then(r=>r.text()).catch(e=>\"ERR \"+e);\n  out[f] = t.split(\"\\n\").slice(0,25).join(\"\\n\");\n}\nreturn out;"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead geetest.py [90m[limit=40][0m
+[0m→ [0mRead shuaia.py [90m[limit=40][0m
+[0m→ [0mRead daili.py [90m[limit=40][0m
+[0m→ [0mRead douyin_pro.py [90m[limit=40][0m
+[0m→ [0mRead hero.py [90m[limit=40][0m
+[0m→ [0mRead 12306.py [90m[limit=40][0m
+[0m→ [0mRead financical.py [90m[limit=40][0m
+[0m→ [0mRead baiduwenku.py [90m[limit=40][0m
+[0m→ [0mRead biqukan.py [90m[limit=40][0m
+[0m→ [0mRead downloader.py [90m[limit=40][0m
+[0m→ [0mRead douyin/douyin.py [90m[limit=60][0m
+[0m→ [0mRead bilibili/bilibili.py [90m[limit=60][0m
+[0m→ [0mRead baiwan/baiwan.py [90m[limit=40][0m
+[0m→ [0mRead Netease/Netease.py [90m[limit=40][0m
+[0m→ [0mRead video_downloader/video_downloader.py [90m[limit=60][0m
+[0m→ [0mRead bilibili_luckyman/bilibili_luckyman.py [90m[limit=40][0m
+[0m→ [0mRead zhengfang_system_spider/spider.py [90m[limit=60][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "__main__|argparse|sys\.argv|add_argument" [90min . · 85 matches[0m
+[0m✱ [0mGrep "^\s*(import|from) \w+" [90min . · 225 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead cartoon/scrapy.cfg 
+[0m→ [0mRead 2020/api/api.py 
+[0m→ [0mRead cartoon/cartoon/spiders/comic_spider.py 
+[0m→ [0mRead one_hour_spider/unsplash.py 
+[0m→ [0mRead 2020/xbqg/xbqg_spider.py 
+[0m→ [0mRead 2020/dmzj/cartoon.py 
+[0m→ [0mRead 2020/zycjw/video_download.py 
+[0m→ [0mRead 2020/taobao/taobao_login.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "url|github" [90min .git/config · 1 match[0m
+[0m✱ [0mGlob "{LICENSE*,license*,.gitignore,*.md,README*}" [90m6 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -27,9 +27,9 @@
+ | `video_downloader/` | Tkinter GUI for the "VIP video" helper. Includes a bundled QR-code generator package, `MyQR/`. | `video_downloader.py` |
+ | `zhengfang_system_spider/` | Retrieves a student's timetable, grades, and GPA from a school academic system that uses the ZhengFang platform. | `spider.py` |
+ | `cartoon/` | Scrapy project that crawls comic chapter pages and saves images. | `scrapy crawl comic` |
+ | `baiwan/` | Quiz-answer helper for a live trivia show. It fetches question data, searches for answers, and writes them to `question.txt`. The API URL is a placeholder, so it does not run as shipped. | `baiwan.py` |
+-| `Netease/` | Netease Cloud Music login helper with AES/RSA request encryption. Lists playlists from `music_list.txt`. | `Netease.py` |
++| `Netease/` | Netease Cloud Music request helper implementing the site's AES/RSA request encryption. Includes a `music_list.txt` file. | `Netease.py` |
+ | `one_hour_spider/` | Several small examples from the author's one-hour series, including novel downloaders for `biqukan` and `biquge`, an Unsplash photo downloader, and a video downloader. | Each `.py` file |
+ | `2020/` | Code for the 2020 tutorial series. Subfolders include `xbqg/` (novel), `dmzj/` (comics), `zycjw/` (video, uses FFmpeg), `api/` (image beautification API), `taobao/` (login automation), and `bilibili/` (danmaku). | Each subfolder's `.py` file |
+ | `geetest.py` | Selenium example for handling a slider CAPTCHA by reading the canvas image. | `geetest.py` |
+ | `12306.py` | Selenium-style train-ticket query and booking automation using `splinter`. Uses placeholder credentials and a Windows chromedriver path. | `12306.py` |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -32,9 +32,9 @@
+ | `one_hour_spider/` | Several small examples from the author's one-hour series, including novel downloaders for `biqukan` and `biquge`, an Unsplash photo downloader, and a video downloader. | Each `.py` file |
+ | `2020/` | Code for the 2020 tutorial series. Subfolders include `xbqg/` (novel), `dmzj/` (comics), `zycjw/` (video, uses FFmpeg), `api/` (image beautification API), `taobao/` (login automation), and `bilibili/` (danmaku). | Each subfolder's `.py` file |
+ | `geetest.py` | Selenium example for handling a slider CAPTCHA by reading the canvas image. | `geetest.py` |
+ | `12306.py` | Selenium-style train-ticket query and booking automation using `splinter`. Uses placeholder credentials and a Windows chromedriver path. | `12306.py` |
+-| `daili.py` | Scrapes a free proxy list and checks proxies. | `daili.py` |
++| `daili.py` | Scrapes proxy addresses from a public proxy-listing site (xicidaili). | `daili.py` |
+ | `downloader.py` | Generic file downloader with a terminal progress bar. Prompts for a URL. | `downloader.py` |
+ | `hero.py` | Downloads League of Legends hero images from a Fiddler-captured API. | `hero.py` |
+ | `biqukan.py` | Downloads a novel from a web novel site into a text file. | `biqukan.py` |
+ | `baiduwenku.py`, `baiduwenku_pro_1.py` | Extract text from Baidu Wenku documents. `baiduwenku.py` uses Selenium and a hard-coded Windows chromedriver path. | Each file |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -38,9 +38,9 @@
+ | `hero.py` | Downloads League of Legends hero images from a Fiddler-captured API. | `hero.py` |
+ | `biqukan.py` | Downloads a novel from a web novel site into a text file. | `biqukan.py` |
+ | `baiduwenku.py`, `baiduwenku_pro_1.py` | Extract text from Baidu Wenku documents. `baiduwenku.py` uses Selenium and a hard-coded Windows chromedriver path. | Each file |
+ | `douyin_pro.py` | Alternative Douyin video downloader using `splinter`. Hard-codes a Windows chromedriver path. | `douyin_pro.py` |
+-| `financical.py` | Retrieves financial indicators for Hong Kong stocks from `quotes.money.163.com` and writes them to MySQL through `pymysql`. | `financical.py` |
++| `financical.py` | Retrieves financial indicators for Hong Kong stocks from `quotes.money.163.com`. Imports `pymysql`, so it appears to store results in MySQL. | `financical.py` |
+ | `shuaia.py` | Downloads images from a picture site, saving them as `.jpg` files. | `shuaia.py` |
+ | `hero.py`, `geetest.py` | See rows above. | |
+ 
+ Some subfolders and files are not described in detail here. Check the source file's header comments for the latest details.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -40,9 +40,8 @@
+ | `baiduwenku.py`, `baiduwenku_pro_1.py` | Extract text from Baidu Wenku documents. `baiduwenku.py` uses Selenium and a hard-coded Windows chromedriver path. | Each file |
+ | `douyin_pro.py` | Alternative Douyin video downloader using `splinter`. Hard-codes a Windows chromedriver path. | `douyin_pro.py` |
+ | `financical.py` | Retrieves financial indicators for Hong Kong stocks from `quotes.money.163.com`. Imports `pymysql`, so it appears to store results in MySQL. | `financical.py` |
+ | `shuaia.py` | Downloads images from a picture site, saving them as `.jpg` files. | `shuaia.py` |
+-| `hero.py`, `geetest.py` | See rows above. | |
+ 
+ Some subfolders and files are not described in detail here. Check the source file's header comments for the latest details.
+ 
+ ## Requirements
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -125,9 +125,9 @@
+ cd douyin
+ python douyin.py
+ ```
+ 
+-The script prompts for the user input required to download videos. The signature service it uses is a hard-coded external address (see "Status" above).
++The script uses a hard-coded external signature service (see "Status" above).
+ 
+ ### JD.com review images (`dingdong/`)
+ 
+ ```bash
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -24,9 +24,9 @@
+ | `bilibili_luckyman/` | Collects user names, IDs, and comments from the forwards of a Bilibili dynamic post. | `bilibili_luckyman.py` |
+ | `douyin/` | Downloads videos from a Douyin user account. | `douyin.py` |
+ | `dingdong/` | Downloads product review images from JD.com search results. | `jd.py` |
+ | `video_downloader/` | Tkinter GUI for the "VIP video" helper. Includes a bundled QR-code generator package, `MyQR/`. | `video_downloader.py` |
+-| `zhengfang_system_spider/` | Retrieves a student's timetable, grades, and GPA from a school academic system that uses the ZhengFang platform. | `spider.py` |
++| `zhengfang_system_spider/` | Retrieves a student's timetable, grades, and grade points from a school academic system that uses the ZhengFang platform. | `spider.py` |
+ | `cartoon/` | Scrapy project that crawls comic chapter pages and saves images. | `scrapy crawl comic` |
+ | `baiwan/` | Quiz-answer helper for a live trivia show. It fetches question data, searches for answers, and writes them to `question.txt`. The API URL is a placeholder, so it does not run as shipped. | `baiwan.py` |
+ | `Netease/` | Netease Cloud Music request helper implementing the site's AES/RSA request encryption. Includes a `music_list.txt` file. | `Netease.py` |
+ | `one_hour_spider/` | Several small examples from the author's one-hour series, including novel downloaders for `biqukan` and `biquge`, an Unsplash photo downloader, and a video downloader. | Each `.py` file |
+
+> readme-benchmark · anthropic/claude-haiku-5.5

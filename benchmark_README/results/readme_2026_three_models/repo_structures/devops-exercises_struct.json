@@ -1,0 +1,2252 @@
+[
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ci_workflow.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".travis.yml",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "certificates",
+    "type": "dir",
+    "children": [
+      {
+        "name": "aws-certification-paths.md",
+        "type": "file"
+      },
+      {
+        "name": "aws-cloud-practitioner.md",
+        "type": "file"
+      },
+      {
+        "name": "aws-cloud-sysops-associate.md",
+        "type": "file"
+      },
+      {
+        "name": "aws-solutions-architect-associate.md",
+        "type": "file"
+      },
+      {
+        "name": "azure-fundamentals-az-900.md",
+        "type": "file"
+      },
+      {
+        "name": "cka.md",
+        "type": "file"
+      },
+      {
+        "name": "ckad.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "coding",
+    "type": "dir",
+    "children": [
+      {
+        "name": "python",
+        "type": "dir",
+        "children": [
+          {
+            "name": "binary_search.py",
+            "type": "file"
+          },
+          {
+            "name": "merge_sort.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "credits.md",
+    "type": "file"
+  },
+  {
+    "name": "exercises",
+    "type": "dir",
+    "children": [
+      {
+        "name": "shell",
+        "type": "dir",
+        "children": [
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "directories_comparison.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "faq.md",
+    "type": "file"
+  },
+  {
+    "name": "prepare_for_interview.md",
+    "type": "file"
+  },
+  {
+    "name": "scripts",
+    "type": "dir",
+    "children": [
+      {
+        "name": "aws s3 event triggering",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "aws_s3_event_trigger.sh",
+            "type": "file"
+          },
+          {
+            "name": "s3-lambda",
+            "type": "dir",
+            "children": [
+              {
+                "name": "requirements.txt",
+                "type": "file"
+              },
+              {
+                "name": "s3-lambda.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sample.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "count_questions.sh",
+        "type": "file"
+      },
+      {
+        "name": "question_utils.py",
+        "type": "file"
+      },
+      {
+        "name": "random_question.py",
+        "type": "file"
+      },
+      {
+        "name": "run_ci.sh",
+        "type": "file"
+      },
+      {
+        "name": "update_question_number.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "scripts_question_utils_unittest.py",
+        "type": "file"
+      },
+      {
+        "name": "syntax_checker_unittest.py",
+        "type": "file"
+      },
+      {
+        "name": "syntax_lint.py",
+        "type": "file"
+      },
+      {
+        "name": "testcases",
+        "type": "dir",
+        "children": [
+          {
+            "name": "testcase1.md",
+            "type": "file"
+          },
+          {
+            "name": "testcase2.md",
+            "type": "file"
+          },
+          {
+            "name": "testcase3.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "topics",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ansible",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "my_first_playbook.md",
+            "type": "file"
+          },
+          {
+            "name": "my_first_task.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "my_first_playbook.md",
+                "type": "file"
+              },
+              {
+                "name": "my_first_task.md",
+                "type": "file"
+              },
+              {
+                "name": "update_upgrade_task.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "update_upgrade_task.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "argo",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "app_creation",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "argocd_helm_app",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "blue_green_rollout",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "canary_rollout",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "secrets_101",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "soltuion.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "sync_app_cluster",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "sync_app_git",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "aws",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "access_advisor",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "alb_multiple_target_groups",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "app_load_balancer",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "asg_dynamic_scaling_policy",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "aurora_db",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "auto_scaling_groups_basics",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "basic_s3_ci",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "budget_setup",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_ami",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_efs",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_role",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_spot_instances",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_user",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "creating_records",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "credential_report",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ebs_volume_creation",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ec2_iam_roles",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "ecs_task",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "elastic_beanstalk_simple",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "elastic_ip",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "elastic_network_interfaces",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "elasticache",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "health_checks",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "hello_function",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "hibernate_instance",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "launch_ec2_web_instance",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "mysql_db",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "network_load_balancer",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "new_vpc",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.tf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "pulumi",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__main__.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "terraform",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "main.tf",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "no_application",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "password_policy_and_mfa",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "placement_groups",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "register_domain",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "route_53_failover",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "s3",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "new_bucket",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "exercise.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "pulumi",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "__main__.py",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "solution.md",
+                        "type": "file"
+                      },
+                      {
+                        "name": "terraform",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "main.tf",
+                            "type": "file"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "sample_cdk",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "security_groups",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "snapshots",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "subnets",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "pulumi",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "__main__.py",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "terraform",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "main.tf",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "url_function",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "web_app_lambda_dynamodb",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "terraform",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "main.tf",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "azure",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "chaos_engineering",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cicd",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "ci_for_open_source_project.md",
+            "type": "file"
+          },
+          {
+            "name": "deploy_to_kubernetes.md",
+            "type": "file"
+          },
+          {
+            "name": "remove_builds.md",
+            "type": "file"
+          },
+          {
+            "name": "remove_jobs.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "deploy_to_kubernetes",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Jenkinsfile",
+                    "type": "file"
+                  },
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "deploy.yml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "helloworld.yml",
+                    "type": "file"
+                  },
+                  {
+                    "name": "html",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "css",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "normalize.css",
+                            "type": "file"
+                          },
+                          {
+                            "name": "skeleton.css",
+                            "type": "file"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.html",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "inventory",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "remove_builds_solution.groovy",
+                "type": "file"
+              },
+              {
+                "name": "remove_jobs_solution.groovy",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "circleci",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cloud",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "cloud_slack_bot.md",
+        "type": "file"
+      },
+      {
+        "name": "containers",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "commit_image.md",
+            "type": "file"
+          },
+          {
+            "name": "containerized_db.md",
+            "type": "file"
+          },
+          {
+            "name": "containerized_db_persistent_storage.md",
+            "type": "file"
+          },
+          {
+            "name": "containerized_web_server.md",
+            "type": "file"
+          },
+          {
+            "name": "image_layers.md",
+            "type": "file"
+          },
+          {
+            "name": "multi_stage_builds.md",
+            "type": "file"
+          },
+          {
+            "name": "run_forest_run.md",
+            "type": "file"
+          },
+          {
+            "name": "running_containers.md",
+            "type": "file"
+          },
+          {
+            "name": "sharing_images.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "commit_image.md",
+                "type": "file"
+              },
+              {
+                "name": "containerized_db.md",
+                "type": "file"
+              },
+              {
+                "name": "containerized_db_persistent_storage.md",
+                "type": "file"
+              },
+              {
+                "name": "containerized_web_server.md",
+                "type": "file"
+              },
+              {
+                "name": "image_layers.md",
+                "type": "file"
+              },
+              {
+                "name": "multi_stage_builds.md",
+                "type": "file"
+              },
+              {
+                "name": "run_forest_run.md",
+                "type": "file"
+              },
+              {
+                "name": "running_containers.md",
+                "type": "file"
+              },
+              {
+                "name": "sharing_images.md",
+                "type": "file"
+              },
+              {
+                "name": "working_with_images.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "working_with_images.md",
+            "type": "file"
+          },
+          {
+            "name": "write_containerfile_run_container.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "databases",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "table_for_message_board_system.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "table_for_message_board_system.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "datadog",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "devops",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "containerize_app.md",
+            "type": "file"
+          },
+          {
+            "name": "ha_hello_world.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "containerize_app.md",
+                "type": "file"
+              },
+              {
+                "name": "ha_hello_world.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "dns",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "eflk.md",
+        "type": "file"
+      },
+      {
+        "name": "flask_container_ci",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "app",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "config.py",
+                "type": "file"
+              },
+              {
+                "name": "main.py",
+                "type": "file"
+              },
+              {
+                "name": "tests.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "tests.py",
+            "type": "file"
+          },
+          {
+            "name": "users.json",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "flask_container_ci2",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "app",
+            "type": "dir",
+            "children": [
+              {
+                "name": "__init__.py",
+                "type": "file"
+              },
+              {
+                "name": "config.py",
+                "type": "file"
+              },
+              {
+                "name": "main.py",
+                "type": "file"
+              },
+              {
+                "name": "tests.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "tests.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "gcp",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "assign_roles",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.tf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "vars.tf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "versions.tf",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_project",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.tf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "versions.tf",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "instance_101",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "main.tf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "versions.tf",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "git",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "branch_01.md",
+            "type": "file"
+          },
+          {
+            "name": "commit_01.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "branch_01_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "commit_01_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "squashing_commits.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "squashing_commits.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "grafana",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "jenkins_pipelines.md",
+        "type": "file"
+      },
+      {
+        "name": "jenkins_scripts.md",
+        "type": "file"
+      },
+      {
+        "name": "kafka",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "kubernetes",
+        "type": "dir",
+        "children": [
+          {
+            "name": "CKA.md",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "kustomize_common_labels",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "someApp",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "deployment.yml",
+                        "type": "file"
+                      },
+                      {
+                        "name": "service.yml",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "labels_and_selectors",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "node_selectors",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "taints_101",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "killing_containers.md",
+            "type": "file"
+          },
+          {
+            "name": "pods_01.md",
+            "type": "file"
+          },
+          {
+            "name": "replicaset_01.md",
+            "type": "file"
+          },
+          {
+            "name": "replicaset_02.md",
+            "type": "file"
+          },
+          {
+            "name": "replicaset_03.md",
+            "type": "file"
+          },
+          {
+            "name": "services_01.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "killing_containers.md",
+                "type": "file"
+              },
+              {
+                "name": "pods_01_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "replicaset_01_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "replicaset_02_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "replicaset_03_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "services_01_solution.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "linux",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "copy",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "create_remove",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "navigation",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "uniqe_count",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "README.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "ip_list",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "misc",
+        "type": "dir",
+        "children": [
+          {
+            "name": "elk_kibana_aws.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "node",
+        "type": "dir",
+        "children": [
+          {
+            "name": "node_questions_basic.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "node_questions_basic_ans.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "observability",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "openshift",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "projects_101.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "my_first_app.md",
+                "type": "file"
+              },
+              {
+                "name": "projects_101.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "os",
+        "type": "dir",
+        "children": [
+          {
+            "name": "fork_101.md",
+            "type": "file"
+          },
+          {
+            "name": "fork_102.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "fork_101_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "fork_102_solution.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "perl",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "pipeline_deploy_image_to_k8.md",
+        "type": "file"
+      },
+      {
+        "name": "programming",
+        "type": "dir",
+        "children": [
+          {
+            "name": "grep_berfore_and_after.md",
+            "type": "file"
+          },
+          {
+            "name": "web_scraper.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "python",
+        "type": "dir",
+        "children": [
+          {
+            "name": "advanced_data_types.md",
+            "type": "file"
+          },
+          {
+            "name": "class_0x00.md",
+            "type": "file"
+          },
+          {
+            "name": "compress_string.md",
+            "type": "file"
+          },
+          {
+            "name": "data_types.md",
+            "type": "file"
+          },
+          {
+            "name": "reverse_string.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "advanced_data_types_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "class_0x00_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "compress_string_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "data_types_solution.md",
+                "type": "file"
+              },
+              {
+                "name": "reverse_string.md",
+                "type": "file"
+              },
+              {
+                "name": "sort_solution.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sort.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "security",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "shell",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "argument_check.md",
+            "type": "file"
+          },
+          {
+            "name": "basic_date.md",
+            "type": "file"
+          },
+          {
+            "name": "count_chars.md",
+            "type": "file"
+          },
+          {
+            "name": "directories_comparison.md",
+            "type": "file"
+          },
+          {
+            "name": "empty_files.md",
+            "type": "file"
+          },
+          {
+            "name": "factors.md",
+            "type": "file"
+          },
+          {
+            "name": "files_size.md",
+            "type": "file"
+          },
+          {
+            "name": "great_day.md",
+            "type": "file"
+          },
+          {
+            "name": "hello_world.md",
+            "type": "file"
+          },
+          {
+            "name": "host_status.md",
+            "type": "file"
+          },
+          {
+            "name": "num_of_args.md",
+            "type": "file"
+          },
+          {
+            "name": "print_arguments.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "argument_check.md",
+                "type": "file"
+              },
+              {
+                "name": "basic_date.md",
+                "type": "file"
+              },
+              {
+                "name": "count_chars.md",
+                "type": "file"
+              },
+              {
+                "name": "directories_comparison.md",
+                "type": "file"
+              },
+              {
+                "name": "empty_files.md",
+                "type": "file"
+              },
+              {
+                "name": "factors.md",
+                "type": "file"
+              },
+              {
+                "name": "files_size.md",
+                "type": "file"
+              },
+              {
+                "name": "great_day.md",
+                "type": "file"
+              },
+              {
+                "name": "hello_world.md",
+                "type": "file"
+              },
+              {
+                "name": "host_status.md",
+                "type": "file"
+              },
+              {
+                "name": "num_of_args.md",
+                "type": "file"
+              },
+              {
+                "name": "sum.md",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "sum.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "soft_skills",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "software_development",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "sql",
+        "type": "dir",
+        "children": [
+          {
+            "name": "improve_query.md",
+            "type": "file"
+          },
+          {
+            "name": "solutions",
+            "type": "dir",
+            "children": [
+              {
+                "name": "improve_query.md",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "sre",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "terraform",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "exercises",
+            "type": "dir",
+            "children": [
+              {
+                "name": "launch_ec2_instance",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "launch_ec2_web_instance",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "s3_bucket_rename",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "terraform_local_provider",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "exercise.md",
+                    "type": "file"
+                  },
+                  {
+                    "name": "solution.md",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "zuul",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  }
+]

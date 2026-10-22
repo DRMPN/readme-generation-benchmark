@@ -1,0 +1,37 @@
+Processing repository...
+Processing 57 files and 16 folders...
+Processing complete.
+Creating markdown files...
+Creating vector files...
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/two_people.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama2.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/biden.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/alex-lacamoire.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama-1080p.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/rose_leslie/img1.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/rose_leslie/img2.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/biden/biden.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/biden/biden2.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/alex_lacamoire/img1.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/obama/obama2.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/obama/obama.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/kit_harington/john2.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/knn_examples/train/kit_harington/john1.jpeg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/lin-manuel-miranda.png: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama_small.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama-720p.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/short_hamilton_clip.mp4: 'utf-8' codec can't decode byte 0xf8 in position 43: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama-240p.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/hamilton_clip.mp4: 'utf-8' codec can't decode byte 0xa0 in position 43: invalid start byte
+Error reading file /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/workspaces/face_recognition-7jjs5rwg/examples/obama-480p.jpg: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Splitting text into chunks for 59 docs
+Creating vector store....
+Saving vector store output....
+Saving in directory /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/glm-5.3-flash/_work/face_recognition/docs/data
+Done creating vector store....
+LLM:  gpt-4
+Generating README...
+README generated at /home/ilya/README_benchmark/benchmark_README/results/readme_2026_three_models/tools/readmeready/glm-5.3-flash/_work/face_recognition/docs/data/README_GPT4.md
+
+--- stderr ---

@@ -1,0 +1,67 @@
+I’ll inspect the project files and existing metadata, then write a README based only on what the repository supports. I’ll limit changes to `README.md`.
+The repository is a Python package (`kirara-ai`, Python 3.10+) with a workflow-based agent runtime, configurable IM/LLM adapters, a web API/UI, plugins, memory, and MCP support. I’m basing the setup and feature descriptions on the package metadata, configuration models, entry point, and bundled plugin registrations.
+Created `README.md` with repository-based setup, configuration, feature, Docker, development, and license information. No other files were changed; tests were not run.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "*" [90m100 matches[0m
+[0m✱ [0mGlob "**/*" [90m200 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+[0m✱ [0mGrep "." [90min . · 73 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead config.yaml.example 
+[0m→ [0mRead kirara_ai/__main__.py 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead MANIFEST.in 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead kirara_ai/entry.py 
+[0m→ [0mRead docker/start.sh 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead kirara_ai/config/global_config.py 
+[0m→ [0mRead kirara_ai/config/config_loader.py 
+[0m→ [0mRead kirara_ai/web/api/llm/README.md 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead kirara_ai/web/api/im/README.md 
+[0m→ [0mRead kirara_ai/web/api/mcp/README.md 
+[0m→ [0mRead kirara_ai/web/api/block/README.md 
+[0m→ [0mRead kirara_ai/web/api/media/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "kirara_ai/llm/adapters/**/*.py" [90m0 matches[0m
+[0m✱ [0mGlob "kirara_ai/plugins/*/adapter.py" [90m4 matches[0m
+[0m✱ [0mGlob "kirara_ai/workflow/implementations/blocks/**/*.py" [90m18 matches[0m
+[0m→ [0mRead kirara_ai/__init__.py 
+[0m→ [0mRead kirara_ai/config/__init__.py 
+[0m✱ [0mGlob "kirara_ai/web/api/*/routes.py" [90m10 matches[0m
+[0m✱ [0mGlob "README.md" [90m10 matches[0m
+[0m✱ [0mGlob "kirara_ai/**/*.py" [90m221 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead kirara_ai/web/README.md 
+[0m→ [0mRead kirara_ai/web/api/workflow/README.md 
+[0m→ [0mRead kirara_ai/workflow/implementations/workflows/system_workflows.py 
+[0m→ [0mRead kirara_ai/web/app.py 
+[0m→ [0mRead kirara_ai/plugins/llm_preset_adapters/setup.py 
+[0m→ [0mRead kirara_ai/plugins/im_telegram_adapter/setup.py 
+[0m→ [0mRead kirara_ai/plugins/im_qqbot_adapter/setup.py 
+[0m→ [0mRead kirara_ai/plugins/im_wecom_adapter/setup.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead kirara_ai/plugins/im_http_legacy_adapter/setup.py 
+[0m→ [0mRead kirara_ai/plugins/im_http_legacy_adapter/__init__.py 
+[0m✗ [0mRead kirara_ai/plugins/llm_preset_adapters/plugin.py failed
+[91m[1mError: [0mFile not found: kirara_ai/plugins/llm_preset_adapters/plugin.py
+[0m→ [0mRead kirara_ai/media/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/im_telegram_adapter/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/im_qqbot_adapter/__init__.py 
+[0m→ [0mRead kirara_ai/plugins/im_wecom_adapter/__init__.py 
+[0m→ [0mRead kirara_ai/web/api/system/README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "kirara_ai/plugins/llm_preset_adapters/*" [90m17 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead kirara_ai/plugins/llm_preset_adapters/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

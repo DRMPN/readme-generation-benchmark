@@ -1,0 +1,62 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 2558,
+    "tree_files": 8,
+    "tracked_files": 8,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 219,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 5,
+        "truncated": false
+      },
+      {
+        "path": "config.py",
+        "tokens": 308,
+        "truncated": false
+      },
+      {
+        "path": "weather_app.py",
+        "tokens": 1908,
+        "truncated": false
+      }
+    ],
+    "skipped": [
+      "assets/background.png",
+      "assets/screenshot.png",
+      "assets/search_icon.png",
+      "assets/weather.ico"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 2574,
+    "completion_tokens": 1962,
+    "total_tokens": 4536,
+    "cost": 0.000582876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000582876,
+      "upstream_inference_prompt_cost": 0.000190476,
+      "upstream_inference_completions_cost": 0.0003924
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792609161-cJZqjpzShh46Rc8nmpsA"
+}

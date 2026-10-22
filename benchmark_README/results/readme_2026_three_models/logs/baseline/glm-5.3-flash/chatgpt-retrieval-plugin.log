@@ -1,0 +1,431 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63872,
+    "tree_files": 121,
+    "tracked_files": 121,
+    "selected": [
+      {
+        "path": "Dockerfile",
+        "tokens": 165,
+        "truncated": false
+      },
+      {
+        "path": "LICENSE",
+        "tokens": 219,
+        "truncated": false
+      },
+      {
+        "path": "Makefile",
+        "tokens": 111,
+        "truncated": false
+      },
+      {
+        "path": "pyproject.toml",
+        "tokens": 543,
+        "truncated": false
+      },
+      {
+        "path": "examples/docker/redis/docker-compose.yml",
+        "tokens": 112,
+        "truncated": false
+      },
+      {
+        "path": "tests/datastore/providers/weaviate/docker-compose.yml",
+        "tokens": 173,
+        "truncated": false
+      },
+      {
+        "path": "local_server/main.py",
+        "tokens": 850,
+        "truncated": false
+      },
+      {
+        "path": "server/main.py",
+        "tokens": 1021,
+        "truncated": false
+      },
+      {
+        "path": "examples/memory/main.py",
+        "tokens": 1354,
+        "truncated": false
+      },
+      {
+        "path": "examples/authentication-methods/no-auth/main.py",
+        "tokens": 914,
+        "truncated": false
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "tokens": 540,
+        "truncated": false
+      },
+      {
+        "path": "docs/deployment/flyio.md",
+        "tokens": 756,
+        "truncated": false
+      },
+      {
+        "path": "docs/deployment/heroku.md",
+        "tokens": 790,
+        "truncated": false
+      },
+      {
+        "path": "docs/deployment/other-options.md",
+        "tokens": 530,
+        "truncated": false
+      },
+      {
+        "path": "docs/deployment/removing-unused-dependencies.md",
+        "tokens": 985,
+        "truncated": false
+      },
+      {
+        "path": "docs/deployment/render.md",
+        "tokens": 398,
+        "truncated": false
+      },
+      {
+        "path": "docs/deprecated/plugins.md",
+        "tokens": 742,
+        "truncated": false
+      },
+      {
+        "path": "examples/function-calling/README.md",
+        "tokens": 2758,
+        "truncated": false
+      },
+      {
+        "path": "examples/memory/README.md",
+        "tokens": 318,
+        "truncated": false
+      },
+      {
+        "path": "scripts/process_json/README.md",
+        "tokens": 650,
+        "truncated": false
+      },
+      {
+        "path": "scripts/process_jsonl/README.md",
+        "tokens": 671,
+        "truncated": false
+      },
+      {
+        "path": "scripts/process_zip/README.md",
+        "tokens": 573,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/analyticdb/setup.md",
+        "tokens": 799,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/azurecosmosdb/setup.md",
+        "tokens": 387,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/azuresearch/setup.md",
+        "tokens": 915,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/chroma/setup.md",
+        "tokens": 610,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/elasticsearch/setup.md",
+        "tokens": 645,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/llama/setup.md",
+        "tokens": 623,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/milvus/setup.md",
+        "tokens": 590,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/mongodb/setup.md",
+        "tokens": 1385,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/pinecone/setup.md",
+        "tokens": 670,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/postgres/setup.md",
+        "tokens": 997,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/qdrant/setup.md",
+        "tokens": 624,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/redis/setup.md",
+        "tokens": 601,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/supabase/setup.md",
+        "tokens": 1520,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/weaviate/setup.md",
+        "tokens": 1030,
+        "truncated": false
+      },
+      {
+        "path": "docs/providers/zilliz/setup.md",
+        "tokens": 522,
+        "truncated": false
+      },
+      {
+        "path": "examples/docker/elasticsearch/README.md",
+        "tokens": 27,
+        "truncated": false
+      },
+      {
+        "path": "examples/docker/qdrant/README.md",
+        "tokens": 296,
+        "truncated": false
+      },
+      {
+        "path": ".well-known/ai-plugin.json",
+        "tokens": 205,
+        "truncated": false
+      },
+      {
+        "path": ".well-known/openapi.yaml",
+        "tokens": 1023,
+        "truncated": false
+      },
+      {
+        "path": "datastore/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "datastore/datastore.py",
+        "tokens": 584,
+        "truncated": false
+      },
+      {
+        "path": "datastore/factory.py",
+        "tokens": 549,
+        "truncated": false
+      },
+      {
+        "path": "local_server/ai-plugin.json",
+        "tokens": 186,
+        "truncated": false
+      },
+      {
+        "path": "local_server/openapi.yaml",
+        "tokens": 995,
+        "truncated": false
+      },
+      {
+        "path": "models/api.py",
+        "tokens": 139,
+        "truncated": false
+      },
+      {
+        "path": "models/models.py",
+        "tokens": 353,
+        "truncated": false
+      },
+      {
+        "path": "services/chunks.py",
+        "tokens": 1658,
+        "truncated": false
+      },
+      {
+        "path": "services/date.py",
+        "tokens": 172,
+        "truncated": false
+      },
+      {
+        "path": "services/extract_metadata.py",
+        "tokens": 324,
+        "truncated": false
+      },
+      {
+        "path": "services/file.py",
+        "tokens": 790,
+        "truncated": false
+      },
+      {
+        "path": "services/openai.py",
+        "tokens": 614,
+        "truncated": false
+      },
+      {
+        "path": "services/pii_detection.py",
+        "tokens": 288,
+        "truncated": false
+      },
+      {
+        "path": "tests/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/analyticdb_datastore.py",
+        "tokens": 2143,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/azurecosmosdb_datastore.py",
+        "tokens": 2189,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/azuresearch_datastore.py",
+        "tokens": 2931,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/chroma_datastore.py",
+        "tokens": 1804,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/elasticsearch_datastore.py",
+        "tokens": 2594,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/llama_datastore.py",
+        "tokens": 1553,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/milvus_datastore.py",
+        "tokens": 5286,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/mongodb_atlas_datastore.py",
+        "tokens": 1843,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/pgvector_datastore.py",
+        "tokens": 1243,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/pinecone_datastore.py",
+        "tokens": 2285,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/postgres_datastore.py",
+        "tokens": 1031,
+        "truncated": false
+      },
+      {
+        "path": "datastore/providers/qdrant_datastore.py",
+        "tokens": 1996,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".dockerignore",
+      ".env.example",
+      ".gitignore",
+      "poetry.lock",
+      ".well-known/logo.png",
+      "assets/example.png",
+      "local_server/logo.png",
+      "datastore/providers/redis_datastore.py",
+      "datastore/providers/supabase_datastore.py",
+      "datastore/providers/weaviate_datastore.py",
+      "datastore/providers/zilliz_datastore.py",
+      "docs/deployment/render-thumbnail.png",
+      "examples/memory/ai-plugin.json",
+      "examples/memory/openapi.yaml",
+      "scripts/process_json/example.json",
+      "scripts/process_json/process_json.py",
+      "scripts/process_jsonl/example.jsonl",
+      "scripts/process_jsonl/process_jsonl.py",
+      "scripts/process_zip/example.zip",
+      "scripts/process_zip/process_zip.py",
+      "examples/authentication-methods/no-auth/ai-plugin.json",
+      "examples/authentication-methods/oauth/ai-plugin.json",
+      "examples/authentication-methods/service-http/ai-plugin.json",
+      "examples/authentication-methods/user-http/ai-plugin.json",
+      "examples/docker/elasticsearch/docker-compose.yaml",
+      "examples/docker/milvus/docker-compose.yaml",
+      "examples/docker/qdrant/docker-compose.yaml",
+      "examples/docker/qdrant/documents.json",
+      "examples/docker/qdrant/queries.json",
+      "examples/providers/azurecosmosdb/semantic-search.ipynb",
+      "examples/providers/elasticsearch/search.ipynb",
+      "examples/providers/mongodb/semantic-search.ipynb",
+      "examples/providers/pinecone/semantic-search.ipynb",
+      "examples/providers/redis/semantic-search-and-filter.ipynb",
+      "examples/providers/supabase/.gitignore",
+      "examples/providers/supabase/config.toml",
+      "examples/providers/supabase/seed.sql",
+      "examples/providers/supabase/migrations/20230414142107_init_pg_vector.sql",
+      "tests/datastore/providers/analyticdb/test_analyticdb_datastore.py",
+      "tests/datastore/providers/azurecosmosdb/test_azurecosmosdb_datastore.py",
+      "tests/datastore/providers/azuresearch/test_azuresearch_datastore.py",
+      "tests/datastore/providers/chroma/test_chroma_datastore.py",
+      "tests/datastore/providers/elasticsearch/test_elasticsearch_datastore.py",
+      "tests/datastore/providers/llama/test_llama_datastore.py",
+      "tests/datastore/providers/milvus/test_milvus_datastore.py",
+      "tests/datastore/providers/mongodb_atlas/test_integration.py",
+      "tests/datastore/providers/mongodb_atlas/test_mongodb_datastore.py",
+      "tests/datastore/providers/postgres/test_postgres_datastore.py",
+      "tests/datastore/providers/qdrant/test_qdrant_datastore.py",
+      "tests/datastore/providers/redis/test_redis_datastore.py",
+      "tests/datastore/providers/supabase/test_supabase_datastore.py",
+      "tests/datastore/providers/weaviate/test_weaviate_datastore.py",
+      "tests/datastore/providers/zilliz/test_zilliz_datastore.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 63968,
+    "completion_tokens": 5311,
+    "total_tokens": 69279,
+    "cost": 0.002018339623,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 40165,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002018339623,
+      "upstream_inference_prompt_cost": 0.001381019623,
+      "upstream_inference_completions_cost": 0.00063732
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2048,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792608364-suIYhqLxYSjVn3X6pkcB"
+}

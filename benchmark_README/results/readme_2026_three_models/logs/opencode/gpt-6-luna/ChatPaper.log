@@ -1,0 +1,42 @@
+Created `README.md` in the repository root. It documents the main scripts, setup and API configuration, usage examples, outputs, separate tools, deployment caveats, and license without presenting incomplete workflows as ready-to-run.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m108 matches[0m
+[0m✱ [0mGrep "." [90min . · 250 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead chat_paper.py 
+[0m→ [0mRead chat_arxiv.py 
+[0m→ [0mRead chat_translate.py 
+[0m→ [0mRead ChatReviewerAndResponse/README.md 
+[0m→ [0mRead auto_survey/README.md 
+[0m→ [0mRead HuggingFaceDeploy/README.md 
+[0m→ [0mRead docker/README.md 
+[0m→ [0mRead source/troubleshooting/troubleshooting.md 
+[0m→ [0mRead source/tutorial/getting_started.md 
+[0m→ [0mRead source/tutorial/reading_papers.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead ChatReviewerAndResponse/chat_reviewer.py 
+[0m→ [0mRead ChatReviewerAndResponse/get_paper.py 
+[0m→ [0mRead ChatReviewerAndResponse/chat_response.py 
+[0m→ [0mRead start.sh 
+[0m→ [0mRead LICENSE.md 
+[0m→ [0mRead HuggingFaceDeploy/app.py 
+[0m→ [0mRead docker/docker-compose.yaml 
+[0m→ [0mRead source/tutorial/getting_started_zh.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead scipdf_parser-master/serve_grobid.sh 
+[0m→ [0mRead scipdf_parser-master/README.md [90m[limit=160][0m
+[0m→ [0mRead docker/Dockerfile 
+[0m→ [0mRead HuggingFaceDeploy/Public/app.py [90m[limit=100][0m
+[0m✱ [0mGrep "add_argument|apikey.ini|OPENAI_API_BASE|OPENAI_API_KEYS|CHATGPT_MODEL|output_file|response_file|export_path|save_image|gitee_key" [90min . · 128 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

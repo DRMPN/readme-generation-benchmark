@@ -1,0 +1,46 @@
+I’ll inspect the project files and existing docs/configuration, then write a README based only on details the repository supports. I’ll limit changes to `README.md`.
+The repository is a FastAPI retrieval service: it chunks submitted text, creates OpenAI embeddings, and stores/searches them through a selected datastore. I’m documenting the production API and the separate unauthenticated localhost helper distinctly, since their behavior differs.
+Created `README.md` with setup, configuration, supported datastores, API routes, local testing, deployment references, examples, tests, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m113 matches[0m
+[0m✱ [0mGlob "**/AGENTS.md" [90m0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead server/main.py 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead models/api.py 
+[0m→ [0mRead datastore/factory.py 
+[0m→ [0mRead local_server/openapi.yaml 
+[0m→ [0mRead docs/deployment/other-options.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead models/models.py 
+[0m→ [0mRead datastore/datastore.py 
+[0m→ [0mRead local_server/main.py 
+[0m→ [0mRead services/file.py 
+[0m→ [0mRead services/chunks.py 
+[0m→ [0mRead docs/deprecated/plugins.md 
+[0m→ [0mRead examples/memory/README.md 
+[0m✱ [0mGlob ".*" [90m4 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .env.example 
+[0m→ [0mRead services/openai.py 
+[0m→ [0mRead docs/providers/chroma/setup.md 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead docs/deployment/flyio.md 
+[0m→ [0mRead docs/deployment/heroku.md 
+[0m→ [0mRead docs/deployment/render.md 
+[0m→ [0mRead docs/providers/pinecone/setup.md 
+[0m→ [0mRead docs/providers/redis/setup.md 
+[0m✱ [0mGlob "docs/providers/*/setup.md" [90m15 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "load_dotenv|OPENAI_API_BASE|DATASTORE|EMBEDDING_DIMENSION" [90min . · 71 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

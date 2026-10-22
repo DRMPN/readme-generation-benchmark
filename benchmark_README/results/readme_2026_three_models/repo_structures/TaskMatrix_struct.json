@@ -1,0 +1,136 @@
+[
+  {
+    "name": ".DS_Store",
+    "type": "file"
+  },
+  {
+    "name": "CODE_OF_CONDUCT.md",
+    "type": "file"
+  },
+  {
+    "name": "CONTRIBUTING.md",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.txt",
+    "type": "file"
+  },
+  {
+    "name": "LowCodeLLM",
+    "type": "dir",
+    "children": [
+      {
+        "name": ".DS_Store",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "config.template",
+        "type": "file"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "children": [
+          {
+            "name": "app.py",
+            "type": "file"
+          },
+          {
+            "name": "executingLLM.py",
+            "type": "file"
+          },
+          {
+            "name": "index.html",
+            "type": "file"
+          },
+          {
+            "name": "lowCodeLLM.py",
+            "type": "file"
+          },
+          {
+            "name": "openAIWrapper.py",
+            "type": "file"
+          },
+          {
+            "name": "planningLLM.py",
+            "type": "file"
+          },
+          {
+            "name": "requirements.txt",
+            "type": "file"
+          },
+          {
+            "name": "supervisord.conf",
+            "type": "file"
+          },
+          {
+            "name": "test",
+            "type": "dir",
+            "children": [
+              {
+                "name": "test_execute.py",
+                "type": "file"
+              },
+              {
+                "name": "test_extend_workflow.py",
+                "type": "file"
+              },
+              {
+                "name": "test_get_workflow.py",
+                "type": "file"
+              },
+              {
+                "name": "testcases",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "execute_test_cases.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "extend_workflow_test_cases.json",
+                    "type": "file"
+                  },
+                  {
+                    "name": "get_workflow_test_cases.json",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SECURITY.md",
+    "type": "file"
+  },
+  {
+    "name": "TaskMatrix.AI",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "visual_chatgpt.py",
+    "type": "file"
+  }
+]

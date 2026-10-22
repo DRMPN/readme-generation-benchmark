@@ -1,0 +1,47 @@
+I found a Python 3.12/`uv` project that assesses configured repositories using YAML-defined criteria and an OpenAI-compatible model, then writes JSON scores and a Markdown report. I’m documenting the actual configuration and run flow, without assuming features not present in the code.
+Created `README.md` in the repository root with setup, configuration, run and test instructions, output locations, repository layout, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . [90m[limit=120][0m
+[0m✱ [0mGlob "**/*" [90min . · 31 matches[0m
+[0m✱ [0mGrep "TODO|README|description|scripts|license" [90min . · 100 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead .env.example 
+[0m→ [0mRead Makefile 
+[0m→ [0mRead src/main.py 
+[0m→ [0mRead src/report.py 
+[0m→ [0mRead src/generators.py 
+[0m→ [0mRead src/utils/repository.py 
+[0m→ [0mRead src/config/config.json 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead src/config/paths.py 
+[0m→ [0mRead src/utils/llm.py 
+[0m→ [0mRead src/directory_scorer/content_based_scorer.py 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead src/output_parsers.py 
+[0m→ [0mRead tests/test_project_validators.py 
+[0m→ [0mRead src/directory_scorer/tree.py 
+[0m→ [0mRead src/config/prompts.yaml 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead src/config/tracked_files.yaml 
+[0m→ [0mRead src/config/scoring/documentation_criteria.yaml 
+[0m→ [0mRead src/config/scoring/code_quality_criteria.yaml [90m[limit=45][0m
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead data [90m[limit=50][0m
+[0m→ [0mRead src/config/scoring/dependancies_criteria.yaml [90m[limit=60][0m
+[0m→ [0mRead src/config/scoring/license_criteria.yaml [90m[limit=60][0m
+[0m✱ [0mGrep "tracked_extensions:|text_extensions:|ignored_names:" [90min src/config/tracked_files.yaml · 3 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .python-version 
+[0m→ [0mRead pytest.ini 
+[0m→ [0mRead src/logger.py 
+[0m✱ [0mGrep "from_inputs_directory|OPEN_ROUTER_API_KEY|OPENAI_API_KEY|report.md|file_scores.json" [90min . · 7 matches[0m
+[0m→ [0mRead src/utils/project_validators.py [90m[limit=220][0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md [90m[limit=200][0m
+> readme-benchmark · openai/gpt-6-luna

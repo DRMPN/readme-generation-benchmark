@@ -1,0 +1,55 @@
+I'll start by looking at the repository's files.
+Code mode can't read local files, so I'll read the files directly.
+`requirements.txt` was reported as binary, so I'll check its contents another way, along with the remaining small files.
+I have what I need. Writing the README now, based only on what the files show.
+I created `README.md` in the repository root. It is based only on the files in the repo. I did not run the tests or the Docker build, so the README describes what the code and config say, not verified runtime behavior.
+
+It covers:
+- **What the project does:** a browser form and a `/qrcode/generate/?data=...` endpoint that return styled PNG QR codes.
+- **Setup:** install from `requirements.txt`, run migrations, and start the dev server. It also covers Docker and reusing the `QrCode` app in another Django project.
+- **Usage:** the web page, the image endpoint, and the `qrcode_url` template tag.
+- **Structure, configuration, tests, and CI:** the file layout, the settings, what the 4 tests check, and what each GitHub workflow does.
+
+Several things in the repo you may want to know about, since the README describes them:
+- **Settings are development defaults.** `DEBUG = True`, `ALLOWED_HOSTS = []`, and a hardcoded `SECRET_KEY`. The README says these need changing before deployment.
+- **The home page template is not packaged.** `templates/qr_code_frontend.html` sits outside the `QrCode` package, so another project using the app must supply its own template with that name.
+- **Django is unpinned** in `requirements.txt`, and the Dockerfile uses Python 3.9, so the installed Django version depends on the environment.
+- **The `QRCode` model is never written to.** The views generate images statelessly, so the model and admin are present but unused by the app's flow.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await tools.opencode.list_mcp_resources({}); return r;"} 
+[0m✱ [0mGlob "**/*" [90m28 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const files = [\"requirements.txt\",\"setup.py\",\"setup.cfg\",\"MANIFEST.in\",\"Dockerfile\",\".dockerignore\",\".gitignore\",\"manage.py\",\"QrCode/urls.py\",\"QrCode/views.py\",\"QrCode/models.py\",\"QrCode/admin.py\",\"QrCode/apps.py\",\"QrCode/tests.py\",\"QrCode/templatetags/qrcode_tags.py\",\"QrCode/migrations/0001_initial.py\",\"templates/qr_code_frontend.html\",\"TagGenerator/settings.py\",\"TagGenerator/urls.py\",\".github/workflows/publish-docker.yml\",\".github/workflows/python-publish.yml\",\".github/workflows/django.yml\",\"LICENSE\"];\nconst out = {};\nawait Promise.all(files.map(async f => { out[f] = await tools.opencode ? null : null; }));\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m→ [0mRead setup.py 
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead QrCode/views.py 
+[0m→ [0mRead QrCode/models.py 
+[0m→ [0mRead QrCode/urls.py 
+[0m→ [0mRead TagGenerator/urls.py 
+[0m→ [0mRead TagGenerator/settings.py 
+[0m→ [0mRead templates/qr_code_frontend.html 
+[0m→ [0mRead QrCode/templatetags/qrcode_tags.py 
+[0m→ [0mRead .github/workflows/django.yml 
+[0m→ [0mRead .github/workflows/publish-docker.yml 
+[0m→ [0mRead .github/workflows/python-publish.yml 
+[0m→ [0mRead MANIFEST.in 
+[0m→ [0mRead QrCode/tests.py 
+[0m→ [0mRead QrCode/migrations/0001_initial.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead QrCode/admin.py 
+[0m✱ [0mGrep "." [90min requirements.txt · 7 matches[0m
+[0m→ [0mRead .dockerignore 
+[0m→ [0mRead manage.py 
+[0m→ [0mRead QrCode/apps.py 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5

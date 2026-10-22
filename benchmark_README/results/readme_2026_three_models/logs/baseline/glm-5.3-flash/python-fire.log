@@ -1,0 +1,272 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63925,
+    "tree_files": 82,
+    "tracked_files": 82,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 119,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 1,
+        "truncated": false
+      },
+      {
+        "path": "setup.cfg",
+        "tokens": 49,
+        "truncated": false
+      },
+      {
+        "path": "setup.py",
+        "tokens": 557,
+        "truncated": false
+      },
+      {
+        "path": ".github/scripts/requirements.txt",
+        "tokens": 78,
+        "truncated": false
+      },
+      {
+        "path": "fire/__main__.py",
+        "tokens": 876,
+        "truncated": false
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "tokens": 534,
+        "truncated": false
+      },
+      {
+        "path": "docs/api.md",
+        "tokens": 671,
+        "truncated": false
+      },
+      {
+        "path": "docs/benefits.md",
+        "tokens": 618,
+        "truncated": false
+      },
+      {
+        "path": "docs/guide.md",
+        "tokens": 5115,
+        "truncated": false
+      },
+      {
+        "path": "docs/index.md",
+        "tokens": 956,
+        "truncated": false
+      },
+      {
+        "path": "docs/installation.md",
+        "tokens": 74,
+        "truncated": false
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "tokens": 150,
+        "truncated": false
+      },
+      {
+        "path": "docs/using-cli.md",
+        "tokens": 2217,
+        "truncated": false
+      },
+      {
+        "path": "fire/console/README.md",
+        "tokens": 43,
+        "truncated": false
+      },
+      {
+        "path": "mkdocs.yml",
+        "tokens": 79,
+        "truncated": false
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "tokens": 188,
+        "truncated": false
+      },
+      {
+        "path": "examples/__init__.py",
+        "tokens": 0,
+        "truncated": false
+      },
+      {
+        "path": "fire/__init__.py",
+        "tokens": 160,
+        "truncated": false
+      },
+      {
+        "path": "fire/completion.py",
+        "tokens": 3678,
+        "truncated": false
+      },
+      {
+        "path": "fire/completion_test.py",
+        "tokens": 1512,
+        "truncated": false
+      },
+      {
+        "path": "fire/core.py",
+        "tokens": 8130,
+        "truncated": false
+      },
+      {
+        "path": "fire/core_test.py",
+        "tokens": 2269,
+        "truncated": false
+      },
+      {
+        "path": "fire/custom_descriptions.py",
+        "tokens": 1163,
+        "truncated": false
+      },
+      {
+        "path": "fire/custom_descriptions_test.py",
+        "tokens": 576,
+        "truncated": false
+      },
+      {
+        "path": "fire/decorators.py",
+        "tokens": 844,
+        "truncated": false
+      },
+      {
+        "path": "fire/decorators_test.py",
+        "tokens": 1433,
+        "truncated": false
+      },
+      {
+        "path": "fire/docstrings.py",
+        "tokens": 5940,
+        "truncated": false
+      },
+      {
+        "path": "fire/docstrings_fuzz_test.py",
+        "tokens": 251,
+        "truncated": false
+      },
+      {
+        "path": "fire/docstrings_test.py",
+        "tokens": 2688,
+        "truncated": false
+      },
+      {
+        "path": "fire/fire_import_test.py",
+        "tokens": 251,
+        "truncated": false
+      },
+      {
+        "path": "fire/fire_test.py",
+        "tokens": 6904,
+        "truncated": false
+      },
+      {
+        "path": "fire/formatting.py",
+        "tokens": 655,
+        "truncated": false
+      },
+      {
+        "path": "fire/formatting_test.py",
+        "tokens": 633,
+        "truncated": false
+      },
+      {
+        "path": "fire/formatting_windows.py",
+        "tokens": 492,
+        "truncated": false
+      },
+      {
+        "path": "fire/helptext.py",
+        "tokens": 6071,
+        "truncated": false
+      },
+      {
+        "path": "fire/helptext_test.py",
+        "tokens": 5268,
+        "truncated": false
+      },
+      {
+        "path": "fire/inspectutils.py",
+        "tokens": 1885,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "MANIFEST.in",
+      "pylintrc",
+      "fire/inspectutils_test.py",
+      "fire/interact.py",
+      "fire/interact_test.py",
+      "fire/main_test.py",
+      "fire/parser.py",
+      "fire/parser_fuzz_test.py",
+      "fire/parser_test.py",
+      "fire/test_components.py",
+      "fire/test_components_bin.py",
+      "fire/test_components_py3.py",
+      "fire/test_components_test.py",
+      "fire/testutils.py",
+      "fire/testutils_test.py",
+      "fire/trace.py",
+      "fire/trace_test.py",
+      "fire/value_types.py",
+      ".github/scripts/build.sh",
+      ".github/workflows/build.yml",
+      "examples/cipher/__init__.py",
+      "examples/cipher/cipher.py",
+      "examples/cipher/cipher_test.py",
+      "examples/diff/__init__.py",
+      "examples/diff/diff.py",
+      "examples/diff/diff_test.py",
+      "examples/diff/difffull.py",
+      "examples/identity/__init__.py",
+      "examples/identity/identity.py",
+      "examples/widget/__init__.py",
+      "examples/widget/collector.py",
+      "examples/widget/collector_test.py",
+      "examples/widget/widget.py",
+      "examples/widget/widget_test.py",
+      "fire/console/__init__.py",
+      "fire/console/console_attr.py",
+      "fire/console/console_attr_os.py",
+      "fire/console/console_io.py",
+      "fire/console/console_pager.py",
+      "fire/console/encoding.py",
+      "fire/console/files.py",
+      "fire/console/platforms.py",
+      "fire/console/text.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 63963,
+    "completion_tokens": 6268,
+    "total_tokens": 70231,
+    "cost": 0.002133304696,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 40157,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002133304696,
+      "upstream_inference_prompt_cost": 0.001381144696,
+      "upstream_inference_completions_cost": 0.00075216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2025,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792606356-7prEOM2mFUiv7MYphYHz"
+}

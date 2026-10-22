@@ -1,0 +1,116 @@
+I have a thorough picture of the repository now. Let me write the README.
+Let me verify a couple of claims I made, particularly the C++ API name and the default model.
+The C++ API details check out. Let me make two small precision improvements.
+The README is complete and verified. Created a single file `README.md` at the repository root, starting with `# EmotiEffLib`.
+
+Every claim was checked against the repository source:
+
+- **Scope and naming** — taken from `setup.py` ("EmotiEffLib Python Library for Facial Emotion and Engagement Recognition"), the sub-READMEs, and `emotiefflib/facial_analysis.py`.
+- **Install variants** — pip extras (`[torch]`, `[engagement]`, `[all]`) and `python setup.py install` come straight from `emotiefflib/README.md`; the Python 3.10 note is backed by the CI matrix and `.binder/environment.yml`.
+- **C++ build** — requirements (C++17, CMake ≥ 3.10.2, OpenCV, one engine) and CMake options copied from `emotieffcpplib/README.md`, plus `.gitmodules` for the submodule step.
+- **Usage snippet** — mirrors `tests/test_facial_analysis.py` and the tutorial notebooks; the C++ API reference (`EmotiEffLibRecognizer::createInstance`) was confirmed in `emotieffcpplib/include/emotiefflib/facial_analysis.h`.
+- **Model table** — class counts (7 vs 8), input sizes (224/260/112), and `_mtl` behavior derived directly from the preprocessing/classification code in `emotiefflib/facial_analysis.py`.
+- **Runtime model download** — documented from `emotiefflib/utils.py` (cached in `~/.emotiefflib`), with the Google Drive link taken from `models/affectnet_emotions/README.md`.
+- **Avoided unsupported claims** — e.g., I did *not* label the two extra `_mtl` outputs as "valence/arousal" (no occurrence of those terms anywhere in the repo), and phrased Python 3.10 as "used in CI and Binder" rather than asserting a hard version requirement.
+
+The document covers: features, installation (Python + C++), usage examples, the seven available models, tutorials (including Binder), training materials, running tests (pytest + GoogleTest), Doxygen docs, license, and authors.
+
+--- stderr ---
+[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m100 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.py 
+[0m→ [0mRead emotiefflib/README.md 
+[0m→ [0mRead emotieffcpplib/README.md 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead .gitmodules 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead emotiefflib/__init__.py 
+[0m→ [0mRead emotiefflib/facial_analysis.py 
+[0m→ [0mRead docs/README.md 
+[0m→ [0mRead training_and_examples/README.md 
+[0m→ [0mRead docs/tutorials/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead models/affectnet_emotions/README.md 
+[0m→ [0mRead docs/tutorials/python/README.md 
+[0m→ [0mRead requirements-torch.txt 
+[0m→ [0mRead requirements-engagement.txt 
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+[0m✱ [0mGlob "README*" [90min . · 11 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github 
+[0m→ [0mRead tests/README.md 
+[0m→ [0mRead docs/tutorials/cpp/README.md 
+[0m→ [0mRead training_and_examples/emotions_llm/README.md 
+[0m→ [0mRead training_and_examples/personalized_models/README.md 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m⚙ [0mexecute {"code":"const { execSync } = require('child_process') ?? {};"} 
+[0m→ [0mRead models/prepare_models_for_emotieffcpplib.py 
+[0m→ [0mRead .github/workflows 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .github/workflows/tests.yml 
+[0m✱ [0mGrep "EmotiEffLibRecognizer\(|predict_emotions|get_model_list" [90min docs/tutorials/python/One image emotion recognition.ipynb · 0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "EmotiEffLibRecognizer" [90min docs/tutorials/python · 12 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead tests/test_facial_analysis.py [90m[limit=80][0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead .binder 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead requirements-ci.txt 
+[0m→ [0mRead .binder/environment.yml 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead setup.cfg 
+[0m→ [0mRead LICENSE [90m[limit=15][0m
+[0m→ [0mRead .github/workflows/binder.yml 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m✱ [0mGrep "valence|arousal" [90min . · 0 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead emotiefflib/utils.py 
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead emotieffcpplib/include/emotiefflib/facial_analysis.h [90m[limit=120][0m
+[0m✱ [0mGrep "class\s+\w+|createEmotiEffLibRecognizer|EmotiEffLibRecognizer" [90min emotieffcpplib/include · 15 matches[0m
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -88,9 +88,9 @@
+ ## Available models
+ 
+ | Model name          | Emotion classes | Input size | Notes                                   |
+ | ------------------- | --------------- | ---------- | --------------------------------------- |
+-| `enet_b0_8_best_vgaf` | 8               | 224        | default model                           |
++| `enet_b0_8_best_vgaf` | 8               | 224        | default model in the Python API         |
+ | `enet_b0_8_best_afew` | 8               | 224        |                                         |
+ | `enet_b2_8`           | 8               | 260        |                                         |
+ | `enet_b0_8_va_mtl`    | 8               | 224        | multi-task (`_mtl`): 2 extra output scores |
+ | `enet_b2_7`           | 7               | 260        |                                         |
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -79,9 +79,9 @@
+ ```
+ 
+ ### C++
+ 
+-The C++ API (`EmotiEffLibRecognizer` in
++The C++ API (`EmotiEffLibRecognizer::createInstance` in
+ [`emotieffcpplib/include/emotiefflib/facial_analysis.h`](emotieffcpplib/include/emotiefflib/facial_analysis.h))
+ mirrors the Python one; usage examples are in the
+ [C++ tutorials](docs/tutorials/cpp/README.md).
+ 
+
+> readme-benchmark · z-ai/glm-5.3-flash
+[0m→ [0mRead README.md 
+> readme-benchmark · z-ai/glm-5.3-flash

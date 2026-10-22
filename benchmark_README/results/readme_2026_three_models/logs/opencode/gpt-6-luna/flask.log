@@ -1,0 +1,29 @@
+This repository is Flask itself: a Python WSGI framework, with Python 3.10+ support and documented optional `async` and `dotenv` extras. I’ll make the root README cover installation, a minimal app, development/testing, documentation, and the development-server production warning.
+Created `README.md` with an overview of Flask, installation instructions, a quick-start app, documentation links, development and test commands, deployment guidance, and license information. Only `README.md` was created.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGrep "README|description|project|version" [90m0 matches[0m
+[0m✱ [0mGlob "**/*" [90m200 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead docs/installation.rst 
+[0m→ [0mRead docs/index.rst 
+[0m→ [0mRead docs/quickstart.rst 
+[0m→ [0mRead docs/contributing.rst 
+[0m→ [0mRead docs/testing.rst 
+[0m→ [0mRead docs/license.rst 
+[0m→ [0mRead src/flask/__init__.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead docs/async-await.rst 
+[0m→ [0mRead docs/deploying/index.rst 
+[0m→ [0mRead LICENSE.txt 
+[0m✱ [0mGlob "README.md" [90m2 matches[0m
+[0m→ [0mRead docs/extensions.rst 
+[0m→ [0mRead docs/tutorial/index.rst 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna

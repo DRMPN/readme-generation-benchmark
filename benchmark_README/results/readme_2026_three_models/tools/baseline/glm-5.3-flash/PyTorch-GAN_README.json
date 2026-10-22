@@ -1,0 +1,323 @@
+{
+  "model": "z-ai/glm-5.3-flash",
+  "input": {
+    "tokenizer": "cl100k_base",
+    "token_limit": 64000,
+    "tokens": 63903,
+    "tree_files": 89,
+    "tracked_files": 89,
+    "selected": [
+      {
+        "path": "LICENSE",
+        "tokens": 223,
+        "truncated": false
+      },
+      {
+        "path": "requirements.txt",
+        "tokens": 29,
+        "truncated": false
+      },
+      {
+        "path": "data/download_cyclegan_dataset.sh",
+        "tokens": 345,
+        "truncated": false
+      },
+      {
+        "path": "data/download_pix2pix_dataset.sh",
+        "tokens": 80,
+        "truncated": false
+      },
+      {
+        "path": "implementations/aae/aae.py",
+        "tokens": 1578,
+        "truncated": false
+      },
+      {
+        "path": "implementations/acgan/acgan.py",
+        "tokens": 2041,
+        "truncated": false
+      },
+      {
+        "path": "implementations/began/began.py",
+        "tokens": 1680,
+        "truncated": false
+      },
+      {
+        "path": "implementations/bgan/bgan.py",
+        "tokens": 1358,
+        "truncated": false
+      },
+      {
+        "path": "implementations/bicyclegan/bicyclegan.py",
+        "tokens": 2340,
+        "truncated": false
+      },
+      {
+        "path": "implementations/bicyclegan/datasets.py",
+        "tokens": 309,
+        "truncated": false
+      },
+      {
+        "path": "implementations/bicyclegan/models.py",
+        "tokens": 1442,
+        "truncated": false
+      },
+      {
+        "path": "implementations/ccgan/ccgan.py",
+        "tokens": 1476,
+        "truncated": false
+      },
+      {
+        "path": "implementations/ccgan/datasets.py",
+        "tokens": 163,
+        "truncated": false
+      },
+      {
+        "path": "implementations/ccgan/models.py",
+        "tokens": 1042,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cgan/cgan.py",
+        "tokens": 1633,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cluster_gan/clustergan.py",
+        "tokens": 4444,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cogan/cogan.py",
+        "tokens": 2114,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cogan/mnistm.py",
+        "tokens": 1107,
+        "truncated": false
+      },
+      {
+        "path": "implementations/context_encoder/context_encoder.py",
+        "tokens": 1589,
+        "truncated": false
+      },
+      {
+        "path": "implementations/context_encoder/datasets.py",
+        "tokens": 431,
+        "truncated": false
+      },
+      {
+        "path": "implementations/context_encoder/models.py",
+        "tokens": 563,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cyclegan/cyclegan.py",
+        "tokens": 2546,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cyclegan/datasets.py",
+        "tokens": 321,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cyclegan/models.py",
+        "tokens": 877,
+        "truncated": false
+      },
+      {
+        "path": "implementations/cyclegan/utils.py",
+        "tokens": 319,
+        "truncated": false
+      },
+      {
+        "path": "implementations/dcgan/dcgan.py",
+        "tokens": 1574,
+        "truncated": false
+      },
+      {
+        "path": "implementations/discogan/datasets.py",
+        "tokens": 250,
+        "truncated": false
+      },
+      {
+        "path": "implementations/discogan/discogan.py",
+        "tokens": 2095,
+        "truncated": false
+      },
+      {
+        "path": "implementations/discogan/models.py",
+        "tokens": 1097,
+        "truncated": false
+      },
+      {
+        "path": "implementations/dragan/dragan.py",
+        "tokens": 1805,
+        "truncated": false
+      },
+      {
+        "path": "implementations/dualgan/datasets.py",
+        "tokens": 252,
+        "truncated": false
+      },
+      {
+        "path": "implementations/dualgan/dualgan.py",
+        "tokens": 2219,
+        "truncated": false
+      },
+      {
+        "path": "implementations/dualgan/models.py",
+        "tokens": 1093,
+        "truncated": false
+      },
+      {
+        "path": "implementations/ebgan/ebgan.py",
+        "tokens": 1734,
+        "truncated": false
+      },
+      {
+        "path": "implementations/esrgan/datasets.py",
+        "tokens": 353,
+        "truncated": false
+      },
+      {
+        "path": "implementations/esrgan/esrgan.py",
+        "tokens": 1812,
+        "truncated": false
+      },
+      {
+        "path": "implementations/esrgan/models.py",
+        "tokens": 1163,
+        "truncated": false
+      },
+      {
+        "path": "implementations/esrgan/test_on_image.py",
+        "tokens": 311,
+        "truncated": false
+      },
+      {
+        "path": "implementations/gan/gan.py",
+        "tokens": 1273,
+        "truncated": false
+      },
+      {
+        "path": "implementations/infogan/infogan.py",
+        "tokens": 2613,
+        "truncated": false
+      },
+      {
+        "path": "implementations/lsgan/lsgan.py",
+        "tokens": 1566,
+        "truncated": false
+      },
+      {
+        "path": "implementations/munit/datasets.py",
+        "tokens": 281,
+        "truncated": false
+      },
+      {
+        "path": "implementations/munit/models.py",
+        "tokens": 2545,
+        "truncated": false
+      },
+      {
+        "path": "implementations/munit/munit.py",
+        "tokens": 2955,
+        "truncated": false
+      },
+      {
+        "path": "implementations/pix2pix/datasets.py",
+        "tokens": 281,
+        "truncated": false
+      },
+      {
+        "path": "implementations/pix2pix/models.py",
+        "tokens": 1221,
+        "truncated": false
+      },
+      {
+        "path": "implementations/pix2pix/pix2pix.py",
+        "tokens": 1650,
+        "truncated": false
+      },
+      {
+        "path": "implementations/pixelda/mnistm.py",
+        "tokens": 1123,
+        "truncated": false
+      },
+      {
+        "path": "implementations/pixelda/pixelda.py",
+        "tokens": 1370,
+        "truncated": true
+      }
+    ],
+    "skipped": [
+      ".gitignore",
+      "assets/acgan.gif",
+      "assets/bicyclegan.png",
+      "assets/bicyclegan_architecture.jpg",
+      "assets/cgan.gif",
+      "assets/cluster_gan.gif",
+      "assets/cogan.gif",
+      "assets/context_encoder.png",
+      "assets/cyclegan.png",
+      "assets/dcgan.gif",
+      "assets/discogan.png",
+      "assets/enhanced_superresgan.png",
+      "assets/esrgan.png",
+      "assets/gan.gif",
+      "assets/infogan.gif",
+      "assets/infogan.png",
+      "assets/logo.png",
+      "assets/munit.png",
+      "assets/pix2pix.png",
+      "assets/pixelda.png",
+      "assets/stargan.png",
+      "assets/superresgan.png",
+      "assets/wgan_div.gif",
+      "assets/wgan_div.png",
+      "assets/wgan_gp.gif",
+      "implementations/relativistic_gan/relativistic_gan.py",
+      "implementations/sgan/sgan.py",
+      "implementations/softmax_gan/softmax_gan.py",
+      "implementations/srgan/datasets.py",
+      "implementations/srgan/models.py",
+      "implementations/srgan/srgan.py",
+      "implementations/stargan/datasets.py",
+      "implementations/stargan/models.py",
+      "implementations/stargan/stargan.py",
+      "implementations/unit/datasets.py",
+      "implementations/unit/models.py",
+      "implementations/unit/unit.py",
+      "implementations/wgan/wgan.py",
+      "implementations/wgan_div/wgan_div.py",
+      "implementations/wgan_gp/wgan_gp.py"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 63910,
+    "completion_tokens": 20712,
+    "total_tokens": 84622,
+    "cost": 0.00810717,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00810717,
+      "upstream_inference_prompt_cost": 0.00479325,
+      "upstream_inference_completions_cost": 0.00331392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15782,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_generation_id": "gen-1792607436-v1nO6sp8geSINsupsgVw"
+}

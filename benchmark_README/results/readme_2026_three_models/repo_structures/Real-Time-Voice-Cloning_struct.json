@@ -1,0 +1,354 @@
+[
+  {
+    "name": ".gitattributes",
+    "type": "file"
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE.md",
+    "type": "file"
+  },
+  {
+    "name": "demo_cli.py",
+    "type": "file"
+  },
+  {
+    "name": "demo_toolbox.py",
+    "type": "file"
+  },
+  {
+    "name": "encoder",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "audio.py",
+        "type": "file"
+      },
+      {
+        "name": "config.py",
+        "type": "file"
+      },
+      {
+        "name": "data_objects",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "random_cycler.py",
+            "type": "file"
+          },
+          {
+            "name": "speaker.py",
+            "type": "file"
+          },
+          {
+            "name": "speaker_batch.py",
+            "type": "file"
+          },
+          {
+            "name": "speaker_verification_dataset.py",
+            "type": "file"
+          },
+          {
+            "name": "utterance.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "inference.py",
+        "type": "file"
+      },
+      {
+        "name": "model.py",
+        "type": "file"
+      },
+      {
+        "name": "params_data.py",
+        "type": "file"
+      },
+      {
+        "name": "params_model.py",
+        "type": "file"
+      },
+      {
+        "name": "preprocess.py",
+        "type": "file"
+      },
+      {
+        "name": "train.py",
+        "type": "file"
+      },
+      {
+        "name": "visualizations.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "encoder_preprocess.py",
+    "type": "file"
+  },
+  {
+    "name": "encoder_train.py",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "samples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "1320_00000.mp3",
+        "type": "file"
+      },
+      {
+        "name": "3575_00000.mp3",
+        "type": "file"
+      },
+      {
+        "name": "6829_00000.mp3",
+        "type": "file"
+      },
+      {
+        "name": "8230_00000.mp3",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "VCTK.txt",
+        "type": "file"
+      },
+      {
+        "name": "p240_00000.mp3",
+        "type": "file"
+      },
+      {
+        "name": "p260_00000.mp3",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "synthesizer",
+    "type": "dir",
+    "children": [
+      {
+        "name": "LICENSE.txt",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "audio.py",
+        "type": "file"
+      },
+      {
+        "name": "hparams.py",
+        "type": "file"
+      },
+      {
+        "name": "inference.py",
+        "type": "file"
+      },
+      {
+        "name": "models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "tacotron.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "preprocess.py",
+        "type": "file"
+      },
+      {
+        "name": "synthesize.py",
+        "type": "file"
+      },
+      {
+        "name": "synthesizer_dataset.py",
+        "type": "file"
+      },
+      {
+        "name": "train.py",
+        "type": "file"
+      },
+      {
+        "name": "utils",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "_cmudict.py",
+            "type": "file"
+          },
+          {
+            "name": "cleaners.py",
+            "type": "file"
+          },
+          {
+            "name": "numbers.py",
+            "type": "file"
+          },
+          {
+            "name": "plot.py",
+            "type": "file"
+          },
+          {
+            "name": "symbols.py",
+            "type": "file"
+          },
+          {
+            "name": "text.py",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "synthesizer_preprocess_audio.py",
+    "type": "file"
+  },
+  {
+    "name": "synthesizer_preprocess_embeds.py",
+    "type": "file"
+  },
+  {
+    "name": "synthesizer_train.py",
+    "type": "file"
+  },
+  {
+    "name": "toolbox",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "ui.py",
+        "type": "file"
+      },
+      {
+        "name": "utterance.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "utils",
+    "type": "dir",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "argutils.py",
+        "type": "file"
+      },
+      {
+        "name": "default_models.py",
+        "type": "file"
+      },
+      {
+        "name": "logmmse.py",
+        "type": "file"
+      },
+      {
+        "name": "profiler.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "vocoder",
+    "type": "dir",
+    "children": [
+      {
+        "name": "LICENSE.txt",
+        "type": "file"
+      },
+      {
+        "name": "audio.py",
+        "type": "file"
+      },
+      {
+        "name": "display.py",
+        "type": "file"
+      },
+      {
+        "name": "distribution.py",
+        "type": "file"
+      },
+      {
+        "name": "gen_wavernn.py",
+        "type": "file"
+      },
+      {
+        "name": "hparams.py",
+        "type": "file"
+      },
+      {
+        "name": "inference.py",
+        "type": "file"
+      },
+      {
+        "name": "models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "deepmind_version.py",
+            "type": "file"
+          },
+          {
+            "name": "fatchord_version.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "train.py",
+        "type": "file"
+      },
+      {
+        "name": "vocoder_dataset.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "vocoder_preprocess.py",
+    "type": "file"
+  },
+  {
+    "name": "vocoder_train.py",
+    "type": "file"
+  }
+]

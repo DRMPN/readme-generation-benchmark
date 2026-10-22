@@ -1,0 +1,116 @@
+I'll start by looking at the repository's layout and existing docs.
+This looks like the verl RL training library. I'll read the key metadata, entry scripts, and install/quickstart docs next.
+Several docs refer to paths I need to verify. I'll check the version file, license, trainer entry points, algorithm options, and CI.
+Next I'll confirm the version, the rollout backends, LoRA/Megatron support, the CI workflows, and the CLI entry points.
+Still need to check whether LoRA is actually exposed in the training config, and which rollout backends are selectable.
+LoRA is only wired into the SFT trainer config and vLLM plumbing, so I'll describe it that narrowly. Last, I'll check the docs index and the example directories so the README reflects what's actually there.
+I have enough to write an accurate README. Writing it now.
+I included a BibTeX entry whose author list isn't in the repo, so I'll replace it with a link to the paper. I'll also soften the test-runner claim, since I didn't confirm how the tests are run.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The repository is **verl** (Volcano Engine Reinforcement Learning for LLMs), an Apache 2.0 RL post-training framework at version `0.2.0.dev`. The README covers:
+
+- **Features:** the RL algorithms selectable via `algorithm.adv_estimator`, FSDP and Megatron training backends, vLLM, SGLang, and HF rollout backends, Hydra configuration, reward functions, and logging.
+- **Repository layout:** a table of the main directories and the two root-level Ray scripts.
+- **Requirements and installation:** Python and CUDA versions, Docker images, a source install, and the optional extras defined in `setup.py`.
+- **Quickstart:** the GSM8K PPO example from `docs/start/quickstart.rst`, plus the SGLang switch and multi-node notes.
+- **Configuration, docs build, contributing, and license.**
+
+A few things to know:
+
+- **Source conflicts:** `docs/start/install.rst` says Python 3.9+, while `pyproject.toml` says `>=3.8`. I used the install guide's 3.9+ figure.
+- **Unverified claims:** I did not run anything, so the install commands and the quickstart are taken from the docs as written.
+- **Repo gaps:** there is no root `README.md` in the repo (despite `setup.py` reading one), and there is no `.github/` CI config, so I made no claims about CI.
+- **Citation:** the README links to the HybridFlow arXiv paper rather than providing a BibTeX entry, since the repo doesn't contain a citation block.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"ok\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead . 
+[0m✱ [0mGlob "*" [90min . · 200 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead setup.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead pyproject.toml 
+[0m→ [0mRead requirements_sglang.txt 
+[0m→ [0mRead run_master.sh 
+[0m→ [0mRead run_worker.sh 
+[0m→ [0mRead docs/README.md 
+[0m→ [0mRead verl/__init__.py 
+[0m→ [0mRead docs/start/install.rst 
+[0m→ [0mRead docs/start/quickstart.rst 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead LICENSE [90m[limit=5][0m
+[0m→ [0mRead Notice.txt 
+[0m✱ [0mGlob "{verl/version/*,verl/trainer/*.py,verl/trainer/config/*.yaml,examples/data_preprocess/*.py,.github/workflows/*.yml,verl/utils/reward_score/*.py,verl/trainer/ppo/*.py,verl/trainer/runtime_env.yaml,recipe/*,patches/*}" [90m30 matches[0m
+[0m✱ [0mGrep "adv_estimator|AdvantageEstimator\.\w+ *=|GRPO|REINFORCE_PLUS_PLUS|REMAX|RLOO|GAE" [90min verl · 23 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"return \"noop\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "lora|LoRA" [90min verl · 30 matches[0m
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+[0m✱ [0mGrep "strategy|megatron|fsdp" [90min verl/workers/fsdp_workers.py · 15 matches[0m
+[0m✱ [0mGrep "^(def |class )|__main__|@hydra" [90min verl/trainer/main_ppo.py · 6 matches[0m
+[0m✱ [0mGrep "name: \w+|rollout\.name|'(vllm|sglang|hf|naive)'" [90min verl/workers/rollout/__init__.py · 0 matches[0m
+[0m→ [0mRead verl/version/version 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "lora|name: |rollout:|  name" [90min verl/trainer/config/ppo_trainer.yaml · 6 matches[0m
+[0m✱ [0mGrep "lora_rank|lora_alpha|target_modules" [90min verl · 19 matches[0m
+[0m✱ [0mGrep "rollout.name|== 'vllm'|== 'sglang'|== 'hf'|name == "vllm"|'naive'" [90min verl · 11 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGrep "reward_manager|class .*RewardManager" [90min verl/workers/reward_manager/__init__.py · 0 matches[0m
+[0m✱ [0mGlob "examples/*/" [90m0 matches[0m
+[0m→ [0mRead docs/index.rst 
+[0m→ [0mRead docs/workers/sglang_worker.rst [90m[limit=40][0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -199,18 +199,9 @@
+ Contributions are welcome. Community channels listed in the docs are the [GitHub repository](https://github.com/volcengine/verl), a Slack workspace, and a WeChat group. The contribution guide in `docs/index.rst` asks contributors to format code with yapf and, where possible, to add a CI test for new features.
+ 
+ ## Citation
+ 
+-If you use verl, cite the HybridFlow paper:
++If you use verl, please cite the HybridFlow paper, arXiv:2409.19256: https://arxiv.org/pdf/2409.19256
+ 
+-```bibtex
+-@article{sheng2024hybridflow,
+-  title   = {HybridFlow: A Flexible and Efficient RLHF Framework},
+-  author  = {Guangming Sheng and Chi Zhang and Zilingfeng Ye and Xibin Wu and Wang Zhang and Ru Zhang and Yanghua Peng and Haibin Lin and Chuan Wu},
+-  year    = {2024},
+-  journal = {arXiv preprint arXiv: 2409.19256}
+-}
+-```
+-
+ ## License
+ 
+ verl is released under the [Apache License 2.0](LICENSE). Copyright notices are in `Notice.txt`.
+
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -183,9 +183,9 @@
+ Then open http://localhost:8000. The docs cover the programming model (`docs/hybrid_flow.rst`), worker implementations, data preparation, reward functions, performance tuning, and FAQ.
+ 
+ ## Testing and Code Style
+ 
+-- Tests are under `tests/`. Run them with `pytest`, after installing the `test` extra.
++- Tests are under `tests/`. The `test` extra installs `pytest`.
+ - Code is formatted with yapf using the Google style in `.style.yapf`:
+ 
+   ```bash
+   pip3 install yapf
+
+> readme-benchmark · anthropic/claude-haiku-5.5

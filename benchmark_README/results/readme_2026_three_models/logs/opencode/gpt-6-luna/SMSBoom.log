@@ -1,0 +1,37 @@
+I’ll inspect the project’s source, configuration, and existing docs, then write a README grounded only in what the repository supports. I’ll change only `README.md`.
+The repository is a Python CLI that submits requests to configured SMS-code endpoints; the Tkinter GUI is only a stub. I’m documenting the actual CLI/configuration and dependencies, while calling out that endpoint success is not guaranteed and that contacting third parties without authorization is not appropriate.
+Created `README.md` with repository contents, installation requirements, CLI behavior, request-data formats, proxy configuration, implementation caveats, and license information. No other files were changed.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✱ [0mGlob "**/*" [90m27 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+[0m✱ [0mGrep "." [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m✗ [0mRead requirements.txt failed
+[91m[1mError: [0mCannot read binary file: requirements.txt
+[0m→ [0mRead smsboom.py 
+[0m→ [0mRead smsboom_GUI.py 
+[0m✗ [0mRead requirements-dev.txt failed
+[91m[1mError: [0mCannot read binary file: requirements-dev.txt
+[0m→ [0mRead Dockerfile 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead GETAPI.json 
+[0m→ [0mRead api.json 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead utils/models.py 
+[0m→ [0mRead utils/req.py 
+[0m→ [0mRead utils/__init__.py 
+[0m→ [0mRead utils/sql.py 
+[0m→ [0mRead utils/log.py 
+[0m✱ [0mGrep "." [90min . · 50 matches[0m
+[0m✱ [0mGlob "Pipfile*" [90m0 matches[0m
+[0m✱ [0mGrep "pipenv|click|httpx|aiosqlite|rich|loguru|socks" [90min . · 42 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna

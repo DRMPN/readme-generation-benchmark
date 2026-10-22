@@ -1,0 +1,412 @@
+[
+  {
+    "name": "index.html",
+    "type": "file"
+  },
+  {
+    "name": "parse.js",
+    "type": "file"
+  },
+  {
+    "name": "pdf",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Acrobat",
+        "type": "dir",
+        "children": [
+          {
+            "name": "Chapter_1.xml",
+            "type": "file"
+          },
+          {
+            "name": "bottom_line.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_2.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_3.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_4.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_5.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_6.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_7.xml",
+            "type": "file"
+          },
+          {
+            "name": "chapter_8.xml",
+            "type": "file"
+          },
+          {
+            "name": "even_pages.xml",
+            "type": "file"
+          },
+          {
+            "name": "odd_pages.xml",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "create_index.py",
+        "type": "file"
+      },
+      {
+        "name": "descripitive_image_final-01.png",
+        "type": "file"
+      },
+      {
+        "name": "descripitive_image_final.png",
+        "type": "file"
+      },
+      {
+        "name": "index_for_pdf.html",
+        "type": "file"
+      },
+      {
+        "name": "index_for_pdf_print.html",
+        "type": "file"
+      },
+      {
+        "name": "popup.html",
+        "type": "file"
+      },
+      {
+        "name": "remove_links.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "web",
+    "type": "dir",
+    "children": [
+      {
+        "name": "OnlineWebFonts_COM_cb7eb796ae7de7195a34c485cacebad1",
+        "type": "dir",
+        "children": [
+          {
+            "name": "@font-face",
+            "type": "dir",
+            "children": [
+              {
+                "name": "9f94dc20bb2a09c15241d3a880b7ad01.eot",
+                "type": "file"
+              },
+              {
+                "name": "9f94dc20bb2a09c15241d3a880b7ad01.svg",
+                "type": "file"
+              },
+              {
+                "name": "9f94dc20bb2a09c15241d3a880b7ad01.ttf",
+                "type": "file"
+              },
+              {
+                "name": "9f94dc20bb2a09c15241d3a880b7ad01.woff",
+                "type": "file"
+              },
+              {
+                "name": "9f94dc20bb2a09c15241d3a880b7ad01.woff2",
+                "type": "file"
+              },
+              {
+                "name": "Demo.html",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "License.txt",
+            "type": "file"
+          },
+          {
+            "name": "Menlo Regular",
+            "type": "dir",
+            "children": [
+              {
+                "name": "Menlo Regular.eot",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Regular.svg",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Regular.ttf",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Regular.woff",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Regular.woff2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "Online_Web_Fonts.url",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "OnlineWebFonts_COM_d6ba633f6ea4cafe1a39ab736fe55e88",
+        "type": "dir",
+        "children": [
+          {
+            "name": "License.txt",
+            "type": "file"
+          },
+          {
+            "name": "Menlo Bold",
+            "type": "dir",
+            "children": [
+              {
+                "name": "@font-face",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "Demo.html",
+                    "type": "file"
+                  },
+                  {
+                    "name": "a6ffc5d72a96b65159e710ea6d258ba4.eot",
+                    "type": "file"
+                  },
+                  {
+                    "name": "a6ffc5d72a96b65159e710ea6d258ba4.svg",
+                    "type": "file"
+                  },
+                  {
+                    "name": "a6ffc5d72a96b65159e710ea6d258ba4.ttf",
+                    "type": "file"
+                  },
+                  {
+                    "name": "a6ffc5d72a96b65159e710ea6d258ba4.woff",
+                    "type": "file"
+                  },
+                  {
+                    "name": "a6ffc5d72a96b65159e710ea6d258ba4.woff2",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "Menlo Bold.eot",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Bold.svg",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Bold.ttf",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Bold.woff",
+                "type": "file"
+              },
+              {
+                "name": "Menlo Bold.woff2",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "Online_Web_Fonts.url",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "continents.csv",
+        "type": "file"
+      },
+      {
+        "name": "convert_table.py",
+        "type": "file"
+      },
+      {
+        "name": "covid_cases.js",
+        "type": "file"
+      },
+      {
+        "name": "covid_cases.png",
+        "type": "file"
+      },
+      {
+        "name": "covid_deaths.js",
+        "type": "file"
+      },
+      {
+        "name": "covid_deaths.png",
+        "type": "file"
+      },
+      {
+        "name": "default.min.css",
+        "type": "file"
+      },
+      {
+        "name": "default_dark.min.css",
+        "type": "file"
+      },
+      {
+        "name": "default_dark1.min.css",
+        "type": "file"
+      },
+      {
+        "name": "default_dark2.min.css",
+        "type": "file"
+      },
+      {
+        "name": "default_dark3.min.css",
+        "type": "file"
+      },
+      {
+        "name": "empty_script.py",
+        "type": "file"
+      },
+      {
+        "name": "faq.html",
+        "type": "file"
+      },
+      {
+        "name": "favicon.png",
+        "type": "file"
+      },
+      {
+        "name": "highlight.min.js",
+        "type": "file"
+      },
+      {
+        "name": "image_720.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_888.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_960.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_orig.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_orig_blue6.png",
+        "type": "file"
+      },
+      {
+        "name": "image_social.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_social_2.png",
+        "type": "file"
+      },
+      {
+        "name": "image_social_3.png",
+        "type": "file"
+      },
+      {
+        "name": "image_social_4.png",
+        "type": "file"
+      },
+      {
+        "name": "image_social_bckp.png",
+        "type": "file"
+      },
+      {
+        "name": "image_twitter_card.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "image_twitter_card_2.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "jquery-3.4.0.min.js",
+        "type": "file"
+      },
+      {
+        "name": "jquery-3.4.0.slim.min.js",
+        "type": "file"
+      },
+      {
+        "name": "mario_bros.png",
+        "type": "file"
+      },
+      {
+        "name": "plotly.min.js",
+        "type": "file"
+      },
+      {
+        "name": "script_2.js",
+        "type": "file"
+      },
+      {
+        "name": "showdown.min.js",
+        "type": "file"
+      },
+      {
+        "name": "style.css",
+        "type": "file"
+      },
+      {
+        "name": "style_dark.css",
+        "type": "file"
+      },
+      {
+        "name": "style_dark1.css",
+        "type": "file"
+      },
+      {
+        "name": "style_dark2.css",
+        "type": "file"
+      },
+      {
+        "name": "style_dark3.css",
+        "type": "file"
+      },
+      {
+        "name": "template.html",
+        "type": "file"
+      },
+      {
+        "name": "twitter_card_large.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "twitter_card_large_bckp.jpeg",
+        "type": "file"
+      },
+      {
+        "name": "update_plots.py",
+        "type": "file"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+Processing repository...
+Processing 87 files and 79 folders...
+Processing complete.
+Creating markdown files...
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 36, in <module>
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/index.py", line 64, in index
+    convert_json_to_markdown(
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/convert_json_to_markdown.py", line 97, in convert_json_to_markdown
+    traverse_file_system(
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/utils/traverse_file_system.py", line 79, in traverse_file_system
+    dfs(input_path)
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/utils/traverse_file_system.py", line 41, in dfs
+    dfs(entry)
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/utils/traverse_file_system.py", line 67, in dfs
+    params.process_file(
+  File "/home/ilya/README_benchmark/.tools/src/ReadMeReady/readme_ready/index/convert_json_to_markdown.py", line 81, in process_file
+    data = json.loads(content)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1138 column 2 (char 100469)

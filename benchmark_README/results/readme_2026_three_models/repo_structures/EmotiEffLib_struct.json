@@ -1,0 +1,1314 @@
+[
+  {
+    "name": ".binder",
+    "type": "dir",
+    "children": [
+      {
+        "name": "apt.txt",
+        "type": "file"
+      },
+      {
+        "name": "environment.yml",
+        "type": "file"
+      },
+      {
+        "name": "postBuild",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": ".editorconfig",
+    "type": "file"
+  },
+  {
+    "name": ".github",
+    "type": "dir",
+    "children": [
+      {
+        "name": "workflows",
+        "type": "dir",
+        "children": [
+          {
+            "name": "binder.yml",
+            "type": "file"
+          },
+          {
+            "name": "generate_documentation.yml",
+            "type": "file"
+          },
+          {
+            "name": "lint.yml",
+            "type": "file"
+          },
+          {
+            "name": "tests.yml",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": ".gitignore",
+    "type": "file"
+  },
+  {
+    "name": ".gitmodules",
+    "type": "file"
+  },
+  {
+    "name": ".pre-commit-config.yaml",
+    "type": "file"
+  },
+  {
+    "name": "LICENSE",
+    "type": "file"
+  },
+  {
+    "name": "docs",
+    "type": "dir",
+    "children": [
+      {
+        "name": "Doxyfile",
+        "type": "file"
+      },
+      {
+        "name": "Doxyfile-cpp",
+        "type": "file"
+      },
+      {
+        "name": "Doxyfile-python",
+        "type": "file"
+      },
+      {
+        "name": "DoxygenLayout-cpp.xml",
+        "type": "file"
+      },
+      {
+        "name": "DoxygenLayout-python.xml",
+        "type": "file"
+      },
+      {
+        "name": "DoxygenLayout.xml",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "tutorials",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "cpp",
+            "type": "dir",
+            "children": [
+              {
+                "name": "One image emotion recognition.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "Predict emotions on video.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "Predict engagement and emotions on video.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "requirements.txt",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "python",
+            "type": "dir",
+            "children": [
+              {
+                "name": ".gitignore",
+                "type": "file"
+              },
+              {
+                "name": "One image emotion recognition.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "Predict emotions on video.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "Predict engagement and emotions on video.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "README.md",
+                "type": "file"
+              },
+              {
+                "name": "requirements.txt",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "emotieffcpplib",
+    "type": "dir",
+    "children": [
+      {
+        "name": ".clang-format",
+        "type": "file"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": "CMakeLists.txt",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "include",
+        "type": "dir",
+        "children": [
+          {
+            "name": "emotiefflib",
+            "type": "dir",
+            "children": [
+              {
+                "name": "backends",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "onnx",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "facial_analysis.h",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "torch",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "facial_analysis.h",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "facial_analysis.h",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "children": [
+          {
+            "name": "backends",
+            "type": "dir",
+            "children": [
+              {
+                "name": "onnx",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "facial_analysis.cpp",
+                    "type": "file"
+                  }
+                ]
+              },
+              {
+                "name": "torch",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "facial_analysis.cpp",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "facial_analysis.cpp",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "type": "dir",
+        "children": [
+          {
+            "name": "CMakeLists.txt",
+            "type": "file"
+          },
+          {
+            "name": "generate_exp_preproc_results.py",
+            "type": "file"
+          },
+          {
+            "name": "include",
+            "type": "dir",
+            "children": [
+              {
+                "name": "test_utils.h",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "test_utils.cpp",
+            "type": "file"
+          },
+          {
+            "name": "tests_facial_analisys.cpp",
+            "type": "file"
+          },
+          {
+            "name": "tests_internal_methods.cpp",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "emotiefflib",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file"
+      },
+      {
+        "name": "backbones",
+        "type": "dir",
+        "children": [
+          {
+            "name": "mobilefacenet.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "engagement_classification_model.py",
+        "type": "file"
+      },
+      {
+        "name": "facial_analysis.py",
+        "type": "file"
+      },
+      {
+        "name": "utils.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "models",
+    "type": "dir",
+    "children": [
+      {
+        "name": "affectnet_emotions",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "enet_b0_8_best_afew.pt",
+            "type": "file"
+          },
+          {
+            "name": "enet_b0_8_best_vgaf.pt",
+            "type": "file"
+          },
+          {
+            "name": "enet_b0_8_va_mtl.pt",
+            "type": "file"
+          },
+          {
+            "name": "enet_b2_7.pt",
+            "type": "file"
+          },
+          {
+            "name": "enet_b2_8.pt",
+            "type": "file"
+          },
+          {
+            "name": "mbf_va_mtl.pt",
+            "type": "file"
+          },
+          {
+            "name": "mobilenet_7.h5",
+            "type": "file"
+          },
+          {
+            "name": "mobilevit_va_mtl.pt",
+            "type": "file"
+          },
+          {
+            "name": "onnx",
+            "type": "dir",
+            "children": [
+              {
+                "name": "enet_b0_8_best_afew.onnx",
+                "type": "file"
+              },
+              {
+                "name": "enet_b0_8_best_vgaf.onnx",
+                "type": "file"
+              },
+              {
+                "name": "enet_b0_8_va_mtl.onnx",
+                "type": "file"
+              },
+              {
+                "name": "enet_b2_7.onnx",
+                "type": "file"
+              },
+              {
+                "name": "enet_b2_8.onnx",
+                "type": "file"
+              },
+              {
+                "name": "mbf_va_mtl.onnx",
+                "type": "file"
+              },
+              {
+                "name": "mobilevit_va_mtl.onnx",
+                "type": "file"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "engagement_classification",
+        "type": "dir",
+        "children": [
+          {
+            "name": "__init__.py",
+            "type": "file"
+          },
+          {
+            "name": "engagement_single_attention.h5",
+            "type": "file"
+          },
+          {
+            "name": "engagement_single_attention_converter.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "prepare_models_for_emotieffcpplib.py",
+        "type": "file"
+      },
+      {
+        "name": "pretrained_faces",
+        "type": "dir",
+        "children": [
+          {
+            "name": "age_gender_tf2_224_deep-03-0.13-0.97.h5",
+            "type": "file"
+          },
+          {
+            "name": "mtcnn.pb",
+            "type": "file"
+          },
+          {
+            "name": "state_vggface2_enet0_new.pt",
+            "type": "file"
+          },
+          {
+            "name": "state_vggface2_enet2.pt",
+            "type": "file"
+          },
+          {
+            "name": "state_vggface2_rexnet_150.pt",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pyproject.toml",
+    "type": "file"
+  },
+  {
+    "name": "requirements-binder-torch.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements-binder.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements-ci.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements-engagement.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements-torch.txt",
+    "type": "file"
+  },
+  {
+    "name": "requirements.txt",
+    "type": "file"
+  },
+  {
+    "name": "setup.cfg",
+    "type": "file"
+  },
+  {
+    "name": "setup.py",
+    "type": "file"
+  },
+  {
+    "name": "tests",
+    "type": "dir",
+    "children": [
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "check_installed_libs.sh",
+        "type": "file"
+      },
+      {
+        "name": "download_test_data.sh",
+        "type": "file"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "test_facial_analysis.py",
+        "type": "file"
+      },
+      {
+        "name": "test_images",
+        "type": "dir",
+        "children": [
+          {
+            "name": "20180720_174416.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "test_module_loading.py",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "training_and_examples",
+    "type": "dir",
+    "children": [
+      {
+        "name": "ABAW",
+        "type": "dir",
+        "children": [
+          {
+            "name": "ABAW6",
+            "type": "dir",
+            "children": [
+              {
+                "name": "abaw6_affwild2.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "cexpr.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "eri.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "ABAW7",
+            "type": "dir",
+            "children": [
+              {
+                "name": "cexpr.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "mtl.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "ABAW8",
+            "type": "dir",
+            "children": [
+              {
+                "name": "abaw8_expr.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "bah.ipynb",
+                "type": "file"
+              },
+              {
+                "name": "emi.ipynb",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "abaw3_train.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "abaw4_lsd_train.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "abaw4_mtl_train.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "abaw5_expr_va_au_train.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "AFEW_train.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "VGAF_train.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "affectnet",
+        "type": "dir",
+        "children": [
+          {
+            "name": "evaluate_affectnet_march2021_pytorch.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "robust_optimization.py",
+            "type": "file"
+          },
+          {
+            "name": "train_affectnet_march2021_pytorch.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "train_emotions-pytorch-afew-vgaf.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "train_emotions-pytorch.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "train_emotions.ipynb",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "convert_pt_to_onnx.py",
+        "type": "file"
+      },
+      {
+        "name": "display_emotions.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "emotions_llm",
+        "type": "dir",
+        "children": [
+          {
+            "name": "README.md",
+            "type": "file"
+          },
+          {
+            "name": "emotions_experiments.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "recognize_emotions_video.py",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "facial_analysis.py",
+        "type": "file"
+      },
+      {
+        "name": "mobile_apps",
+        "type": "dir",
+        "children": [
+          {
+            "name": "demo",
+            "type": "dir",
+            "children": [
+              {
+                "name": "app",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "build.gradle",
+                    "type": "file"
+                  },
+                  {
+                    "name": "src",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "main",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "AndroidManifest.xml",
+                            "type": "file"
+                          },
+                          {
+                            "name": "java",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "com",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "asav",
+                                    "type": "dir",
+                                    "children": [
+                                      {
+                                        "name": "facialprocessing",
+                                        "type": "dir",
+                                        "children": [
+                                          {
+                                            "name": "AgeGenderEthnicityTfLiteClassifier.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "ClassifierResult.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "EmotionData.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "EmotionPyTorchClassifier.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "EmotionTfLiteClassifier.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "FaceData.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "MainActivity.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "TfLiteClassifier.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "mtcnn",
+                                            "type": "dir",
+                                            "children": [
+                                              {
+                                                "name": "Align.java",
+                                                "type": "file"
+                                              },
+                                              {
+                                                "name": "Box.java",
+                                                "type": "file"
+                                              },
+                                              {
+                                                "name": "MTCNN.java",
+                                                "type": "file"
+                                              },
+                                              {
+                                                "name": "Utils.java",
+                                                "type": "file"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "res",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "drawable",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher_background.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "drawable-v24",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher_foreground.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "layout",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "activity_main.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "fragment_camera2_basic.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "menu",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "toolbar_menu.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-anydpi-v26",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-hdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-mdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xxhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xxxhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "values",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "colors.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "strings.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "styles.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "build.gradle",
+                "type": "file"
+              },
+              {
+                "name": "gradle",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "wrapper",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "gradle-wrapper.properties",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "gradle.properties",
+                "type": "file"
+              },
+              {
+                "name": "to_pytorchlite.py",
+                "type": "file"
+              },
+              {
+                "name": "to_tflite.py",
+                "type": "file"
+              }
+            ]
+          },
+          {
+            "name": "emotional_dialogue",
+            "type": "dir",
+            "children": [
+              {
+                "name": "app",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "build.gradle",
+                    "type": "file"
+                  },
+                  {
+                    "name": "src",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "main",
+                        "type": "dir",
+                        "children": [
+                          {
+                            "name": "AndroidManifest.xml",
+                            "type": "file"
+                          },
+                          {
+                            "name": "java",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "com",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "asav",
+                                    "type": "dir",
+                                    "children": [
+                                      {
+                                        "name": "facialprocessing",
+                                        "type": "dir",
+                                        "children": [
+                                          {
+                                            "name": "EmotionPyTorchClassifier.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "MainActivity.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "ServerProcessor.java",
+                                            "type": "file"
+                                          },
+                                          {
+                                            "name": "mtcnn",
+                                            "type": "dir",
+                                            "children": [
+                                              {
+                                                "name": "Box.java",
+                                                "type": "file"
+                                              },
+                                              {
+                                                "name": "MTCNN.java",
+                                                "type": "file"
+                                              },
+                                              {
+                                                "name": "Utils.java",
+                                                "type": "file"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "res",
+                            "type": "dir",
+                            "children": [
+                              {
+                                "name": "drawable",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher_background.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "drawable-v24",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher_foreground.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "layout",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "activity_main.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "fragment_camera2_basic.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "menu",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "toolbar_menu.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-anydpi-v26",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-hdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-mdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xxhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "mipmap-xxxhdpi",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "ic_launcher.png",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "ic_launcher_round.png",
+                                    "type": "file"
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "values",
+                                "type": "dir",
+                                "children": [
+                                  {
+                                    "name": "colors.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "strings.xml",
+                                    "type": "file"
+                                  },
+                                  {
+                                    "name": "styles.xml",
+                                    "type": "file"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "build.gradle",
+                "type": "file"
+              },
+              {
+                "name": "gradle",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "wrapper",
+                    "type": "dir",
+                    "children": [
+                      {
+                        "name": "gradle-wrapper.properties",
+                        "type": "file"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "gradle.properties",
+                "type": "file"
+              },
+              {
+                "name": "settings.gradle",
+                "type": "file"
+              },
+              {
+                "name": "web_server",
+                "type": "dir",
+                "children": [
+                  {
+                    "name": "server.py",
+                    "type": "file"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "personalized_models",
+        "type": "dir",
+        "children": [
+          {
+            "name": "01 - Features-extractor.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "02 - Engagement user-independent model training.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "03 - Custom dataset features extractor.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "04 - Engagement user-adaptation.ipynb",
+            "type": "file"
+          },
+          {
+            "name": "README.md",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file"
+      },
+      {
+        "name": "train_faces_torch.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "train_ramas.ipynb",
+        "type": "file"
+      },
+      {
+        "name": "video_summarizer.ipynb",
+        "type": "file"
+      }
+    ]
+  }
+]

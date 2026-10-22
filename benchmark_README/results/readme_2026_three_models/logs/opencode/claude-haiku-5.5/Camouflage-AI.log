@@ -1,0 +1,53 @@
+I'll start by looking at the repository's layout and existing docs.
+The core code is clear. Before writing, I'll check which declared dependencies are actually imported and whether any other files exist, such as hidden ones.
+I have what I need. Dependencies are declared inconsistently, so the README will state what the code actually imports and flag the gaps instead of copying the requirements list.
+The README is written. One sentence overstates what `setup.py` shows, so I'll correct it.
+I wrote `README.md` in the repository root. It is the only file I created.
+
+The README is based on the source files. Where the repository is inconsistent, it says so instead of smoothing it over:
+
+- **Missing dependencies:** `process_video.py` imports `torch` and `ultralytics`, but neither `requirements.txt` nor `setup.py` lists them. `setup.py` also lists `rembg`, `moviepy`, `matplotlib`, `scikit-image`, `tqdm`, and `pyperclip`, which no source file imports.
+- **`requirements.txt` format:** it contains `pip install ...` lines, so `pip install -r` cannot read it.
+- **Model weights:** `yolov8n-seg.pt` is loaded by name and is not in the repo. The README says Ultralytics normally downloads it, but I did not verify that.
+- **Output folder:** the app writes to `output_videos/`, which is different from the repo's `Output video/` folder. The README states this.
+- **Behavior limits:** only the first detected person per frame is kept, frames with no detection pass through unchanged, there is no audio, and there is no temporal smoothing.
+
+I did not run the application or install the dependencies, so the install and usage steps are based on reading the code.
+
+--- stderr ---
+[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m⚙ [0mexecute {"code":"const r = await Promise.allSettled([\n  tools.opencode ? null : null,\n]);\nreturn \"placeholder\";"} 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/*" [90min . · 7 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m→ [0mRead Camouflage AI.py 
+[0m→ [0mRead process_video.py 
+[0m→ [0mRead setup.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead LICENSE 
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m✱ [0mGlob "**/.*" [90min . · 0 matches[0m
+[0m✱ [0mGrep "^\s*(import|from)\s+\w+" [90min . · 14 matches[0m
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mWrite README.md
+Created file successfully: README.md
+> readme-benchmark · anthropic/claude-haiku-5.5
+[0m← [0mEdit README.md
+Index: README.md
+===================================================================
+--- README.md
++++ README.md
+@@ -112,9 +112,9 @@
+ - Frames with no detection are passed through unchanged, so the original background appears in those frames.
+ - Segmentation is run independently on each frame with no temporal smoothing, so mask edges may flicker between frames.
+ - Audio is not preserved.
+ - Processing speed depends on hardware. No benchmarks are included.
+-- The code is tested on Windows according to `setup.py`'s classifiers. Other platforms have code paths for opening folders, but this README does not claim they have been tested.
++- `setup.py` lists Windows as the only operating system classifier. The code also has macOS and Linux branches for opening the output folder, but no platform testing is documented in this repository.
+ 
+ ## License
+ 
+ This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+> readme-benchmark · anthropic/claude-haiku-5.5

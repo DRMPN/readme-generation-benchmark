@@ -1,0 +1,43 @@
+Created `README.md` with setup instructions, model requirements, GUI and CLI usage, available options, repository layout, and license information. I did not run tests; this was a documentation-only change.
+
+--- stderr ---
+[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead . 
+[0m✱ [0mGlob "**/*" [90m44 matches[0m
+[0m✱ [0mGrep "README" [90min . · 0 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead modules/ui.py 
+[0m→ [0mRead run.py 
+[0m→ [0mRead requirements.txt 
+[0m→ [0mRead CONTRIBUTING.md 
+[0m→ [0mRead run-cuda.bat 
+[0m→ [0mRead run-directml.bat 
+[0m→ [0mRead modules/ui.json 
+[0m→ [0mRead modules/core.py 
+[0m→ [0mRead modules/metadata.py 
+[0m→ [0mRead models/instructions.txt 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead modules/processors/frame/core.py 
+[0m→ [0mRead modules/processors/frame/face_swapper.py 
+[0m→ [0mRead modules/globals.py 
+[0m→ [0mRead mypi.ini 
+[0m→ [0mRead LICENSE 
+[0m→ [0mRead modules/utilities.py 
+[0m→ [0mRead modules/face_analyser.py 
+[0m✱ [0mGlob ".github/**/*" [90m0 matches[0m
+[0m→ [0mRead modules/processors/frame/face_enhancer.py 
+[0m✱ [0mGlob "locales/*.json" [90m9 matches[0m
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead .gitignore 
+[0m→ [0mRead run.py 
+[0m→ [0mRead modules/gettext.py 
+[0m✱ [0mGrep "def pre_check|models_dir|onnxruntime|get_available_providers|frame-processor" [90min modules · 12 matches[0m
+[0m→ [0mRead modules/video_capture.py 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
+[0m→ [0mRead README.md 
+> readme-benchmark · openai/gpt-6-luna
+[0m% [0mPatch 1 file 
+> readme-benchmark · openai/gpt-6-luna
