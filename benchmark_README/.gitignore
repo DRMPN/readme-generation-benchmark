@@ -184,3 +184,4 @@ logs/
 !results/readme_2026_three_models/logs/
 !results/readme_2026_three_models/logs/**/*.log
 !results/readme_2026_three_models/full_run*.log
+!results/readme_2026_three_models_glm_judge/judge_run.log

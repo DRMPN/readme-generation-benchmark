@@ -7,6 +7,15 @@ generation and scoring records, and run logs. The [paper section and appendix](.
 describe the protocol and results; [the pinned dataset](../data/repo_list.csv)
 identifies the source repository and commit for each reference.
 
+The `readme_2026_three_models_glm_judge/` directory records a second G-Eval
+pass over those same 691 generated READMEs, using `z-ai/glm-5.3-flash` as the
+judge. Its `evaluation/` directory contains the 691 per-output scores and
+reasons, paired means, and coverage; `run_manifest.json` identifies the source
+run, `input_manifest.csv` hashes the reused source artifacts, and
+`judge_run.log` records progress and retries. Generated READMEs and
+reference files are shared with the primary run, so they are not duplicated
+here. Table 2 of the paper section reports the paired GLM-judge means.
+
 | Path | Contents |
 | --- | --- |
 | `evaluation/eval_rows.csv` | Raw per-output judge scores, reasons, and returned usage metadata; includes stale and malformed rows for audit. |

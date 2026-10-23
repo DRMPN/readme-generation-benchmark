@@ -1,0 +1,1555 @@
+Pass 1/3 started at 2026-10-23T00:14:17.805953+00:00
+
+GEval anthropic/claude-haiku-5.5 baseline gpt-engineer: 1.0
+
+GEval z-ai/glm-5.3-flash baseline gpt-engineer: 1.0
+
+GEval openai/gpt-6-luna baseline ChatGLM-6B: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline ChatGLM-6B: 1.0
+
+GEval z-ai/glm-5.3-flash baseline ChatGLM-6B: 0.9
+
+GEval openai/gpt-6-luna baseline SMSBoom: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline SMSBoom: 0.1
+
+GEval z-ai/glm-5.3-flash baseline SMSBoom: 1.0
+
+GEval openai/gpt-6-luna baseline mackup: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline mackup: 0.9
+
+GEval z-ai/glm-5.3-flash baseline mackup: 0.9
+
+GEval openai/gpt-6-luna baseline TaskMatrix: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline TaskMatrix: 1.0
+
+GEval z-ai/glm-5.3-flash baseline TaskMatrix: 1.0
+
+GEval openai/gpt-6-luna baseline Deep-Live-Cam: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline Deep-Live-Cam: 0.8
+
+GEval z-ai/glm-5.3-flash baseline Deep-Live-Cam: 0.9
+
+GEval openai/gpt-6-luna baseline python-fire: 1.0
+
+GEval failed for baseline/anthropic/claude-haiku-5.5/python-fire
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 170, in generate_with_schema
+    return schema.model_validate_json(cleaned)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/pydantic/main.py", line 845, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReasonScore
+  Invalid JSON: EOF while parsing an object at line 3 column 355 [type=json_invalid, input_value='{\n  "score": 8,\n  "rea...arly in the extensive "', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/json_invalid
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 263, in evaluate_outputs
+    metric.measure(test_case)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 139, in measure
+    g_score, reason = self._evaluate(
+                      ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 370, in _evaluate
+    return generate_rubric_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 643, in generate_rubric_score
+    return generate_with_schema_and_extract(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/generation.py", line 127, in generate_with_schema_and_extract
+    result = judge.generate_with_schema(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 172, in generate_with_schema
+    return schema.model_validate(json.loads(cleaned))
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 356 (char 371)
+GEval anthropic/claude-haiku-5.5 baseline python-fire: None
+
+GEval z-ai/glm-5.3-flash baseline python-fire: 1.0
+
+GEval openai/gpt-6-luna baseline devika: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline devika: 1.0
+
+GEval z-ai/glm-5.3-flash baseline devika: 1.0
+
+GEval openai/gpt-6-luna baseline gpt-pilot: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline gpt-pilot: 0.9
+
+GEval z-ai/glm-5.3-flash baseline gpt-pilot: 0.9
+
+GEval openai/gpt-6-luna baseline Real-Time-Voice-Cloning: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline Real-Time-Voice-Cloning: 1.0
+
+GEval z-ai/glm-5.3-flash baseline Real-Time-Voice-Cloning: 0.9
+
+GEval openai/gpt-6-luna baseline httpx: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline httpx: 1.0
+
+GEval failed for baseline/z-ai/glm-5.3-flash/httpx
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 170, in generate_with_schema
+    return schema.model_validate_json(cleaned)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/pydantic/main.py", line 845, in model_validate_json
+    return cls.__pydantic_validator__.validate_json(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReasonScore
+  Invalid JSON: EOF while parsing an object at line 3 column 127 [type=json_invalid, input_value='{\n  "score": 10,\n  "re...ides a clear purpose ("', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/json_invalid
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 263, in evaluate_outputs
+    metric.measure(test_case)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 139, in measure
+    g_score, reason = self._evaluate(
+                      ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 370, in _evaluate
+    return generate_rubric_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 643, in generate_rubric_score
+    return generate_with_schema_and_extract(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/generation.py", line 127, in generate_with_schema_and_extract
+    result = judge.generate_with_schema(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 172, in generate_with_schema
+    return schema.model_validate(json.loads(cleaned))
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 3 column 128 (char 144)
+GEval z-ai/glm-5.3-flash baseline httpx: None
+
+GEval openai/gpt-6-luna baseline kirara-ai: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline kirara-ai: 0.9
+
+GEval z-ai/glm-5.3-flash baseline kirara-ai: 0.9
+
+GEval openai/gpt-6-luna baseline gpt-researcher: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline gpt-researcher: 0.9
+
+GEval z-ai/glm-5.3-flash baseline gpt-researcher: 0.9
+
+GEval openai/gpt-6-luna baseline mkdocs: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline mkdocs: 0.9
+
+GEval z-ai/glm-5.3-flash baseline mkdocs: 0.8
+
+GEval openai/gpt-6-luna baseline face_recognition: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline face_recognition: 1.0
+
+GEval z-ai/glm-5.3-flash baseline face_recognition: 1.0
+
+GEval openai/gpt-6-luna baseline system-design-primer: 0.7
+
+GEval anthropic/claude-haiku-5.5 baseline system-design-primer: 0.7
+
+GEval z-ai/glm-5.3-flash baseline system-design-primer: 0.9
+
+GEval openai/gpt-6-luna baseline GPT_API_free: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline GPT_API_free: 1.0
+
+GEval z-ai/glm-5.3-flash baseline GPT_API_free: 0.9
+
+GEval openai/gpt-6-luna baseline 30-Days-Of-Python: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline 30-Days-Of-Python: 0.7
+
+GEval z-ai/glm-5.3-flash baseline 30-Days-Of-Python: 0.8
+
+GEval openai/gpt-6-luna baseline ChatPaper: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline ChatPaper: 0.9
+
+GEval z-ai/glm-5.3-flash baseline ChatPaper: 0.9
+
+GEval openai/gpt-6-luna baseline twint: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline twint: 0.9
+
+GEval z-ai/glm-5.3-flash baseline twint: 1.0
+
+GEval openai/gpt-6-luna baseline flask: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline flask: 1.0
+
+GEval z-ai/glm-5.3-flash baseline flask: 1.0
+
+GEval openai/gpt-6-luna baseline professional-programming: 0.4
+
+GEval anthropic/claude-haiku-5.5 baseline professional-programming: 0.2
+
+GEval z-ai/glm-5.3-flash baseline professional-programming: 0.9
+
+GEval openai/gpt-6-luna baseline EIPs: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline EIPs: 0.7
+
+GEval z-ai/glm-5.3-flash baseline EIPs: 0.8
+
+GEval openai/gpt-6-luna baseline grok-1: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline grok-1: 0.9
+
+GEval z-ai/glm-5.3-flash baseline grok-1: 1.0
+
+GEval openai/gpt-6-luna baseline PyTorch-GAN: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline PyTorch-GAN: 0.9
+
+GEval z-ai/glm-5.3-flash baseline PyTorch-GAN: 0.9
+
+GEval openai/gpt-6-luna baseline public-apis: 0.4
+
+GEval anthropic/claude-haiku-5.5 baseline public-apis: 0.6
+
+GEval z-ai/glm-5.3-flash baseline public-apis: 0.6
+
+GEval openai/gpt-6-luna baseline hackingtool: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline hackingtool: 1.0
+
+GEval z-ai/glm-5.3-flash baseline hackingtool: 1.0
+
+GEval openai/gpt-6-luna baseline python-cheatsheet: 0.7
+
+GEval anthropic/claude-haiku-5.5 baseline python-cheatsheet: 0.8
+
+GEval z-ai/glm-5.3-flash baseline python-cheatsheet: 0.7
+
+GEval openai/gpt-6-luna baseline rembg: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline rembg: 1.0
+
+GEval z-ai/glm-5.3-flash baseline rembg: 1.0
+
+GEval openai/gpt-6-luna baseline devops-exercises: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline devops-exercises: 0.9
+
+GEval z-ai/glm-5.3-flash baseline devops-exercises: 0.9
+
+GEval openai/gpt-6-luna baseline MiniGPT-4: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline MiniGPT-4: 0.9
+
+GEval z-ai/glm-5.3-flash baseline MiniGPT-4: 0.9
+
+GEval openai/gpt-6-luna baseline python-spider: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline python-spider: 1.0
+
+GEval z-ai/glm-5.3-flash baseline python-spider: 0.7
+
+GEval openai/gpt-6-luna baseline chatgpt-retrieval-plugin: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline chatgpt-retrieval-plugin: 0.8
+
+GEval z-ai/glm-5.3-flash baseline chatgpt-retrieval-plugin: 0.9
+
+GEval openai/gpt-6-luna baseline flux: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline flux: 0.7
+
+GEval z-ai/glm-5.3-flash baseline flux: 1.0
+
+GEval openai/gpt-6-luna baseline EmotiEffLib: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline EmotiEffLib: 0.9
+
+GEval z-ai/glm-5.3-flash baseline EmotiEffLib: 0.9
+
+GEval openai/gpt-6-luna baseline Ride: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline Ride: 1.0
+
+GEval z-ai/glm-5.3-flash baseline Ride: 1.0
+
+GEval openai/gpt-6-luna baseline delPezzo: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline delPezzo: 1.0
+
+GEval z-ai/glm-5.3-flash baseline delPezzo: 1.0
+
+GEval openai/gpt-6-luna baseline chatsky: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline chatsky: 0.9
+
+GEval z-ai/glm-5.3-flash baseline chatsky: 0.9
+
+GEval openai/gpt-6-luna baseline dialog2graph: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline dialog2graph: 0.9
+
+GEval z-ai/glm-5.3-flash baseline dialog2graph: 0.9
+
+GEval openai/gpt-6-luna baseline verl-loras: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline verl-loras: 0.9
+
+GEval z-ai/glm-5.3-flash baseline verl-loras: 0.9
+
+GEval openai/gpt-6-luna baseline Eco2AI: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline Eco2AI: 0.9
+
+GEval z-ai/glm-5.3-flash baseline Eco2AI: 1.0
+
+GEval openai/gpt-6-luna baseline GENA_LM: 0.8
+
+GEval anthropic/claude-haiku-5.5 baseline GENA_LM: 0.9
+
+GEval z-ai/glm-5.3-flash baseline GENA_LM: 0.7
+
+GEval openai/gpt-6-luna baseline eco4cast: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline eco4cast: 0.9
+
+GEval z-ai/glm-5.3-flash baseline eco4cast: 0.9
+
+GEval openai/gpt-6-luna baseline Camouflage-AI: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline Camouflage-AI: 1.0
+
+GEval z-ai/glm-5.3-flash baseline Camouflage-AI: 1.0
+
+GEval openai/gpt-6-luna baseline Python-Weather-Info-App: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline Python-Weather-Info-App: 1.0
+
+GEval z-ai/glm-5.3-flash baseline Python-Weather-Info-App: 1.0
+
+GEval openai/gpt-6-luna baseline rt-repo-assessment: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline rt-repo-assessment: 1.0
+
+GEval z-ai/glm-5.3-flash baseline rt-repo-assessment: 1.0
+
+GEval openai/gpt-6-luna baseline TagGenerator: 0.9
+
+GEval anthropic/claude-haiku-5.5 baseline TagGenerator: 1.0
+
+GEval z-ai/glm-5.3-flash baseline TagGenerator: 1.0
+
+GEval openai/gpt-6-luna baseline Code-Contribution-Analyzer: 1.0
+
+GEval anthropic/claude-haiku-5.5 baseline Code-Contribution-Analyzer: 0.9
+
+GEval z-ai/glm-5.3-flash baseline Code-Contribution-Analyzer: 0.9
+
+GEval openai/gpt-6-luna osa gpt-engineer: 0.7
+
+GEval anthropic/claude-haiku-5.5 osa gpt-engineer: 0.7
+
+GEval z-ai/glm-5.3-flash osa gpt-engineer: 0.6
+
+GEval openai/gpt-6-luna osa ChatGLM-6B: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa ChatGLM-6B: 1.0
+
+GEval z-ai/glm-5.3-flash osa ChatGLM-6B: 1.0
+
+GEval openai/gpt-6-luna osa SMSBoom: 0.0
+
+GEval anthropic/claude-haiku-5.5 osa SMSBoom: 0.9
+
+GEval z-ai/glm-5.3-flash osa SMSBoom: 1.0
+
+GEval openai/gpt-6-luna osa mackup: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa mackup: 0.8
+
+GEval z-ai/glm-5.3-flash osa mackup: 0.8
+
+GEval openai/gpt-6-luna osa TaskMatrix: 0.8
+
+GEval anthropic/claude-haiku-5.5 osa TaskMatrix: 0.2
+
+GEval z-ai/glm-5.3-flash osa TaskMatrix: 1.0
+
+GEval openai/gpt-6-luna osa Deep-Live-Cam: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa Deep-Live-Cam: 1.0
+
+GEval z-ai/glm-5.3-flash osa Deep-Live-Cam: 0.9
+
+GEval openai/gpt-6-luna osa python-fire: 0.8
+
+GEval anthropic/claude-haiku-5.5 osa python-fire: 0.9
+
+GEval z-ai/glm-5.3-flash osa python-fire: 0.9
+
+GEval openai/gpt-6-luna osa devika: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa devika: 0.8
+
+GEval z-ai/glm-5.3-flash osa devika: 0.9
+
+GEval openai/gpt-6-luna osa gpt-pilot: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa gpt-pilot: 0.7
+
+GEval z-ai/glm-5.3-flash osa gpt-pilot: 0.8
+
+GEval openai/gpt-6-luna osa Real-Time-Voice-Cloning: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa Real-Time-Voice-Cloning: 0.8
+
+GEval z-ai/glm-5.3-flash osa Real-Time-Voice-Cloning: 0.8
+
+GEval openai/gpt-6-luna osa httpx: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa httpx: 0.9
+
+GEval z-ai/glm-5.3-flash osa httpx: 0.9
+
+GEval openai/gpt-6-luna osa kirara-ai: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa kirara-ai: 0.7
+
+GEval z-ai/glm-5.3-flash osa kirara-ai: 0.7
+
+GEval openai/gpt-6-luna osa gpt-researcher: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa gpt-researcher: 0.7
+
+GEval z-ai/glm-5.3-flash osa gpt-researcher: 0.8
+
+GEval openai/gpt-6-luna osa mkdocs: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa mkdocs: 0.8
+
+GEval z-ai/glm-5.3-flash osa mkdocs: 0.8
+
+GEval openai/gpt-6-luna osa face_recognition: 0.8
+
+GEval anthropic/claude-haiku-5.5 osa face_recognition: 0.9
+
+GEval z-ai/glm-5.3-flash osa face_recognition: 0.9
+
+GEval openai/gpt-6-luna osa system-design-primer: 0.3
+
+GEval anthropic/claude-haiku-5.5 osa system-design-primer: 0.6
+
+GEval z-ai/glm-5.3-flash osa system-design-primer: 0.6
+
+GEval openai/gpt-6-luna osa GPT_API_free: 0.9
+
+GEval anthropic/claude-haiku-5.5 osa GPT_API_free: 0.7
+
+GEval z-ai/glm-5.3-flash osa GPT_API_free: 1.0
+
+GEval openai/gpt-6-luna osa 30-Days-Of-Python: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa 30-Days-Of-Python: 0.9
+
+GEval z-ai/glm-5.3-flash osa 30-Days-Of-Python: 1.0
+
+GEval openai/gpt-6-luna osa ChatPaper: 0.3
+
+GEval anthropic/claude-haiku-5.5 osa ChatPaper: 0.5
+
+GEval z-ai/glm-5.3-flash osa ChatPaper: 0.5
+
+GEval openai/gpt-6-luna osa twint: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa twint: 0.6
+
+GEval z-ai/glm-5.3-flash osa twint: 0.9
+
+GEval openai/gpt-6-luna osa flask: 0.7
+
+GEval anthropic/claude-haiku-5.5 osa flask: 0.8
+
+GEval z-ai/glm-5.3-flash osa flask: 0.2
+
+GEval openai/gpt-6-luna osa professional-programming: 0.2
+
+GEval anthropic/claude-haiku-5.5 osa professional-programming: 0.7
+
+GEval z-ai/glm-5.3-flash osa professional-programming: 0.6
+
+GEval openai/gpt-6-luna osa EIPs: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa EIPs: 0.4
+
+GEval z-ai/glm-5.3-flash osa EIPs: 0.6
+
+GEval openai/gpt-6-luna osa grok-1: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa grok-1: 0.9
+
+GEval z-ai/glm-5.3-flash osa grok-1: 0.8
+
+GEval openai/gpt-6-luna osa PyTorch-GAN: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa PyTorch-GAN: 0.4
+
+GEval z-ai/glm-5.3-flash osa PyTorch-GAN: 0.7
+
+GEval openai/gpt-6-luna osa public-apis: 0.2
+
+GEval anthropic/claude-haiku-5.5 osa public-apis: 0.7
+
+GEval z-ai/glm-5.3-flash osa public-apis: 0.9
+
+GEval openai/gpt-6-luna osa hackingtool: 0.9
+
+GEval anthropic/claude-haiku-5.5 osa hackingtool: 1.0
+
+GEval z-ai/glm-5.3-flash osa hackingtool: 0.8
+
+GEval openai/gpt-6-luna osa python-cheatsheet: 0.3
+
+GEval anthropic/claude-haiku-5.5 osa python-cheatsheet: 0.5
+
+GEval z-ai/glm-5.3-flash osa python-cheatsheet: 0.3
+
+GEval openai/gpt-6-luna osa rembg: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa rembg: 0.7
+
+GEval z-ai/glm-5.3-flash osa rembg: 1.0
+
+GEval openai/gpt-6-luna osa devops-exercises: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa devops-exercises: 0.6
+
+GEval z-ai/glm-5.3-flash osa devops-exercises: 0.8
+
+GEval openai/gpt-6-luna osa MiniGPT-4: 0.3
+
+GEval anthropic/claude-haiku-5.5 osa MiniGPT-4: 0.6
+
+GEval z-ai/glm-5.3-flash osa MiniGPT-4: 0.7
+
+GEval openai/gpt-6-luna osa python-spider: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa python-spider: 1.0
+
+GEval z-ai/glm-5.3-flash osa python-spider: 0.6
+
+GEval openai/gpt-6-luna osa chatgpt-retrieval-plugin: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa chatgpt-retrieval-plugin: 0.6
+
+GEval z-ai/glm-5.3-flash osa chatgpt-retrieval-plugin: 0.7
+
+GEval openai/gpt-6-luna osa flux: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa flux: 0.5
+
+GEval z-ai/glm-5.3-flash osa flux: 0.8
+
+GEval openai/gpt-6-luna osa EmotiEffLib: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa EmotiEffLib: 0.6
+
+GEval z-ai/glm-5.3-flash osa EmotiEffLib: 0.7
+
+GEval openai/gpt-6-luna osa Ride: 0.9
+
+GEval anthropic/claude-haiku-5.5 osa Ride: 0.7
+
+GEval z-ai/glm-5.3-flash osa Ride: 0.8
+
+GEval openai/gpt-6-luna osa delPezzo: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa delPezzo: 0.8
+
+GEval z-ai/glm-5.3-flash osa delPezzo: 0.8
+
+GEval openai/gpt-6-luna osa chatsky: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa chatsky: 0.5
+
+GEval z-ai/glm-5.3-flash osa chatsky: 0.8
+
+GEval openai/gpt-6-luna osa dialog2graph: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa dialog2graph: 0.8
+
+GEval z-ai/glm-5.3-flash osa dialog2graph: 0.8
+
+GEval openai/gpt-6-luna osa verl-loras: 0.6
+
+GEval anthropic/claude-haiku-5.5 osa verl-loras: 0.8
+
+GEval z-ai/glm-5.3-flash osa verl-loras: 0.9
+
+GEval openai/gpt-6-luna osa Eco2AI: 1.0
+
+GEval anthropic/claude-haiku-5.5 osa Eco2AI: 0.8
+
+GEval z-ai/glm-5.3-flash osa Eco2AI: 0.8
+
+GEval openai/gpt-6-luna osa GENA_LM: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa GENA_LM: 0.7
+
+GEval z-ai/glm-5.3-flash osa GENA_LM: 0.6
+
+GEval openai/gpt-6-luna osa eco4cast: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa eco4cast: 0.8
+
+GEval z-ai/glm-5.3-flash osa eco4cast: 0.8
+
+GEval openai/gpt-6-luna osa Camouflage-AI: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa Camouflage-AI: 0.8
+
+GEval z-ai/glm-5.3-flash osa Camouflage-AI: 0.8
+
+GEval openai/gpt-6-luna osa Python-Weather-Info-App: 0.7
+
+GEval anthropic/claude-haiku-5.5 osa Python-Weather-Info-App: 0.7
+
+GEval z-ai/glm-5.3-flash osa Python-Weather-Info-App: 0.8
+
+GEval openai/gpt-6-luna osa rt-repo-assessment: 0.4
+
+GEval anthropic/claude-haiku-5.5 osa rt-repo-assessment: 0.6
+
+GEval z-ai/glm-5.3-flash osa rt-repo-assessment: 0.8
+
+GEval openai/gpt-6-luna osa TagGenerator: 0.5
+
+GEval anthropic/claude-haiku-5.5 osa TagGenerator: 1.0
+
+GEval z-ai/glm-5.3-flash osa TagGenerator: 0.8
+
+GEval openai/gpt-6-luna osa Code-Contribution-Analyzer: 0.3
+
+GEval anthropic/claude-haiku-5.5 osa Code-Contribution-Analyzer: 0.6
+
+GEval z-ai/glm-5.3-flash osa Code-Contribution-Analyzer: 0.9
+
+GEval openai/gpt-6-luna readmeready gpt-engineer: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready gpt-engineer: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready gpt-engineer: 0.7
+
+GEval openai/gpt-6-luna readmeready ChatGLM-6B: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready ChatGLM-6B: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready ChatGLM-6B: 0.7
+
+GEval openai/gpt-6-luna readmeready SMSBoom: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready SMSBoom: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready SMSBoom: 0.5
+
+GEval openai/gpt-6-luna readmeready mackup: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready mackup: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready mackup: 0.7
+
+GEval openai/gpt-6-luna readmeready TaskMatrix: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready TaskMatrix: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready TaskMatrix: 0.6
+
+GEval openai/gpt-6-luna readmeready Deep-Live-Cam: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready Deep-Live-Cam: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready Deep-Live-Cam: 0.7
+
+GEval openai/gpt-6-luna readmeready python-fire: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready python-fire: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready python-fire: 0.4
+
+GEval openai/gpt-6-luna readmeready devika: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready devika: 0.1
+
+GEval z-ai/glm-5.3-flash readmeready devika: 0.5
+
+GEval openai/gpt-6-luna readmeready gpt-pilot: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready gpt-pilot: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready gpt-pilot: 0.4
+
+GEval openai/gpt-6-luna readmeready Real-Time-Voice-Cloning: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready Real-Time-Voice-Cloning: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready Real-Time-Voice-Cloning: 0.8
+
+GEval openai/gpt-6-luna readmeready httpx: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready httpx: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready httpx: 0.6
+
+GEval openai/gpt-6-luna readmeready kirara-ai: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready kirara-ai: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready kirara-ai: 0.3
+
+GEval openai/gpt-6-luna readmeready mkdocs: 0.7
+
+GEval openai/gpt-6-luna readmeready face_recognition: 0.5
+
+GEval openai/gpt-6-luna readmeready system-design-primer: 0.4
+
+GEval openai/gpt-6-luna readmeready GPT_API_free: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready mkdocs: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready face_recognition: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready system-design-primer: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready GPT_API_free: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready ChatPaper: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready twint: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready flask: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready professional-programming: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready EIPs: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready grok-1: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready PyTorch-GAN: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready public-apis: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready hackingtool: 0.5
+
+GEval openai/gpt-6-luna readmeready ChatPaper: 0.4
+
+GEval openai/gpt-6-luna readmeready twint: 0.4
+
+GEval openai/gpt-6-luna readmeready flask: 0.6
+
+GEval openai/gpt-6-luna readmeready professional-programming: 0.3
+
+GEval openai/gpt-6-luna readmeready EIPs: 0.3
+
+GEval openai/gpt-6-luna readmeready grok-1: 0.3
+
+GEval failed for readmeready/openai/gpt-6-luna/PyTorch-GAN
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 263, in evaluate_outputs
+    metric.measure(test_case)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 139, in measure
+    g_score, reason = self._evaluate(
+                      ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 370, in _evaluate
+    return generate_rubric_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 643, in generate_rubric_score
+    return generate_with_schema_and_extract(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/generation.py", line 127, in generate_with_schema_and_extract
+    result = judge.generate_with_schema(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 172, in generate_with_schema
+    return schema.model_validate(json.loads(cleaned))
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+GEval openai/gpt-6-luna readmeready PyTorch-GAN: None
+
+GEval openai/gpt-6-luna readmeready public-apis: 0.5
+
+GEval openai/gpt-6-luna readmeready hackingtool: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready mkdocs: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready face_recognition: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready system-design-primer: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready GPT_API_free: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready ChatPaper: 0.6
+
+GEval anthropic/claude-haiku-5.5 readmeready rembg: 0.5
+
+GEval anthropic/claude-haiku-5.5 readmeready devops-exercises: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready MiniGPT-4: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready python-spider: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready chatgpt-retrieval-plugin: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready flux: 0.4
+
+GEval openai/gpt-6-luna readmeready rembg: 0.4
+
+GEval openai/gpt-6-luna readmeready devops-exercises: 0.2
+
+GEval openai/gpt-6-luna readmeready MiniGPT-4: 0.4
+
+GEval openai/gpt-6-luna readmeready python-spider: 0.3
+
+GEval openai/gpt-6-luna readmeready chatgpt-retrieval-plugin: 0.4
+
+GEval openai/gpt-6-luna readmeready flux: 0.2
+
+GEval anthropic/claude-haiku-5.5 readmeready delPezzo: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready chatsky: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready twint: 0.6
+
+GEval openai/gpt-6-luna readmeready delPezzo: 0.4
+
+GEval openai/gpt-6-luna readmeready chatsky: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready professional-programming: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready Eco2AI: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready eco4cast: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready Camouflage-AI: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready Python-Weather-Info-App: 0.4
+
+GEval anthropic/claude-haiku-5.5 readmeready rt-repo-assessment: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready TagGenerator: 0.3
+
+GEval anthropic/claude-haiku-5.5 readmeready Code-Contribution-Analyzer: 0.4
+
+GEval anthropic/claude-haiku-5.5 larch gpt-engineer: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch ChatGLM-6B: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch SMSBoom: 0.4
+
+GEval anthropic/claude-haiku-5.5 larch mackup: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch TaskMatrix: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch Deep-Live-Cam: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch python-fire: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch devika: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch gpt-pilot: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch Real-Time-Voice-Cloning: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch httpx: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch kirara-ai: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch gpt-researcher: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch mkdocs: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch face_recognition: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch system-design-primer: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch GPT_API_free: 0.4
+
+GEval anthropic/claude-haiku-5.5 larch 30-Days-Of-Python: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch ChatPaper: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch twint: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch flask: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch professional-programming: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch EIPs: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch grok-1: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch PyTorch-GAN: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch public-apis: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch hackingtool: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch python-cheatsheet: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch rembg: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch devops-exercises: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch MiniGPT-4: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch python-spider: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch chatgpt-retrieval-plugin: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch flux: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch EmotiEffLib: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch Ride: 0.5
+
+GEval anthropic/claude-haiku-5.5 larch delPezzo: 0.4
+
+GEval anthropic/claude-haiku-5.5 larch chatsky: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch dialog2graph: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch verl-loras: 0.9
+
+GEval anthropic/claude-haiku-5.5 larch Eco2AI: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch GENA_LM: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch eco4cast: 0.7
+
+GEval anthropic/claude-haiku-5.5 larch Camouflage-AI: 0.5
+
+GEval anthropic/claude-haiku-5.5 larch Python-Weather-Info-App: 0.8
+
+GEval anthropic/claude-haiku-5.5 larch rt-repo-assessment: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch TagGenerator: 0.6
+
+GEval anthropic/claude-haiku-5.5 larch Code-Contribution-Analyzer: 0.7
+
+GEval anthropic/claude-haiku-5.5 opencode gpt-engineer: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode ChatGLM-6B: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode SMSBoom: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode mackup: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode TaskMatrix: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Deep-Live-Cam: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode python-fire: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode devika: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode gpt-pilot: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Real-Time-Voice-Cloning: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode httpx: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode kirara-ai: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode gpt-researcher: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode mkdocs: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode face_recognition: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode system-design-primer: 0.7
+
+GEval anthropic/claude-haiku-5.5 opencode GPT_API_free: 0.5
+
+GEval anthropic/claude-haiku-5.5 opencode 30-Days-Of-Python: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode ChatPaper: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode twint: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode flask: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode professional-programming: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode EIPs: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode grok-1: 0.7
+
+GEval anthropic/claude-haiku-5.5 opencode PyTorch-GAN: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode public-apis: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode hackingtool: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode python-cheatsheet: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode rembg: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode devops-exercises: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode MiniGPT-4: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode python-spider: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode chatgpt-retrieval-plugin: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode flux: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode EmotiEffLib: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Ride: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode delPezzo: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode chatsky: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode dialog2graph: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode verl-loras: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Eco2AI: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode GENA_LM: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode eco4cast: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Camouflage-AI: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Python-Weather-Info-App: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode rt-repo-assessment: 0.8
+
+GEval anthropic/claude-haiku-5.5 opencode TagGenerator: 0.9
+
+GEval anthropic/claude-haiku-5.5 opencode Code-Contribution-Analyzer: 0.9
+
+GEval z-ai/glm-5.3-flash readmeready grok-1: 0.6
+
+GEval openai/gpt-6-luna readmeready Eco2AI: 0.6
+
+GEval openai/gpt-6-luna readmeready eco4cast: 0.2
+
+GEval openai/gpt-6-luna readmeready Camouflage-AI: 0.5
+
+GEval openai/gpt-6-luna readmeready Python-Weather-Info-App: 0.5
+
+GEval openai/gpt-6-luna readmeready rt-repo-assessment: 0.2
+
+GEval openai/gpt-6-luna readmeready TagGenerator: 0.2
+
+GEval openai/gpt-6-luna readmeready Code-Contribution-Analyzer: 0.3
+
+GEval openai/gpt-6-luna larch gpt-engineer: 0.9
+
+GEval openai/gpt-6-luna larch ChatGLM-6B: 0.8
+
+GEval openai/gpt-6-luna larch SMSBoom: 0.6
+
+GEval openai/gpt-6-luna larch mackup: 0.8
+
+GEval openai/gpt-6-luna larch TaskMatrix: 0.6
+
+GEval openai/gpt-6-luna larch Deep-Live-Cam: 0.7
+
+GEval openai/gpt-6-luna larch python-fire: 0.8
+
+GEval openai/gpt-6-luna larch devika: 0.8
+
+GEval openai/gpt-6-luna larch gpt-pilot: 0.7
+
+GEval openai/gpt-6-luna larch Real-Time-Voice-Cloning: 0.8
+
+GEval openai/gpt-6-luna larch httpx: 0.8
+
+GEval openai/gpt-6-luna larch kirara-ai: 0.7
+
+GEval openai/gpt-6-luna larch gpt-researcher: 0.8
+
+GEval openai/gpt-6-luna larch mkdocs: 0.8
+
+GEval openai/gpt-6-luna larch face_recognition: 0.9
+
+GEval openai/gpt-6-luna larch system-design-primer: 0.7
+
+GEval openai/gpt-6-luna larch GPT_API_free: 0.3
+
+GEval openai/gpt-6-luna larch 30-Days-Of-Python: 0.7
+
+GEval openai/gpt-6-luna larch ChatPaper: 0.8
+
+GEval openai/gpt-6-luna larch twint: 0.8
+
+GEval openai/gpt-6-luna larch flask: 0.9
+
+GEval openai/gpt-6-luna larch professional-programming: 0.6
+
+GEval openai/gpt-6-luna larch EIPs: 0.6
+
+GEval openai/gpt-6-luna larch grok-1: 0.7
+
+GEval openai/gpt-6-luna larch PyTorch-GAN: 0.8
+
+GEval openai/gpt-6-luna larch public-apis: 0.4
+
+GEval openai/gpt-6-luna larch hackingtool: 0.6
+
+GEval openai/gpt-6-luna larch python-cheatsheet: 0.8
+
+GEval openai/gpt-6-luna larch rembg: 0.8
+
+GEval openai/gpt-6-luna larch devops-exercises: 0.7
+
+GEval openai/gpt-6-luna larch MiniGPT-4: 0.8
+
+GEval openai/gpt-6-luna larch python-spider: 0.7
+
+GEval openai/gpt-6-luna larch chatgpt-retrieval-plugin: 0.7
+
+GEval openai/gpt-6-luna larch flux: 0.8
+
+GEval openai/gpt-6-luna larch EmotiEffLib: 0.7
+
+GEval openai/gpt-6-luna larch Ride: 0.7
+
+GEval openai/gpt-6-luna larch delPezzo: 0.5
+
+GEval openai/gpt-6-luna larch chatsky: 0.7
+
+GEval openai/gpt-6-luna larch dialog2graph: 0.7
+
+GEval openai/gpt-6-luna larch verl-loras: 0.7
+
+GEval openai/gpt-6-luna larch Eco2AI: 0.7
+
+GEval openai/gpt-6-luna larch GENA_LM: 0.7
+
+GEval openai/gpt-6-luna larch eco4cast: 0.5
+
+GEval openai/gpt-6-luna larch Camouflage-AI: 0.5
+
+GEval openai/gpt-6-luna larch Python-Weather-Info-App: 0.7
+
+GEval openai/gpt-6-luna larch rt-repo-assessment: 0.6
+
+GEval openai/gpt-6-luna larch TagGenerator: 0.6
+
+GEval openai/gpt-6-luna larch Code-Contribution-Analyzer: 0.7
+
+GEval openai/gpt-6-luna opencode gpt-engineer: 0.9
+
+GEval openai/gpt-6-luna opencode ChatGLM-6B: 0.9
+
+GEval openai/gpt-6-luna opencode SMSBoom: 0.8
+
+GEval openai/gpt-6-luna opencode mackup: 0.8
+
+GEval openai/gpt-6-luna opencode TaskMatrix: 0.8
+
+GEval openai/gpt-6-luna opencode Deep-Live-Cam: 0.9
+
+GEval openai/gpt-6-luna opencode python-fire: 0.9
+
+GEval openai/gpt-6-luna opencode devika: 0.8
+
+GEval failed for opencode/openai/gpt-6-luna/gpt-pilot
+Traceback (most recent call last):
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 263, in evaluate_outputs
+    metric.measure(test_case)
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 139, in measure
+    g_score, reason = self._evaluate(
+                      ^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/tracing/tracing.py", line 1598, in wrapper
+    return func(*args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/g_eval/g_eval.py", line 370, in _evaluate
+    return generate_rubric_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/decision.py", line 643, in generate_rubric_score
+    return generate_with_schema_and_extract(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/deepeval/metrics/utils/generation.py", line 127, in generate_with_schema_and_extract
+    result = judge.generate_with_schema(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/src/evaluation.py", line 172, in generate_with_schema
+    return schema.model_validate(json.loads(cleaned))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilya/README_benchmark/benchmark_README/.venv/lib/python3.12/site-packages/pydantic/main.py", line 790, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ReasonScore
+score
+  Field required [type=missing, input_value={'reason': 'The README st...the individual agents.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing
+GEval openai/gpt-6-luna opencode gpt-pilot: None
+
+GEval openai/gpt-6-luna opencode Real-Time-Voice-Cloning: 0.9
+
+GEval openai/gpt-6-luna opencode httpx: 0.9
+
+GEval openai/gpt-6-luna opencode kirara-ai: 0.7
+
+GEval openai/gpt-6-luna opencode gpt-researcher: 0.9
+
+GEval openai/gpt-6-luna opencode mkdocs: 0.8
+
+GEval openai/gpt-6-luna opencode face_recognition: 0.8
+
+GEval openai/gpt-6-luna opencode system-design-primer: 0.8
+
+GEval openai/gpt-6-luna opencode GPT_API_free: 0.5
+
+GEval openai/gpt-6-luna opencode 30-Days-Of-Python: 0.8
+
+GEval openai/gpt-6-luna opencode ChatPaper: 0.9
+
+GEval openai/gpt-6-luna opencode twint: 0.9
+
+GEval openai/gpt-6-luna opencode flask: 0.9
+
+GEval openai/gpt-6-luna opencode professional-programming: 0.7
+
+GEval openai/gpt-6-luna opencode EIPs: 0.8
+
+GEval openai/gpt-6-luna opencode grok-1: 0.8
+
+GEval openai/gpt-6-luna opencode PyTorch-GAN: 0.8
+
+GEval openai/gpt-6-luna opencode public-apis: 0.6
+
+GEval openai/gpt-6-luna opencode hackingtool: 0.9
+
+GEval openai/gpt-6-luna opencode python-cheatsheet: 0.7
+
+GEval openai/gpt-6-luna opencode rembg: 0.9
+
+GEval openai/gpt-6-luna opencode devops-exercises: 0.8
+
+GEval openai/gpt-6-luna opencode MiniGPT-4: 0.8
+
+GEval openai/gpt-6-luna opencode python-spider: 0.9
+
+GEval openai/gpt-6-luna opencode chatgpt-retrieval-plugin: 0.8
+
+GEval openai/gpt-6-luna opencode flux: 0.8
+
+GEval openai/gpt-6-luna opencode EmotiEffLib: 0.9
+
+GEval openai/gpt-6-luna opencode Ride: 0.8
+
+GEval openai/gpt-6-luna opencode delPezzo: 0.8
+
+GEval openai/gpt-6-luna opencode chatsky: 0.9
+
+GEval openai/gpt-6-luna opencode dialog2graph: 0.9
+
+GEval openai/gpt-6-luna opencode verl-loras: 0.9
+
+GEval openai/gpt-6-luna opencode Eco2AI: 0.8
+
+GEval openai/gpt-6-luna opencode GENA_LM: 0.7
+
+GEval openai/gpt-6-luna opencode eco4cast: 0.9
+
+GEval openai/gpt-6-luna opencode Camouflage-AI: 0.9
+
+GEval openai/gpt-6-luna opencode Python-Weather-Info-App: 0.8
+
+GEval openai/gpt-6-luna opencode rt-repo-assessment: 0.8
+
+GEval openai/gpt-6-luna opencode TagGenerator: 0.8
+
+GEval openai/gpt-6-luna opencode Code-Contribution-Analyzer: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready PyTorch-GAN: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready public-apis: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready hackingtool: 0.7
+
+GEval z-ai/glm-5.3-flash readmeready rembg: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready devops-exercises: 0.3
+
+GEval z-ai/glm-5.3-flash readmeready MiniGPT-4: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready python-spider: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready chatgpt-retrieval-plugin: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready flux: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready delPezzo: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready chatsky: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready Eco2AI: 0.5
+
+GEval z-ai/glm-5.3-flash readmeready eco4cast: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready Camouflage-AI: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready Python-Weather-Info-App: 0.6
+
+GEval z-ai/glm-5.3-flash readmeready rt-repo-assessment: 0.4
+
+GEval z-ai/glm-5.3-flash readmeready TagGenerator: 0.2
+
+GEval z-ai/glm-5.3-flash readmeready Code-Contribution-Analyzer: 0.4
+
+GEval z-ai/glm-5.3-flash larch gpt-engineer: 0.8
+
+GEval z-ai/glm-5.3-flash larch ChatGLM-6B: 0.8
+
+GEval z-ai/glm-5.3-flash larch SMSBoom: 0.1
+
+GEval z-ai/glm-5.3-flash larch mackup: 0.8
+
+GEval z-ai/glm-5.3-flash larch TaskMatrix: 0.7
+
+GEval z-ai/glm-5.3-flash larch Deep-Live-Cam: 0.8
+
+GEval z-ai/glm-5.3-flash larch python-fire: 0.9
+
+GEval z-ai/glm-5.3-flash larch devika: 0.7
+
+GEval z-ai/glm-5.3-flash larch gpt-pilot: 0.7
+
+GEval z-ai/glm-5.3-flash larch Real-Time-Voice-Cloning: 0.8
+
+GEval z-ai/glm-5.3-flash larch httpx: 0.8
+
+GEval z-ai/glm-5.3-flash larch kirara-ai: 0.7
+
+GEval z-ai/glm-5.3-flash larch gpt-researcher: 0.7
+
+GEval z-ai/glm-5.3-flash larch mkdocs: 0.7
+
+GEval z-ai/glm-5.3-flash larch face_recognition: 0.8
+
+GEval z-ai/glm-5.3-flash larch system-design-primer: 0.5
+
+GEval z-ai/glm-5.3-flash larch GPT_API_free: 0.7
+
+GEval z-ai/glm-5.3-flash larch 30-Days-Of-Python: 0.6
+
+GEval z-ai/glm-5.3-flash larch ChatPaper: 0.7
+
+GEval z-ai/glm-5.3-flash larch twint: 0.8
+
+GEval z-ai/glm-5.3-flash larch flask: 0.8
+
+GEval z-ai/glm-5.3-flash larch professional-programming: 0.8
+
+GEval z-ai/glm-5.3-flash larch EIPs: 0.7
+
+GEval z-ai/glm-5.3-flash larch grok-1: 0.8
+
+GEval z-ai/glm-5.3-flash larch PyTorch-GAN: 0.8
+
+GEval z-ai/glm-5.3-flash larch public-apis: 0.6
+
+GEval z-ai/glm-5.3-flash larch hackingtool: 0.8
+
+GEval z-ai/glm-5.3-flash larch python-cheatsheet: 0.6
+
+GEval z-ai/glm-5.3-flash larch rembg: 0.7
+
+GEval z-ai/glm-5.3-flash larch devops-exercises: 0.6
+
+GEval z-ai/glm-5.3-flash larch MiniGPT-4: 0.8
+
+GEval z-ai/glm-5.3-flash larch python-spider: 0.6
+
+GEval z-ai/glm-5.3-flash larch chatgpt-retrieval-plugin: 0.7
+
+GEval z-ai/glm-5.3-flash larch flux: 0.7
+
+GEval z-ai/glm-5.3-flash larch EmotiEffLib: 0.7
+
+GEval z-ai/glm-5.3-flash larch Ride: 0.7
+
+GEval z-ai/glm-5.3-flash larch delPezzo: 0.5
+
+GEval z-ai/glm-5.3-flash larch chatsky: 0.8
+
+GEval z-ai/glm-5.3-flash larch dialog2graph: 0.6
+
+GEval z-ai/glm-5.3-flash larch verl-loras: 0.8
+
+GEval z-ai/glm-5.3-flash larch Eco2AI: 0.8
+
+GEval z-ai/glm-5.3-flash larch GENA_LM: 0.7
+
+GEval z-ai/glm-5.3-flash larch eco4cast: 0.7
+
+GEval z-ai/glm-5.3-flash larch Camouflage-AI: 0.6
+
+GEval z-ai/glm-5.3-flash larch Python-Weather-Info-App: 0.8
+
+GEval z-ai/glm-5.3-flash larch rt-repo-assessment: 0.5
+
+GEval z-ai/glm-5.3-flash larch TagGenerator: 0.5
+
+GEval z-ai/glm-5.3-flash larch Code-Contribution-Analyzer: 0.6
+
+GEval z-ai/glm-5.3-flash opencode gpt-engineer: 0.9
+
+GEval z-ai/glm-5.3-flash opencode ChatGLM-6B: 0.9
+
+GEval z-ai/glm-5.3-flash opencode SMSBoom: 0.6
+
+GEval z-ai/glm-5.3-flash opencode mackup: 0.9
+
+GEval z-ai/glm-5.3-flash opencode TaskMatrix: 0.8
+
+GEval z-ai/glm-5.3-flash opencode Deep-Live-Cam: 0.9
+
+GEval z-ai/glm-5.3-flash opencode python-fire: 0.9
+
+GEval z-ai/glm-5.3-flash opencode devika: 0.7
+
+GEval z-ai/glm-5.3-flash opencode gpt-pilot: 0.7
+
+GEval z-ai/glm-5.3-flash opencode Real-Time-Voice-Cloning: 0.8
+
+GEval z-ai/glm-5.3-flash opencode httpx: 0.9
+
+GEval z-ai/glm-5.3-flash opencode kirara-ai: 0.8
+
+GEval z-ai/glm-5.3-flash opencode gpt-researcher: 0.9
+
+GEval z-ai/glm-5.3-flash opencode mkdocs: 0.9
+
+GEval z-ai/glm-5.3-flash opencode face_recognition: 0.9
+
+GEval z-ai/glm-5.3-flash opencode system-design-primer: 0.9
+
+GEval z-ai/glm-5.3-flash opencode GPT_API_free: 0.6
+
+GEval z-ai/glm-5.3-flash opencode 30-Days-Of-Python: 0.8
+
+GEval z-ai/glm-5.3-flash opencode ChatPaper: 0.8
+
+GEval z-ai/glm-5.3-flash opencode twint: 0.9
+
+GEval z-ai/glm-5.3-flash opencode flask: 0.9
+
+GEval z-ai/glm-5.3-flash opencode professional-programming: 0.6
+
+GEval z-ai/glm-5.3-flash opencode EIPs: 0.8
+
+GEval z-ai/glm-5.3-flash opencode grok-1: 0.8
+
+GEval z-ai/glm-5.3-flash opencode public-apis: 0.7
+
+GEval z-ai/glm-5.3-flash opencode hackingtool: 0.8
+
+GEval z-ai/glm-5.3-flash opencode python-cheatsheet: 0.7
+
+GEval z-ai/glm-5.3-flash opencode rembg: 0.8
+
+GEval z-ai/glm-5.3-flash opencode devops-exercises: 0.7
+
+GEval z-ai/glm-5.3-flash opencode MiniGPT-4: 0.9
+
+GEval z-ai/glm-5.3-flash opencode python-spider: 0.8
+
+GEval z-ai/glm-5.3-flash opencode chatgpt-retrieval-plugin: 0.8
+
+GEval z-ai/glm-5.3-flash opencode flux: 0.8
+
+GEval z-ai/glm-5.3-flash opencode EmotiEffLib: 0.9
+
+GEval z-ai/glm-5.3-flash opencode Ride: 0.9
+
+GEval z-ai/glm-5.3-flash opencode delPezzo: 0.9
+
+GEval z-ai/glm-5.3-flash opencode chatsky: 0.9
+
+GEval z-ai/glm-5.3-flash opencode dialog2graph: 0.9
+
+GEval z-ai/glm-5.3-flash opencode verl-loras: 0.9
+
+GEval z-ai/glm-5.3-flash opencode eco4cast: 0.9
+
+GEval z-ai/glm-5.3-flash opencode Camouflage-AI: 0.9
+
+GEval z-ai/glm-5.3-flash opencode Python-Weather-Info-App: 0.9
+
+GEval z-ai/glm-5.3-flash opencode rt-repo-assessment: 0.8
+
+GEval z-ai/glm-5.3-flash opencode TagGenerator: 0.8
+
+GEval z-ai/glm-5.3-flash opencode Code-Contribution-Analyzer: 0.8
+Progress: 687/691 valid scores; recorded judge cost $1.2413
+Pass 2/3 started at 2026-10-23T04:23:48.333862+00:00
+
+GEval anthropic/claude-haiku-5.5 baseline python-fire: 0.9
+
+GEval z-ai/glm-5.3-flash baseline httpx: 0.9
+
+GEval openai/gpt-6-luna readmeready PyTorch-GAN: 0.5
+
+GEval openai/gpt-6-luna opencode gpt-pilot: 0.9
+Progress: 691/691 valid scores; recorded judge cost $1.1904
+Complete paired repositories: 34/48

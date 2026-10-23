@@ -194,3 +194,11 @@ cython_debug/
 /benchmark_README/results/readme_2026_three_models/*.pid
 !/benchmark_README/results/readme_2026_three_models/full_run*.log
 !/benchmark_README/results/readme_2026_three_models/logs/**/*.log
+!/benchmark_README/results/readme_2026_three_models_glm_judge/
+/benchmark_README/results/readme_2026_three_models_glm_judge/*
+!/benchmark_README/results/readme_2026_three_models_glm_judge/evaluation/
+!/benchmark_README/results/readme_2026_three_models_glm_judge/evaluation/*.csv
+!/benchmark_README/results/readme_2026_three_models_glm_judge/evaluation/results.md
+!/benchmark_README/results/readme_2026_three_models_glm_judge/run_manifest.json
+!/benchmark_README/results/readme_2026_three_models_glm_judge/input_manifest.csv
+!/benchmark_README/results/readme_2026_three_models_glm_judge/judge_run.log

@@ -1,0 +1,8 @@
+{
+  "source_run": "readme_2026_three_models",
+  "judge_run": "readme_2026_three_models_glm_judge",
+  "judge_model": "z-ai/glm-5.3-flash",
+  "generation_reused": true,
+  "retained_outputs": 691,
+  "source_tool_status_sha256": "f6881f1aa6fc5ca27d959d125343253f73636ae821a5451f7ea0e10c8146c641"
+}
