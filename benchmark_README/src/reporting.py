@@ -13,6 +13,8 @@ GROUPS = ("Common", "Scientific", "All")
 def _artifact_path(recorded_path: str, run_dir: Path) -> Path:
     """Locate a recorded artifact after the public run is cloned elsewhere."""
     recorded = Path(str(recorded_path))
+    if not recorded.is_absolute():
+        return run_dir / recorded
     if recorded.is_file():
         return recorded
     try:

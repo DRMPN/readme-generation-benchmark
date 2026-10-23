@@ -63,6 +63,8 @@ Change only the `phase` value in the notebook configuration between runs. The de
 
 After preparation, the resumable command `benchmark_README/.venv/bin/python scripts/run_full_benchmark.py` runs the three model branches concurrently, scores successful outputs as they become available, and exports the final table. It keeps progress in the same run directory.
 
+To evaluate the saved outputs with a second judge, run `benchmark_README/.venv/bin/python scripts/run_glm_judge.py --run`. This uses `z-ai/glm-5.3-flash` as the GEval judge, reads the 691 retained outputs through links without regenerating them, and checkpoints scores in `benchmark_README/results/readme_2026_three_models_glm_judge/`. `--status` reports saved score coverage and recorded judge cost without an API call. The second judge uses the same rubric and provenance exclusions as the GPT-6 Sol run.
+
 The standalone preparation helper can materialize the default run's inputs without model calls:
 
 ```bash

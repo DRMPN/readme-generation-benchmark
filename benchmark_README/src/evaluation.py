@@ -205,7 +205,13 @@ def _read_text(path: Path, *, limit: int | None = None) -> str:
     return text[:limit] if limit else text
 
 
-def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset: bool = False) -> pd.DataFrame:
+def evaluate_outputs(
+    paths: BenchmarkPaths,
+    experiment: dict[str, Any],
+    *,
+    reset: bool = False,
+    max_new_rows: int | None = None,
+) -> pd.DataFrame:
     status_path = paths.experiment_dir / "tool_status.csv"
     if not status_path.is_file():
         raise FileNotFoundError(f"Tool status file not found: {status_path}")
@@ -223,6 +229,7 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
     statuses = pd.read_csv(status_path)
     all_rows = old.copy()
     paths.evaluation_dir.mkdir(parents=True, exist_ok=True)
+    new_rows = 0
 
     for row in statuses.itertuples():
         key = (row.tool, row.model, row.repo_slug)
@@ -230,6 +237,8 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
             continue
 
         generated_path = Path(row.output_path)
+        if not generated_path.is_absolute():
+            generated_path = paths.experiment_dir / generated_path
         original_candidates = list(paths.original_readmes_dir.glob(f"{row.repo_slug}_original_README*"))
         structure_path = paths.structures_dir / f"{row.repo_slug}_struct.json"
         if not generated_path.is_file() or not original_candidates or not structure_path.is_file():
@@ -288,6 +297,9 @@ def evaluate_outputs(paths: BenchmarkPaths, experiment: dict[str, Any], *, reset
         all_rows = all_rows.drop_duplicates(["tool", "model", "repo_slug", "judge_model"], keep="last")
         all_rows.to_csv(eval_path, index=False)
         print(f"GEval {row.model} {row.tool} {row.repo_slug}: {result['score']}", flush=True)
+        new_rows += 1
+        if max_new_rows is not None and new_rows >= max_new_rows:
+            break
 
     if not all_rows.empty:
         summary = (
